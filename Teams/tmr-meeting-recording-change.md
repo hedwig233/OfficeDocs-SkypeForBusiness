@@ -111,7 +111,8 @@ The size of a one-hour recording is 400 MB. Make sure you understand the capacit
 
 ## Viewing permissions
 
-For **non-Channel meetings**, all meeting invitees, except for external participants, automatically get a personally shared link. The meeting organizer must explicitly add external participants to the shared list.
+For **non-Channel meetings**, all meeting invitees, except for external participants, automatically get a personally shared link. The meeting organizer must explicitly add external participants to the shared list. If the meeting is forwarded, only those automatically added to the meeting thread will receive the recording link. Specifically, if a meeting is forwarded to an individual, they will be added to the meeting thread and can view the recording. However, if a meeting is forwarded to a group, only the group owner(s) will be added to the meeting thread, and other group members will not have access to the recording.
+- For large meetings, due to current limitations, if the meeting have more than 250 participants, some of them will not receive recording file permissions automatically. If you are excluded, please ask meeting organizer to add you to the shared list.
 
 For **Channel meetings**, permissions are inherited from the owners and members list in the channel.
 

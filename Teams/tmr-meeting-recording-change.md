@@ -108,7 +108,8 @@ The size of a one-hour recording is 400 MB. Make sure you understand the capacit
 
 ## Viewing permissions
 
-For **non-Channel meetings**, all meeting invitees, except for external participants, automatically get a personally shared link. The meeting organizer must explicitly add external participants to the shared list.
+For **non-Channel meetings**, all meeting invitees, except for external participants, automatically get a personally shared link. The meeting organizer must explicitly add external participants to the shared list. If the meeting is forwarded, only those automatically added to the meeting chat thread will receive the recording link. To ensure performance, the total number of chat thread members should remain below 1000. Consequently, if a meeting is forwarded to a group, only some members will be added to the chat. If forwarded to an individual, they will be added to the meeting chat thread unless the total chat members exceed 1000.
+- For large meetings, there is another limitation in ODSP: If the meeting have more than 250 participants, some of them will not receive recording file permissions automatically. If you are excluded, please ask recording owner to add you to the shared list.
 
 For **Channel meetings**, permissions are inherited from the owners and members list in the channel.
 

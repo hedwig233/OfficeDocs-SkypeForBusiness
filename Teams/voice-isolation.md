@@ -34,13 +34,7 @@ The voice isolation feature relies on the voice profile, stored on the user's lo
 
 To learn about enrollment, see [Overview of voice and face enrollment](/microsoftteams/rooms/voice-and-face-recognition).
 
-To learn more about voice isolation troubleshooting, setup, and the experience for your users, see [Voice isolation in Microsoft Teams calls and meetings](https://prod.support.services.microsoft.com/office/voice-isolation-in-microsoft-teams-calls-and-meetings-a9756ea9-4cec-44c4-aefb-6f5d17c89427).
-
-## Prerequisites
-
-Verify that the following URL is included in your allowlist:
-
-- https://aiinfrastructure.static.microsoft/public/aiinfrastructure/tsg_model_file/d1579e8339689379a218e26beea3825b68b9e75ec9dbb41aeb2be78510fead3c/model.gz
+To learn more about voice isolation troubleshooting, setup, and the experience for your users, see [Voice isolation in Microsoft Teams calls and meetings](https://support.microsoft.com/office/voice-isolation-in-microsoft-teams-calls-and-meetings-a9756ea9-4cec-44c4-aefb-6f5d17c89427).
 
 ## Manage whether your users can use voice isolation
 
@@ -82,12 +76,9 @@ Set-CsTeamsMeetingPolicy -Identity <policy name> -VoiceIsolation Disabled
 
 ## Related topics
 
+- [Overview of voice and face enrollment](/microsoftteams/rooms/voice-and-face-recognition)
 - [Plan for meetings with external participants in Microsoft Teams](plan-meetings-external-participants.md)
 - [Plan for meetings](plan-meetings.md)
 - [Meetings, webinars, and live events overview](quick-start-meetings-live-events.md)
 - [Feature comparison](meeting-webinar-town-hall-feature-comparison.md)
-- [New-CsTeamsMeetingPolicy](/powershell/module/teams/new-csteamsmeetingpolicy)
 - [Set-CsTeamsMeetingPolicy](/powershell/module/teams/set-csteamsmeetingpolicy)
-- [Grant-CsTeamsMeetingPolicy](/powershell/module/teams/grant-csteamsmeetingpolicy)
-- [Get-CsTeamsMeetingPolicy](/powershell/module/teams/get-csteamsmeetingpolicy)
-- [Remove-CsTeamsMeetingPolicy](/powershell/module/teams/remove-csteamsmeetingpolicy)

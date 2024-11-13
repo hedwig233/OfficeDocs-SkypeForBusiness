@@ -1,7 +1,7 @@
 ---
 title: Plan for Operator Connect for India
-author: CarolynRowe
-ms.author: crowe
+author: sfrancis206
+ms.author: scottfrancis
 manager: pamgreen
 ms.date: 09/01/2023
 ms.topic: article

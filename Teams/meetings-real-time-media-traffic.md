@@ -1,7 +1,7 @@
 ---
 title: Configure QoS settings in the Teams admin center 
-ms.author: crowe
-author: CarolynRowe
+ms.author: scottfrancis
+author: sfrancis206
 manager: pamgreen
 ms.reviewer: siunies
 ms.date: 04/18/2024

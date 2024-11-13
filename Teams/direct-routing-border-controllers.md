@@ -115,6 +115,8 @@ Note that we're not accepting new nominations for certification until further no
 ||GX-VE SBC|&#10004;|&#10004;|Supported 7.20A.258 (Recommended 7.40A.500)|&#10004;|&#10004;|
 ||GX-CE SBC|&#10004;|&#10004;|Supported 7.20A.258 (Recommended 7.40A.500)|&#10004;|&#10004;|
 ||GX-3100|&#10004;|&#10004;|Supported 7.20A.250 (Recommended 7.40A.500)|&#10004;|&#10004;|
+|[Telnyx LLC](https://telnyx.com/resources/direct-routing-overview)|Telnyx MS Teams SBC|&#10004;|&#10004;|v2024.0315.18.37.f2c7869|&#10004;||
+|[Vodia Networks Inc.](https://web.vodia.com/microsoft-teams)|Vodia PBX|&#10004;||v69.4|||
 
 \* **911 service providers**
 

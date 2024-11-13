@@ -4,7 +4,7 @@ author: mkbond007
 ms.author: mabond
 manager: pamgreen
 ms.reviewer: colongma
-ms.date: 01/31/2024
+ms.date: 10/31/2024
 ms.topic: article
 ms.assetid: ab9f05a2-22cb-4692-a585-27f82d1b37c7
 ms.tgt.pltfrm: cloud
@@ -17,8 +17,8 @@ ms.collection:
   - tier1
 audience: Admin
 appliesto: 
-  - Skype for Business
   - Microsoft Teams
+  - Skype for Business
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -77,11 +77,11 @@ Call queues don't provide separate call routing for off hours and holidays. Even
 
 To configure Auto attendants and Call queues, you need the following resources:
 
-- A [Resource Account](manage-resource-accounts.md) for each Auto attendant and each Call queue.
+- A [Resource Account](manage-resource-accounts.md) for each Auto attendant or Call queue that directly answers calls. Nested auto attendants or call queues which receive calls from an auto attendant or call queue that has already answered the call don't require a resource account.
 - A free [Microsoft Teams Phone Resource Account license](teams-add-on-licensing/virtual-user.md) for each resource account.
 - External phone calls:
   - At least one [Microsoft service number](getting-service-phone-numbers.md), [Operator Connect number](operator-connect-plan.md), [Direct Routing number](direct-routing-plan.md), or a hybrid number for each resource account that you want to be directly dialable from external phone numbers.
-    - The service number may be a toll or toll-free number.
+    - The service number may also be a toll or toll-free number.
 - Web click-to-call:
   - [Contact centers with Azure Communication Services](/azure/communication-services/tutorials/contact-center)
   - [Quickstart: Join your calling app to a Teams auto attendant](/azure/communication-services/quickstarts/voice-video-calling/get-started-teams-auto-attendant)
@@ -106,28 +106,24 @@ When using a resource account for calling line ID purposes in Call queues, the r
 - An [online voice routing policy](manage-voice-routing-policies.md).
   - Phone number assignment is optional when using Direct Routing.
 
-When an Auto attendant or Call queue is transferring calls to an external number, specific resource accounts as outlined below must have a Teams Phone Resource Account license and one of the following assigned:
+When an Auto attendant or Call queue is transferring calls to an external number, the resource account must have a Teams Phone Resource Account license and one of the following assigned:
 
 - A [Calling Plan](calling-plans-for-office-365.md) license and a phone number assigned.
 - An [Operator Connect](operator-connect-plan.md) phone number assigned.
 - An [online voice routing policy](manage-voice-routing-policies.md).
   - Phone number assignment is optional when using Direct Routing.
 
-Which resource account to license:
-
-- All resource accounts must have a free [Microsoft Teams Phone Resource Account license](teams-add-on-licensing/virtual-user.md).
-- License the resource account on the first Auto attendant receiving the call when that Auto attendant transfers to other Auto attendants or Call queues that transfer calls externally.
-- In all other calling scenarios, license the resource account of the Auto attendant or Call queue performing the external transfer.
+Nested auto attendants and call queues that transfer calls externally don't require resource accounts or respective licensing. When nesting auto attendants or call queues, license the resource account on the first auto attendant or call queue receiving the call.
 
 > [!NOTE]
 > If the Calling Plan assigned to the resource account becomes disabled or is removed, [Communications Credits](what-are-communications-credits.md), if available in the tenant (without being assigned to the resource account), will be consumed. If there is no Calling Plan or Communications Credits, the call will fail.
 >
 > Direct Routing service numbers for Auto attendant and Call queues are supported for Microsoft Teams users and call agents only.
-> 
+>
 > Transfers between Calling Plan, Operator Connect, and Direct Routing trunks aren't supported.
-> 
+>
 > In a Hybrid scenario, the resource account must be created on-premises. For more information, see [Plan Cloud call queues](/skypeforbusiness/hybrid/plan-call-queue).
-> 
+>
 > New Commerce Experience customers are not yet supported for resources accounts when an auto attendant or call queue needs to transfer calls to an external number.
 
 ## Business decisions

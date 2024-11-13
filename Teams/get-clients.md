@@ -10,7 +10,7 @@ ms.collection:
   - M365-collaboration
   - m365initiative-deployteams
 ms.reviewer: rafarhi
-ms.date: 10/13/2023
+ms.date: 10/30/2024
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Learn how to install the various clients available for classic Microsoft Teams on PCs, Macs, and mobile devices.

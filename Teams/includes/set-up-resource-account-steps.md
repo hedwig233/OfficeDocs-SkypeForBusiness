@@ -98,6 +98,8 @@ You can create a resource account with the New-CsOnlineApplicationInstance Power
 
 For each resource account, you must assign a **Microsoft Teams Phone Resource Account** license.
 
+Nested auto attendants and call queues that transfer calls externally don't require resource accounts or respective licensing. When nesting auto attendants or call queues, license the resource account on the first auto attendant or call queue receiving the call.
+
 1. Sign into the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
 2. Expand **Users**, then select **Active users**.
 3. Select the resource account to which you want to assign a license. The resource account's user pane will appear.

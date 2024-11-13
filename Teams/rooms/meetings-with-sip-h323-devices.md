@@ -1,10 +1,10 @@
 ---
-title: SIP and H.323 calling with Teams Rooms
+title: SIP and H.323 dialing with Teams Rooms
 author: mstonysmith
 ms.author: tonysmit
 manager: pamgreen
 ms.reviewer: naforer
-ms.date: 09/06/2024
+ms.date: 10/30/2024
 ms.topic: article
 audience: Admin
 ms.service: msteams
@@ -21,28 +21,28 @@ ms.localizationpriority: medium
 description: Learn about how to set up Teams Rooms to receive and place calls using SIP and H.323.
 ---
 
-# SIP and H.323 Calling with Teams Rooms
+# SIP and H.323 Dialing with Teams Rooms
 
-SIP and H.323 calling is available on Microsoft Teams Rooms on Windows devices licensed with a Microsoft Teams Rooms Pro license. This functionality uses a Cloud Video Interop provider which you can enable in your tenant. 
+SIP and H.323 dialing is available on Microsoft Teams Rooms on Windows devices licensed with a Microsoft Teams Rooms Pro license. This functionality uses a specific SIP-supporting plan from a Cloud Video Interop provider which you can enable in your tenant. 
 
-This feature enables calls with audio, video, and screen sharing between Teams Rooms devices and other conferencing endpoints that support either the SIP or the H.323 protocol. The SIP and H.323 endpoints can be either internal or external to your organization. SIP and H.323 dialing is disabled by default in your organization. You must follow the steps in this document to enable this functionality using Microsoft Teams PowerShell. SIP & H.323 calls from your Teams Rooms device are Teams calls to the Microsoft 365 cloud, which then communicates with your provider. No other network or firewall rules are required to enable this functionality if you already have working Teams Rooms devices deployed.
+This feature allows Teams Rooms devices to make audio, video, and screen sharing calls with other conferencing endpoints that support SIP or H.323 protocols, whether internal or external to your organization. By default, SIP and H.323 dialing is disabled. To enable it, follow the steps in this document using Microsoft Teams PowerShell. SIP and H.323 calls from Teams Rooms devices are routed through the Microsoft 365 cloud to your plan provider, requiring no additional network or firewall rules if you already have working Teams Rooms devices.
 
-If you have multiple Teams Rooms all with a Pro licenses deployed in your organization, you can configure SIP and H.323 dialing for one or all of your Teams Rooms. 
+If you have multiple Teams Rooms all with Pro licenses deployed in your organization, you can configure SIP and H.323 dialing for one or all of those Teams Rooms. 
 
 > [!IMPORTANT]
 >
-> This feature is only available for Microsoft Teams Rooms devices licensed with a Teams Rooms Pro license and is only availble for Teams Rooms on Windows device. This won't work with Teams Rooms on Android devices.
+> This feature is exclusive to Microsoft Teams Rooms devices with a Teams Rooms Pro license and is only compatible with Teams Rooms on Windows devices. It does not support Teams Rooms on Android devices.
 
 ## Implementation Requirements
 
-To enable your Teams Rooms device to use SIP and H.323 calling:
+To enable your Teams Rooms device to use SIP and H.323 dialing:
 
 1. The Teams Rooms resource account must have a Teams Rooms Pro license assigned.
-2. You must have an agreement with one of the certified [Cloud Video Interop providers](../cloud-video-interop.md) (CVI) which offer SIP & H.323 calling capabilities, reference that link for which providers enable calling from Teams Rooms.
-3. Information from your CVI provider on the "AreaCode" to use when configuring SIP & H.323 calling in Microsoft Teams. The "AreaCode" may match the "TenantKey" used when you configured CVI.
-4. You must create and assign a Teams Room Video Teleconferencing Policy your Teams Rooms resource accounts.
+2. You need an agreement with one of the certified [Cloud Video Interop providers](../cloud-video-interop.md) (CVI) which offer SIP & H.323 dialing capabilities. Refer to that link for a list of providers that enable SIP & H.323 dialing from Teams Rooms.
+3. You need information from your SIP-supporting provider about the "AreaCode" to use when configuring SIP & H.323 dialing in Microsoft Teams Rooms. If you have CVI enabled, the "AreaCode" may match the "TenantKey" used when you configured it.
+4. You must create and assign a SIP & H.323 Video Teleconferencing Policy to your Teams Rooms resource accounts.
 
-## How to configure a SIP & H.323 Video Teleconferencing Policy
+## How to configure a SIP / H.323 Video Teleconferencing Policy
 
 The Teams Room Video Teleconference Policy enables SIP & H.323 calling on Teams Rooms devices. You must first create a new Teams Room Video Teleconferencing policy and set the parameters to enable SIP and H.323 dialing. If you have multiple CVI providers in your tenant, you can configure multiple Video Teleconferencing policies, and assign different policies to different Teams Room resource accounts. Although you can only have one Global policy, individual policies take precedence if directly assigned to an account.
 

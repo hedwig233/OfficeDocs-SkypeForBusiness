@@ -17,7 +17,7 @@ appliesto:
 ---
 # Allow meeting and webinar organizers to hide the names of attendees
 
-**APPLIES TO:** ✔️Meetings ✔️Webinars ✖️Town halls
+**APPLIES TO:** ![Image of a checkmark for yes](media/circle-check.png) Meetings ![Image of a checkmark for yes](media/circle-check.png) Webinars ![Image of a x for no](media/x-for-no.png) Town halls
 
 [!INCLUDE[Teams Premium](includes/teams-premium-ecm.md)]
 

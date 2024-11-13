@@ -6,7 +6,7 @@ manager: jtremper
 ms.topic: article
 ms.service: msteams
 ms.reviewer: amitsri
-ms.date: 08/03/2023
+ms.date: 10/30/2024
 audience: admin
 description: Use Windows Installer (MSI) files to distribute the Teams client to multiple users and computers.
 ms.localizationpriority: medium

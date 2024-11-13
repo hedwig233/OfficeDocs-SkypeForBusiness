@@ -28,7 +28,7 @@ description: Learn how to plan for webinars in Microsoft Teams.
 
 # Plan for Teams webinars
 
-**APPLIES TO:** ✖️Meetings ✔️Webinars ✖️Town halls
+**APPLIES TO:** ![Image of a x for no](media/x-for-no.png) Meetings ![Image of a checkmark for yes](media/circle-check.png) Webinars ![Image of a x for no](media/x-for-no.png) Town halls
 
 A webinar is a two-way interactive virtual event where the presenters deliver information to attendees. This format provides extra control for an organizer over the conversation and participants. Common scenarios for webinars might include trainings, product demos, sales lead generation, customer events, company announcements, and showcasing products. Webinars can accommodate up to 1,000 attendees and allow organizers to gather registration data from attendees before the event.
 
@@ -52,17 +52,17 @@ There are a few key differences between in-org and public webinars. When managin
 
 |Capability|In-org webinar|Public webinar|
 |:----|:-----:|:-------:|
-|Includes guests|✖️|✔️|
-|Accessible to members of the organization that created the webinar|✔️|✔️|
-|Accessible to anyone with a registration link|✖️|✔️|
-|Anonymous users can register|✖️|✔️|
-|Attendees type their name on the registration form when registering|✖️|✔️|
-|Attendees must reenter their information after selecting the join link|✖️|✔️|
-|Attendees have unique join links|✔️|✔️|
-|Organizers can decide if attendees with a registration link can bypass the lobby|✔️|✔️|
-|Organizers can decide if anyone who can't bypass the lobby is automatically rejected|✔️|✔️|
-|Attendees can dial in to join|✖️|✖️|
-|Includes external presenters|✔️|✔️|
+|Includes guests|![Image of a x for no](media/x-for-no.png)|![Image of a checkmark for yes](media/circle-check.png)|
+|Accessible to members of the organization that created the webinar|![Image of a checkmark for yes](media/circle-check.png)|![Image of a checkmark for yes](media/circle-check.png)|
+|Accessible to anyone with a registration link|![Image of a x for no](media/x-for-no.png)|![Image of a checkmark for yes](media/circle-check.png)|
+|Anonymous users can register|![Image of a x for no](media/x-for-no.png)|![Image of a checkmark for yes](media/circle-check.png)|
+|Attendees type their name on the registration form when registering|![Image of a x for no](media/x-for-no.png)|![Image of a checkmark for yes](media/circle-check.png)|
+|Attendees must reenter their information after selecting the join link|![Image of a x for no](media/x-for-no.png)|![Image of a checkmark for yes](media/circle-check.png)|
+|Attendees have unique join links|![Image of a checkmark for yes](media/circle-check.png)|![Image of a checkmark for yes](media/circle-check.png)|
+|Organizers can decide if attendees with a registration link can bypass the lobby|![Image of a checkmark for yes](media/circle-check.png)|![Image of a checkmark for yes](media/circle-check.png)|
+|Organizers can decide if anyone who can't bypass the lobby is automatically rejected|![Image of a checkmark for yes](media/circle-check.png)|![Image of a checkmark for yes](media/circle-check.png)|
+|Attendees can dial in to join|![Image of a x for no](media/x-for-no.png)|![Image of a x for no](media/x-for-no.png)|
+|Includes external presenters|![Image of a checkmark for yes](media/circle-check.png)|![Image of a checkmark for yes](media/circle-check.png)|
 
 ## Webinar attendee interaction
 
@@ -81,24 +81,24 @@ A Teams Premium subscription includes the following features for webinars:
 
 |Feature name | Webinar features | Teams Premium webinar features |
 |-------------------------------------------------------|:---------------------:|:-------------------------:|
-|Allow registered users to bypass the lobby         |✔️                      |✔️                          |
-|Assign a co-organizer                              |✔️                      |✔️                          |
-|Limit the number of people who can register        |✔️                      |✔️                         |
-|Require attendees to register|✔️|✔️|
-|Set up a green room for webinar presenters |✔️|✔️ |
-|Turn on Q&A for webinars with up to 1,000 attendees |✔️ |✔️|
-|View attendance reports|✔️|✔️|
-|External presenters|✔️|✔️|
-|Create a webinar wait list                         |                       |✔️                          |
-|Limit the day and time when people can register    |                       |✔️                         |
-|Manage attendees’ view                             |                       |✔️                          |
-|Manually approve registrants                       |                       |✔️                          |
-|Send reminder emails to registrants                |                       |✔️                          |
-|Use RTMP-In for webinars                           |                       |✔️                         |
-|Hide attendee names                          |                       |✔️                         |
-|Manage what attendees see                          |                       |✔️                         |
-|Custom meeting templates                         |                       |✔️                         |
-|Admin created custom meeting backgrounds                         |                       |✔️                         |
+|Allow registered users to bypass the lobby         |![Image of a checkmark for yes](media/circle-check.png)                      |![Image of a checkmark for yes](media/circle-check.png)                          |
+|Assign a co-organizer                              |![Image of a checkmark for yes](media/circle-check.png)                      |![Image of a checkmark for yes](media/circle-check.png)                          |
+|Limit the number of people who can register        |![Image of a checkmark for yes](media/circle-check.png)                      |![Image of a checkmark for yes](media/circle-check.png)                         |
+|Require attendees to register|![Image of a checkmark for yes](media/circle-check.png)|![Image of a checkmark for yes](media/circle-check.png)|
+|Set up a green room for webinar presenters |![Image of a checkmark for yes](media/circle-check.png)|![Image of a checkmark for yes](media/circle-check.png) |
+|Turn on Q&A for webinars with up to 1,000 attendees |![Image of a checkmark for yes](media/circle-check.png) |![Image of a checkmark for yes](media/circle-check.png)|
+|View attendance reports|![Image of a checkmark for yes](media/circle-check.png)|![Image of a checkmark for yes](media/circle-check.png)|
+|External presenters|![Image of a checkmark for yes](media/circle-check.png)|![Image of a checkmark for yes](media/circle-check.png)|
+|Create a webinar wait list                         |                       |![Image of a checkmark for yes](media/circle-check.png)                          |
+|Limit the day and time when people can register    |                       |![Image of a checkmark for yes](media/circle-check.png)                         |
+|Manage attendees’ view                             |                       |![Image of a checkmark for yes](media/circle-check.png)                          |
+|Manually approve registrants                       |                       |![Image of a checkmark for yes](media/circle-check.png)                          |
+|Send reminder emails to registrants                |                       |![Image of a checkmark for yes](media/circle-check.png)                          |
+|Use RTMP-In for webinars                           |                       |![Image of a checkmark for yes](media/circle-check.png)                         |
+|Hide attendee names                          |                       |![Image of a checkmark for yes](media/circle-check.png)                         |
+|Manage what attendees see                          |                       |![Image of a checkmark for yes](media/circle-check.png)                         |
+|Custom meeting templates                         |                       |![Image of a checkmark for yes](media/circle-check.png)                         |
+|Admin created custom meeting backgrounds                         |                       |![Image of a checkmark for yes](media/circle-check.png)                         |
 
 ## Webinar control comparison
 
@@ -115,6 +115,7 @@ Teams admins and organizers have different policies and settings to control the 
 |[External presenters](https://support.microsoft.com/office/schedule-a-webinar-in-microsoft-teams-0719a9bd-07a0-47fd-8415-6c576860f36a)|No control.|Can invite presenters from outside  of your organization. External presenters have a unique join link to join the webinar without waiting in the lobby.|
 |[Green room](https://support.microsoft.com/office/green-room-for-teams-meetings-5b744652-789f-42da-ad56-78a68e8460d5)|No control.|Can choose if green room is used for a webinar.|
 |[Hide attendee names (Teams Premium)](hide-attendee-names.md) |Can control whether organizers with a Premium license can hide the names and photos of attendees from other attendees in the stage, roster, and chat. | Can hide attendee names during webinars to protect identities and privacy. |
+|[Join verification check](join-verification-check.md) | Can require human verification checks for anonymous users to join webinars in your org.|No control|
 |[Limit presenter role permissions](presenter-role-reduction.md) |Can limit presenter role permissions for the tenant. |No control.|
 |[Live translated transcription (Teams Premium)](meeting-transcription-captions.md) |Can control whether organizers with a Premium license can have live translated transcription for their webinars. |Can enable live translated transcription for themselves; attendees can always turn on live translated transcription. |
 |[Manage what attendees see (Teams Premium)](https://support.microsoft.com/office/manage-what-attendees-see-in-teams-meetings-19bfd690-8122-49f4-bc04-c2c5f69b4e16)|No control|Can decide whose avatars or video feeds to spotlight during a Teams meeting. Others are hidden from view.|

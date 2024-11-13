@@ -1,8 +1,8 @@
 ---
 ms.date: 05/01/2024
 title: Emergency numbers country reference
-author: CarolynRowe
-ms.author: crowe
+author: sfrancis206
+ms.author: scottfrancis
 manager: pamgreen
 ms.reviewer: pavellatif
 ms.topic: article

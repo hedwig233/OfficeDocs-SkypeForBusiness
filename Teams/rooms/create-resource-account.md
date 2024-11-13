@@ -1,5 +1,5 @@
 ---
-title: Create resource accounts for Teams Rooms and shared devices
+title: How to create and configure resource accounts for Teams Rooms and panels
 author: mstonysmith
 ms.author: tonysmit
 manager: pamgreen
@@ -23,7 +23,7 @@ ms.assetid: f09f4c2a-2608-473a-9a27-f94017d6e9dd
 description: Read this article for information on how to create resource accounts for Teams rooms and shared devices. These devices include Microsoft Teams Rooms, Teams panels, and Surface Hub.
 ---
 
-# How to create and configure resource accounts for Teams devices
+# How to create and configure resource accounts for Teams Rooms and panels
 
 This article provides steps to create resource accounts for shared spaces and devices, and it includes steps to configure resource accounts for Microsoft Teams Rooms on Windows, Teams Rooms on Android, & Teams panels.
 
@@ -89,6 +89,10 @@ Conditional access controls resource accounts for Teams devices. You may need to
 
 > [!NOTE]
 > Teams shared devices do not support Security defaults in Microsoft Entra ID. Use conditional access to secure your environment and Teams shared devices.
+
+### Resource Account Sign in Test
+
+Use this tool: [Teams Rooms sign in test](https://testconnectivity.microsoft.com/tests/TeamsMTRDeviceSignIn/input) to test that your Teams Rooms resource account is configured for successful sign on.
 
 ### Exchange Room Finder & Microsoft Places
 

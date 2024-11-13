@@ -77,6 +77,7 @@ The following table describes which actions we'll restrict for highly sensitive 
 |People dialing in can bypass the lobby|**Off**|Label|Yes|
 |Prevent copying chat content to clipboard|**On**|Label|Yes|
 |Record meetings automatically|**Off**|Template|Yes|
+|Require a verification check from|**Anonymous users and people from untrusted organizations**|Label or Template|Yes|
 |Who can bypass the lobby?|**Only organizers and co-organizers**|Label|Yes|
 |Who can present|**Only organizers and co-organizers**|Label|Yes|
 |Who can record|**Only organizers and co-organizers**|Template|No|

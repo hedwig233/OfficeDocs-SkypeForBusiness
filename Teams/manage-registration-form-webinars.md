@@ -18,7 +18,7 @@ appliesto:
 ---
 # Manage the registration form for webinars
 
-**APPLIES TO:** ✖️Meetings ✔️Webinars ✖️Town halls
+**APPLIES TO:** ![Image of a x for no](media/x-for-no.png) Meetings ![Image of a checkmark for yes](media/circle-check.png) Webinars ![Image of a x for no](media/x-for-no.png) Town halls
 
 ## Overview
 

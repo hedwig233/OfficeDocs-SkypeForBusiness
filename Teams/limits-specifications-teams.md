@@ -92,12 +92,13 @@ The following limitations also apply:
 Users who participate in conversations that are part of the chat list in Teams must have an Exchange Online (cloud-based) mailbox for an admin to search chat conversations. That's because conversations that are part of the chat list are stored in the cloud-based mailboxes of the chat participants. If a chat participant doesn't have an Exchange Online mailbox, the admin can't search or place a hold on chat conversations. For example, in an Exchange hybrid deployment, users with on-premises mailboxes might be able to participate in conversations that are part of the chat list in Teams. However, in this case, content from these conversations isn't searchable and can't be placed on hold because the users don't have cloud-based mailboxes. (For more, see [How Exchange and Microsoft Teams interact](exchange-teams-interact.md).)
 
 
-|Feature  | Maximum limit  |
-|---------|---------|
-|Number of people in a private chat<sup>1</sup>  | 250<sup>2</sup> |
-|Number of people in a video or audio call from chat | 20 |
-|Number of file attachments<sup>3</sup>  |10     |
-|Chat size | Approximately 28 KB per post<sup>4</sup> |
+|Feature                                             | Maximum limit                            |
+|----------------------------------------------------|------------------------------------------|
+|Number of people in a private chat<sup>1</sup>      | 250<sup>2</sup>                          |
+|Number of people in a video or audio call from chat | 20                                       |
+|Number of file attachments<sup>3</sup>              |10                                        |
+|File size limitation                                |100 MB                                    |
+|Chat size                                           | Approximately 28 KB per post<sup>4</sup> |
 
 <sup>1</sup> If you have more than 20 people in a chat, the following chat features are turned off: Outlook automatic replies and Teams status messages; typing indicator; video and audio calling; sharing; read receipts. The "Set Delivery Options" button (!) is also removed when private group chats contain more than 20 members.
 

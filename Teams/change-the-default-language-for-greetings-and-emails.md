@@ -1,7 +1,7 @@
 ---
 title: "Change the default language for greetings and emails"
-author: CarolynRowe
-ms.author: crowe
+author: sfrancis206
+ms.author: scottfrancis
 manager: pamgreen
 ms.reviewer: jenstr
 ms.date: 11/28/2017

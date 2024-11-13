@@ -1,7 +1,7 @@
 ---
 title: Plan your voice solution in Microsoft Teams
-author: CarolynRowe
-ms.author: crowe
+author: sfrancis206
+ms.author: scottfrancis
 manager: pamgreen
 ms.date: 08/03/2023
 ms.topic: article
@@ -15,7 +15,7 @@ ms.collection:
   - m365solution-scenario
   - highpri
   - Tier1
-ms.reviewer: crowe
+ms.reviewer: scottfrancis
 f1.keywords:
 - CSH
 ms.custom: 
@@ -98,7 +98,7 @@ This article introduces the following Teams Phone key features and functionality
 - [Cloud Voicemail](#cloud-voicemail)
 - [Calling identity](#calling-identity)
 
-![Diagram 3 shows Teams Phone contains Auto attendants and call queries, Cloud voicemail, and Calling identity.](media/phone-system-contains.png)
+  ![Diagram 3 shows Teams Phone contains Auto attendants and call queries, Cloud voicemail, and Calling identity.](media/phone-system-contains.png)
 
 For information about all Teams Phone features, and how to set up Teams Phone, see the following articles:
 

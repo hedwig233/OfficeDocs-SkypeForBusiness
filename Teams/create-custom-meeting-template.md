@@ -60,7 +60,7 @@ Once the template has been created, it may take up to 24 hours to be available t
 
 Note that if you change the options of an existing template, the changes affect new meetings scheduled using that template as well as any meetings that have already been scheduled with that template.
 
-#### Security
+### Security
 
 |Option|Description|
 |:------|:----------|
@@ -70,16 +70,17 @@ Note that if you change the options of an existing template, the changes affect 
 |End-to-end encryption|Specifies if the meeting uses end-to-end encryption. Recording and transcription don't work if this is on.|
 |Enable watermark for screenshare|Specifies if a watermark is overlaid on content that is shared on screen in the meeting.|
 |Enable watermark for video|Specifies if a watermark is overlaid on attendees' video feeds in the meeting.|
+|Require verification checks from|Controls whether anonymous users must complete a verification check to join meetings and webinars in your org.|
 |Restrict participants from copying or forwarding meeting chat messages|Prevents participants from copying or forwarding content in the meeting chat.|
 
-#### Audio & video
+### Audio & video
 
 |Option|Description|
 |:------|:----------|
 |Allow mic for attendees|When **On**, attendees can unmute.|
 |Allow camera for attendees|When **On**, attendees can turn on their cameras.|
 
-#### Recording & transcription
+### Recording & transcription
 
 |Option|Description|
 |:------|:----------|
@@ -87,13 +88,13 @@ Note that if you change the options of an existing template, the changes affect 
 |Who can record|Specifies whether meetings can be recorded by organizers and co-organizers only or by organizers, co-organizers, and presenters.|
 |Copilot|Specifies if Copilot uses a meeting transcript.|
 
-#### Roles
+### Roles
 
 |Option|Description|
 |:------|:----------|
 |Announce when people dialing in join or leave|Specifies if a sound is played when people calling in by phone join or leave the meeting.|
 
-#### Meeting engagement
+### Meeting engagement
 
 |Option|Description|
 |:------|:----------|

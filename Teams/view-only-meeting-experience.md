@@ -22,7 +22,7 @@ appliesto:
 
 # Teams view-only meeting experience
 
-**APPLIES TO:** ✔️Meetings ✖️Webinars ✖️Town halls
+**APPLIES TO:** ![Image of a checkmark for yes](media/circle-check.png) Meetings ![Image of a x for no](media/x-for-no.png) Webinars ![Image of a x for no](media/x-for-no.png) Town halls
 
 Microsoft Teams supports up to 10,000 attendees in a meeting. Once the main meeting reaches capacity at around 900 users, additional attendees join with a view-only experience. Attendees in the view-only experience can view the meeting, but have limited access to meeting features. Meeting organizers see notifications for the view-only experience when around 500 users are in the meeting.
 
@@ -31,6 +31,8 @@ Initial attendees who join before the meeting capacity enjoy the full meeting ex
 Attendees who join after the main meeting capacity is reached have a view-only experience. These attendees can join the view-only experience through desktop, web, and Teams mobile (Android and iOS).
 
 As an admin, you can assign this policy to your organizers. This policy allows attendees who join the meeting after the 900-user capacity is reached to have a view-only experience. If you turn off the view-only experience, the meeting is limited to the first 1,000 attendees.
+
+To learn how to monitor, scale, and optimize the distribution of video during view-only meetings, see [Enterprise content delivery networks for streaming Microsoft Teams events](streaming-ecdn-enterprise-content-delivery-network.md).
 
 ## Teams view-only experience controls
 

@@ -47,6 +47,9 @@ In addition, virtual machines must meet the minimum requirements listed here:
 |Settings |Turn on the **Show Notification Banners** setting in System > Notifications > Microsoft Teams to receive Teams Notifications. |
 |Exclude antivirus and DLP|Add new Teams to antivirus and DLP applications so Teams can start correctly. </br>Learn more: [Exclude antivirus and DLP applications from blocking Teams](/microsoftteams/troubleshoot/teams-administration/include-exclude-teams-from-antivirus-dlp)|
 
+> [!NOTE]
+> Support for Microsoft Teams and Microsoft 365 Apps is defined by the [Modern Lifecycle Policy](/lifecycle/policies/modern), which requires customers maintain an up-to-date configuration to stay supported. End-of-support dates for Windows Server 2019 and Windows Server 2022 are October 2025 and October 2026 respectively. For further information, please check [this link](https://go.microsoft.com/fwlink/?linkid=2274805).
+
 ## Virtualization provider requirements
 
 Currently, new Teams on VDI with audio/video (AV) optimization is certified with Azure Virtual Desktops, Windows 365, Citrix, and VMware.

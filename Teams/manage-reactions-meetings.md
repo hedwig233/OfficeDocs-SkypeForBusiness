@@ -25,7 +25,7 @@ description: Learn to manage meeting reactions in Teams meetings.
 
 # Manage reactions in Teams meetings and webinars
 
-**APPLIES TO:** ✔️Meetings ✔️Webinars ✖️Town halls
+**APPLIES TO:** ![Image of a checkmark for yes](media/circle-check.png) Meetings ![Image of a checkmark for yes](media/circle-check.png) Webinars ![Image of a x for no](media/x-for-no.png) Town halls
 
 ## Overview
 

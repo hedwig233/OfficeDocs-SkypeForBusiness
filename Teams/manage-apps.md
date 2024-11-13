@@ -8,7 +8,7 @@ ms.service: msteams
 ms.subservice: teams-apps
 ms.custom: intro-get-started
 audience: admin
-ms.date: 09/04/2024
+ms.date: 01/31/2024
 ms.collection: 
   - M365-collaboration
   - tier2
@@ -113,9 +113,8 @@ Use org-wide app settings to control whether users with an [F license](https://w
 
     :::image type="content" source="media/manage-apps-org-wide-app-settings.png" alt-text="Screenshot of the Org-wide app settings pane on the Manage apps page":::
 
-1. Under **Tailored apps**, turn off or turn on **Show tailored apps**. When this setting is on, users with an [F license](https://www.microsoft.com/microsoft-365/enterprise/frontline#office-SKUChooser-0dbn8nt) get the tailored frontline app experience. This experience pins the most relevant apps in Teams for frontline workers. To learn more, see [Tailor Teams apps for your frontline workers](pin-teams-apps-based-on-license.md).
+1. Under **Tailored apps**, turn off or turn on **Show tailored apps**. When this setting is on, users with an [F license](https://www.microsoft.com/microsoft-365/enterprise/frontline#office-SKUChooser-0dbn8nt) get the tailored frontline app experience. This experience pins the most relevant apps in Teams for frontline workers. To learn more, see [Tailor Teams apps for your frontline workers](pin-teams-apps-based-on-license.md). This feature is available for F licenses.
 
-    This feature is available for F licenses. Other license types will be supported in the future.
 1. Under **Third-party apps**, turn off or turn on these settings to control access to third-party apps in your organization:
 
     * **Allow third-party apps**: This setting controls whether users can use third-party apps. If you turn off this setting, your users can't add or use any third-party apps. App status of these apps shows as **Blocked org-wide**.
@@ -171,7 +170,7 @@ You may have queries about admin settings or configuration, user flows and app f
 * We don't provide direct customer support for Teams apps but we provide the following safeguards, health checks, and certification methods for apps:
 
   * We proactively check Teams apps for issues and inform the developer to update their app. Scenarios covered are related to app health, functional issues reported by users to Microsoft, security issues, and so on. For details, see [Microsoft enforcement actions for published apps](/microsoftteams/platform/concepts/deploy-and-publish/appsource/post-publish/overview#possible-enforcement-actions).
-  * For Publisher Attested and Microsoft 365 certified apps, Microsoft provides the [security and compliance information of apps](overview-of-app-certification.md).
+  * For Publisher Attested and Microsoft 365 certified apps, Microsoft offers [security and compliance information](overview-of-app-certification.md#microsoft-365-certification). If app developers consent, Microsoft provides admins with the option to [download the detailed evidence submitted by developers](overview-of-app-certification.md#microsoft-365-certification) during the certification audits for apps or Copilot agents.
   * Testing of all apps as part of its [app validation program](overview-of-app-validation.md) to ensure that all apps work as advertised. If apps don't work as suggested in the app listing, then we contact app developers to request either an update to the app. If app developers don't make the requested updates after a few reminders, we proactively remove the apps from Teams.
   * Certification to apps using [Microsoft 365 app compliance program](overview-of-app-certification.md) ensures that apps are compliant with the industry-standard frameworks.
 

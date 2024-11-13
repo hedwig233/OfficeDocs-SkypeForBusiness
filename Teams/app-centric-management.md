@@ -13,7 +13,7 @@ ms.collection:
   - M365-collaboration
   - Tier1
 search.appverid: MET150
-ms.date: 08/27/2024
+ms.date: 11/09/2024
 ms.reviewer: mhayrapetyan
 description: Manage access to Teams apps using app centric management.
 f1.keywords:
@@ -67,7 +67,7 @@ Previously, we automatically migrated organizations that weren't using any custo
 | Assisted          | Administrator | Org uses one or more custom policies    | Guided UI in admin center             |
 | Automatic         | Microsoft     | Org uses only the default global policy | Automatic, without admin intervention |
 
-We strongly recommend that you prepare for the migration and follow these steps to prepare:
+To migrate your organization, follow these steps:
 
 1. Log into Teams admin center and access Teams apps > [Permission policies](https://admin.teams.microsoft.com/policies/app-permission) page. Take inventory of the apps in the permission policies and identify the users and groups that the apps are allowed or blocked for. During the migration, you may have to manually edit the availability for some apps for the existing users and groups. For details, see step 5.
 
@@ -85,27 +85,27 @@ We strongly recommend that you prepare for the migration and follow these steps 
    * Available to specific users and groups: List of apps that are selectively allowed for at least one org user or a supported group.
    * Available to no one: List of apps that nobody in the org can use.
 
-1. In each tab, you can modify the app availability to one of the [three app availability types](#how-is-app-centric-management-different-than-permission-policy), as necessary. Edit availability option appears in **Available to specific users and groups** tab if the app availability isn't clear and admin input is needed to proceed. It is because the apps aren't present in the policies that you selected to migrate or have conflicting availability. You must assign such apps to before you can proceed.
+1. In each tab, you can modify the app availability to one of the [three app availability types](#how-is-app-centric-management-different-than-permission-policy), as necessary. Edit availability option appears in **Available to specific users and groups** tab if the app availability isn't clear and admin input is needed to proceed. Either the apps aren't present in the policies that you selected to migrate or selected policies contain conflicting availability. You must assign such apps to one of the availability types before you can proceed.
 
-    :::image type="content" source="media/acm-migration-availability.png" alt-text="Screenshot showing three tabs during migration that help you review and modify the app availability.":::
+    :::image type="content" source="media/acm-migration-availability.png" alt-text="Screenshot showing three tabs during migration that help you review and modify the app availability." lightbox="media/acm-migration-availability.png":::
 
    > [!TIP]
-   > If you see many apps in this tab, you likely have policies that have conflicting apps availability. For example, a policy that allows many apps and another policy that blocks the same apps. In such a scenario, we recommend that you uncheck the policy that leads to a conflict or you edit the availability in this tab.
+   > If you see many apps in this tab, you likely have policies that have conflicting apps availability. For example, a policy that allows an app and another policy that blocks the same app. In such a scenario, we recommend that you uncheck the policy that leads to a conflict or you edit the availability in this tab.
 
 1. You can validate the changes on a per-app or a per-user basis. Select a tab and type the name of the app or the user.
 
     :::image type="content" source="media/acm-verify-per-app.png" alt-text="Screenshot showing the option to verify available of for each user and users who receive a particular app."  lightbox="media/acm-verify-per-app-large.png":::
 
-1. On the final review UI, you can see the apps, their availability, and the Org-wide app settings that apply after the migration. You can download this information as a CSV file to evaluate further. For example, you can use the inventory mapping from Step 1 to ensure that the app availability is as intended. Once assured, select **Start migration** and follow the prompts.
+1. On the final review UI, you can see the apps, their availability, and the Org-wide app settings that apply after the migration. You can download this information as a CSV file to evaluate further. For example, you can use the inventory mapping from Step 1 to ensure that the app availability is as intended. Once assured, select **Start migration** and follow the prompts. Migration may take up to 24 hours to complete.
 
-    :::image type="content" source="media/acm-migration-review.png" alt-text="Screenshot showing the last UI to review all settings.":::
+    :::image type="content" source="media/acm-migration-review.png" alt-text="Screenshot showing the last UI to review all settings."  lightbox="media/acm-migration-review-large.png":::
 
-During migration, you can save a draft of the migration progress using the **Finish later** option. Also, you can cancel and delete the saved draft using the **Reset all changes** option.
+During migration, you can save a draft of the migration progress using the **Finish later** option. You can cancel the migration and delete the saved draft using the **Reset all changes** option.
 
 > [!NOTE]
-> The existing Manage apps UI gets disabled when you start the migration. If you aren't ready to proceed or want to make change to the exiting permission policies, open the wizard and select the Reset all changes option. You can restart the migration again.
+> While migrating, you can't make changes to app assignments. The existing UI gets disabled when you start the migration. If you aren't ready to proceed or want to make change to the exiting permission policies, open the migration wizard and select the Reset all changes option. You'll lose the progress and can restart the migration later.
 
-After migration, your blocked apps continue to remain unavailable to users. The statuses of such apps show as `unblocked` now, but the apps are assigned to `No one` in the `Available to` column on the Manage apps page. It means that org user can't use the app, just as you intended before.
+After migration, your blocked apps continue to remain unavailable to users. The statuses of such apps show as `unblocked` now, but the apps are assigned to `No one` in the `Available to` column on the Manage apps page. It means that org user can't use the app, just as you intended before. Users can view the apps in store and [request access to apps](user-requests-approve-apps.md).
 
 ## Add or modify app availability for users
 
@@ -119,7 +119,7 @@ To let users add and use an app, you must assign users or groups to an app. It t
 
 1. Select the required option from **Manage who can install this app** menu. When assigning users or groups, search for the user or the group from the **Search for users or groups** menu. Select **Apply**.
 
-    :::image type="content" source="media/acm-add-modify-access.png" alt-text="Screenshot showing how to define the app availability from the app details page.":::
+    :::image type="content" source="media/acm-add-modify-access.png" alt-text="Screenshot showing how to define the app availability from the app details page." lightbox="media/acm-add-modify-access.png":::
 
 1. To remove one or more users or groups from an app, select the rows and select **Remove**.
 

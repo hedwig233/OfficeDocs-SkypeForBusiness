@@ -22,7 +22,7 @@ description: Learn how admins can configure the meeting lobby in Microsoft Teams
 
 # IT Admins - Manage lobby options in Microsoft Teams
 
-**APPLIES TO:** ✔️Meetings ✔️Webinars ✖️Town halls
+**APPLIES TO:** ![Image of a checkmark for yes](media/circle-check.png) Meetings ![Image of a checkmark for yes](media/circle-check.png) Webinars ![Image of a x for no](media/x-for-no.png) Town halls
 
 The Teams meeting lobby prevents certain types of participants from joining a meeting until a meeting organizer, co-organizer, or presenter admits them. When a participant goes to the lobby, organizers, co-organizers, and presenters are notified and can choose to admit them to the meeting or not.
 
@@ -53,7 +53,7 @@ The following table shows the Teams meeting policies that affect how meeting par
 |:------|:----------|
 |**Anonymous users and dial-in callers can start a meeting**|This per-organizer policy allows for leaderless meetings. This setting controls whether anonymous participants and dial-in users can join the meeting without a verified participant in attendance. This setting only applies when **Who can bypass the lobby** is set to **Everyone**. If the **Anonymous users can join a meeting** organization-level setting or meeting policy is **Off**, this setting only applies to dial-in callers. By default, this setting is turned off to prevent anonymous users from misusing your meeting links. <br><br> While **Off**, anonymous participants and dial-in users wait in the lobby until a verified participant (including a dial-in organizer) joins the meeting, at which point they're automatically admitted. Once the meeting starts, anonymous participants and dial-in users join the call automatically, even if the organizer leaves. <br><br> If this setting is **On**, anonymous and dial-in participants can start and join the meeting without a verified participant present.|
 |**People dialing in can bypass the lobby**|This is a per-organizer policy. This setting controls whether people who dial in by phone join the meeting directly or wait in the lobby. When this setting is **Off**, dial-in users wait in the lobby until an organizer, co-organizer, or presenter joins the meeting and admits them. When this setting is **On**, dial-in users automatically join the meeting without going through the lobby. (If **Anonymous users and dial-in callers can start a meeting** is **Off**, they wait in the lobby until the meeting starts.) This policy sets a default that your organizers can change through their **Meeting options**.|
-|**Who can admit from lobby**| This per-organizer policy controls who can bring participants from the lobby into the meeting or webinar. When set to it's default value of **Organizers and presenters**, only organizers and presenters can admit participants into the meeting from the lobby. This policy sets a default that your organizers can change through their **Meeting options**.|
+|**Who can admit from lobby**| This per-organizer policy controls who can bring participants from the lobby into the meeting or webinar. When set to its default value of **Organizers and presenters**, only organizers and presenters can admit participants into the meeting from the lobby. This policy sets a default that your organizers can change through their **Meeting options**.|
 |**Who can bypass the lobby**|This is a per-organizer policy. This setting controls which types of participants (except participants dialing in by phone) join a meeting directly. This policy also controls which types of participants wait in the lobby until an organizer, co-organizer, or presenter admits them. This policy sets a default that your organizers can change through their **Meeting options**.|
 
 The following table shows how each option for the **Who can bypass the lobby** policy affects each *type of meeting participant*.
@@ -228,7 +228,7 @@ Set-CsTeamsEventsPolicy -Identity <policy name> -AutoAdmittedUsers Everyone
 
 #### Only allow people in my org, trusted orgs, and guests to bypass the lobby
 
-To only allow people in your org, trusted orgs, and guests to bypass to bypass the lobby in meetings and webinars created by organizers with this policy, use the following script:
+To only allow people in your org, trusted orgs, and guests to bypass the lobby in meetings and webinars created by organizers with this policy, use the following script:
 
 ```powershell
 Set-CsTeamsEventsPolicy -Identity <policy name> -AutoAdmittedUsers EveryoneInSameAndFederatedCompany 
@@ -236,7 +236,7 @@ Set-CsTeamsEventsPolicy -Identity <policy name> -AutoAdmittedUsers EveryoneInSam
 
 #### Only allow people in my org and guests to bypass the lobby
 
-To only allow people in your org and guests to bypass to bypass the lobby in meetings and webinars created by organizers with this policy, use the following script:
+To only allow people in your org and guests to bypass the lobby in meetings and webinars created by organizers with this policy, use the following script:
 
 ```powershell
 Set-CsTeamsEventsPolicy -Identity <policy name> -AutoAdmittedUsers EveryoneInCompany 

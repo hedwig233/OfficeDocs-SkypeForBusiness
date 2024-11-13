@@ -23,6 +23,9 @@ appliesto:
 
 # Teams meeting recording storage and permissions in OneDrive and SharePoint
 
+> [!NOTE]
+> When organizers turn off Microsoft 365 Copilot in Teams meetings and events, recording and transcription are also turned off. To learn more about Copilot, see [Manage Microsoft 365 Copilot in Teams meetings and events](copilot-teams-transcription.md).
+
 When users in your org record Teams meetings, the recording is stored in either OneDrive and SharePoint. Depending on where your users access the file, the recording plays on the video player in OneDrive or SharePoint. This article helps you, as an admin, understand recording storage and permissions for OneDrive and Sharepoint.
 
 To learn about your recording policies, see [Teams meeting recording](meeting-recording.md). To learn how to block the download of Teams meeting recording files from SharePoint or OneDrive, see [Block the download of Teams meeting recording files from SharePoint or OneDrive](block-download-meeting-recording.md).
@@ -31,7 +34,7 @@ To learn about your recording policies, see [Teams meeting recording](meeting-re
 
 ### Meetings and events
 
-For **meetings and events**, use the per-organizer **`-MeetingRecordingOwnership`** parameter within the PowerShell [**CsTeamsRecordingRolloutPolicy**](/powershell/module/teams/set-csteamsrecordingrolloutpolicy) cmdlet to decide if the recording is saved to the organizer's or recording initiator's OneDrive. This policy applies to the following meeting and event types:
+For **meetings and events**, you can use the per-organizer **`-MeetingRecordingOwnership`** parameter within the PowerShell [**CsTeamsRecordingRolloutPolicy**](/powershell/module/teams/set-csteamsrecordingrolloutpolicy) cmdlet to decide if the recording is saved to the organizer's or recording initiator's OneDrive. This policy applies to the following meeting and event types:
 
 - Automatically recorded meetings
 - Delegate-created meetings
@@ -108,7 +111,13 @@ The size of a one-hour recording is 400 MB. Make sure you understand the capacit
 
 ## Viewing permissions
 
-For **non-Channel meetings**, all meeting invitees, except for external participants, automatically get a personally shared link. The meeting organizer must explicitly add external participants to the shared list.
+For **non-Channel meetings**: 
+
+- All meeting invitees, except for external participants, automatically get a personally shared link. The meeting organizer must add external participants to the shared list.
+- If the meeting is forwarded, only participants who are automatically added to the meeting chat thread receive the recording link.
+- For optimal performance, the total number of users in a chat shouldn't exceed 1,000.
+- If a meeting is forwarded to a group, only some users are added to the chat. If forwarded to an individual user, they're added to the meeting chat unless there are more than 1,000 users in the chat. 
+- For **large meetings**, if a meeting has more than 250 participants, some particpants don't automatically have file permissions. Excluded participants should ask the recording owner to add them to the shared list.
 
 For **Channel meetings**, permissions are inherited from the owners and members list in the channel.
 

@@ -19,7 +19,7 @@ description: Learn about how IT Admins can set up, use, and manage Q&A in Q&A fo
 ---
 # Manage Q&A in Teams meetings and events
 
-**APPLIES TO:** ✔️Meetings ✔️Webinars ✔️Town halls
+**APPLIES TO:** ![Image of a checkmark for yes](media/circle-check.png) Meetings ![Image of a checkmark for yes](media/circle-check.png) Webinars ![Image of a checkmark for yes](media/circle-check.png) Town halls
 
 Q&A allows presenters, organizers, and co-organizers to take questions from attendees and answer them in real time. This feature is best suited for large, structured meetings and events– like town halls, webinars, all hands, and trainings. Town hall and webinar organizers and co-organizers can export the event's questions and answers to a CSV file.
 
@@ -33,7 +33,7 @@ To learn more about Q&A for your users, see [Q&A in Microsoft Teams meetings](ht
 ## Prerequisites
 
 - Verify that access to [Viva Engage’s IPs and URLs](/microsoft-365/enterprise/urls-and-ip-address-ranges) isn't blocked.
-  - If you have a GCC tenant, verify that your firewall isn't blocking access to GCC services hosted from <https://web.gov.yammer.com>.
+  - If you have a GCC tenant, verify that your firewall isn't blocking access to GCC services hosted from `https://web.gov.yammer.com` and `https://*.rt.gov.yammer.com`.
 - To allow users in your organization to add Q&A to Teams meetings and events, you must confirm that sign-ins for the Office 365 Viva Engage service are enabled in Microsoft Entra ID.
 Follow these steps to confirm that sign-ins are enabled:
   - Go to the **Microsoft Entra admin center** > **Identity** > **Applications** > **Enterprise Applications** > **Viva Engage** > **Properties**.

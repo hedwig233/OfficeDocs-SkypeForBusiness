@@ -75,3 +75,4 @@ The following Android operating systems that are supported on Teams Rooms on And
 |Android 12|October 4, 2021|August 15, 2027|August 15, 2029|
 |Android 13|August 15, 2022|August 15, 2027|August 15, 2029|
 |Android 14|October 4, 2023|October 4, 2028|October 4, 2030|
+|Android 15|October 15, 2024|October 15, 2029|October 15, 2031|

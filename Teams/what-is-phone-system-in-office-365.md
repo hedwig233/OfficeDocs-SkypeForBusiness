@@ -2,8 +2,8 @@
 title: "What is Teams Phone"
 ms.reviewer: roykuntz
 ms.date: 03/07/2024
-author: CarolynRowe
-ms.author: crowe
+author: sfrancis206
+ms.author: scottfrancis
 manager: pamgreen
 ms.topic: conceptual
 ms.tgt.pltfrm: cloud

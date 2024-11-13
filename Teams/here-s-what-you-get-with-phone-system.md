@@ -2,8 +2,8 @@
 title: "Teams Phone features"
 ms.reviewer: 
 ms.date: 08/15/2023
-author: CarolynRowe
-ms.author: crowe
+author: sfrancis206
+ms.author: scottfrancis
 manager: pamgreen
 msreviewer: jastarck, roykuntz
 ms.topic: conceptual

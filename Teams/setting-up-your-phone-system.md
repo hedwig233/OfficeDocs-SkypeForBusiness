@@ -1,7 +1,7 @@
 ---
 title: "Set up Teams Phone in your organization"
-author: CarolynRowe
-ms.author: crowe
+author: sfrancis206
+ms.author: scottfrancis
 manager: pamgreen
 ms.reviewer: roykuntz
 ms.date: 03/07/2024

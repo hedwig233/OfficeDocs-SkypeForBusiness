@@ -6,7 +6,7 @@ manager: jtremper
 ms.topic: article
 ms.service: msteams
 ms.reviewer: amitsri
-ms.date: 10/13/2023
+ms.date: 10/30/2024
 audience: admin
 description: Learn how to run classic Microsoft Teams in a Virtualized Desktop Infrastructure (VDI) environment.
 ms.localizationpriority: medium

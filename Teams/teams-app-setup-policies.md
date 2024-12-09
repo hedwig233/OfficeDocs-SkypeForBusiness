@@ -51,6 +51,7 @@ You can pin apps in the following UIs for the users:
 * **App bar**: Users can easily access it and use it.
 * **Message extension**: Users can quickly use it when composing their messages.
 * **Meeting extension**: Meeting attendees can view it without leaving the meeting and quickly collaborate using the app. The in-meeting bar displays only two apps and the rest of the apps, if added, display under the **More** option.
+* **Calling extension**: Users can access personal calling tab apps in a meeting side panel. 
 
 Apps that you pin to the app bar, show on the app bar on the left side of the Teams desktop client and at the bottom of the Teams mobile client.
 
@@ -78,8 +79,9 @@ To modify the pinned apps for everyone in your organization, edit the existing `
 
     :::image type="content" source="media/add-pinned-apps-trimmed.png" alt-text="Screenshot shows how to add pinned apps in app setup policy." lightbox="media/add-pinned-apps-large.png":::
 
-1. Arrange the apps in the order that you want the apps to appear in Teams client. You can change the sequence independently under **App bar**, **Messaging extensions**, and **Meeting extensions**. You can remove apps from a scope.
+1. Arrange the apps in the order that you want the apps to appear in Teams client. You can change the sequence independently under **App bar**, **Messaging extensions**, **Meeting extensions**, and **Calling extensions**. You can remove apps from a scope.
 
+   **Placeholder image**
    :::image type="content" source="media/pinned-apps.png" alt-text="Screenshot of the pinned apps and options to change their order.":::
 
 1. Select **Save**.

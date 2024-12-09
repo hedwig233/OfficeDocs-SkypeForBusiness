@@ -22,7 +22,7 @@ appliesto:
 
 # Teams view-only meeting experience
 
-**APPLIES TO:** ![Image of a checkmark for yes](media/circle-check.png) Meetings ![Image of a x for no](media/x-for-no.png) Webinars ![Image of a x for no](media/x-for-no.png) Town halls
+**APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Meetings ![Image of a x for no](/office/media/icons/cancel-teams.png)Webinars ![Image of a x for no](/office/media/icons/cancel-teams.png)Town halls
 
 Microsoft Teams supports up to 10,000 attendees in a meeting. Once the main meeting reaches capacity at around 900 users, additional attendees join with a view-only experience. Attendees in the view-only experience can view the meeting, but have limited access to meeting features. Meeting organizers see notifications for the view-only experience when around 500 users are in the meeting.
 

@@ -141,6 +141,7 @@ The following devices are Certified under the Microsoft Teams Rooms on Windows C
 | Yealink MVC320 | Core i5 | 8 GB | 128 GB |
 | Yealink MVC340 | Core i5 | 8 GB | 128 GB |
 | [Yealink MCore 3 Kit](https://www.yealink.com/en/product-detail/microsoft-teams-rooms-mvc640) | Core i5 | 8 GB | 128 GB |
+| Yealink MCore Kit Lite | Core i3 | 8 GB | 128 GB |
 | Yealink MVC S40 | Core i5 | 8 GB | 128 GB |
 | [Yealink MVC S60](https://www.yealink.com/en/product-detail/microsoft-teams-rooms-mvcs60) | Core i5 | 8 GB | 128 GB |
 | [Yealink MVC S90](https://www.yealink.com/en/product-detail/microsoft-teams-rooms-mvcs90) | Core i5 | 8 GB | 128 GB |
@@ -244,6 +245,7 @@ The following devices are certified under the Microsoft Teams Rooms peripherals 
 | Poly Studio E60 Camera | 1.0.4.0 |  |  |||
 | [Poly Studio R30](https://www.poly.com/us/en/products/video-conferencing/studio/studio-r30) | 2.0.0.001096 |  |  |||
 | Poly Studio V52 | 1.0.1-400045 |  |  |||
+| Poly Studio V72 | 1.4.5-424011 |  |  |||
 | [EPOS SP 220 MS](http://no-no.sennheiser.com/dual-speakerphones-sp-220-ms-uc) | 2.0.12.0 |  |  |||
 | [EPOS SP20](https://www.eposaudio.com/en/us/enterprise/products/sp-20-ml-142ee5ca-speakerphone-1000226) | 1.2.15 |  |  |||
 | [EPOS SP30](https://www.eposaudio.com/en/us/enterprise/products/sp-30-78c0cecc-bluetooth-speakerphone-1000223) | 2.1.52 |  |  |||
@@ -257,7 +259,7 @@ The following devices are certified under the Microsoft Teams Rooms peripherals 
 | [:::no-loc text="Jabra"::: 710](http://www.jabra.com/business/speakerphones/jabra-speak-series/jabra-speak-710) | 1.8.0 |  |  |||
 | [:::no-loc text="Jabra"::: 810](http://www.jabra.com/supportpages/jabra-speak-810) | 1.2.23 |  |  |||
 | [Yealink CP900](https://www.yealink.com/products_150.html) | 100.20.0.29 |  |  |||
-| Yealink Smartvision 40 | 286.410.0.20 |  |  |||
+| Yealink Smartvision 40 | 286.412.0.20 |  | &#x2714; |||
 | [Yealink SmartVision 60](https://www.yealink.com/en/product-detail/smartvision60) | 279.410.0.74 |  | &#x2714; |  | &#x2714; |
 | [Yealink UVC30](https://www.yealink.com/product/microsoft-teams-room-system-uvc30) | 105.420.0.11 | &#x2714; |  |||
 | [Yealink UVC34 All-in-one video bar](https://www.yealink.com/product/usb-videobar-uvc34) | 265.410.0.9 |  |  |||
@@ -270,8 +272,8 @@ The following devices are certified under the Microsoft Teams Rooms peripherals 
 |Shure Microflex Ecosystem<sup>1</sup>: [MXA910 Ceiling Array Microphone](https://www.shure.com/products/microphones/mxa910?variant=MXA910AL-60CM) or [MXA920 Ceiling Array Microphone](https://www.shure.com/products/microphones/mxa920?variant=MXA920W-S) or [MXA901 Conferencing Ceiling Array Microphone](https://www.shure.com/products/microphones/mxa901?variant=MXA901W-R) or [MXA902 Integrated Conferencing Ceiling Array](https://www.shure.com/products/microphones/mxa902?variant=MXA902W-S) or [MXA710 Linear Array Microphone](https://www.shure.com/products/microphones/mxa710?variant=MXA710AL-2FT%2520) or [MXA310 Table Array Microphone](https://www.shure.com/products/microphones/mxa310?variant=MXA310AL) + <br/>[Shure IntelliMix Room Software DSP](https://www.shure.com/products/software/intellimix_room) on Crestron UC-C100-T with :::no-loc text="ASUSTeK"::: Computer INC 9934 Compute or Dell OptiPlex7080XE or on Lenovo ThinkSmart Core + <br/>[Shure MXN5W-C Ceiling Speaker](https://www.shure.com/products/loudspeakers/mxn5?variant=MXN5W-C) | MXA910: FW 4.1, MXA920: FW 1.1.56, MXA901: FW 6.0.15.0, MXA902: FW 5.0.115, MXA710: FW 1.2.0, MXA310: FW 4.1, <br/>MXN5W-C: FW 1.0.4 |  |  |||
 | Shure MXW6X/C Cardioid Boundary Transmitter + <br/>Shure MXWAPXD2 Access Point Transceiver + <br/>Shure MXN5W-C Ceiling Speaker | MXW6X/C Transmitter:  1.1.0.236 <br/>MXWAPXD2: 1.1.0.236 <br/>MXN5W-C: 1.5.21.0 |  |  |||
 | [Sennheiser TeamConnect Intelligent Speaker/TC ISP (T-Rock)](https://en-us.sennheiser.com/tcisp) | 1.0.6 |  |  |  | &#x2714; |
-| [Sennheiser TC Bar M](https://www.sennheiser.com/tcbar-medium) | 0.9.17 |  |  |||
-| [Sennheiser TC Bar S](https://www.sennheiser.com/tcbar-small) | 0.9.17 |  |  |||
+| Sennheiser TC Bar M | 0.9.17 |  |  |||
+| Sennheiser TC Bar S | 0.9.17 |  |  |||
 | [Biamp Tesira Fore AVB VT4 Fixed audio DSP](https://www.biamp.com/products/tesira-fixed-audio-dsp)+ &Dagger;<br/>[Sennheiser TeamConnect Ceiling 2 Microphone](https://sennheiser.com/tcc2)+ &Dagger;<br/>[Tesira EX-UBT](https://www.biamp.com/products/tesira/tesira-expanders) &Dagger; | Biamp DSP: 3.12.0.15 <br/> TCC2: 1.3.3 <br/>EX-UBT: 3.12.0.15 |  |  |||
 | [Biamp Tesira FORTÉ AVB VT4 Audio DSP](https://www.biamp.com/products/tesira-fixed-audio-dsp)+<br/>[Biamp Parlé TCM-XA Ceiling Microphone](https://www.biamp.com/products/product-families/parle/parle-microphones)+<br/>Biamp Desono C-IC6 ceiling mounted loudspeaker | Audio FW version: 3.15 |  |  |||
 | [Biamp TesiraFORTE AVB VT4](https://www.biamp.com/products/tesira-fixed-audio-dsp)+ <br/>[Parle TTM-X(Table Mic)](https://www.biamp.com/products/product-families/parle/parle-microphones)+<br/>[Ex-UBT]() | Audio FW version: 3.15 |  |  |||

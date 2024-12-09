@@ -26,7 +26,7 @@ description: Learn how to set up webinars and manage who can schedule and attend
 
 # Manage who can schedule and attend webinars in Microsoft Teams
 
-**APPLIES TO:** ![Image of a x for no](media/x-for-no.png) Meetings ![Image of a checkmark for yes](media/circle-check.png) Webinars ![Image of a x for no](media/x-for-no.png) Town halls
+**APPLIES TO:** ![Image of a x for no](/office/media/icons/cancel-teams.png)Meetings ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Webinars ![Image of a x for no](/office/media/icons/cancel-teams.png)Town halls
 
 [!INCLUDE[Teams Premium](includes/teams-premium-ecm.md)]
 
@@ -34,12 +34,12 @@ description: Learn how to set up webinars and manage who can schedule and attend
 
 Microsoft Teams offers webinars, a two-way interactive virtual event. As an admin, you can set up and manage who can schedule webinars in your organization.
 
-For more information on how to plan for webinars in your org, see [Plan for Teams webinars](plan-webinars.md).
+For more information on how to plan for webinars in your organization, see [Plan for Teams webinars](plan-webinars.md).
 
 To learn more about the webinar experience for your users, see [Get Started with Teams webinars](https://support.microsoft.com/office/42f3f874-22dc-4289-b53f-bbc1a69013e3).
 
 > [!NOTE]
-> The webinar experience isn't available for Microsoft 365 GCC High or Microsoft 365 DoD.
+> The webinar experience isn't available for Microsoft 365 DoD.
 
 ## Manage who can schedule webinars
 
@@ -59,7 +59,7 @@ To manage who can schedule webinars through the Teams admin center, use the foll
 3. Under **Meetings**, select **Events Policies**.
 4. Either select an existing policy or create a new one.
 5. Toggle the **Webinars** setting **On** or **Off**.
-6. Select **Save**
+6. Select **Save**.
 
 ### Manage who can schedule webinars using PowerShell
 
@@ -89,8 +89,8 @@ You can use the Teams admin center or PowerShell to manage who can attend webina
 
 |Teams admin center value| PowerShell value|Behavior|
 |---------|---------------|---------------|
-|Everyone|Everyone| **This is the default value.** When organizers with his policy create webinars, any user can attend. |
-|Everyone in my organization excluding guests|EveryoneInCompanyExcludingGuests| When organizers with his policy create webinars, only users in your org can attend.|
+|Everyone|Everyone| **This is the default value.** When organizers with this policy create webinars, any user can attend. |
+|Everyone in my organization excluding guests|EveryoneInCompanyExcludingGuests| When organizers with this policy create webinars, only users in your org can attend.|
 
 ### Manage who can attend webinars using the Teams admin center
 
@@ -100,7 +100,7 @@ To manage who can attend webinars through the Teams admin center, use the follow
 2. Expand **Meetings** from the navigation pane.
 3. Under **Meetings**, select **Events Policies**.
 4. Either select an existing policy or create a new one.
-5. From the dropdown for the **Who can attend webinars** setting select either **Everyone** or **EveryoneInCompanyExcludingGuests**.
+5. From the dropdown for the **Who can attend webinars** setting, select either **Everyone** or **EveryoneInCompanyExcludingGuests**.
 6. Select **Save**
 
 ### Manage who can attend webinars using PowerShell

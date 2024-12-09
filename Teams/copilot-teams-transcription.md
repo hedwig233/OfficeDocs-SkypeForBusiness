@@ -28,7 +28,7 @@ description: Learn how to manage Microsoft 365 Copilot in Teams meetings and eve
 
 # Manage Microsoft 365 Copilot in Teams meetings and events
 
-**APPLIES TO:** ![Image of a checkmark for yes](media/circle-check.png) Meetings ![Image of a checkmark for yes](media/circle-check.png) Webinars ![Image of a checkmark for yes](media/circle-check.png) Town halls
+**APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Meetings ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Webinars ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Town halls
 
 Microsoft 365 Copilot in Teams meetings and events is an artificial intelligence (AI) tool that captures important conversation points. Each meeting and webinar participant with a Microsoft 365 Copilot license can ask prompts that are only visible to them. Participants and organizers can learn things like who said what and where people agree or disagree. Microsoft 365 Copilot in Teams can also recommend follow-up tasks, all in real time during a meeting. Organizers, co-organizers, and presenters can use Copilot during town hall events. As an admin, you can manage how users in your org use Copilot for Teams meetings and events.
 

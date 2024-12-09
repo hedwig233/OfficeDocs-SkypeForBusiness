@@ -62,8 +62,6 @@ The Proximity Join using ultrasound works by emitting an ultrasonic (19.5 kHz - 
 | -------- | -------- |
 |Crestron UC-2   |Teams on Windows (minimum version 24193.1805.3040.8975)|
 |Crestron MercuryX   |Teams on macOS (minimum version 24193.1707.3028.4282)   |
-|Lenovo Hub 500||
-|Lenovo ThinkSmart Audio G2||
 |Logi Tap||
 
 

@@ -161,8 +161,8 @@ This approach allows you to either use SDS to create groups for each class (reco
 
 After class groups are prepared, educators can convert their groups into teams:
 
-1. Select the Teams tab in Teams.
-2. At the top of the client, select the **Suggested classes** icon.
+1. Select the **Chat** tab in Teams.
+2. At the top of the Teams client, select the **Suggested classes** icon.
 
 #### Benefits of educator-led team creation
 

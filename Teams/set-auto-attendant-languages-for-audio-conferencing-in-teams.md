@@ -1,7 +1,7 @@
 ---
 title: Set Audio Conferencing auto attendant languages
-ms.author: jenz
-author: jenzamora
+ms.author: wlibebe
+author: wlibebe
 manager: pamgreen
 ms.reviewer: oscarr
 ms.date: 10/16/2024

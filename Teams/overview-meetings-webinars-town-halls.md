@@ -28,7 +28,7 @@ description: A guide for administrators to roll out and configure meetings, webi
 
 # Overview of meetings, webinars, and town halls
 
-**APPLIES TO:** ![Image of a checkmark for yes](media/circle-check.png) Meetings ![Image of a checkmark for yes](media/circle-check.png) Webinars ![Image of a checkmark for yes](media/circle-check.png) Town halls
+**APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Meetings ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Webinars ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Town halls
 
 There are multiple ways to meet in Microsoft Teams:
 
@@ -44,16 +44,16 @@ The following table shows the main features that are different between meetings,
 
 |Feature|Meetings|Webinars|Town halls|
 |:------|:-------|:-------|:---------|
-|Lobby|![Image of a checkmark for yes](media/circle-check.png)|![Image of a checkmark for yes](media/circle-check.png)|![Image of a x for no](media/x-for-no.png)|
-|Attendee mic and camera|![Image of a checkmark for yes](media/circle-check.png)|![Image of a checkmark for yes](media/circle-check.png)|![Image of a x for no](media/x-for-no.png)|
-|End-to-end encryption|Premium|![Image of a x for no](media/x-for-no.png)|![Image of a x for no](media/x-for-no.png)|
-|Watermarks|Premium|![Image of a x for no](media/x-for-no.png)|![Image of a x for no](media/x-for-no.png)|
-|Theme|Premium|![Image of a checkmark for yes](media/circle-check.png)|![Image of a checkmark for yes](media/circle-check.png)|
-|Registration|![Image of a x for no](media/x-for-no.png)|![Image of a checkmark for yes](media/circle-check.png)|![Image of a x for no](media/x-for-no.png)|
-|Breakout rooms|![Image of a checkmark for yes](media/circle-check.png)|![Image of a x for no](media/x-for-no.png)<sup>1</sup>|![Image of a x for no](media/x-for-no.png)|
-|Content sharing and interaction|![Image of a checkmark for yes](media/circle-check.png)|![Image of a checkmark for yes](media/circle-check.png)|Q&A only|
+|Lobby|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
+|Attendee mic and camera|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
+|End-to-end encryption|Premium|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
+|Watermarks|Premium|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
+|Theme|Premium|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
+|Registration|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
+|Breakout rooms|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)<sup>1</sup>|![Image of a x for no](/office/media/icons/cancel-teams.png)|
+|Content sharing and interaction|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|Q&A only|
 |Interactive participants|1,000 (Enterprise plans)<br>300 (Business plans)<br>900 (View-only mode)|1,000|Town halls: 10,000<br> Premium town halls: 20,000|
-|View-only participants|10,000<sup>2</sup> (Enterprise plans only)|![Image of a x for no](media/x-for-no.png)|![Image of a x for no](media/x-for-no.png)|
+|View-only participants|10,000<sup>2</sup> (Enterprise plans only)|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
 |Maximum total participants|10,900<sup>2</sup> (Enterprise plans only)|1,000|Town halls: 10,000<br> Premium town halls: 20,000|
 
 <sup>1</sup> Breakout rooms can be used if a webinar has fewer than 300 participants. However, if the number of participants increases to above 300, breakout rooms aren't supported.<br>

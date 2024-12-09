@@ -196,7 +196,7 @@ Introduced in this update:
 - Support for SIP/H323 dialing <sup>1</sup>  :::image type="icon" source="../media/mtr-pro-icon.png":::
 - Update to Windows 11 22H2 for eligible devices, and Windows 10 22H2 for all others
 - Choose your Together mode scene and select it for everyone :::image type="icon" source="../media/mtr-pro-icon.png":::
-- Net Promoter Score survey at the end of some meetings
+- Net Promoter Score survey at the end of some meetings. [Learn more](/microsoftteams/manage-feedback-policies-in-teams).
 - Simplified Device Registration Process for Microsoft Teams Rooms Pro Management Portal. To learn more, visit [Enrolling a device into Pro Management](./enroll-a-device.md). :::image type="icon" source="../media/mtr-pro-icon.png":::
 
 <sup>1</sup> Functionality is available through a CVI provider. Learn more at [Teams Rooms on Windows with SIP and H.323 devices](./meetings-with-sip-h323-devices.md).
@@ -751,6 +751,7 @@ Introduced in this update:
 
 |Release  |Release date  |
 |---------|---------|
+|[1449/1.0.96.2024110701](#144910962024110701-november-2024) | November 2024 |
 |[1449/1.0.96.2024101004](#144910962024101004-october-2024) | October 2024 |
 |[1449/1.0.96.2024091202](#144910962024091202-september-2024) | September 2024 |
 |[1449/1.0.96.2024080804](#144910962024080804-august-2024) | August 2024 |
@@ -783,6 +784,21 @@ Introduced in this update:
 
 Features with :::image type="icon" source="../media/mtr-pro-icon.png"::: are only available with Teams Rooms Pro license.
 
+### 1449/1.0.96.2024110701 (November 2024)
+
+Introduced in this update: 
+
+
+- **Dual display mode and swap screens admin controls<sup>1</sup>** :::image type="icon" source="../media/mtr-pro-icon.png":::. IT admins can deliberately configure Teams Rooms on Android devices to run in dual display mode. Admins can also switch the screens of dual display rooms using the swap screens setting, easily correcting front-of-room displays that were set up invertedly. Both controls are accessible from the device settings and Teams Admin Center.
+- **3x3 video gallery on dual displays<sup>2</sup>** :::image type="icon" source="../media/mtr-pro-icon.png":::. Dual display rooms can now show up to 18 participant videos (3x3 on each screen) when no content is being shared during meetings.  
+- **Receive Cloud IntelliFrame** :::image type="icon" source="../media/mtr-pro-icon.png":::. Cloud IntelliFrame enhances non-AI cameras, showing in-room participants in individual frames like remote attendees for a more natural, engaging experience. Teams Rooms on Android can now receive Cloud IntelliFrame video feeds, bringing uniformity across Windows and Android devices. [Learn more](/microsoftteams/devices/cloud-intelliframe). 
+- **Whiteboard enhancements**. When using the whiteboard outside of meetings, your content is retained even when a meeting begins. The whiteboard's contents are preserved and shared with remote participants instantly. You can also use the 'Follow me' function to guide participants as you navigate, and collaborative cursors let you see everyone working in real-time.   
+- **Net Promoter Score (NPS) survey**. Users can rate how likely they are to recommend Microsoft Teams Rooms from 1 to 5 and provide additional comments on NPS surveys delivered on Teams Rooms on Android devices. NPS surveys will show up periodically after meetings end. IT admins can manage policies and allow or prevent room accounts from getting NPS surveys using PowerShell. [Learn more](/microsoftteams/manage-feedback-policies-in-teams).
+- **Admin email support for Report a problem**. IT admins can designate an email address for receiving 'Report a problem' submissions from Teams Rooms on Android devices. The email address can be set from the device settings. 
+
+<sup>1</sup> The swap screens setting will only be available on devices with the proper firmware support. If you don’t see the setting on your device, contact the device manufacturer for firmware support timelines.   
+<sup>2</sup> Due to device capability requirements and performance implications, 3x3 video gallery support for dual displays is available on the following Teams Rooms on Android devices: Yealink MeetingBar A40, Poly Studio X52, and Poly Studio G62. 
+
 ### 1449/1.0.96.2024101004 (October 2024)
 
 Resolved issues:
@@ -806,7 +822,7 @@ Resolved issues:
 
 Introduced in this update:
 
-- **Custom backgrounds<sup>1</sup>**:::image type="icon" source="../media/mtr-pro-icon.png":::. IT admins can upload custom background images on the Teams admin center to reinforce their company brand on their Teams Rooms on Android devices. The main room display, extended room display, and touch console can each have their own specific background image. PNG, JPG, and JPEG formats are supported. This feature is only available with the Teams Rooms Pro license. [Learn more](/microsoftteams/rooms/custom-backgrounds-android).
+- **Custom backgrounds <sup>1</sup>** :::image type="icon" source="../media/mtr-pro-icon.png":::. IT admins can upload custom background images on the Teams admin center to reinforce their company brand on their Teams Rooms on Android devices. The main room display, extended room display, and touch console can each have their own specific background image. PNG, JPG, and JPEG formats are supported. This feature is only available with the Teams Rooms Pro license. [Learn more](/microsoftteams/rooms/custom-backgrounds-android).
 - **Join Zoom meetings with an ID and passcode**. Users can now join Zoom meetings with an ID and a passcode on Teams Rooms on Android. Rooms must be configured to enable Direct Guest Join meetings. [Learn more](/microsoftteams/rooms/third-party-join).
 
 Resolved issues:
@@ -819,7 +835,7 @@ Resolved issues:
 - Participant video gets reframed from fit-to-frame to fill-frame intermittently on Cisco devices.
 - Various meeting and call reliability issues.
 
-<sup>1</sup>Custom backgrounds support on Neat Teams rooms devices require firmware version NFC1.20240924.0005 or greater for the compute and NFA1.20240924.0507 or greater for touch controller. 
+<sup>1</sup> Custom backgrounds support on Neat Teams rooms devices require firmware version NFC1.20240924.0005 or greater for the compute and NFA1.20240924.0507 or greater for touch controller. 
 
 ### 1449/1.0.96.2024061103 (June 2024)
 

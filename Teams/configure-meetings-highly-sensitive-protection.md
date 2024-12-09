@@ -6,7 +6,7 @@ manager: pamgreen
 ms.topic: article
 ms.service: msteams
 ms.reviewer: vivek.mohan
-ms.date: 12/11/2023
+ms.date: 11/14/2024
 audience: admin
 ms.localizationpriority: medium
 f1.keywords:
@@ -25,17 +25,17 @@ description: Learn how to configure Teams meetings for protection for highly sen
 
 [!INCLUDE[Teams Premium ECM](includes/teams-premium-ecm.md)]
 
-For the *highly sensitive* level of protection, we'll look at two different scenarios:
+For the *highly sensitive* level of protection, let's look at two different scenarios:
 
-- Highly sensitive meetings where attendees participate and interact with the presenters
-- Highly sensitive presentations where attendees don't interact and are just viewing the presentation
+- Highly sensitive meetings where attendees participate and interact with the presenters.
+- Highly sensitive presentations where attendees don't interact and are just viewing the presentation.
 
 > [!NOTE]
 > Meeting options in sensitivity labels and custom meeting templates require Teams Premium.
 
 ## Highly sensitive meetings
 
-For highly sensitive meetings, we'll restrict who can bypass the lobby, who can present, when participants can chat, and we'll block copying from the meeting chat. We'll also enable end-to-end encryption and watermarking for shared video and content.
+For highly sensitive meetings, we restrict **Who can bypass the lobby,** **Who can present**, when participants can chat, and we'll block copying from the meeting chat. We'll also enable end-to-end encryption and watermarking for shared video and content.
 
 The following table describes which actions we'll restrict for highly sensitive meetings and where those options are configured.
 

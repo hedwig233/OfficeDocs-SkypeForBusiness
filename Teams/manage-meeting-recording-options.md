@@ -37,7 +37,7 @@ The following table shows the features available to help you manage meeting reco
 |Meeting recording overall|Yes|No|No|No|
 |Privacy and Security URL|Yes|No|No|No|
 |Record and transcribe automatically|No|Yes|Yes|Yes|
-|Recording expiration|Yes|No|No|No|
+|Recordings and transcripts expiration|Yes|No|No|No|
 |Transcription|Yes|No|No|Yes|
 |Require participant agreement for recording|Yes|No|No|No|
 |Who can record and transcribe|No|Yes|Yes|Yes|
@@ -81,16 +81,16 @@ If all of a particular type of meeting must be recorded (for example, all sensit
 
 For details on managing this option with meeting templates, see [IT admins - Create a custom meeting template in Microsoft Teams](create-custom-meeting-template.md#recording--transcription).
 
-## Recording lifecycle
+## Recording and transcription lifecycle
 
-By default, meeting recordings are deleted after 120 days. The following policies in the Teams admin center manage the recording lifecycle:
+By default, meeting recordings and transcripts are deleted after 120 days. The following policies in the Teams admin center manage the recording lifecycle:
 
-- **Recordings automatically expire** determines if meeting recordings are automatically deleted after a specified time.
-- **Default expiration time** specifies the number of days after which recordings are deleted. The default is 120.
+- **Recordings automatically expire** determines if meeting recordings and transcripts are automatically deleted after a specified time.
+- **Default expiration time** specifies the number of days after which recordings and transcripts are deleted. The default is 120.
 
 When a meeting participant records a meeting, the recording is stored in the organizer's OneDrive. Channel meetings are stored in the SharePoint site associated with the channel. Because meeting recordings are .mp4 files, they can be moved or deleted like any other file. If a meeting recording is moved from its original location, the expiration setting no longer affects it. For details, see [Teams meeting recording storage and permissions in OneDrive and SharePoint](tmr-meeting-recording-change.md).
 
-The expiration feature removes old recordings to save storage space, but doesn't enforce compliance requirements. If you have meeting recording retention and deletion compliance requirements, consider storing them in a SharePoint library where you can apply [Microsoft Purview retention policies](/microsoft-365/compliance/retention).
+The expiration feature removes old recordings and transcripts to save storage space, but doesn't enforce compliance requirements. If you have meeting recording retention and deletion compliance requirements, consider storing them in a SharePoint library where you can apply [Microsoft Purview retention policies](/microsoft-365/compliance/retention).
 
 ## Transcription
 

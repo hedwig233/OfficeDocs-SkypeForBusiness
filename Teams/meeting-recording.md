@@ -28,9 +28,9 @@ description: Learn how to deploy features in Teams meetings to record audio, vid
 > [!NOTE]
 > When organizers turn off Microsoft 365 Copilot in Teams meetings and events, recording and transcription are also turned off. To learn more about Copilot, see [Manage Microsoft 365 Copilot in Teams meetings and events](copilot-teams-transcription.md).
 
-**APPLIES TO:** ✔️Meetings ✔️Webinars ✔️Town halls
+**APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Meetings ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Webinars ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Town halls
 
-In Microsoft Teams, your users can record their Teams meetings, webinars, and town halls to capture audio, video, and screen sharing activity. This type of recording is called [convenience recording](teams-recording-policy.md#compliance-vs-convenience-recording). The recording happens in Microsoft 365 and is saved to OneDrive or SharePoint, which must be enabled for the user. For details on OneDrive and SharePoint recording storage, see [Use OneDrive and SharePoint for meeting recordings](tmr-meeting-recording-change.md).
+In Microsoft Teams, your users can record their Teams meetings, webinars, and town halls to capture audio, video, and screen sharing activity. This type of recording is called [convenience recording](teams-recording-policy.md). The recording happens in Microsoft 365 and is saved to OneDrive or SharePoint, which must be enabled for the user. For details on OneDrive and SharePoint recording storage, see [Use OneDrive and SharePoint for meeting recordings](tmr-meeting-recording-change.md).
 
 To learn about recording for live events, see [Live event recording policies in Teams](teams-live-events/live-events-recording-policies.md).
 
@@ -56,7 +56,7 @@ As an admin, you can manage the following recording policies:
 - [Allow or prevent users from recording meetings](#allow-or-prevent-users-from-recording-meetings)
 - [Require participant agreement for recording and transcription](#require-participant-agreement-for-recording-and-transcription)
 - [Block or allow download of channel meeting recordings](#block-or-allow-download-of-channel-meeting-recordings)
-- [Recording expiration](#recording-expiration)
+- [Expiration policy](#expiration-policy)
 - [Set a custom privacy policy URL](#set-a-custom-privacy-policy-url)
 - [Meeting recording diagnostic tools](#meeting-recording-diagnostic-tools)
 
@@ -187,25 +187,25 @@ The two values for this setting are:
 - **Allow** - Saves channel meeting recordings to a 'Recordings' folder in the channel. The permissions on the recording files are based off the channel's SharePoint permissions. This is the same as any other file uploaded for the channel. This is the default setting.
 - **Block** - Saves channel meeting recordings to a 'RecordingsOnly' folder in the channel. Channel owners have full rights on the recordings in this folder, but channel members have read access without ability to download.
 
-## Recording expiration
+## Expiration policy
 
 ### Recordings automatically expire
 
-This setting allows you to reduce the number of storage older recordings use. OneDrive and SharePoint monitor the expiration setting on all meeting recordings and automatically move recordings to the recycle bin on their expiration date.
+This setting allows you to manage storage by reducing the space that older recordings and transcripts use. OneDrive and SharePoint automatically monitor the expiration settings for all recordings and transcripts, moving them to the recycle bin once they reach their expiration date.
 
 You can turn off the **Meetings automatically expire** setting in the [Teams admin center](https://go.microsoft.com/fwlink/p/?linkid=2066851) under **Meetings** > **Meeting policies** > **Recording & transcription**.
 
 ### Default expiration time
 
-This setting controls whether meeting recordings automatically expire. After turning on **Meetings automatically expire**, you'll get the option to set the **Default expiration time**, measured in days. Meeting recordings have a default expiration time of 120 days.
+This setting controls whether recordings or transcripts automatically expire. After turning on **Recordings automatically expire**, you'll get the option to set the **Default expiration time**, measured in days. Meeting recordings and transcripts have a default expiration time of 120 days.
 
-Any changes to this setting only affect newly created meeting recordings, not existing recordings. Admins can't change the expiration time on existing meeting recordings.
+Any changes to this setting only affect newly created recordings and transcripts. You can't change the expiration time on existing meeting recordings and transcripts.
 
-The expiration value is an integer for days that can be set as follows:
+The expiration value is an integer for days that you can set as follows:
 
 - Minimum value: 1
 - Maximum value: 99999
-- -1 (PowerShell only) so the recordings never expire
+- -1 (PowerShell only) so the recordings and transcripts never expire
 
 > [!NOTE]
 > The maximum default expiration time for A1 users is 30 days.

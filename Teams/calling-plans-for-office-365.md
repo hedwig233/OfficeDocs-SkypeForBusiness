@@ -136,21 +136,17 @@ There are two ways you can fund and use minutes with a Pay-As-You-Go Calling Pla
   - This option is for customers who didn't purchase their calling plan through the new commerce experience (NCE). These customers need to purchase Communication Credits to fund their Pay-As-You-Go Calling Plan.
   - For instructions on how to purchase and assign Communication Credits, see [Set up Communication Credits for your organization](set-up-communications-credits-for-your-organization.md).
 
-
 ## Pricing information
 
 - [Pricing for Calling Plans and Teams Phone](https://www.microsoft.com/microsoft-365/microsoft-teams/voice-calling).
 
-
-## Related content 
+## Related content
 
 For more information, see the following articles:
 
 - [Set up Calling Plans](set-up-calling-plans.md)
 - [Microsoft Teams add-on licensing](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
-- [Add funds and manage Communications Credits](add-funds-and-manage-communications-credits.md)
 - [Plan your voice solution](cloud-voice-landing-page.md)
 - [PSTN connectivity options](pstn-connectivity.md)
 
 When signed in to the Teams admin center, see the [Plan and Implement your Microsoft Teams Phone Deployment Guide](https://go.microsoft.com/fwlink/?linkid=2224790). This guide customizes your experience based on your environment. To review best practices without signing in and activating automated setup features, see the [Microsoft 365 setup portal](https://go.microsoft.com/fwlink/?linkid=2222974).
-

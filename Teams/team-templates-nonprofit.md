@@ -54,7 +54,7 @@ Here's the channels and apps that come with the Manage Volunteers team template.
 
 It takes only a few quick steps to create a team from the Manage volunteers template.
 
-1. In Teams, go to **Teams** > **Join or create a team** > **Create team**.
+1. In Teams, go to **Chat** > **New team** > **Create**.
 2. Choose the **Manage volunteers** team template.
 3. Choose a privacy level:
     - **Private**: People need permission from the team owner to join the team.

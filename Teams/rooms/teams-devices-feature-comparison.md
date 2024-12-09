@@ -79,15 +79,15 @@ To help guide you as to what features are available on different platforms, you 
 | | Intelligent content capture (content camera) | Available | Available |
 | | Meeting Lock | Available | Available |
 | | Automatically disconnect if room is the only participant 5 minutes after meeting time ends | Available | Available |
-| | Cloud IntelliFrame | Available | Not available |
-| | Multi-stream IntelliFrame | Available | Not available |
+| | Send Cloud IntelliFrame | Available | Not available |
+| | Send Multi-stream IntelliFrame | Available | Not available |
 | | Spatial Audio | Available | Not available |
 | | People Recognition  | Available | Not available |
 | | Intelligent Speaker | Available | Not available |
 | | Room Capacity Notifications | Available | Available |
 | | User accessible device language change | Available | Not available |
 | | Rate my call report | Available | Not available |
-| | Net promoter score (NPS) at meeting end| Available | Not available |
+| | Net promoter score (NPS) at meeting end| Available | Available |
 | | Meeting controls on touch enabled front of room displays | Not available | Available |
 | | Smart Camera Controls | Available | Available |
 | | Local pan tilt zoom (PTZ) controls | Not available | Not available |
@@ -212,8 +212,8 @@ To help guide you as to what features are available on different platforms, you 
 | | Intelligent content capture (content camera) | Available | Available |
 | | Meeting Lock | Available | Available |
 | | Automatically disconnect if room is the only participant 5 minutes after meeting time ends | Available | Available |
-| | Cloud IntelliFrame | Not available | Not available |
-| | Multi-stream IntelliFrame | Available | Not available |
+| | Send Cloud IntelliFrame | Not available | Not available |
+| | Send Multi-stream IntelliFrame | Available | Not available |
 | | Spatial Audio | Available | Not available |
 | | People Recognition | Not available | Not available |
 | | Intelligent Speaker| Not available | Not available |
@@ -343,8 +343,8 @@ To help guide you as to what features are available on different platforms, you 
 | | Intelligent content capture (content camera) | Available | Available |
 | | Meeting Lock | Available | Available |
 | | Automatically disconnect if room is the only participant 5 minutes after meeting time ends | Available | Available |
-| | Cloud IntelliFrame | Not available | Not available |
-| | Multi-stream IntelliFrame | Not available | Not available |
+| | Send Cloud IntelliFrame | Not available | Not available |
+| | Send Multi-stream IntelliFrame | Not available | Not available |
 | | Spatial Audio | Available | Not available |
 | | People Recognition | Not available | Not available |
 | | Intelligent Speaker | Not available | Not available |

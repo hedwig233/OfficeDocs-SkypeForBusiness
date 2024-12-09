@@ -47,6 +47,8 @@ To update the URL, follow these steps:
 
    :::image type="content" source="media/manage-channel-option.png" alt-text="Screenshot showing the manage channel option in Teams.":::
 
+   :::image type="content" source="media/manage-channel-option2.png" alt-text="Screenshot showing the configured section for the existing connector connections in a team.":::
+
 1. Update only those connections that display `Attention required` under the **Manage** option.
 
    :::image type="content" source="media/connectors-attention-required.png" alt-text="Screenshot showing the configured connections in a Teams channel that need attention.":::

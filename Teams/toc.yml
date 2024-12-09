@@ -121,7 +121,7 @@ items:
                   href: teams-classic-client-end-of-availability.md
                 - name: Manually uninstall classic Teams client
                   href: teams-classic-client-uninstall.md
-                - name: Classic Teams uninstillation script
+                - name: Classic Teams uninstallation script
                   href: teams-client-uninstall-script.md
                 - name: Feature differences between desktop and Teams for Web
                   href: new-teams-desktop-client-features.md
@@ -335,8 +335,12 @@ items:
           href: /microsoft-365/compliance/information-barriers-teams-shared-channels?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json
         - name: Legal hold
           href: /microsoft-365/compliance/ediscovery-teams-legal-hold?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json
-        - name: Third party compliance recording
-          href: teams-recording-policy.md
+        - name: Recording
+          items:
+            - name: Introduction to Teams recording
+              href: teams-recording-policy.md
+            - name: Third party compliance recording
+              href: teams-recording-compliance.md
         - name: Retention policies
           href: retention-policies.md        
         - name: Sensitivity labels
@@ -1301,8 +1305,8 @@ items:
               href: what-are-communications-credits.md
             - name: Set up Communications Credits for your organization
               href: set-up-communications-credits-for-your-organization.md
-            - name: Add funds and manage Communications Credits
-              href: add-funds-and-manage-communications-credits.md
+            - name: Turn off Communication Credits auto recharge
+              href: turn-off-communication-credits-auto-recharge-mca-customers.md
         - name: Emergency numbers country reference
           href: emergency-numbers-reference.md
         - name: Microsoft Teams call flows
@@ -1673,6 +1677,27 @@ items:
         - name: Hot desking Teams displays
           href: devices/hot-desking-teams-displays.md
 
+- name: AI, Copilot, and agents in Teams
+  items:
+    - name: AI features in Teams
+      items:
+      - name: Manage transcriptions and captions for Teams meetings
+        href: meeting-transcription-captions.md
+      - name: Manage voice isolation for calls and meetings
+        href: voice-isolation.md
+      - name: Set up AI recommendations for educators
+        href: institution-settings.md
+    - name: Copilot in Teams
+      items:
+        - name: Manage Copilot in Teams meetings and events
+          href: copilot-teams-transcription.md
+        - name: Teams Rooms and Copilot overview
+          href: rooms/copilot-admin-mtr.md
+    - name: Agents for Teams
+      items:
+        - name: Set up Facilitator for AI notes
+          href: facilitator-teams.md
+
 - name: Manage apps in Teams
   items: 
     - name: Understand apps in Teams
@@ -1691,6 +1716,8 @@ items:
           href: manage-lists-app.md
         - name: Manage the Planner app
           href: manage-planner-app.md
+        - name: Manage app-powered tasks in the Planner app
+          href: app-powered-tasks-in-planner.md
         - name: Manage the Praise app
           href: manage-praise-app.md
         - name: Manage the Approvals app
@@ -1707,6 +1734,8 @@ items:
           href: manage-virtual-appointments-app.md
         - name: Manage the Walkie Talkie app
           href: walkie-talkie.md
+        - name: Troubleshoot Walkie Talkie issues
+          href: walkie-talkie-troubleshoot.md
     - name: Manage partner apps
       items:
         - name: Understand partner apps
@@ -1739,15 +1768,15 @@ items:
       items:
         - name: Overview of app management
           href: manage-apps.md
-        - name: Policies for app access and rollout
-          items: 
+        - name: Policies to access and install apps
+          items:
           - name: Understand app policies
             href: app-policies.md
-          - name: Manage app permission policies
+          - name: Manage permission policies for availability
             href: teams-app-permission-policies.md
-          - name: Manage app setup policies
+          - name: Manage setup policies for installation
             href: teams-app-setup-policies.md
-        - name: Use or migrate to app centric management
+        - name: Use app centric management
           href: app-centric-management.md
         - name: Preinstall apps for users
           href: install-teams-apps.md
@@ -1855,8 +1884,6 @@ items:
       items: 
         - name: Get started with Teams for healthcare organizations
           href: /microsoft-365/frontline/teams-in-hc?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json            
-        - name: Policy packages for healthcare
-          href: policy-packages-healthcare.md
         - name: Use healthcare team templates
           href: expand-teams-across-your-org/healthcare/healthcare-templates-admin-console.md
     - name: Teams for Nonprofit

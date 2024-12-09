@@ -8,7 +8,7 @@ ms.service: msteams
 ms.subservice: teams-apps
 ms.custom: intro-get-started
 audience: admin
-ms.date: 01/31/2024
+ms.date: 11/12/2024
 ms.collection: 
   - M365-collaboration
   - tier2
@@ -24,13 +24,17 @@ ms.localizationpriority: high
 ---
 # Overview of app management and governance in Teams admin center
 
-In the Teams admin center, we provide a few dedicated pages to manage your apps with granularity and complete control. You manage apps for your organization in the **Manage apps** page in the Teams admin center portal. Use the URL [https://admin.teams.microsoft.com/policies/manage-apps](https://admin.teams.microsoft.com/policies/manage-apps) to view and govern all Teams apps that are available in your organization's app catalog, define access to apps using policies, cater to prominent use cases for app management, and more.
+In the Teams admin center, we provide a few dedicated pages and UIs to manage your apps. You manage apps for your organization in the **Manage apps** page in the Teams admin center portal. Use the URL [https://admin.teams.microsoft.com/policies/manage-apps](https://admin.teams.microsoft.com/policies/manage-apps) to view and govern the apps that are available in your organization's app catalog, evaluate apps before allowing those and find support information, manage availability of apps across your org on a per-user or per-app basis, and do more.
 
-:::image type="content" source="media/manage-apps.png" alt-text="Screenshot showing the Manage apps page in Teams admin center." lightbox="media/manage-apps.png":::
+:::image type="content" source="media/manage-apps-policy-org.png" alt-text="Screenshot showing the Manage apps page in Teams admin center." lightbox="media/manage-apps-policy-org.png":::
 
-To use Teams admin center, you must have a Teams Administrator role. For details, see [Teams administrator roles](./using-admin-roles.md) and [Microsoft 365 administrator roles](/microsoft-365/admin/add-users/about-admin-roles). Some admins with a higher privilege role can accomplish app governance tasks but we recommend using the lower privilege role when possible.
+If your organization uses [app centric management](app-centric-management.md) (whether migrated automatically or manually), you see a slightly different Manage Apps UI.
 
-App developers [extend Microsoft 365 Copilot](/microsoft-365-copilot/extensibility/) by creating Copilot agents, for example, Microsoft Teams message extension or a Power Platform connector. These Copilot agents increase user productivity across daily tasks and workflows. Admins manage Copilot agents in the [Integrated apps page](/microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps) of the Microsoft 365 admin center.
+:::image type="content" source="media/manage-apps-acm-org.png" alt-text="Screenshot showing the Manage apps page in Teams admin center after migration to app centric management." lightbox="media/manage-apps-acm-org.png":::
+
+To use Teams admin center, you must have a Teams Administrator role. Some admins with a higher privilege role can accomplish app governance tasks but we recommend using the lower privilege role where possible. For details, see [Teams administrator roles](./using-admin-roles.md) and [Microsoft 365 administrator roles](/microsoft-365/admin/add-users/about-admin-roles).
+
+App developers [extend Microsoft 365 Copilot](/microsoft-365-copilot/extensibility/) by creating copilot agents, for example, Microsoft Teams message extension or a Power Platform connector. These copilot agents increase user productivity across daily tasks and workflows. Admins manage copilot agents in the [Integrated apps page](/microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps) of the Microsoft 365 admin center.
 
 > [!NOTE]
 > You can only view and manage apps that are deployed in the same release channel as your tenant is. For example, if your tenant is in the general release channel then you can't manage apps that are deployed in the private or public preview channels. This isn't an issue for apps that are released to the general release channel.
@@ -63,17 +67,15 @@ App management tasks that are supported on other portals are in the table below.
 
 ## Allow or block apps
 
-As an admin, you control access to all [types of apps](apps-in-teams.md#types-of-teams-apps) that are used across your organization. Teams provides granular controls to configure access for each app and for each user.
-
-To allow an app, you must do all of the following settings. To block an app, just use any one of these settings.
+As an admin, you control access to all [types of apps](apps-in-teams.md#types-of-teams-apps) that are used across your organization. Teams provides granular controls to configure access for each app and for each user. To allow an app or a Copilot agent, you must do all of the following settings. To block an app, just use any one of these settings. Ensure that the app that you want to allow in Teams admin center is allowed in the Microsoft 365 admin center.
 
 | Method                                                                                                           | Scope      | Use case                                                                                  |
 |:-----------------------------------------------------------------------------------------------------------------|:-----------|:------------------------------------------------------------------------------------------|
 | [Org-wide app settings](#manage-org-wide-app-settings)                                                           | Org-level  | Use this setting to allow use of relevant apps in your org.                               |
-| Block or unblock apps                                                                                            | App-level  | Use this setting to allow a specific app in your org. You control which users use an app. |
+| Block or unblock apps                                                                                            | App-level  | Use this setting to allow a few specific apps in your org.                                |
 | [App permission policy](teams-app-permission-policies.md) or [app centric management](app-centric-management.md) | User-level | Let all users or let specific users use an app.                                           |
 
-You allow or block specific apps on either the Manage apps page or in the app details page. Manage apps page displays all the available app and the current org-level app status. To allow or block an app, follow these steps:
+You allow or block specific apps or a Copilot agent on either the Manage apps page or in the app details page. If you [allow or block a Copilot agent in Microsoft 365 admin center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps), then ensure that the allow or block settings match in the Teams admin center and those match for the same group of people. Manage apps page displays all the available app and the current org-level app status. To allow or block an app, follow these steps:
 
 1. Sign in to the Teams admin center and access **Teams apps** > **[Manage apps](https://admin.teams.microsoft.com/policies/manage-apps)**.
 
@@ -104,6 +106,8 @@ As an admin, you use one of the following methods to define access to apps for y
 
 * [App permission policies](teams-app-permission-policies.md) if you use policy-based method to define app access.
 * App assignment if you use [app centric management](app-centric-management.md) to define app access.
+
+To make any apps or copilot agents available in your organization, ensure that the settings to allow these are the same in Teams admin center and in [Microsoft 365 admin center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps) in the Integrated Apps page.
 
 ## Manage org-wide app settings
 
@@ -170,7 +174,7 @@ You may have queries about admin settings or configuration, user flows and app f
 * We don't provide direct customer support for Teams apps but we provide the following safeguards, health checks, and certification methods for apps:
 
   * We proactively check Teams apps for issues and inform the developer to update their app. Scenarios covered are related to app health, functional issues reported by users to Microsoft, security issues, and so on. For details, see [Microsoft enforcement actions for published apps](/microsoftteams/platform/concepts/deploy-and-publish/appsource/post-publish/overview#possible-enforcement-actions).
-  * For Publisher Attested and Microsoft 365 certified apps, Microsoft offers [security and compliance information](overview-of-app-certification.md#microsoft-365-certification). If app developers consent, Microsoft provides admins with the option to [download the detailed evidence submitted by developers](overview-of-app-certification.md#microsoft-365-certification) during the certification audits for apps or Copilot agents.
+  * For Publisher Attested and Microsoft 365 certified apps, Microsoft offers [security and compliance information](overview-of-app-certification.md#microsoft-365-certification). If app developers consent, Microsoft provides admins with the option to [download the detailed evidence submitted by developers](overview-of-app-certification.md#microsoft-365-certification) during the certification audits for apps or copilot agents.
   * Testing of all apps as part of its [app validation program](overview-of-app-validation.md) to ensure that all apps work as advertised. If apps don't work as suggested in the app listing, then we contact app developers to request either an update to the app. If app developers don't make the requested updates after a few reminders, we proactively remove the apps from Teams.
   * Certification to apps using [Microsoft 365 app compliance program](overview-of-app-certification.md) ensures that apps are compliant with the industry-standard frameworks.
 

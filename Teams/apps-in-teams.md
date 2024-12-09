@@ -178,6 +178,7 @@ The following apps are provided by Microsoft and are generally available:
 * Praise
 * Project
 * PTZ Camera Controls
+* Queues App
 * Roadmap – Microsoft Project
 * Selfhost - Avatars
 * SharePoint

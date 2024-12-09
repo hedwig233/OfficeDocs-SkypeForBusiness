@@ -84,10 +84,7 @@ By default, Teams also allows meeting attendees to [create shared meeting notes]
 
 ## Related topics
 
-[Configure Teams meetings with three tiers of protection](configure-meetings-three-tiers-protection.md)
-
-[Use sensitivity labels to protect calendar items, Teams meetings, and chat](/microsoft-365/compliance/sensitivity-labels-meetings)
-
-[Create a custom meeting template in Microsoft Teams](create-custom-meeting-template.md)
-
-[Manage retention policies for Microsoft Teams](retention-policies.md)
+- [Configure Teams meetings with three tiers of protection](configure-meetings-three-tiers-protection.md)
+- [Use sensitivity labels to protect calendar items, Teams meetings, and chat](/purview/sensitivity-labels-meetings)
+- [Create a custom meeting template in Microsoft Teams](create-custom-meeting-template.md)
+- [Manage retention policies for Microsoft Teams](retention-policies.md)

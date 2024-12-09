@@ -22,7 +22,7 @@ description: Learn about scale video delivery and enterprise content delivery ne
 ---
 # Enterprise content delivery networks for streaming Microsoft Teams events
 
-**APPLIES TO:** ✔️View only-meetings ✖️Webinars ✔️Town halls ✔️Live events
+**APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png)View only-meetings ![Image of a x for no](/office/media/icons/cancel-teams.png)Webinars ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Town halls ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Live events
 
 Teams streaming events can use enterprise content delivery networks (eCDNs), including the Microsoft eCDN and eCDNs from Microsoft partners. Teams streaming events include:
 

@@ -3,8 +3,8 @@ title: Require verification checks to join Teams meetings and webinars in your o
 ms.author: wlibebe
 author: wlibebe
 manager: pamgreen
-ms.reviewer: nraghavan
-ms.date: 10/29/2024
+ms.reviewer: ivah
+ms.date: 11/30/2024
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -26,7 +26,7 @@ description: Learn how to require verification checks for Microsoft Teams meetin
 
 # Require verification checks to join Teams meetings and webinars in your org
 
-**APPLIES TO:** ![Image of a checkmark for yes](media/circle-check.png) Meetings ![Image of a checkmark for yes](media/circle-check.png) Webinars ![Image of a x for no](media/x-for-no.png) Town halls
+**APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Meetings ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Webinars ![Image of a x for no](/office/media/icons/cancel-teams.png)Town halls
 
 For a seamless experience, it's important to manage how anonymous participants join meetings and webinars in your org. Anonymous participants include users who join a Teams meeting without signing in, via the Teams web app, or through external meeting platforms.
 
@@ -75,7 +75,7 @@ Set-CsTeamsMeetingPolicy -Identity <policy name> -CaptchaVerificationForMeetingJ
 
 ### Supported
 
-Requiring verification checks is supported on the following surfaces and clients:
+Verification checks are supported on the following clients and platforms:
 
 **Clients:** Teams (T2.1, T2.2), Outlook
 
@@ -83,9 +83,9 @@ Requiring verification checks is supported on the following surfaces and clients
 
 ### Not supported
 
-Requiring verification checks isn't supported on the following surfaces and clients:
+When participants from the following clients and platforms attend meetings that require a verification check, they join without completing the CAPTCHA challenge:
 
-**Clients:** Cloud Video Interop (CVI), Azure Communication Services (ACS) platform
+**Clients:** Cloud Video Interop (CVI), Azure Communication Services (ACS) platform, MTR Android devices
 
 **Platforms:** Third party devices
 

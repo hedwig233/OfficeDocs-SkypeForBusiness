@@ -1,7 +1,7 @@
 ---
 title: "Change the settings for an Audio Conferencing bridge"
-ms.author: jenz
-author: jenzamora
+ms.author: wlibebe
+author: wlibebe
 manager: pamgreen
 ms.reviewer: oscarr
 ms.date: 11/1/2024

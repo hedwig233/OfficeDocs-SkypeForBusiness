@@ -26,13 +26,13 @@ description: Find lists of certified systems and peripherals for use with Micros
 
 # Teams Rooms on Android certified devices
 
-The Microsoft Teams devices Certification Program ensures devices meet a high standard, with higher performance targets and quality metrics across the entire Teams experience (audio, video, user interface). Microsoft and OEM partners are actively working together to ensure devices meet all certification requirements, including security, audio and video quality, Teams experience, and accessibility.
+The Microsoft Teams Devices Certification Program ensures devices meet a high standard, with higher performance targets and quality metrics across the entire Teams experience (audio, video, user interface). Microsoft and OEM partners are actively working together to ensure devices meet all certification requirements, including security, audio and video quality, Teams experience, and accessibility.
 
 Certification programs are designed to ensure all certified devices run an Android version with the required feature set for Teams and Teams Admin Center. Certification end dates are based on the Android version running on the device when it enters into the certification program. Our OEM partners are working to extend the lifetime of the certification by upgrading the Android version and recertifying, or by releasing new models that are state-of-the-art.
 
-Microsoft is committed to certifying devices on latest Android versions available for Teams devices as long as OEM partners and SoC manufacturers are able to meet all certification requirements in effect at the time device enters certification.
+Microsoft is committed to certifying devices on the latest Android versions available for Teams devices as long as OEM partners and SoC manufacturers are able to meet all certification requirements in effect at the time device enters certification.
 
-Microsoft and its Original Equipment Manufacturers (OEM) partners continually develop products to meet the needs of the market and elevate the Teams devices experience. During the product lifecycle, some products may receive an OS upgrade before their certification expires and will undergo re-certification, while others might not get re-certified and will ultimately be discontinued by the OEM.
+Microsoft and its Original Equipment Manufacturers (OEM) partners continually develop products to meet the needs of the market and elevate the Teams devices experience. During the product lifecycle, some products may receive an OS upgrade before their certification expires and will undergo recertification, while others might not get re-certified and will ultimately be discontinued by the OEM.
 
 We recognize that device certification expiration can impact your business. Our OEM partners have detailed End-of-Life policies to assist and direct you towards adopting newer technologies. For the most current information on Teams certified devices referenced here, please consult our OEM partners' websites.
 
@@ -48,8 +48,8 @@ The following devices are certified under the Microsoft Teams Rooms on Android C
 | Device model | Firmware version | Current certification end date | Room size | Android OS version |
 |:-|:-|:-|:-|:-|
 | AudioCodes RXV200 | `2.2.335` | September 3, 2025 |  Focus room (3 m x 3 m) | 10 |
-| Audiocodes RXPad Touch console | `2.0.282` | August 15, 2027 | Compatible with Audiocodes RXV81 and RXV200 Collaboration bars. | 12 |
-| Audiocodes RXV81 Collaboration Bar | `2.0.0` | August 15, 2027 | Small meeting room (4.5 m x 4.5 m) | 12 |
+| AudioCodes RXPad Touch console | `2.0.282` | August 15, 2027 | Compatible with AudioCodes RXV81 and RXV200 Collaboration bars. | 12 |
+| AudioCodes RXV81 Collaboration Bar | `2.0.0` | August 15, 2027 | Small meeting room (4.5 m x 4.5 m) | 12 |
 | Cisco Room Bar Pro | `RoomOS11.9` | September 3, 2025 |  Medium size room (4.5 m x 6 m) | 11 |
 | Cisco Board Pro 55 | `11.3.1.13` | September 3, 2025 | Medium size room (4.5 m x 6 m) | 11 |
 | Cisco Board Pro 75 | `11.3.1.13` | September 3, 2025 | Medium size room (4.5 m x 6 m) | 11 |
@@ -69,7 +69,7 @@ The following devices are certified under the Microsoft Teams Rooms on Android C
 | DTEN D7X 75" + Vue Pro | `1.5.8` |August 15, 2027| Medium size room (4.5 m x 6 m) | 12 |
 | DTEN D7X 75" + Vue | `1.5.8` |August 15, 2027| Medium size room (4.5 m x 6 m) | 12 |
 | DTEN D7X 75" | `1.2.8` |  August 15, 2027 |  Medium size room (4.5 m x 6 m) | 12 |
-| DTEN Mate Touch Console | `2.0.2.0` | Septmber 3, 2025 |  Compatible with DTEN DCR200 Bar, DTEN D7X 55" and DTEN D7X 75" Meeting Board | 10 |
+| DTEN Mate Touch Console | `2.0.2.0` | September 3, 2025 |  Compatible with DTEN DCR200 Bar, DTEN D7X 55" and DTEN D7X 75" Meeting Board | 10 |
 | DTEN D7X 55" | `1.2.2` |August 15, 2027| Small meeting room (4.5 m x 4.5 m) | 12 |
 | DTEN Bar + Vue | `1.3.0` | October 4, 2026 | Small Meeting Room (4.5 m x 4.5 m) | 12 |
 | DTEN Bar + Vue Pro | `1.3.0` | October 4, 2026 | Small Meeting Room (4.5 m x 4.5 m) | 12 |
@@ -80,12 +80,12 @@ The following devices are certified under the Microsoft Teams Rooms on Android C
 | Logitech Rally Bar Huddle (VR0034)  | `0.903.73` | September 3, 2025 | Focus room(3 m x 3 m) | 11 |
 | Logitech Tap IP (VR0029) | `1.6.565` | September 3, 2025 | Compatible with Logitech RoomMate, Rally Bar, and Rally Bar Mini | 10 |
 | Logitech Roommate (VR0030) | `1.4.71` | September 3, 2025 | Large meeting room (4.5 m x 8.5 m) | 10 |
-| Logitech Tap USB Touch Console | `1.2.982` | September 3, 2025 | Compatible with Logitech Rally Bar, Rally Bar Mini and Roommate | 10 |
+| Logitech Tap USB Touch Console | `1.2.982` | September 3, 2025 | Compatible with Logitech Rally Bar, Rally Bar Mini, and Roommate | 10 |
 | Logitech Rally Bar Mini (VR0020) | `1.2.982` | September 3, 2025 | Small Meeting Room (4.5 m x 4.5 m) | 10 |
 | Logitech Rally Bar (VR0019) | `1.2.788` | September 3, 2025 | Medium size room (4.5 m x 6 m) | 10 |
 | Neat Bar Pro | `NFD1.20220914.1210` | September 3, 2025 | Medium size room (4.5 m x 6 m) | 10 |
 | Neat Bar | `NFF1.20220914.1210` | September 3, 2025 | Medium size room (4.5 m x 6 m) | 10 |
-| Neat Pad Touch Console | `NFA1.20230928.0108` | September 3, 2025 | Compatible with Neat Bar Gen 2, Neat Bar, Neat Bar Pro, Neat Board 50 & Neat Board | 10 |
+| Neat Pad Touch Console | `NFA1.20230928.0108` | September 3, 2025 | Compatible with Neat Bar Gen 2, Neat Bar, Neat Bar Pro, Neat Board 50, Neat Board & Neat Board Pro 65 | 10 |
 | Neat Board | `NFC1.20220914.1210` | September 3, 2025 | Small Meeting Room (4.5 m x 4.5 m) | 10 |
 | Neat Board 50 |`NFH1.20230824.0001` | September 3, 2025 | Medium size room (4.5 m x 6 m) | 10 |
 | Neat Bar Gen2 | `NFA1.20231116.0626 ` |  September 3, 2025 | Medium size room (4.5 m x 6 m) | 10 |
@@ -249,6 +249,8 @@ For information about the latest Teams app releases, see [What's new in Microsof
 
 | Device model | Latest Firmware version | Minimum Firmware version required | Teams client | Company Portal | Admin Agent | Release date |
 |:-------------------|:----------------------------|:---------------------------------------------|:-------------------------------|:-------------------------------|:--------------------------------|:--------------------------------|
+| DTEN Bar |`1.3.2.0` | N/A| `1449/1.0.96.2024080804` | `5.0.6152.0`| `1.0.0.202402202353.product`| November 21, 2024|
+| DTEN Mate Touch Console | `2.3.2.1` | N/A| `1449/1.0.96.2024080804` | `5.0.6152.0`| `1.0.0.202402202353.product`| November 21, 2024|
 | DTEN Bar |`1.3.1.1` | N/A| `1449/1.0.96.2024080804` | `5.0.6152.0`| `1.0.0.202402202353.product`| October 15, 2024|
 | DTEN D7X 75" |`1.6.6.1` | N/A| `1449/1.0.96.2024080804` | `5.0.6152.0`| `1.0.0.202402202353.product`| October 15, 2024|
 | DTEN D7X 55" |`1.6.6.1`   | N/A| `1449/1.0.96.2024080804` | `5.0.6152.0`| `1.0.0.202402202353.product`| October 15, 2024|
@@ -363,6 +365,13 @@ For information about the latest Teams app releases, see [What's new in Microsof
 
 | Device model | Latest Firmware version | Minimum Firmware version required | Teams client | Company Portal | Admin Agent | Release date |
 |:-------------------|:----------------------------|:---------------------------------------------|:-------------------------------|:-------------------------------|:--------------------------------|:--------------------------------|
+| Neat Bar Gen2 | `NFE1.20240924.0005 ` | N/A | `1449/1.0.96.2024091202`| `5.0.6152.0` | `1.0.0.202402202353.product`| November 13, 2024|
+| Neat Bar | `NFB1.20240924.0005` | N/A | `1449/1.0.96.2024091202`| `5.0.6152.0` | `1.0.0.202402202353.product`| November 13, 2024|
+| Neat Bar Pro| `NFD1.20240924.0007` | N/A | `1449/1.0.96.2024091202`| `5.0.6152.0` | `1.0.0.202402202353.product`| November 13, 2024|
+| Neat Board | `NFC1.20240924.0005` |  N/A | `1449/1.0.96.2024091202`| `5.0.6152.0` | `1.0.0.202402202353.product`| November 13, 2024|
+| Neat Board 50 | `NFH1.20240924.0005` |  N/A | `1449/1.0.96.2024091202`| `5.0.6152.0` | `1.0.0.202402202353.product`| November 13, 2024|
+| Neat Pad touch console | `NFA1.20240924.0507`  | N/A | `1449/1.0.96.2024091202`| `5.0.6152.0` | `1.0.0.202402202353.product`| November 13, 2024|
+| Neat Board Pro 65 | `NFK1.20240924.0007` | N/A | `1449/1.0.96.2024091202` | `5.0.6152.0` | `1.0.0.202402202353.product`| November 13, 2024|
 | Neat Bar Gen2 | `NFE1.20240620.1740` | N/A | `1449/1.0.96.2024061103`| `5.0.6061.0` | `1.0.0.202402202353.product`| August 23, 2024|
 | Neat Bar | `NFB1.20240620.0015` | N/A | `1449/1.0.96.2024061103`| `5.0.6061.0` | `1.0.0.202402202353.product`| August 23, 2024|
 | Neat Bar Pro| `NFD1.20240620.1740` | N/A | `1449/1.0.96.2024061103`| `5.0.6061.0` | `1.0.0.202402202353.product`| August 23, 2024|
@@ -482,6 +491,8 @@ For information about the latest Teams app releases, see [What's new in Microsof
 #### Yealink
 | Device model | Latest Firmware version | Minimum Firmware version required | Teams client | Company Portal | Admin Agent | Release date |
 |:-------------------|:----------------------------|:---------------------------------------------|:-------------------------------|:-------------------------------|:--------------------------------|:--------------------------------|
+| Yealink MeetingBar A40 | `289.320.0.43` | N/A | `1449/1.0.96.2024080804`| `5.0.6152.0` | `1.0.0.202402202353.productt` | December 6, 2024 |
+| Yealink CTP25 | `311.320.0.34` | N/A | `1449/1.0.96.2024080804`| `5.0.6152.0` | `1.0.0.202402202353.product` | December 6, 2024 |
 | Yealink MeetingBar A10 | `278.320.0.48` | N/A | `1449/1.0.96.2024080804`| `5.0.6152.0` | `1.0.0.202402202353.product` | September 17, 2024 |
 | Yealink MeetingBar A20 | `133.320.0.46` | N/A | `1449/1.0.96.2024080804`| `5.0.6152.0` | `1.0.0.202402202353.product` | September 17, 2024 |
 | Yealink MeetingBar A30 | `133.320.0.46` | N/A | `1449/1.0.96.2024080804`| `5.0.6152.0` | `1.0.0.202402202353.product` | September 17, 2024 |

@@ -26,7 +26,7 @@ description: Learn how to set up and manage town hall policies for IT Admins in 
 
 # Manage who can schedule and attend town halls in Microsoft Teams
 
-**APPLIES TO:** ![Image of a x for no](media/x-for-no.png) Meetings ![Image of a x for no](media/x-for-no.png) Webinars ![Image of a checkmark for yes](media/circle-check.png) Town halls
+**APPLIES TO:** ![Image of a x for no](/office/media/icons/cancel-teams.png)Meetings ![Image of a x for no](/office/media/icons/cancel-teams.png)Webinars ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Town halls
 
 ## Overview
 

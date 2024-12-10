@@ -67,7 +67,9 @@ Each user must have a Teams Phone license assigned, and each user must be "voice
   1. Select your Teams Phone license. On the product details page, select **Assign licenses** and assign the license to your users.
   1. Select **Assign** once you're finished.
 
-- To enable users for voice, use the [Set-CsPhoneNumberAssignment cmdlet](/powershell/module/teams/set-csphonenumberassignment) and set the -EnterpriseVoiceEnabled parameter to $true. Don't assign a phone number to any Shared Calling enabled user.
+- To enable voice for your users, you can use the Teams admin center or PowerShell. Don't assign a phone number to any Shared Calling enabled user.
+  - In the Teams admin center, go to a **Users** > **Manage users** and select the user you want to edit. Under the **Account** tab > **Assigned phone number**, turn **Enterprise Voice** to **On** and select **Save**.
+  - For PowerShell, use the [Set-CsPhoneNumberAssignment](/powershell/module/teams/set-csphonenumberassignment) cmdlet and set the `-EnterpriseVoiceEnabled` parameter to `$true`.
 
 For more information about licensing, see [Microsoft Teams add-on licensing](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md) and [assigning licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
 

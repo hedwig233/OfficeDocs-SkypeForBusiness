@@ -1,7 +1,7 @@
 ---
 title: "Turn on or off entry and exit announcements for meetings in Teams"
-ms.author: jenz
-author: jenzamora
+ms.author: wlibebe
+author: wlibebe
 manager: pamgreen
 ms.reviewer: oscarr
 ms.date: 10/16/2024

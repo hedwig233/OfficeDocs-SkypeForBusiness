@@ -32,7 +32,7 @@ Certification programs are designed to ensure all certified devices run an Andro
 
 Microsoft is committed to certifying devices on the latest Android versions available for Teams devices as long as OEM partners and SoC manufacturers are able to meet all certification requirements in effect at the time device enters certification.
 
-Microsoft and its Original Equipment Manufacturers (OEM) partners continually develop products to meet the needs of the market and elevate the Teams devices experience. During the product lifecycle, some products may receive an OS upgrade before their certification expires and will undergo re-certification, while others might not get re-certified and will ultimately be discontinued by the OEM.
+Microsoft and its Original Equipment Manufacturers (OEM) partners continually develop products to meet the needs of the market and elevate the Teams devices experience. During the product lifecycle, some products may receive an OS upgrade before their certification expires and will undergo recertification, while others might not get re-certified and will ultimately be discontinued by the OEM.
 
 We recognize that device certification expiration can impact your business. Our OEM partners have detailed End-of-Life policies to assist and direct you towards adopting newer technologies. For the most current information on Teams certified devices referenced here, please consult our OEM partners' websites.
 
@@ -491,6 +491,8 @@ For information about the latest Teams app releases, see [What's new in Microsof
 #### Yealink
 | Device model | Latest Firmware version | Minimum Firmware version required | Teams client | Company Portal | Admin Agent | Release date |
 |:-------------------|:----------------------------|:---------------------------------------------|:-------------------------------|:-------------------------------|:--------------------------------|:--------------------------------|
+| Yealink MeetingBar A40 | `289.320.0.43` | N/A | `1449/1.0.96.2024080804`| `5.0.6152.0` | `1.0.0.202402202353.productt` | December 6, 2024 |
+| Yealink CTP25 | `311.320.0.34` | N/A | `1449/1.0.96.2024080804`| `5.0.6152.0` | `1.0.0.202402202353.product` | December 6, 2024 |
 | Yealink MeetingBar A10 | `278.320.0.48` | N/A | `1449/1.0.96.2024080804`| `5.0.6152.0` | `1.0.0.202402202353.product` | September 17, 2024 |
 | Yealink MeetingBar A20 | `133.320.0.46` | N/A | `1449/1.0.96.2024080804`| `5.0.6152.0` | `1.0.0.202402202353.product` | September 17, 2024 |
 | Yealink MeetingBar A30 | `133.320.0.46` | N/A | `1449/1.0.96.2024080804`| `5.0.6152.0` | `1.0.0.202402202353.product` | September 17, 2024 |

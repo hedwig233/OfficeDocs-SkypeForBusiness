@@ -36,10 +36,7 @@ The Microsoft Teams Devices Certification Program ensures certified devices meet
 >[!Important]
 >The Microsoft Teams Devices Certification Program ensures certified devices meet specific requirements for hardware design and performance only. The certification program doesn't evaluate feature-level or cloud environment support.
 
-Certified Microsoft Teams Rooms systems are available on both Windows and Android operating systems. Whether you should choose a Teams Rooms system on Windows or Android depends on your specific needs and budget. Select the **Teams Rooms for Windows** and **Teams Rooms for Android** tabs for a complete list of certified systems and links to their respective product sites. For additional certification information specific to **Teams Rooms for Android** see details below.  
-
-For a comparison of features available on each operating system, check out [Teams Rooms on Windows and Android feature comparison](teams-devices-feature-comparison.md). 
-
+  
 To see Teams Rooms pricing, see the [Teams Rooms product showcase](https://www.microsoft.com/microsoft-teams/across-devices/devices/category/teams-rooms/20).
 
 Numerous certified peripherals, from speakers to microphones and cameras, are available for use with Teams Rooms systems. Select the **Peripherals** tab for a complete list of peripherals and links to their respective product sites.

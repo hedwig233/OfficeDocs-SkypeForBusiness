@@ -25,7 +25,7 @@ ms.localizationpriority: high
 New VDI solution for Teams is a new architecture for optimizing the delivery of multimedia workloads in virtual desktops.
 
 > [!IMPORTANT]
-> The rollout to General Availability is now complete for Azure Virtual Desktops and Windows 365. For Citrix customers, in order to participate on the public preview, administrators must move users to the public preview channel as described [in this article](public-preview-doc-updates.md).
+> Microsoft has started the General Availability rollout for Citrix customers, which will be completed in the next few weeks. This rollout requires Microsoft Teams version 24295.605.3225.8804, and client version 24110115722, as seen in **Settings** > **About Teams**.
 
 ## Components
 
@@ -154,7 +154,7 @@ PowerShellCopy
 Get-AppxPackage Microsoft.Teams.SlimCore*
 ```
 
-A sample of the results that can be returned from running this Powershell is:
+A sample of the results that can be returned from running this PowerShell is:
 
 ```powershell
 Name              : Microsoft.Teams.SlimCoreVdi.win-x64.2024.32

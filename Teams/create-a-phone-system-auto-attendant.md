@@ -277,7 +277,7 @@ For more information, see [New-CsAutoAttendant -UserNameExtension](/powershell/m
 
 ### External phone number transfers - technical details
 
-Refer to the [Prerequisites](plan-auto-attendant-call-queue.md#prerequisites) in order to allow Auto attendants to transfer calls externally. 
+Refer to the [Prerequisites](plan-auto-attendant-call-queue.md#prerequisites) in order to allow Auto attendants to transfer calls externally.
 
 In addition, for a resource account with a:
 

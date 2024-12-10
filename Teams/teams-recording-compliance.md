@@ -37,7 +37,7 @@ Compliance recording is the process of recording and storing communications in a
 
 Microsoft Teams is enhanced to offer compliance recording of call and meeting communications by supporting integrations with certified, third-party, compliance recording solutions.
 
-Using a partner solution to record Teams calls, meetings, and events allows corporate compliance officers to securely collect necessary communications in the manner required to meet regulated compliance and legal obligations (such as MiFID II, Dodd-Frank, FDCPA, HIPAA, GDPR, etc.).
+Using a partner solution to record Teams calls, meetings, and events allow corporate compliance officers to securely collect necessary communications in the manner required to meet regulated compliance and legal obligations (such as MiFID II, Dodd-Frank, FDCPA, HIPAA, GDPR, etc.).
 
 Compliance recording partner solutions are integrated with Teams as shown in the following diagram:
 
@@ -145,8 +145,6 @@ For a sample of developing a compliance recording bot, see [deploying and testin
 
 Microsoft created a compliance recording for Microsoft Teams certification program while making Teams APIs available for partners to develop and integrate compliance recording solutions. This program provides customers with the assurance that each participating partner's solution is tested and verified to provide the quality, compatibility, and reliability expected from a Microsoft solution.
 
-Microsoft only supports compliance recording solutions from the listed certified partners. If there are enablement or operational issues, you must contact your compliance recording partner first. If the partner determines the issue is with Microsoft, they might ask you to raise a case with Microsoft, providing context of the investigation completed by the partner. If needed, the partner can bring the issue to Microsoft through their Microsoft support channel. Microsoft might reject support cases where a non-certified Compliance Recording solution is used, or if investigation shows that the issue is one the partner can address.
-
 If you're a vendor seeking to join the certification program, fill out the calling platform intake as the next step.
 [Calling Platform Intake](https://aka.ms/CallingPlatformIntake)
 
@@ -251,6 +249,10 @@ policies](./assign-policies-users-and-groups.md#assign-a-policy-to-a-group).
     - UserPrincipalName              : testuser@contoso.onmicrosoft.com
     - TenantId                       : 5b943d7c-5e14-474b-8237-5022eb8e0dc9
     - TeamsComplianceRecordingPolicy : TestComplianceRecordingPolicy
+
+## Support boundaries
+
+Microsoft only supports compliance recording solutions from the listed, certified partners. If there are enablement or operational issues, you must contact your compliance recording partner first. If the partner determines the issue is with Microsoft, they might ask you to raise a case with Microsoft, providing context of the investigation completed by the partner. If needed, the partner can bring the issue to Microsoft through their Microsoft support channel. Microsoft reserves the right to reject support cases where a non-certified Compliance Recording solution is used. If Microsoft determines that the issue is originating with a partner's compliance recording solution, the customer needs to re-engage the compliance recording partner for further support.
 
 ### Related topics  
 

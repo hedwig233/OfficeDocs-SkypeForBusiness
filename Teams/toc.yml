@@ -3,8 +3,6 @@ items:
   href: teams-overview.md
 - name: Teams Premium overview
   href: enhanced-teams-experience.md
-- name: Set up Facilitator for AI notes
-  href: facilitator-teams.md
 - name: Get started
   items:
     - name: Deployment overview
@@ -1678,6 +1676,27 @@ items:
           href: devices/teams-displays.md
         - name: Hot desking Teams displays
           href: devices/hot-desking-teams-displays.md
+
+- name: AI, Copilot, and agents in Teams
+  items:
+    - name: AI features in Teams
+      items:
+      - name: Manage transcriptions and captions for Teams meetings
+        href: meeting-transcription-captions.md
+      - name: Manage voice isolation for calls and meetings
+        href: voice-isolation.md
+      - name: Set up AI recommendations for educators
+        href: institution-settings.md
+    - name: Copilot in Teams
+      items:
+        - name: Manage Copilot in Teams meetings and events
+          href: copilot-teams-transcription.md
+        - name: Teams Rooms and Copilot overview
+          href: rooms/copilot-admin-mtr.md
+    - name: Agents for Teams
+      items:
+        - name: Set up Facilitator for AI notes
+          href: facilitator-teams.md
 
 - name: Manage apps in Teams
   items: 

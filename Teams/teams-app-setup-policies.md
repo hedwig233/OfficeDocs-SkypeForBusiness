@@ -79,6 +79,8 @@ To modify the pinned apps for everyone in your organization, edit the existing `
 
     :::image type="content" source="media/add-pinned-apps-trimmed.png" alt-text="Screenshot shows how to add pinned apps in app setup policy." lightbox="media/add-pinned-apps-large.png":::
 
+    If you pin a calling extension, you must also assign it to users who need access during one-on-one calls.
+
 1. Arrange the apps in the order that you want the apps to appear in Teams client. You can change the sequence independently under **App bar**, **Messaging extensions**, **Meeting extensions**, and **Calling extensions**. You can remove apps from a scope.
 
    **Placeholder image**

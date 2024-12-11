@@ -97,6 +97,8 @@ You can create teams for:
 - Staff members.
 - Anyone.
 
+Teams for Education allows admins to create team templates that educators can use to quickly set up teams. For information on how to create team templates, see [Get started with team templates in the Teams admin center](get-started-with-teams-templates-in-the-admin-console.md). To create custom team templates, see [Create a custom team template in Microsoft Teams](create-a-team-template.md).
+
 Once your pilots are complete, you’ll have the feedback you need to plan your broad Teams deployment.
 
 Be sure your deployment plan accounts for your prioritized scenarios, ensuring your school is getting the most from Microsoft 365 and Teams.

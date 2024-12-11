@@ -6,7 +6,7 @@ manager: jtremper
 ms.topic: conceptual
 ms.service: msteams
 ms.reviewer: andfried
-ms.date: 11/14/2024
+ms.date: 12/10/2024
 search.appverid: MET150
 searchScope: 
   - Microsoft Teams
@@ -28,6 +28,8 @@ ms.collection:
 > This feature is currently in public preview.
 
 ## Overview
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3f9bfe77-87c3-4930-aacf-23bf13ce045d]
 
 The app-powered tasks feature offers your organization more control over what users see when they open their tasks in the Planner app within Microsoft Teams. Instead of showing only the standard set of task fields, you can provide users with an experience tailored to the task at hand. That experience might be a workflow-specific set of fields or step-by-step guidance to walk the user through a workflow from beginning to end. To achieve this, you integrate a Teams app with the task and create these tasks programmatically.
 

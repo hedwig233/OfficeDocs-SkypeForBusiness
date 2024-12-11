@@ -291,7 +291,6 @@ The Queues app is a Teams-native solution designed to empower organizations to m
 
 For a complete list of features available in the Queues app, see [Manage voice applications policies](/microsoftteams/manage-voice-applications-policies).
 
-
 ### Immersive Mesh Experiences
 
 With Immersive spaces in Teams, your users can join a 3D immersive meeting experience for up-to 16 people right from any Teams meeting.</br>
@@ -318,7 +317,7 @@ With the general release of Teams Premium on February 1, 2023, the following Tea
 
 ## What are the requirements to purchase Teams Premium?
 
-Teams Premium is available to purchase worldwide through all Microsoft purchasing channels, including EA, EAS, CSP, Web Direct, NCE - Customer led, and NCE - Partner led.
+Teams Premium is available to purchase worldwide through all Microsoft purchasing channels, including EA, EAS, CSP, Web Direct, MCA - Customer led, and MCA - Partner led.
 
 Before you can purchase Teams Premium licenses for your users, ensure your tenant and users meet the requirements.
 

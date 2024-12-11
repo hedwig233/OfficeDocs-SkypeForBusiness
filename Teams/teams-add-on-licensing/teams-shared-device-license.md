@@ -56,7 +56,7 @@ The **Microsoft Teams Shared Devices** license includes the following service pl
 
 The **Teams Shared Devices** license is available to purchase worldwide to commercial, public sector, GCC, GCC High, and DoD tenants.
 
-To purchase the **Teams Shared Devices** license, you can choose your preferred purchasing channel: EA, EAS, EES, CSP, Web Direct, NCE - Customer led, and NCE - Partner led.
+To purchase the **Teams Shared Devices** license, you can choose your preferred purchasing channel: EA, EAS, EES, CSP, Web Direct, MCA - Customer led, and MCA - Partner led.
 
 ## Acquire Teams Shared Devices licenses
 

@@ -86,7 +86,7 @@ A Teams Premium subscription includes the following features for webinars:
 |Limit the number of people who can register        |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                      |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                         |
 |Require attendees to register|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 |Set up a green room for webinar presenters |![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
-|Turn on Q&A for webinars with up to 1,000 attendees |![Image of a checkmark for yes](/office/media/icons/success-teams.png) |![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
+|Turn on Q&A for webinars|![Image of a checkmark for yes](/office/media/icons/success-teams.png) |![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 |View attendance reports|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 |External presenters|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 |Create a webinar wait list                         |                       |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                          |
@@ -136,4 +136,4 @@ Teams admins and organizers have different policies and settings to control the 
 
 ## Need help with your webinar?
 
-Are you and your organizers new to hosting webinars or just need some extra help? The Microsoft 365 Live Event Assistance Program (LEAP) can help you get more familiar with setting up and running webinars. The LEAP program is also available during the event to help if any questions or issues come up. For more information on the LEAP program, see [Microsoft 365 Live Event Assistance Program.](https://adoption.microsoft.com/virtual-event-guidance/assistance).
+Are you and your organizers new to hosting webinars or just need some extra help? The Microsoft 365 Live Event Assistance Program (LEAP) can help you get more familiar with setting up and running webinars. The LEAP program is also available during the event to help if any questions or issues come up. For more information on the LEAP program, see [Microsoft 365 Live Event Assistance Program](https://adoption.microsoft.com/virtual-event-guidance/assistance).

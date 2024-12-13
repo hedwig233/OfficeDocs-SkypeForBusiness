@@ -35,7 +35,14 @@ Cloud Call queues include greetings that are used when someone calls in to a pho
 
 ## Handling an Auto attendant or Call queue call
 
-Users can differentiate incoming calls from an Auto attendant or Call queue before they answer the call. Along with the name and/or number of the caller, each call includes the display name of the resource account assigned to the Auto attendant or the Call queue that the caller was trying to reach, giving users better context for addressing the caller.
+Users can differentiate incoming calls from an Auto attendant or Call queue before they answer the call.
+
+When agents receive a call from an **auto attendant**, the information in the toast contains the name or number of the caller and the display name of the resource account assigned to the Auto attendant that answered the call.
+
+When agents receive a call from a **call queue**, the toast displays information based on how the agents received the call.
+
+- If the call was transferred to the call queue without a resource account, the agent receives the name of the call queue in the toast.
+- If the call was transferred to the call queue through a resource account, the agent receives the display name of the resource account.
 
 The following illustration shows how an incoming call from an Auto attendant or Call queue appears to a user.
 
@@ -63,7 +70,7 @@ The Teams client is only supported with a [coexistence mode of Teams Only](/micr
 
 ## Configure Auto attendant and Call queue support for Microsoft Teams
 
-To receive Auto attendant and Call queue calls on Microsoft Teams, you need to configure your interoperability policy and upgrade policy. For more information, review [Migration and interoperability for organizations using Teams together with Skype for Business](migration-interop-guidance-for-teams-with-skype.md). If you don't have Auto attendants and/or Call queues configured and would like to do so, see [Set up a Cloud Auto attendant](create-a-phone-system-auto-attendant.md) and [Create a Cloud Call queue](create-a-phone-system-call-queue.md).
+To receive Auto attendant and Call queue calls on Microsoft Teams, you need to configure your interoperability policy and upgrade policy. For more information, review [Migration and interoperability for organizations using Teams together with Skype for Business](migration-interop-guidance-for-teams-with-skype.md). If you don't have Auto attendants or Call queues configured, see [Set up a Cloud Auto attendant](create-a-phone-system-auto-attendant.md) and [Create a Cloud Call queue](create-a-phone-system-call-queue.md).
 
 ## Known Issues
 

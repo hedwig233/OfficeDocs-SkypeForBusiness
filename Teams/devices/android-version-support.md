@@ -65,7 +65,7 @@ Android operating system and firmware updates installed through device hardware 
 
 Microsoft applications running on this Android operating system provided by Original Equipment Manufacturers (OEM) partners are bound to Google’s support cycle for the Android OS operating system versions.
 
-The following Android operating systems that are supported on Teams on Android devices:
+The following Android operating systems versions are supported on Teams devices:
 
 |**Android OS version**|**Android OS Google release date**|**Microsoft Teams Certification end date**|**Microsoft support end date**|
 |:-----|:-----|:-----|:-----|

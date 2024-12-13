@@ -38,7 +38,7 @@ Use Facilitator in peer-to-peer:
 
 Unlike an individual user's queries to Copilot in Teams, Facilitator displays Copilot's notes within the group's conversation. Users can focus on the conversation and let Facilitator take care of the note-taking for everyone.
 
-Facilitator also continuously updates as the conversation progresses. For example, the AI-generated notes display the options being considered by the team and then replaces those options with a single choice once the group decides. Now, that's intelligent collaboration right in Teams.
+Facilitator also continuously updates as the conversation progresses. For example, the AI-generated notes display the options being considered by the team and then replace those options with a single choice once the group decides. Now, that's intelligent collaboration right in Teams.
 
 > [!IMPORTANT]
 > Facilitator's notes are communally shared between collaborators.
@@ -49,7 +49,7 @@ Facilitator also continuously updates as the conversation progresses. For exampl
 
 For more information about how users can integrate AI-generated notes into their Teams chats, see [Keep track of chats with AI notes in Microsoft Teams](https://support.microsoft.com/office/keep-track-of-chats-with-AI-notes-in-Microsoft-Teams-0b7efbd0-fd3e-48e7-9a4b-4ea22cdc12c0).
 
-For more information about how users can integrate AI-generated notes into their Teams meetings, see [Automate notetaking in Microsoft Teams meetings](https://support.microsoft.com/office/automate-notetaking-in-Microsoft-Teams-meetings-37657f91-39b5-40eb-9421-45141e3ce9f6).
+For more information about how users can integrate AI-generated notes into their Teams meetings, see [Automate note-taking in Microsoft Teams meetings](https://support.microsoft.com/office/automate-notetaking-in-Microsoft-Teams-meetings-37657f91-39b5-40eb-9421-45141e3ce9f6).
 
 ## Security, Compliance, and Privacy
 
@@ -82,14 +82,17 @@ For more information about security and privacy in Microsoft 365 Copilot, see th
 
 ## Prerequisites and licensing
 
-The following list contains the prerequisites for users to be able to access Facilitator features in Teams chats and meetings:
+The following list contains the prerequisites for users to be able to access Facilitator features in Teams chats and meetings. Users must meet all of the following requirements:
 
 - An eligible *Microsoft 365* base license.
   - For the list of eligible base licenses, see [Understand licensing requirements for Microsoft 365 Copilot](/copilot/microsoft-365/microsoft-365-copilot-licensing).
+- An eligible *Microsoft Teams* license.
+  - Teams licenses may be included in your *Microsoft 365* subscription, or you may need to purchase a separate Teams license if you have *Microsoft 365 (no Teams)* licenses.
 - A *Microsoft 365 Copilot* license.
-  - For information on how to acquire *Microsoft 365 Copilot* licenses, see [Where can I get Microsoft Copilot?](https://support.microsoft.com/topic/where-can-i-get-microsoft-copilot-40a622db-6d25-4266-b008-4bbcb55cf52f).
+  - For information on how to acquire *Microsoft 365 Copilot* licenses, see [Where can I get Microsoft Copilot?](https://support.microsoft.com/topic/where-can-i-get-microsoft-copilot-40a622db-6d25-4266-b008-4bbcb55cf52f)
 - Be a Microsoft Teams Public preview participant.
   - For information on how to access Teams Public preview features, see [Microsoft Teams Public preview](/microsoftteams/public-preview-doc-updates).
+- [Have Loop experiences in Teams for AI-generated notes in meetings turned on](#3-turn-on-loop-experiences-in-teams-for-ai-generated-notes-in-meetings).
 
 ## Facilitator note storage
 

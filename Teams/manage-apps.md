@@ -1,7 +1,7 @@
 ---
 title: Manage your apps in the Microsoft Teams admin center
-author: ashishguptaiitb
-ms.author: guptaashish
+author: surbhigupta12
+ms.author: surbhigupta
 manager: prkosh
 ms.topic: conceptual
 ms.service: msteams
@@ -64,6 +64,16 @@ App management tasks that are supported on other portals are in the table below.
 | Manage licenses and subscriptions of third-party apps in Microsoft 365 admin center | [Microsoft 365 admin center](https://admin.microsoft.com/#/licenses) | [Manage third-party app subscriptions](/microsoft-365/commerce/manage-saas-apps) |
 | Audit Teams app events on Microsoft Purview compliance portal. | [Audit](https://compliance.microsoft.com/auditlogsearch?viewid=Async%20Search) | [Teams activities](audit-app-management-activities.md) |
 | Applications can be granted permissions to your organization and its data by three methods: an admin consents to the application for all users, a user grants consent to the application, or an admin integrating an application and enabling self-service access or assigning users directly to the application. Verify the Microsoft Graph permissions for apps. Verify the permissions that users provided or that the admins delegated. | [Microsoft Entra admin center](https://aad.portal.azure.com/) | [Review permissions granted to applications](/azure/active-directory/manage-apps/manage-application-permissions) |
+
+## Export app catalog as CSV
+
+As an admin, you can export the entire app catalog of your org from the Teams admin center. It can help you to coordinate with admin and security teams to evaluate apps, verify app availability, verify app status, and more.
+
+:::image type="content" source="media/export-app-catalog-csv2.png" alt-text="Screenshot showing the option to export the app catalog as a CSV file.":::
+
+If you're using [app centric management](app-centric-management.md), then in addition to all the information that is available on the [Manage apps page](https://admin.teams.microsoft.com/policies/manage-apps), the CSV also contains the user IDs and group IDs of users or groups for whom apps are made available by you.
+
+:::image type="content" source="media/export-app-catalog-csv1.png" alt-text="Screenshot showing the columns in the exported CSV file.":::
 
 ## Allow or block apps
 

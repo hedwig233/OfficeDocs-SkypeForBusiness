@@ -108,8 +108,8 @@ Compliance recording isn't supported for:
 
 **Large Meetings**
 
-The Compliance Recording platform supports meeting sizes up to 250 users in paired bot mode.
-Larger meeting sizes might have performance implications and will be addressed with a future update.
+The Compliance Recording platform is optimized for meetings, however performance may be impacted during meetings with over 250 users in paired bot mode. We're actively working on improvements in a future update to enhance the experience.
+Please contact your recording partner for more information.
 
 **Call queues**
 
@@ -167,7 +167,8 @@ The following list includes partners certified to deliver a compliance recording
 |Red Box |[https://www.redboxvoice.com/compliance-recording-for-microsoft-teams](https://www.redboxvoice.com/red-box-partners/microsoft-integration/compliance-recording-for-microsoft-teams)  |
 |Theta Lake |[https://thetalake.com/integrations/microsoft/](https://thetalake.com/integrations/microsoft/) |
 |Touch Call Recording (GuardRec Compliance 2022.10.3) |[https://touchcallrecording.com/teams-policy-based-recording-for-callings-and-meetings](https://touchcallrecording.com/teams-policy-based-recording-for-callings-and-meetings) |
-|Verint |[https://www.verba.com/solutions/microsoft-teams-recording](https://www.verba.com/solutions/microsoft-teams-recording) |
+|Verint Verba |[https://www.verba.com/solutions/microsoft-teams-recording](https://www.verba.com/solutions/microsoft-teams-recording) |
+|Verint EDM |[https://www.verint.com/enterprise-recording-engagement-data-management/](https://www.verint.com/enterprise-recording-engagement-data-management/) |
 
 The following partners are in the process of certifying their solution for Microsoft Teams:
 

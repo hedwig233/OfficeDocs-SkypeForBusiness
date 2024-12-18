@@ -1,8 +1,8 @@
 ---
 title: Set up AI content recommendations for educators in an institution
-author: NiravRawell21
-ms.author: nirawell
-manager: michalgi
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
 ms.reviewer: nirawell
 ms.date: 02/26/2024
 ms.topic: article

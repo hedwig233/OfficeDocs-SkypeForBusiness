@@ -6,7 +6,7 @@ manager: pamgreen
 ms.topic: article
 ms.service: msteams
 ms.reviewer: yilin.yang
-ms.date: 01/22/2024
+ms.date: 12/6/2024
 audience: admin
 ms.localizationpriority: medium
 f1.keywords:

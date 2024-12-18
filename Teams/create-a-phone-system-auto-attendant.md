@@ -35,7 +35,8 @@ Auto attendants can redirect calls, based on callers' input, to one of the follo
 
 - **Operator** - the operator defined for the Auto attendant. Defining an operator is optional. The operator can be defined as any of the other destinations in this list.
 - **Person in the organization** - a person in your organization who can receive voice calls. This person can be an online user or a user hosted on-premises using Skype for Business Server.
-- **Voice app** - another Auto attendant or a Call queue. Choose the resource account associated with the Auto attendant or Call queue when choosing this destination.
+- **Voice app** - Choose the Auto attendant or Call queue when choosing this destination.
+- **Resource account** - Choose the resource account associated with the Auto attendant or Call queue when choosing this destination.
 - **Voicemail** - the voice mailbox associated with a Microsoft 365 group that you specify. You can choose if you want voicemail transcriptions and the "Please leave a message after the tone." system prompt.
   - In Microsoft 365 admin center, enable **Let people outside the organization email this team** for the Microsoft 365 group that you specify.
 - **External phone number** - any phone number. See [external transfer technical details](create-a-phone-system-auto-attendant.md?tabs=general-info#external-phone-number-transfers---technical-details).
@@ -54,11 +55,14 @@ Auto attendants can redirect calls, based on callers' input, to one of the follo
 
 ## What's new for Auto attendants in the past six months
 
+- December 11
+  - [Nested Auto attendants and Call queues](./plan-auto-attendant-call-queue.md#nested-auto-attendants-and-call-queues) that no longer require a resource account and associated licensing are now supported in Teams admin center.
+
 - November 21
   - [Dial by name improvements](#dial-by-name-improvements) for when a search returns multiple people with the same name.
-    
+
 - November 5
-  - [Nested Auto attendants and Call queues](#nested-auto-attendants-and-call-queues) no longer require a resource account and associated licensing.
+  - [Nested Auto attendants and Call queues](./plan-auto-attendant-call-queue.md#nested-auto-attendants-and-call-queues) no longer require a resource account and associated licensing.
 
 ## Steps to create an Auto attendant
 
@@ -127,7 +131,7 @@ For each menu option, specify the following settings:
 
 - **Voice command** - defines the voice command that a caller can give to access this option, if voice inputs are enabled. It can contain multiple words like "Customer Service" or "Operations and Grounds." For example, the caller can press 2, say "two," or say "Sales" to select the option mapped to the two keys. This text is also rendered by text to speech for the service confirmation prompt, which might be something like "Transferring your call to sales."
 
-- **Redirect to** - the call routing destination used when callers choose this option. If you're redirecting to an Auto attendant or Call queue, choose the resource account associated with it.
+- **Redirect to** - the call routing destination used when callers choose this option. When redirecting to an Auto attendant or Call queue, you can choose to redirect to the Auto attendant or Call queue directly or to the resource account associated with the Auto attendant or Call queue. For more information, see [Nested Auto attendants and Call queues](./plan-auto-attendant-call-queue.md#nested-auto-attendants-and-call-queues).
 
 ### Directory search
 
@@ -249,22 +253,6 @@ For more information, see [Set up authorized users](./aa-cq-authorized-users.md)
 > [!CAUTION]
 > These configuration options are currently only available through PowerShell cmdlets and they don't appear in Teams admin center. If these options are configured through PowerShell, any changes to the Auto attendant through Teams admin center will erase these settings.
 
-### Nested Auto attendants and call queues
-
-Nested Auto attendants and Call queues (auto attendants and call queues that don't directly answer phone calls) no longer require a Resource Account and associated licensing.
-
-Existing configurations that use Resource Accounts continue to function and remain fully supported. A combination of both methods can be used at the same time.
-
-For more information, see [New-CsAutoAttendantCallableEntity -Type ConfigurationEndPoint](/powershell/module/teams/new-csautoattendantcallableentity#-Type).
-
-#### PowerShell example
-
-To create a new callable entity to another Auto attendant or Call queue, use the New-CsAutoAttendantCallableEntity cmdlet, as shown in the following example:
-
-```PowerShell
-New-CsAutoAttendantCallableEntity -Identity <Auto attendant or Call queue GUID> -Type ConfigurationEndPoint
-```
-
 ### Dial by name improvements
 
 When a dial by name search returns multiple people with the same name, the results can now be enhanced by appending additional information after the name. This makes it easier for callers to reach the correct person.
@@ -277,7 +265,7 @@ For more information, see [New-CsAutoAttendant -UserNameExtension](/powershell/m
 
 ### External phone number transfers - technical details
 
-Refer to the [Prerequisites](plan-auto-attendant-call-queue.md#prerequisites) in order to allow Auto attendants to transfer calls externally. 
+Refer to the [Prerequisites](plan-auto-attendant-call-queue.md#prerequisites) in order to allow Auto attendants to transfer calls externally.
 
 In addition, for a resource account with a:
 

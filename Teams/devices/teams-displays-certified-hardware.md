@@ -38,21 +38,12 @@ We recognize that device certification expiration can impact your business. Our 
 
 Following a certification expiration, Microsoft is committed to supporting the latest version of the Teams devices applications on certified devices for a span of two (2) years after the certification period concludes. While Microsoft will make every effort to maintain support as described here, it retains the discretion to modify its support policy if necessary. Should any changes occur, these changes will be communicated through the established customer facing communication channels.
 
-## Product release information for Teams displays
-
-The following are the latest firmware versions released via Microsoft Teams Admin Center (TAC) for each device and OEM, as well as the Teams APK, Company Portal, and Admin Agent applications bundled into the firmware release. 
-
-See [Microsoft Teams displays](teams-displays.md) for features supported by Teams displays devices. 
-
-> [!NOTE]
-> More recent and supported Microsoft Teams displays applications may be available for Android devices. Release details and notes for the latest Microsoft Teams displays applications can be found at [What's new in Microsoft Teams devices](https://support.microsoft.com/office/what-s-new-in-microsoft-teams-devices-eabf4d81-acdd-4b23-afa1-9ee47bb7c5e2#ID0EBD=Teams_displays)
-
 ## [Certified Teams displays](#tab/certified-devices)
 
 The following Teams displays are certified under the Android Certification Program:
 
 > [!IMPORTANT]
-> End of certification for Teams display devices is September 3, 2025. Microsoft will make commercially reasonable best efforts to maintain compatibility with the most recent version of the Teams apps provided to manufacturers for a period of two (2) years from this date. See the [Microsoft Product and Services lifecycle](/lifecycle/products/) for details.
+> End of certification for Teams display devices is September 3, 2025. Microsoft will make commercially reasonable efforts to maintain compatibility with the most recent version of the Teams apps provided to manufacturers for a period of two (2) years from this date. See the [Microsoft Product and Services lifecycle](/lifecycle/products/) for details.
 
 | Device model | Firmware version | Current certification end date | Android OS version |
 |:------------------------|:-----------------|:--------------|----------------------------------|
@@ -61,6 +52,10 @@ The following Teams displays are certified under the Android Certification Progr
 | Yealink DeskVision A24  | `156.15.0.20` | September 3, 2025 | 10 |
 
 ## [Firmware](#tab/firmware)
+
+The following are the latest firmware versions released using Microsoft Teams Admin Center (TAC) for each device and OEM, as well as the Teams APK, Company Portal, and Admin Agent applications bundled into the firmware release.
+
+For information about the latest Teams app releases, see [What's new in Microsoft Teams devices](https://support.microsoft.com/office/what-s-new-in-microsoft-teams-devices-eabf4d81-acdd-4b23-afa1-9ee47bb7c5e2#ID0EBD=Teams_displays).
 
 #### <b> Crestron </b>
 | Device model | Latest firmware version | Minimum firmware version | Included Microsoft applications | Release date |
@@ -91,6 +86,8 @@ The following Teams displays are certified under the Android Certification Progr
 | DeskVision A24 | `156.15.0.24` | N/A | Teams client: `1449/1.0.95.2023042701` <br> Company Portal: `5.0.5484.0` <br> Admin Agent: `1.0.0.202301162118.product`| May 2, 2023|
 
 ## [End of certification](#tab/eol)
+> [!IMPORTANT]
+> End of certification for Teams display devices is September 3, 2025. Microsoft will make commercially reasonable efforts to maintain compatibility with the most recent version of the Teams apps provided to manufacturers for a period of two (2) years from this date. See the [Microsoft Product and Services lifecycle](/lifecycle/products/) for details.
 
 | Device category | Device model | Android OS version | Certification end date | Microsoft support end date |
 |:----------------|:-------------------|:----------------------------|:--------------------------|:----------------------|

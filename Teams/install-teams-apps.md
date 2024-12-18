@@ -1,7 +1,7 @@
 ---
 title: Preinstall Teams apps for your org users
-author: ashishguptaiitb
-ms.author: guptaashish
+author: surbhigupta12
+ms.author: surbhigupta
 manager: prkosh
 ms.topic: conceptual
 ms.service: msteams

@@ -1,7 +1,7 @@
 ---
 title: Introduction to Microsoft Teams for admins
-author: MicrosoftHeidi
-ms.author: heidip
+author: DaniEASmith
+ms.author: danismith
 manager: jtremper
 ms.topic: conceptual
 ms.service: msteams

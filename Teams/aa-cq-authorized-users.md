@@ -61,6 +61,11 @@ To assign a Teams Phone and Teams Premium license, do the following steps:
 1. Select **Assign** once you're finished.
 1. Repeat Steps 2 and 3 for a Teams Premium license.
 
+Before you can enable voice for your users, you must assign a license to them first. To enable voice for your users, you can use the Teams admin center or PowerShell.
+
+- In the Teams admin center, go to a **Users** > **Manage users** and select the user you want to edit. Under the **Account** tab > **Assigned phone number**, turn **Enterprise Voice** to **On** and select **Save**.
+- For PowerShell, use the [Set-CsPhoneNumberAssignment](/powershell/module/teams/set-csphonenumberassignment) cmdlet and set the `-EnterpriseVoiceEnabled` parameter to `$true`.
+
 ## Step 2: Assign phone numbers to your users
 
 If you haven't already done so, assign user phone numbers to your users. For more information, see [Manage phone numbers for users](assign-change-or-remove-a-phone-number-for-a-user.md).

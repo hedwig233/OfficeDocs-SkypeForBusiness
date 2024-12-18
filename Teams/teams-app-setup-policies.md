@@ -1,7 +1,7 @@
 ---
 title: Manage app setup policies in Microsoft Teams
-author: ashishguptaiitb
-ms.author: guptaashish
+author: surbhigupta12
+ms.author: surbhigupta
 manager: prkosh
 ms.topic: article
 ms.tgt.pltfrm: cloud
@@ -78,7 +78,7 @@ To modify the pinned apps for everyone in your organization, edit the existing `
 
     :::image type="content" source="media/add-pinned-apps-trimmed.png" alt-text="Screenshot shows how to add pinned apps in app setup policy." lightbox="media/add-pinned-apps-large.png":::
 
-1. Arrange the apps in the order that you want the apps to appear in Teams client. You can change the sequence independently under **App bar**, **Messaging extensions**, and **Meeting extensions**. You can remove apps from a scope.
+1. Arrange the apps in the order that you want the apps to appear in Teams client. You can change the sequence independently under **App bar**, **Messaging extensions**, and **Meeting extensions**. You can remove apps from a scope. The first pinned app opens by default when a user opens Teams client on mobile.
 
    :::image type="content" source="media/pinned-apps.png" alt-text="Screenshot of the pinned apps and options to change their order.":::
 

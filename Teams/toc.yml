@@ -802,10 +802,8 @@ items:
               href: meeting-recording.md
             - name: Configure transcription and captions for Teams meetings
               href: meeting-transcription-captions.md
-            - name: Meeting recording storage and permissions in OneDrive and SharePoint
+            - name: Meeting recording and transcript storage and permissions
               href: tmr-meeting-recording-change.md
-            - name: Delete Exchange Online and OneDrive transcript files for Teams meetings
-              href: delete-exchange-online-transcripts.md
         - name: Integration
           items:
             - name: eCDN

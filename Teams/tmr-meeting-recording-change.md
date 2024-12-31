@@ -91,7 +91,7 @@ When the organizer doesn’t have a OneDrive account, here's what happens, in or
 
    Let's take a look at the following example with three co-organizers:
 
-   :::image type="content" source="media/new-objectid-co-organizer-recording-small.png" alt-text="Screenshot of the object IDs for three organizers. The first organizer's object ID starts with the letter one, the first character in the second organizer's object ID is the letter d, and the first letter in the third organizer's object ID is the letter a." lightbox="media/new-objectid-co-organizer-recording-expand.png":::
+   :::image type="content" source="media/mr-objectid-small.png" alt-text="Screenshot of the object IDs for three organizers. The first organizer's object ID starts with the letter one, the first character in the second organizer's object ID is the letter d, and the first letter in the third organizer's object ID is the letter a." lightbox="media/mr-objectid-expand.png":::
 
    In this example, the recording is saved to co-organizer 1’s OneDrive account. If co-organizer 1 doesn’t have a OneDrive account, the recording is saved to co-organizer 3’s OneDrive. If co-organizer 3 also doesn’t have a OneDrive account, the recording is then saved to co-organizer 2’s OneDrive.
 

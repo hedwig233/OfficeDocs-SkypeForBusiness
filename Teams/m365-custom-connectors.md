@@ -1,7 +1,7 @@
 ---
 title: Manage Microsoft 365 connectors and custom connectors
-author: ashishguptaiitb
-ms.author: guptaashish
+author: surbhigupta12
+ms.author: surbhigupta
 manager: prkosh
 ms.topic: article
 ms.service: msteams

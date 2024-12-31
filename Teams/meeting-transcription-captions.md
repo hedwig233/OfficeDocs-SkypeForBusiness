@@ -11,6 +11,7 @@ ms.collection:
   - m365initiative-meetings
   - highpri
   - Tier1
+  - magic-ai-copilot
 ms.reviewer: richardzhang
 ms.date: 4/29/2024
 search.appverid: MET150

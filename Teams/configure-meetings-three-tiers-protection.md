@@ -59,7 +59,6 @@ The following table summarizes the configurations for each tier. Use these confi
 |People dialing in can bypass the lobby|**Off**|**Off**|**Off**|**Off**|
 |Prevent copying chat content to clipboard|**Off**|**Off**|**On**|**On**|
 |Record meetings automatically|**Off**|**Off**|**Off**|**Off**|
-|Require a verification check from|**Not required**|**Anonymous users**|**Anonymous users and people from untrusted organizations**|**Anonymous users and people from untrusted organizations**|
 |Who can bypass the lobby?|**People in my org, trusted orgs, and guests**|**People who were invited**|**Only organizers and co-organizers**|**Only organizers and co-organizers**|
 |Who can present|**People in my org and guests**|**People in my org and guests**|**Only organizers and co-organizers**|**Only organizers and co-organizers**|
 |Who can record|**Organizers, co-organizers, and presenters**|**Organizers and co-organizers**|Disabled due to watermarking|Disabled due to watermarking|
@@ -85,7 +84,6 @@ Some options are only available in sensitivity labels and some are only availabl
 - Meeting recording
 - Prevent copying chat content to clipboard
 - Watermarking
-- Require a verification check from
 
 Sensitivity labels and templates can be used together to help you meet your compliance needs. For more information, see [Use Teams meeting templates, sensitivity labels, and admin policies together](meeting-templates-sensitivity-labels-policies.md).
 

@@ -15,6 +15,7 @@ ms.collection:
   - M365-collaboration
   - teams-rooms-consoles
   - Tier1
+  - magic-ai-copilot
 f1.keywords: 
   - NOCSH                           
 search.appverid: MET150

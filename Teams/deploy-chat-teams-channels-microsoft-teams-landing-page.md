@@ -2,7 +2,7 @@
 title: Chat, teams, channels, & apps in Microsoft Teams
 ms.reviewer: karuanag
 ms.date: 11/04/2024
-author: DaniESmith
+author: DaniEASmith
 ms.author: danismith
 manager: jtremper
 ms.topic: article

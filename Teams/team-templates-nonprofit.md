@@ -1,7 +1,7 @@
 ---
 title: Use nonprofit team templates
-author: MicrosoftHeidi
-ms.author: heidip
+author: DaniEASmith
+ms.author: danismith
 manager: jtremper
 audience: Admin
 ms.topic: article
@@ -37,7 +37,7 @@ In this article, you'll learn about the Manage Volunteers team template and how 
 
 Bring your staff together to communicate and collaborate on volunteer management tasks and activities.
 
-This template includes channels and apps designed to streamline volunteer management activities. Staff can organize and share onboarding materials and frequently used documents, view reporting, stay up to date on important team and event announcements, and more. The template also integrates with [Volunteer Management](/dynamics365/industry/nonprofit/volunteer-management-use), an app that's part of [Microsoft Cloud for Nonprofit](/industry/nonprofit/), enabling staff to manage volunteer engagement opportunities within Teams.
+This template includes channels and apps designed to streamline volunteer management activities. Staff can organize and share onboarding materials and frequently used documents, view reporting, stay up to date on important team and event announcements, and more. The template also integrates with [Volunteer Management](/industry/nonprofit/volunteer-management-deploy), an app that's part of [Microsoft Cloud for Nonprofit](/industry/nonprofit/), enabling staff to manage volunteer engagement opportunities within Teams.
 
 Here's the channels and apps that come with the Manage Volunteers team template.
 

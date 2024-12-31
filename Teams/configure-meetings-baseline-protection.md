@@ -6,7 +6,7 @@ manager: pamgreen
 ms.topic: article
 ms.service: msteams
 ms.reviewer: vivek.mohan
-ms.date: 11/14/2024
+ms.date: 12/13/2024
 audience: admin
 ms.localizationpriority: medium
 f1.keywords:
@@ -44,7 +44,6 @@ The following table describes which actions we restrict for baseline meetings an
 |People dialing in can bypass the lobby|**Off**|Template|Yes|
 |Prevent copying chat content to clipboard|**Off**|Label|Yes|
 |Record automatically|**Off**|Template|No|
-|Require a verification check from|**Not required**|Label or Template|Yes|
 |Who can bypass the lobby?|**People in my org, trusted orgs, and guests**|Template|No|
 |Who can present|**People in my org and guests**|Teams admin center|No|
 |Who can record|**Organizers, co-organizers, and presenters**|Template|No|
@@ -89,7 +88,29 @@ For the *baseline* level of protection, we use a sensitivity label that you can 
 
 If you already have sensitivity labels deployed in your organization, consider how this label fits with your overall label strategy. You can change the name or settings if needed to meet the needs of your organization. If you already have a label that you use for baseline or general protection, you can edit the label and add Teams meetings to it.
 
-To learn how to create and manage a sensitivity label, see [Use sensitivity labels to protect calendar items, Teams meetings and chat](/purview/sensitivity-labels-meetings#how-to-configure-a-sensitivity-label-to-protect-calendar-items-teams-meetings-and-chats).
+To create a sensitivity label:
+
+1. Open the [Microsoft Purview portal](https://purview.microsoft.com).
+1. Under **Solutions**, expand **Information protection** and then select **Labels**.
+1. Select **Create a label**.
+1. Give the label a name. We suggest **Baseline**, but you can choose a different name if **Baseline** is already taken.
+1. Add a display name and description, and then select **Next**.
+1. On the **Define the scope for this label** page, make sure **Files & other data assets**, **Emails**, and **Meetings** are selected. You can select other options if you want to use this label for other purposes.
+1. Select **Next**.
+1. On the **Choose protection settings for types of items you selected** page, select **Protect Teams meetings and chats** and then select **Next**.
+1. On the **Settings for Teams meetings and chats** page, choose the following values:
+    1. Select **Control end-to-end encryption for meeting video and audio** and set **Apply end-to-end encryption** to **Don't apply end-to-end encryption**.
+    1. Select **Control watermarks** and select **Don't apply watermark to shared content** and **Don't apply watermark to everyone's video feed**.
+    1. Configure any other settings that you need for your organization.
+
+       :::image type="content" alt-text="Screenshot of meeting sensitivity label settings showing configuration in this procedure." source="media/teams-meeting-sensitivity-label-baseline-small.png":::
+
+1. Select **Next**.
+1. Complete the wizard with any other settings you want to use, select **Create label**, and then select **Done**.
+
+Once you create the label, you need to publish it to the users who will use it. For baseline protection, we make the label available to all users. You publish the label in the Microsoft Purview portal, on the **Label policies** page under **Information protection**. If you have an existing policy that applies to all users, add this label to that policy. If you need to create a new policy, see [Publish sensitivity labels by creating a label policy](/purview/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy).
+
+For more information about using sensitivity labels with meetings, see [Use sensitivity labels to protect calendar items, Teams meetings, and chat](/purview/sensitivity-labels-meetings).
 
 ## Meeting templates
 

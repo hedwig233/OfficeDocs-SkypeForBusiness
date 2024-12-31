@@ -11,6 +11,7 @@ ms.service: msteams
 audience: Admin
 ms.collection: 
   - M365-collaboration
+  - magic-ai-copilot
 ms.custom:
   - admindeeplinkTEAMS
 f1.keywords:

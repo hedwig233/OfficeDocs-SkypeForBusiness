@@ -81,6 +81,8 @@ A Teams Premium subscription includes the following features for webinars:
 
 |Feature name | Webinar features | Teams Premium webinar features |
 |-------------------------------------------------------|:---------------------:|:-------------------------:|
+|Duration|30 hours |30 hours|
+|Recording length<sup>1</sup>|4 hours |4 hours|
 |Allow registered users to bypass the lobby         |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                      |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                          |
 |Assign a co-organizer                              |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                      |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                          |
 |Limit the number of people who can register        |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                      |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                         |
@@ -89,6 +91,7 @@ A Teams Premium subscription includes the following features for webinars:
 |Turn on Q&A for webinars|![Image of a checkmark for yes](/office/media/icons/success-teams.png) |![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 |View attendance reports|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 |External presenters|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
+|Download transcripts|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 |Create a webinar wait list                         |                       |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                          |
 |Limit the day and time when people can register    |                       |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                         |
 |Manage attendees’ view                             |                       |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                          |
@@ -99,6 +102,8 @@ A Teams Premium subscription includes the following features for webinars:
 |Manage what attendees see                          |                       |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                         |
 |Custom meeting templates                         |                       |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                         |
 |Admin created custom meeting backgrounds                         |                       |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                         |
+
+<sup>1</sup> - Every four hours, a new recording starts. For example, a webinar that lasts 8 hours has two recordings.
 
 ## Webinar control comparison
 
@@ -111,6 +116,7 @@ Teams admins and organizers have different policies and settings to control the 
 |[Chat](manage-meeting-chat.md)|Can manage whether organizers, presenters, and co-organizers, and attendees can read and write chat messages.|Can manage whether chat is available for their webinars.|
 |[Collaboration features](meeting-policies-content-sharing.md)|Can control the availability of PowerPoint Live, whiteboard, and shared notes.|No control.|
 |[Content sharing](meeting-who-present-request-control.md)|Can control sharing mode and who can request control and can set a default for who can present.|Can control who can present.|
+|[Download transcripts](https://support.microsoft.com/office/manage-webinar-recordings-in-microsoft-teams-8cf1ba61-c9d8-4628-8b5d-0dcdb8503144)|No control.|Can download transcripts from their webinars.|
 |[Email communications (Teams Premium)](manage-email-communications.md)|Can control if event organizers and co-organizers can edit email templates for their webinars.|Can edit email templates  before they're sent out.|
 |[External presenters](https://support.microsoft.com/office/schedule-a-webinar-in-microsoft-teams-0719a9bd-07a0-47fd-8415-6c576860f36a)|No control.|Can invite presenters from outside  of your organization. External presenters have a unique join link to join the webinar without waiting in the lobby.|
 |[Green room](https://support.microsoft.com/office/green-room-for-teams-meetings-5b744652-789f-42da-ad56-78a68e8460d5)|No control.|Can choose if green room is used for a webinar.|

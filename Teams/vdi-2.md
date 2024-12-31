@@ -386,6 +386,7 @@ By default, the MsTeamsPlugin automatically downloads and installs the right Sli
        - If someone turns their camera **on** only, there's no issue because the video element is created, not destroyed.
        - If the presenter maximizes the call monitor (which destroys the self preview of what the presenter is sharing).
   - Stopping and resharing the window should resolve the issue.
+  - This issue has been resolved in new Teams 24335.206.X.X or higher versions.
 
 #### Citrix virtual channel allow list
 

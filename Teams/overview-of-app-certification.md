@@ -2,8 +2,8 @@
 title: Know about high quality Microsoft certified Teams apps
 description: Learn about the Microsoft 365 app compliance program for security, compliance, and privacy of third-party apps.
 ms.topic: article
-author: ashishguptaiitb
-ms.author: guptaashish
+author: surbhigupta12
+ms.author: surbhigupta
 manager: prkosh
 audience: admin
 ms.subservice: teams-apps

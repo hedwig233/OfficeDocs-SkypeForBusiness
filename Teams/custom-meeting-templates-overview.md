@@ -5,8 +5,8 @@ author: wlibebe
 manager: pamgreen
 ms.topic: article
 ms.service: msteams
-ms.reviewer: janineco
-ms.date: 01/08/2024
+ms.reviewer: idilates
+ms.date: 12/6/2024
 audience: admin
 ms.localizationpriority: medium
 f1.keywords:
@@ -32,17 +32,18 @@ The following meeting options can be controlled by using a meeting template:
 |Option|Description|
 |:------|:----------|
 |**Security**||
-|Sensitivity label|Specifies the sensitivity label to be used for the meeting.|
+|Apply sensitivity label|Specifies the sensitivity label to be used for the meeting.|
 |Lobby|Specifies who can bypass the lobby and join the meeting directly.|
+|People dialing in can bypass the lobby|Specifies whether users dialing in can bypass the lobby and join the meeting directly.|
 |End-to-end encryption|Specifies if the meeting is encrypted.|
-|Watermarks|Specifies if watermarks are used for camera feeds and content that is shared on screen in the meeting.|
+|Enable watermark for screenshare|Specifies if watermarks are used for content that is shared on screen in the meeting.|
+|Enable watermark for video|Specifies if watermarks are used for camera feeds in the meeting.|
 |Restrict participants from copying or forwarding meeting chat messages|Prevents participants from copying or forwarding content in the meeting chat.|
-|Require a verification check from|Controls whether anonymous users must complete a verification check to join meetings and webinars in your org.|
 |**Audio & video**||
 |Allow mic and camera for attendees|Specifies if attendees can unmute and use their camera.|
 |*Recording & transcription*||
 |Recording|Specifies who can record and if the meeting is recorded automatically.|
-|Copilot|Specifies how transcripts are used for Microsoft 365 Copilot in Teams meetings and events.|
+|Allow Copilot|Specifies how transcripts are used for Microsoft 365 Copilot in Teams meetings and events.|
 |*Roles*||
 |Announce when people dialing in join or leave|Specifies if a sound plays when people calling in by phone join or leave the meeting.|
 |**Meeting engagement**||
@@ -50,8 +51,6 @@ The following meeting options can be controlled by using a meeting template:
 |Allow reactions|Specifies if attendees can use reactions or raise their hand in the meeting.|
 |Q&A|Specifies if attendees can use the Q&A feature to ask questions during the meeting.|
 |Manage what attendees see|Specifies if meeting organizers can preview and approve content being shared on screen before other meeting participants can see it.|
-
-|Require a verification check from|**Not required**|Label or Template|Yes|
 
 Some examples of when a template can be useful are:
 

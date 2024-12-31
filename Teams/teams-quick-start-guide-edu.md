@@ -1,9 +1,9 @@
 ---
 title: Quick start - Set up Microsoft Teams for Education
 description: IT administrators at education institutions can use this quick start guide to deploy Microsoft Teams for Education across their organization.
-author: MicrosoftHeidi
-ms.author: heidip
-manager: jacktremper
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
 audience: admin
 displayType: one-column
 ms.date: 08/30/2018

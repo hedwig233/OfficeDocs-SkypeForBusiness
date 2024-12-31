@@ -1,9 +1,9 @@
 ---
 ms.date: 07/01/2023
 title: Plan for meetings with external participants in Microsoft Teams
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+author: DaniEASmith
+ms.author: danismith
+manager: jtremper
 ms.topic: conceptual
 ms.service: msteams
 ms.reviewer: alsolom

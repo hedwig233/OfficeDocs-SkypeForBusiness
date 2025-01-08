@@ -83,8 +83,7 @@ To modify the pinned apps for everyone in your organization, edit the existing `
 
 1. Arrange the apps in the order that you want the apps to appear in Teams client. You can change the sequence independently under **App bar**, **Messaging extensions**, **Meeting extensions**, and **Calling extensions**. You can remove apps from a scope.
 
-   **Placeholder image**
-   :::image type="content" source="media/pinned-apps.png" alt-text="Screenshot of the pinned apps and options to change their order.":::
+   :::image type="content" source="media/pinned-apps.png" alt-text="Screenshot of the pinned apps and options to change their order." lightbox="media/pinned-apps.png":::
 
 1. Select **Save**.
 

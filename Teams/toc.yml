@@ -1425,6 +1425,8 @@ items:
                       href: devices/reserving-rooms-with-a-qr-code.md
                     - name: Custom backgrounds on Teams panels
                       href: devices/custom-background-panels.md
+                    - name: Custom name for Teams panels
+                      href: devices/custom-names.md
             - name: Surface Hub (legacy)
               items: 
                 - name: Manage Microsoft Teams settings

@@ -2,8 +2,8 @@
 title: "Enable users for Direct Routing"
 ms.reviewer: filippse
 ms.date: 08/15/2023
-ms.author: crowe
-author: CarolynRowe
+ms.author: scottfrancis
+author: sfrancis206
 manager: pamgreen
 audience: ITPro
 ms.topic: article

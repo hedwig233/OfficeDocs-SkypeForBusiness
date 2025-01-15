@@ -192,7 +192,7 @@ The following tables compare key features between Teams and Teams Premium. Becau
 | Add watermarks to meetings |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | End-to-end encryption for meetings |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Control who can record |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
-| Prevent copy/paste in meeting chats |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
+| Organizer can restrict participants from copying or forwarding meeting chat messages, live captions, and transcripts |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Assign Microsoft Purview Information Protection sensitivity labels for meetings\* |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Custom user policy packages |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Prevent users from sharing content in external Teams meetings |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
@@ -426,7 +426,7 @@ The following list indicates Teams Premium features that require admin configura
 - Using end-to-end encryption on meetings up to 200 participants.
 - Adding watermarks to meetings.
 - Adding sensitivity labels.
-- Preventing copy and paste in meeting chats.
+- Allowing organizers to restrict participants from copying or forwarding meeting chat messages, live captions, and transcripts
 - Using organization customized backgrounds.
 - Using organization customized Together mode scenes.
   - Admin must create the custom Together mode scene.

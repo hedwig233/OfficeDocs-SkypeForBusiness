@@ -29,7 +29,7 @@ appliesto:
 
 # Introduction to Teams recording
 
-**APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Meetings ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Webinars ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Town halls ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Calls ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Live events
+**APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Meetings ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Webinars ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Calls
 
 ## Overview
 
@@ -69,6 +69,7 @@ Meeting recordings don't capture:
 - Content shared by apps
 - Videos or animations embedded in PowerPoint Live presentations
 - Multi-screen share
+- Town Hall or Live Event attendee video streams
 
 Calls in Teams are unscheduled, peer-to-peer Teams client sessions (encompassing internal and external Teams users). In convenience and compliance recording, policy scope for calls includes Teams PSTN calls, if the user has one of the following licenses: Microsoft 365 E5, Office 365 E5, or Microsoft/Office 365 E3 with Teams Phone Add-on license.
 

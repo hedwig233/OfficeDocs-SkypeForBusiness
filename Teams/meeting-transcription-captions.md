@@ -123,6 +123,10 @@ To enable **Live translated captions**, **Live captions** must be set to '**Off,
 
 For information on how your end users can use live translated captions, see [Use live translated captions in a teams meeting](https://support.microsoft.com/office/4be2d304-f675-4b57-8347-cbd000a21260).
 
+## Manage whether organizers can prevent participants from copying or forwarding meeting chat messages, live captions, and transcripts
+
+As an admin, you can choose whether organizers in your organization can restrict participants from copying or forwarding meeting chat messages, live captions, transcripts, and AI-generated insights in the meeting recaps. This setting also restricts forwarding and sharing messages to Outlook. By default, this per-organizer setting is set **On**. To learn more, see [Manage chat for sensitive Teams meetings](manage-chat-sensitive-meetings.md).
+
 ## Related topics
 
 - [Teams meeting recording](meeting-recording.md)

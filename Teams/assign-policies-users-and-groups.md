@@ -33,7 +33,7 @@ Before reading, be sure you've read [Assign policies in Teams - getting started]
 
 This video shows how to assign policies to multiple users.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5fxbM?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=9e9c810d-9eb6-46f2-88f4-f5a25f986f0e]
 
 ## Assign a policy to individual users
 
@@ -150,7 +150,7 @@ To change the ranking of a group assignment, you need to remove the group policy
 
 This video shows the steps to create and assign a custom meeting policy to a group.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1ca7M?autoplay=false]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=10211f80-e38c-47e1-a5a2-2bc3b45ab508]
 
 ### Install and connect to the Microsoft Teams PowerShell module
 

@@ -69,7 +69,7 @@ Teams Premium provides more ways to safeguard and monitor users' Teams experienc
 
 - **Manage what attendees see** - Meeting organizers can decide whose avatars or video feeds to spotlight during a Teams meeting while others are hidden from view.
 
-- **Prevent users from sharing content in external Teams meetings** - Control whether users in your org with a Teams Premium license can share content when attending external Teams meetings.
+- **Organizer can restrict participants from copying or forwarding meeting chat messages, live captions, and transcript** - Control whether organizers can restrict participants from copying or forwarding meeting chat messages, live captions, transcripts, and AI-generated insights in the meeting recaps. This setting also restricts forwarding and sharing messages to Outlook.
 
 - **Screen sharing quality alerts** - Set up alerts for in-progress meeting screen sharing issues and get notified immediately when your specified users experience issues.
 
@@ -95,7 +95,7 @@ Teams Premium provides more ways to safeguard and monitor users' Teams experienc
   | Manage what attendees see | No, contact support for assistance.| No admin control | [Manage what attendees see in Teams meetings](https://support.microsoft.com/office/manage-what-attendees-see-in-teams-meetings-19bfd690-8122-49f4-bc04-c2c5f69b4e16)|
   | Manage which eCDN provider view-only meetings use |Yes |[Enterprise content delivery networks for streaming Microsoft Teams events](streaming-ecdn-enterprise-content-delivery-network.md#manage-the-ecdn-solution-for-premium-town-halls-and-view-only-meetings)|No end user control |
   | Microsoft eCDN |Yes |[How to enable Microsoft eCDN](/ecdn/how-to/enable-microsoft-ecdn-for-your-tenant)|No end user control |
-  | Prevent copying chat content to clipboard |Yes, use the Teams admin center to add or delete chat content copying restrictions in your meeting templates. Use the Microsoft Purview portal to turn labels with chat content copying restrictions on or off.| [Manage chat for sensitive Teams meetings](manage-chat-sensitive-meetings.md) | No end-user control |
+  | Organizer can restrict participants from copying or forwarding meeting chat messages, live captions, and transcript |Yes, use the Teams admin center to manage content copying restrictions in your meeting templates or policies. Use the Microsoft Purview portal to turn labels with chat content copying restrictions on or off.| [Manage chat for sensitive Teams meetings](manage-chat-sensitive-meetings.md) | No end-user control |
   | Prevent users from sharing content in external meetings|Yes| [Prevent users from sharing content in external meetings](block-external-content-share.md) | No end-user control |
   | Priority account chat controls|Yes| [Allow users to block Microsoft Teams chat messages](block-incoming-chats.md) | No end-user documentation |
   | Real-time telemetry and retention|No, contact support for assistance.| [Use real-time telemetry to troubleshoot poor meeting quality](use-real-time-telemetry-to-troubleshoot-poor-meeting-quality.md#where-to-find-per-user-real-time-troubleshooting-telemetry) | No end-user control |

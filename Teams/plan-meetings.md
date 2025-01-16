@@ -125,7 +125,8 @@ Teams admins and organizers have different policies and settings to control the 
 
 |Feature|Admins|Organizers|
 |:------|:-----|:---------|
-|[Anonymous participants](anonymous-users-in-meetings.md)|Manage how anonymous attendees access Teams meetings in your org.|No control |
+|[Anonymous participants](anonymous-users-in-meetings.md)|Manage how anonymous attendees access Teams meetings in your org.|**(Public preview)** can prevent anonymous users from joining specific meetings if admin allows.|
+|[Anonymous users can join a meeting after verifying (Teams Premium- Public preview)](anonymous-users-in-meetings.md#anonymous-users-can-join-a-meeting-after-verifying-with-an-email-code-public-preview-for-teams-premium)|**(Public preview)** Manage whether anonymous users can verify themselves with a one-time passcode to join meetings in your org.|**(Public preview)** If admin allows, can require anonymous to verify themselves with a one-time passcode to join specific meetings.|
 |[Attendance and engagement reports](/microsoftteams/teams-analytics-and-reports/meeting-attendance-report)|Can enforce on or off or allow organizer to choose.|Can turn on or off if allowed by admin.|
 |[Audio and video](meeting-policies-audio-and-video.md)|Can set audio and video modes and network settings.|Can allow or prevent attendee mic and cameras.|
 |[Breakout rooms](https://support.microsoft.com/office/use-breakout-rooms-in-microsoft-teams-meetings-7de1f48a-da07-466c-a5ab-4ebace28e461)|No control|Can create and manage breakout rooms.|
@@ -154,7 +155,7 @@ Teams admins and organizers have different policies and settings to control the 
 |[Meeting join and lobby](who-can-bypass-meeting-lobby.md)|Can set the defaults for new meetings.|Can choose meeting join and lobby settings for each meeting.|
 |[Meeting themes (Teams Premium)](meeting-themes.md)|Can define meeting themes, including colors, images, and logo.|Can turn the admin-defined theme on or off.|
 |[Microsoft 365 Copilot in Teams meetings and events](copilot-teams-transcription.md)|Can control the default values and enforce specific values for Microsoft 365 Copilot in Teams meetings and events in organizers’ meeting options.|Can control whether Microsoft 365 Copilot in Teams meetings and events is used **Only during the meeting**, **During and after the meeting**, or **Off**. Attendees can use Copilot if they have a Copilot Microsoft 365 Copilot license.|
-|[Prevent copying or forwarding of chat (Teams Premium)](manage-chat-sensitive-meetings.md#prevent-copying-or-forwarding-of-chat)|Can prevent copying or forwarding of chat contents by using a meeting template or sensitivity label.|Can manage options if admin doesn't lock label or template settings. |
+|[Prevent copying or forwarding chat, captions, and transcripts (Teams Premium)](manage-chat-sensitive-meetings.md#prevent-copying-or-forwarding-chat-captions-and-transcripts)|Can prevent copying or forwarding of chat contents by using a meeting template or sensitivity label.|Can manage options if admin doesn't lock label or template settings. |
 |[Prevent users from joining external meetings](external-meeting-join.md)|Can control which types of Microsoft Teams meetings your users can join.|No control|
 |[Prevent users from sharing content in external meetings (Teams Premium)](block-external-content-share.md)|Can control which types of external Microsoft Teams meetings your users share content in.|No control|
 |[Q&A](manage-qna-for-teams.md)|Can manage if organizers can use Q&A in meetings.|Can decide if Q&A is available for their meetings if allowed by admins.|

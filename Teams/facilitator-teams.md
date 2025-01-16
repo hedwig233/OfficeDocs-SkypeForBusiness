@@ -11,6 +11,7 @@ ms.service: msteams
 audience: Admin
 ms.collection: 
   - M365-collaboration
+  - magic-ai-copilot
 ms.custom:
   - admindeeplinkTEAMS
 f1.keywords:
@@ -77,7 +78,7 @@ For more information about security and privacy in Microsoft 365 Copilot, see th
 #### AI-generated notes for meetings limitations
 
 - AI-generated notes for meetings aren't automatically collected as cloud attachments in [Microsoft Preview eDiscovery](/purview/ediscovery-cloud-attachments) because it isn't currently supported.
-- Meeting settings like [Prevent copy and paste](manage-chat-sensitive-meetings.md#prevent-copying-or-forwarding-of-chat) and [Watermarks](watermark-meeting-content-video.md) aren't applied to AI-generated notes in meetings.
+- Meeting settings like [Prevent copy and paste](manage-chat-sensitive-meetings.md#prevent-copying-or-forwarding-chat-captions-and-transcripts) and [Watermarks](watermark-meeting-content-video.md) aren't applied to AI-generated notes in meetings.
 - AI-generated notes for meetings don't inherit the meeting's sensitivity label; however, a sensitivity label can be applied to the notes' Loop component in the [Loop app or OneDrive](/purview/sensitivity-labels-loop).
 
 ## Prerequisites and licensing

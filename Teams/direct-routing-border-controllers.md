@@ -1,9 +1,9 @@
 ---
 title: "Session Border Controllers certified for Direct Routing"
-ms.author: crowe
+ms.author: scottfrancis
 ms.reviewer: FilippSe
 ms.date: 06/12/2024
-author: CarolynRowe
+author: sfrancis206
 manager: pamgreen
 audience: ITPro
 ms.topic: article
@@ -92,8 +92,8 @@ Note that we're not accepting new nominations for certification until further no
 ||Cisco Unified Border Element (CUBE) for Catalyst 8000 Edge Platforms|&#10004;|&#10004;|Supported IOS XE Amsterdam 17.3.2 (Recommended 17.6.1a)|&#10004;||
 |[Avaya](https://support.avaya.com/products/P0997/avaya-session-border-controller-for-enterprise/8.1.x)|Avaya Session Border Controller for Enterprise (ASBCE)|&#10004;|&#10004;|Release 8.1.1 or higher (8.1.2 or higher for Media Bypass)|||
 |[Nokia](https://documentation.nokia.com/aces/cgi-bin/chk_access.cgi/3TB30222GBAAACZZA.zip)|Nokia Session Border Controller|&#10004;|&#10004;|23.8|&#10004;||
-|[Italtel](https://www.italtel.com/italtel-provides-direct-routing-sbc-for-microsoft-teams/)|NetMatch-S CI|&#10004;|&#10004;|Supported 5.8 (Recommended the latest version)|&#10004;|&#10004;|
-|[Ericsson](https://www.ericsson.com/en/portfolio/digital-services/cloud-communication/enterprise-communication/business-communication-services-and-enablers/sip-trunking)|vSBC 2.16|&#10004;|||||
+|[Italtel](https://www.italtel.com/italtels-sbc-obtains-microsoft-teams-direct-routing-certification/)|NetMatch-S CI|&#10004;|&#10004;|Supported 5.8 (Recommended the latest version)|&#10004;|&#10004;|
+|[Ericsson](https://www.ericsson.com/en/portfolio/cloud-software-and-services/cloud-communication/enterprise-communication/business-communication-applications-and-enablers/sip-trunking)|vSBC 2.16|&#10004;|||||
 |[Cataleya](https://cataleya.com/cataleya-launches-orchid-cloud-revolutionary-cloud-based-wholesale-voice-business-platform/)|Orchid Link|&#10004;||3.1|||
 |[ULTATEL](https://www.ultatel.com/services/direct-routing-teams-sbc)|Teams SBC|&#10004;|&#10004;|1.6|||
 |[Mitel](https://unify.com/en/solutions/voice-platforms/session-border-controller)|Unify OpenScape Session Border Controller|&#10004;|&#10004;|V10R2.2.0 or higher|||
@@ -124,7 +124,7 @@ The following emergency services providers are certified and supported by Micros
 
 - [Bandwidth Dynamic Location Routing](https://www.bandwidth.com/partners/microsoft-teams-direct-routing/)
 - [Intrado Emergency Routing Service (ERS)](https://www.intrado.com/enterprise-solutions/e911/microsoft-teams)
-- [Inteliquent](https://www.inteliquent.com/services/emergency-services/e911)
+- [Inteliquent](https://sinch.com/news/inteliquent-launches-microsoft-teams-certified-e911-calling/)
 
 ## Support for Local Media Optimization
 
@@ -159,7 +159,7 @@ The following table describes which SBC vendors support [Local Media Optimizatio
 ||AP 3950|9.x|
 ||AP 4900|9.x|
 |[Avaya](https://documentation.avaya.com/en-US/bundle/WorkingWithAvayaSBCEandMicrosoftTeams_r81x/page/About_Avaya_SBCE_and_MS_Teams.html)|Avaya Session Border Controller for Enterprise (ASBCE)|10.1.2 or higher|
-|[Italtel](https://www.italtel.com/italtel-provides-direct-routing-sbc-for-microsoft-teams/)|NetMatch-S CI|5.7 or higher SW version|
+|[Italtel](https://www.italtel.com/italtels-sbc-obtains-microsoft-teams-direct-routing-certification/)|NetMatch-S CI|5.7 or higher SW version|
 |[Enghouse Networks](https://www.enghousenetworks.com/portfolio/network-infrastructure/cloud-native-session-border-controller-sbc/)|Enghouse BorderNet|3.9.2-XY or higher SW version|
 
 ## Direct Routing and analog devices interoperability

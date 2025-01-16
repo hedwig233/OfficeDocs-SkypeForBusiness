@@ -19,6 +19,7 @@ description: How to enable or disable AI content recommendations for educators i
 ms.collection: 
   - M365-collaboration
   - tier2
+  - magic-ai-copilot
 ---
 
 # Set up AI content recommendations in an institution

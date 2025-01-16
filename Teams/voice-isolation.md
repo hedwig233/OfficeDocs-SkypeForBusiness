@@ -22,6 +22,7 @@ ms.collection:
   - teams-rooms-devices
   - highpri
   - Tier1
+  - magic-ai-copilot
 description: Learn how to manage whether users can use voice isolation for IT Admins in Microsoft Teams. 
 ---
 

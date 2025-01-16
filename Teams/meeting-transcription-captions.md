@@ -11,6 +11,7 @@ ms.collection:
   - m365initiative-meetings
   - highpri
   - Tier1
+  - magic-ai-copilot
 ms.reviewer: richardzhang
 ms.date: 4/29/2024
 search.appverid: MET150
@@ -121,6 +122,10 @@ Live translated captions allow your users to see captions translated into the la
 To enable **Live translated captions**, **Live captions** must be set to '**Off, but organizers and co-organizers can turn them on**' in the corresponding meeting policy in the Teams admin center. To turn off **Live translated captions**, set **Live captions** to **Off**.
 
 For information on how your end users can use live translated captions, see [Use live translated captions in a teams meeting](https://support.microsoft.com/office/4be2d304-f675-4b57-8347-cbd000a21260).
+
+## Manage whether organizers can prevent participants from copying or forwarding meeting chat messages, live captions, and transcripts
+
+As an admin, you can choose whether organizers in your organization can restrict participants from copying or forwarding meeting chat messages, live captions, transcripts, and AI-generated insights in the meeting recaps. This setting also restricts forwarding and sharing messages to Outlook. By default, this per-organizer setting is set **On**. To learn more, see [Manage chat for sensitive Teams meetings](manage-chat-sensitive-meetings.md).
 
 ## Related topics
 

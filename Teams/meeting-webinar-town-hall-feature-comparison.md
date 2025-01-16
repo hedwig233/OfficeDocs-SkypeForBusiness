@@ -30,12 +30,13 @@ description: Learn which features are available in Teams meetings, webinars, and
 
 **APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Meetings ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Webinars ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Town halls
 
-The following table shows which features are available in meetings, webinars, and town halls.
+The following table shows which features are available in meetings, webinars, and town halls:
 
 |Feature|Meetings|Webinars|Town halls|
 |:------|:-------|:-------|:---------|
 |[Announce when callers join or leave](turn-on-or-off-entry-and-exit-announcements-for-meetings-in-teams.md)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 |[Anonymous participants](anonymous-users-in-meetings.md)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
+|[Anonymous users can join a meeting after verifying](anonymous-users-in-meetings.md#anonymous-users-can-join-a-meeting-after-verifying-with-an-email-code-public-preview-for-teams-premium)|Premium|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
 |[Attendance and engagement reports](/microsoftteams/teams-analytics-and-reports/meeting-attendance-report)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 |[Attendee mic and camera](meeting-policies-audio-and-video.md)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
 |[Breakout rooms](https://support.microsoft.com/office/use-breakout-rooms-in-microsoft-teams-meetings-7de1f48a-da07-466c-a5ab-4ebace28e461)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)<sup>1</sup>|![Image of a x for no](/office/media/icons/cancel-teams.png)|
@@ -74,7 +75,7 @@ The following table shows which features are available in meetings, webinars, an
 |[Participants can give or request control](meeting-who-present-request-control.md)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
 |[PowerPoint Live](https://support.microsoft.com/office/present-from-powerpoint-live-in-microsoft-teams-28b20e74-7165-499c-9bd4-0ad975d448ad)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
 |[Presenters](meeting-who-present-request-control.md)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
-|[Prevent copying or forwarding of chat](manage-chat-sensitive-meetings.md#prevent-copying-or-forwarding-of-chat)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
+|[Prevent copying or forwarding chat, captions, and transcripts](manage-chat-sensitive-meetings.md#prevent-copying-or-forwarding-chat-captions-and-transcripts)|Premium|Premium|Premium|
 |[Prevent users from joining external meetings](external-meeting-join.md)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
 |[Prevent users from sharing content in external meetings](block-external-content-share.md)|Premium|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
 |[Q&A](manage-qna-for-teams.md)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|

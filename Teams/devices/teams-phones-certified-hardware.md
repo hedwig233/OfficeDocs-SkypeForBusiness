@@ -85,6 +85,7 @@ See [Microsoft Teams phones feature set](phones-for-teams.md) for information on
 #### <b> Audiocodes </b>
 | Device model | Latest firmware version | Minimum firmware version | Included Microsoft applications**   | Release date |
 |:----------------|:-------------------|:----------------------------|:---------------------------------------------------------------------------------------------------------------|:------------------------------------------|
+| C470HD | `2.3.480 (AOSP)` | `N/A`| Teams client: `1449/1.0.94.2024092304` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2410.7268` <br> Admin Agent: `1.0.0.202407050618.product`| December 18, 2024| 
 | C430HD | `2.3.461` | `1.19.584`| Teams client: `1449/1.0.94.2024080808` <br> Company Portal: `5.0.6152.0` <br> Admin Agent: `1.0.0.202407050618.product`| November 20, 2024| 
 | C435HD/C455HD/C470HD | `2.3.453` | `1.19.584`| Teams client: `1449/1.0.94.2024080808` <br> Company Portal: `5.0.6152.0` <br> Admin Agent: `1.0.0.202402202353.product`| September 19, 2024|
 | C430HD | `2.3.423` | `N/A`| Teams client: `1449/1.0.94.2024062010` <br> Company Portal: `5.0.6152.0` <br> Admin Agent: `1.0.0.202402202353.product`| September 17, 2024| 
@@ -130,9 +131,10 @@ See [Microsoft Teams phones feature set](phones-for-teams.md) for information on
 #### <b> Yealink </b>
 | Device model | Latest firmware version | Minimum firmware version | Included Microsoft applications**   | Release date |
 |:----------------|:-------------------|:----------------------------|:----------------------------------------------------------------------------------------------|:--------------------------------------------|
+|MP52 E2/MP54 E2/MP56 E2/MP58 E2| `176.15.0.31`| `N/A` | Teams client: `1449/1.0.94.2024101709` <br> Company Portal: `5.0.6152.0` <br> Admin Agent: ` 1.0.0.202407050618.product`| December 20, 2024|
 |MP52 E2/MP54 E2/MP56 E2/MP58 E2| `176.15.0.25`| `N/A` | Teams client: `1449/1.0.94.2024082806` <br> Company Portal: `5.0.6152.0` <br> Admin Agent: ` 1.0.0.202402202353.product`| October 23, 2024|
-|MP54/MP56/MP58| `122.15.0.160`| `122.15.0.142` | Teams client: `1449/1.0.94.2024082806` <br> Company Portal: `5.0.6152.0` <br> Admin Agent: `1.0.0.202402202353.product`| September 30, 2024|
-|CP965| `143.15.0.68`| `143.15.0.54` | Teams client: `1449/1.0.94.2024082806` <br> Company Portal: `5.0.6152.0` <br> Admin Agent: `1.0.0.202402202353.product`| September 30, 2024|
+|MP54/MP56/MP58| `122.15.0.160`| `122.15.0.142` | Teams client: `1449/1.0.94.2024082806` <br> Company Portal: `5.0.6152.0` <br> Admin Agent: `1.0.0.202402202353.product`| Recalled|
+|CP965| `143.15.0.68`| `143.15.0.54` | Teams client: `1449/1.0.94.2024082806` <br> Company Portal: `5.0.6152.0` <br> Admin Agent: `1.0.0.202402202353.product`| Recalled|
 |MP52| `145.15.0.97`| `N/A` | Teams client: `1449/1.0.94.2024060310` <br> Company Portal: `5.0.6152.0` <br> Admin Agent: `1.0.0.202402202353.product`| August 29, 2024|
 |MP54/MP56/MP58| `122.15.0.157`| `122.15.0.142` | Teams client: `1449/1.0.94.2024071104` <br> Company Portal: `5.0.6152.0` <br> Admin Agent: `1.0.0.202402202353.product`| Recalled|
 |CP965| `143.15.0.65`| `143.15.0.54 ` | Teams client: `1449/1.0.94.2024071104` <br> Company Portal: `5.0.6152.0` <br> Admin Agent: `1.0.0.202402202353.product`| August 7, 2024|

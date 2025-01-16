@@ -1,7 +1,7 @@
 ---
 title: "Teams Phone Direct Routing: Definitions and RFC standards"
-author: CarolynRowe
-ms.author: crowe
+author: sfrancis206
+ms.author: scottfrancis
 manager: pamgreen
 ms.date: 12/16/2019
 ms.topic: article
@@ -44,7 +44,7 @@ Direct Routing complies with RFC standards.  The SBC connected to Direct Routing
 The following standards are applicable to devices that support only non-media bypass mode:
 
 - [RFC 3261 SIP](https://tools.ietf.org/html/rfc3261): Session Initiation Protocol
-- [RFC 3325](https://www.ietf.org/rfc/rfc3325). Private Extension to the Session Initiation Protocol for asserted identity within Trusted Networks--Sections about handling P-Asserted-Identity header. Direct Routing sends P-Asserted-Identity with Privacy ID headers. 
+- [RFC 3325](https://www.ietf.org/rfc/rfc3325.txt) Private Extension to the Session Initiation Protocol for asserted identity within Trusted Networks--Sections about handling P-Asserted-Identity header. Direct Routing sends P-Asserted-Identity with Privacy ID headers. 
 - [RFC 4244](https://www.ietf.org/rfc/rfc4244.txt) An extension to Session Initiation Protocol (SIP) for required History Information. See also: Routing SIP Protocol description for more information.
 - [RFC 3892](https://www.ietf.org/rfc/rfc3892.txt) The Session Initiation Protocol Referred-By mechanism
 - [RFC 3891](https://www.ietf.org/rfc/rfc3891.txt) The Session Initiation Protocol (SIP) "Replaces" Header 
@@ -57,7 +57,7 @@ The following standards are applicable to devices that support only non-media by
 
 In addition to the standards listed as applicable to nonbypass mode, the following standards are used for media bypass mode:
 
-- [RFC 5245 Interactive Connectivity Establishment (ICE) for media bypass](https://tools.ietf.org/html/rfc5245).  The SBC must support the following:
+- [RFC 5245 Interactive Connectivity Establishment (ICE) for media bypass](https://tools.ietf.org/html/rfc5245). The SBC must support the following:
   - ICE Lite - the Teams clients are full ICE clients
   - [ICE Restarts](https://tools.ietf.org/html/rfc5245#section-9.1.1.1). See more on ICE restarts use case and examples in ICE Restart:  Media bypass call transferred to an endpoint that doesn't support media bypass   
 - [RFC RFC 5589 Session Initiation Protocol (SIP) Call Control – Transfer](https://tools.ietf.org/html/rfc5589). 
@@ -71,14 +71,14 @@ In addition to the standards listed as applicable to nonbypass mode, the followi
 
 ### Deviations from the RFCs
 
-The following table lists the sections of the RFC(s) in which Microsoft's implementation of the SIP or media stack deviates from the standard:
+The following table lists the sections of the RFCs in which Microsoft's implementation of the SIP or media stack deviates from the standard:
 
 | RFC and sections | Description | Deviation |
 | :---------------------  |:---------------------- |:-----------------------|
 | [RFC 6337, section 5.3 Hold and Resume of Media](https://tools.ietf.org/html/rfc6337#section-5.3) | RFC allows using “a=inactive”, “a=sendonly”, a=recvonly” to place a call on hold. |The SIP proxy only supports “a=inactive” and doesn't understand if the SBC sends “a=sendonly” or “a=recvonly”.
 | [RFC 6337, section 5.4 Behavior on Receiving SDP with c=0.0.0.0](https://tools.ietf.org/html/rfc6337#section-5.4) | [RFC3264](https://tools.ietf.org/html/rfc3264) requires that an agent is capable of receiving SDP with a connection address of 0.0.0.0, in which case it means that neither RTP nor RTCP should be sent to the peer. | The SIP proxy doesn't support this option. |
 | [RFC 3261, section 25 Augmented BNF for the SIP Protocol](https://tools.ietf.org/html/rfc3261#section-25.1) | '#' character should be sent as '%23'| The SIP proxy sends the '#' character in a Request-URI unescaped.
-| [RFC 3264, section 8.3.1 An Offer/Answer Model with SDP](https://www.rfc-editor.org/rfc/rfc3264#section-8.3.1) |3264 details a MAY (Optional) media re-target mechanism allowing changing media port, IP address, or transport after session is established. | Optional media re-target is not supported. During a call, SIP requests to update media port, IP address, or transport are not supported. Media will not be sent to the updated session target; media from Direct Routing will continue to flow to the original target.
+| [RFC 3264, section 8.3.1 An Offer/Answer Model with SDP](https://www.rfc-editor.org/rfc/rfc3264#section-8.3.1) |3264 details a MAY (Optional) media retarget mechanism allowing changing media port, IP address, or transport after session is established. | Optional media retarget isn't supported. During a call, SIP requests to update media port, IP address, or transport aren't supported. Media won't be sent to the updated session target; media from Direct Routing continues to flow to the original target.
 
 Note from RFC supporting the choice; The offerer MUST be prepared to receive media on both the old and new ports as soon as the offer is sent. The offerer SHOULD NOT cease listening for media on the old port until the answer is received and media arrives on the new port.|
 

@@ -51,7 +51,7 @@ You can pin apps in the following UIs for the users:
 * **App bar**: Users can easily access it and use it.
 * **Message extension**: Users can quickly use it when composing their messages.
 * **Meeting extension**: Meeting attendees can view it without leaving the meeting and quickly collaborate using the app. The in-meeting bar displays only two apps and the rest of the apps, if added, display under the **More** option.
-* **Calling extension**: Users can access PSTN and one-to-one calling apps in a meeting side panel.
+* **Calling extension**: Users can quickly access personal apps in an active Public Switched Telephone Network (PSTN) or one-to-one call. 
 
 Apps that you pin to the app bar, show on the app bar on the left side of the Teams desktop client and at the bottom of the Teams mobile client.
 

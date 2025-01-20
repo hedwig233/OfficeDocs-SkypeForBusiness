@@ -137,11 +137,11 @@ For Microsoft Teams Rooms Pro Management Portal, you also need to make sure that
 
 Teams Rooms is configured to automatically keep itself patched with the latest Windows updates, including security updates. Teams Rooms installs any pending updates every day beginning between 2:00 - 3:00 am local device time using a preset local policy. There's no need to use other tools to deploy and apply Windows Updates. Using other tools to deploy and apply updates can delay the installation of Windows patches and thus lead to a less secure deployment. The Teams Rooms app is deployed using the Microsoft Store.
 
-Teams Rooms devices work with most 802.1X or other network-based security protocols. However, we're not able to test Teams Rooms against all possible network security configurations. Therefore, if performance issues arise that can be traced to network performance issues, you may need to disable these protocols.
+Teams Rooms devices work with most 802.1X or other network-based security protocols. However, we're not able to test Teams Rooms against all possible network security configurations. Therefore, if performance issues arise that can be traced to network performance issues, you may need to disable these protocols. For more information, see [Implementing 802.1x authentication](802-1x-authentication.md)
 
 For optimum performance of real time media, we strongly recommend that you configure Teams media traffic to bypass proxy servers and other network security devices. Real time media is very latency sensitive and proxy servers and network security devices can significantly degrade users' video and audio quality. Also, because Teams media is already encrypted, there's no tangible benefit from passing the traffic through a proxy server. For more information, see [Networking up (to the cloud)—One architect’s viewpoint](/microsoft-365/solutions/networking-design-principles), which discusses network recommendations to improve the performance of media with Microsoft Teams and Microsoft Teams Rooms. If your organization utilizes tenant restrictions, it's supported for Teams Rooms on Windows devices following the configuration guidance in the [prepare your environment](/microsoftteams/rooms/rooms-prep#tenant-restrictions) document.
 
-Teams Rooms devices don't need to connect to an internal LAN. Consider placing Teams Rooms in a secure isolated network segment with direct Internet access. If your internal LAN becomes compromised, the attack vector opportunities towards Teams Rooms is reduced.
+Teams Rooms devices don't need to connect to an internal LAN. Consider placing Teams Rooms in a secure isolated network segment with direct Internet access. If your internal LAN becomes compromised, the attack vector opportunities towards Teams Rooms are reduced.
 
 We strongly recommend that you connect your Teams Rooms devices to a wired network. The use of wireless networks requires careful planning and assessment for the best experience. For more information, see [Wireless network considerations](rooms-prep.md#wireless-network-considerations).
 
@@ -247,7 +247,7 @@ Teams Android devices use encrypted communications and endpoint authentication o
 > [!IMPORTANT]
 > Teams Android devices don't support authenticated proxy servers or tenant restrictions. Contact your OEM partner for proxy support information.
 
-Teams Android devices don't need to connect to an internal LAN. Consider placing Teams Android devices in a secure network segment with direct Internet access. For example, Teams Phones could be deployed on a voice VLAN. If your internal LAN becomes compromised, the attack vector opportunities towards Teams Android devices is reduced by implementing this network segregation.
+Teams Android devices don't need to connect to an internal LAN. Consider placing Teams Android devices in a secure network segment with direct Internet access. For example, Teams Phones could be deployed on a voice VLAN. If your internal LAN becomes compromised, the attack vector opportunities towards Teams Android devices are reduced by implementing this network segregation.
 
 We strongly recommend that you connect your Teams Rooms devices to a wired network. The use of wireless networks requires careful planning and assessment for the best experience. For more information, see [Wireless network considerations](rooms-prep.md#wireless-network-considerations).
 

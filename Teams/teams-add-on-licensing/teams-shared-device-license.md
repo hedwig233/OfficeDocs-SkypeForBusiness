@@ -37,7 +37,7 @@ For information about other Teams add-on licenses, see [Microsoft Teams add-on l
 
 <sup>1 End of certification for Teams display devices is September 3, 2025. Microsoft will make commercially reasonable best efforts to maintain compatibility with the most recent version of the Teams apps provided to manufacturers for a period of two (2) years from this date. See the [Microsoft Product and Services lifecycle](/lifecycle/products/) for details.</sup>
 
-<sup>2 For BYOD rooms and desks, the Teams Shared Device license enables inventory, analytics, and reports but doesn't entitle access to the full set of Teams Rooms Pro Management capabilities that come with a Teams Rooms Pro-licensed meeting room.</sup>
+<sup>2 For BYOD rooms, the Teams Shared Device license enables inventory, analytics, and reports but doesn't entitle access to the full set of Teams Rooms Pro Management capabilities that come with a Teams Rooms Pro-licensed meeting room.</sup>
 
 The **Microsoft Teams Shared Devices** license includes the following service plans:
 

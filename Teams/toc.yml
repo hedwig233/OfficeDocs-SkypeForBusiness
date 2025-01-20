@@ -370,6 +370,8 @@ items:
   items:
     - name: AI features in Teams
       items:
+      - name: Intelligent recap for Teams calls and meetings
+        href: intelligent-recap-calls-meetings.md
       - name: Manage transcriptions and captions for Teams meetings
         href: meeting-transcription-captions.md
       - name: Manage voice isolation for calls and meetings
@@ -652,6 +654,8 @@ items:
           href: supervised-chat-non-edu.md
         - name: Block incoming chat messages
           href: block-incoming-chats.md
+        - name: Set up Live chat in Teams
+          href: set-up-live-chat.md
     - name: Channels
       items:
         - name: Overview of channels
@@ -743,6 +747,8 @@ items:
           items: 
             - name: Manage Microsoft 365 Copilot for Teams meetings and events
               href: copilot-teams-transcription.md
+            - name: Intelligent recap for Teams calls and meetings
+              href: intelligent-recap-calls-meetings.md
             - name: Manage Q&A
               href: manage-qna-for-teams.md
             - name: Manage meeting chat
@@ -1085,6 +1091,8 @@ items:
           href: dial-pad-configuration.md
         - name: Call recording, transcription, and captions
           href: call-recording-transcription-captions.md
+        - name: Intelligent recap for Teams calls and meetings
+          href: intelligent-recap-calls-meetings.md
         
 
     - name: PSTN connectivity options
@@ -1384,8 +1392,11 @@ items:
             - name: Teams displays certified devices
               href: devices/teams-displays-certified-hardware.md
             - name: Personal peripherals
-              href: devices/usb-devices.md
               items:
+                - name: Certified personal peripherals
+                  href: devices/usb-devices.md
+                - name: Certified Native Bluetooth devices
+                  href: devices/bluetooth-devices.md
                 - name: Troubleshooting and known issues
                   href: /microsoftteams/troubleshoot/meetings/known-issues-teams-certified-peripherals
     - name: Teams Rooms and panels
@@ -1418,7 +1429,9 @@ items:
                       href: rooms/custom-backgrounds.md
                     - name: Content camera
                       href: rooms/content-camera.md
-                    - name: Coordinated meetings
+                    - name: Multiple camera view
+                      href: rooms/multicamera-view.md
+                    - name: Coordinated meetings                    
                       href: rooms/coordinated-meetings.md
                     - name: Whiteboard in Teams Rooms
                       href: rooms/whiteboard-rooms.md
@@ -1508,6 +1521,8 @@ items:
               items:
                 - name: Preparing your network
                   href: rooms/rooms-prep.md
+                - name: 802.1x network authentication
+                  href: rooms/802-1x-authentication.md
                 - name: Quality of Service (QoS) for Teams Rooms
                   href: devices/qos-on-teams-devices.md
                 - name: Intune Enrollment for Windows

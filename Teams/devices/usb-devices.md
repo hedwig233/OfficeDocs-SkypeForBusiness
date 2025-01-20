@@ -66,14 +66,14 @@ For more information about call control support with Teams, see [control calls u
 
 If you're a manufacturer and want to join the certification program, see [How to Join](certification-join.md) for requirements and available programs.
 
-## Certified devices
+## [Certified USB devices](#tab/usb)
 
 *Table Updated January 2025*
 
 > [!NOTE]
 > The date format is MM/DD/YYYY.
 
-| Manufacturer        | Model                                                     | Qualified      | Certified Program                                      |
+| **Manufacturer**      | **Model**                                                    | **Qualified**       | **Certified Program**                                      |
 |:--------------------|:----------------------------------------------------------|:---------------|:-------------------------------------------------------|
 |Lenovo               |4k Pro Webcam                                              |12/6/2024       |Certified for Microsoft Teams                           |
 |Lenovo               |QHD Webcam                                                 |12/6/2024       |Certified for Microsoft Teams                           | 
@@ -320,3 +320,14 @@ If you're a manufacturer and want to join the certification program, see [How to
 
 > [!NOTE]
 > Teams doesn't support button controls on connected certified peripherals if third-party collaboration and conferencing apps are running at the same time.
+
+## [Certified Native BlueTooth devices](#tab/bluetooth)
+
+*Table Updated January 2025*
+
+> [!NOTE]
+> The date format is MM/DD/YYYY.
+
+| **Manufacturer**      | **Model**                                                    | **Qualified**       | **Certified Program**                                           |
+|:--------------------|:----------------------------------------------------------|:---------------|:-------------------------------------------------------|
+|Logitech|Zone Wireless 2 Headset                                            |01/13/2025       |Certified for Microsoft Teams                             |

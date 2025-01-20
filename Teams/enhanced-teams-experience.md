@@ -217,11 +217,11 @@ Teams Premium provides the following key AI-powered meetings features:
   | Feature/Task  | Can admins turn this feature on/off? | Documentation for admins | Documentation for your end users |
   | -------------------- | -----------| ----------- | ------------ |
   | Decorate my background | No, contact support for assistance. | No admin control | [Decorate your background](https://adoption.microsoft.com/microsoft-teams-premium/decorate-your-background/)|
-  | Intelligent meeting recap| No, contact support for assistance.<sup>1</sup>|[Data, privacy, and security for intelligent recap in Teams Premium](/microsoftteams/privacy/intelligent-recap) | [Meeting recap in Microsoft Teams](https://support.microsoft.com/office/meeting-recap-in-microsoft-teams-c2e3a0fe-504f-4b2c-bf85-504938f110ef#bkmk_intelligent_meeting_recap) |
+  | Intelligent meeting recap| No, contact support for assistance.<sup>1</sup>|[Intelligent recap for Teams calls and meetings](intelligent-recap-calls-meetings.md) | [Meeting recap in Microsoft Teams](https://support.microsoft.com/office/meeting-recap-in-microsoft-teams-c2e3a0fe-504f-4b2c-bf85-504938f110ef#bkmk_intelligent_meeting_recap) |
   | Live translated captions | Yes | [Configure transcription and captions for Teams meetings](meeting-transcription-captions.md)|[Use live captions in Microsoft Teams meetings](https://support.microsoft.com/office/use-live-captions-in-microsoft-teams-meetings-4be2d304-f675-4b57-8347-cbd000a21260) |
   | Live translated transcription | Yes |  [Configure transcription and captions for Teams meetings](meeting-transcription-captions.md) | [View live transcription in Microsoft Teams meetings](https://support.microsoft.com/office/view-live-transcription-in-microsoft-teams-meetings-dc1a8f23-2e20-4684-885e-2152e06a4a8b)|
 
-<sup>1</sup>If you toggle the **Transcription** and **Recording** settings to **Off** in your **Meeting policies**, intelligent meeting recap isn't available for users with this policy.
+<sup>1</sup>If you toggle the **Transcription** setting to **Off** in your **Meeting policies**, intelligent meeting recap isn't available for users with this policy.
 
 ## Custom 3D Immersive Mesh Experiences
 
@@ -271,6 +271,12 @@ Teams Premium provides the following advanced capabilities in Places:
 
 - To use this feature for PSTN calls, you must assign a Teams Phone license and either Teams Premium license or a Microsoft 365 Copilot license to users. For more information on Teams Phone licensing, see [Microsoft Teams add-on licenses](teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
 - To use this feature with 1:1 Teams calls, you must assign a Teams Premium license or Microsoft 365 Copilot license to users.
+
+| Feature/Task  | Can admins turn this feature on/off? | Documentation for admins |Documentation for end users |
+  | -------------------- | ----------- | ----------- |----------- |
+  | Intelligent call recap| No, contact support for assistance.<sup>1</sup>|[Intelligent recap for Teams calls and meetings](intelligent-recap-calls-meetings.md) | No end user documentation |
+
+<sup>1</sup>If you turn off **Transcription**, intelligent call recap isn't available for users with this policy.
 
 ### Queues app
 

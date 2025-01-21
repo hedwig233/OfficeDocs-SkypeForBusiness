@@ -191,8 +191,8 @@ Nesting without resource accounts is the recommended approach. This method elimi
 
 However, there might be times when you require nesting with resource accounts. For example, when agents in a call queue receive a call, the information in the toast is determined by how the call arrived in the queue. If the call was transferred to the queue without a resource account, the agent receives the name of the call queue in the toast. If the call was transferred to the queue through a resource account, the agent receives the display name of the resource account.
 
-> [!NOTE}
-> Nested auto attendants and call queues can't be called directly as they don't have resource accounts assigned.
+> [!NOTE]
+> Nested auto attendants and call queues that don't have resource accounts assigned can't be called directly.
 
 > [!IMPORTANT]
 > Nesting Auto attendants and Call queues without a resource account isn't currently supported for [Authorized users](aa-cq-authorized-users-plan.md) in Queues App. If you nest an Auto attendant or Call queue without a resource account, authorized users can't edit the auto attendant or call queue.

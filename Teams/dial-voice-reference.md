@@ -34,9 +34,9 @@ Dial by Name or Extension is an Auto attendant feature that enables callers to r
 
 ## Searching for users
 
-Teams users who can be reached by using Dial by Name **aren't required to have a phone number or have Calling Plans assigned to them, but they must be Enterprise Voice enabled for Skype for Business Server users**. For multi-national organizations, Dial by Name finds and transfers callers to Microsoft Teams users who are in different countries or regions.
+Teams users who can be reached by using Dial by Name, Dial by Extension **aren't required to have a phone number or have Calling Plans assigned to them**. For multi-national organizations, Dial by Name, Dial by Extension finds and transfers callers to Microsoft Teams users who are in different countries or regions. You also need to have an appropriately configured dial plan for your users.
 
-Teams users who can be reached by using Dial by Extension **aren't required to have a phone number or have Calling Plans assigned to them, but they must be Enterprise Voice enabled for Skype for Business Server users**. You also need to have an appropriately configured dial plan for your users. For multi-national organizations, Dial by Extension finds and transfers callers to Microsoft Teams users who are in different countries or regions. Teams Assigned Phone number, LineURI, isn't supported for Auto attendant Dial by Extension.
+Teams Assigned Phone number, LineURI, isn't supported for Auto attendant Dial by Extension.
 
 Given the prerequisites involved, Dial by Name or Extension must be explicitly enabled when configuring an Auto attendant.
 

@@ -76,6 +76,26 @@ The multiple-banners feature improves the user experience by managing notificati
 #### Teams app version: 1449/1.0.94.2024112802  (Poly, Yealink, Audiocodes)​​​​​​​
 
 - Bug fixes on lock screen, password expiration, LED issues on nontouch devices, among others, are included.
+- 
+### November 25, 2024
+
+#### Teams app version: 1449/1.0.94.2024062906 (Yealink – T5x, CP960, MP52, VP59; Audiocodes – C488HD/450HD, Crestron –UC-P8x, UC-P10x, UC-2)
+
+- Bug fixes on several minor issues reported by customers.
+
+### November 13, 2024
+
+#### Teams app version: 1449/1.0.94.2024103101 (Touch phones – Audiocodes, Poly, Yealink)
+
+- Bug fixes and improvements to line keys, calls, and E911 calling, among others.
+
+### October 29, 2024
+
+#### Teams app version: 1449/1.0.94.2024101709 (Yealink, Poly, Audiocodes)
+
+- Today, on Teams phone devices, you'll be able to configure custom contacts and speed dial on-the-line key buttons on non-touch phones and sidecars phone devices certified for Microsoft Teams. This lets you quickly access frequently-dialed numbers and contacts, using one-touch dialing, as well as easy management of contact lists on both line keys and sidecars.
+
+[Screenshot #3]
 
 
 ## [Teams displays](#tab/displays)

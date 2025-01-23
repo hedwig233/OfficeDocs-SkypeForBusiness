@@ -1505,6 +1505,8 @@ items:
                   href: https://support.microsoft.com/office/what-s-new-in-microsoft-teams-devices-eabf4d81-acdd-4b23-afa1-9ee47bb7c5e2#ID0EBD=Teams_panels
                 - name: Management apps
                   href: devices/certified-device-apps.md
+                - name: What's new in Microsoft Teams devices
+                  href: devices/new-in-microsoft-teams-devices.md
             - name: Troubleshooting and known issues
               items:
                 - name: Teams Rooms on Windows

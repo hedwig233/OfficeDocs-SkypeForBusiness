@@ -461,6 +461,8 @@ items:
       items: 
         - name: Monitor and improve call quality
           href: monitor-call-quality-qos.md
+        - name: Best practice configurations dashboard for meetings
+          href: best-practice-dashboard.md
         - name: Call Quality Dashboard (CQD)
           items: 
             - name: What is CQD?

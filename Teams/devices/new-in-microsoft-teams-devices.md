@@ -35,7 +35,7 @@ To view feature updates for Microsoft Teams Rooms, go to:
 
 Insert information from Support article here.
 
-## [Teams Phones](#tab/Phones)
+## [Teams phones](#tab/phones)
 
 ### January 8, 2024
 
@@ -119,9 +119,6 @@ Today, on Teams Phone devices, you are able to configure custom contacts and spe
 #### Teams app version: 1449/1.0.94.2024062811 (Yealink T5x, CP960 & Poly Trio 8800/8500)
 
 - Bug fixes and improvements for end-of-certification and end-of-best-effort support phones.
-
-
-## [Teams displays](#tab/displays)
 
 
 ## [Teams displays](#tab/displays)

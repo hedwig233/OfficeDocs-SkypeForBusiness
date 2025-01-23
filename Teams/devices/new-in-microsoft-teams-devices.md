@@ -22,8 +22,14 @@ search.appverid: MET150
 description: Learn about what's new in Microsoft Teams devices.
 ---
 
-
 # What's new in Microsoft Teams devices
+
+This article contains updates for Microsoft Teams devices. To view feature updates for Microsoft Teams desktop, web, or mobile, go to [What's new in Microsoft Teams](https://support.microsoft.com/office/what-s-new-in-microsoft-teams-d7092a6d-c896-424c-b362-a472d5f105de).
+
+To view feature updates for Microsoft Teams Rooms, go to:
+
+- [Release notes for Microsoft Teams Rooms on Windows](../rooms/rooms-release-note.md)
+- [Release notes for Microsoft Teams Rooms on Android](../rooms/rooms-release-note.md)
 
 ## [Teams panels](#tab/panels)
 

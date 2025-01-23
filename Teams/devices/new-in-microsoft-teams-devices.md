@@ -33,9 +33,9 @@ To view feature updates for Microsoft Teams Rooms, go to:
 
 ## [Teams panels](#tab/panels)
 
-Insert information from SMC article here.
+Insert information from Support article here.
 
-## [Teams phones](#tab/phones)
+## [Teams Phones](#tab/phones)
 
 ### January 8, 2024
 
@@ -53,7 +53,7 @@ We're excited to announce the Queues app for desk phones, a Teams solution that 
 
 ##### Circular delegation
 
-Circular delegation now allows users to share lines with each other as a group on Teams phone devices. This feature is useful for scenarios where multiple users need to manage shared lines. In a typical circular delegation setup, User A delegates to User B, and User B delegates to User A, allowing them all to share the line with each other. This setup can be configured using cmdlets because the Teams client and Teams Admin Center don't currently support this feature. ​​​​​​​
+Circular delegation now allows users to share lines with each other as a group on Teams Phone devices. This feature is useful for scenarios where multiple users need to manage shared lines. In a typical circular delegation setup, User A delegates to User B, and User B delegates to User A, allowing them all to share the line with each other. This setup can be configured using cmdlets because the Teams client and Teams Admin Center don't currently support this feature. ​​​​​​​
 
 ##### Multi-banner updates
 
@@ -87,17 +87,17 @@ The multiple-banners feature improves the user experience by managing notificati
 
 #### Teams app version: 1449/1.0.94.2024103101 (Touch phones – Audiocodes, Poly, Yealink)
 
-- Bug fixes and improvements to line keys, calls, and E911 calling, among others.
+- Bug fixes and improvements to line keys, calls, and Enhanced 911 calls, among others.
 
 ### October 29, 2024
 
 #### Teams app version: 1449/1.0.94.2024101709 (Yealink, Poly, Audiocodes)
 
-- Today, on Teams phone devices, you'll be able to configure custom contacts and speed dial on-the-line key buttons on non-touch phones and sidecars phone devices certified for Microsoft Teams. This lets you quickly access frequently-dialed numbers and contacts, using one-touch dialing, as well as easy management of contact lists on both line keys and sidecars.
+- Today, on Teams Phone devices, you are able to configure custom contacts and speed dial on-the-line key buttons on nontouch phones and sidecars phone devices certified for Microsoft Teams. This lets you quickly access frequently dialed numbers and contacts, using one-touch dialing, as well as easy management of contact lists on both line keys and sidecars.
 
 [Screenshot #3]
 
 
 ## [Teams displays](#tab/displays)
 
-Insert information from SMC article here.
+Insert information from Support article here.

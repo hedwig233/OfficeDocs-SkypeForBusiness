@@ -120,6 +120,14 @@ Today, on Teams Phone devices, you're able to configure custom contacts and spee
 
 - Bug fixes and improvements for end-of-certification and end-of-best-effort support phones.
 
+### August 27, 2024
+
+### Teams app version: 1449/1.0.94.2024062702 (Yealink T5x, CP960 & Poly Trio 8800/8500)
+
+- Migrate end-of-certification and end-of-best-effort support phones from the discontinued call-notification service to the new notification service to support incoming call notifications and voicemail.
+
+This update also includes these features, which were already available for certified Teams Phones:
+
 
 ## [Teams displays](#tab/displays)
 

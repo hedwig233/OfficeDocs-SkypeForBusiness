@@ -35,7 +35,7 @@ To view feature updates for Microsoft Teams Rooms, go to:
 
 Insert information from Support article here.
 
-## [Teams phones](#tab/phones)
+## [Teams Phones](#tab/phones)
 
 ### January 8, 2024
 
@@ -43,7 +43,7 @@ Insert information from Support article here.
 
 ##### Queues app
 
-We're excited to announce the Queues app for desk phones, a Teams solution that empowers organizations to efficiently manage customer engagements, starting with calls on Teams-certified phones. The experience is primarily for agents and includes a dedicated Queues app on the home screen. This app allows agents to view and opt in or out of all the call queues an agent is part of. Agents can also view others on the line along with call history of the call queue.
+We're excited to announce the Queues app for desk phones, a Teams solution that empowers organizations to efficiently manage customer engagements, starting with calls on certified Teams phones. The experience is primarily for agents and includes a dedicated Queues app on the home screen. This app allows agents to view and opt in or out of all the call queues an agent is part of. Agents can also view others on the line along with call history of the call queue.
 
 [Screenshot 1?]
 [Screenshot 2?]
@@ -93,7 +93,7 @@ The multiple-banners feature improves the user experience by managing notificati
 
 #### Teams app version: 1449/1.0.94.2024101709 (Yealink, Poly, Audiocodes)
 
-Today, on Teams Phone devices, you are able to configure custom contacts and speed dial on-the-line key buttons on nontouch phones and sidecars phone devices certified for Microsoft Teams. This lets you quickly access frequently dialed numbers and contacts, using one-touch dialing, as well as easy management of contact lists on both line keys and sidecars.
+Today, on Teams Phone devices, you're able to configure custom contacts and speed dial on-the-line key buttons on nontouch phones and sidecars phone devices certified for Microsoft Teams. This lets you quickly access frequently dialed numbers and contacts, using one-touch dialing, as well as easy management of contact lists on both line keys and sidecars.
 
 [Screenshot #3]
 

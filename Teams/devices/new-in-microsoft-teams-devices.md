@@ -71,6 +71,11 @@ The multiple-banners feature improves the user experience by managing notificati
 
 - Banner notifications to inform users about their device support coverage status.
 
+### December 10, 2024
+
+#### Teams app version: 1449/1.0.94.2024112802  (Poly, Yealink, Audiocodes)​​​​​​​
+
+- Bug fixes on lock screen, password expiration, LED issues on non-touch devices, among others, are included.
 
 
 ## [Teams displays](#tab/displays)

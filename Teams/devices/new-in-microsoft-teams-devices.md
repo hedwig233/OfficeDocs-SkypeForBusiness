@@ -39,7 +39,7 @@ Insert information from Support article here.
 
 ### January 8, 2024
 
-#### Teams app version: 1449/1.0.94.2024122303 (Poly, Yealink, Audiocodes)
+#### Teams app version: 1449/1.0.94.2024122303 (Poly, Yealink, AudioCodes)
 
 ##### Queues app
 
@@ -61,37 +61,37 @@ The multiple-banners feature improves the user experience by managing notificati
 
 ### December 18, 2024
 
-#### Teams app version: 1449/1.0.94.2024121004 (Poly, Yealink, Audiocodes)
+#### Teams app version: 1449/1.0.94.2024121004 (Poly, Yealink, AudioCodes)
 
 - Bug fixes related to transfer flow, among other issues.
 
 ### December 18, 2024
 
-#### Teams app version: 1449/1.0.94.2024063004 (Yealink T5x/CP960, Audiocodes C488HD/450HD, Yealink MP52/VP59, Crestron UC-P8/ UC-P8-C/ UC-P10/ UC-P10-C/ UC-2)
+#### Teams app version: 1449/1.0.94.2024063004 (Yealink T5x/CP960, AudioCodes C488HD/450HD, Yealink MP52/VP59, Crestron UC-P8/ UC-P8-C/ UC-P10/ UC-P10-C/ UC-2)
 
 - Banner notifications to inform users about their device support coverage status.
 
 ### December 10, 2024
 
-#### Teams app version: 1449/1.0.94.2024112802  (Poly, Yealink, Audiocodes)​​​​​​​
+#### Teams app version: 1449/1.0.94.2024112802  (Poly, Yealink, AudioCodes)​​​​​​​
 
 - Bug fixes on lock screen, password expiration, LED issues on nontouch devices, among others, are included.
 - 
 ### November 25, 2024
 
-#### Teams app version: 1449/1.0.94.2024062906 (Yealink – T5x, CP960, MP52, VP59; Audiocodes – C488HD/450HD, Crestron –UC-P8x, UC-P10x, UC-2)
+#### Teams app version: 1449/1.0.94.2024062906 (Yealink – T5x, CP960, MP52, VP59; AudioCodes – C488HD/450HD, Crestron –UC-P8x, UC-P10x, UC-2)
 
 - Bug fixes on several minor issues reported by customers.
 
 ### November 13, 2024
 
-#### Teams app version: 1449/1.0.94.2024103101 (Touch phones – Audiocodes, Poly, Yealink)
+#### Teams app version: 1449/1.0.94.2024103101 (Touch phones – AudioCodes, Poly, Yealink)
 
 - Bug fixes and improvements to line keys, calls, and Enhanced 911 calls, among others.
 
 ### October 29, 2024
 
-#### Teams app version: 1449/1.0.94.2024101709 (Yealink, Poly, Audiocodes)
+#### Teams app version: 1449/1.0.94.2024101709 (Yealink, Poly, AudioCodes)
 
 Today, on Teams Phone devices, you're able to configure custom contacts and speed dial on-the-line key buttons on nontouch phones and sidecars phone devices certified for Microsoft Teams. This lets you quickly access frequently dialed numbers and contacts, using one-touch dialing, as well as easy management of contact lists on both line keys and sidecars.
 
@@ -102,13 +102,13 @@ Today, on Teams Phone devices, you're able to configure custom contacts and spee
 
 ### October 1, 2024
 
-#### Teams app version: 1449/1.0.94.2024092304 (Yealink, Poly, Audiocodes)
+#### Teams app version: 1449/1.0.94.2024092304 (Yealink, Poly, AudioCodes)
 
 - Bug fixes and improvements on contacts sync, presence, and transfer flows, among others.
 
 ### September 5, 2024
 
-#### Teams app version: 1449/1.0.94.2024082806 (Yealink, Poly, Audiocodes)
+#### Teams app version: 1449/1.0.94.2024082806 (Yealink, Poly, AudioCodes)
 
 - Enhancements in the call parking and retrieval feature to make both faster.
 - Lightweight calling experience on non-touch phones.

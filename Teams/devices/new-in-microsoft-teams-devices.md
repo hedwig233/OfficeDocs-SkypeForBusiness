@@ -134,7 +134,7 @@ This update also includes these features, which were already available for certi
 
 - When the Explicit Recording Consent policy is enabled, audio conference phones will support auto consent.
 
-- The PSTN calling issue on the new shared-line-appearance experience has been addressed.
+- The Public Switched Telephone Network (PSTN) calling issue on the new shared-line-appearance experience has been addressed.
 
 - When there are less than four apps on a given account, they'll now show on the home screen instead of being hidden under the More menu.
 

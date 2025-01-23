@@ -43,7 +43,7 @@ Insert information from SMC article here.
 
 ##### Queues app
 
-Today, we're excited to announce the Queues app for desk phones, a Teams solution that empowers organizations to efficiently manage customer engagements, starting with calls on Teams-certified phones. The experience is primarily for agents and includes a dedicated Queues app on the home screen, with an ability to view and opt in or out of all the call queues an agent is part of. Agents can also view others on the line along with call history of the call queue.
+We're excited to announce the Queues app for desk phones, a Teams solution that empowers organizations to efficiently manage customer engagements, starting with calls on Teams-certified phones. The experience is primarily for agents and includes a dedicated Queues app on the home screen. This app allows agents to view and opt in or out of all the call queues an agent is part of. Agents can also view others on the line along with call history of the call queue.
 
 [Screenshot 1?]
 [Screenshot 2?]
@@ -53,7 +53,7 @@ Today, we're excited to announce the Queues app for desk phones, a Teams solutio
 
 ##### Circular delegation
 
-Circular delegation now allows users to share lines with each other as a group on Teams phone devices. This feature is particularly useful for scenarios where multiple users need to manage shared lines. In a typical circular delegation setup, User A delegates to User B, and User B delegates to User A, allowing them all to share the line with each other. This setup can be configured using cmdlets because the Teams client and Teams Admin Center don't currently support this feature. ​​​​​​​
+Circular delegation now allows users to share lines with each other as a group on Teams phone devices. This feature is useful for scenarios where multiple users need to manage shared lines. In a typical circular delegation setup, User A delegates to User B, and User B delegates to User A, allowing them all to share the line with each other. This setup can be configured using cmdlets because the Teams client and Teams Admin Center don't currently support this feature. ​​​​​​​
 
 ##### Multi-banner updates
 
@@ -75,7 +75,7 @@ The multiple-banners feature improves the user experience by managing notificati
 
 #### Teams app version: 1449/1.0.94.2024112802  (Poly, Yealink, Audiocodes)​​​​​​​
 
-- Bug fixes on lock screen, password expiration, LED issues on non-touch devices, among others, are included.
+- Bug fixes on lock screen, password expiration, LED issues on nontouch devices, among others, are included.
 
 
 ## [Teams displays](#tab/displays)

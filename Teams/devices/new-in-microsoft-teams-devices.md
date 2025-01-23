@@ -45,8 +45,11 @@ Insert information from SMC article here.
 
 Today, we're excited to announce the Queues app for desk phones, a Teams solution that empowers organizations to efficiently manage customer engagements, starting with calls on Teams-certified phones. The experience is primarily for agents and includes a dedicated Queues app on the home screen, with an ability to view and opt in or out of all the call queues an agent is part of. Agents can also view others on the line along with call history of the call queue.
 
+[Screenshot 1?]
+[Screenshot 2?]
 
-Insert information from SMC article here.
+> [!NOTE]
+> - The Queues app is enabled by default for all Teams users in your organization who are assigned both a Teams Premium and Teams Phone license and who are voice enabled. To learn more about managing the Queues app, see [Manage Queues app for Microsoft Teams](../manage-queues-app.md).
 
 ## [Teams displays](#tab/displays)
 

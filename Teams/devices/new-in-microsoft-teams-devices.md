@@ -37,6 +37,17 @@ Insert information from SMC article here.
 
 ## [Teams phones](#tab/phones)
 
+## [Teams phones](#tab/phones)
+
+### January 8, 2024
+
+#### Teams app version: 1449/1.0.94.2024122303 (Poly, Yealink, Audiocodes)
+
+##### Queues app
+
+Today, we're excited to announce the Queues app for desk phones, a Teams solution that empowers organizations to efficiently manage customer engagements, starting with calls on Teams-certified phones. The experience is primarily for agents and includes a dedicated Queues app on the home screen, with an ability to view and opt in or out of all the call queues an agent is part of. Agents can also view others on the line along with call history of the call queue.
+
+
 Insert information from SMC article here.
 
 ## [Teams displays](#tab/displays)

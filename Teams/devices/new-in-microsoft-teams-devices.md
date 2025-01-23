@@ -53,11 +53,24 @@ Today, we're excited to announce the Queues app for desk phones, a Teams solutio
 
 ##### Circular delegation
 
-Circular delegation now allows users to share lines with each other as a group on Teams phone devices. This feature is particularly useful for scenarios where multiple users need to manage shared lines. In a typical circular delegation setup, User A delegates to User B, and User B delegates to User A, allowing them to share the line with each other. This setup can be configured using cmdlets because the Teams client and Teams Admin Center don't currently support this feature. ​​​​​​​
+Circular delegation now allows users to share lines with each other as a group on Teams phone devices. This feature is particularly useful for scenarios where multiple users need to manage shared lines. In a typical circular delegation setup, User A delegates to User B, and User B delegates to User A, allowing them all to share the line with each other. This setup can be configured using cmdlets because the Teams client and Teams Admin Center don't currently support this feature. ​​​​​​​
 
 ##### Multi-banner updates
 
 The multiple-banners feature improves the user experience by managing notifications more effectively on phone devices. When users receive multiple notifications, the system allows users to collapse all notifications or clear them in bulk, providing a cleaner and more organized interface.
+
+### December 18, 2024
+
+#### Teams app version: 1449/1.0.94.2024121004 (Poly, Yealink, Audiocodes)
+
+- Bug fixes related to transfer flow, among other issues.
+
+### December 18, 2024
+
+#### Teams app version: 1449/1.0.94.2024063004 (Yealink T5x/CP960, Audiocodes C488HD/450HD, Yealink MP52/VP59, Crestron UC-P8/ UC-P8-C/ UC-P10/ UC-P10-C/ UC-2)
+
+- Banner notifications to inform users about their device support coverage status.
+
 
 
 ## [Teams displays](#tab/displays)

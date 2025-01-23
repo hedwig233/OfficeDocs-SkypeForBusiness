@@ -35,7 +35,7 @@ To view feature updates for Microsoft Teams Rooms, go to:
 
 Insert information from Support article here.
 
-## [Teams Phones](#tab/phones)
+## [Teams Phones](#tab/Phones)
 
 ### January 8, 2024
 

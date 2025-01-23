@@ -22,6 +22,7 @@ search.appverid: MET150
 description: Learn about what's new in Microsoft Teams devices.
 ---
 
+
 # What's new in Microsoft Teams devices
 
 ## [Teams panels](#tab/panels)

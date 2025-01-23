@@ -6,7 +6,7 @@ manager: pamgreen
 audience: Admin
 ms.topic: article
 ms.service: msteams
-ms.reviewer: vapati
+ms.reviewer: snigdha.chaturvedi
 ms.date: 1/23/2024
 f1.keywords:
 - NOCSH

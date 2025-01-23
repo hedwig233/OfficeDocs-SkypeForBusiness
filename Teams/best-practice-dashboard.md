@@ -26,7 +26,7 @@ ms.custom: seo-marvel-apr2020
 
 **APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Meetings ![Image of a x for no](/office/media/icons/cancel-teams.png)Webinars ![Image of a x for no](/office/media/icons/cancel-teams.png)Town halls
 
-As an admin, it’s important to ensure that your users have a reliable collaboration experience for their Teams meetings. The best practice configuration dashboard for Microsoft Teams meetings helps you manage and monitor your environment for seamless collaboration. This dashboard provides you with best practice configurations, the impact of your current settings, and actions you can take to follow Microsoft’s recommendations. The dashboard highlights locations that don’t follow Microsoft's recommended best practices.  When you follow recommended actions, the trend of non-conformant locations is tracked to help monitor progress. All monitored areas are evaluated over a period of 7 days.
+As an admin, it’s important to ensure that your users have a reliable collaboration experience for their Teams meetings. The best practice configurations dashboard for Microsoft Teams meetings helps you manage and monitor your environment for seamless collaboration. This dashboard provides you with best practice configurations, the impact of your current settings, and actions you can take to follow Microsoft’s recommendations. The dashboard highlights locations that don’t follow Microsoft's recommended best practices. When you follow recommended actions, the trend of locations not adhering to best practices is tracked to help monitor progress. All monitored areas are evaluated over a period of 7 days.
 
 ## Access the best practice configurations dashboard
 
@@ -46,7 +46,7 @@ The **Best practice configurations** table provides statuses and insights for th
 - Update out of date Teams clients
 - Implement split tunnelling for VPNs
 
-Select a best practice from a row in this table to view a detailed dashboard with recommendations. A list of IP addresses is shown by city, showing the extent of non-conformance for each location. You can use the name of the city, country or region, or the IP address to search and filter for locations. You can also export the dashboard’s table in a CSV file that you can share.
+Select a best practice from a row in this table to view a detailed dashboard with recommendations.  A list of IP addresses is shown by city, displaying the extent to which each location follows best practices.  You can use the name of the city, country or region, or the IP address to search and filter for locations. You can also export the dashboard’s table in a CSV file that you can share.
 
 ## Interpret the dashboards
 

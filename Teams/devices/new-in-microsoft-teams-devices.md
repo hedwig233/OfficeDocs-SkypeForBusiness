@@ -37,8 +37,6 @@ Insert information from SMC article here.
 
 ## [Teams phones](#tab/phones)
 
-## [Teams phones](#tab/phones)
-
 ### January 8, 2024
 
 #### Teams app version: 1449/1.0.94.2024122303 (Poly, Yealink, Audiocodes)

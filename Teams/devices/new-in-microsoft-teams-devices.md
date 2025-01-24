@@ -292,6 +292,25 @@ This update also includes these features, which were already available for certi
 
 - Significant reduction in sign-out and authentication errors due to Workplace Join failures, timeout issues, and memory leaks.
 
+### January 24, 2024
+
+#### Teams App version: 1449/1.0.94.2024011003 (Poly, Yealink, Crestron, AudioCodes)
+
+- The issue of active call moving to banner on merging a call has been fixed.
+- The issue of consult transfer icon not being clickable sometimes has been fixed.
+
+> [!NOTE]
+> This update applies to AudioCodes phones on firmware versions 1.19.456 and earlier.
+
+### December 5, 2023
+
+#### Teams App version: 1449/1.0.94.2023112704 (Crestron, Poly, Yealink)
+
+- The date and time format specified under **Device Settings** is the same on the home screen.
+- When the **Explicit Recording Consent** policy is enabled, audio conference phones support auto consent.
+- The PSTN calling issue on the new shared line appearance experience is fixed.
+- When there are less than four apps on a given account, they'll now show on the home screen instead of being hidden under the **More** menu.
+
 
 ## [Teams displays](#tab/displays)
 

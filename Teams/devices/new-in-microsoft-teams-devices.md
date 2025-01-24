@@ -683,4 +683,22 @@ The recommended version of Teams on your Android phone is 1416/1.0.0.202309290
 > [!NOTE]
 > The following instructions are for those who use an Android mobile phone with an Android work profile (AWP).
 
+- You can scan a QR code using the camera app on your Android mobile phone. However, the sign-in might not work if you have both work and personal profiles on their Android phones. If this is the case, you need to add a mobile system OS scanner in your work profile.
+
+To add a mobile system OS scanner:
+
+1. In the Intune Admin Center go to **Apps** > **Android**, and add.
+
+2. Select **Android enterprise system app**.
+
+3. Enter the type of Android phone, Google, and paste OS camera package name.
+
+4. Assign it to an individual or group.
+
+5. Download and install the camera app from the app store in your work profile.
+
+- **Virtual front-desk experience on Teams-certified displays**  The Virtual front desk enables staff to greet and serve visitors or employees via video call on a Teams display.  It can be used for virtual reception, helpdesk, and a variety of use cases across industries. IT admins can easily configure the Virtual front desk with contact and routing information. This feature is available on Teams certified displays on the Teams Shared Devices License. It's recommended for accounts without CA policies.
+- Admins can now customize the message on display screens and the call button, in addition to configuring a PSTN or VoIP contact on the device itself via **Settings**. They can also use Teams advanced calling capabilities such as call transfer, call forwarding, call queues, etc., if enabled for the configured contact account.
+- Improvements to handle multi-call banner scenarios and to ambient UI.
+- Bug fixes and improvements.
 

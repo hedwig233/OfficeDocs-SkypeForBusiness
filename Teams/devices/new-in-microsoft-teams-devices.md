@@ -311,6 +311,46 @@ This update also includes these features, which were already available for certi
 - The PSTN calling issue on the new shared line appearance experience is fixed.
 - When there are less than four apps on a given account, they'll now show on the home screen instead of being hidden under the **More** menu.
 
+### November 28, 2023
+
+#### Teams app version: 1449/1.0.94.2023111407 (AudioCodes)
+
+> [!NOTE]
+> This update applies to AudioCodes phones on firmware version 1.19.584.
+
+- Improvements to reduce issues with workplace join authentication.
+
+### November 6, 2023
+
+#### Teams app version: 1449/1.0.94.2023100602 (AudioCodes)
+
+> [!NOTE]
+> This update applies to AudioCodes firmware version 1.19.584 and is available for phones previously on firmware version 1.19.516. A Teams app release for AudioCodes phones currently on other firmware versions will be released soon.
+
+- Enhanced call-delegation experience, faster presence update in the app, and live captions on PSTN calls. For a list of call-delegation updates, see the August 29, 2023, update.
+
+### October 9, 2023
+
+#### Teams App version: 1449/1.0.94.2023091801 (Yealink)
+
+- Caller ID shows for incoming PSTN calls on call queues.
+- You have the option to continue dialing a number when there's an incoming call.
+- When ending a call or turning off your speaker, you won't be navigated to the home screen. Instead, you can continue from previous screen.
+- A new back button on the calling screen which allows you to easily navigate away from an ongoing call.
+
+### August 29, 2023
+
+#### Teams app version: 1449/1.0.94.2023082303 (Crestron, Poly and Yealink Audio Touch Phones)
+
+Today, on Teams Phone devices, delegators can share their phone line with their assistants and delegates to make and receive calls on their behalf. Call delegates can also:
+
+- View and join active calls handled by delegates, as a delegator.
+- Grant delegates permission to join active calls, and resume calls.
+- View shared call history, per the delegator's line.
+- Easily switch between different lines.
+- View other delegates managing a line.
+
+
 
 ## [Teams displays](#tab/displays)
 

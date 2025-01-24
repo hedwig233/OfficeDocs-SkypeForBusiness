@@ -43,7 +43,7 @@ Insert information from Support article here.
 
 ##### Queues app
 
-We're excited to announce the Queues app for desk phones, a Teams solution that empowers organizations to efficiently manage customer engagements, starting with calls on certified Teams phones. The experience is primarily for agents and includes a dedicated Queues app on the home screen. This app allows agents to view and opt in or out of all the call queues an agent is part of. Agents can also view others on the line along with call history of the call queue.
+We're excited to announce the Queues app for desk phones, a Teams solution that empowers organizations to efficiently manage customer engagements, starting with calls on certified Teams Phones. The experience is primarily for agents and includes a dedicated Queues app on the home screen. This app allows agents to view and opt in or out of all the call queues an agent is part of. Agents can also view others on the line along with call history of the call queue.
 
 [Screenshot 1?]
 [Screenshot 2?]
@@ -111,7 +111,7 @@ Today, on Teams Phone devices, you're able to configure custom contacts and spee
 #### Teams app version: 1449/1.0.94.2024082806 (Yealink, Poly, AudioCodes)
 
 - Enhancements in the call parking and retrieval feature to make both faster.
-- Lightweight calling experience on non-touch phones.
+- Lightweight calling experience on nontouch phones.
 - Bug fixes and improvements for compliance, recording scenarios, and other issues.
 
 ### September 3, 2024
@@ -136,11 +136,11 @@ This update also includes these features, which were already available for certi
 
 - The Public Switched Telephone Network (PSTN) calling issue on the new shared-line-appearance experience has been addressed.
 
-- When there are less than four apps on a given account, they'll now show on the home screen instead of being hidden under the More menu.
+- When there are fewer than four apps on a given account, they'll now show on the home screen instead of being hidden under the More menu.
 
 - Caller ID now shows incoming PSTN calls on call queues.
 
-- You now have the option to continue dialing a number when there's an incoming call.
+- You can now continue dialing a number when there's an incoming call.
 
 - When ending a call or turning off your speaker, you won't be navigated to the home screen. Instead, you can continue from the previous screen.
 
@@ -156,9 +156,9 @@ This update also includes these features, which were already available for certi
 
 - Live captions are supported on PSTN calls.
 
-- You'll be able to program Teams Phone devices to autodial a pre-configured PSTN number, or directory contact, when the handset is picked up. You can configure a common-area phone as a hotline phone by navigating to **Settings** > **Device Settings** > **Calling** > **Hotline**, and specifying the auto-dial contact and display name.
+- You'll be able to program Teams Phone devices to autodial a pre-configured PSTN number, or directory contact, when the handset is picked up. You can configure a common-area phone as a hotline phone by navigating to **Settings** > **Device Settings** > **Calling** > **Hotline**, and specifying the autodial contact and display name.
 
-- A redesigned dial pad will help reduce unnecessary mistakes while dialing a phone number. It offers a new dial-pad-only view in large-screen landscape phones.
+- A redesigned dial pad helps reduce unnecessary mistakes while dialing a phone number. It offers a new dial-pad-only view in large-screen landscape phones.
 
 - Simplified navigation improves the performance and reduces page-navigation time by replacing the bottom navigation bar with a new home screen navigation experience. You can easily go to the home screen from any app and navigate to different apps from the home screen. You can also use **More** to reorder apps.
 
@@ -170,7 +170,7 @@ This update also includes these features, which were already available for certi
 
 - The issue of autodialing on a partially entered number has been fixed.
 
-- Option to sign-out on common area phones. Advanced calling experience requires an Admin PIN.
+- Option to sign out on common area phones. Advanced calling experience requires an Admin PIN.
 
 - Lighter weight meeting reduces the time it takes users to get connected to a meeting on selecting **Join**.
 
@@ -178,13 +178,13 @@ This update also includes these features, which were already available for certi
 
 - Performance of the phones attached to expansion modules has been improved.
 
-- The “Resume call” reliability has been improved on consult transfer.
+- The "Resume call" reliability has been improved on consult transfer.
 
 - Audio conferencing isn't supported on Teams Phone devices with the Meeting Teams Room Basic license.
 
 - You now have the option to add and edit your emergency location on phones.
 
-- Emergency service disclaimers specified by admins in the Teams Admin Center (TAC) as part of emergency policy will be shown on desk phones.
+- Emergency service disclaimers specified by admins in the Teams Admin Center (TAC) as part of emergency policy will be shown on the desk phones.
 
 - Busy-on-busy when users are in a call setting enabled by admins in TAC will be honored on phone devices (excluding the User-controlled option).
 

@@ -733,3 +733,15 @@ To add a mobile system OS scanner:
 - The following Teams display settings moved under **Teams Admin Settings** while using a shared account: calling, sign out, and wallpaper.
 - Teams displays have the ability to use end-to-end encryption for calls (must be enabled by IT admin).
 - IT admins can remotely provision, sign in, and sign out of a Teams device that has previously not been provisioned.
+
+#### June 2021
+
+#### Teams app version: 1449/1.0.95.2021042103 
+
+- Contact phone numbers created in Outlook are available in the People section of Teams displays with read-only access.
+- During a call, select the active-call icon to show more options. Additionally, when a contact has multiple numbers saved, you can choose the number you want to dial from the dropdown list.
+- Choose a background for your video calls and meetings from a select set of images in Teams.
+- Extending the live-captions feature to calls. Teams can now detect what's said in a call and present real-time captions in one-on-one calls.
+- On Android devices, presenters can control a participant's camera and mic. Participants no longer need to use Raise hand to request to be unmuted.
+- New wallpaper images.
+- Bug fixes related to authentication.

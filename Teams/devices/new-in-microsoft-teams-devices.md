@@ -157,7 +157,7 @@ This update also includes these features, which were already available for certi
 - Audio conferencing isn't supported on Teams Phone devices with the Meeting Teams Room Basic license.
 - You now have the option to add and edit your emergency location on phones.
 - Emergency service disclaimers specified by admins in the Teams Admin Center (TAC) as part of emergency policy will be shown on the desk phones.
-- Busy-on-busy when users are in a call setting enabled by admins in TAC will be honored on phone devices (excluding the User-controlled option).
+- Busy-on-Busy when users are in a call setting enabled by admins in TAC will be honored on phone devices (excluding the User-controlled option).
 - Admins can configure app restart settings from TAC for optimal phone performance (not currently available for Government cloud accounts).
 - Record one-on-one PSTN calls.
 - License enforcement.
@@ -243,7 +243,7 @@ This update also includes these features, which were already available for certi
 > [!NOTE]
 > Admins can control rollout of this option on selected accounts by configuring the AllowCallRedirect parameter in the Teams calling policy associated with the account. [Screenshot #8, maybe not good enough to keep]
 
-- People can control how they want to handle a second incoming call through the Busy-on-Busy setting. Admins can allow people to configure the Busy-on-busy setting by selecting **Let users decide** in **Teams Admin Center** > **Calling policy**.
+- People can control how they want to handle a second incoming call through the Busy-on-Busy setting. Admins can allow people to configure the Busy-on-Busy setting by selecting **Let users decide** in **Teams Admin Center** > **Calling policy**.
 
 [Screenshot #9]
 [Screenshot #10]
@@ -386,7 +386,7 @@ Today, on Teams Phone devices, delegators can share their phone line with their
 - Audio Conferencing is supported on the Microsoft Teams Room Pro License.
 
 > [!NOTE]
-> When multiple licenses are assigned to a Teams Phone device account, configure IPPhonePolicy SignInMode for the desired experience.
+> When multiple licenses are assigned to a Teams Phone device account, configure IPPhonePolicy and SignInMode for the desired experience.
 
 - Issue of displaying wrong caller information for incoming Auto Attendant Call Queue calls is fixed on nontouch screen phones.
 

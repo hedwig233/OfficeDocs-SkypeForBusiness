@@ -420,6 +420,26 @@ Record one-on-one PSTN calls
 - Intermittent issue of boss not getting notification when delegates put a call on hold is fixed.
 - Intermittent issue of screen freezing while in a call is fixed.
 
+### February 21, 2023
+
+#### Teams app version: 1449/1.0.94.2023020602
+
+- Dial tone and mute LED sync issue is fixed on audio-conferencing phones.
+- Calling resiliency is improved.
+- Intermittent issue around greying out of call controls is fixed.
+- Intermittent issue around not being able to end calls is fixed.
+
+### January 25, 2023
+
+#### Teams app version: 1449/1.0.94.2023010607
+
+> [!NOTE]
+> This update is for public cloud deployments and non-audio-conferencing phones.
+
+- Reliability improvements around authentication.
+- Showing detailed error messages around authentication.
+- Call button display issue is fixed.
+- Emergency notification issue is fixed.
 
 
 ## [Teams displays](#tab/displays)

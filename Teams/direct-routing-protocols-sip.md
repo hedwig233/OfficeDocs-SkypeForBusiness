@@ -3,7 +3,7 @@ title: "Teams Phone System Direct Routing: SIP protocol"
 author: sfrancis206
 ms.author: scottfrancis
 manager: pamgreen
-ms.date: 01/28/2019
+ms.date: 01/24/2025
 ms.topic: article
 ms.service: msteams
 audience: admin
@@ -11,7 +11,7 @@ ms.collection:
   - M365-voice
   - m365initiative-voice
   - Tier1
-ms.reviewer: nmurav
+ms.reviewer: maksg, filippse
 search.appverid: MET150
 f1.keywords: 
   - NOCSH
@@ -393,4 +393,4 @@ The restart in Direct Routing is implemented according to the following paragrap
 *An agent sets the rest of the fields in the SDP for this media stream as it would in an initial offer of this media stream (see
 Section 4.3).  So, the set of candidates MAY include some, none, or all of the previous candidates for that stream, and MAY include a new set of candidates gathered as described in Section 4.1.1.*
 
-If the call was initially established with media bypass, and the call is transferred to a Skype for Business client, Direct Routing needs to insert a Media Processor--this is because Direct Routing can't be used with a Skype for Business client with media bypass. Direct Routing starts the ICE restart process by  changing the ice-pwd and ice-ufrag and offering new media candidates in a reinvite.
+If the call was initially established with media bypass, and the call is transferred to a Skype for Business client, Teams Web client, or Teams on VDI client, then Direct Routing needs to insert a Media Processor. Direct Routing can't be used with a Skype for Business, Teams Web, or Teams VDI clients with media bypass. Direct Routing starts the ICE restart process by changing the ice-pwd and ice-ufrag and offering new media candidates in a reinvite.

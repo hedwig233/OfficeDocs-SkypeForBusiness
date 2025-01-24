@@ -271,6 +271,27 @@ This update also includes these features, which were already available for certi
 - The issue of Better together on the new Teams desktop app has been fixed.
 - After consult transfer, the issue of an ongoing call going to the banner for the remote caller has been fixed.  
 
+### March 15, 2024
+
+#### Teams App version: 1449/1.0.94.2024031102 (Yealink, Poly, AudioCodes)
+
+> [!NOTE]
+> For AudioCodes phones, this app update applies to firmware version 1.19.705.
+
+- Improvement to show caller information on incoming emergency call notification.
+- Issue of not ending hot-desk on timeout has been fixed.
+- Issue of showing an incorrect call-recording string and a localized calling string has been fixed.
+- Issue related to the hard-key hold button has been fixed.
+
+### March 12, 2024
+
+#### Teams App version: 1449/1.0.94.2024011601, 1449/1.0.94.2024020601 (AudioCodes)
+
+> [!NOTE]
+> The update applies to AudioCodes phones on firmware version 1.19.516 or higher.
+
+- Significant reduction in sign-out and authentication errors due to Workplace Join failures, timeout issues, and memory leaks.
+
 
 ## [Teams displays](#tab/displays)
 

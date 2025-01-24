@@ -128,15 +128,15 @@ Today, on Teams Phone devices, you're able to configure custom contacts and spee
 
 This update also includes these features, which were already available for certified Teams Phones:
 
-- Improvement has been made to show caller information on incoming emergency call notification.
+- Improvement was made to show caller information on incoming emergency call notification.
 - The date-time format specified under Device Settings is the same on the home screen.
 - When the Explicit Recording Consent policy is enabled, audio conference phones will support auto consent.
-- The Public Switched Telephone Network (PSTN) calling issue on the new shared-line-appearance experience has been addressed.
+- The Public Switched Telephone Network (PSTN) calling issue on the new shared-line-appearance experience is fixed.
 - When there are fewer than four apps on a given account, they'll now show on the home screen instead of being hidden under the More menu.
 - Caller ID now shows incoming PSTN calls on call queues.
 - You can now continue dialing a number when there's an incoming call.
 - When ending a call or turning off your speaker, you won't be navigated to the home screen. Instead, you can continue from the previous screen.
-- A new back button has been introduced on the calling screen so you can easily navigate away from an ongoing call.
+- A new back button was introduced on the calling screen so you can easily navigate away from an ongoing call.
 - View and join active calls handled by delegates as a delegator.
 - Grant delegates permission to join active calls and resume calls.
 - A delegate can view shared call history per a delegator's line, easily switch between different lines, and view other delegates managing a line.
@@ -148,12 +148,12 @@ This update also includes these features, which were already available for certi
 - The user experience on the calls app and sidecar was made lighter weight to improve performance.
 - Date and time are now displayed on the title bar across apps.
 - Support added for reverse number lookup of PSTN numbers on call-queue calls.
-- The issue of autodialing on a partially entered number has been fixed.
+- The issue of autodialing on a partially entered number is fixed.
 - Option to sign out on common area phones. Advanced calling experience requires an Admin PIN.
 - Lighter weight meeting reduces the time it takes users to get connected to a meeting on selecting **Join**.
 - Support added for reverse number lookup of PSTN contacts added via the Teams desktop.
-- Performance of the phones attached to expansion modules has been improved.
-- The "Resume call" reliability has been improved on consult transfer.
+- Performance of the phones attached to expansion modules is improved.
+- The "Resume call" reliability is improved on consult transfer.
 - Audio conferencing isn't supported on Teams Phone devices with the Meeting Teams Room Basic license.
 - You now have the option to add and edit your emergency location on phones.
 - Emergency service disclaimers specified by admins in the Teams Admin Center (TAC) as part of emergency policy will be shown on the desk phones.
@@ -190,9 +190,9 @@ This update also includes these features, which were already available for certi
 
 - Intermittent issue on meeting join while using Better Together is fixed for touch phones
 - Intermittent issue on a device getting locked out is fixed for nontouch phones.
-- Issue of remote user not hearing music while on hold in nontouch phones has been fixed.
+- Issue of remote user not hearing music while on hold in nontouch phones is fixed.
 - Fixes for authentication issues, including a fix for sign-in failures immediately following signing out.
-- Issue of pin lock appearing when disabled has been fixed.
+- Issue of pin lock appearing when disabled is fixed.
 
 ### July 3, 2024
 
@@ -268,8 +268,8 @@ This update also includes these features, which were already available for certi
 > [!NOTE]
 > These features will be rolled out gradually.
 
-- The issue of Better together on the new Teams desktop app has been fixed.
-- After consult transfer, the issue of an ongoing call going to the banner for the remote caller has been fixed.  
+- The issue of Better together on the new Teams desktop app is fixed.
+- After consult transfer, the issue of an ongoing call going to the banner for the remote caller is fixed.  
 
 ### March 15, 2024
 
@@ -279,9 +279,9 @@ This update also includes these features, which were already available for certi
 > For AudioCodes phones, this app update applies to firmware version 1.19.705.
 
 - Improvement to show caller information on incoming emergency call notification.
-- Issue of not ending hot-desk on timeout has been fixed.
-- Issue of showing an incorrect call-recording string and a localized calling string has been fixed.
-- Issue related to the hard-key hold button has been fixed.
+- Issue of not ending hot-desk on timeout is fixed.
+- Issue of showing an incorrect call-recording string and a localized calling string is fixed.
+- Issue related to the hard-key hold button is fixed.
 
 ### March 12, 2024
 

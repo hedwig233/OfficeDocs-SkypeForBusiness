@@ -76,7 +76,7 @@ The multiple-banners feature improves the user experience by managing notificati
 #### Teams app version: 1449/1.0.94.2024112802  (Poly, Yealink, AudioCodes)​​​​​​​
 
 - Bug fixes on lock screen, password expiration, LED issues on nontouch devices, among others, are included.
-- 
+
 ### November 25, 2024
 
 #### Teams app version: 1449/1.0.94.2024062906 (Yealink – T5x, CP960, MP52, VP59; AudioCodes – C488HD/450HD, Crestron –UC-P8x, UC-P10x, UC-2)
@@ -129,74 +129,41 @@ Today, on Teams Phone devices, you're able to configure custom contacts and spee
 This update also includes these features, which were already available for certified Teams Phones:
 
 - Improvement has been made to show caller information on incoming emergency call notification.
-
 - The date-time format specified under Device Settings is the same on the home screen.
-
 - When the Explicit Recording Consent policy is enabled, audio conference phones will support auto consent.
-
 - The Public Switched Telephone Network (PSTN) calling issue on the new shared-line-appearance experience has been addressed.
-
 - When there are fewer than four apps on a given account, they'll now show on the home screen instead of being hidden under the More menu.
-
 - Caller ID now shows incoming PSTN calls on call queues.
-
 - You can now continue dialing a number when there's an incoming call.
-
 - When ending a call or turning off your speaker, you won't be navigated to the home screen. Instead, you can continue from the previous screen.
-
 - A new back button has been introduced on the calling screen so you can easily navigate away from an ongoing call.
-
 - View and join active calls handled by delegates as a delegator.
-
 - Grant delegates permission to join active calls and resume calls.
-
 - A delegate can view shared call history per a delegator's line, easily switch between different lines, and view other delegates managing a line.
-
 - The presence on the device and sidecar gets updated in near real time.
-
 - Live captions are supported on PSTN calls.
-
 - You'll be able to program Teams Phone devices to autodial a preconfigured PSTN number, or directory contact, when the handset is picked up. You can configure a common-area phone as a hotline phone by navigating to **Settings** > **Device Settings** > **Calling** > **Hotline**, and specifying the autodial contact and display name.
-
 - A redesigned dial pad helps reduce unnecessary mistakes while dialing a phone number. It offers a new dial-pad-only view in large-screen landscape phones.
-
 - Simplified navigation improves the performance and reduces page-navigation time by replacing the bottom navigation bar with a new home screen navigation experience. You can easily go to the home screen from any app and navigate to different apps from the home screen. You can also use **More** to reorder apps.
-
 - The user experience on the calls app and sidecar was made lighter weight to improve performance.
-
 - Date and time are now displayed on the title bar across apps.
-
 - Support added for reverse number lookup of PSTN numbers on call-queue calls.
-
 - The issue of autodialing on a partially entered number has been fixed.
-
 - Option to sign out on common area phones. Advanced calling experience requires an Admin PIN.
-
 - Lighter weight meeting reduces the time it takes users to get connected to a meeting on selecting **Join**.
-
 - Support added for reverse number lookup of PSTN contacts added via the Teams desktop.
-
 - Performance of the phones attached to expansion modules has been improved.
-
 - The "Resume call" reliability has been improved on consult transfer.
-
 - Audio conferencing isn't supported on Teams Phone devices with the Meeting Teams Room Basic license.
-
 - You now have the option to add and edit your emergency location on phones.
-
 - Emergency service disclaimers specified by admins in the Teams Admin Center (TAC) as part of emergency policy will be shown on the desk phones.
-
 - Busy-on-busy when users are in a call setting enabled by admins in TAC will be honored on phone devices (excluding the User-controlled option).
-
 - Admins can configure app restart settings from TAC for optimal phone performance (not currently available for Government cloud accounts).
-
 - Record one-on-one PSTN calls.
-
 - License enforcement.
-
 - Faster call joining.
-- 
-- ### August 16, 2024
+
+### August 16, 2024
 
 #### Teams app version: 1449/1.0.94.2024080808
 
@@ -207,13 +174,15 @@ This update also includes these features, which were already available for certi
 #### Teams app version -1449/1.0.94.2024071104​​​​​​​
 
 - This app is available for government clouds (GCCH and DoD).
-
 - **Updates on user experiences** We changed the default home-screen experience for the meeting sign-in mode. It's now like the personal sign-in mode experience. Additionally, updates have been made to remove the dial pad on the Calls app for touch phones with physical buttons.
-
 - Explicit Consent for Recording** Users see a notification on Teams Phone devices when a participant starts recording or transcription, asking for participant consent. This feature is turned off by default but can be enabled by admins. Admins will have the option to turn on this policy for users in your tenant by clicking on the highlighted switch on "Require participant agreement for recording, transcription, and Copilot."
 
 [Screenshot #4]
 
+- **Private Line** The Private Line feature allows bosses to have a second private phone number on their Teams device, ensuring privacy for important calls. These calls are distinct in the call history. To learn more, see Configure private lines in Microsoft Teams.
+- **Lightweight People App** The updated People app provides a faster and simplified experience for managing contacts, allowing users to switch between different contact lists and to create contact groups.​​​​​
+- **Rich Call History** Call-history updates include better logging for ignored, missed, and forwarded calls, with clear labeling for different call types.
+- **Call Transfer Improvements** Improvements to call transfers include viewing a list of speed dials during transfer, and better handling of keyboard overlap on touch phones. Also, for phones that don’t have touch screens, there are improvements to finish transfers using call-transfer hard keys on phones.
 
 
 ## [Teams displays](#tab/displays)

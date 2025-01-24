@@ -644,4 +644,7 @@ Record one-on-one PSTN calls
 
 ## [Teams displays](#tab/displays)
 
-Insert information from Support article here.
+> [!IMPORTANT]
+> End of certification for Teams display devices is September 3, 2025. Microsoft will make commercially reasonable best efforts to maintain compatibility with the most recent version of the Teams apps provided to manufacturers for a period of two (2) years from this date. For details, see the [Microsoft Product and Services Lifecycle](/lifecycle/products/).
+
+

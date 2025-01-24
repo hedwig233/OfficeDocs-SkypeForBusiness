@@ -647,4 +647,40 @@ Record one-on-one PSTN calls
 > [!IMPORTANT]
 > End of certification for Teams display devices is September 3, 2025. Microsoft will make commercially reasonable best efforts to maintain compatibility with the most recent version of the Teams apps provided to manufacturers for a period of two (2) years from this date. For details, see the [Microsoft Product and Services Lifecycle](/lifecycle/products/).
 
+### September 2024
+
+#### Teams app version: 1449/1.0.95.2024062804
+
+- Bug fixes.
+
+### November 2023
+
+#### Teams app version: 1449/1.0.95.2023101102
+
+- Support for QR code sign in for scenarios without reserving the hot desk.
+- Improvements to support meeting continuity through hot-desk reservation end times.
+- UI and layout enhancements to the hot-desk ambient and display screen.
+- Bug fixes and other enhancements.
+
+### June 2023
+
+#### Teams app version: 1449/1.0.95.2023061601
+
+- Streamlined experiences on Teams-certified displays based on assigned licenses.
+- Bug fixes and improvements on meeting and calling experiences.
+
+### May 2023
+
+#### Teams displays app version: 1449/1.0.95.2023042701
+
+> [!NOTE]
+> This release is an app-only update. Please work with device manufacturers to confirm timelines on full feature functionality on your devices.
+
+- QR code sign in on Teams-certified displays for hot-desking. All Teams Displays with hot-desking capability allow people to sign in using a QR code for a reserved time slot. This feature is enabled by default and can be disabled under **Device settings** > **Admin settings** > **Meetings**. While hot-desking, you can seamlessly sign in to the Teams display for the duration of your session by scanning a QR code using the Teams app on your mobile phone.
+
+The recommended version of Teams on your Android phone is 1416/1.0.0.2023092901 and above. On iOS, the recommended version is 5.9.1, it's (100772023093201), and above.
+
+> [!NOTE]
+> The following instructions are for those who use an Android mobile phone with an Android work profile (AWP).
+
 

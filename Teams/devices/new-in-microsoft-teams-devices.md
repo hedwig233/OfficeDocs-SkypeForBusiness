@@ -535,6 +535,27 @@ Record one-on-one PSTN calls
 - Bug fixes related to authentication.
 - Bug fixes preventing devices from going offline in the Teams Admin Center.
 
+### June 10, 2021
+
+#### Teams app version: 1449/1.0.94.2021052803
+
+- Performance updates for meeting experiences on low-end hardware.
+
+### June 8, 2021
+
+#### Teams app version: 1449/1.0.94.2021051303
+
+- Transfer a Teams call to another device without hanging up.
+- Change your background during a video call or meeting from a set of pictures available in phones with video capability.
+- Contacts whose numbers are saved in Outlook will be available in the People section of Teams Phones with read-only access. You'll need to manually dial the number.
+- Enforcement of authentication policies and tenant-based policies set by your admin. Login is blocked if the device doesn't meet the necessary policy requirements.
+- During a call, select the active-call icon to show more options. Additionally, when a contact has multiple numbers saved, you can choose the number you want to dial from the dropdown list.
+- To facilitate quick responses for auto-attendant scenarios, dial pad will be made available for early media scenarios.
+- Extending the live captions feature to calls, Teams detects what's said in a call and presents real-time captions in one-on-one calls.
+- Ongoing enhancements to improve user experience when using a delegate on touch screens.
+- Bug fixes for Link Layer Discovery Protocol (LLDP) for Enhanced 911 (E911) and authentication.
+
+
 
 ## [Teams displays](#tab/displays)
 

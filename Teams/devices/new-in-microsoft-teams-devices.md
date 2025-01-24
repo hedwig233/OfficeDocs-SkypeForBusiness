@@ -179,10 +179,33 @@ This update also includes these features, which were already available for certi
 
 [Screenshot #4]
 
-- **Private Line** The Private Line feature allows bosses to have a second private phone number on their Teams device, ensuring privacy for important calls. These calls are distinct in the call history. To learn more, see Configure private lines in Microsoft Teams.
-- **Lightweight People App** The updated People app provides a faster and simplified experience for managing contacts, allowing users to switch between different contact lists and to create contact groups.​​​​​
-- **Rich Call History** Call-history updates include better logging for ignored, missed, and forwarded calls, with clear labeling for different call types.
-- **Call Transfer Improvements** Improvements to call transfers include viewing a list of speed dials during transfer, and better handling of keyboard overlap on touch phones. Also, for phones that don’t have touch screens, there are improvements to finish transfers using call-transfer hard keys on phones.
+- **Private Line**  The Private Line feature allows bosses to have a second private phone number on their Teams device, ensuring privacy for important calls. These calls are distinct in the call history. To learn more, see Configure private lines in Microsoft Teams.
+- **Lightweight People App**  The updated People app provides a faster and simplified experience for managing contacts, allowing users to switch between different contact lists and to create contact groups.​​​​​
+- **Rich Call History**  Call-history updates include better logging for ignored, missed, and forwarded calls, with clear labeling for different call types.
+- **Call Transfer Improvements**  Improvements to call transfers include viewing a list of speed dials during transfer, and better handling of keyboard overlap on touch phones. Also, for phones that don’t have touch screens, there are improvements to finish transfers using call-transfer hard keys on phones.
+
+### July 5, 2024
+
+#### Teams app version: 1449/1.0.94.2024062301 (AUDC: C448HD, C450HD. Yealink: MP52, VP59. Crestron: UC-2, UC-P8, UC-P10, UC-P8-C and UC-P10-C)
+
+- Intermittent issue on meeting join while using Better Together is fixed for touch phones
+
+- Intermittent issue on a device getting locked out is fixed for nontouch phones.
+
+- Issue of remote user not hearing music while on hold in nontouch phones has been fixed.
+
+- Fixes for authentication issues, including a fix for sign-in failures immediately following signing out.
+
+- Issue of pin lock appearing when disabled has been fixed.
+
+### July 3, 2024
+
+#### Teams app version - 1449/1.0.94.2024062010 (touch phones: AudioCodes, Poly, Yealink. For non-touch phones: AudioCodes C435, Poly CCX350)
+
+- Bug fixes and improvements on the enforce pin-lock feature.
+
+- This app is also available for customers in government clouds (GCCH and DoD).
+
 
 
 ## [Teams displays](#tab/displays)

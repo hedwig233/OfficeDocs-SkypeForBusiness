@@ -71,6 +71,13 @@ To view feature updates for Microsoft Teams Rooms, go to:
 - Company Portal 6152 (available to Yealink, Crestron, Logitech, AudioCodes, EPOS, and Poly panels on Company Portal 5484, 5882, or 6061). Fixes for authentication issues, including a fix for sign-in failures immediately following sign out.
 - Multi-panel check-in support. (Generally available and for GCC. GCCH and higher aren't supported at this time) If a resource account is being shared across multiple panels, the check-in status for the meeting will remain in sync across the panels. This ensures the room is released or not released correctly. To learn more on the check-in feature, see [Check-in and auto release on Microsoft Teams panels](check-in-and-auto-release.md).
 
+> [!NOTE]
+> For every panel device, regardless of whether it's part of a multi-panel room, when you initially download this app, the current setting for Release room, if no one checks in, will be updated in Exchange. Allow 48 hours for this sync to happen. Be sure you download the app when there are no meetings scheduled within the next 48 hours.
+> [!NOTE]
+> Going forward, when auto release is enabled, disabled, or adjusted, it can take up to 48 hours for this change to take effect. For this reason, it's recommended that you adjust the settings when no meetings are scheduled for the next 48 hours.
+
+
+
 
 
 

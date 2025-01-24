@@ -555,6 +555,38 @@ Record one-on-one PSTN calls
 - Ongoing enhancements to improve user experience when using a delegate on touch screens.
 - Bug fixes for Link Layer Discovery Protocol (LLDP) for Enhanced 911 (E911) and authentication.
 
+### March 30, 2021
+
+#### Teams app version: 1449/1.0.94.2021033002
+
+- Fixed authentication library crash.
+
+### March 26, 2021
+
+#### Teams app version: 1449/1.0.94.2021022403
+
+- New and improved sign-in experience. Sign in from any browser or smartphone with a prominent device code. Or you can sign in from the device with your username and password.
+- Sign-in support and authentication into specialized clouds is available. Choose the **Settings** gear on the sign-in page to see the options for your account.
+- IT admins can remotely provision and sign in to a Teams device that's previously not been provisioned.
+- Call controls now visible during meetings. You can also switch between Gallery and Together mode and send reactions during meetings.
+- Teams devices connected to the network via ethernet will dynamically update location information for emergency calling services based on changes to network attributes, including chassis ID and port ID.
+- On video phones, you can change your background during meetings and calls from a select set of images.
+- Calling enhancements that improve the usability of touch screens.
+- All phone numbers that are part of meeting invites, or from a person’s contact card, can be dialed by selecting them on screen.
+- Directly transfer a call to someone’s work voicemail without ringing them.
+
+### December 8, 2020
+
+#### Teams app version: 1449/1.0.94.2020111101
+
+- Video features including 3x3 layout support, gallery view and together mode, background blur, and spotlight.
+- Meeting features including request-to-speak and the ability to view screen sharing on select models of audio phones.
+- Proximity joining on conference phones.
+- Beta release for Sidecars on AudioCodes and Yealink phones.
+- Meet-now button on phones.
+- Policy support for enabling and disabling home screen and syncing a phone to a computer.
+- Support for M365 Government (GCC deployments).
+
 
 
 ## [Teams displays](#tab/displays)

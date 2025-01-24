@@ -181,15 +181,25 @@ To add a mobile system OS scanner:
 - New calendar look to help you quickly see a room's availability.
 - View a list of equipment available on a panel. Admins must enable this setting in the Device Teams Admin settings, then turn on the setting per device. Admins can use the following instructions to make sure that devices are properly to display available resources: [Set-Place](/powershell/module/exchange/set-place) and [Manage resource mailboxes in Exchange Online](/exchange/recipients-in-exchange-online/manage-resource-mailboxes).
 
+### February 2022
 
+#### Teams app version: 1449/1.0.97.2022730007
 
+- To help ensure your meeting spaces are getting maximum use, we're enabling a way to check in to claim a room from a Teams panel. Users can check into the room by tapping the "check in" button on the panel. If no one checks into the room, it will be released back to the room inventory for others to reserve and use.
+- When paired with a Microsoft Teams Rooms on Android, joining a meeting from the Teams Room is considered as checking in and the room won't be released (it requires the Teams Room on Android app version 1449/1.0.96.2022011305 or above). Support with Teams Rooms on Windows will be available at a later time.
+- The room check-in notification provides the end user with the ability to check in to their meeting when the panel is paired with a Teams Rooms on Android. After the user checks in, when the scheduled meeting starts and the previous meeting is running over, a notification appears on the Teams Room front-of-room display to inform the in-room participants their meeting is over and people are waiting for the space. This feature will be initially available on Teams Rooms on Android (it requires Teams app version 1449/1.0.96.2022011305 or above) and will be available on Teams Rooms on Windows at a later date.
+- Calendar layout update to combine consecutive available time slots into one time slot.
+- The calendar layout is updated to combine consecutive available time  slots from an hourly view into a single timeslot. For example, the 12-3 PM time slot is combined into a single time slot to improve readability.
+- Wallpaper refresh.
+- The preset wallpapers have been refreshed in this app release to align with our Teams devices family.
 
+### August 2021
 
+#### App version: 1449/1.0.97.2021070601
 
-
-
-
-
+- Teams Extensibility and Line of Business (LOB) app support to tailor the Teams panels experience.
+- IT Admins can do remote provisioning and remote sign in of Teams panels from the Teams Admin Center.
+- Hide meeting names for sensitive spaces. This setting is off by default (the **Show meeting names** setting is on). The tenant admin can enable it through **Settings** > **Device settings** > **Admin Settings** > **Panels App Settings** > **Meetings** > **Show meeting names**. When meeting names is turned off, the meeting name is replaced with the meeting organizer's name.
 
 ## [Teams Phones](#tab/phones)
 

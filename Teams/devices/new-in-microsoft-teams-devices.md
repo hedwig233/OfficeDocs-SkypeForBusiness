@@ -221,14 +221,14 @@ This update also includes these features, which were already available for certi
 - You can park and unpark a call.
 - You can turn on the Advanced Calling and Auto Restart settings.
 - You can add contacts and contact groups.
-- Admin’s can turn on call forwarding on home screens via **Teams admin center** > **Configuration** > **Display call forwarding on home screen**, allowing Teams Phone device users to setup call forwarding directly from their home screens.
-- Admin’s can turn off call-quality surveys on Teams Phone devices from **Teams admin center** > **Configuration**, and by turning off **Call quality survey**.
+- Admin’s can turn on call forwarding on home screens via **Teams Admin Center** > **Configuration** > **Display call forwarding on home screen**, allowing Teams Phone device users to setup call forwarding directly from their home screens.
+- Admin’s can turn off call-quality surveys on Teams Phone devices from **Teams Admin Center** > **Configuration**, and by turning off **Call quality survey**.
 
 [Screenshot #5]
 
-- Send incoming calls to voicemail from the incoming call screen (configurable by calling a policy through PowerShell). You can control how you want to handle a secondary incoming call through the Busy-on-Busy setting (configurable by calling a policy in the Teams admin center).
+- Send incoming calls to voicemail from the incoming call screen (configurable by calling a policy through PowerShell). You can control how you want to handle a secondary incoming call through the Busy-on-Busy setting (configurable by calling a policy in the Teams Admin Center).
 - When a contact has multiple numbers, you can choose which one to call.
-- People can control how they want to handle second incoming calls through the Busy-on-Busy setting. Admins can allow people to configure the Busy-on-Busy setting by selecting **Let users decide** in **Teams admin center** > **Calling policy**.
+- People can control how they want to handle second incoming calls through the Busy-on-Busy setting. Admins can allow people to configure the Busy-on-Busy setting by selecting **Let users decide** in **Teams Admin Center** > **Calling policy**.
 
 [Screenshot #6]
 
@@ -243,17 +243,17 @@ This update also includes these features, which were already available for certi
 > [!NOTE]
 > Admins can control rollout of this option on selected accounts by configuring the AllowCallRedirect parameter in the Teams calling policy associated with the account. [Screenshot #8, maybe not good enough to keep]
 
-- People can control how they want to handle a second incoming call through the Busy-on-Busy setting. Admins can allow people to configure the Busy-on-busy setting by selecting **Let users decide** in **Teams admin center** > **Calling policy**.
+- People can control how they want to handle a second incoming call through the Busy-on-Busy setting. Admins can allow people to configure the Busy-on-busy setting by selecting **Let users decide** in **Teams Admin Center** > **Calling policy**.
 
 [Screenshot #9]
 [Screenshot #10]
 
-- Admins can allow call the forwarding option on home screens via **Teams admin center** > **Configuration** by turning on **Display call forwarding on home screen.** The same setting can be configured on the phone device. This allows people using a device (including common-area phones) to set up call forwarding directly from their home screen.
+- Admins can allow call the forwarding option on home screens via **Teams Admin Center** > **Configuration** by turning on **Display call forwarding on home screen.** The same setting can be configured on the phone device. This allows people using a device (including common-area phones) to set up call forwarding directly from their home screen.
 
 > [!NOTE]
 > These features will be rolled out gradually.
 
-- Admins can notify people to set or change their phone lock PIN by enabling a configuration profile setting in Teams admin center. They can also lock the phone device via the menu on home screen.
+- Admins can notify people to set or change their phone lock PIN by enabling a configuration profile setting in Teams Admin Center. They can also lock the phone device via the menu on home screen.
 
 [Screenshot #11]
 
@@ -261,7 +261,7 @@ This update also includes these features, which were already available for certi
 > These features will be rolled out gradually.
 
 - Survival Branch Office (SBA) will be supported on Voice over Internet Protocol (VoIP) calls.
-- Admins have the option of disabling call-quality surveys on Teams Phone devices from **Teams admin center** > **Configuration**.
+- Admins have the option of disabling call-quality surveys on Teams Phone devices from **Teams Admin Center** > **Configuration**.
 
 [Screenshot #12]
 
@@ -349,6 +349,22 @@ Today, on Teams Phone devices, delegators can share their phone line with their
 - View shared call history, per the delegator's line.
 - Easily switch between different lines.
 - View other delegates managing a line.
+- The presence on the device and sidecar is updated in near real time.
+- Live captions are supported on PSTN calls.
+- The issue of resolving caller ID on call-queue calls is fixed.
+- The issue of showing the “Add location” banner when the emergency policy “External location lookup mode” is turned off has been is fixed.
+
+### July 31, 2023
+
+#### Teams app version: 1449/1.0.94.2023072509 (AudioCodes, Crestron and Poly audio phones)
+
+- You can program Teams Phone devices to autodial a pre-configured PSTN number or directory contact when the handset is picked up. You can configure a common area phone as a hotline phone by navigating to **Settings** > **Device Settings** > **Calling** > **Hotline** and specifying the auto-dial contact and display name.
+
+> [!NOTE]
+> To configure a phone as hotline phone, the logged in account on the phone device must have **Teams Shared Device License** assigned. **Sign In Mode** must be set to **CommonAreaPhoneSignIn**. The option to configure a hotline phone through the Teams Admin Center will be supported soon.
+
+- Redesigned dial pad helps reduce unnecessary mistakes while dialing a phone number and offers a new dial-pad-only view in large-screen landscape phones.
+
 
 
 

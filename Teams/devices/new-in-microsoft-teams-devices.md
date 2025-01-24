@@ -485,6 +485,23 @@ Record one-on-one PSTN calls
 - Hold music during blind-call transfers and consultative-call transfers made via VoIP (Voice over Internet Protocol).
 - Customize app restart time from **Settings**.
 
+### March 3, 2022
+
+#### Teams app version: 1449/1.0.94.2022022305
+
+- Resiliency added for location fetch mechanism on devices.
+
+### February 7, 2022
+
+#### Teams app version: 1449/1.0.94.2022020202
+
+- Teams Phones with touch screen have instant push-to-talk communication via the new Walkie-Talkie feature.
+- Teams Phones with touch screen improvements for multiple incoming, held, and parked calls.
+- Teams conference phones in portrait mode updates for better meeting experience.
+- Performance enhancements for screen navigation and sidecar issues.
+- Bug fixes for Teams Android devices showing as offline in Teams Admin Center.
+- Bug fix to held calls when placing the handset back in the cradle.
+- Known issues with ongoing calls when Walkie-Talkie calls interrupt.
 
 
 ## [Teams displays](#tab/displays)

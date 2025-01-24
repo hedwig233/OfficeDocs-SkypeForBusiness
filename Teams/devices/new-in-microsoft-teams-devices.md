@@ -164,6 +164,22 @@ To add a mobile system OS scanner:
 - Improvements and bug fixes.
 - Support for Microsoft Teams Rooms Pro Licenses.
 
+### July 2022
+
+#### Teams App version: 1449/1.0.97.2022739901
+
+- If you finish a meeting early, you can check out of the meeting room. This makes it available so others can reserve and use the space. Select **Manage** > **Check out**. If you need a few more minutes, if the room is free after your scheduled meeting time, you can extend your reservation for up to 15 minutes. Select **Manage** > **Extend room reservation**.
+- This feature is turned off by default and requires the admin to enable the setting in the Teams admin settings. The setting to control this feature in the Microsoft Teams Admin Center will be available at a later time.
+- A new Admin setting was added to disable room reservation from the panel. When the setting is enabled, a banner on the panel notifies people that the room can't be reserved with the Teams panels device.
+- You can tap and pull down on a meeting tile to manually refresh the Teams panel calendar.
+
+### April 2022
+
+#### Teams App version: 1449/1.0.97.2022733702
+
+- New warning when a room reaches max capacity. This requires pairing the panel to a Teams rooms device (currently supported on Teams Rooms on Android with app version 1449/1.0.96.2022011305 or later) that supports people counting. This can be enabled in admin settings. To learn more, see How to use Microsoft Teams panels.
+- New calendar look to help you quickly see a room's availability.
+- View a list of equipment available on a panel. Admins must enable this setting in the Device Teams Admin settings, then turn on the setting per device. Admins can use the following instructions to make sure that devices are properly to display available resources: [Set-Place](/powershell/module/exchange/set-place) and [Manage resource mailboxes in Exchange Online](/exchange/recipients-in-exchange-online/manage-resource-mailboxes).
 
 
 

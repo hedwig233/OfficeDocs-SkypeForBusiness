@@ -455,6 +455,20 @@ Record one-on-one PSTN calls
 
 - Simplified look for incoming and outgoing calls with improved performance.
 
+### July 14, 2022
+
+#### Teams app version: 1449/1.0.94.2022062103
+
+- Several intermittent app-crash issues have been resolved.
+
+### July 6, 2022
+
+#### Teams app version: 1449/1.0.94.2022061702 (Crestron, Poly, Yealink)
+
+- We're enhancing the existing Common Area Phone offering to include all advanced calling features at no additional cost or changes to the original purchased license. Common Area Phone supports calling features including call park, call queues, auto attendants, Intune enrollment into Endpoint Manager, and more, when the device is updated to the minimum app version: 1449/1.0.94.2022061702.
+- Emergency calling on GCC-H deployments is supported.
+
+
 
 ## [Teams displays](#tab/displays)
 

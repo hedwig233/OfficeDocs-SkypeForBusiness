@@ -130,7 +130,7 @@ This update also includes these features, which were already available for certi
 
 - Improvement was made to show caller information on incoming emergency call notification.
 - The date-time format specified under Device Settings is the same on the home screen.
-- When the Explicit Recording Consent policy is enabled, audio conference phones will support auto consent.
+- When the **Explicit Recording Consent** policy is enabled, audio conference phones will support auto consent.
 - The Public Switched Telephone Network (PSTN) calling issue on the new shared-line-appearance experience is fixed.
 - When there are fewer than four apps on a given account, they'll now show on the home screen instead of being hidden under the More menu.
 - Caller ID now shows incoming PSTN calls on call queues.
@@ -175,7 +175,7 @@ This update also includes these features, which were already available for certi
 
 - This app is available for government clouds (GCCH and DoD).
 - **Updates on user experiences** We changed the default home-screen experience for the meeting sign-in mode. It's now like the personal sign-in mode experience. Additionally, updates have been made to remove the dial pad on the Calls app for touch phones with physical buttons.
-- Explicit Consent for Recording** Users see a notification on Teams Phone devices when a participant starts recording or transcription, asking for participant consent. This feature is turned off by default but can be enabled by admins. Admins will have the option to turn on this policy for users in your tenant by clicking on the highlighted switch on "Require participant agreement for recording, transcription, and Copilot."
+- **Explicit Consent for Recording**  Users see a notification on Teams Phone devices when a participant starts recording or transcription, asking for participant consent. This feature is turned off by default but can be enabled by admins. Admins can turn on this policy for users in your tenant by clicking on the highlighted switch on "Require participant agreement for recording, transcription, and Copilot."
 
 [Screenshot #4]
 
@@ -186,7 +186,7 @@ This update also includes these features, which were already available for certi
 
 ### July 5, 2024
 
-#### Teams app version: 1449/1.0.94.2024062301 (AUDC: C448HD, C450HD. Yealink: MP52, VP59. Crestron: UC-2, UC-P8, UC-P10, UC-P8-C and UC-P10-C)
+#### Teams app version: 1449/1.0.94.2024062301 (AUDC: C448HD, C450HD. Yealink: MP52, VP59. Crestron: UC-2, UC-P8, UC-P10, UC-P8-C, and UC-P10-C)
 
 - Intermittent issue on meeting join while using Better Together is fixed for touch phones
 - Intermittent issue on a device getting locked out is fixed for nontouch phones.
@@ -196,7 +196,7 @@ This update also includes these features, which were already available for certi
 
 ### July 3, 2024
 
-#### Teams app version - 1449/1.0.94.2024062010 (touch phones: AudioCodes, Poly, Yealink. For non-touch phones: AudioCodes C435, Poly CCX350)
+#### Teams app version - 1449/1.0.94.2024062010 (touch phones: AudioCodes, Poly, Yealink. For nontouch phones: AudioCodes C435, Poly CCX350)
 
 - Bug fixes and improvements on the enforce pin-lock feature.
 - This app is also available for customers in government clouds (GCCH and DoD).
@@ -216,13 +216,13 @@ This update also includes these features, which were already available for certi
 
 ### May 21, 2024
 
-#### Teams App version: 1449/1.0.94.2024051306 (Non-touch phones – Poly CCX350, AudioCodes C435HD)
+#### Teams App version: 1449/1.0.94.2024051306 (Nontouch phones – Poly CCX350, AudioCodes C435HD)
 
 - You can park and unpark a call.
 - You can turn on the Advanced Calling and Auto Restart settings.
 - You can add contacts and contact groups.
 - Admin’s can turn on call forwarding on home screens via **Teams admin center** > **Configuration** > **Display call forwarding on home screen**, allowing Teams Phone device users to setup call forwarding directly from their home screens.
-- Admin’s have the option to turn off call-quality surveys on Teams Phone devices from **Teams admin center** > **Configuration**, and by turning off **Call quality survey**.
+- Admin’s can turn off call-quality surveys on Teams Phone devices from **Teams admin center** > **Configuration**, and by turning off **Call quality survey**.
 
 [Screenshot #5]
 
@@ -241,7 +241,7 @@ This update also includes these features, which were already available for certi
 [Screenshot #7, maybe not good enough to keep]
 
 > [!NOTE]
-> Admins can control roll out of this option on selected accounts by configuring the AllowCallRedirect parameter in the Teams calling policy associated with the account. [Screenshot #8, maybe not good enough to keep]
+> Admins can control rollout of this option on selected accounts by configuring the AllowCallRedirect parameter in the Teams calling policy associated with the account. [Screenshot #8, maybe not good enough to keep]
 
 - People can control how they want to handle a second incoming call through the Busy-on-Busy setting. Admins can allow people to configure the Busy-on-busy setting by selecting **Let users decide** in **Teams admin center** > **Calling policy**.
 

@@ -364,6 +364,13 @@ Today, on Teams Phone devices, delegators can share their phone line with their
 > To configure a phone as hotline phone, the logged in account on the phone device must have **Teams Shared Device License** assigned. **Sign In Mode** must be set to **CommonAreaPhoneSignIn**. The option to configure a hotline phone through the Teams Admin Center will be supported soon.
 
 - Redesigned dial pad helps reduce unnecessary mistakes while dialing a phone number and offers a new dial-pad-only view in large-screen landscape phones.
+- Simplified navigation improves performance and reduces page-navigation time by replacing the bottom navigation bar with a new home-screen navigation experience. You can easily go to the home screen from any app and navigate to different apps from the home screen. You can also use **More** to reorder apps.
+- The user experience on the calls app and sidecar was made lightweight to improve performance.
+- Date and time are now displayed on the title bar across apps.
+- Support added for reverse number lookup of PSTN numbers on call-queue calls.
+- The issue of autodialing on partially entered number is fixed.
+- Option to sign-out on common area phones. The advanced calling experience requires an admin PIN.
+- Lightweight meeting reduces the time it takes users to get connected to a meeting by selecting **Join**.
 
 
 

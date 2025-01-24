@@ -702,3 +702,16 @@ To add a mobile system OS scanner:
 - Improvements to handle multi-call banner scenarios and to ambient UI.
 - Bug fixes and improvements.
 
+### January 2023
+
+#### Teams app version: 1449/1.0.95.2023011001 (Crestron)
+
+- Fix for intermittent app crashes occurring in the previous app update (1449/1.0.95.2022102603) for Crestron devices.
+
+### December 2022
+
+#### Teams app version: 1449/1.0.95.2022120505 (Neat Frame)
+
+- Hot desking in portrait mode is  supported. Hotdesking on a Teams display makes finding a space to work easier by allowing you to locate and reserve flexible workspaces.
+- Teams Shared Devices License on Teams displays offers hot desking experience. The Teams IP Phone policy setting for hot desking is disabled for displays. You can invoke hot desking using Teams accounts with the Teams Shared Device Licenses.
+- Bug fixes and improvements for app crashes.

@@ -715,3 +715,21 @@ To add a mobile system OS scanner:
 - Hot desking in portrait mode is  supported. Hotdesking on a Teams display makes finding a space to work easier by allowing you to locate and reserve flexible workspaces.
 - Teams Shared Devices License on Teams displays offers hot desking experience. The Teams IP Phone policy setting for hot desking is disabled for displays. You can invoke hot desking using Teams accounts with the Teams Shared Device Licenses.
 - Bug fixes and improvements for app crashes.
+
+### November 2022
+
+#### Teams app version: 1449/1.0.95.2022102603 (Crestron)
+
+- Teams Shared Devices License on Teams displays offers a hot-desking experience. The Teams IP Phone policy setting for hot desking is disabled for displays. You can invoke hot desking using Teams accounts with the Teams Shared Device Licenses.
+- Bug fixes and improvements for app crashes, reliability of muting and unmuting your microphone during a call, and more.
+
+### December 2021
+
+#### Teams app version: 1449/1.0.95.2021111203
+
+- Teams displays support portrait mode for all calling and meeting screens. Meeting layouts are optimized for portrait videos of individual people. All incoming videos always fit-to-frame when the device is used in portrait orientation.
+- Teams displays enabled live event attendee view to allow producer and presenter to join with a quick join link. They have the same capability in displays as in the Teams mobile app. The attendee can access the live event with the event link provided in the calendar details.
+- Organizers, presenters, and attendees have the webinar invite on calendar, and can join directly from the calendar event through the **Join** button, which appears on the event when it's about to start.
+- The following Teams display settings moved under **Teams Admin Settings** while using a shared account: calling, sign out, and wallpaper.
+- Teams displays have the ability to use end-to-end encryption for calls (must be enabled by IT admin).
+- IT admins can remotely provision, sign in, and sign out of a Teams device that has previously not been provisioned.

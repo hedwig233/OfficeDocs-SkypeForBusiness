@@ -503,6 +503,38 @@ Record one-on-one PSTN calls
 - Bug fix to held calls when placing the handset back in the cradle.
 - Known issues with ongoing calls when Walkie-Talkie calls interrupt.
 
+### December 16, 2021
+
+#### Teams app version: 1449/1.0.94.2021121302
+
+- Additional improvements in dial-pad experience for touch-screen phones.
+- Improvements in dial-tone management.
+- Improvements to audio routing when switching between handset and speaker.
+
+### December 6, 2021
+
+#### Teams app version: 1449/1.0.94.2021112302
+
+- Additional improvements in dial-pad experience for touch-screen phones.
+- Improvements in dial-tone management.
+- Improvements to audio routing when switching between handset and speaker.
+
+### November 22, 2021
+
+#### Teams app version: 1449/1.0.94.2021110101
+
+- Improvements in dial-pad and dial-tone experiences for touch-screen phones.
+
+### November 3, 2021
+
+#### Teams app version: 1449/1.0.94.2021101205
+
+- Admins can provision devices from the Teams Admin Center to remotely sign in and sign out from devices.
+- Branch office survivability for Teams Phones to make PSTN calls even when the internet connection is down.
+- Admins can download all (company portal, device management, and media) logs from the Teams Admin Center.
+- Bug fixes related to authentication.
+- Bug fixes preventing devices from going offline in the Teams Admin Center.
+
 
 ## [Teams displays](#tab/displays)
 

@@ -43,6 +43,30 @@ To view feature updates for Microsoft Teams Rooms, go to:
 - **Custom name**  IT admins can customize the display name shown on Teams panels through the Teams Rooms Pro Management portal. This feature is only available with the Teams Rooms Pro and Teams Shared Device Licenses. To learn more about custom names, see [Add a custom name for Teams panels](custom-names.md).
 - Fix for Room Equipment not populating.
 
+### November 2024
+
+#### Teams app version: 1449/1.0.97.2024102301
+
+- Authentication fixes and check-in reliability improvements.
+
+### September 2024
+
+#### Teams app version: 1449/1.0.972024081207
+
+- **Custom backgrounds**  IT admins can upload custom background images on the Teams Admin Center to reinforce company brand on Teams panels devices. PNG, JPG, and JPEG formats are supported. This feature is only available with the Teams Rooms Pro and Teams Shared Device Licenses. To learn more about custom backgrounds, see Set up and manage custom backgrounds on Teams panels.
+
+- **Daily device restart window**  By default, the device restarts anytime between 2:00 AM and 3:00 AM based on its local time zone. If the device is in use during this window and the restart-window period ends, the restart is rescheduled the following day. IT admins can turn off this functionality or change the restart window from the device settings or remotely in Teams Admin Center.
+- Bug fix for remotely changing "Release room if no one checks in" syncing to the device.
+
+
+
+
+
+
+
+
+
+
 
 ## [Teams Phones](#tab/phones)
 

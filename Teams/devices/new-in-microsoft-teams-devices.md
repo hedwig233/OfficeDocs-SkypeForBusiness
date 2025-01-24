@@ -405,6 +405,21 @@ Today, on Teams Phone devices, delegators can share their phone line with their
 
 - Intermittent issue of the app restarting on F SKUs (frontline worker) and Business SKUs (SMB) is fixed.
 
+## April 4, 2023
+
+### Teams app version: 1449/1.0.94.2023032903 (AudioCodes, Crestron, Poly)
+
+- Audio conferencing isn't supported on Teams Phone devices with the Meeting Teams Room Basic License.
+- You can add and edit your emergency location on phones.
+- Emergency service disclaimers specified by admins in the Teams Admin Center (TAC) as part of the emergency policy shown on desk phones.
+- Busy-on-Busy when in a call setting enabled by admins in the Teams Admin Center is honored on phone devices (excluding the User controlled option).
+- Admins can configure app-restart settings from the Teams Admin Center for optimal phone performance (not currently available for Government cloud accounts).
+Record one-on-one PSTN calls
+- Faster call joining.
+- Issue of defaulting to alphanumeric characters on the Dialpad while dialing a number on Poly CCX 350 is fixed.
+- Intermittent issue of boss not getting notification when delegates put a call on hold is fixed.
+- Intermittent issue of screen freezing while in a call is fixed.
+
 
 
 ## [Teams displays](#tab/displays)

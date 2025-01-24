@@ -405,9 +405,9 @@ Today, on Teams Phone devices, delegators can share their phone line with their
 
 - Intermittent issue of the app restarting on F SKUs (frontline worker) and Business SKUs (SMB) is fixed.
 
-## April 4, 2023
+### April 4, 2023
 
-### Teams app version: 1449/1.0.94.2023032903 (AudioCodes, Crestron, Poly)
+#### Teams app version: 1449/1.0.94.2023032903 (AudioCodes, Crestron, Poly)
 
 - Audio conferencing isn't supported on Teams Phone devices with the Meeting Teams Room Basic License.
 - You can add and edit your emergency location on phones.
@@ -440,6 +440,20 @@ Record one-on-one PSTN calls
 - Showing detailed error messages around authentication.
 - Call button display issue is fixed.
 - Emergency notification issue is fixed.
+
+### November 30, 2022
+
+#### Teams app version: 1449/1.0.94.2022110803
+
+- Fixes sign-in issues on non-touch devices.
+- Fixes caller ID and caller display name issues.
+- Fixes calling related issues on GCCH deployments.
+
+### September 21, 2022
+
+#### Teams app version: 1449/1.0.94.2022090705 (for non-video touch phones only)
+
+- Simplified look for incoming and outgoing calls with improved performance.
 
 
 ## [Teams displays](#tab/displays)

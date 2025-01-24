@@ -114,7 +114,33 @@ To view feature updates for Microsoft Teams Rooms, go to:
 
 To add a mobile system OS scanner:
 
+1. In the Intune Admin Center, go to **Apps** > **Android**, and add.
 
+2. Select **Android enterprise system app**.
+
+3. Enter the type of Android phone. Then, Google and paste the OS camera package name.
+
+4. Assign to an individual or group.
+
+5. Download and install the camera app from the app store in your work profile.
+
+- **Loading sign when creating a reservation**  When making a reservation on the Panel using the green **Reserve** button, you see a loading sign after you confirm the end time of your reservation to let you know the reservation is being made.
+
+### June 2023
+
+#### Teams app version: 1449/1.0.97.2023060102
+
+- To align with Microsoft Teams Rooms on Windows calendar experience, with this update on panels, if a reservation is scheduled to begin within ten minutes or less, you no longer can book the room in an ad-hoc fashion on the device.
+- When an admin changes the panel display name in the Microsoft Admin Center, it updates without an admin needing to log in again on the device.
+- Enabling and disabling room reservations on Panels remotely in Teams Admin Center.
+
+### April 2023
+
+#### Teams app Version: 1449/1.0.97.2023041403
+
+- IT admins can use Teams panels with their Government Community Cloud High (GCC-H) accounts.
+- Fix for settings syncing with the Teams Admin Center and reset issues.
+- Other bug fixes and improvements.
 
 
 

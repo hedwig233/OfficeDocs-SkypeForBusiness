@@ -736,7 +736,7 @@ To add a mobile system OS scanner:
 
 #### June 2021
 
-#### Teams app version: 1449/1.0.95.2021042103 
+#### Teams app version: 1449/1.0.95.2021042103
 
 - Contact phone numbers created in Outlook are available in the People section of Teams displays with read-only access.
 - During a call, select the active-call icon to show more options. Additionally, when a contact has multiple numbers saved, you can choose the number you want to dial from the dropdown list.
@@ -745,3 +745,25 @@ To add a mobile system OS scanner:
 - On Android devices, presenters can control a participant's camera and mic. Participants no longer need to use Raise hand to request to be unmuted.
 - New wallpaper images.
 - Bug fixes related to authentication.
+
+### March 2021
+
+#### Teams app version: 1449/1.0.95.2021021104
+
+- Sign in from any browser or smartphone with a device code. Or sign in from the device with a username and password directly on the device.
+- Call controls are docked at the bottom of the screen. You can also switch between gallery and together mode views and send reactions during meetings.
+- Producer, presenter, and attendee can join live events as attendees on Teams displays. Producer and presenter can join the live event through the ****Join button in the calendar. Everyone else can join through the attendee link shared in a Teams channel, chat, or on the invite details tab.
+- Change your background during meetings or calls from a select set of images.
+-All phone numbers that are a part of a meeting invite or a person's contact card can be dialed directly by tapping on them.
+- Directly transfer a call to someone's work voicemail without ringing them.
+- Zero calendar events page is displayed for days with no meetings.
+- Dots on dates are displayed for days that have meetings.
+- Send reactions from the ambient screen.
+- Suggested replies to messages from the ambient screen.
+- Call someone back from the ambient screen after you miss their call.
+- Indicator of important and urgent messages on the ambient screen.
+- Notification badges on the home icon indicate that there are new notifications coming in when in another app on the device.
+- Sent messages are displayed in your notifications.
+- Set quiet hours for notifications.
+- Ask Cortana and get answers to questions about topics such as current weather, calculations, currency conversions, language translations, and time conversions.
+- Cortana voice support expanded to new English locales: United Kingdom, Canada, India, and Australia. Use your voice to join meetings, make phone calls, send messages, and check your schedule.

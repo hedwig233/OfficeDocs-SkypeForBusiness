@@ -260,6 +260,18 @@ This update also includes these features, which were already available for certi
 > [!NOTE]
 > These features will be rolled out gradually.
 
+- Survival Branch Office (SBA) will be supported on Voice over Internet Protocol (VoIP) calls.
+- Admins have the option of disabling call-quality surveys on Teams Phone devices from **Teams admin center** > **Configuration**.
+
+[Screenshot #12]
+
+> [!NOTE]
+> These features will be rolled out gradually.
+
+- The issue of Better together on the new Teams desktop app has been fixed.
+- After consult transfer, the issue of an ongoing call going to the banner for the remote caller has been fixed.  
+
+
 ## [Teams displays](#tab/displays)
 
 Insert information from Support article here.

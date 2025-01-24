@@ -224,6 +224,14 @@ This update also includes these features, which were already available for certi
 - Admin’s can turn on call forwarding on home screens via **Teams admin center** > **Configuration** > **Display call forwarding on home screen**, allowing Teams Phone device users to setup call forwarding directly from their home screens.
 - Admin’s have the option to turn off call-quality surveys on Teams Phone devices from **Teams admin center** > **Configuration**, and by turning off **Call quality survey**.
 
+[Screenshot #5]
+
+- Send incoming calls to voicemail from the incoming call screen (configurable by calling a policy through PowerShell). You can control how you want to handle a secondary incoming call through the Busy-on-Busy setting (configurable by calling a policy in the Teams admin center).
+- When a contact has multiple numbers, you can choose which one to call.
+- People can control how they want to handle second incoming calls through the Busy-on-Busy setting. Admins can allow people to configure the Busy-on-Busy setting by selecting **Let users decide** in **Teams admin center** > **Calling policy**.
+
+[Screenshot #6]
+
 
 
 ## [Teams displays](#tab/displays)

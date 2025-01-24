@@ -195,6 +195,25 @@ This update also includes these features, which were already available for certi
 - License enforcement.
 
 - Faster call joining.
+- 
+- ### August 16, 2024
+
+#### Teams app version: 1449/1.0.94.2024080808
+
+- Bug fixes and improvements on transfer scenarios, contacts, among others, are included.
+
+### July 16, 2024
+
+#### Teams app version -1449/1.0.94.2024071104​​​​​​​
+
+- This app is available for government clouds (GCCH and DoD).
+
+- **Updates on user experiences** We changed the default home-screen experience for the meeting sign-in mode. It's now like the personal sign-in mode experience. Additionally, updates have been made to remove the dial pad on the Calls app for touch phones with physical buttons.
+
+- Explicit Consent for Recording** Users see a notification on Teams Phone devices when a participant starts recording or transcription, asking for participant consent. This feature is turned off by default but can be enabled by admins. Admins will have the option to turn on this policy for users in your tenant by clicking on the highlighted switch on "Require participant agreement for recording, transcription, and Copilot."
+
+[Screenshot #4]
+
 
 
 ## [Teams displays](#tab/displays)

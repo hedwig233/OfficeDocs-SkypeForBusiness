@@ -100,6 +100,24 @@ To view feature updates for Microsoft Teams Rooms, go to:
 
 - Turn on and off the QR code remotely via the Teams Admin Center.
 
+### August 2023
+
+#### Teams app version: 1449/1.0.97.2023080401
+
+- **QR code reservations on Teams Panels**  Teams Panels with a Teams Shared Device License or a Teams Rooms Pro License allows people to reserve the room using a QR code on the Panel. If you're signed into your Teams app on mobile, upon scanning from your mobile device, you can either schedule a new meeting with the room pre-populated or easily see the room's availability for your meetings and book the room with one click. This feature is enabled by default and can be disabled under **Device settings** > **Admin settings** > **Meetings**. To learn more about using QR code reservations, see Reserve a room using a QR code on a Teams Panel.
+- The recommended version of Teams on your Android phone is 1416/1.0.0.2023153001 and above. On iOS, the recommended version is 5.15.0 and above.
+
+> [!NOTE]
+> The following instructions are for an Android mobile phone with an Android work profile (AWP).
+
+- You can scan the QR code using the camera app on your Android mobile phone. However, the feature may not work if you have both work and personal profiles on your Android phone. In this case, your admin must add a mobile system OS scanner in the work profile.
+
+To add a mobile system OS scanner:
+
+
+
+
+
 
 
 

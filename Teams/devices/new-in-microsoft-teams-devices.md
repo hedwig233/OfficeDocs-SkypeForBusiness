@@ -390,6 +390,21 @@ Today, on Teams Phone devices, delegators can share their phone line with their
 
 - Issue of displaying wrong caller information for incoming Auto Attendant Call Queue calls is fixed on nontouch screen phones.
 
+### May 9, 2023
+
+#### Teams app version: 1449/1.0.94.2023050205 (doesn't include TrioC60 on GCC-H cloud)
+
+- "Resume call" reliability is improved on consult transfer.
+- Issue of persisting "Advanced calling" setting in common area phones when signing back in is fixed.
+- The intermittent issue of an emergency location banner showing on the phone when "External location lookup mode" is disabled in the Teams Admin Center is fixed.
+- Intermittent issue of badge notifications not clearing on the home screen is fixed.
+
+### April 14, 2023
+
+#### Teams app version: 1449/1.0.94.2023041203
+
+- Intermittent issue of the app restarting on F SKUs (frontline worker) and Business SKUs (SMB) is fixed.
+
 
 
 ## [Teams displays](#tab/displays)

@@ -33,7 +33,16 @@ To view feature updates for Microsoft Teams Rooms, go to:
 
 ## [Teams panels](#tab/panels)
 
-Insert information from Support article here.
+### January 2025
+
+#### Teams app version: 1449/1.0.97.2024122401
+
+> [!IMPORTANT]
+> Required updates coming to the session flows. Starting June 2025, clients more than 5 months old will no longer work.
+
+- **Custom name**  IT admins can customize the display name shown on Teams panels through the Teams Rooms Pro Management portal. This feature is only available with the Teams Rooms Pro and Teams Shared Device Licenses. To learn more about custom names, see [Add a custom name for Teams panels](custom-names.md).
+- Fix for Room Equipment not populating.
+
 
 ## [Teams Phones](#tab/phones)
 

@@ -130,7 +130,7 @@ This update also includes these features, which were already available for certi
 
 - Improvement was made to show caller information on incoming emergency call notification.
 - The date-time format specified under Device Settings is the same on the home screen.
-- When the **Explicit Recording Consent** policy is enabled, audio conference phones will support auto consent.
+- When the **Explicit Recording Consent** policy is enabled, audio conference phones support auto consent.
 - The Public Switched Telephone Network (PSTN) calling issue on the new shared-line-appearance experience is fixed.
 - When there are fewer than four apps on a given account, they'll now show on the home screen instead of being hidden under the More menu.
 - Caller ID now shows incoming PSTN calls on call queues.
@@ -142,7 +142,7 @@ This update also includes these features, which were already available for certi
 - A delegate can view shared call history per a delegator's line, easily switch between different lines, and view other delegates managing a line.
 - The presence on the device and sidecar gets updated in near real time.
 - Live captions are supported on PSTN calls.
-- You'll be able to program Teams Phone devices to autodial a preconfigured PSTN number, or directory contact, when the handset is picked up. You can configure a common-area phone as a hotline phone by navigating to **Settings** > **Device Settings** > **Calling** > **Hotline**, and specifying the autodial contact and display name.
+- You can program Teams Phone devices to autodial a preconfigured PSTN number, or directory contact, when the handset is picked up. You can configure a common-area phone as a hotline phone by navigating to **Settings** > **Device Settings** > **Calling** > **Hotline**, and specifying the autodial contact and display name.
 - A redesigned dial pad helps reduce unnecessary mistakes while dialing a phone number. It offers a new dial-pad-only view in large-screen landscape phones.
 - Simplified navigation improves the performance and reduces page-navigation time by replacing the bottom navigation bar with a new home screen navigation experience. You can easily go to the home screen from any app and navigate to different apps from the home screen. You can also use **More** to reorder apps.
 - The user experience on the calls app and sidecar was made lighter weight to improve performance.
@@ -296,8 +296,8 @@ This update also includes these features, which were already available for certi
 
 #### Teams App version: 1449/1.0.94.2024011003 (Poly, Yealink, Crestron, AudioCodes)
 
-- The issue of active call moving to banner on merging a call has been fixed.
-- The issue of consult transfer icon not being clickable sometimes has been fixed.
+- The issue of active call moving to banner on merging a call is fixed.
+- The issue of consult transfer icon not being clickable sometimes is fixed.
 
 > [!NOTE]
 > This update applies to AudioCodes phones on firmware versions 1.19.456 and earlier.
@@ -309,7 +309,7 @@ This update also includes these features, which were already available for certi
 - The date and time format specified under **Device Settings** is the same on the home screen.
 - When the **Explicit Recording Consent** policy is enabled, audio conference phones support auto consent.
 - The PSTN calling issue on the new shared line appearance experience is fixed.
-- When there are less than four apps on a given account, they'll now show on the home screen instead of being hidden under the **More** menu.
+- When there are less than four apps on a given account, they appear on the home screen instead of being hidden under the **More** menu.
 
 ### November 28, 2023
 

@@ -122,7 +122,7 @@ Today, on Teams Phone devices, you're able to configure custom contacts and spee
 
 ### August 27, 2024
 
-### Teams app version: 1449/1.0.94.2024062702 (Yealink T5x, CP960 & Poly Trio 8800/8500)
+#### Teams app version: 1449/1.0.94.2024062702 (Yealink T5x, CP960 & Poly Trio 8800/8500)
 
 - To support incoming call notifications and voicemail, migrate end-of-certification and end-of-best-effort support phones from the discontinued call-notification service to the new notification service.
 
@@ -132,7 +132,7 @@ This update also includes these features, which were already available for certi
 - The date-time format specified under Device Settings is the same on the home screen.
 - When the **Explicit Recording Consent** policy is enabled, audio conference phones support auto consent.
 - The Public Switched Telephone Network (PSTN) calling issue on the new shared-line-appearance experience is fixed.
-- When there are fewer than four apps on a given account, they'll now show on the home screen instead of being hidden under the More menu.
+- When there are fewer than four apps on a given account, they appear on the home screen instead of being hidden under the More menu.
 - Caller ID now shows incoming PSTN calls on call queues.
 - You can now continue dialing a number when there's an incoming call.
 - When ending a call or turning off your speaker, you won't be navigated to the home screen. Instead, you can continue from the previous screen.
@@ -155,7 +155,7 @@ This update also includes these features, which were already available for certi
 - Performance of the phones attached to expansion modules is improved.
 - The "Resume call" reliability is improved on consult transfer.
 - Audio conferencing isn't supported on Teams Phone devices with the Meeting Teams Room Basic license.
-- You now have the option to add and edit your emergency location on phones.
+- You can add and edit your emergency location on phones.
 - Emergency service disclaimers specified by admins in the Teams Admin Center (TAC) as part of emergency policy will be shown on the desk phones.
 - Busy-on-Busy when users are in a call setting enabled by admins in TAC will be honored on phone devices (excluding the User-controlled option).
 - Admins can configure app restart settings from TAC for optimal phone performance (not currently available for Government cloud accounts).
@@ -174,7 +174,7 @@ This update also includes these features, which were already available for certi
 #### Teams app version -1449/1.0.94.2024071104​​​​​​​
 
 - This app is available for government clouds (GCCH and DoD).
-- **Updates on user experiences** We changed the default home-screen experience for the meeting sign-in mode. It's now like the personal sign-in mode experience. Additionally, updates have been made to remove the dial pad on the Calls app for touch phones with physical buttons.
+- **Updates on user experiences** We changed the default home-screen experience for the meeting sign-in mode. It's now like the personal sign-in mode experience. Additionally, updates to remove the dial pad on the Calls app for touch phones with physical buttons.
 - **Explicit Consent for Recording**  Users see a notification on Teams Phone devices when a participant starts recording or transcription, asking for participant consent. This feature is turned off by default but can be enabled by admins. Admins can turn on this policy for users in your tenant by clicking on the highlighted switch on "Require participant agreement for recording, transcription, and Copilot."
 
 [Screenshot #4]
@@ -268,7 +268,7 @@ This update also includes these features, which were already available for certi
 > [!NOTE]
 > These features will be rolled out gradually.
 
-- The issue of Better together on the new Teams desktop app is fixed.
+- The issue of Better Together on the new Teams desktop app is fixed.
 - After consult transfer, the issue of an ongoing call going to the banner for the remote caller is fixed.  
 
 ### March 15, 2024
@@ -334,13 +334,13 @@ This update also includes these features, which were already available for certi
 #### Teams App version: 1449/1.0.94.2023091801 (Yealink)
 
 - Caller ID shows for incoming PSTN calls on call queues.
-- You have the option to continue dialing a number when there's an incoming call.
+- You can continue dialing a number when there's an incoming call.
 - When ending a call or turning off your speaker, you won't be navigated to the home screen. Instead, you can continue from previous screen.
 - A new back button on the calling screen which allows you to easily navigate away from an ongoing call.
 
 ### August 29, 2023
 
-#### Teams app version: 1449/1.0.94.2023082303 (Crestron, Poly and Yealink Audio Touch Phones)
+#### Teams app version: 1449/1.0.94.2023082303 (Crestron, Poly, and Yealink Audio Touch Phones)
 
 Today, on Teams Phone devices, delegators can share their phone line with their assistants and delegates to make and receive calls on their behalf. Call delegates can also:
 
@@ -352,13 +352,13 @@ Today, on Teams Phone devices, delegators can share their phone line with their
 - The presence on the device and sidecar is updated in near real time.
 - Live captions are supported on PSTN calls.
 - The issue of resolving caller ID on call-queue calls is fixed.
-- The issue of showing the “Add location” banner when the emergency policy “External location lookup mode” is turned off has been is fixed.
+- The issue of showing the "Add location" banner when the emergency policy "External location lookup mode" is turned off is fixed.
 
 ### July 31, 2023
 
-#### Teams app version: 1449/1.0.94.2023072509 (AudioCodes, Crestron and Poly audio phones)
+#### Teams app version: 1449/1.0.94.2023072509 (AudioCodes, Crestron, and Poly audio phones)
 
-- You can program Teams Phone devices to autodial a pre-configured PSTN number or directory contact when the handset is picked up. You can configure a common area phone as a hotline phone by navigating to **Settings** > **Device Settings** > **Calling** > **Hotline** and specifying the auto-dial contact and display name.
+- You can program Teams Phone devices to autodial a preconfigured PSTN number or directory contact when the handset is picked up. You can configure a common area phone as a hotline phone by navigating to **Settings** > **Device Settings** > **Calling** > **Hotline** and specifying the auto-dial contact and display name.
 
 > [!NOTE]
 > To configure a phone as hotline phone, the logged in account on the phone device must have **Teams Shared Device License** assigned. **Sign In Mode** must be set to **CommonAreaPhoneSignIn**. The option to configure a hotline phone through the Teams Admin Center will be supported soon.
@@ -445,13 +445,13 @@ Record one-on-one PSTN calls
 
 #### Teams app version: 1449/1.0.94.2022110803
 
-- Fixes sign-in issues on non-touch devices.
+- Fixes sign-in issues on nontouch devices.
 - Fixes caller ID and caller display name issues.
 - Fixes calling related issues on GCCH deployments.
 
 ### September 21, 2022
 
-#### Teams app version: 1449/1.0.94.2022090705 (for non-video touch phones only)
+#### Teams app version: 1449/1.0.94.2022090705 (for nonvideo touch phones only)
 
 - Simplified look for incoming and outgoing calls with improved performance.
 
@@ -465,7 +465,7 @@ Record one-on-one PSTN calls
 
 #### Teams app version: 1449/1.0.94.2022061702 (Crestron, Poly, Yealink)
 
-- We're enhancing the existing Common Area Phone offering to include all advanced calling features at no additional cost or changes to the original purchased license. Common Area Phone supports calling features including call park, call queues, auto attendants, Intune enrollment into Endpoint Manager, and more, when the device is updated to the minimum app version: 1449/1.0.94.2022061702.
+- We're enhancing the existing Common Area Phone offering to include all advanced calling features at no extra cost or changes to the original purchased license. Common Area Phone supports calling features including call park, call queues, auto attendants, Intune enrollment into Endpoint Manager, and more, when the device is updated to the minimum app version: 1449/1.0.94.2022061702.
 - Emergency calling on GCC-H deployments is supported.
 
 ### April 13, 2022
@@ -507,7 +507,7 @@ Record one-on-one PSTN calls
 
 #### Teams app version: 1449/1.0.94.2021121302
 
-- Additional improvements in dial-pad experience for touch-screen phones.
+- More improvements in dial-pad experience for touch-screen phones.
 - Improvements in dial-tone management.
 - Improvements to audio routing when switching between handset and speaker.
 
@@ -515,7 +515,7 @@ Record one-on-one PSTN calls
 
 #### Teams app version: 1449/1.0.94.2021112302
 
-- Additional improvements in dial-pad experience for touch-screen phones.
+- More improvements in dial-pad experience for touch-screen phones.
 - Improvements in dial-tone management.
 - Improvements to audio routing when switching between handset and speaker.
 
@@ -547,10 +547,10 @@ Record one-on-one PSTN calls
 
 - Transfer a Teams call to another device without hanging up.
 - Change your background during a video call or meeting from a set of pictures available in phones with video capability.
-- Contacts whose numbers are saved in Outlook will be available in the People section of Teams Phones with read-only access. You'll need to manually dial the number.
+- Contacts whose numbers are saved in Outlook are available in the People section of Teams Phones with read-only access. You need to manually dial the number.
 - Enforcement of authentication policies and tenant-based policies set by your admin. Login is blocked if the device doesn't meet the necessary policy requirements.
 - During a call, select the active-call icon to show more options. Additionally, when a contact has multiple numbers saved, you can choose the number you want to dial from the dropdown list.
-- To facilitate quick responses for auto-attendant scenarios, dial pad will be made available for early media scenarios.
+- To facilitate quick responses for autoattendant scenarios, dial pad is available for early media scenarios.
 - Extending the live captions feature to calls, Teams detects what's said in a call and presents real-time captions in one-on-one calls.
 - Ongoing enhancements to improve user experience when using a delegate on touch screens.
 - Bug fixes for Link Layer Discovery Protocol (LLDP) for Enhanced 911 (E911) and authentication.
@@ -602,7 +602,7 @@ Record one-on-one PSTN calls
 - Home screen shows meeting reminders.
 - Ability to customize default apps in the phone and the default view in Calls.
 - Support for a Teams button on specific phone models.
-- Enable auto accept with video for pre-scheduled meeting requests.
+- Enable auto accept with video for prescheduled meeting requests.
 - Sign-in enhancements with the Company Portal application.
 - Bug fixes to the Teams application and the Device management admin-agent application.
 
@@ -627,7 +627,7 @@ Record one-on-one PSTN calls
 #### Teams app version: 1449/1.0.94.2020031901
 
 - Favorites (speed dial) added to Calls.
-- New settings support on Teams Phones for: Custom ringtone, Manage Delegates, and Auto-dial for extension dialing.
+- New settings support on Teams Phones for: Custom ringtone, Manage Delegates, and auto dial for extension dialing.
 - Device-management updates to support device categorization in Teams Admin Center.
 - Bug fixes to the Teams application and the Company Portal application.
 

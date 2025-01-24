@@ -189,13 +189,9 @@ This update also includes these features, which were already available for certi
 #### Teams app version: 1449/1.0.94.2024062301 (AUDC: C448HD, C450HD. Yealink: MP52, VP59. Crestron: UC-2, UC-P8, UC-P10, UC-P8-C and UC-P10-C)
 
 - Intermittent issue on meeting join while using Better Together is fixed for touch phones
-
 - Intermittent issue on a device getting locked out is fixed for nontouch phones.
-
 - Issue of remote user not hearing music while on hold in nontouch phones has been fixed.
-
 - Fixes for authentication issues, including a fix for sign-in failures immediately following signing out.
-
 - Issue of pin lock appearing when disabled has been fixed.
 
 ### July 3, 2024
@@ -203,8 +199,30 @@ This update also includes these features, which were already available for certi
 #### Teams app version - 1449/1.0.94.2024062010 (touch phones: AudioCodes, Poly, Yealink. For non-touch phones: AudioCodes C435, Poly CCX350)
 
 - Bug fixes and improvements on the enforce pin-lock feature.
-
 - This app is also available for customers in government clouds (GCCH and DoD).
+
+### June 18, 2024
+
+#### Teams app version - 1449/1.0.94.2024061301
+
+- Minor updates in the people and calls apps.
+- Bug fixes and improvements.
+
+### June 4, 2024
+
+#### Teams App version: 1449/1.0.94.2024051306 (Touch phones – AudioCodes, Poly, Yealink)
+
+- Bug fixes for crash issues.
+
+### May 21, 2024
+
+#### Teams App version: 1449/1.0.94.2024051306 (Non-touch phones – Poly CCX350, AudioCodes C435HD)
+
+- You can park and unpark a call.
+- You can turn on the Advanced Calling and Auto Restart settings.
+- You can add contacts and contact groups.
+- Admin’s can turn on call forwarding on home screens via **Teams admin center** > **Configuration** > **Display call forwarding on home screen**, allowing Teams Phone device users to setup call forwarding directly from their home screens.
+- Admin’s have the option to turn off call-quality surveys on Teams Phone devices from **Teams admin center** > **Configuration**, and by turning off **Call quality survey**.
 
 
 

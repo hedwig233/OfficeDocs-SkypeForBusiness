@@ -1107,6 +1107,8 @@ items:
               href: set-up-calling-plans.md
             - name: Country and region availability for Calling Plans
               href: country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md
+            - name: Setup billing for Calling plans
+              href: /microsoft-365/commerce/subscriptions/manage-pay-as-you-go-services
         - name: Operator Connect
           items: 
             - name: Plan for Operator Connect

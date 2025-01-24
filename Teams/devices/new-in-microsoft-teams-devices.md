@@ -232,7 +232,30 @@ This update also includes these features, which were already available for certi
 
 [Screenshot #6]
 
+### May 5, 2024
 
+#### Teams app version: 1449/1.0.94.2024042905 (Touch Phones - AudioCodes, Poly, Yealink)
+
+- Send incoming calls to voicemail from the incoming call screen.
+
+[Screenshot #7, maybe not good enough to keep]
+
+> [!NOTE]
+> Admins can control roll out of this option on selected accounts by configuring the AllowCallRedirect parameter in the Teams calling policy associated with the account. [Screenshot #8, maybe not good enough to keep]
+
+- People can control how they want to handle a second incoming call through the Busy-on-Busy setting. Admins can allow people to configure the Busy-on-busy setting by selecting **Let users decide** in **Teams admin center** > **Calling policy**.
+
+[Screenshot #9]
+[Screenshot #10]
+
+- Admins can allow call the forwarding option on home screens via **Teams admin center** > **Configuration** by turning on **Display call forwarding on home screen.** The same setting can be configured on the phone device. This allows people using a device (including common-area phones) to set up call forwarding directly from their home screen.
+
+> [!NOTE]
+> These features will be rolled out gradually.
+
+- Admins can notify people to set or change their phone lock PIN by enabling a configuration profile setting in Teams admin center. They can also lock the phone device via the menu on home screen.
+
+[Screenshot #11]
 
 ## [Teams displays](#tab/displays)
 

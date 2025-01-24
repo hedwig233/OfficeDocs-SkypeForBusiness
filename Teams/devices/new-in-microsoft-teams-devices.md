@@ -149,7 +149,7 @@ This update also includes these features, which were already available for certi
 - Date and time are now displayed on the title bar across apps.
 - Support added for reverse number lookup of PSTN numbers on call-queue calls.
 - The issue of autodialing on a partially entered number is fixed.
-- Option to sign out on common area phones. Advanced calling experience requires an Admin PIN.
+- Option to sign out on common area phones. Advanced calling experience requires an admin PIN.
 - Lighter weight meeting reduces the time it takes users to get connected to a meeting on selecting **Join**.
 - Support added for reverse number lookup of PSTN contacts added via the Teams desktop.
 - Performance of the phones attached to expansion modules is improved.
@@ -372,6 +372,23 @@ Today, on Teams Phone devices, delegators can share their phone line with their
 - Option to sign-out on common area phones. The advanced calling experience requires an admin PIN.
 - Lightweight meeting reduces the time it takes users to get connected to a meeting by selecting **Join**.
 
+### July 12, 2023
+
+#### Teams app version: 1449/1.0.94.2023063003
+
+- Support added for reverse-number lookup of PSTN contacts added via Teams desktop.
+- Performance of the phones attached to expansion modules is improved.
+
+### June 15, 2023
+
+#### Teams app version: 1449/1.0.94.2023060906
+
+- Audio Conferencing is supported on the Microsoft Teams Room Pro License.
+
+> [!NOTE]
+> When multiple licenses are assigned to a Teams Phone device account, configure IPPhonePolicy SignInMode for the desired experience.
+
+- Issue of displaying wrong caller information for incoming Auto Attendant Call Queue calls is fixed on nontouch screen phones.
 
 
 

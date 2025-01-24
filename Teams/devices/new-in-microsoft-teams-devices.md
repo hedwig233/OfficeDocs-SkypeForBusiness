@@ -76,7 +76,29 @@ To view feature updates for Microsoft Teams Rooms, go to:
 > [!NOTE]
 > Going forward, when auto release is enabled, disabled, or adjusted, it can take up to 48 hours for this change to take effect. For this reason, it's recommended that you adjust the settings when no meetings are scheduled for the next 48 hours.
 
+### April 2024
 
+#### Teams app version: 1449/1.0.97.2024040202 (Logitech, Neat, AudioCodes, EPOS, Poly, Crestron, and Yealink Room Panel with CP 5.0.5484)
+
+- Additional bug fixes for room reservations.
+
+### March 2024
+
+#### Teams app version: 1449/1.0.97.2023121202 (Yealink Room Panel and Yealink Room Panel Plus with Company Portal 5.0.5882.0)
+
+- Significantly reduce sign-out errors due to Workplace Join failures, timeout issues, and memory leaks.
+
+### February 2024
+
+#### Teams app version: 1449/1.0.97.2024010401 (Crestron, Logitech, Neat, AudioCodes, EPOS, and Yealink Room Panel with Company Portal 5.0.5484.0)
+
+- Authentication fixes for room reservations
+
+### December 2023
+
+#### Teams app version: 1449/1.0.97.2023111003 (Crestron, Logitech, Neat, Poly, AudioCodes, EPOS)
+
+- Turn on and off the QR code remotely via the Teams Admin Center.
 
 
 

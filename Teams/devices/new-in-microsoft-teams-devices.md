@@ -257,6 +257,9 @@ This update also includes these features, which were already available for certi
 
 [Screenshot #11]
 
+> [!NOTE]
+> These features will be rolled out gradually.
+
 ## [Teams displays](#tab/displays)
 
 Insert information from Support article here.

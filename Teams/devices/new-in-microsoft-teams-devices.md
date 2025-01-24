@@ -58,6 +58,19 @@ To view feature updates for Microsoft Teams Rooms, go to:
 - **Daily device restart window**  By default, the device restarts anytime between 2:00 AM and 3:00 AM based on its local time zone. If the device is in use during this window and the restart-window period ends, the restart is rescheduled the following day. IT admins can turn off this functionality or change the restart window from the device settings or remotely in Teams Admin Center.
 - Bug fix for remotely changing "Release room if no one checks in" syncing to the device.
 
+### July 2024
+
+#### Teams app version: 1449/1.0.97.2024071105 (Logitech, Crestron, Neat, EPOS, AudioCodes, Poly, Yealink with CP 5484 and 6061)
+
+- Authentication and other check-in bug fixes.
+
+### June 2024
+
+#### Teams app version: 1449/1.0.97.2024061108
+
+- Company Portal 6152 (available to Yealink, Crestron, Logitech, AudioCodes, EPOS, and Poly panels on Company Portal 5484, 5882, or 6061). Fixes for authentication issues, including a fix for sign-in failures immediately following sign out.
+- Multi-panel check-in support. (Generally available and for GCC. GCCH and higher aren't supported at this time) If a resource account is being shared across multiple panels, the check-in status for the meeting will remain in sync across the panels. This ensures the room is released or not released correctly. To learn more on the check-in feature, see [Check-in and auto release on Microsoft Teams panels](check-in-and-auto-release.md).
+
 
 
 

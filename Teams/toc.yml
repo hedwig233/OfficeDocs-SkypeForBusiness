@@ -1241,7 +1241,7 @@ items:
               href: how-many-phone-numbers-can-you-get.md
             - name: Transfer phone numbers
               items: 
-                - name: What's a port order?
+                - name: Port planning
                   href: phone-number-calling-plans/port-order-overview.md
                 - name: Transfer phone numbers to Teams
                   href: phone-number-calling-plans/transfer-phone-numbers-to-teams.md

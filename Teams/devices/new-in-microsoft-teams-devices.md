@@ -142,6 +142,27 @@ To add a mobile system OS scanner:
 - Fix for settings syncing with the Teams Admin Center and reset issues.
 - Other bug fixes and improvements.
 
+### December 2022
+
+#### Teams app version - 1449/1.0.97.2022748302
+
+- Bug fixes.
+
+### December 2022
+
+#### Teams app version – 1449/1.0.97.2022747803
+
+- After an admin pairs a panel to a supported occupancy sensor through Device settings, you can see whether a room is occupied and auto check in when check in is enabled by your admin. If the room is available and someone's in the room, a message is displayed that the room is occupied. If the room is reserved but no one is in the room, you'll see a message that the room is unoccupied.
+- Yealink's Room Sensor and Crestron CEN-ODT-C-POE are supported. For more information, check check with your OEM.
+- Support for Teams Shared Device License.
+- Improvements and bug fixes.
+
+### September 2022
+
+#### Teams app version - 1449/1.0.97.2022739908
+
+- Improvements and bug fixes.
+- Support for Microsoft Teams Rooms Pro Licenses.
 
 
 

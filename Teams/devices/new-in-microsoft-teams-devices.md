@@ -587,6 +587,59 @@ Record one-on-one PSTN calls
 - Policy support for enabling and disabling home screen and syncing a phone to a computer.
 - Support for M365 Government (GCC deployments).
 
+### October 12, 2020
+
+#### Teams app version: 1449/1.0.94.2020091801
+
+- Better-together feature with meeting support.
+- Bug fix related to authentication after signing in.
+- Bug fix related to device automatically signing out after 90 days.
+
+### August 31, 2020
+
+#### Teams app version: 1449/1.0.94.2020071702
+
+- Home screen shows meeting reminders.
+- Ability to customize default apps in the phone and the default view in Calls.
+- Support for a Teams button on specific phone models.
+- Enable auto accept with video for pre-scheduled meeting requests.
+- Sign-in enhancements with the Company Portal application.
+- Bug fixes to the Teams application and the Device management admin-agent application.
+
+> [!NOTE]
+> If the phone is stuck on the "Verifying a few things" screen, try turning the phone off and on again.
+
+### June 27, 2020
+
+#### Teams app version: 1449/1.0.94.2020051601
+
+- Contacts and contact groups management in People.
+- Live captions for meetings.
+- Raise virtual hand in meetings.
+- Transfer directly to speed dial.
+- Connect to computer for simultaneous lock and unlock.
+- Auto dismiss for a call ended and rate-my-call screens.
+- Network banner at the top of screen to show network loss.
+- Bug fixes to the Teams application and the Device management admin-agent application.
+
+### April 23, 2020
+
+#### Teams app version: 1449/1.0.94.2020031901
+
+- Favorites (speed dial) added to Calls.
+- New settings support on Teams Phones for: Custom ringtone, Manage Delegates, and Auto-dial for extension dialing.
+- Device-management updates to support device categorization in Teams Admin Center.
+- Bug fixes to the Teams application and the Company Portal application.
+
+### February 18, 2020
+
+#### Teams app version: 1449/1.0.94.2020020601
+
+- Support for dynamic emergency calling on the phone lock screen.
+- Hot-desk feature bug fixes to address network-outage scenarios.
+- Sign-in improvements.
+- Device-management bug fixes to address firmware version reporting.
+- Bug fixes to the Teams application.
 
 
 ## [Teams displays](#tab/displays)

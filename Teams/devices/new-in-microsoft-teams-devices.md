@@ -93,7 +93,7 @@ The multiple-banners feature improves the user experience by managing notificati
 
 #### Teams app version: 1449/1.0.94.2024101709 (Yealink, Poly, AudioCodes)
 
-Today, on Teams Phone devices, you're able to configure custom contacts and speed dial on-the-line key buttons on nontouch phones and sidecars phone devices certified for Microsoft Teams. This lets you quickly access frequently dialed numbers and contacts, using one-touch dialing, as well as easy management of contact lists on both line keys and sidecars.
+Today, on Teams Phone devices, you're able to configure custom contacts and speed dial on-the-line key buttons on nontouch phones and sidecars phone devices certified for Microsoft Teams. You can quickly access frequently dialed numbers and contacts, using one-touch dialing, as well as easy management of contact lists on both line keys and sidecars.
 
 [Screenshot #3]
 
@@ -124,13 +124,13 @@ Today, on Teams Phone devices, you're able to configure custom contacts and spee
 
 ### Teams app version: 1449/1.0.94.2024062702 (Yealink T5x, CP960 & Poly Trio 8800/8500)
 
-- Migrate end-of-certification and end-of-best-effort support phones from the discontinued call-notification service to the new notification service to support incoming call notifications and voicemail.
+- To support incoming call notifications and voicemail, migrate end-of-certification and end-of-best-effort support phones from the discontinued call-notification service to the new notification service.
 
 This update also includes these features, which were already available for certified Teams Phones:
 
 - Improvement has been made to show caller information on incoming emergency call notification.
 
-- The date-time format specified under Device Settings will be the same on the home screen.
+- The date-time format specified under Device Settings is the same on the home screen.
 
 - When the Explicit Recording Consent policy is enabled, audio conference phones will support auto consent.
 
@@ -156,7 +156,7 @@ This update also includes these features, which were already available for certi
 
 - Live captions are supported on PSTN calls.
 
-- You'll be able to program Teams Phone devices to autodial a pre-configured PSTN number, or directory contact, when the handset is picked up. You can configure a common-area phone as a hotline phone by navigating to **Settings** > **Device Settings** > **Calling** > **Hotline**, and specifying the autodial contact and display name.
+- You'll be able to program Teams Phone devices to autodial a preconfigured PSTN number, or directory contact, when the handset is picked up. You can configure a common-area phone as a hotline phone by navigating to **Settings** > **Device Settings** > **Calling** > **Hotline**, and specifying the autodial contact and display name.
 
 - A redesigned dial pad helps reduce unnecessary mistakes while dialing a phone number. It offers a new dial-pad-only view in large-screen landscape phones.
 

@@ -468,6 +468,23 @@ Record one-on-one PSTN calls
 - We're enhancing the existing Common Area Phone offering to include all advanced calling features at no additional cost or changes to the original purchased license. Common Area Phone supports calling features including call park, call queues, auto attendants, Intune enrollment into Endpoint Manager, and more, when the device is updated to the minimum app version: 1449/1.0.94.2022061702.
 - Emergency calling on GCC-H deployments is supported.
 
+### April 13, 2022
+
+#### Teams app version: 1449/1.0.94.2022041102
+
+- Fixes missing names on phone sidecars.
+- Fixes common-area phone dial pad and audio routing issues between the handset and speaker.
+- Fixed issues occurring in the Teams Admin Center.
+
+### March 24, 2022
+
+#### Teams app version: 1449/1.0.94.2022030501
+
+- Support end-to-end encryption in one-on-one calls.
+- Contact name along with phone number for saved contacts show on calls made via PSTN (Public Switched Telephone Network).
+- Hold music during blind-call transfers and consultative-call transfers made via VoIP (Voice over Internet Protocol).
+- Customize app restart time from **Settings**.
+
 
 
 ## [Teams displays](#tab/displays)

@@ -38,7 +38,7 @@ To view feature updates for Microsoft Teams Rooms, go to:
 #### Teams app version: 1449/1.0.97.2024122401
 
 > [!IMPORTANT]
-> Required updates coming to the session flows. Starting June 2025, clients more than 5 months old will no longer work.
+> Required updates coming to the session flows. Starting June 2025, clients more than five months old will no longer work.
 
 - **Custom name**  IT admins can customize the display name shown on Teams panels through the Teams Rooms Pro Management portal. This feature is only available with the Teams Rooms Pro and Teams Shared Device Licenses. To learn more about custom names, see [Add a custom name for Teams panels](custom-names.md).
 - Fix for Room Equipment not populating.
@@ -53,7 +53,7 @@ To view feature updates for Microsoft Teams Rooms, go to:
 
 #### Teams app version: 1449/1.0.972024081207
 
-- **Custom backgrounds**  IT admins can upload custom background images on the Teams Admin Center to reinforce company brand on Teams panels devices. PNG, JPG, and JPEG formats are supported. This feature is only available with the Teams Rooms Pro and Teams Shared Device Licenses. To learn more about custom backgrounds, see Set up and manage custom backgrounds on Teams panels.
+- **Custom backgrounds**  IT admins can upload custom background images on the Teams Admin Center to reinforce company brand on Teams panels devices. PNG, JPG, and JPEG formats are supported. This feature is only available with the Teams Rooms Pro and Teams Shared Device Licenses. To learn more about custom backgrounds, see [Set up and manage custom backgrounds on Teams panels](custom-background-panels.md).
 
 - **Daily device restart window**  By default, the device restarts anytime between 2:00 AM and 3:00 AM based on its local time zone. If the device is in use during this window and the restart-window period ends, the restart is rescheduled the following day. IT admins can turn off this functionality or change the restart window from the device settings or remotely in Teams Admin Center.
 - Bug fix for remotely changing "Release room if no one checks in" syncing to the device.
@@ -80,7 +80,7 @@ To view feature updates for Microsoft Teams Rooms, go to:
 
 #### Teams app version: 1449/1.0.97.2024040202 (Logitech, Neat, AudioCodes, EPOS, Poly, Crestron, and Yealink Room Panel with CP 5.0.5484)
 
-- Additional bug fixes for room reservations.
+- More bug fixes for room reservations.
 
 ### March 2024
 
@@ -104,7 +104,7 @@ To view feature updates for Microsoft Teams Rooms, go to:
 
 #### Teams app version: 1449/1.0.97.2023080401
 
-- **QR code reservations on Teams Panels**  Teams Panels with a Teams Shared Device License or a Teams Rooms Pro License allows people to reserve the room using a QR code on the Panel. If you're signed into your Teams app on mobile, upon scanning from your mobile device, you can either schedule a new meeting with the room pre-populated or easily see the room's availability for your meetings and book the room with one click. This feature is enabled by default and can be disabled under **Device settings** > **Admin settings** > **Meetings**. To learn more about using QR code reservations, see Reserve a room using a QR code on a Teams Panel.
+- **QR code reservations on Teams Panels**  Teams Panels with a Teams Shared Device License or a Teams Rooms Pro License allows people to reserve the room using a QR code on the Panel. If you're signed into your Teams app on mobile, upon scanning from your mobile device, you can schedule a new meeting with the room prepopulated. You can also easily see the room's availability for your meetings and book the room with one click. This feature is enabled by default and can be disabled under **Device settings** > **Admin settings** > **Meetings**. To learn more about using QR code reservations, see Reserve a room using a QR code on a Teams Panel.
 - The recommended version of Teams on your Android phone is 1416/1.0.0.2023153001 and above. On iOS, the recommended version is 5.15.0 and above.
 
 > [!NOTE]
@@ -130,7 +130,7 @@ To add a mobile system OS scanner:
 
 #### Teams app version: 1449/1.0.97.2023060102
 
-- To align with Microsoft Teams Rooms on Windows calendar experience, with this update on panels, if a reservation is scheduled to begin within ten minutes or less, you no longer can book the room in an ad-hoc fashion on the device.
+- To align with Microsoft Teams Rooms on Windows calendar experience, with this update on panels, if a reservation is scheduled to begin within 10 minutes or less, you no longer can book the room in an ad-hoc fashion on the device.
 - When an admin changes the panel display name in the Microsoft Admin Center, it updates without an admin needing to log in again on the device.
 - Enabling and disabling room reservations on Panels remotely in Teams Admin Center.
 
@@ -152,7 +152,7 @@ To add a mobile system OS scanner:
 
 #### Teams app version – 1449/1.0.97.2022747803
 
-- After an admin pairs a panel to a supported occupancy sensor through Device settings, you can see whether a room is occupied and auto check in when check in is enabled by your admin. If the room is available and someone's in the room, a message is displayed that the room is occupied. If the room is reserved but no one is in the room, you'll see a message that the room is unoccupied.
+- After an admin pairs a panel to a supported occupancy sensor through Device settings, you can see whether a room is occupied and auto check in when check in is enabled by your admin. If the room is available and someone's in the room, a message is displayed that the room is occupied. If the room is reserved but no one is in the room, you see a message that the room is unoccupied.
 - Yealink's Room Sensor and Crestron CEN-ODT-C-POE are supported. For more information, check check with your OEM.
 - Support for Teams Shared Device License.
 - Improvements and bug fixes.
@@ -185,7 +185,7 @@ To add a mobile system OS scanner:
 
 #### Teams app version: 1449/1.0.97.2022730007
 
-- To help ensure your meeting spaces are getting maximum use, we're enabling a way to check in to claim a room from a Teams panel. Users can check into the room by tapping the "check in" button on the panel. If no one checks into the room, it will be released back to the room inventory for others to reserve and use.
+- To help ensure your meeting spaces are getting maximum use, we're enabling a way to check in to claim a room from a Teams panel. Users can check into the room by tapping the "check in" button on the panel. If no one checks into the room, it's released back to the room inventory for others to reserve and use.
 - When paired with a Microsoft Teams Rooms on Android, joining a meeting from the Teams Room is considered as checking in and the room won't be released (it requires the Teams Room on Android app version 1449/1.0.96.2022011305 or above). Support with Teams Rooms on Windows will be available at a later time.
 - The room check-in notification provides the end user with the ability to check in to their meeting when the panel is paired with a Teams Rooms on Android. After the user checks in, when the scheduled meeting starts and the previous meeting is running over, a notification appears on the Teams Room front-of-room display to inform the in-room participants their meeting is over and people are waiting for the space. This feature will be initially available on Teams Rooms on Android (it requires Teams app version 1449/1.0.96.2022011305 or above) and will be available on Teams Rooms on Windows at a later date.
 - Calendar layout update to combine consecutive available time slots into one time slot.
@@ -322,7 +322,7 @@ This update also includes these features, which were already available for certi
 - The "Resume call" reliability is improved on consult transfer.
 - Audio conferencing isn't supported on Teams Phone devices with the Meeting Teams Room Basic license.
 - You can add and edit your emergency location on phones.
-- Emergency service disclaimers specified by admins in the Teams Admin Center (TAC) as part of emergency policy will be shown on the desk phones.
+- Emergency service disclaimers specified by admins in the Teams Admin Center (TAC) as part of emergency policy is shown on the desk phones.
 - Busy-on-Busy when users are in a call setting enabled by admins in TAC will be honored on phone devices (excluding the User-controlled option).
 - Admins can configure app restart settings from TAC for optimal phone performance (not currently available for Government cloud accounts).
 - Record one-on-one PSTN calls.
@@ -840,16 +840,16 @@ Record one-on-one PSTN calls
 #### Teams displays app version: 1449/1.0.95.2023042701
 
 > [!NOTE]
-> This release is an app-only update. Please work with device manufacturers to confirm timelines on full feature functionality on your devices.
+> This release is an app-only update. Work with device manufacturers to confirm timelines on full feature functionality on your devices.
 
-- QR code sign in on Teams-certified displays for hot-desking. All Teams Displays with hot-desking capability allow people to sign in using a QR code for a reserved time slot. This feature is enabled by default and can be disabled under **Device settings** > **Admin settings** > **Meetings**. While hot-desking, you can seamlessly sign in to the Teams display for the duration of your session by scanning a QR code using the Teams app on your mobile phone.
+- QR code sign in on Teams-certified displays for hot-desking. All Teams Displays with hot-desking capability allow people to sign in using a QR code for a reserved time slot. This feature is enabled by default and can be disabled under **Device settings** > **Admin settings** > **Meetings**. While hot-desking, you can seamlessly sign in to the Teams display during your session by scanning a QR code using the Teams app on your mobile phone.
 
 The recommended version of Teams on your Android phone is 1416/1.0.0.2023092901 and above. On iOS, the recommended version is 5.9.1, it's (100772023093201), and above.
 
 > [!NOTE]
 > The following instructions are for those who use an Android mobile phone with an Android work profile (AWP).
 
-- You can scan a QR code using the camera app on your Android mobile phone. However, the sign-in might not work if you have both work and personal profiles on their Android phones. If this is the case, you need to add a mobile system OS scanner in your work profile.
+- You can scan a QR code using the camera app on your Android mobile phone. However, the sign-in might not work if you have both work and personal profiles on their Android phones. If so, you need to add a mobile system OS scanner in your work profile.
 
 To add a mobile system OS scanner:
 
@@ -863,7 +863,7 @@ To add a mobile system OS scanner:
 
 5. Download and install the camera app from the app store in your work profile.
 
-- **Virtual front-desk experience on Teams-certified displays**  The Virtual front desk enables staff to greet and serve visitors or employees via video call on a Teams display.  It can be used for virtual reception, helpdesk, and a variety of use cases across industries. IT admins can easily configure the Virtual front desk with contact and routing information. This feature is available on Teams certified displays on the Teams Shared Devices License. It's recommended for accounts without CA policies.
+- **Virtual front-desk experience on Teams-certified displays**  The Virtual front desk enables staff to greet and serve visitors or employees via video call on a Teams display.  It can be used for virtual reception, helpdesk, and various use cases across industries. IT admins can easily configure the Virtual front desk with contact and routing information. This feature is available on Teams certified displays on the Teams Shared Devices License. Recommended for accounts without CA policies.
 - Admins can now customize the message on display screens and the call button, in addition to configuring a PSTN or VoIP contact on the device itself via **Settings**. They can also use Teams advanced calling capabilities such as call transfer, call forwarding, call queues, etc., if enabled for the configured contact account.
 - Improvements to handle multi-call banner scenarios and to ambient UI.
 - Bug fixes and improvements.

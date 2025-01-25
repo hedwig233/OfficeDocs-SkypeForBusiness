@@ -189,7 +189,7 @@ To add a mobile system OS scanner:
 - When paired with a Microsoft Teams Rooms on Android, joining a meeting from the Teams Room is considered as checking in and the room won't be released (it requires the Teams Room on Android app version 1449/1.0.96.2022011305 or above). Support with Teams Rooms on Windows will be available at a later time.
 - The room check-in notification provides the end user with the ability to check in to their meeting when the panel is paired with a Teams Rooms on Android. After the user checks in, when the scheduled meeting starts and the previous meeting is running over, a notification appears on the Teams Room front-of-room display to inform the in-room participants their meeting is over and people are waiting for the space. This feature will be initially available on Teams Rooms on Android (it requires Teams app version 1449/1.0.96.2022011305 or above) and will be available on Teams Rooms on Windows at a later date.
 - Calendar layout update to combine consecutive available time slots into one time slot.
-- The calendar layout is updated to combine consecutive available time  slots from an hourly view into a single timeslot. For example, the 12-3 PM time slot is combined into a single time slot to improve readability.
+- The calendar layout is updated to combine consecutive available time  slots from an hourly view into a single time slot. For example, the 12-3 PM time slot is combined into a single time slot to improve readability.
 - Wallpaper refresh.
 - The preset wallpapers have been refreshed in this app release to align with our Teams devices family.
 

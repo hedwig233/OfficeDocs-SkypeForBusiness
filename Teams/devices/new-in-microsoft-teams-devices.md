@@ -404,14 +404,13 @@ This update also includes these features, which were already available for certi
 
   :::image type="content" source="media/new-in-microsoft-teams-devices/incoming-call-screen.png" alt-text="Screenshot showing the incoming call screen.":::
 
-[Screenshot #7, maybe not good enough to keep]
-
 > [!NOTE]
 > Admins can control rollout of this option on selected accounts by configuring the AllowCallRedirect parameter in the Teams calling policy associated with the account: `PS C:\WINDOWS\system32> Set-CsTeamsCallingPolicy -Identity Global -AllowCallRedirect Enabled`
 
 - People can control how they want to handle a second incoming call through the Busy-on-Busy setting. Admins can allow people to configure the Busy-on-Busy setting by selecting **Let users decide** in **Teams Admin Center** > **Calling policy**.
 
-[Screenshot #9]
+:::image type="content" source="media/new-in-microsoft-teams-devices/busy-on-busy-setting.png" alt-text="Screenshot showing the Busy-on-Busy setting.":::
+
 [Screenshot #10]
 
 - Admins can allow call the forwarding option on home screens via **Teams Admin Center** > **Configuration** by turning on **Display call forwarding on home screen.** The same setting can be configured on the phone device. This allows people using a device (including common-area phones) to set up call forwarding directly from their home screen.

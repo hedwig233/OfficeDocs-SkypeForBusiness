@@ -402,10 +402,12 @@ This update also includes these features, which were already available for certi
 
 - Send incoming calls to voicemail from the incoming call screen.
 
+  :::image type="content" source="media/new-in-microsoft-teams-devices/incoming-call-screen.png" alt-text="Screenshot showing the incoming call screen.":::
+
 [Screenshot #7, maybe not good enough to keep]
 
 > [!NOTE]
-> Admins can control rollout of this option on selected accounts by configuring the AllowCallRedirect parameter in the Teams calling policy associated with the account: `PS C:\WINDOWS\system32> set-CsTeamsCallingPolicy -Identity Global -AllowCallRedirect Enabled`
+> Admins can control rollout of this option on selected accounts by configuring the AllowCallRedirect parameter in the Teams calling policy associated with the account: `PS C:\WINDOWS\system32> Set-CsTeamsCallingPolicy -Identity Global -AllowCallRedirect Enabled`
 
 - People can control how they want to handle a second incoming call through the Busy-on-Busy setting. Admins can allow people to configure the Busy-on-Busy setting by selecting **Let users decide** in **Teams Admin Center** > **Calling policy**.
 

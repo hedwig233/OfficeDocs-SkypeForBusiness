@@ -405,7 +405,7 @@ This update also includes these features, which were already available for certi
 [Screenshot #7, maybe not good enough to keep]
 
 > [!NOTE]
-> Admins can control rollout of this option on selected accounts by configuring the AllowCallRedirect parameter in the Teams calling policy associated with the account.
+> Admins can control rollout of this option on selected accounts by configuring the AllowCallRedirect parameter in the Teams calling policy associated with the account. `PS C:\WINDOWS\system32> set-CsTeamsCallingPolicy -Identity Global -AllowCallRedirect Enabled`
 
 `PS C:\WINDOWS\system32> set-CsTeamsCallingPolicy -Identity Global -AllowCallRedirect Enabled`
 

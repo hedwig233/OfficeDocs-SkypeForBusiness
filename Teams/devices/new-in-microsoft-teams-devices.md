@@ -420,15 +420,13 @@ This update also includes these features, which were already available for certi
 
 - Admins can notify people to set or change their phone lock PIN by enabling a configuration profile setting in Teams Admin Center. They can also lock the phone device via the menu on home screen.
 
-[Screenshot #11]
-
 > [!NOTE]
 > These features will be rolled out gradually.
 
 - Survival Branch Office (SBA) will be supported on Voice over Internet Protocol (VoIP) calls.
 - Admins have the option of disabling call-quality surveys on Teams Phone devices from **Teams Admin Center** > **Configuration**.
 
-[Screenshot #12]
+  :::image type="content" source="media/new-in-microsoft-teams-devices/disabling-call-quality-surveys.png" alt-text="Screenshot showing the Busy-on-Busy setting that lets users decide." lightbox="media/new-in-microsoft-teams-devices/disabling-call-quality-surveys.png":::
 
 > [!NOTE]
 > These features will be rolled out gradually.

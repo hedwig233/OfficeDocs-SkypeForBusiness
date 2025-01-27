@@ -426,7 +426,7 @@ This update also includes these features, which were already available for certi
 - Survival Branch Office (SBA) will be supported on Voice over Internet Protocol (VoIP) calls.
 - Admins have the option of disabling call-quality surveys on Teams Phone devices from **Teams Admin Center** > **Configuration**.
 
-  :::image type="content" source="media/new-in-microsoft-teams-devices/disabling-call-quality-surveys.png" alt-text="Screenshot showing the Busy-on-Busy setting that lets users decide." lightbox="media/new-in-microsoft-teams-devices/disabling-call-quality-surveys.png":::
+  :::image type="content" source="media/new-in-microsoft-teams-devices/disabling-call-quality-surveys.png" alt-text="Screenshot showing how to disable call-quality serveys." lightbox="media/new-in-microsoft-teams-devices/disabling-call-quality-surveys.png":::
 
 > [!NOTE]
 > These features will be rolled out gradually.

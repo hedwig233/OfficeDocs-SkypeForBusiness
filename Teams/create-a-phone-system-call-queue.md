@@ -210,9 +210,14 @@ To **add a group** to the queue:
 > If there are more than 200 members in the group, only the first 200 members, in alphabetical order, are added as agents to the Call queue.
 
 > [!IMPORTANT]
-> Known issue: Assigning private channels to Call queues
+> Only standard channels are fully supported.
 >
-> When using a private channel, calls are be distributed to all members of the team even if the private channel only has a subset of team members. You may experience this problem when trying to assign a private channel to a Call queue. This problem may occur even if the Call queue previously had a private channel assigned or if the private channel was previously assigned to a Call queue. If you already have private channels assigned to Call queues, they will continue to work. This problem only affects new assignments. Support continues to work on identifying the root cause of this problem.
+> Known issues:
+> 1. Assigning private channels to Call queues
+>     - When using a private channel, calls are be distributed to all members of the team even if the private channel only has a subset of team members.
+>     - Assigning a private channel to a call queue may fail, even if the call queue previously had a private channel assigned or if the private channel was previously assigned to a Call queue.
+>
+> 2. Only the global administrator role can fully manage a call queue with a Teams channel assigned.
 
 ### Conference mode
 

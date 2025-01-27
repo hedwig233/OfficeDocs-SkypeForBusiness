@@ -60,7 +60,7 @@ To view feature updates for Microsoft Teams Rooms, go to:
 
 ### July 2024
 
-#### Teams app version: 1449/1.0.97.2024071105 (Logitech, Crestron, Neat, EPOS, AudioCodes, Poly, Yealink with CP 5484 and 6061)
+#### Teams app version: 1449/1.0.97.2024071105 (Logitech, Crestron, Neat, EPOS, AudioCodes, Poly, Yealink with CP 5484 and 6061)
 
 - Authentication and other check-in bug fixes.
 
@@ -69,7 +69,7 @@ To view feature updates for Microsoft Teams Rooms, go to:
 #### Teams app version: 1449/1.0.97.2024061108
 
 - Company Portal 6152 (available to Yealink, Crestron, Logitech, AudioCodes, EPOS, and Poly panels on Company Portal 5484, 5882, or 6061). Fixes for authentication issues, including a fix for sign-in failures immediately following sign out.
-- Multi-panel check-in support. (Generally available and for GCC. GCCH and higher aren't supported at this time) If a resource account is being shared across multiple panels, the check-in status for the meeting will remain in sync across the panels. This ensures the room is released or not released correctly. To learn more on the check-in feature, see [Check-in and auto release on Microsoft Teams panels](check-in-and-auto-release.md).
+- Multi-panel check-in support. (Generally available and for GCC. GCCH and higher aren't supported at this time) If a resource account is being shared across multiple panels, the check-in status for the meeting will remain in sync across the panels. This ensures the room is released or not released correctly. To learn more on the check-in feature, see [Check-in and auto release on Microsoft Teams panels](check-in-and-auto-release.md).
 
 > [!NOTE]
 > For every panel device, regardless of whether it's part of a multi-panel room, when you initially download this app, the current setting for Release room, if no one checks in, will be updated in Exchange. Allow 48 hours for this sync to happen. Be sure you download the app when there are no meetings scheduled within the next 48 hours.
@@ -90,13 +90,13 @@ To view feature updates for Microsoft Teams Rooms, go to:
 
 ### February 2024
 
-#### Teams app version: 1449/1.0.97.2024010401 (Crestron, Logitech, Neat, AudioCodes, EPOS, and Yealink Room Panel with Company Portal 5.0.5484.0)
+#### Teams app version: 1449/1.0.97.2024010401 (Crestron, Logitech, Neat, AudioCodes, EPOS, and Yealink Room Panel with Company Portal 5.0.5484.0)
 
 - Authentication fixes for room reservations
 
 ### December 2023
 
-#### Teams app version: 1449/1.0.97.2023111003 (Crestron, Logitech, Neat, Poly, AudioCodes, EPOS)
+#### Teams app version: 1449/1.0.97.2023111003 (Crestron, Logitech, Neat, Poly, AudioCodes, EPOS)
 
 - Turn on and off the QR code remotely via the Teams Admin Center.
 
@@ -105,12 +105,12 @@ To view feature updates for Microsoft Teams Rooms, go to:
 #### Teams app version: 1449/1.0.97.2023080401
 
 - **QR code reservations on Teams Panels**  Teams Panels with a Teams Shared Device License or a Teams Rooms Pro License allows people to reserve the room using a QR code on the Panel. If you're signed into your Teams app on mobile, upon scanning from your mobile device, you can schedule a new meeting with the room prepopulated. You can also easily see the room's availability for your meetings and book the room with one click. This feature is enabled by default and can be disabled under **Device settings** > **Admin settings** > **Meetings**. To learn more about using QR code reservations, see Reserve a room using a QR code on a Teams Panel.
-- The recommended version of Teams on your Android phone is 1416/1.0.0.2023153001 and above. On iOS, the recommended version is 5.15.0 and above.
+- The recommended version of Teams on your Android phone is 1416/1.0.0.2023153001 and above. On iOS, the recommended version is 5.15.0 and above.
 
 > [!NOTE]
-> The following instructions are for an Android mobile phone with an Android work profile (AWP).
+> The following instructions are for an Android mobile phone with an Android work profile (AWP).
 
-- You can scan the QR code using the camera app on your Android mobile phone. However, the feature may not work if you have both work and personal profiles on your Android phone. In this case, your admin must add a mobile system OS scanner in the work profile.
+- You can scan the QR code using the camera app on your Android mobile phone. However, the feature may not work if you have both work and personal profiles on your Android phone. In this case, your admin must add a mobile system OS scanner in the work profile.
 
 To add a mobile system OS scanner:
 
@@ -122,9 +122,9 @@ To add a mobile system OS scanner:
 
 4. Assign to an individual or group.
 
-5. Download and install the camera app from the app store in your work profile.
+5. Download and install the camera app from the app store in your work profile.
 
-- **Loading sign when creating a reservation**  When making a reservation on the Panel using the green **Reserve** button, you see a loading sign after you confirm the end time of your reservation to let you know the reservation is being made.
+- **Loading sign when creating a reservation**  When making a reservation on the Panel using the green **Reserve** button, you see a loading sign after you confirm the end time of your reservation to let you know the reservation is being made.
 
 ### June 2023
 
@@ -150,10 +150,10 @@ To add a mobile system OS scanner:
 
 ### December 2022
 
-#### Teams app version – 1449/1.0.97.2022747803
+#### Teams app version - 1449/1.0.97.2022747803
 
 - After an admin pairs a panel to a supported occupancy sensor through Device settings, you can see whether a room is occupied and auto check in when check in is enabled by your admin. If the room is available and someone's in the room, a message is displayed that the room is occupied. If the room is reserved but no one is in the room, you see a message that the room is unoccupied.
-- Yealink's Room Sensor and Crestron CEN-ODT-C-POE are supported. For more information, check check with your OEM.
+- Yealink's Room Sensor and Crestron CEN-ODT-C-POE are supported. For more information, check check with your OEM.
 - Support for Teams Shared Device License.
 - Improvements and bug fixes.
 

@@ -214,7 +214,7 @@ To **add a group** to the queue:
 >
 > Known issues:
 > 1. Assigning private channels to Call queues
->     - When using a private channel, calls are be distributed to all members of the team even if the private channel only has a subset of team members.
+>     - When using a private channel, calls are distributed to all members of the team even if the private channel only has a subset of team members.
 >     - Assigning a private channel to a call queue may fail, even if the call queue previously had a private channel assigned or if the private channel was previously assigned to a Call queue.
 >
 > 2. Only the global administrator role can fully manage a call queue with a Teams channel assigned.

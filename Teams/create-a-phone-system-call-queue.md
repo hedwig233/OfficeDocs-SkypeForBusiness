@@ -486,7 +486,7 @@ This call exception handling option handles calls when no agents are opted into 
 
 >[!IMPORTANT]
 > Known Issues:
-> 1. When **Longest idle** is selected as the routing method, the **No Agents** treatment doesn't work when ***New Calls Only*** is selected and new calls will be queued. The ***All Calls*** option works as expected. Support is investigating.
+> 1. When **Longest idle** is selected as the routing method, the **No Agents** treatment doesn't work when ***New Calls Only*** is selected and new calls are queued. The ***All Calls*** option works as expected. Support is investigating.
 > 1. Don't include any special characters in the greeting message when redirecting to **Voicemail (shared)** as these aren't spoken by the system.
 
 ### Nested Auto attendants and Call queues

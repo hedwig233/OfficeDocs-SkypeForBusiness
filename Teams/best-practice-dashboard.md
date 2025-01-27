@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: article
 ms.service: msteams
 ms.reviewer: snigdha.chaturvedi
-ms.date: 1/23/2024
+ms.date: 1/27/2024
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
@@ -54,7 +54,9 @@ The following sections provide details on the information in each best practice 
 
 ### Update outdated Teams clients
 
-For the best meeting experience, your users should always use the latest version of Teams. The outdated Teams clients dashboard tracks the desktop clients (Windows and Mac) across the organization and shows when users have outdated versions of the Teams client. For learn more about Teams updates, see [Why it's important to keep Teams updated](teams-client-update.md#servicing-agreement).
+EDITBELOW:
+
+For the best meeting experience, your users should always use the latest version of Teams. The media streams in this dashboard reflect Windows and Mac user activity on a client build that is more than three months behind the latest client build. This can negatively impact meeting quality experience.The outdated Teams clients dashboard tracks the desktop clients (Windows and Mac) across the organization and highlights the locations most impacted due to Teams clients being outdated. To learn more about Teams updates, see [Why it's important to keep Teams updated](teams-client-update.md#servicing-agreement).
 
 To view outdated Teams clients, select **Update out of date client versions** in the **Best practice configurations** table.
 

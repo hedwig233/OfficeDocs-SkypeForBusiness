@@ -36,7 +36,7 @@ To access the best practice configuration dashboard, follow these steps:
 2. Expand **Meetings** from the navigation pane.
 3. Under **Meetings**, select **Best practice configurations**.
 
-:::image type="content" source="media/bpd-landing-small.png" alt-text="Screenshot of the Best practice configuration dashboard." lightbox="media/bpd-landing-expand.png":::
+:::image type="content" source="media/db-landing-small.png" alt-text="Screenshot of the Best practice configuration dashboard." lightbox="media/db-landing-expand.png":::
 
 The **Summary** widget displays the number of best practices that need action and those without issues.
 
@@ -58,7 +58,7 @@ For the best meeting experience, your users should always use the latest version
 
 To view outdated Teams clients, select **Update out of date client versions** in the **Best practice configurations** table.
 
-:::image type="content" source="media/db-clients-small.png" alt-text="Screenshot of the Best practice configuration's outdated Teams clients dashboard." lightbox="media/db-clients-expand.png":::
+:::image type="content" source="media/db-clients-small-1.png" alt-text="Screenshot of the Best practice configuration's outdated Teams clients dashboard." lightbox="media/db-clients-expand-1.png":::
 
 |Callout |Description  |
 |--------|-------------|
@@ -77,7 +77,7 @@ You should open UDP ports on both the network and client firewalls to Microsoft 
 
 To view ports and protocols, select **Enable the correct ports and protocols** in the **Best practice configurations** table.
 
-:::image type="content" source="media/db-ports-small.png" alt-text="Screenshot of the Best practice configuration's ports and protocols dashboard." lightbox="media/db-ports-expand.png":::
+:::image type="content" source="media/db-ports-small-1.png" alt-text="Screenshot of the Best practice configuration's ports and protocols dashboard." lightbox="media/db-ports-expand-1.png":::
 
 |Callout |Description  |
 |--------|-------------|
@@ -94,7 +94,7 @@ This dashboard monitors locations and highlights those that have a high proporti
 
 To view split tunneling for VPNs, select **Implement split tunneling for VPNs** in the **Best practice configurations** table.
 
-:::image type="content" source="media/db-vpn-small.png" alt-text="Screenshot of the Best practice configuration's VPN split tunneling dashboard." lightbox="media/db-vpn-expand.png":::
+:::image type="content" source="media/db-vpn-small-1.png" alt-text="Screenshot of the Best practice configuration's VPN split tunneling dashboard." lightbox="media/db-vpn-expand-1.png":::
 
 |Callout |Description  |
 |--------|-------------|

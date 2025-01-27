@@ -394,7 +394,7 @@ This update also includes these features, which were already available for certi
 - When a contact has multiple numbers, you can choose which one to call.
 - People can control how they want to handle second incoming calls through the Busy-on-Busy setting. Admins can allow people to configure the Busy-on-Busy setting by selecting **Let users decide** in **Teams Admin Center** > **Calling policy**.
 
-[Screenshot #6]
+  :::image type="content" source="media/new-in-microsoft-teams-devices/how-to-handle-second-incoming-calls.png" alt-text="Screenshot showing how users can handle second incoming calls." lightbox="media/new-in-microsoft-teams-devices/how-to-handle-second-incoming-calls.png":::
 
 ### May 5, 2024
 

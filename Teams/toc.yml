@@ -1107,6 +1107,8 @@ items:
               href: set-up-calling-plans.md
             - name: Country and region availability for Calling Plans
               href: country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md
+            - name: Setup billing for Calling plans
+              href: /microsoft-365/commerce/subscriptions/manage-pay-as-you-go-services
         - name: Operator Connect
           items: 
             - name: Plan for Operator Connect
@@ -1241,7 +1243,7 @@ items:
               href: how-many-phone-numbers-can-you-get.md
             - name: Transfer phone numbers
               items: 
-                - name: What's a port order?
+                - name: Port planning
                   href: phone-number-calling-plans/port-order-overview.md
                 - name: Transfer phone numbers to Teams
                   href: phone-number-calling-plans/transfer-phone-numbers-to-teams.md
@@ -1655,6 +1657,18 @@ items:
               href: phones/phones-for-teams.md
             - name: What's new in Teams phones
               href: https://support.microsoft.com/office/what-s-new-in-microsoft-teams-devices-eabf4d81-acdd-4b23-afa1-9ee47bb7c5e2#ID0EBD=Desk_phones
+            - name: Features
+              items:
+                - name: Set the Teams phone interface
+                  href: phones/teams-android-devices-user-interface.md
+                - name: Line keys for speed dialing
+                  href: phones/line-keys.md
+                - name: Manage Teams phones
+                  href: phones/manage-teams-phones.md
+                - name: Update management
+                  href: phones/remote-update-teams-phones.md
+                - name: Queues app on Teams phones
+                  href: phones/queues-app.md
         - name: Deploy
           items:
             - name: Step 1 - Overview
@@ -1685,16 +1699,6 @@ items:
                   href: phones/remote-provision-remote-login-phones.md
                 - name: Remote sign in and sign out
                   href: phones/remote-sign-in-and-sign-out-phones.md
-        - name: Manage
-          items:
-            - name: Set the Teams phone interface
-              href: phones/teams-android-devices-user-interface.md
-            - name: Line keys for speed dialing
-              href: phones/line-keys.md
-            - name: Manage Teams phones
-              href: phones/manage-teams-phones.md
-            - name: Update management
-              href: phones/remote-update-teams-phones.md
         - name: Troubleshooting and known issues
           href: /microsoftteams/troubleshoot/teams-rooms-and-devices/teams-rooms-known-issues-android.md#issues-with-teams-phones
           

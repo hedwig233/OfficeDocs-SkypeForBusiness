@@ -76,6 +76,8 @@ Additionally, lock down policies are applied to limit nonadministrative features
 
 Microsoft Defender is enabled out of the box. The Teams Rooms Pro license also includes Defender for Endpoint, which allows customers to enroll their Teams Rooms into Defender for Endpoint. This enrollment can provide security teams visibility into the security posture of Teams Room on Windows devices from the Defender portal. Teams Rooms on Windows can be enrolled following the steps for [Windows devices](/microsoft-365/security/defender-endpoint/onboarding-endpoint-manager). We don't recommend modifying Teams Rooms using protection rules (or other Defender policies that make configuration changes) as these policies can impact Teams Rooms functionality; however, reporting functionality into the portal is supported.
 
+Microsoft Bitlocker is not enabled out of the box, but can be enable via policy if desired. Ensure Bitlocker is enabled without a preboot authentication or the Teams Room will not boot to a functional device without manually entry of a PIN which will impact usability of the room system.
+
 ## Account Security
 
 Teams Rooms devices include an administrative account named "Admin" with a default password. We strongly recommend that you change the default password as soon as possible after you complete setup.
@@ -116,8 +118,6 @@ Generally, Teams Rooms has the same network requirements as any Microsoft Teams 
 For Microsoft Teams Rooms Pro Management Portal, you also need to make sure that Teams Rooms can access the following URLs:
 
 - agent.rooms.microsoft.com
-- global.azure-devices-provisioning.net
-- gj3ftstorage.blob.core.windows.net
 - mmrstgnoamiot.azure-devices.net
 - mmrstgnoamstor.blob.core.windows.net
 - mmrprodapaciot.azure-devices.net
@@ -149,12 +149,12 @@ Proximity Join and other Teams Rooms features rely on Bluetooth. However, the Bl
 
 ## [Teams Android devices](#tab/Android)
 
-This article is specific to Teams Android devices (Teams Rooms on Android, Teams panels, Teams Phone, & Teams Displays). This article doesn't cover Android devices configured for dedicated device mode by Microsoft Endpoint Manager.
+This article is specific to Teams Android devices (Teams Rooms on Android, Teams panels, Teams phone, & Teams Displays). This article doesn't cover Android devices configured for dedicated device mode by Microsoft Intune.
 
 Microsoft works with our OEM partners to deliver a solution that is secure by design, and customizable to meet customer needs. This article discusses many of the security features found in Teams Android devices and our approach.
 
 > [!NOTE]
-> Microsoft Teams Android devices shouldn't be treated as a typical Android device. Teams Android devices are purpose-built appliances designed for use with Teams and their respective use cases. This article applies to certified and dedicated Microsoft Teams devices running the Android operating system only. Teams certified devices can only be purchased from certified OEM vendors. For information about Microsoft Teams certified Android devices, see [Teams Rooms certified systems and peripherals](certified-hardware.md).
+> Microsoft Teams Android devices shouldn't be treated as a typical Android device. Teams Android devices are purpose-built appliances running a modified version of AOSP (Android Open Source Project) designed for use with Teams and their respective use cases. This article applies to certified and dedicated Microsoft Teams devices running the Android operating system only. Teams certified devices can only be purchased from certified OEM vendors. For information about Microsoft Teams certified Android devices, see [Teams Rooms certified systems and peripherals](certified-hardware.md).
 
 For information about security on Teams Rooms on Windows devices, select the **Teams Rooms on Windows** tab.
 
@@ -168,8 +168,12 @@ Teams Android devices are locked down to run only approved applications by runni
 |-----------------------------|-------------------------------------------|
 | Microsoft Teams Android App | Microsoft Teams Device Application        |
 | Microsoft Teams Admin Agent | Teams admin center Remote Management      |
-| Intune Company Portal       | Device Enrollment, Registration & Sign-in |
+| Authenticator App           | Registration & Sign-in                    |
+| AOSP DM App                 | Device Enrollment                         |
 | OEM Partner Agent           | OEM Partner Agent & Device Settings App   |
+
+> [!NOTE]
+> Devices not yet migrated to AOSP Device Management will have the Intune Company Portal application installed in place of the Authenticator app and AOSP DM apps.
 
 By design, the Microsoft Teams Android app launches on start-up in Android Kiosk mode and doesn't provide the user any access to the operating system or access to components outside of the designated Teams user experience.
 
@@ -253,6 +257,6 @@ We strongly recommend that you connect your Teams Rooms devices to a wired netwo
 
 Proximity Join, Better Together, Teams Cast, and pairing of Teams panels rely on Bluetooth. Bluetooth technology use on Teams Rooms on Android devices is currently limited to advertising beacons and prompted proximal connections. The `ADV_NONCONN_INT` protocol data unit (PDU) type is used in the advertising beacon. This PDU type is for nonconnectable devices advertising information to the listening device. There's no Bluetooth device pairing as part of these features. More details on Bluetooth protocols can be found on the Bluetooth SIG website.
 
-Teams Phones and Displays offers Bluetooth pairing capability to pair with headsets using the Bluetooth Hands-Free Profile.
+Teams Phones and Displays offer Bluetooth pairing capability to pair with headsets using the Bluetooth Hands-Free Profile.
 
 For more information on security in Microsoft Teams, see [Security and Microsoft Teams](/microsoftteams/teams-security-guide).  

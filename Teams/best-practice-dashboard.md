@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: article
 ms.service: msteams
 ms.reviewer: snigdha.chaturvedi
-ms.date: 1/27/2024
+ms.date: 1/28/2024
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
@@ -42,7 +42,7 @@ The **Summary** widget displays the number of best practices that need action an
 
 The **Best practice configurations** table provides statuses and insights for the following best practices:
 
-- Enable the right ports and protocols
+- Enable the correct ports and protocols
 - Update outdated Teams clients
 - Implement split tunneling for VPNs
 

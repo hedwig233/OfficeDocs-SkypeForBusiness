@@ -448,7 +448,7 @@ This update also includes these features, which were already available for certi
 
 ### March 12, 2024
 
-#### Teams App version: 1449/1.0.94.2024011601, 1449/1.0.94.2024020601 (AudioCodes)
+**Applies to:** *Teams App version: 1449/1.0.94.2024011601, 1449/1.0.94.2024020601 (AudioCodes)*
 
 > [!NOTE]
 > The update applies to AudioCodes phones on firmware version 1.19.516 or higher.
@@ -457,7 +457,7 @@ This update also includes these features, which were already available for certi
 
 ### January 24, 2024
 
-#### Teams App version: 1449/1.0.94.2024011003 (Poly, Yealink, Crestron, AudioCodes)
+**Applies to:** *Teams App version: 1449/1.0.94.2024011003 (Poly, Yealink, Crestron, AudioCodes)*
 
 - The issue of active call moving to banner on merging a call is fixed.
 - The issue of consult transfer icon not being clickable sometimes is fixed.
@@ -467,7 +467,7 @@ This update also includes these features, which were already available for certi
 
 ### December 5, 2023
 
-#### Teams App version: 1449/1.0.94.2023112704 (Crestron, Poly, Yealink)
+**Applies to:** *Teams App version: 1449/1.0.94.2023112704 (Crestron, Poly, Yealink)*
 
 - The date and time format specified under **Device Settings** is the same on the home screen.
 - When the **Explicit Recording Consent** policy is enabled, audio conference phones support auto consent.
@@ -476,7 +476,7 @@ This update also includes these features, which were already available for certi
 
 ### November 28, 2023
 
-#### Teams app version: 1449/1.0.94.2023111407 (AudioCodes)
+**Applies to:** *Teams app version: 1449/1.0.94.2023111407 (AudioCodes)*
 
 > [!NOTE]
 > This update applies to AudioCodes phones on firmware version 1.19.584.
@@ -485,7 +485,7 @@ This update also includes these features, which were already available for certi
 
 ### November 6, 2023
 
-#### Teams app version: 1449/1.0.94.2023100602 (AudioCodes)
+**Applies to:** *Teams app version: 1449/1.0.94.2023100602 (AudioCodes)*
 
 > [!NOTE]
 > This update applies to AudioCodes firmware version 1.19.584 and is available for phones previously on firmware version 1.19.516. A Teams app release for AudioCodes phones currently on other firmware versions will be released soon.
@@ -494,7 +494,7 @@ This update also includes these features, which were already available for certi
 
 ### October 9, 2023
 
-#### Teams App version: 1449/1.0.94.2023091801 (Yealink)
+**Applies to:** *Teams App version: 1449/1.0.94.2023091801 (Yealink)*
 
 - Caller ID shows for incoming PSTN calls on call queues.
 - You can continue dialing a number when there's an incoming call.
@@ -503,7 +503,7 @@ This update also includes these features, which were already available for certi
 
 ### August 29, 2023
 
-#### Teams app version: 1449/1.0.94.2023082303 (Crestron, Poly, and Yealink Audio Touch Phones)
+**Applies to:** *Teams app version: 1449/1.0.94.2023082303 (Crestron, Poly, and Yealink Audio Touch Phones)*
 
 Today, on Teams Phone devices, delegators can share their phone line with their assistants and delegates to make and receive calls on their behalf. Call delegates can also:
 
@@ -519,7 +519,7 @@ Today, on Teams Phone devices, delegators can share their phone line with their 
 
 ### July 31, 2023
 
-#### Teams app version: 1449/1.0.94.2023072509 (AudioCodes, Crestron, and Poly audio phones)
+**Applies to:** *Teams app version: 1449/1.0.94.2023072509 (AudioCodes, Crestron, and Poly audio phones)*
 
 - You can program Teams Phone devices to autodial a preconfigured PSTN number or directory contact when the handset is picked up. You can configure a common area phone as a hotline phone by navigating to **Settings** > **Device Settings** > **Calling** > **Hotline** and specifying the auto-dial contact and display name.
 
@@ -537,14 +537,14 @@ Today, on Teams Phone devices, delegators can share their phone line with their 
 
 ### July 12, 2023
 
-#### Teams app version: 1449/1.0.94.2023063003
+**Applies to:** *Teams app version: 1449/1.0.94.2023063003*
 
 - Support added for reverse-number lookup of PSTN contacts added via Teams desktop.
 - Performance of the phones attached to expansion modules is improved.
 
 ### June 15, 2023
 
-#### Teams app version: 1449/1.0.94.2023060906
+**Applies to:** *Teams app version: 1449/1.0.94.2023060906*
 
 - Audio Conferencing is supported on the Microsoft Teams Room Pro License.
 
@@ -555,7 +555,7 @@ Today, on Teams Phone devices, delegators can share their phone line with their 
 
 ### May 9, 2023
 
-#### Teams app version: 1449/1.0.94.2023050205 (doesn't include TrioC60 on GCC-H cloud)
+**Applies to:** *Teams app version: 1449/1.0.94.2023050205 (doesn't include TrioC60 on GCC-H cloud)*
 
 - "Resume call" reliability is improved on consult transfer.
 - Issue of persisting "Advanced calling" setting in common area phones when signing back in is fixed.
@@ -564,13 +564,13 @@ Today, on Teams Phone devices, delegators can share their phone line with their 
 
 ### April 14, 2023
 
-#### Teams app version: 1449/1.0.94.2023041203
+**Applies to:** *Teams app version: 1449/1.0.94.2023041203*
 
 - Intermittent issue of the app restarting on F SKUs (frontline worker) and Business SKUs (SMB) is fixed.
 
 ### April 4, 2023
 
-#### Teams app version: 1449/1.0.94.2023032903 (AudioCodes, Crestron, Poly)
+**Applies to:** *Teams app version: 1449/1.0.94.2023032903 (AudioCodes, Crestron, Poly)*
 
 - Audio conferencing isn't supported on Teams Phone devices with the Meeting Teams Room Basic License.
 - You can add and edit your emergency location on phones.
@@ -585,7 +585,7 @@ Record one-on-one PSTN calls
 
 ### February 21, 2023
 
-#### Teams app version: 1449/1.0.94.2023020602
+**Applies to:** *Teams app version: 1449/1.0.94.2023020602*
 
 - Dial tone and mute LED sync issue is fixed on audio-conferencing phones.
 - Calling resiliency is improved.
@@ -594,7 +594,7 @@ Record one-on-one PSTN calls
 
 ### January 25, 2023
 
-#### Teams app version: 1449/1.0.94.2023010607
+**Applies to:** *Teams app version: 1449/1.0.94.2023010607*
 
 > [!NOTE]
 > This update is for public cloud deployments and non-audio-conferencing phones.
@@ -606,7 +606,7 @@ Record one-on-one PSTN calls
 
 ### November 30, 2022
 
-#### Teams app version: 1449/1.0.94.2022110803
+#**Applies to:** *Teams app version: 1449/1.0.94.2022110803*
 
 - Fixes sign-in issues on nontouch devices.
 - Fixes caller ID and caller display name issues.
@@ -614,26 +614,26 @@ Record one-on-one PSTN calls
 
 ### September 21, 2022
 
-#### Teams app version: 1449/1.0.94.2022090705 (for nonvideo touch phones only)
+**Applies to:** *Teams app version: 1449/1.0.94.2022090705 (for nonvideo touch phones only)*
 
 - Simplified look for incoming and outgoing calls with improved performance.
 
 ### July 14, 2022
 
-#### Teams app version: 1449/1.0.94.2022062103
+**Applies to:** *Teams app version: 1449/1.0.94.2022062103*
 
 - Several intermittent app-crash issues have been resolved.
 
 ### July 6, 2022
 
-#### Teams app version: 1449/1.0.94.2022061702 (Crestron, Poly, Yealink)
+**Applies to:** *Teams app version: 1449/1.0.94.2022061702 (Crestron, Poly, Yealink)*
 
 - We're enhancing the existing Common Area Phone offering to include all advanced calling features at no extra cost or changes to the original purchased license. Common Area Phone supports calling features including call park, call queues, auto attendants, Intune enrollment into Endpoint Manager, and more, when the device is updated to the minimum app version: 1449/1.0.94.2022061702.
 - Emergency calling on GCC-H deployments is supported.
 
 ### April 13, 2022
 
-#### Teams app version: 1449/1.0.94.2022041102
+#**Applies to:** *Teams app version: 1449/1.0.94.2022041102*
 
 - Fixes missing names on phone sidecars.
 - Fixes common-area phone dial pad and audio routing issues between the handset and speaker.
@@ -641,7 +641,7 @@ Record one-on-one PSTN calls
 
 ### March 24, 2022
 
-#### Teams app version: 1449/1.0.94.2022030501
+**Applies to:** *Teams app version: 1449/1.0.94.2022030501*
 
 - Support end-to-end encryption in one-on-one calls.
 - Contact name along with phone number for saved contacts show on calls made via PSTN (Public Switched Telephone Network).
@@ -650,13 +650,13 @@ Record one-on-one PSTN calls
 
 ### March 3, 2022
 
-#### Teams app version: 1449/1.0.94.2022022305
+**Applies to:** *Teams app version: 1449/1.0.94.2022022305*
 
 - Resiliency added for location fetch mechanism on devices.
 
 ### February 7, 2022
 
-#### Teams app version: 1449/1.0.94.2022020202
+**Applies to:** *Teams app version: 1449/1.0.94.2022020202*
 
 - Teams Phones with touch screen have instant push-to-talk communication via the new Walkie-Talkie feature.
 - Teams Phones with touch screen improvements for multiple incoming, held, and parked calls.
@@ -668,7 +668,7 @@ Record one-on-one PSTN calls
 
 ### December 16, 2021
 
-#### Teams app version: 1449/1.0.94.2021121302
+**Applies to:** *Teams app version: 1449/1.0.94.2021121302*
 
 - More improvements in dial-pad experience for touch-screen phones.
 - Improvements in dial-tone management.
@@ -676,7 +676,7 @@ Record one-on-one PSTN calls
 
 ### December 6, 2021
 
-#### Teams app version: 1449/1.0.94.2021112302
+**Applies to:** *Teams app version: 1449/1.0.94.2021112302*
 
 - More improvements in dial-pad experience for touch-screen phones.
 - Improvements in dial-tone management.
@@ -684,13 +684,13 @@ Record one-on-one PSTN calls
 
 ### November 22, 2021
 
-#### Teams app version: 1449/1.0.94.2021110101
+**Applies to:** *Teams app version: 1449/1.0.94.2021110101*
 
 - Improvements in dial-pad and dial-tone experiences for touch-screen phones.
 
 ### November 3, 2021
 
-#### Teams app version: 1449/1.0.94.2021101205
+**Applies to:** *Teams app version: 1449/1.0.94.2021101205*
 
 - Admins can provision devices from the Teams Admin Center to remotely sign in and sign out from devices.
 - Branch office survivability for Teams Phones to make PSTN calls even when the internet connection is down.
@@ -700,13 +700,13 @@ Record one-on-one PSTN calls
 
 ### June 10, 2021
 
-#### Teams app version: 1449/1.0.94.2021052803
+**Applies to:** *Teams app version: 1449/1.0.94.2021052803*
 
 - Performance updates for meeting experiences on low-end hardware.
 
 ### June 8, 2021
 
-#### Teams app version: 1449/1.0.94.2021051303
+**Applies to:** *Teams app version: 1449/1.0.94.2021051303*
 
 - Transfer a Teams call to another device without hanging up.
 - Change your background during a video call or meeting from a set of pictures available in phones with video capability.
@@ -720,13 +720,13 @@ Record one-on-one PSTN calls
 
 ### March 30, 2021
 
-#### Teams app version: 1449/1.0.94.2021033002
+**Applies to:** *Teams app version: 1449/1.0.94.2021033002*
 
 - Fixed authentication library crash.
 
 ### March 26, 2021
 
-#### Teams app version: 1449/1.0.94.2021022403
+**Applies to:** *Teams app version: 1449/1.0.94.2021022403*
 
 - New and improved sign-in experience. Sign in from any browser or smartphone with a prominent device code. Or you can sign in from the device with your username and password.
 - Sign-in support and authentication into specialized clouds is available. Choose the **Settings** gear on the sign-in page to see the options for your account.
@@ -740,7 +740,7 @@ Record one-on-one PSTN calls
 
 ### December 8, 2020
 
-#### Teams app version: 1449/1.0.94.2020111101
+**Applies to:** *Teams app version: 1449/1.0.94.2020111101*
 
 - Video features including 3x3 layout support, gallery view and together mode, background blur, and spotlight.
 - Meeting features including request-to-speak and the ability to view screen sharing on select models of audio phones.
@@ -752,7 +752,7 @@ Record one-on-one PSTN calls
 
 ### October 12, 2020
 
-#### Teams app version: 1449/1.0.94.2020091801
+**Applies to:** *Teams app version: 1449/1.0.94.2020091801*
 
 - Better-together feature with meeting support.
 - Bug fix related to authentication after signing in.
@@ -760,7 +760,7 @@ Record one-on-one PSTN calls
 
 ### August 31, 2020
 
-#### Teams app version: 1449/1.0.94.2020071702
+**Applies to:** *Teams app version: 1449/1.0.94.2020071702*
 
 - Home screen shows meeting reminders.
 - Ability to customize default apps in the phone and the default view in Calls.
@@ -774,7 +774,7 @@ Record one-on-one PSTN calls
 
 ### June 27, 2020
 
-#### Teams app version: 1449/1.0.94.2020051601
+**Applies to:** *Teams app version: 1449/1.0.94.2020051601*
 
 - Contacts and contact groups management in People.
 - Live captions for meetings.
@@ -787,7 +787,7 @@ Record one-on-one PSTN calls
 
 ### April 23, 2020
 
-#### Teams app version: 1449/1.0.94.2020031901
+**Applies to:** *Teams app version: 1449/1.0.94.2020031901*
 
 - Favorites (speed dial) added to Calls.
 - New settings support on Teams Phones for: Custom ringtone, Manage Delegates, and auto dial for extension dialing.
@@ -796,7 +796,7 @@ Record one-on-one PSTN calls
 
 ### February 18, 2020
 
-#### Teams app version: 1449/1.0.94.2020020601
+**Applies to:** *Teams app version: 1449/1.0.94.2020020601*
 
 - Support for dynamic emergency calling on the phone lock screen.
 - Hot-desk feature bug fixes to address network-outage scenarios.
@@ -811,13 +811,13 @@ Record one-on-one PSTN calls
 
 ### September 2024
 
-#### Teams app version: 1449/1.0.95.2024062804
+**Applies to:** *Teams app version: 1449/1.0.95.2024062804*
 
 - Bug fixes.
 
 ### November 2023
 
-#### Teams app version: 1449/1.0.95.2023101102
+**Applies to:** *Teams app version: 1449/1.0.95.2023101102*
 
 - Support for QR code sign in for scenarios without reserving the hot desk.
 - Improvements to support meeting continuity through hot-desk reservation end times.
@@ -826,14 +826,14 @@ Record one-on-one PSTN calls
 
 ### June 2023
 
-#### Teams app version: 1449/1.0.95.2023061601
+**Applies to:** *Teams app version: 1449/1.0.95.2023061601*
 
 - Streamlined experiences on Teams-certified displays based on assigned licenses.
 - Bug fixes and improvements on meeting and calling experiences.
 
 ### May 2023
 
-#### Teams displays app version: 1449/1.0.95.2023042701
+**Applies to:** *Teams displays app version: 1449/1.0.95.2023042701*
 
 > [!NOTE]
 > This release is an app-only update. Work with device manufacturers to confirm timelines on full feature functionality on your devices.
@@ -866,13 +866,13 @@ To add a mobile system OS scanner:
 
 ### January 2023
 
-#### Teams app version: 1449/1.0.95.2023011001 (Crestron)
+**Applies to:** *Teams app version: 1449/1.0.95.2023011001 (Crestron)*
 
 - Fix for intermittent app crashes occurring in the previous app update (1449/1.0.95.2022102603) for Crestron devices.
 
 ### December 2022
 
-#### Teams app version: 1449/1.0.95.2022120505 (Neat Frame)
+**Applies to:** *Teams app version: 1449/1.0.95.2022120505 (Neat Frame)*
 
 - Hot desking in portrait mode is  supported. Hotdesking on a Teams display makes finding a space to work easier by allowing you to locate and reserve flexible workspaces.
 - Teams Shared Devices License on Teams displays offers hot desking experience. The Teams IP Phone policy setting for hot desking is disabled for displays. You can invoke hot desking using Teams accounts with the Teams Shared Device Licenses.
@@ -880,14 +880,14 @@ To add a mobile system OS scanner:
 
 ### November 2022
 
-#### Teams app version: 1449/1.0.95.2022102603 (Crestron)
+**Applies to:** *Teams app version: 1449/1.0.95.2022102603 (Crestron)*
 
 - Teams Shared Devices License on Teams displays offers a hot-desking experience. The Teams IP Phone policy setting for hot desking is disabled for displays. You can invoke hot desking using Teams accounts with the Teams Shared Device Licenses.
 - Bug fixes and improvements for app crashes, reliability of muting and unmuting your microphone during a call, and more.
 
 ### December 2021
 
-#### Teams app version: 1449/1.0.95.2021111203
+**Applies to:** *Teams app version: 1449/1.0.95.2021111203*
 
 - Teams displays support portrait mode for all calling and meeting screens. Meeting layouts are optimized for portrait videos of individual people. All incoming videos always fit-to-frame when the device is used in portrait orientation.
 - Teams displays enabled live event attendee view to allow producer and presenter to join with a quick join link. They have the same capability in displays as in the Teams mobile app. The attendee can access the live event with the event link provided in the calendar details.
@@ -896,9 +896,9 @@ To add a mobile system OS scanner:
 - Teams displays have the ability to use end-to-end encryption for calls (must be enabled by IT admin).
 - IT admins can remotely provision, sign in, and sign out of a Teams device that has previously not been provisioned.
 
-#### June 2021
+### June 2021
 
-#### Teams app version: 1449/1.0.95.2021042103
+**Applies to:** *Teams app version: 1449/1.0.95.2021042103*
 
 - Contact phone numbers created in Outlook are available in the People section of Teams displays with read-only access.
 - During a call, select the active-call icon to show more options. Additionally, when a contact has multiple numbers saved, you can choose the number you want to dial from the dropdown list.
@@ -910,7 +910,7 @@ To add a mobile system OS scanner:
 
 ### March 2021
 
-#### Teams app version: 1449/1.0.95.2021021104
+**Applies to:** *Teams app version: 1449/1.0.95.2021021104*
 
 - Sign in from any browser or smartphone with a device code. Or sign in from the device with a username and password directly on the device.
 - Call controls are docked at the bottom of the screen. You can also switch between gallery and together mode views and send reactions during meetings.

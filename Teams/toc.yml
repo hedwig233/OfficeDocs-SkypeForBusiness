@@ -1503,7 +1503,7 @@ items:
               items:
                 - name: Teams Rooms release notes
                   href: rooms/rooms-release-note.md
-                - name: Teams panels release notes
+                - name: Teams panels release notes 
                   href: devices/devices-release-notes.md?tabs=panels#tabpanel_1_panels
                 - name: Management apps
                   href: devices/certified-device-apps.md

@@ -201,7 +201,7 @@ To add a mobile system OS scanner:
 - IT Admins can do remote provisioning and remote sign in of Teams panels from the Teams Admin Center.
 - Hide meeting names for sensitive spaces. This setting is off by default (the **Show meeting names** setting is on). The tenant admin can enable it through **Settings** > **Device settings** > **Admin Settings** > **Panels App Settings** > **Meetings** > **Show meeting names**. When meeting names is turned off, the meeting name is replaced with the meeting organizer's name.
 
-## [Teams Phones](#tab/phones)
+## [Teams phones](#tab/phones)
 
 ### January 8, 2024
 

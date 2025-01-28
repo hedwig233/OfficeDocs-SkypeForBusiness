@@ -1655,7 +1655,7 @@ items:
           items:
             - name: Overview of Teams phones
               href: phones/phones-for-teams.md
-            - name: What's new in Teams phones
+            - name: Teams phones release notes
               href: devices/devices-release-notes.md?tabs=phones#tabpanel_1_phones
             - name: Features
               items:

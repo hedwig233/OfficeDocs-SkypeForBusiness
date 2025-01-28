@@ -35,7 +35,7 @@ To view feature updates for Microsoft Teams Rooms, go to:
 
 ### January 2025
 
-#### Teams app version: 1449/1.0.97.2024122401
+**Applies to:** *Teams app version: 1449/1.0.97.2024122401*
 
 > [!IMPORTANT]
 > Required updates coming to the session flows. Starting June 2025, clients more than five months old will no longer work.

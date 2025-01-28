@@ -1504,11 +1504,9 @@ items:
                 - name: Teams Rooms release notes
                   href: rooms/rooms-release-note.md
                 - name: Teams panels release notes
-                  href: devices/devices-release-notes.md#tabpanel_1_panels
+                  href: devices/devices-release-notes.md&tabs=panels#tabpanel_1_panel
                 - name: Management apps
                   href: devices/certified-device-apps.md
-                - name: What's new in Microsoft Teams devices
-                  href: devices/new-in-microsoft-teams-devices.md
             - name: Troubleshooting and known issues
               items:
                 - name: Teams Rooms on Windows
@@ -1658,7 +1656,7 @@ items:
             - name: Overview of Teams phones
               href: phones/phones-for-teams.md
             - name: What's new in Teams phones
-              href: devices/devices-release-notes.md#tabpanel_2_phones
+              href: devices/devices-release-notes.md&tabs=phones#tabpanel_2_phones
             - name: Features
               items:
                 - name: Set the Teams phone interface

@@ -128,7 +128,7 @@ To add a mobile system OS scanner:
 
 ### June 2023
 
-#### Teams app version: 1449/1.0.97.2023060102
+**Applies to:** *Teams app version: 1449/1.0.97.2023060102*
 
 - To align with Microsoft Teams Rooms on Windows calendar experience, with this update on panels, if a reservation is scheduled to begin within 10 minutes or less, you no longer can book the room in an ad-hoc fashion on the device.
 - When an admin changes the panel display name in the Microsoft Admin Center, it updates without an admin needing to log in again on the device.
@@ -136,7 +136,7 @@ To add a mobile system OS scanner:
 
 ### April 2023
 
-#### Teams app Version: 1449/1.0.97.2023041403
+#**Applies to:** *Teams app Version: 1449/1.0.97.2023041403*
 
 - IT admins can use Teams panels with their Government Community Cloud High (GCC-H) accounts.
 - Fix for settings syncing with the Teams Admin Center and reset issues.
@@ -144,13 +144,13 @@ To add a mobile system OS scanner:
 
 ### December 2022
 
-#### Teams app version - 1449/1.0.97.2022748302
+**Applies to:** *Teams app version - 1449/1.0.97.2022748302*
 
 - Bug fixes.
 
 ### December 2022
 
-#### Teams app version - 1449/1.0.97.2022747803
+**Applies to:** *Teams app version - 1449/1.0.97.2022747803*
 
 - After an admin pairs a panel to a supported occupancy sensor through Device settings, you can see whether a room is occupied and auto check in when check in is enabled by your admin. If the room is available and someone's in the room, a message is displayed that the room is occupied. If the room is reserved but no one is in the room, you see a message that the room is unoccupied.
 - Yealink's Room Sensor and Crestron CEN-ODT-C-POE are supported. For more information, check check with your OEM.
@@ -159,14 +159,14 @@ To add a mobile system OS scanner:
 
 ### September 2022
 
-#### Teams app version - 1449/1.0.97.2022739908
+**Applies to:** *Teams app version - 1449/1.0.97.2022739908*
 
 - Improvements and bug fixes.
 - Support for Microsoft Teams Rooms Pro Licenses.
 
 ### July 2022
 
-#### Teams App version: 1449/1.0.97.2022739901
+**Applies to:** *Teams App version: 1449/1.0.97.2022739901*
 
 - If you finish a meeting early, you can check out of the meeting room. This makes it available so others can reserve and use the space. Select **Manage** > **Check out**. If you need a few more minutes, if the room is free after your scheduled meeting time, you can extend your reservation for up to 15 minutes. Select **Manage** > **Extend room reservation**.
 - This feature is turned off by default and requires the admin to enable the setting in the Teams admin settings. The setting to control this feature in the Microsoft Teams Admin Center will be available at a later time.
@@ -175,7 +175,7 @@ To add a mobile system OS scanner:
 
 ### April 2022
 
-#### Teams App version: 1449/1.0.97.2022733702
+**Applies to:** *Teams App version: 1449/1.0.97.2022733702*
 
 - New warning when a room reaches max capacity. This requires pairing the panel to a Teams rooms device (currently supported on Teams Rooms on Android with app version 1449/1.0.96.2022011305 or later) that supports people counting. This can be enabled in admin settings. To learn more, see How to use Microsoft Teams panels.
 - New calendar look to help you quickly see a room's availability.
@@ -183,7 +183,7 @@ To add a mobile system OS scanner:
 
 ### February 2022
 
-#### Teams app version: 1449/1.0.97.2022730007
+**Applies to:** *Teams app version: 1449/1.0.97.2022730007*
 
 - To help ensure your meeting spaces are getting maximum use, we're enabling a way to check in to claim a room from a Teams panel. Users can check into the room by tapping the "check in" button on the panel. If no one checks into the room, it's released back to the room inventory for others to reserve and use.
 - When paired with a Microsoft Teams Rooms on Android, joining a meeting from the Teams Room is considered as checking in and the room won't be released (it requires the Teams Room on Android app version 1449/1.0.96.2022011305 or above). Support with Teams Rooms on Windows will be available at a later time.
@@ -195,7 +195,7 @@ To add a mobile system OS scanner:
 
 ### August 2021
 
-#### App version: 1449/1.0.97.2021070601
+**Applies to:** *App version: 1449/1.0.97.2021070601*
 
 - Teams Extensibility and Line of Business (LOB) app support to tailor the Teams panels experience.
 - IT Admins can do remote provisioning and remote sign in of Teams panels from the Teams Admin Center.
@@ -205,7 +205,7 @@ To add a mobile system OS scanner:
 
 ### January 8, 2024
 
-#### Teams app version: 1449/1.0.94.2024122303 (Poly, Yealink, AudioCodes)
+**Applies to:** *Teams app version: 1449/1.0.94.2024122303 (Poly, Yealink, AudioCodes)*
 
 ##### Queues app
 
@@ -224,37 +224,37 @@ The multiple-banners feature improves the user experience by managing notificati
 
 ### December 18, 2024
 
-#### Teams app version: 1449/1.0.94.2024121004 (Poly, Yealink, AudioCodes)
+**Applies to:** *Teams app version: 1449/1.0.94.2024121004 (Poly, Yealink, AudioCodes)*
 
 - Bug fixes related to transfer flow, among other issues.
 
 ### December 18, 2024
 
-#### Teams app version: 1449/1.0.94.2024063004 (Yealink T5x/CP960, AudioCodes C488HD/450HD, Yealink MP52/VP59, Crestron UC-P8/ UC-P8-C/ UC-P10/ UC-P10-C/ UC-2)
+**Applies to:** *Teams app version: 1449/1.0.94.2024063004 (Yealink T5x/CP960, AudioCodes C488HD/450HD, Yealink MP52/VP59, Crestron UC-P8/ UC-P8-C/ UC-P10/ UC-P10-C/ UC-2)*
 
 - Banner notifications to inform users about their device support coverage status.
 
 ### December 10, 2024
 
-#### Teams app version: 1449/1.0.94.2024112802 (Poly, Yealink, AudioCodes)
+**Applies to:** *Teams app version: 1449/1.0.94.2024112802 (Poly, Yealink, AudioCodes)*
 
 - Bug fixes on lock screen, password expiration, LED issues on nontouch devices, among others, are included.
 
 ### November 25, 2024
 
-#### Teams app version: 1449/1.0.94.2024062906 (Yealink - T5x, CP960, MP52, VP59; AudioCodes - C488HD/450HD, Crestron -UC-P8x, UC-P10x, UC-2)
+**Applies to:** *Teams app version: 1449/1.0.94.2024062906 (Yealink - T5x, CP960, MP52, VP59; AudioCodes - C488HD/450HD, Crestron -UC-P8x, UC-P10x, UC-2)*
 
 - Bug fixes on several minor issues reported by customers.
 
 ### November 13, 2024
 
-#### Teams app version: 1449/1.0.94.2024103101 (Touch phones - AudioCodes, Poly, Yealink)
+**Applies to:** *Teams app version: 1449/1.0.94.2024103101 (Touch phones - AudioCodes, Poly, Yealink)*
 
 - Bug fixes and improvements to line keys, calls, and Enhanced 911 calls, among others.
 
 ### October 29, 2024
 
-#### Teams app version: 1449/1.0.94.2024101709 (Yealink, Poly, AudioCodes)
+**Applies to:** *Teams app version: 1449/1.0.94.2024101709 (Yealink, Poly, AudioCodes)*
 
 Today, on Teams Phone devices, you're able to configure custom contacts and speed dial on-the-line key buttons on nontouch phones and sidecars phone devices certified for Microsoft Teams. You can quickly access frequently dialed numbers and contacts, using one-touch dialing, as well as easy management of contact lists on both line keys and sidecars.
 
@@ -265,13 +265,13 @@ Today, on Teams Phone devices, you're able to configure custom contacts and spee
 
 ### October 1, 2024
 
-#### Teams app version: 1449/1.0.94.2024092304 (Yealink, Poly, AudioCodes)
+**Applies to:** *Teams app version: 1449/1.0.94.2024092304 (Yealink, Poly, AudioCodes)*
 
 - Bug fixes and improvements on contacts sync, presence, and transfer flows, among others.
 
 ### September 5, 2024
 
-#### Teams app version: 1449/1.0.94.2024082806 (Yealink, Poly, AudioCodes)
+**Applies to:** *Teams app version: 1449/1.0.94.2024082806 (Yealink, Poly, AudioCodes)*
 
 - Enhancements in the call parking and retrieval feature to make both faster.
 - Lightweight calling experience on nontouch phones.
@@ -279,13 +279,13 @@ Today, on Teams Phone devices, you're able to configure custom contacts and spee
 
 ### September 3, 2024
 
-#### Teams app version: 1449/1.0.94.2024062811 (Yealink T5x, CP960 & Poly Trio 8800/8500)
+**Applies to:** *Teams app version: 1449/1.0.94.2024062811 (Yealink T5x, CP960 & Poly Trio 8800/8500)*
 
 - Bug fixes and improvements for end-of-certification and end-of-best-effort support phones.
 
 ### August 27, 2024
 
-#### Teams app version: 1449/1.0.94.2024062702 (Yealink T5x, CP960 & Poly Trio 8800/8500)
+**Applies to:** *Teams app version: 1449/1.0.94.2024062702 (Yealink T5x, CP960 & Poly Trio 8800/8500)*
 
 - To support incoming call notifications and voicemail, migrate end-of-certification and end-of-best-effort support phones from the discontinued call-notification service to the new notification service.
 
@@ -328,13 +328,13 @@ This update also includes these features, which were already available for certi
 
 ### August 16, 2024
 
-#### Teams app version: 1449/1.0.94.2024080808
+**Applies to:** *Teams app version: 1449/1.0.94.2024080808*
 
 - Bug fixes and improvements on transfer scenarios, contacts, among others, are included.
 
 ### July 16, 2024
 
-#### Teams app version -1449/1.0.94.2024071104
+**Applies to:** *Teams app version -1449/1.0.94.2024071104*
 
 - This app is available for government clouds (GCCH and DoD).
 - **Updates on user experiences** We changed the default home-screen experience for the meeting sign-in mode. It's now like the personal sign-in mode experience. Additionally, updates to remove the dial pad on the Calls app for touch phones with physical buttons.
@@ -350,7 +350,7 @@ This update also includes these features, which were already available for certi
 
 ### July 5, 2024
 
-#### Teams app version: 1449/1.0.94.2024062301 (AUDC: C448HD, C450HD. Yealink: MP52, VP59. Crestron: UC-2, UC-P8, UC-P10, UC-P8-C, and UC-P10-C)
+**Applies to:** *Teams app version: 1449/1.0.94.2024062301 (AUDC: C448HD, C450HD. Yealink: MP52, VP59. Crestron: UC-2, UC-P8, UC-P10, UC-P8-C, and UC-P10-C)*
 
 - Intermittent issue on meeting join while using Better Together is fixed for touch phones
 - Intermittent issue on a device getting locked out is fixed for nontouch phones.
@@ -360,27 +360,27 @@ This update also includes these features, which were already available for certi
 
 ### July 3, 2024
 
-#### Teams app version - 1449/1.0.94.2024062010 (touch phones: AudioCodes, Poly, Yealink. For nontouch phones: AudioCodes C435, Poly CCX350)
+**Applies to:** *Teams app version - 1449/1.0.94.2024062010 (touch phones: AudioCodes, Poly, Yealink. For nontouch phones: AudioCodes C435, Poly CCX350)*
 
 - Bug fixes and improvements on the enforce pin-lock feature.
 - This app is also available for customers in government clouds (GCCH and DoD).
 
 ### June 18, 2024
 
-#### Teams app version - 1449/1.0.94.2024061301
+**Applies to:** *Teams app version - 1449/1.0.94.2024061301*
 
 - Minor updates in the people and calls apps.
 - Bug fixes and improvements.
 
 ### June 4, 2024
 
-#### Teams App version: 1449/1.0.94.2024051306 (Touch phones - AudioCodes, Poly, Yealink)
+**Applies to:** *Teams App version: 1449/1.0.94.2024051306 (Touch phones - AudioCodes, Poly, Yealink)*
 
 - Bug fixes for crash issues.
 
 ### May 21, 2024
 
-#### Teams App version: 1449/1.0.94.2024051306 (Nontouch phones - Poly CCX350, AudioCodes C435HD)
+**Applies to:** *Teams App version: 1449/1.0.94.2024051306 (Nontouch phones - Poly CCX350, AudioCodes C435HD)*
 
 - You can park and unpark a call.
 - You can turn on the Advanced Calling and Auto Restart settings.
@@ -398,7 +398,7 @@ This update also includes these features, which were already available for certi
 
 ### May 5, 2024
 
-#### Teams app version: 1449/1.0.94.2024042905 (Touch Phones - AudioCodes, Poly, Yealink)
+**Applies to:** *Teams app version: 1449/1.0.94.2024042905 (Touch Phones - AudioCodes, Poly, Yealink)*
 
 - Send incoming calls to voicemail from the incoming call screen.
 
@@ -436,7 +436,7 @@ This update also includes these features, which were already available for certi
 
 ### March 15, 2024
 
-#### Teams App version: 1449/1.0.94.2024031102 (Yealink, Poly, AudioCodes)
+**Applies to:** *Teams App version: 1449/1.0.94.2024031102 (Yealink, Poly, AudioCodes)*
 
 > [!NOTE]
 > For AudioCodes phones, this app update applies to firmware version 1.19.705.

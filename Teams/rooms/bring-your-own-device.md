@@ -26,11 +26,11 @@ f1keywords:
 
 Bring Your Own Device rooms are identified as rooms with no Microsoft Teams Rooms. As an admin, you'll be able to:
 
-1. View the inventory of BYOD rooms and peripherals in your tenant
+1. View the inventory of BYOD rooms and peripherals in your tenant.
 
 1. Associate BYOD rooms and peripherals together, or view auto-associated rooms and peripherals. *Users who plug-in room associated peripherals will have [BYOD end user experiences automatically activated](https://support.microsoft.com/en-us/office/use-shared-display-mode-in-meeting-rooms-a59c6886-9028-44da-a3cc-5563be40a214) for the best meeting room experience.*
 
-1. View usage and quality reports for BYOD rooms
+1. View usage and quality reports for BYOD rooms.
 
 > [!NOTE]
 > To have access to the portal, you'll need at least one pro, premium, or Teams Shared Device (TSD) license.
@@ -126,7 +126,7 @@ Select the device to either view more details about peripherals in that group, o
 When you select a specific peripheral group associated with a room, a new page opens up displaying the following two tabs:
 
 - **Configuration**: This page displays information about the devices in the group including device serial number, product and vendor ID.
-Under the device information, the button "**A****dd room or desk**" can be used to associate the peripheral to a BYOD room or bookable desk.
+Under the device information, the button "**Add room or desk**" can be used to associate the peripheral to a BYOD room or bookable desk.
 Once the devices get added to the specific room, the room's information will also be displayed such as the room's name, capacity, location and license type.
 - **Usage details**: This page shows the room's usage report data for the selected period and is accessible with a Teams Shared Device license assigned to the room resource account.
 
@@ -216,18 +216,36 @@ To see the call utilization view for each room, select the specific Bring Your O
 
 ### Turning off automatic discovery & usage data collection in the Teams client
 
-The Teams BYOD solution uses peripheral data crowdsourced from the Teams client application running on user's computers to discover peripherals as well as understand when those peripherals (and the rooms they're associated to) are used. No personally identifiable data is collected, but should you feel that this data collection is inappropriate for certain users or groups in your organization, you may use the following PowerShell commands to enable or disable BYOD data collection via a Teams policy setting, as well as get the current policy setting status, create a new policy, and remove a policy.
+The Teams BYOD solution uses peripheral data crowdsourced from the Teams client application running on user's computers to discover peripherals as well as understand when those peripherals (and the rooms they're associated to) are used. No personally identifiable data is collected, but should you feel that this data collection is inappropriate for certain users or groups in your organization, you may use the following PowerShell commands to configure this policy.
 
-> [!WARNING]
-> Disabling this policy setting for certain users will cause BYOD and desk usage information to cease flowing to the service. The Teams BYOD and Desk solution requires peripheral data sent from users to calculate usage reports for peripherals, BYOD rooms, and desks.
+First, ensure that your TPM version is > 6.5.0 by running the following commands: 
+
 
 ```powershell
+Import-Module MicrosoftTeams
+Get-Module -Name MicrosoftTeams
+```
+
+If your version is older than 6.5.0, [follow the instructions here](/microsoftteams/teams-powershell-install) to update.
+
+Use the following commands to create, set, or remove a setting in `CsTeamsBYODAndDesksPolicy`. The following example configures the `DeviceDataCollection` setting.
+
+
+```powershell
+Import-Module MicrosoftTeams
 Get-CsTeamsBYODAndDesksPolicy
 New-CsTeamsBYODAndDesksPolicy -Identity "Test"
 Set-CsTeamsBYODAndDesksPolicy -Identity "Test" -DeviceDataCollection Disabled
 Set-CsTeamsBYODAndDesksPolicy -Identity "Test" -DeviceDataCollection Enabled
 Remove-CsTeamsBYODAndDesksPolicy -Identity "Test"
 ```
+
+#### Device Data Collection
+
+You can enable or disable BYOD data collection via a Teams policy setting. The setting name is `DeviceDataCollection`.
+
+> [!WARNING]
+> Disabling this setting for certain users will cause BYOD and desk usage information to cease flowing to the service. The Teams BYOD and Desk solution requires peripheral data sent from users to automatically activate [BYOD end user experiences](https://support.microsoft.com/en-us/office/use-shared-display-mode-in-meeting-rooms-a59c6886-9028-44da-a3cc-5563be40a214) and generate reports for BYOD peripherals, BYOD rooms, and Bookable Desks.
 
 ### Configuring Cloud Data
 

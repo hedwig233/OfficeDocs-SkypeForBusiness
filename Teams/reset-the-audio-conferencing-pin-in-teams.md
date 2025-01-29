@@ -47,12 +47,12 @@ Using the Microsoft Teams admin center:
 1. Have your user go to [https://dialin.teams.microsoft.com/usp](https://dialin.teams.microsoft.com/usp).
 2. Select **Reset PIN**.
 
-> [!NOTE]
-> For GCCHs go to: [https://dialin.cpc.gov.teams.microsoft.us/usp](https://dialin.cpc.gov.teams.microsoft.us/usp).
-> For DoD go to: [https://dialin.cpc.dod.teams.microsoft.us/usp](https://dialin.cpc.dod.teams.microsoft.us/usp).
+   > [!NOTE]
+   > For GCCHs go to: [https://dialin.cpc.gov.teams.microsoft.us/usp](https://dialin.cpc.gov.teams.microsoft.us/usp).
+   > For DoD go to: [https://dialin.cpc.dod.teams.microsoft.us/usp](https://dialin.cpc.dod.teams.microsoft.us/usp).
 
-> [!NOTE]
-> A PIN reset email isn't sent to the user if they use this method.
+   > [!NOTE]
+   > A PIN reset email isn't sent to the user if they use this method.
 
 ## What else should you know about PINs?
 

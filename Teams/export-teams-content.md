@@ -246,11 +246,11 @@ No model declaration enables access to APIs with limited usage per each requesti
 
    - The average size of the recording content itself is about 350 MB on disk, based on averages we're seeing for meetings that are in range of 30 mins – 60 mins.
 
-   - Results aren't guaranteed to be sorted by `createdDateTime`. However, when multiple recordings are present for a single meeting, they'll share the same `meetingId` value. Additionally, the entries for the multiple recordings are correctly sequenced for the meeting in question.
+   - Results aren't guaranteed to be sorted by `createdDateTime`. However, when multiple recordings are present for a single meeting, they share the same `meetingId` value. Additionally, the entries for the multiple recordings are correctly sequenced for the meeting in question.
 
    - Results are guaranteed to be present only after the associated meeting recordings are available. In other words, the caller requires no additional polling for availability.
 
-   - Paginating through the results will be supported as per current patterns in the Teams Export API. Pagination will be supported via the presence of `@oData.nextLink` property in the response. The nextLink property contains a `skipToken` value, as indicated below. If no `skipToken` is present, it means that there are no more results to retrieve in the current batch:
+   - Paginating through the results is supported as per current patterns in the Teams Export API. Pagination is supported via the presence of the `@oData.nextLink` property in the response. The nextLink property contains a `skipToken` value, as indicated below. If no `skipToken` is present, it means that there are no more results to retrieve in the current batch:
 
      |Request                               |Response      |@nextLink        |Comments                                      |
      |--------------------------------------|--------------|-----------------|----------------------------------------------|
@@ -258,7 +258,7 @@ No model declaration enables access to APIs with limited usage per each requesti
      |`/getAllRecordings?skipToken=ABC`     |Count: 10     |`?skipToken=DEF` |`SkipToken` returned, request to get next page|
      |`/getAllRecordings?skipToken=DEF`     |Count: 7      |                 |No `skipToken`, no more data available        |
 
-   - `$top` parameter will also be supported as per current patterns in the Teams Export API.
+   - `$top` parameter is also supported as per current patterns in the Teams Export API.
 
    - `DeltaToken` to enable change tracking and syncing scenarios is supported. For an overview and examples of existing delta queries, see [Use delta query to track changes in Microsoft Graph data.](/graph/delta-query-overview)
 
@@ -310,15 +310,15 @@ No model declaration enables access to APIs with limited usage per each requesti
 
    - `<transcriptContentUrl>` value indicates URL to the transcript content.
 
-   - Transcript content, by default, will be in VTT format. But, using an Accept header value of `application/vnd.openxmlformats-officedocument.wordprocessingml.document`, DOCX format can also be obtained.
+   - Transcript content, by default, is in VTT format. But, using an Accept header value of `application/vnd.openxmlformats-officedocument.wordprocessingml.document`, DOCX format can also be obtained.
 
    - The average size of the transcript content itself in JSON/VTT format is about 300 KB, based on averages we're seeing for meetings that are in range of 30 mins – 60 mins.
 
-   - Results aren't guaranteed to be sorted by `createdDateTime`. However, when multiple recordings are present for a single meeting, they will share the same `meetingId` value. Additionally, the entries for the multiple recordings will be correctly sequenced for the meeting in question.
+   - Results aren't guaranteed to be sorted by `createdDateTime`. However, when multiple recordings are present for a single meeting, they share the same `meetingId` value. Additionally, the entries for the multiple recordings is correctly sequenced for the meeting in question.
 
    - Results are guaranteed to be present only after the associated meeting recordings are available. In other words, the caller requires no additional polling for availability.
 
-   - Paginating through the results will be supported as per current patterns in the Teams Export API. Pagination will be supported via the presence of `@oData.nextLink` property in the response. The `nextLink` property will contain a `skipToken` value, as indicated below. If no `skipToken` is present, it means that there are no more results to retrieve in the current batch:
+   - Paginating through the results are supported as per current patterns in the Teams Export API. Pagination is supported via the presence of `@oData.nextLink` property in the response. The `nextLink` property contains a `skipToken` value, as indicated below. If no `skipToken` is present, it means that there are no more results to retrieve in the current batch:
    
      |Request                               |Response      |@nextLink        |Comments                                      |
      |--------------------------------------|--------------|-----------------|----------------------------------------------|
@@ -326,7 +326,7 @@ No model declaration enables access to APIs with limited usage per each requesti
      |`/getAllTranscripts?skipToken=ABC`     |Count: 10     |`?skipToken=DEF` |`SkipToken` returned, request to get next page|
      |`/getAllTranscripts?skipToken=DEF`     |Count: 7      |                 |No `skipToken`, no more data available        |
 
-   - `$top` parameter will also be supported as per current patterns in the Teams Export API. 
+   - `$top` parameter is also supported as per current patterns in the Teams Export API. 
 
    - `DeltaToken` to enable change tracking and syncing scenarios is supported. For an overview and examples of existing delta queries, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
    
@@ -354,7 +354,7 @@ Export API has filter parameters that help optimize the messages returned for a 
    
  - system event messages (control messages).
    
-These parameters are part of the request’s `$filter`. If none of these parameters are present in the request, the messages from all the users present in the specified user chats will be returned.
+These parameters are part of the request’s `$filter`. If none of these parameters are present in the request, the messages from all the users present in the specified user chats is returned.
 
 The filtering scenarios that are supported are as follows: 
 
@@ -420,7 +420,7 @@ If [your tenant is setup with Teams Retention Policy](/purview/create-retention-
 
 ## Microsoft 365 Copilot Interactions & Microsoft 365 Chat (Preview)
 
-The new Copilot Activity Export API will allow you to export Copilot interactions data which includes the user prompt to Copilot and the Copilot response back to the user. This API will capture the user intent and Copilot accessed resources and the response back to the user across Microsoft 365 Copilot apps such as Teams, Word and Outlook. 
+The new Copilot Activity Export API allows you to export Copilot interactions data which includes the user prompt to Copilot and the Copilot response back to the user. This API captures the user intent and Copilot accessed resources and the response back to the user across Microsoft 365 Copilot apps such as Teams, Word and Outlook. 
 
 ## How to access Copilot Activity Export APIs (Preview)
 

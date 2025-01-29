@@ -258,7 +258,7 @@ The multiple-banners feature improves the user experience by managing notificati
 
 Today, on Teams Phone devices, you're able to configure custom contacts and speed dial on-the-line key buttons on nontouch phones and sidecars phone devices certified for Microsoft Teams. You can quickly access frequently dialed numbers and contacts, using one-touch dialing, as well as easy management of contact lists on both line keys and sidecars.
 
-:::image type="content" source="media/new-in-microsoft-teams-devices/assign-phone-lines-teams-desk-phones.png" alt-text="Screenshot showing how to assign phone lines and Teams desk phones.":::
+:::image type="content" source="media/new-in-microsoft-teams-devices/nontouch-linekeys-empty.png" alt-text="Screenshot showing how to assign phone lines and Teams desk phones.":::
 
 - Bug fixes and improvements on live captions.
 - Privacy link updates for recordings and transcription.

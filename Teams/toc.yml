@@ -1872,6 +1872,8 @@ items:
               href: supervise-chats-edu.md
             - name: Set up Assignments in Teams
               href: expand-teams-across-your-org/assignments-in-teams.md
+            - name: Set up Classwork in Teams
+              href: expand-teams-across-your-org/setup-classwork.md
             - name: Set up Parent Connection in Teams
               href: edu-parents-app.md
         - name: LMS and LTI integrations

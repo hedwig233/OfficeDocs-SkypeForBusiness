@@ -3,7 +3,7 @@ title: "Teams Phone System Direct Routing: SIP protocol"
 author: sfrancis206
 ms.author: scottfrancis
 manager: pamgreen
-ms.date: 01/24/2025
+ms.date: 01/29/2025
 ms.topic: article
 ms.service: msteams
 audience: admin
@@ -40,14 +40,14 @@ Before an incoming or outbound call can be processed, OPTIONS messages are excha
 
 > [!NOTE]
 > The SIP headers do not contain userinfo in the SIP URI in use. As per [RFC 3261, section 19.1.1](https://tools.ietf.org/html/rfc3261#section-19.1.1), the userinfo part of a URI is optional and MAY be absent when the destination host doesn't have a notion of users or when the host itself is the resource being identified. If the @ sign is present in a SIP URI, the user field MUST NOT be empty.
-> SIPS URI should not be used with Direct Routing because it's not supported.
-> Check your Session Border Controller configuration and make sure that you are not using "Replaces" headers in SIP requests. Direct Routing  will reject SIP requests that have Replaces headers defined.
+> SIP URI with Direct Routing isn't supported.
+> Check your Session Border Controller configuration and make sure that you are not using "Replaces" headers in SIP requests. Direct Routing rejects SIP requests that have Replaces headers defined.
 
 On an incoming call, the SIP proxy needs to find the tenant to which the call is destined and find the specific user within this tenant. The tenant administrator might configure non-DID numbers, for example +1001, in multiple tenants. Therefore, it's important to find the specific tenant on which to perform the number lookup because the non-DID numbers might be the same in multiple Microsoft 365 or Office 365 organizations.  
 
 This section describes how the SIP proxy finds the tenant and the user, and performs authentication of the SBC on the incoming connection.
 
-The following is an example of the SIP Invite message on an incoming call:
+An example of the SIP Invite message in an incoming call follows:
 
 | Parameter name | Example of the value | 
 | :---------------------  |:---------------------- |
@@ -61,15 +61,15 @@ The following is an example of the SIP Invite message on an incoming call:
 
 On receiving the invite, the SIP proxy performs the following steps:
 
-1. Check the certificate. On the initial connection, the Direct Routing service takes the FQDN name presented in the Contact header and matches it to the Common Name or Subject Alternative name of the presented certificate. The SBC name must match one of the following options:
+1. Check the certificate. On the initial connection, the Direct Routing service takes the FQDN name presented in the Contact header and matches it to the Common Name or Subject Alternative Name of the presented certificate. The SBC name must match one of the following options:
 
-   - Option 1. The full FQDN name presented in the Contact header must match the Common Name/Subject Alternative name of the presented certificate.  
+   - Option 1. The full FQDN name presented in the Contact header must match the Common Name/Subject Alternative Name of the presented certificate.  
 
    - Option 2. The domain portion of the FQDN name presented in the Contact header (for example adatum.biz of the FQDN name sbc1.adatum.biz) must match the wildcard value in Common Name/Subject Alternative Name (for example *.adatum.biz).
 
 2. Try to find a tenant using the full FQDN name presented in the Contact header.  
 
-   Check if the FQDN name from the Contact header (sbc1.adatum.biz) is registered as a DNS name in any Microsoft 365 or Office 365 organization. If found, the lookup of the user is performed in the tenant that has the SBC FQDN registered as a Domain name. If not found, Step 3 applies.   
+   Check if the FQDN name from the Contact header (sbc1.adatum.biz) is registered as a DNS name in any Microsoft 365 or Office 365 organization. If found, the lookup of the user is performed in the tenant that has the SBC FQDN registered as a Domain name. If not found, Step 3 applies.
 
 3. Step 3 only applies if Step 2 failed. 
 
@@ -95,13 +95,13 @@ As per [RFC 3261, section 11.1](https://tools.ietf.org/html/rfc3261#section-11.1
 
 Syntax: Contact:  <sip:FQDN of the SBC;transport=tls>
 
-This name (FQDN) must also be in the Common Name or Subject Alternative name field(s) of the presented certificate. Microsoft supports using wildcard values of the name(s) in the Common Name or Subject Alternative Name fields of the certificate.   
+This name (FQDN) must also be in the Common Name or Subject Alternative Name fields of the presented certificate. Microsoft supports using wildcard values of the names in the Common Name or Subject Alternative Name fields of the certificate.
 
 The support for wildcards is described in [RFC 2818, section 3.1](https://tools.ietf.org/html/rfc2818#section-3.1). Specifically:
 
 *"Names may contain the wildcard character \*, which is considered to match any single domain name component or component fragment. For example, \*.a.com matches foo.a.com but not bar.foo.a.com. f\*.com matches foo.com but not bar.com."*
 
-If more than one value in the Contact header presented in a SIP message is sent by the SBC, only the FQDN portion of the first value of the Contact header is used.
+If the SBC sends more than one value in the Contact header presented in a SIP message, only the FQDN portion of the first value of the Contact header is used.
 
 For Direct Routing, it's important that FQDN is used to populate SIP URI instead of IP. An incoming INVITE or OPTIONS message to SIP Proxy with Contact header where hostname is represented by IP and not FQDN, the connection is refused with 403 Forbidden.
 
@@ -140,7 +140,7 @@ To calculate the next hop, the SIP proxy uses:
 
 - Priority 1. Top-level Record-Route. If the top-level Record-Route contains the FQDN name, the FQDN name is used to make the outbound in-dialog connection.
 
-- Priority 2. Contact header. If Record-Route doesn't exist, the SIP proxy will look up the value of the Contact header to make the outbound connection. (This is the recommended configuration.)
+- Priority 2. Contact header. If Record-Route doesn't exist, the SIP proxy looks up the value of the Contact header to make the outbound connection. Contact header is the recommended configuration.
 
 If both Contact and Record-Route are used, the SBC administrator must keep their values identical, which causes administrative overhead. 
 
@@ -185,7 +185,7 @@ A Teams user might have multiple endpoints at the same time. For example, Teams 
 
 2.  Upon notification, each endpoint starts ringing and sending "Call progress” messages to the SIP proxy. Because a Teams user can have multiple endpoints, the SIP proxy might receive multiple Call Progress messages.
 
-3.  For every Call Progress message received from the clients, the SIP proxy converts the Call Progress message to the SIP message "SIP SIP/2.0 180 Ringing". The interval for sending such messages is defined by the interval of the receiving messages from the Call Controller. In the following diagram, there are two 180 messages generated by the SIP proxy. These messages come from the two Teams endpoints of the user. The clients each have a unique Tag ID.  Every message coming from a different endpoint is a separate session (the parameter “tag” in the “To” field is different). But an endpoint might not generate message 180 and send message 183 right away as shown in the following diagram.
+3.  For every Call Progress message received from the clients, the SIP proxy converts the Call Progress message to the SIP message "SIP SIP/2.0 180 Ringing". The interval for sending such messages adheres to the interval of the receiving messages from the Call Controller. In the following diagram, there are two 180 messages generated by the SIP proxy. These messages come from the two Teams endpoints of the user. The clients each have a unique Tag ID.  Every message coming from a different endpoint is a separate session (the parameter “tag” in the “To” field is different). But an endpoint might not generate message 180 and send message 183 right away as shown in the following diagram.
 
 4.  Once an endpoint generates a Media Answer message with the IP addresses of endpoint’s media candidates, the SIP proxy converts the message received to a "SIP 183 Session Progress" message with the SDP from the client replaced by the SDP from the Media Processor. In the following diagram, the endpoint from Fork 2 answered the call. If the trunk is non-bypassed, the 183 SIP message is generated only once (either Ring Bot or Client End Point). The 183 might come on an existing fork or start a new one.
 
@@ -200,7 +200,7 @@ A Teams user might have multiple endpoints at the same time. For example, Teams 
 
 2.  Upon notification, each endpoint starts ringing and sending the message "Call progress” to the SIP proxy. Because a Teams user can have multiple end points, the SIP proxy might receive multiple Call Progress messages.
 
-3.  For every Call Progress message received from the clients, the SIP proxy converts the Call Progress message to the SIP message "SIP SIP/2.0 180 Trying".  The interval for sending the messages is defined by the interval of receiving the messages from the Call Controller. In the following diagram, there are two 180 messages generated by the SIP proxy, meaning that user logged into three Teams clients and each client send the call progress. Every message is a separate session (parameter “tag” in “To” field is different)
+3.  For every Call Progress message received from the clients, the SIP proxy converts the Call Progress message to the SIP message "SIP SIP/2.0 180 Trying".  The interval for sending the messages adheres to the interval of receiving the messages from the Call Controller. In the following diagram, there are two 180 messages generated by the SIP proxy, meaning that user logged into three Teams clients and each client send the call progress. Every message is a separate session (parameter “tag” in “To” field is different)
 
 4.  A Call Acceptance message is sent with the final candidates of the endpoint that accepted the call. The Call Acceptance message is converted to SIP message 200. 
 
@@ -225,7 +225,7 @@ The SBC must support Invite with Replaces.
 
 ## Size of SDP considerations
 
-The Direct Routing interface might send a SIP message exceeding 1,500 bytes. The size of SDP primarily causes this. However, if there's a UDP trunk behind the SBC, it might reject the message if it's forwarded from the Microsoft SIP proxy to the trunk unmodified. Microsoft recommends stripping some values in SDP on the SBC when sending the message to the UDP trunks. For example, the ICE candidates or unused codecs can be removed.
+The Direct Routing interface might send a SIP message exceeding 1,500 bytes. The SDP content primarily causes the excess size. However, if there's a UDP trunk behind the SBC, it might reject the message if it's forwarded from the Microsoft SIP proxy to the trunk unmodified. Microsoft recommends stripping some values in SDP on the SBC when sending the message to the UDP trunks. For example, the ICE candidates or unused codecs can be removed.
 
 ## Call transfer
 

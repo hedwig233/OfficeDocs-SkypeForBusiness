@@ -94,6 +94,55 @@ Below the top metrics, there's a table that provides a granular breakdown of eac
 |Unplanned reservations|The percentage of reservations that weren't planned in advance and were autobooked.|
 |Reservation occupancy|The percentage of time users spent plugged into bookable desks during reservations. Lower values indicate more reservations were spent with less time plugged in.|
 
+## Settings
+
+### Turning off automatic discovery and usage data collection in the Teams client 
+
+Bookable desks in Microsoft Teams use peripheral data crowdsourced from the Teams desktop client running on the users' laptops to discover peripherals as well as understand when those desk pools they are associated to are used. No personally identifiable data is collected, but should you feel this data collection is inappropriate for your tenant or a group of users in your tenant, you may use the following PowerShell cmdlets to configure the policy appropriately. Please note that for government clouds, this policy is off by default. 
+
+First, ensure that your Microsoft Teams module is on version 6.5.0 or higher. To confirm the version, please run the following:
+
+
+```powershell
+Import-Module MicrosoftTeams
+Connect-MicrosoftTeams
+Get-Module -Name MicrosoftTeams
+```
+
+If you don't have the Microsoft Teams module installed, please run the following and then re-run the above command to check the version:
+
+
+```powershell
+Install-Module -Name MicrosoftTeams -Force -AllowClobber
+Import-Module MicrosoftTeams
+```
+
+If your version is lower than 6.5.0, please follow [these instructions](/microsoftteams/teams-powershell-install) to update it. 
+
+Use the following commands to create, set, grant, or remove a configuration in the TeamsBYODAndDesks policy: 
+
+
+```powershell
+Import-Module MicrosoftTeams
+Connect-MicrosoftTeams
+Get-CSTeamsBYODAndDesksPolicy
+Set-CSTeamsBYODAndDesksPolicy -Identity Test -DeviceDataCollection Enabled
+Grant-CSTeamsBYODAndDesksPolicy -PolicyName Test -Identity testuser@test.onmicrosoft.com
+Grant-CSTeamsBYODAndDesksPolicy -Group 
+Grant-CSTeamsBYODAndDesksPolicy -Global -PolicyName Test
+Remove-CSTeamsBYODAndDesksPolicy -Identity Test
+```
+
+### Configuring cloud data
+
+**Delete device data**
+
+This setting enables admins to delete all device management data for a specific user. 
+
+**Inventory management permission**
+
+The inventory management permission in Teams Rooms Pro Management portal allows others to view and manage the inventory. You can create roles under **Settings** > **Roles** in Teams Room Pro Management portal and grant permissions to access inventory and associate peripherals to desks. 
+
 ## Frequently asked questions
 
 **Question: What are Desk Pools?**  

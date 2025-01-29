@@ -127,7 +127,7 @@ Service level measures the efficiency and responsiveness to incoming customer re
 You can set the threshold target to any value from 0 to 40 minutes (2,400 seconds). The value must be less than the value set for [Call timeout](#call-timeout-set-how-to-handle-call-timeouts). Setting the value to blank (empty) disables the service level metric calculation for the call queue.
 
 >[!NOTE]
-> Service level metrics are not currently available in historical reporting.
+> Service level metrics aren't currently available in historical reporting.
 
 ### Set the Call queue language
 
@@ -157,7 +157,7 @@ Teams provides default music to callers while they're *on hold in a queue*.
 - If you want to play a specific audio file, choose **Play an audio file** and upload an MP3, WAV, or WMA file. See [Supported audio file formats](plan-auto-attendant-call-queue.md#supported-audio-file-formats).
 
 > [!IMPORTANT]
-> You are responsible for independently clearing and securing all necessary rights and permissions to use any music or audio file with your Microsoft Teams service, which may include intellectual property and other rights in any music, sound effects, audio, brands, names, and other content in the audio file from all relevant rights holders, which may include artists, actors, performers, musicians, songwriters, composers, record labels, music publishers, unions, guilds, rights societies, collective management organizations and any other parties who own, control or license the music copyrights, sound effects, audio and other intellectual property rights.
+> You're responsible for independently clearing and securing all necessary rights and permissions to use any music or audio file with your Microsoft Teams service, which may include intellectual property and other rights in any music, sound effects, audio, brands, names, and other content in the audio file from all relevant rights holders, which may include artists, actors, performers, musicians, songwriters, composers, record labels, music publishers, unions, guilds, rights societies, collective management organizations, and any other parties who own, control, or license the music copyrights, sound effects, audio, and other intellectual property rights.
 
 After you select a greeting and on-hold music, select the **Next** button at the bottom of the **Add a Call queue** page.
 
@@ -234,7 +234,7 @@ Keep the following in mind:
 
 - Conference mode isn't supported for calls routed to the queue from a Direct Routing gateway enabled for Location Based Routing.
 - Conference mode is required if Teams users need to consult/transfer calls with Call queues.
-- Agents may hear the configured music on hold in queue for up to 2 seconds when first joining the call.
+- Agents may hear the configured music on hold in queue for up to two seconds when first joining the call.
 
 > [!IMPORTANT]
 > Transfer mode (when conference mode is disabled) is now in legacy mode. Support for transfer mode is scheduled to be removed by the end of June 2025.
@@ -403,7 +403,7 @@ Set-CsCallQueue -Identity <Call Queue GUID> -IsCallbackEnabled $true -CallbackRe
  "Tone1" -NumberOfCallsInQueueBeforeOfferingCallback 50 -CallbackOfferTextToSpeechPrompt "If you would like to have a callback when an agent becomes available, press 1" -CallbackEmailNotificationTarget <Team or DL GUID>
 ````
 
-##### Calls become eligible for callback when there are 2 times more calls than agents
+##### Calls become eligible for callback when there are two times more calls than agents
 
 To create a new call queue, use the New-CsCallQueue cmdlet, as shown in the following example:
 

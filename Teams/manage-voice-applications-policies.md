@@ -156,7 +156,7 @@ Notes
 Notes
 
 1. The authorized user requires a Teams Premium license to access this functionality.
-1. If the Call queue uses a distribution list, security group, Microsoft 365 group or a Microsoft Teams channel the owner of these can add or remove agents without a Teams Premium license or Queues app.
+1. If the Call queue uses a distribution list, security group, Microsoft 365 group, or a Microsoft Teams channel, the owner of these can add or remove agents without a Teams Premium license or Queues app.
 1. This option isn't currently available for authorized users.
 
 ### Call queues - Agent actions

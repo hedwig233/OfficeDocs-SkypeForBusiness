@@ -51,7 +51,7 @@ For example, if a user in Germany already has German toll and toll-free numbers 
 > If instead of updating the Global policy, you create a custom policy and applies it to some users, users see the settings defined in the custom policy in their meeting invites.
 
 For example, if a custom policy with **`-AllowTollFreeDialInFalse`** has no defined phone numbers, users under this policy don't have toll-free numbers. Meeting invites that these users with this policy create have the same toll numbers as before the policy.
-These phone numbers normally default to the user’s country/region, unless you make changes for individual users.
+These phone numbers normally default to the user's country/region, unless you make changes for individual users.
 
 ### AllowTollFreeDialInFalse
 
@@ -66,10 +66,10 @@ If a user in Germany already has a German toll phone number before you create an
 An overview of the steps:
 
 1. Navigate to the Microsoft Teams admin center and  go to **Meetings** > **Audio Conferencing**.
-1. Select **Add**
+1. Select **Add**.
 1. Enter the name and description of the policy. The name can't contain special characters or be longer than 64 characters.
 1. Choose the settings that you want.
-1. Select **Save**
+1. Select **Save**.
 
 For example, you might have a group of users who regularly have meetings with participants from more than one country/region. In our example, the participants are from Canada, Botswana, and Singapore and they all want to join the meeting via Audio Conferencing by dialing a phone number. You can create a new custom policy named "Canada Botswana Singapore" and select phone numbers from these three countries/regions to be included in the policy through the **Add a phone number** option, and save this policy. You can then assign this policy to the required users.
 
@@ -120,4 +120,4 @@ You can assign a policy directly to users or to a group that the users are membe
 
 ### Known issues
 
-When you start a meeting using the **Meet now** option from **Microsoft Teams** > **Calendar** > **Meet Mow**, if you then select the ellipsis menu option, and then **Meeting Info**, there's an issue with the lower portion of the section under **Or call in (audio only)**. All phone numbers defined in the policy are shown, but the alignment of the numbers makes it difficult to read.
+When you start a meeting using the **Meet now** option from **Microsoft Teams** > **Calendar** > **Meet Now**, if you then select the ellipsis menu option, and then **Meeting Info**, there's an issue with the lower portion of the section under **Or call in (audio only)**. All phone numbers defined in the policy are shown, but the alignment of the numbers makes it difficult to read.

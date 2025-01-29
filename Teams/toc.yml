@@ -1109,6 +1109,8 @@ items:
               href: set-up-calling-plans.md
             - name: Country and region availability for Calling Plans
               href: country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md
+            - name: Setup billing for Calling plans
+              href: /microsoft-365/commerce/subscriptions/manage-pay-as-you-go-services
         - name: Operator Connect
           items: 
             - name: Plan for Operator Connect
@@ -1243,7 +1245,7 @@ items:
               href: how-many-phone-numbers-can-you-get.md
             - name: Transfer phone numbers
               items: 
-                - name: What's a port order?
+                - name: Port planning
                   href: phone-number-calling-plans/port-order-overview.md
                 - name: Transfer phone numbers to Teams
                   href: phone-number-calling-plans/transfer-phone-numbers-to-teams.md
@@ -1872,6 +1874,8 @@ items:
               href: supervise-chats-edu.md
             - name: Set up Assignments in Teams
               href: expand-teams-across-your-org/assignments-in-teams.md
+            - name: Set up Classwork in Teams
+              href: expand-teams-across-your-org/setup-classwork.md
             - name: Set up Parent Connection in Teams
               href: edu-parents-app.md
         - name: LMS and LTI integrations

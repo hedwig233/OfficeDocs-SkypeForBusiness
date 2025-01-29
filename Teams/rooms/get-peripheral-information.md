@@ -31,17 +31,17 @@ When you run the PowerShell script, the data is exported to a CSV file that can 
 
 ## Steps
 
-1. Go [here](https://www.microsoft.com/en-us/download/details.aspx?id=106063) to download the **Get-TeamsBYODRoomDevices.ps1** PowerShell script.
-1. Unblock and extract the downloaded zip file. Move the **Get-TeamsBYODRoomDevices.ps1** script to your preferred location on your PC.
-1. Open a new PowerShell window and navigate to the location where you moved the **Get-TeamsBYODRoomDevices.ps1** script.
+1. Go [here](https://www.microsoft.com/en-us/download/details.aspx?id=106063) to download the **Get-TeamsBYODSpaceDevices.ps1** PowerShell script.
+1. Unblock and extract the downloaded zip file. Move the **Get-TeamsBYODSpaceDevices.ps1** script to your preferred location on your PC.
+1. Open a new PowerShell window and navigate to the location where you moved the **Get-TeamsBYODSpaceDevices.ps1** script.
 
-   > [!NOTE]
+      > [!NOTE]
    > You can optionally open the script and customize it before you run it. However, don't change the sheet name. The sheet name must be named **PERIPHERALS**.
 
 1. Run the script by executing the following command in the PowerShell window:
 
    ```powershell
-   \Get-TeamsBYODRoomDevices.ps1
+   \Get-TeamsBYODSpaceDevices.ps1
    ```
    
 1. The script prompts will guide you through the process:

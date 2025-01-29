@@ -26,11 +26,11 @@ f1keywords:
 
 Bring Your Own Device rooms are identified as rooms with no Microsoft Teams Rooms. As an admin, you'll be able to:
 
-1. View the inventory of BYOD rooms and peripherals in your tenant
+1. View the inventory of BYOD rooms and peripherals in your tenant.
 
 1. Associate BYOD rooms and peripherals together, or view auto-associated rooms and peripherals. *Users who plug-in room associated peripherals will have [BYOD end user experiences automatically activated](https://support.microsoft.com/en-us/office/use-shared-display-mode-in-meeting-rooms-a59c6886-9028-44da-a3cc-5563be40a214) for the best meeting room experience.*
 
-1. View usage and quality reports for BYOD rooms
+1. View usage and quality reports for BYOD rooms.
 
 > [!NOTE]
 > To have access to the portal, you'll need at least one pro, premium, or Teams Shared Device (TSD) license.
@@ -126,7 +126,7 @@ Select the device to either view more details about peripherals in that group, o
 When you select a specific peripheral group associated with a room, a new page opens up displaying the following two tabs:
 
 - **Configuration**: This page displays information about the devices in the group including device serial number, product and vendor ID.
-Under the device information, the button "**A****dd room or desk**" can be used to associate the peripheral to a BYOD room or bookable desk.
+Under the device information, the button "**Add room or desk**" can be used to associate the peripheral to a BYOD room or bookable desk.
 Once the devices get added to the specific room, the room's information will also be displayed such as the room's name, capacity, location and license type.
 - **Usage details**: This page shows the room's usage report data for the selected period and is accessible with a Teams Shared Device license assigned to the room resource account.
 

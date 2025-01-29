@@ -36,17 +36,17 @@ To access the best practice configuration dashboard, follow these steps:
 2. Expand **Meetings** from the navigation pane.
 3. Under **Meetings**, select **Best practice configurations**.
 
-:::image type="content" source="media/db-landing-small.png" alt-text="Screenshot of the Best practice configuration dashboard." lightbox="media/db-landing-expand.png":::
+   :::image type="content" source="media/db-landing-small.png" alt-text="Screenshot of the Best practice configuration dashboard." lightbox="media/db-landing-expand.png":::
 
-The **Summary** widget displays the number of best practices that need action and the number without issues.
+   The **Summary** widget displays the number of best practices that need action and the number without issues.
 
-The **Best practice configurations** table provides statuses and insights for the following best practices:
+   The **Best practice configurations** table provides statuses and insights for the following best practices:
 
-- Enable the correct ports and protocols
-- Update outdated Teams clients
-- Implement split tunneling for VPNs
+    - Enable the correct ports and protocols
+    - Update outdated Teams clients
+    - Implement split tunneling for VPNs
 
-To view a detailed dashboard with recommendation, select a best practice from a row in this table. A list of IP addresses is shown by city, displaying the extent to which each location follows best practices. You can use the name of the city, country/region, or the IP address to search and filter for locations. You can also export the dashboard’s table in a CSV file that you can share.
+   To view a detailed dashboard with recommendation, select a best practice from a row in this table. A list of IP addresses is shown by city, displaying the extent to which each location follows best practices. You can use the name of the city, country/region, or the IP address to search and filter for locations. You can also export the dashboard's table in a CSV file that you can share.
 
 ## Interpret the dashboards
 
@@ -62,10 +62,10 @@ To view outdated Teams clients, select **Update outdated client versions** in th
 
 |Callout |Description |
 |--------|-------------|
-|**1** |**Client versions trend**- Trend of cities with supported and outdated Teams clients. |
-|**2** |**Recommended action**- Actions you should take to meet the recommended best practice configurations.|
-|**3** |**Regions with out-of-date clients**- Visual map that includes a date for when this dashboard was generated and a count of cities with outdated clients. You can also search by country/city/region.|
-|**4** |The table provides the following data: <ul><li>**Cities**- Cities and regions impacted.</li> <li>**Public IPs (reflexive)**- Public IPs of users on outdated clients.</li><li>**Percentage of out-of-date clients**- Percentage of streams coming from outdated versions of the Teams client.</li><li>**Number and percentage of streams**- Count of media streams coming from outdated clients.</li><li>**Status: Action required**- You must follow Microsoft’s recommended actions to update the status.</li></li> </ul>|
+|**1** |**Client versions trend** - Trend of cities with supported and outdated Teams clients. |
+|**2** |**Recommended action** - Actions you should take to meet the recommended best practice configurations.|
+|**3** |**Regions with out-of-date clients** - Visual map that includes a date for when this dashboard was generated and a count of cities with outdated clients. You can also search by country/city/region.|
+|**4** |The table provides the following data: <ul><li>**Cities** - Cities and regions impacted.</li> <li>**Public IPs (reflexive)**- Public IPs of users on outdated clients.</li><li>**Percentage of out-of-date clients** - Percentage of streams coming from outdated versions of the Teams client.</li><li>**Number and percentage of streams** - Count of media streams coming from outdated clients.</li><li>**Status: Action required** - You must follow Microsoft's recommended actions to update the status.</li></li> </ul>|
 |**5** |You can use these buttons to: <ul><li>Export the table to a CSV file.</li> <li>Filter by city, public IP address, and status.</li><li>Toggle the map view on or off.<li>Manage settings for columns in the table.</li></li> </ul>|
 
 ### Enable the correct ports and protocols
@@ -80,10 +80,10 @@ To view ports and protocols, select **Enable the correct ports and protocols** i
 
 |Callout |Description |
 |--------|-------------|
-|**1** |**Network traffic trend**- Trend of cities with TCP and UDP traffic. |
-|**2** |**Recommended action**- Actions you should take to meet the recommended best practice configurations.|
-|**3** |**Regions with TCP traffic**- Visual map that includes a date for when this dashboard was generated and a count of cities with TCP and UDP traffic. You can also search by country/city/region.|
-|**4** |The table provides the following data: <ul><li>**Cities**- Cities and regions impacted.</li> <li>**Public IPs (reflexive)**- Count and list of public IPs (reflexive) that have high proportion of streams using TCP.</li><li>**Volume of TCP stream**- Volume of streams using TCP.</li><li>**Volume of UDP stream**- Volume of streams using UDP.</li><li>**Total streams**- Total of UDP and TCP streams.</li><li>**Percent of TCP**- Percentage of streams using TCP.</li><li>**Status: Action required**- You must follow Microsoft’s recommended actions to update the status.</li></li> </ul>|
+|**1** |**Network traffic trend** - Trend of cities with TCP and UDP traffic. |
+|**2** |**Recommended action** - Actions you should take to meet the recommended best practice configurations.|
+|**3** |**Regions with TCP traffic** - Visual map that includes a date for when this dashboard was generated and a count of cities with TCP and UDP traffic. You can also search by country/city/region.|
+|**4** |The table provides the following data: <ul><li>**Cities** - Cities and regions impacted.</li> <li>**Public IPs (reflexive)** - Count and list of public IPs (reflexive) that have high proportion of streams using TCP.</li><li>**Volume of TCP stream** - Volume of streams using TCP.</li><li>**Volume of UDP stream** - Volume of streams using UDP.</li><li>**Total streams** - Total of UDP and TCP streams.</li><li>**Percent of TCP** - Percentage of streams using TCP.</li><li>**Status: Action required** - You must follow Microsoft’s recommended actions to update the status.</li></li> </ul>|
 |**5** |You can use these buttons to: <ul><li>Export the table to a CSV file.</li> <li>Filter by city, public IP address, and status.</li><li>Toggle the map view on or off.<li>Manage settings for columns in the table.</li></li> </ul>|
 
 ### Implement split tunneling for VPNs
@@ -96,10 +96,10 @@ To view split tunneling for VPNs, select **Implement split tunneling for VPNs** 
 
 |Callout |Description |
 |--------|-------------|
-|**1** |**Network traffic trend**- Trend of cities with VPN streams and all other streaming types. |
-|**2** |**Recommended action**- Actions you should take to meet the recommended best practice configurations.|
-|**3** |**Regions with VPN streams**- Visual map that includes a date for when this dashboard was generated and a count of regions with VPN streams. You can also search by country/city/region.|
-|**4** |The table provides the following data: <ul><li>**Cities**- Cities and regions impacted.</li> <li>**Public IPs (reflexive)**- Count and list of public IPs (reflexive) that have a high proportion of streams routed through VPN.</li><li>**Internet service provider**- Internet service provider for the stream.</li><li>**VPN streams**- Count of streams routed through a VPN.</li><li>**All other streams**- Count of streams that aren't routed through a VPN.</li><li>**Percent of VPN streams**- Percentage and volume of streams routed through VPN.</li><li>**Status: Action required**- You must follow Microsoft’s recommended actions to update the status.</li></li> </ul>|
+|**1** |**Network traffic trend** - Trend of cities with VPN streams and all other streaming types. |
+|**2** |**Recommended action** - Actions you should take to meet the recommended best practice configurations.|
+|**3** |**Regions with VPN streams** - Visual map that includes a date for when this dashboard was generated and a count of regions with VPN streams. You can also search by country/city/region.|
+|**4** |The table provides the following data: <ul><li>**Cities** - Cities and regions impacted.</li> <li>**Public IPs (reflexive)** - Count and list of public IPs (reflexive) that have a high proportion of streams routed through VPN.</li><li>**Internet service provider** - Internet service provider for the stream.</li><li>**VPN streams** - Count of streams routed through a VPN.</li><li>**All other streams** - Count of streams that aren't routed through a VPN.</li><li>**Percent of VPN streams** - Percentage and volume of streams routed through VPN.</li><li>**Status: Action required** - You must follow Microsoft's recommended actions to update the status.</li></li> </ul>|
 |**5** |You can use these buttons to: <ul><li>Export the table to a CSV file.</li> <li>Filter by city, public IP address, and status.</li><li>Toggle the map view on or off.<li>Manage settings for columns in the table.</li></li> </ul>|
 
 ## Related articles

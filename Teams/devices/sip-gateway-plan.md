@@ -108,25 +108,25 @@ If you have a 3PIP or SIP device, you must have the following:
 |          |Trio 8500<sup>2</sup> |5.9.5.3182  |7.2.4.0185 |   |   |
 |          |Trio 8800<sup>2</sup> |5.9.5.3182  |7.2.4.0185 |   |   |
 |          |VVX150<sup>2</sup>    |5.9.5       |6.4.3.5814 |   |   |
-|          |VVX201<sup>2</sup>    |5.9.5       |6.4.6.2224 |   |   |
+|          |VVX201<sup>2</sup>    |5.9.5       |6.4.6.2640 |   |   |
 |          |Omegaline VVX250<sup>2</sup>    |5.9.5       |6.4.6.2681 |   |   |
-|          |VVX250<sup>2</sup>    |5.9.5       |6.4.6.2240 |   |   |
+|          |VVX250<sup>2</sup>    |5.9.5       |6.4.6.2656 |   |   |
 |          |VVX300<sup>3</sup>     |5.9.5       |5.9.7.3480 |   |   |
-|          |VVX301<sup>2</sup>    |5.9.5       |6.4.6.2224 |   |   |
+|          |VVX301<sup>2</sup>    |5.9.5       |6.4.6.2640 |   |   |
 |          |VVX310<sup>3</sup>     |5.9.5       |5.9.7.3480 |   |   |
-|          |VVX311<sup>2</sup>    |5.9.5       |6.4.6.2224 |   |   |
+|          |VVX311<sup>2</sup>    |5.9.5       |6.4.6.2640 |   |   |
 |          |Omegaline VVX350<sup>2</sup>    |5.9.5       |6.4.6.2681 |   |   |
-|          |VVX350<sup>2</sup>    |5.9.5       |6.4.6.2240 |   |   |
+|          |VVX350<sup>2</sup>    |5.9.5       |6.4.6.2656 |   |   |
 |          |VVX400<sup>3</sup>     |5.9.5       |5.9.7.3480 |   |   |
-|          |VVX401<sup>2</sup>    |5.9.5       |6.4.6.2224 |   |   |
+|          |VVX401<sup>2</sup>    |5.9.5       |6.4.6.2640 |   |   |
 |          |VVX410<sup>3</sup>     |5.9.5       |5.9.7.3480 |   |   |
-|          |VVX411<sup>2</sup>    |5.9.5       |6.4.6.2224 |   |   |
+|          |VVX411<sup>2</sup>    |5.9.5       |6.4.6.2640 |   |   |
 |          |Omegaline VVX450<sup>2</sup>    |5.9.5       |6.4.6.2681 |   |   |
-|          |VVX450<sup>2</sup>    |5.9.5       |6.4.6.2240 |   |   |
+|          |VVX450<sup>2</sup>    |5.9.5       |6.4.6.2656 |   |   |
 |          |VVX500<sup>3</sup>     |5.9.5       |5.9.7.3480 |   |   |
-|          |VVX501<sup>2</sup>    |5.9.5       |6.4.6.2224 |   |   |
+|          |VVX501<sup>2</sup>    |5.9.5       |6.4.6.2640 |   |   |
 |          |VVX600<sup>3</sup>     |5.9.5       |5.9.7.3480 |   |   |
-|          |VVX601<sup>2</sup>    |5.9.5       |6.4.6.2224 |   |   |
+|          |VVX601<sup>2</sup>    |5.9.5       |6.4.6.2640 |   |   |
 |          |Rove B1<sup>1</sup>    |8.0.5.0002  |8.0.5.0002 |   |   |
 |          |Rove B2<sup>1</sup>    |8.0.5.0002  |8.0.5.0002 |   |   |
 |          |Rove B4<sup>1</sup>    |8.0.5.0002  |8.0.5.0002 |   |   |
@@ -319,7 +319,7 @@ If you have a 3PIP or SIP device, you must have the following:
 > For support queries, customers using the Algo Solutions' SIP enabled endpoints listed with Teams SIP Gateway should reach out directly to Algo Solutions.
 > [General Information on Algo integration with Teams](https://www.algosolutions.com/solutions/compatibility/msteams/)
 > [Configuration Guide](https://www.algosolutions.com/wp-content/uploads/2023/04/Configuration-Guide-Teams-2023.pdf)
-> [Troubleshooting Guide](https://www.algosolutions.com/wp-content/uploads/2023/07/Troubleshooting-Algo-Devices-in-MS-Teams.pdf)
+> [Troubleshooting Guide](https://www.algosolutions.com/wp-content/uploads/2023/07/Troubleshooting-Algo-Devices-in-MS-Teams.pdf).
 
 > [!NOTE]
 > Customers should contact their Tango Extend Reseller for support queries related to Tango Extend eSIM endpoints. Help and Support information are provided in the Tango Extend Teams App.

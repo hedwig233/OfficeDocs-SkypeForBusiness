@@ -82,9 +82,9 @@ Each meeting that a user schedules gets assigned a unique conference ID. Althoug
 
 2. Under **Audio Conferencing**, select **Reset PIN**, and then select **Reset**.
   
-Users receive an email with their PIN when they're set up for Audio Conferencing or when the PIN is reset. But if you turn off automatically sending emails, a PIN reset email isn't sent and you have to manually send the PIN to the user. The PIN is only shown once after the reset. Once the PIN is displayed after the reset, it isn't shown anymore on the user properties; instead, ***** is shown.
+   Users receive an email with their PIN when they're set up for Audio Conferencing or when the PIN is reset. But if you turn off automatically sending emails, a PIN reset email isn't sent and you have to manually send the PIN to the user. The PIN is only shown once after the reset. Once the PIN is displayed after the reset, it isn't shown anymore on the user properties; instead, ***** is shown.
   
-See [Reset the Audio Conferencing PIN](reset-the-audio-conferencing-pin-in-teams.md).
+   For more information, see [Reset the Audio Conferencing PIN](reset-the-audio-conferencing-pin-in-teams.md).
   
 ## Send an email with Audio Conferencing information to a user
 

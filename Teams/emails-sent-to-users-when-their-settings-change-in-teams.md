@@ -76,7 +76,7 @@ By default, there are four types of email that are sent to your users who are en
 
 ## Manage emails
 
-You can make changes to the email that is automatically sent to users. By default, the sender of the emails is from Microsoft 365 or Office 365, but you can change the display name using Windows PowerShell. For more information, see [Microsoft Teams PowerShell reference](/powershell/module/teams) .
+You can make changes to the email that is automatically sent to users. By default, the sender of the emails is from Microsoft 365 or Office 365, but you can change the display name using Windows PowerShell. For more information, see [Microsoft Teams PowerShell reference](/powershell/module/teams).
 
 ## Turn off emails
 
@@ -104,7 +104,7 @@ Set-CsOnlineDialInConferencingTenantSettings -AutomaticallySendEmailsToUsers $Fa
 
 You can use the [Set-CsOnlineDialInConferencingTenantSettings](/powershell/module/teams/set-csonlinedialinconferencingtenantsettings) to manage other settings for your organization, including email.
 
-For more information, see [Microsoft Teams PowerShell reference](/powershell/module/teams/).
+For more information, see the [Microsoft Teams PowerShell reference](/powershell/module/teams/).
 
 ## Want to know more about Windows PowerShell?
 

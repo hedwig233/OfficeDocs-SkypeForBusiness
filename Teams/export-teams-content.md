@@ -43,7 +43,9 @@ Here are some examples on how you can use these export APIs:
 - **Hybrid Environment:** Export APIs support messages sent by users who are provisioned on Hybrid Environment (on-premises Exchange and Teams). Any messages that are sent by users who are configured for hybrid environment are accessible using Export APIs.
 - **User Deleted Messages:** Messages that are deleted by users from the Teams client can be accessed using export APIs up to 21 days from the time of deletion.
 - **Message Attachments:** Export APIs include the links to the attachments that are sent as part of messages. Using Export APIs you can retrieve the files attached in the messages.
-- **Reactions:** Export APIs support reactions initiated by a user on a Teams message. Reactions currently supported are heart, angry, like, sad, surprised, and laugh. In addition to Reactions, Export API also supports Reaction Edit History, which includes changes and updates made to a reaction on a message.
+- **Reactions:** Export APIs support reactions initiated by a user on a Teams message. Reactions currently supported are heart, angry, like, sad, surprised, and laugh. In addition to Reactions, Export API also supports Reaction Edit History, which includes changes and updates made to a reaction on a message. 
+> [!NOTE]
+> Reactions customized with color changes are currently not supported by Export API. 
 - **Shared Channel Messages:** Export APIs support capturing messages from a Shared Channel.
 - **Deleted Teams:** Export API supports [capturing messages from deleted Teams](/graph/api/deletedteam-getallmessages) and deleted standard, private, and shared channels.
 - **Deleted Users**: Export API supports capturing messages for deleted users up to 30 days from the time the user was deleted. To find the list of deleted users, see [Deleted Items](/graph/api/directory-deleteditems-list).
@@ -390,6 +392,28 @@ $filter=from/application/applicationIdentityType eq '<appType>' or from/user/id 
  - the query returns messages sent by the system if `messageType eq 'systemEventMessage'` is present
 
 These parameters can be combined between them using the OR operators as well as by combining with the `lastModifiedDateTime` `$filter` parameter.
+
+## Teams Export APIs for Retained Messages
+Provided that [your tenant is setup with Teams Retention Policy](/purview/create-retention-policies?tabs=teams-retention), Export API supports capturing messages' from holds folder for [individual & group chat](/graph/api/chat-getallretainedmessages), and [posts, comments in Public & Shared channels](/graph/api/channel-getallretainedmessages).
+
+## How to access Retained Messages API
+
+- **Example 1** is a simple query to retrieve all the retained messages of a user
+
+ ```HTTP
+  GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats/getAllRetainedMessages
+  ```
+- **Example 1** is a simple query to retrieve all the retained messages of a team
+
+ ```HTTP
+  GET https://graph.microsoft.com/v1.0/teams/8b081ef6-4792-4def-b2c9-c363a1bf41d5/channels/getAllRetainedMessages
+  ```
+
+## What is supported by the getAllRetainedMessages API
+
+- **Message is soft deleted by a user in a chat or a channel** If the user is on hold, then beyond the 21 days of deletion period, the message can be exported through the API
+- **Message is soft deleted by a user in a chat or a channel** If there is a valid retention policy set, then beyond the 21 days of deletion period, the message can be exported through the API
+- **Message is edited by a user in a chat or a channel** If there is a valid retention policy set, the previous edited versions of the message can be exported.
 
 ## Microsoft 365 Copilot Interactions & Microsoft 365 Chat (Preview)
 

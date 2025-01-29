@@ -43,9 +43,9 @@ Participants can be users in your organization, or if you allow it, people outsi
 
 The following types of meetings are available:
 
-- Private meetings - meetings that individual users schedule with specific people
-- Channel meetings - meetings that are visible to everyone in a channel
-- Meet now meetings - a method of starting an unscheduled meeting with people through a chat
+- Private meetings - Meetings that individual users schedule with specific people.
+- Channel meetings - Meetings that are visible to everyone in a channel.
+- Meet now meetings - A method of starting an unscheduled meeting with people through a chat.
 
 To specify which users in your organization can start or schedule meetings, see [Manage who can start instant meetings and schedule meetings](manage-who-can-schedule-meetings.md).
 
@@ -59,7 +59,7 @@ For a complete list of meeting policies, see [Teams setting and policies referen
 
 ## Customization with Teams Premium
 
-With a Teams Premium license, you can extend your organization's visual identity and compliance requirements across the meeting experience by adding logos and backgrounds that can be displayed in the meeting’s pre-join screen, lobby, and during the meeting experience. To learn more, see [Custom meetings overview](custom-meetings-overview.md).
+With a Teams Premium license, you can extend your organization's visual identity and compliance requirements across the meeting experience by adding logos and backgrounds that can be displayed in the meeting's pre-join screen, lobby, and during the meeting experience. To learn more, see [Custom meetings overview](custom-meetings-overview.md).
 
 ## Audio Conferencing for meetings
 

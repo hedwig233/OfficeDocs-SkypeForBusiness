@@ -39,9 +39,9 @@ Here are some examples on how you can use these export APIs:
 - **Bulk Export of Teams Message:** Teams Export APIs support up to 200 RPS Per App Per tenant and 600 RPS for an Application, with these limits you should be able to bulk export of Teams messages.
 - **Application Context**: To call Microsoft Graph, your app must acquire an access token from the Microsoft identity platform. The access token contains information about your app and the permissions it has for the resources and APIs available through Microsoft Graph. To get an access token, your app must be registered with the Microsoft identity platform and be authorized by either a user or an administrator for access to the Microsoft Graph resources it needs.
     If you're already familiar with integrating an app with the Microsoft identity platform to get tokens, see the [Next Steps](/graph/auth/auth-concepts#next-steps) section for information and samples specific to Microsoft Graph.
-- **Hybrid Environment:** Export APIs support messages sent by users who are provisioned on Hybrid Environment (on-premises Exchange and Teams). Any messages that are sent by users who are configured for hybrid environment are accessible using Export APIs.
-- **User Deleted Messages:** Messages that are deleted by users from the Teams client can be accessed using export APIs up to 21 days from the time of deletion.
-- **Message Attachments:** Export APIs include the links to the attachments that are sent as part of messages. Using Export APIs you can retrieve the files attached in the messages.
+- **Hybrid Environment:** Export APIs support messages sent by users who are provisioned on Hybrid Environment (on-premises Exchange and Teams). Any messages sent by users who are configured for hybrid environment are accessible using Export APIs.
+- **User Deleted Messages:** Messages deleted by users from the Teams client can be accessed using export APIs up to 21 days from the time of deletion.
+- **Message Attachments:** Export APIs include the links to the attachments sent as part of messages. Using Export APIs you can retrieve the files attached in the messages.
 - **Reactions:** Export APIs support reactions initiated by a user on a Teams message. Reactions currently supported are heart, angry, like, sad, surprised, and laugh. In addition to Reactions, Export API also supports Reaction Edit History, which includes changes and updates made to a reaction on a message.
 
 > [!NOTE]
@@ -56,7 +56,7 @@ Here are some examples on how you can use these export APIs:
 > [!NOTE]
 > Meeting related control messages are currently not supported by Export API.
 
-- **Edited History:** Provided that [your tenant is setup with Teams Retention Policy](/purview/create-retention-policies?tabs=teams-retention), Export API supports capturing messages' edited history for [individual & group chat](/graph/api/chat-getallretainedmessages), and [posts, comments in Public & Shared channels](/graph/api/channel-getallretainedmessages).
+- **Edited History:** If [your tenant is setup with Teams Retention Policy](/purview/create-retention-policies?tabs=teams-retention), Export API supports capturing messages' edited history for [individual & group chat](/graph/api/chat-getallretainedmessages), and [posts, comments in Public & Shared channels](/graph/api/channel-getallretainedmessages).
 
     To learn more about Teams Retention policy, see the [Manage retention policies for Microsoft Teams](/microsoftteams/retention-policies) for further details.
 
@@ -102,7 +102,7 @@ Here are some examples on how you can use these export APIs:
   ```
 
 > [!NOTE]
-> The API returns response with next page link in case of multiple results. For getting next set of results, simply call GET on the url from @odata.nextlink. If @odata.nextlink isn't present or null then all messages are retrieved.
+> The API returns response with next page link in case of multiple results. For getting next set of results, simply call GET on the url from @odata.nextlink. If @odata.nextlink isn't present or null, then all messages are retrieved.
 
 > [!NOTE]
 > The order of messages in the response isn't guaranteed to be sorted by any datetime, such as createdDateTime nor lastModifiedDateTime.
@@ -246,7 +246,7 @@ No model declaration enables access to APIs with limited usage per each requesti
 
    - The average size of the recording content itself is about 350 MB on disk, based on averages we're seeing for meetings that are in range of 30 mins – 60 mins.
 
-   - Results aren't guaranteed to be sorted by `createdDateTime`. However, in the case where multiple recordings are present for a single meeting, they'll share the same `meetingId` value. Additionally, the entries for the multiple recordings are correctly sequenced for the meeting in question.
+   - Results aren't guaranteed to be sorted by `createdDateTime`. However, when multiple recordings are present for a single meeting, they'll share the same `meetingId` value. Additionally, the entries for the multiple recordings are correctly sequenced for the meeting in question.
 
    - Results are guaranteed to be present only after the associated meeting recordings are available. In other words, no additional polling for availability is required by the caller.
 
@@ -314,7 +314,7 @@ No model declaration enables access to APIs with limited usage per each requesti
 
    - The average size of the transcript content itself in JSON/VTT format is about 300 KB, based on averages we're seeing for meetings that are in range of 30 mins – 60 mins.
 
-   - Results aren't guaranteed to be sorted by `createdDateTime`. However, in the case where multiple recordings are present for a single meeting, they will share the same `meetingId` value. Additionally, the entries for the multiple recordings will be correctly sequenced for the meeting in question.
+   - Results aren't guaranteed to be sorted by `createdDateTime`. However, when multiple recordings are present for a single meeting, they will share the same `meetingId` value. Additionally, the entries for the multiple recordings will be correctly sequenced for the meeting in question.
 
    - Results are guaranteed to be present only after the associated meeting recordings are available. In other words, no additional polling for availability is required by the caller.
 
@@ -397,7 +397,7 @@ $filter=from/application/applicationIdentityType eq '<appType>' or from/user/id 
 These parameters can be combined between them using the OR operators as well as by combining with the `lastModifiedDateTime` `$filter` parameter.
 
 ## Teams Export APIs for Retained Messages
-Provided that [your tenant is setup with Teams Retention Policy](/purview/create-retention-policies?tabs=teams-retention), Export API supports capturing messages' from holds folder for [individual & group chat](/graph/api/chat-getallretainedmessages), and [posts, comments in Public & Shared channels](/graph/api/channel-getallretainedmessages).
+If [your tenant is setup with Teams Retention Policy](/purview/create-retention-policies?tabs=teams-retention), Export API supports capturing messages' from holds folder for [individual & group chat](/graph/api/chat-getallretainedmessages), and [posts, comments in Public & Shared channels](/graph/api/channel-getallretainedmessages).
 
 ## How to access Retained Messages API
 

@@ -127,7 +127,7 @@ Here are some examples on how you can use these export APIs:
 
 Export API supports Security and Compliance (S+C) and general usage scenarios through a model query parameter. S+C scenarios (Model A) include seeded capacity and require an E5 subscription and general usage scenarios (Model B) are available for all subscriptions and is consumption only. For more information about seeded capacity and consumption fees, see [Licensing and payment requirements for Microsoft Graph Teams APIs](/graph/teams-licenses).
 
-For Beta APIs, there are currently no Model A or Model B licensing or usage enforcements. However, this is subject to change in the future.
+For Beta APIs, there are currently no Model A or Model B licensing or usage enforcements. However, there may be licensing or usage enforcements in the future.
 
 ### S+C/Model A scenarios
 
@@ -248,7 +248,7 @@ No model declaration enables access to APIs with limited usage per each requesti
 
    - Results aren't guaranteed to be sorted by `createdDateTime`. However, when multiple recordings are present for a single meeting, they'll share the same `meetingId` value. Additionally, the entries for the multiple recordings are correctly sequenced for the meeting in question.
 
-   - Results are guaranteed to be present only after the associated meeting recordings are available. In other words, no additional polling for availability is required by the caller.
+   - Results are guaranteed to be present only after the associated meeting recordings are available. In other words, the caller requires no additional polling for availability.
 
    - Paginating through the results will be supported as per current patterns in the Teams Export API. Pagination will be supported via the presence of `@oData.nextLink` property in the response. The nextLink property contains a `skipToken` value, as indicated below. If no `skipToken` is present, it means that there are no more results to retrieve in the current batch:
 
@@ -316,7 +316,7 @@ No model declaration enables access to APIs with limited usage per each requesti
 
    - Results aren't guaranteed to be sorted by `createdDateTime`. However, when multiple recordings are present for a single meeting, they will share the same `meetingId` value. Additionally, the entries for the multiple recordings will be correctly sequenced for the meeting in question.
 
-   - Results are guaranteed to be present only after the associated meeting recordings are available. In other words, no additional polling for availability is required by the caller.
+   - Results are guaranteed to be present only after the associated meeting recordings are available. In other words, the caller requires no additional polling for availability.
 
    - Paginating through the results will be supported as per current patterns in the Teams Export API. Pagination will be supported via the presence of `@oData.nextLink` property in the response. The `nextLink` property will contain a `skipToken` value, as indicated below. If no `skipToken` is present, it means that there are no more results to retrieve in the current batch:
    

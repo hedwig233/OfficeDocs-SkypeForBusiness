@@ -35,9 +35,10 @@ When you run the PowerShell script, the data is exported to a CSV file that can 
 1. Unblock and extract the downloaded zip file. Move the **Get-TeamsBYODSpaceDevices.ps1** script to your preferred location on your PC.
 1. Open a new PowerShell window and navigate to the location where you moved the **Get-TeamsBYODSpaceDevices.ps1** script.
 
-      > [!NOTE]
+   > [!NOTE]
+   > 
    > You can optionally open the script and customize it before you run it. However, don't change the sheet name. The sheet name must be named **PERIPHERALS**.
-
+   
 1. Run the script by executing the following command in the PowerShell window:
 
    ```powershell
@@ -46,16 +47,17 @@ When you run the PowerShell script, the data is exported to a CSV file that can 
    
 1. The script prompts will guide you through the process:
 
-   - Wait for the script to detect and gather information about internal peripherals. The waiting period is essential for the script to make sure it establishes a baseline between internal and externally connected peripherals.
+   1. Wait for the script to detect and gather information about internal peripherals. The waiting period is essential for the script to make sure it establishes a baseline between internal and externally connected peripherals.
       
-   - Connect the external peripherals when prompted.
+   1. Connect the external peripherals when prompted.
       
-   - Enter the required details for data collection when prompted. At minimum, a product ID, vendor ID, and serial number are required, but we highly suggest filling out the other fields - especially the Account field so as to properly associate the peripheral with the right room or desk account.
+   1. Provide the Account information so as to properly associate the peripheral with the right room or desk account.
       
-   - Provide the folder path where the PERIPHERALS.csv file will be saved when prompted.
-   - The script will process the discovered peripheral data and export it to the specified file path.
+   1. Provide the folder path where the PERIPHERALS.csv file will be saved when prompted.
+   1. The script will process the discovered peripheral data and export it to the specified file path.
       
-1. Review the exported data to verify accuracy. 
+1. Review the exported data to verify accuracy.
+
 1. When finished, enter 'Y' when prompted to end the collection process.
 1. Open the CSV created on the set area path and notice the device details collected including Account, Display Name, Product ID, Vendor ID, Serial Number, Peripheral Name, Peripheral Type, and Peripheral Manufacturer.
 
@@ -63,6 +65,7 @@ When you run the PowerShell script, the data is exported to a CSV file that can 
 
    > [!IMPORTANT]
    > If sensitivity labels are enabled in your tenant, verify that the Excel file has a label of non-business, public, or general. Any other more confidential setting will cause the import to fail.
+   
    
 1. Sign in and open the [Microsoft Teams Pro Management portal](https://portal.rooms.microsoft.com/), in the **Devices** page, select __Import__ to add the device inventory to upload the file you modified.
 

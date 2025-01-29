@@ -43,9 +43,9 @@ Participants can be users in your organization, or if you allow it, people outsi
 
 The following types of meetings are available:
 
-- Private meetings - meetings that individual users schedule with specific people
-- Channel meetings - meetings that are visible to everyone in a channel
-- Meet now meetings - a method of starting an unscheduled meeting with people through a chat
+- Private meetings - Meetings that individual users schedule with specific people.
+- Channel meetings - Meetings that are visible to everyone in a channel.
+- Meet now meetings - A method of starting an unscheduled meeting with people through a chat.
 
 To specify which users in your organization can start or schedule meetings, see [Manage who can start instant meetings and schedule meetings](manage-who-can-schedule-meetings.md).
 
@@ -59,7 +59,7 @@ For a complete list of meeting policies, see [Teams setting and policies referen
 
 ## Customization with Teams Premium
 
-With a Teams Premium license, you can extend your organization's visual identity and compliance requirements across the meeting experience by adding logos and backgrounds that can be displayed in the meeting’s pre-join screen, lobby, and during the meeting experience. To learn more, see [Custom meetings overview](custom-meetings-overview.md).
+With a Teams Premium license, you can extend your organization's visual identity and compliance requirements across the meeting experience by adding logos and backgrounds that can be displayed in the meeting's pre-join screen, lobby, and during the meeting experience. To learn more, see [Custom meetings overview](custom-meetings-overview.md).
 
 ## Audio Conferencing for meetings
 
@@ -130,6 +130,7 @@ Teams admins and organizers have different policies and settings to control the 
 |[Anonymous users can join a meeting after verifying (Teams Premium- Public preview)](anonymous-users-in-meetings.md#anonymous-users-can-join-a-meeting-after-verifying-with-an-email-code-public-preview-for-teams-premium)|**(Public preview)** Manage whether anonymous users can verify themselves with a one-time passcode to join meetings in your org.|**(Public preview)** If admin allows, can require anonymous to verify themselves with a one-time passcode to join specific meetings.|
 |[Attendance and engagement reports](/microsoftteams/teams-analytics-and-reports/meeting-attendance-report)|Can enforce on or off or allow organizer to choose.|Can turn on or off if allowed by admin.|
 |[Audio and video](meeting-policies-audio-and-video.md)|Can set audio and video modes and network settings.|Can allow or prevent attendee mic and cameras.|
+|[Best practice configurations dashboard](best-practice-dashboard.md)|Manage and monitor your environment for Teams meetings and highlight locations that aren't following best practice configurations.|No control.|
 |[Breakout rooms](https://support.microsoft.com/office/use-breakout-rooms-in-microsoft-teams-meetings-7de1f48a-da07-466c-a5ab-4ebace28e461)|No control|Can create and manage breakout rooms.|
 |[CART captions](https://support.microsoft.com/office/use-cart-captions-in-a-microsoft-teams-meeting-human-generated-captions-2dd889e8-32a8-4582-98b8-6c96cf14eb47)|No control|Can set up and offer Communication access real-time translation(CART) captioning to participants instead of the Microsoft Teams built-in live captions that are automatically generated.|
 |[Channel meeting scheduling](https://support.microsoft.com/office/schedule-a-meeting-in-microsoft-teams-943507a9-8583-4c58-b5d2-8ec8265e04e5)|No control|Can schedule meetings from channels.|

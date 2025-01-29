@@ -86,6 +86,8 @@ Introduced in this update:
 
 - **Breakout rooms support:** With breakout room support, Teams Rooms on Windows can be added to a breakout room as an attendee and moved in and out of the main room making it easy for breakout session coordination. [Learn more](https://support.microsoft.com/en-us/office/use-breakout-rooms-in-microsoft-teams-meetings-7de1f48a-da07-466c-a5ab-4ebace28e461).
 
+- **Multiple camera view** :::image type="icon" source="../media/mtr-pro-icon.png"::: **:** Teams Rooms on Windows supports up to four single stream cameras that will be shown to remote meeting participants. With multiple camera view, remote meeting participants will have the ability to follow all the action in the room and manually toggle between views from the room that they want to see. [Learn more](/microsoftteams/rooms/multicamera-view).
+
 Resolved issues:
 
 - Fixed a known issue where content and gallery were swapped, after reconnecting a screen on dual display will set up.

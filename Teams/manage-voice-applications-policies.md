@@ -8,7 +8,7 @@ ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 audience: admin
-ms.date: 10/22/2024
+ms.date: 1/29/2025
 ms.collection: 
 - M365-voice
 - m365initiative-voice

@@ -98,9 +98,9 @@ Below the top metrics, there's a table that provides a granular breakdown of eac
 
 ### Turning off automatic discovery and usage data collection in the Teams client 
 
-Bookable desks in Microsoft Teams uses peripheral data crowdsourced from the Teams desktop client running on the users' laptops to discover peripherals as well as understand when those desk pools they are associated to are used. No personally identifiable data is collected, but should you feel this data collection is inappropriate for your tenant or a group of users in your tenant, you may use the following PowerShell cmdlets to configure the policy appropriately. Please note that for government clouds, this policy is off by default. 
+Bookable desks in Microsoft Teams use peripheral data crowdsourced from the Teams desktop client running on the users' laptops to discover peripherals as well as understand when those desk pools they are associated to are used. No personally identifiable data is collected, but should you feel this data collection is inappropriate for your tenant or a group of users in your tenant, you may use the following PowerShell cmdlets to configure the policy appropriately. Please note that for government clouds, this policy is off by default. 
 
-First, ensure that your Microsoft Teams module is on version 6.5.0 or higher. To confirm the version, please run the following. 
+First, ensure that your Microsoft Teams module is on version 6.5.0 or higher. To confirm the version, please run the following:
 
 
 ```powershell
@@ -109,7 +109,7 @@ Connect-MicrosoftTeams
 Get-Module -Name MicrosoftTeams
 ```
 
-If you don't have the Microsoft Teams module installed, please run the following and then re-run the above command to check the version. 
+If you don't have the Microsoft Teams module installed, please run the following and then re-run the above command to check the version:
 
 
 ```powershell
@@ -119,7 +119,7 @@ Import-Module MicrosoftTeams
 
 If your version is lower than 6.5.0, please follow [these instructions](/microsoftteams/teams-powershell-install) to update it. 
 
-Use the following commands to create, set, grant, or remove a configuration in the TeamsBYODAndDesks policy. 
+Use the following commands to create, set, grant, or remove a configuration in the TeamsBYODAndDesks policy: 
 
 
 ```powershell

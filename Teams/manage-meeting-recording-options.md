@@ -40,7 +40,7 @@ The following table shows the features available to help you manage meeting reco
 |Recordings and transcripts expiration|Yes|No|No|No|
 |Transcription|Yes|No|No|Yes|
 |Require participant agreement for recording|Yes|No|No|No|
-|Who can record and transcribe|No|Yes|Yes|Yes|
+|Who can record and transcribe **(Teams Premium)**|No|Yes|Yes|Yes|
 
 You control whether the ability to record meetings is available in your organization. Through sensitivity labels, meeting templates, and meeting organizer settings, both you and your meeting organizers can manage who can record and transcribe and whether meetings are automatically recorded and transcribed.
 
@@ -48,9 +48,9 @@ You control whether the ability to record meetings is available in your organiza
 
 You can set a Teams admin policy through PowerShell's **`-ChannelRecordingDownload`** parameter in the[Set-CsTeamsMeetingPolicy](/powershell/module/teams/set-csteamsmeetingpolicy) to control whether channel members can download meeting recordings. If you block the download of channel recordings, members can watch recordings, but can't download them. To learn more, see [Manage Teams recording policies for meetings and events](meeting-recording.md#block-or-allow-download-of-channel-meeting-recordings).
 
-## Manage who can record and transcribe meetings
+## Manage who can record and transcribe meetings (Teams Premium)
 
-There are two options for who can record and transcribe a meeting:
+Organizers with a Teams Premium license have two options for who can record and transcribe a meeting:
 
 - Organizers and co-organizers
 - Organizers, co-organizers, and presenters
@@ -58,6 +58,11 @@ There are two options for who can record and transcribe a meeting:
 The meeting organizer normally makes this choice when they create the meeting. To restrict recording to organizers in meetings with sensitive information, use a meeting template or sensitivity label to enforce this setting.
 
 If you need to prevent meetings from being recorded entirely, you must use the [Meeting recording meetings policy](meeting-recording.md#allow-or-prevent-users-from-recording-meetings) in the Teams admin center. This setting applies to the people or groups that you specify, but can't be applied via a meeting template or sensitivity label.
+
+> [!NOTE]
+> Meeting templates only allow you to manage who can record. To manage who can record and transcribe, use a Sensitivity label.
+
+To learn more about how your organizers use this feature, see [Record a meeting in Microsoft Teams](https://support.microsoft.com/office/record-a-meeting-in-microsoft-teams-34dfbe7f-b07d-4a27-b4c6-de62f1348c24).
 
 ## Microsoft 365 Copilot in Teams meetings and events
 

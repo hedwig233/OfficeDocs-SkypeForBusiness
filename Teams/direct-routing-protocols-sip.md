@@ -39,9 +39,9 @@ Before an incoming or outbound call can be processed, OPTIONS messages are excha
 | Contact Header | Contact: <sip:sbc1.adatum.biz:50588;transport=tls> |
 
 > [!NOTE]
-> The SIP headers do not contain userinfo in the SIP URI in use. As per [RFC 3261, section 19.1.1](https://tools.ietf.org/html/rfc3261#section-19.1.1), the userinfo part of a URI is optional and MAY be absent when the destination host doesn't have a notion of users or when the host itself is the resource being identified. If the @ sign is present in a SIP URI, the user field MUST NOT be empty.
+> The SIP headers don't contain userinfo in the SIP URI in use. As per [RFC 3261, section 19.1.1](https://tools.ietf.org/html/rfc3261#section-19.1.1), the userinfo part of a URI is optional and MAY be absent when the destination host doesn't have a notion of users or when the host itself is the resource being identified. If the @ sign is present in a SIP URI, the user field MUST NOT be empty.
 > SIP URI with Direct Routing isn't supported.
-> Check your Session Border Controller configuration and make sure that you are not using "Replaces" headers in SIP requests. Direct Routing rejects SIP requests that have Replaces headers defined.
+> Check your Session Border Controller configuration and make sure that you aren't using "Replaces" headers in SIP requests. Direct Routing rejects SIP requests that have Replaces headers defined.
 
 On an incoming call, the SIP proxy needs to find the tenant to which the call is destined and find the specific user within this tenant. The tenant administrator might configure non-DID numbers, for example +1001, in multiple tenants. Therefore, it's important to find the specific tenant on which to perform the number lookup because the non-DID numbers might be the same in multiple Microsoft 365 or Office 365 organizations.  
 
@@ -79,7 +79,7 @@ On receiving the invite, the SIP proxy performs the following steps:
 
 5. Apply trunk settings. Find the parameters set by the tenant admin for this SBC.
 
-   Microsoft does not support having a third-party SIP proxy or User Agent Server between the Microsoft SIP proxy and the paired SBC, which might modify the Request URI created by the paired SBC.
+   Microsoft doesn't support having a third-party SIP proxy or User Agent Server between the Microsoft SIP proxy and the paired SBC, which might modify the Request URI created by the paired SBC.
 
    The requirements for the two lookups (steps 2 and 3) needed for the scenario where one SBC is interconnected to many tenants (carrier scenario) are covered later in this article.
 
@@ -343,7 +343,7 @@ If sending, the History-Info is enabled as follows:
 
 - History-Info header won't be added for call transfer cases.
 
-- An individual history entry in the reconstructed History-Info header will have the phone number parameter provided combined with the Direct Routing FQDN (sip.pstnhub.microsoft.com) set as the host part of the URI; a parameter of ‘user=phone’ is added as part of the SIP URI.  Any other parameters associated with the original History-Info header, except for phone context parameters, is passed through in the re-constructed History-Info header.  
+- An individual history entry in the reconstructed History-Info header will have the phone number parameter provided combined with the Direct Routing FQDN (sip.pstnhub.microsoft.com) set as the host part of the URI; a parameter of ‘user=phone’ is added as part of the SIP URI.  Any other parameters associated with the original History-Info header, except for phone context parameters, is passed through in the reconstructed History-Info header.  
 
   > [!NOTE]
   > Entries that are private (as determined by the mechanisms defined in Section 3.3 of RFC 4244) is forwarded as is because  the SIP trunk provider is a trusted peer.
@@ -388,7 +388,7 @@ The SBC must support ICE restarts as described in [RFC 5245, section 9.1.1.1](ht
 
 The restart in Direct Routing is implemented according to the following paragraphs of the RFC:
 
-*To restart ICE, an agent MUST change both the ice-pwd and the ice-ufrag for the media stream in an offer.  It's permissible to use a session-level attribute in one offer, but to provide the same ice-pwd or ice-ufrag as a media-level attribute in a subsequent offer.  This isn't a change in password, just a change in its representation, and does not cause an ICE restart.*
+*To restart ICE, an agent MUST change both the ice-pwd and the ice-ufrag for the media stream in an offer.  It's permissible to use a session-level attribute in one offer, but to provide the same ice-pwd or ice-ufrag as a media-level attribute in a subsequent offer.  This isn't a change in password, just a change in its representation, and doesn't cause an ICE restart.*
 
 *An agent sets the rest of the fields in the SDP for this media stream as it would in an initial offer of this media stream (see
 Section 4.3).  So, the set of candidates MAY include some, none, or all of the previous candidates for that stream, and MAY include a new set of candidates gathered as described in Section 4.1.1.*

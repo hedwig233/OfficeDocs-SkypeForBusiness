@@ -90,6 +90,14 @@ To modify the pinned apps for everyone in your organization, edit the existing `
 > [!TIP]
 > For the frontline workers in your organization, we recommend using the tailored frontline app experience. This feature pins the most relevant apps in Teams for users who have an [F license](https://www.microsoft.com/en-us/microsoft-365/enterprise/frontline). To learn more, see [Tailor Teams apps for your frontline workers](/microsoft-365/frontline/pin-teams-apps-based-on-license?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json).
 
+### Manage pinning for Copilot app
+
+For users with a Microsoft 365 Copilot license, Copilot app is pinned by default, even though it isn't listed in the policy. You can add it to the policy to manage its order, but it remains pinned even if you remove it from the policy.
+
+For users without a Microsoft 365 Copilot license, pinning Copilot app through app setup policies behaves in the same way as other apps, as described under [Pin apps](#pin-apps). You can also pin Copilot through Microsoft 365 admin center. For more information, see [How to pin Copilot Chat in the Microsoft 365 Copilot app, Microsoft Teams, and Outlook](/copilot/manage#how-to-pin--chat-in-the-microsoft-365--app-microsoft-teams-and-outlook).
+
+If you pin Copilot only in Microsoft 365 admin center, the app is pinned in a default location. If you pin Copilot in both Microsoft 365 admin center and Teams admin center, Teams pins the app according to the app setup policy for the assigned users.
+
 ## Install apps to Teams client of your users
 
 If your organization uses app centric management functionality, then [use Manage apps page to install apps for users](install-teams-apps.md). Otherwise, continue to preinstall apps using app setup policies.

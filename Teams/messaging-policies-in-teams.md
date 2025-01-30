@@ -4,23 +4,23 @@ author: DaniEASmith
 ms.author: danismith
 manager: jtremper
 ms.reviewer: jastark
-ms.date: 04/16/2024
+ms.date: 01/29/2025
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.collection: 
-  - M365-collaboration
+- M365-collaboration
 audience: Admin
 appliesto: 
-  - Microsoft Teams
+- Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - CSH
 ms.custom: 
-  - ms.teamsadmincenter.messagingpolicies.overview
-  - seo-marvel-apr2020
-  - chat-teams-channels-revamp
+- ms.teamsadmincenter.messagingpolicies.overview
+- seo-marvel-apr2020
+- chat-teams-channels-revamp
 description: "Learn about Messaging policies and how they can be used to control chat messaging in Teams."
 ---
 

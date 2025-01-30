@@ -85,6 +85,8 @@ Teams Premium provides more ways to safeguard and monitor users' Teams experienc
 
 - **Watermarking** - Enforced through a sensitivity label, watermarks display the email address of a meeting or webinar participant. Watermarks are useful for protecting confidential information shared in meetings and webinars.
 
+- **Who can record and transcribe** - Organizers can control who can record and transcribe their meetings through their meeting options. You can also use a sensitivity label to manage this feature.
+
   | Feature/Task  | Can admins turn this feature on/off? | Documentation for admins | Documentation for your end users |
   | --------- | -----------| ----------- | ------------ |
   | Advanced collaboration analytics |No, contact support for assistance.| [Advanced Collaboration Analytics for Microsoft Teams](advanced-collaboration-analytics.md) | No end-user control |
@@ -99,13 +101,13 @@ Teams Premium provides more ways to safeguard and monitor users' Teams experienc
   | Prevent users from sharing content in external meetings|Yes| [Prevent users from sharing content in external meetings](block-external-content-share.md) | No end-user control |
   | Priority account chat controls|Yes| [Allow users to block Microsoft Teams chat messages](block-incoming-chats.md) | No end-user documentation |
   | Real-time telemetry and retention|No, contact support for assistance.| [Use real-time telemetry to troubleshoot poor meeting quality](use-real-time-telemetry-to-troubleshoot-poor-meeting-quality.md#where-to-find-per-user-real-time-troubleshooting-telemetry) | No end-user control |
-  | Restrict who can record | Yes, use the Teams admin center to add or delete recording restrictions in your meeting templates. Use the Microsoft Purview portal to turn labels with recording restrictions on or off.|[Manage recordings for sensitive meetings](manage-meeting-recording-options.md) | [Record a meeting](https://support.microsoft.com/office/record-a-meeting-in-teams-34dfbe7f-b07d-4a27-b4c6-de62f1348c24?storagetype=stage#bkmk_whocanstartorstoparecording) |
   | Screen sharing quality alerts|Yes, you can add or remove users.| [Alerts for in-progress meeting screen sharing issues](/MicrosoftTeams/alerts/alerts-in-progress-meeting-screen-sharing) | No end-user control |
   | Sensitivity labels | Yes, use the Microsoft Purview portal to turn labels on or off.|[Use sensitivity labels to protect calendar items, Teams meetings and chat](/purview/sensitivity-labels-meetings) | [Sensitivity labels for Teams meetings](https://support.microsoft.com/office/sensitivity-labels-for-teams-meetings-2b244d1d-72d0-471e-8e58-c41079e190fb)|
   | Teams Premium feature usage report|No, contact support for assistance.| [Teams Premium feature usage report](/microsoftteams/teams-analytics-and-reports/teams-premium-usage-report) | No end-user control |
   | Templates, labels, and policies |Yes, use the Teams admin center to add or delete meeting templates. Use the Microsoft Purview portal to turn labels on or off.| [Templates, sensitivity labels, and policies](meeting-templates-sensitivity-labels-policies.md)  | [Use custom templates](https://support.microsoft.com/office/use-custom-templates-for-teams-meetings-78279be9-3283-4999-b24e-96fb0da2fb4f) |
   | Video quality alerts|Yes, you can add or remove users.| [Alerts for in-progress meeting video quality issues](/MicrosoftTeams/alerts/alerts-in-progress-meeting-video) | No end-user control |
   | Watermarks | Yes | [Require a watermark for meetings](watermark-meeting-content-video.md) | [Watermarks for meetings](https://support.microsoft.com/office/watermark-for-teams-meetings-a9166432-f429-4a19-9a72-c9e8fdf4f589)|
+  | Who can record and transcribe | Yes, use the Teams admin center to add or delete recording restrictions in your meeting templates. Use the Microsoft Purview portal to turn labels with recording restrictions on or off.|[Manage recordings for sensitive meetings](manage-meeting-recording-options.md) | [Record a meeting](https://support.microsoft.com/office/record-a-meeting-in-teams-34dfbe7f-b07d-4a27-b4c6-de62f1348c24?storagetype=stage#bkmk_whocanstartorstoparecording) |
 
 ## Personalized meetings
 
@@ -113,7 +115,7 @@ Teams Premium provides more ways to personalize your Teams meeting experiences w
 
 - **Custom meeting backgrounds for organizations** - Create and define custom meeting backgrounds that your users can use during meetings and events.
 
-- **Custom together mode scenes for organizations** -Customize, create, or accept together mode scenes to digitally combine participants into a single virtual scene.
+- **Custom together mode scenes for organizations** - Customize, create, or accept together mode scenes to digitally combine participants into a single virtual scene.
 
 - **Meeting templates** - Control meeting settings that the meeting organizer normally controls. With templates, you can create consistent meeting experiences in your organization and help enforce compliance requirements and business rules.
 

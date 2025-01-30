@@ -45,9 +45,9 @@ Users in your organization will automatically get the global policy, unless you 
 
    For example, you want to make sure that sent messages aren't deleted or altered. Create a new custom policy named "Retain sent messages" and turn off the following settings:
 
-  - Owners can delete sent messages
-  - Users can delete sent messages
-  - Users can edit sent messages
+   - Owners can delete sent messages
+   - Users can delete sent messages
+   - Users can edit sent messages
 
   Then assign the policy to users.
 
@@ -100,7 +100,7 @@ Here are the messaging policy settings that you can configure.
 - **URL previews** - Use this setting to turn automatic URL previewing on or off in messages.
 - **Report inappropriate content** - When this is ON, users can report inappropriate content for review by communication compliance reviewers. Reviewers can remove the message if appropriate. For more information, see [Create and manage communication compliance policies](/microsoft-365/compliance/communication-compliance-policies#user-reported-messages-policy).
 - **Translate messages** - Turn this setting on to let users automatically translate Teams messages into the language specified by their personal language settings for Microsoft 365 or Office 365.
-- **Immersive reader for messages** - Turn this setting on to let users view messages in Microsoft Immersive Reader. Immersive Reader is a learning tool that provides a full screen reading experience to increase readability of text.
+- **Immersive reader for messages** - Turn this setting ON to let users view messages in Microsoft Immersive Reader. Immersive Reader is a learning tool that provides a full screen reading experience to increase readability of text.
 - **Send urgent messages using priority notifications** - If you turn this ON, users can send messages using [priority notifications](https://support.microsoft.com/article/mark-a-message-as-important-or-urgent-in-teams-ea99d5b6-1317-4550-8d75-86ff14cd4462). Priority notifications notify users every 2 minutes for 20 minutes or until messages that are marked as *urgent* are picked up and read by the recipient. This feature increases the likelihood that the message is acted upon in a timely manner. You can't edit an urgent message after you send it.
 - **Create voice messages**
   > [!Important]
@@ -117,7 +117,7 @@ Here are the messaging policy settings that you can configure.
 - **Video messages** - Turn this setting on if you want users in your organization to be able to use the Teams app to send video messages to other people in chats and channels.
 
 > [!NOTE]
-> Some of these settings, such using Giphys, can also be configured at the team level by team owners and at the private or shared channel level by channel owners.
+> Some of these settings, such as using Giphys, can also be configured at the team level by team owners and at the private or shared channel level by channel owners.
 
 ## Closed captions for video messages in Teams Chat
 
@@ -149,7 +149,7 @@ As an administrator, you can hide or show captions for users by using the PowerS
         
     ```
 
-For more information about PowerShell, see [Microsoft Teams PowerShell Overview - Microsoft Teams | Microsoft Learn](teams-powershell-overview.md)
+For more information about PowerShell, see [Microsoft Teams PowerShell Overview - Microsoft Teams | Microsoft Learn](teams-powershell-overview.md).
 
 
 ### Related topics

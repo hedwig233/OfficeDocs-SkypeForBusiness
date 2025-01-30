@@ -85,7 +85,7 @@ Teams Premium provides more ways to safeguard and monitor users' Teams experienc
 
 - **Watermarking** - Enforced through a sensitivity label, watermarks display the email address of a meeting or webinar participant. Watermarks are useful for protecting confidential information shared in meetings and webinars.
 
-- **Who can record and transcribe**- Organizers can control who can record and transcribe their meetings through their meeting options. You can also use a sensitivity label to manage this feature.
+- **Who can record and transcribe** - Organizers can control who can record and transcribe their meetings through their meeting options. You can also use a sensitivity label to manage this feature.
 
   | Feature/Task  | Can admins turn this feature on/off? | Documentation for admins | Documentation for your end users |
   | --------- | -----------| ----------- | ------------ |
@@ -115,7 +115,7 @@ Teams Premium provides more ways to personalize your Teams meeting experiences w
 
 - **Custom meeting backgrounds for organizations** - Create and define custom meeting backgrounds that your users can use during meetings and events.
 
-- **Custom together mode scenes for organizations** -Customize, create, or accept together mode scenes to digitally combine participants into a single virtual scene.
+- **Custom together mode scenes for organizations** - Customize, create, or accept together mode scenes to digitally combine participants into a single virtual scene.
 
 - **Meeting templates** - Control meeting settings that the meeting organizer normally controls. With templates, you can create consistent meeting experiences in your organization and help enforce compliance requirements and business rules.
 

@@ -25,7 +25,7 @@ ms.custom:
   - Reporting
   - ms.teamsadmincenter.directrouting.cqd
   - ms.lync.lac.ToolsCallQualityDashboard
-description: Learn about how to use the updated Teams Auto Attendant & Call Queue Historical Report Power BI report to view Auto attendant and Call queue historical data.
+description: Learn how to use the Teams Auto Attendant & Call Queue Historical Reports with Power BI to view Auto attendant and Call queue historical data.
 ---
 
 

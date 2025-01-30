@@ -208,7 +208,7 @@ You have to refresh the report to see any new data.
 
 #### Known issues
 
-1. Only 28 days of call history are available. Call queue and Agent data is considered personal data and is subject to data privacy retention policies.
+1. Only 28 days of call history are available. Call queue and Agent data are considered personal data and is subject to data privacy retention policies.
 1. The Call queues resource account ID's name instead of Call queue name is shown. To show all the traffic for a Call queue, you must select all the resource accounts assigned to the Call queue.
 1. The Agent's UPN name instead of their name is shown.
 1. The Date selector sometimes shows dates outside the range of available data resulting in a blank report. Change the dates to be within the last 28 days to resolve the issue.
@@ -606,7 +606,7 @@ A valid query consists of several attributes in a JSON object:
 - **LimitResultRowsCount**: the max count of rows returned by VAAC
 
 >[!NOTE]
-> When you submit a query that searches by `Date`, and the search criteria includes both date and time (ISO 8601 format), the time portion is ignored.
+> When you submit a query that searches by `Date`, and the search criteria include both date and time (ISO 8601 format), the time portion is ignored.
 
 ## Accessing VAAC outside of Power BI
 

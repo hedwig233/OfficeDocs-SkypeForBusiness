@@ -619,6 +619,11 @@ For information about the latest Teams app releases, see [What's new in Microsof
 
 | Device model | Latest Firmware version | Minimum Firmware version required | Teams client | Company Portal | Admin Agent | Release date | Cloud |
 |:-------------------|:----------------------------|:---------------------------------------------|:-------------------------------|:-------------------------------|:--------------------------------|:--------------------------------|:-----------------|
+| Logi Rallybar (VR0019) | `1.13.127` | N/A | `1449/1.0.96.2024042606` | `5.0.6152.0`| `1.0.0.202402202353.product` | January 23, 2025| GCCH|
+| Logi Rallybar Mini (VR0020) | `1.13.127` | N/A | `1449/1.0.96.2024042606` | `5.0.6152.0`| `1.0.0.202402202353.product` | January 23, 2025| GCCH|
+| Logi RoomMate (VR0030) | `1.13.124`   | N/A | `1449/1.0.96.2024042606` | `5.0.6152.0`| `1.0.0.202402202353.product` | January 23, 2025| GCCH|
+| Logi Rallybar Huddle (VR0034) | `1.13.121`   | N/A | `1449/1.0.96.2024042606` | `5.0.6152.0`| `1.0.0.202402202353.product` | January 23, 2025| GCCH|
+| Logi TAP IP (VR0029) | `1.13.124`| N/A | `1449/1.0.96.2024042606` | `5.0.6152.0`| `1.0.0.202402202353.product` | January 23, 2025| GCCH|
 | Logi Rallybar (VR0019) | `1.12.268` | N/A | `1449/1.0.96.2024042606` | `5.0.5484.0`| `1.0.0.202402202353.product` | October 7, 2024| GCCH|
 | Logi Rallybar Mini (VR0020) | `1.12.268` | N/A | `1449/1.0.96.2024042606` | `5.0.5484.0`| `1.0.0.202402202353.product` | October 7, 2024| GCCH|
 | Logi Rallybar (VR0019) | `1.12.264` | N/A | `1449/1.0.96.2024042606` | `5.0.5484.0`| `1.0.0.202402202353.product` | August 23, 2024| GCCH|

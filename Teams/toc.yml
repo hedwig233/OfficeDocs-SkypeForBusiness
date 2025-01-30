@@ -1071,6 +1071,8 @@ items:
                   href: aa-cq-cqd-historical-reports.md
                 - name: Real-time reporting
                   href: aa-cq-real-time-reports.md
+                - name: Historical reporting for GCC High and DoD
+                  href: aa-cq-cqd-historical-reports-v164.md
             - name: PowerShell cmdlet reference for Auto attendants and Call queues
               href: call-queue-auto-attendant-cmdlets.md
             - name: Dial and voice reference
@@ -1505,8 +1507,8 @@ items:
               items:
                 - name: Teams Rooms release notes
                   href: rooms/rooms-release-note.md
-                - name: Teams panels release notes
-                  href: https://support.microsoft.com/office/what-s-new-in-microsoft-teams-devices-eabf4d81-acdd-4b23-afa1-9ee47bb7c5e2#ID0EBD=Teams_panels
+                - name: Teams panels release notes 
+                  href: devices/devices-release-notes.md?tabs=panels#tabpanel_1_panels
                 - name: Management apps
                   href: devices/certified-device-apps.md
             - name: Troubleshooting and known issues
@@ -1657,8 +1659,8 @@ items:
           items:
             - name: Overview of Teams phones
               href: phones/phones-for-teams.md
-            - name: What's new in Teams phones
-              href: https://support.microsoft.com/office/what-s-new-in-microsoft-teams-devices-eabf4d81-acdd-4b23-afa1-9ee47bb7c5e2#ID0EBD=Desk_phones
+            - name: Teams phones release notes
+              href: devices/devices-release-notes.md?tabs=phones#tabpanel_1_phones
             - name: Features
               items:
                 - name: Set the Teams phone interface

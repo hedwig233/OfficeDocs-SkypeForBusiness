@@ -4,7 +4,7 @@ author: mkbond007
 ms.author: mabond
 manager: pamgreen
 ms.reviewer: colongma
-ms.date: 12/13/2024
+ms.date: 1/27/2025
 ms.topic: article
 ms.assetid: 67ccda94-1210-43fb-a25b-7b9785f8a061
 ms.tgt.pltfrm: cloud
@@ -39,7 +39,7 @@ Call queues provide:
 - Call routing - in *First In, First Out* (FIFO) order - to agents.
 - Handling options for queue overflow and timeout.
 
-Before you follow the procedures in this article, be sure you've read [Plan for Teams Auto attendants and Call queues](plan-auto-attendant-call-queue.md) and followed the [getting started steps](plan-auto-attendant-call-queue.md#getting-started).
+Before following the procedures in this article, make sure you read [Plan for Teams Auto attendants and Call queues](plan-auto-attendant-call-queue.md) and complete the [getting started steps](plan-auto-attendant-call-queue.md#getting-started).
 
 ## What's new for Call queues in the past six months
 
@@ -90,7 +90,7 @@ Before you can create and manage resource accounts, you must do the following ac
 
 All Call queues that directly answer calls must have an associated resource account. All resource accounts must be assigned a [Microsoft Teams Phone Resource Account license](teams-add-on-licensing/virtual-user.md). If you wish, you can assign several resource accounts to a Call queue.
 
-Nested Auto attendants and Call queues that receive calls from an auto attendant or call queue that has already answered the call don't require a resource account. For more information, see [Nested Auto attendants and Call queues](./plan-auto-attendant-call-queue.md#nested-auto-attendants-and-call-queues).
+Nested Auto attendants and Call queues that receive calls from an auto attendant or call queue that already answered the call don't require a resource account. For more information, see [Nested Auto attendants and Call queues](./plan-auto-attendant-call-queue.md#nested-auto-attendants-and-call-queues).
 
 For details on how to create resource accounts and ready them for use with auto attendants or call queues, see [Manage Teams resource accounts](manage-resource-accounts.md).
 
@@ -127,7 +127,7 @@ Service level measures the efficiency and responsiveness to incoming customer re
 You can set the threshold target to any value from 0 to 40 minutes (2,400 seconds). The value must be less than the value set for [Call timeout](#call-timeout-set-how-to-handle-call-timeouts). Setting the value to blank (empty) disables the service level metric calculation for the call queue.
 
 >[!NOTE]
-> Service level metrics are not currently available in historical reporting.
+> Service level metrics aren't currently available in historical reporting.
 
 ### Set the Call queue language
 
@@ -157,7 +157,7 @@ Teams provides default music to callers while they're *on hold in a queue*.
 - If you want to play a specific audio file, choose **Play an audio file** and upload an MP3, WAV, or WMA file. See [Supported audio file formats](plan-auto-attendant-call-queue.md#supported-audio-file-formats).
 
 > [!IMPORTANT]
-> You are responsible for independently clearing and securing all necessary rights and permissions to use any music or audio file with your Microsoft Teams service, which may include intellectual property and other rights in any music, sound effects, audio, brands, names, and other content in the audio file from all relevant rights holders, which may include artists, actors, performers, musicians, songwriters, composers, record labels, music publishers, unions, guilds, rights societies, collective management organizations and any other parties who own, control or license the music copyrights, sound effects, audio and other intellectual property rights.
+> You're responsible for independently clearing and securing all necessary rights and permissions to use any music or audio file with your Microsoft Teams service, which may include intellectual property and other rights in any music, sound effects, audio, brands, names, and other content in the audio file from all relevant rights holders, which may include artists, actors, performers, musicians, songwriters, composers, record labels, music publishers, unions, guilds, rights societies, collective management organizations, and any other parties who own, control, or license the music copyrights, sound effects, audio, and other intellectual property rights.
 
 After you select a greeting and on-hold music, select the **Next** button at the bottom of the **Add a Call queue** page.
 
@@ -210,9 +210,14 @@ To **add a group** to the queue:
 > If there are more than 200 members in the group, only the first 200 members, in alphabetical order, are added as agents to the Call queue.
 
 > [!IMPORTANT]
-> Known issue: Assigning private channels to Call queues
+> Only standard channels are fully supported.
 >
-> When using a private channel, calls are be distributed to all members of the team even if the private channel only has a subset of team members. You may experience this problem when trying to assign a private channel to a Call queue. This problem may occur even if the Call queue previously had a private channel assigned or if the private channel was previously assigned to a Call queue. If you already have private channels assigned to Call queues, they will continue to work. This problem only affects new assignments. Support continues to work on identifying the root cause of this problem.
+> Known issues:
+> 1. Assigning private channels to Call queues
+>     - When using a private channel, calls are distributed to all members of the team even if the private channel only has a subset of team members.
+>     - Assigning a private channel to a call queue may fail, even if the call queue previously had a private channel assigned or if the private channel was previously assigned to a Call queue.
+>
+> 2. Only the global administrator role can fully manage a call queue with a Teams channel assigned.
 
 ### Conference mode
 
@@ -227,9 +232,9 @@ Once you select your call answering options, select the **Next** button at the b
 
 Keep the following in mind:
 
-- Conference mode isn't supported for calls that are routed to the queue from a Direct Routing gateway that's enabled for Location Based Routing.
+- Conference mode isn't supported for calls routed to the queue from a Direct Routing gateway enabled for Location Based Routing.
 - Conference mode is required if Teams users need to consult/transfer calls with Call queues.
-- Agents may hear the configured music on hold in queue for up to 2 seconds when first joining the call.
+- Agents may hear the configured music on hold in queue for up to two seconds when first joining the call.
 
 > [!IMPORTANT]
 > Transfer mode (when conference mode is disabled) is now in legacy mode. Support for transfer mode is scheduled to be removed by the end of June 2025.
@@ -251,7 +256,7 @@ Choose from these options:
 
 - **Round robin** balances the routing of incoming calls so that each call agent gets the same number of calls from the queue.
 
-- **Longest idle** routes each call to the agent who's been idle the longest. An agent is considered idle if their presence state is *Available*. Agents who aren't available don't receive calls until they change their presence to *Available*.
+- **Longest idle** routes calls to the agent who is idle the longest. An agent is considered idle if their presence state is *Available*. Agents who aren't available don't receive calls until they change their presence to *Available*.
 
 > [!TIP]
 > Setting the **Routing Method** to **Round robin** or **Longest idle** is the recommended setting.
@@ -327,7 +332,7 @@ Consider the following call queue configuration:
 
 After waiting in the queue for 60 seconds, the caller becomes eligible for callback. However, as the default music is two minutes long, the call queue timeout occurs first and callback isn't offered.
 
-Once a caller has successfully requested a callback, the callback request is also subject to the call queue timeout configuration. If a callback request times out, the information about the caller is sent to the configured email notification address.
+Once a caller successfully requests a callback, the callback request is also subject to the call queue timeout configuration. If a callback request times out, the information about the caller is sent to the configured email notification address.
 
 For a callback to be successful, the call queue timeout value must be high enough to allow for the call to become eligible, for the music to stop playing, for a caller to successfully request a callback, and for the callback to be queued until an agent becomes available and answers the call.
 
@@ -398,7 +403,7 @@ Set-CsCallQueue -Identity <Call Queue GUID> -IsCallbackEnabled $true -CallbackRe
  "Tone1" -NumberOfCallsInQueueBeforeOfferingCallback 50 -CallbackOfferTextToSpeechPrompt "If you would like to have a callback when an agent becomes available, press 1" -CallbackEmailNotificationTarget <Team or DL GUID>
 ````
 
-##### Calls become eligible for callback when there are 2 times more calls than agents
+##### Calls become eligible for callback when there are two times more calls than agents
 
 To create a new call queue, use the New-CsCallQueue cmdlet, as shown in the following example:
 
@@ -481,14 +486,14 @@ This call exception handling option handles calls when no agents are opted into 
 
 >[!IMPORTANT]
 > Known Issues:
-> 1. When **Longest idle** is selected as the routing method, the **No Agents** treatment will not work when ***New Calls Only*** is selected and new calls will be queued. The ***All Calls*** option works as expected. Support is investigating.
-> 1. Don't include any special characters in the greeting message when redirecting to **Voicemail (shared)** as these will not be spoken by the system.
+> 1. When **Longest idle** is selected as the routing method, the **No Agents** treatment doesn't work when ***New Calls Only*** is selected and new calls are queued. The ***All Calls*** option works as expected. Support is investigating.
+> 1. Don't include any special characters in the greeting message when redirecting to **Voicemail (shared)** as these aren't spoken by the system.
 
 ### Nested Auto attendants and Call queues
 
 **Nested Auto attendants and Call queues**, or auto attendants and call queues that don't directly answer phone calls, no longer require a Resource Account and associated licensing.
 
-Existing configurations that use Resource Accounts will continue to function and remain fully supported. A combination of both methods can be used at the same time.
+Existing configurations that use Resource Accounts continue to function and remain fully supported. A combination of both methods can be used at the same time.
 
 When call queue [Exception handling](#step-6-exception-handling-1) occurs, the `Voice app` destination for Overflow, Timeout, and No Agents can refer to an auto attendant or call queue directly instead of the Resource Account for that auto attendant or call queue.
 
@@ -656,7 +661,7 @@ The following settings are recommended:
 3. Teams Phone Mobile Cellular Phone Dialer.
 4. Selecting *Longest Idle* for the agent routing method automatically enables Presence based routing.
 5. It's not possible to set the order the agents are presented with calls when using a group or channel for membership.
-6. Conference mode isn't supported if phone calls are routed to the queue from a Direct Routing gateway that's enabled for Location-Based Routing.
+6. Conference mode isn't supported if phone calls are routed to the queue from a Direct Routing gateway enabled for Location-Based Routing.
     - Location based routing isn't supported with Call queues. For more information, see [Voice apps (Auto Attendant or Call Queue)](location-based-routing-plan.md#inbound-calls-through-auto-attendants).
 7. Microsoft Teams Phone only.
 8. Through the User Settings Portal page at [https://aka.ms/vmsettings](https://aka.ms/vmsettings).

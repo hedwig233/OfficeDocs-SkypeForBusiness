@@ -106,6 +106,9 @@ The following devices are Certified under the Microsoft Teams Rooms on Windows C
 | Logitech TAP Console with Lenovo Core Compute | Core i5 | 8 GB | 128 GB |
 | [Logitech Tap and Lenovo ThinkSmart Tiny](https://www.logitech.com/video-collaboration/partners/lenovo.html) | Core i5 | 8 GB | 128 GB |
 | MAXHUB XCore Kit | Core i3 | 8 GB | 128 GB |
+| MAXHUB XCore Kit Pro | Core i5 | 16 GB | 256 GB |
+| MAXHUB XBoard V865T | Core i5 | 16 GB | 256 GB |
+| MAXHUB XBoard V655T | Core i5 | 16 GB | 256 GB |
 | [Microsoft Surface Hub 3 50"](https://www.microsoft.com/surface/business/surface-hub-3) | Core i5 | 32 GB | 512 GB |
 | [Microsoft Surface Hub 3 85"](https://www.microsoft.com/surface/business/surface-hub-3) | Core i5 | 32 GB | 512 GB |
 | [Microsoft Surface Hub 2S 50" upgraded with the Surface Hub 3 Pack](https://www.microsoft.com/d/surface-hub-3-pack-for-business/8mf5qhhn1t4g) | Core i5 | 32 GB | 512 GB |
@@ -168,6 +171,7 @@ The following devices are certified under the Microsoft Teams Rooms peripherals 
 | Aver VB130 Camera Soundbar | 0.0.7300.71 |  |  |||
 | [Aver TR313V2 Camera](https://www.averusa.com/products/ptz-camera/tr313v2) | 0.3.0011.38 |  |  |||
 | [Audiocodes RXVCAM50L](https://www.audiocodes.com/solutions-products/products/room-experience-rx-suite/rxvcam50lm-video-camera) | 1.0.5 |  |  |||
+| [Audiocodes RXVCAM50M](https://www.audiocodes.com/solutions-products/products/room-experience-rx-suite/rxvcam50lm-video-camera) | 15.50.5.891 |  |  |||
 | [AudioCodes RXVCam10](https://www.audiocodes.com/solutions-products/products/room-experience-rx-suite/rxvcam10-cc-content-camera) | 1.0.6 | &#x2714; |  |||
 | [Bose Video Bar VB1](https://pro.bose.com/en_us/products/conferencing/videobars/bose-videobar-vb1.html?mc=25_PS_VB_BO_00_BI_&&msclkid=fc99b79880f714727a63e86ea0e5642a&utm_source=bing&utm_medium=cpc&utm_campaign=US%20-%20Brand_Videobar%20VB1_Exact&utm_term=bose%20videobar%20vb1&utm_content=Bose%20Videobar%20VB1&gclid=fc99b79880f714727a63e86ea0e5642a&gclsrc=3p.ds) | 19.2 |  |  |||
 | [Bose VB-S AV Bar](https://pro.bose.com/en_us/products/conferencing/videobars/bose-videobar-vb-s.html) | 1.1.2 |  |  |||
@@ -222,6 +226,8 @@ The following devices are certified under the Microsoft Teams Rooms peripherals 
 | [MAXHUB UC S07 Videoconferencing Camera](https://www.maxhub.com/en/s07/) | Audio firmware version: V0.0.0.5476 <br/> Video firmware version: V100-20230726-175602 |  |  |||
 | MAXHUB UC W31 4K USB Camera | Video firmware version: 100-20230731-104934 |  |  |||
 | MAXHUB UC BM35 | 0.0.02457 |  |  |||
+| MAXHUB UC BM45 | 0.0.0.1926 |  |  |||
+| MAXHUB UC P30 | V8.1.40 |  |  |||
 | [Microsoft Surface Hub Smart Camera](https://www.microsoft.com/d/surface-hub-smart-camera/8n983ctks176) | FW: 1.8.1 |  |  |||
 | [Microsoft Surface Hub 2 Camera](https://www.microsoft.com/d/surface-hub-2-camera/8tzgfl7z18ph) | FW: 24.712.159 |  |  |||
 | [Nureva HDL300](https://www.nureva.com/audio-conferencing/hdl300) | 2.3.6 |  |  |||
@@ -290,6 +296,7 @@ The following devices are certified under the Microsoft Teams Rooms peripherals 
 |Q-SYS VisionSuite – Q-SYS Core ([110f](https://www.qsys.com/products-solutions/q-sys/processing/core-110f/), [8 Flex](https://www.qsys.com/products-solutions/q-sys/processing/core-8-flex/), [Nano](https://www.qsys.com/products-solutions/q-sys/processing/core-nano/), or [NV-32-H](https://www.qsys.com/products-solutions/q-sys/processing/nv-32-h-core-capable/)) + <br/> Q-SYS Network Camera ([NC-12x80](https://www.qsys.com/products-solutions/q-sys/video/nc-series/nc-series-ptz-conference-cameras/), [NC-20x60](https://www.qsys.com/products-solutions/q-sys/video/nc-series/nc-series-ptz-conference-cameras/), [NC-110](https://www.qsys.com/products-solutions/q-sys/video/nc-series/nc-110-conference-camera/)) + <br/> Q-SYS Seervision AI Accelerator ([SVS1-2U, SVS4-2U](https://www.qsys.com/products/q-sys/video/seervision/?L=0)) + <br/> Certified for Microsoft Teams Q-SYS Audio Solution with Ceiling Mic | Q-SYS Designer 9.10.1 <br/> Seervision v75.0.3 <br/> VisionSuite Plugin v75.0.3 |  |  |||
 | [Vaddio IntelliSHOT-M](https://www.legrandav.com/products/cameras/hd_fixed_camera/intellishot-m-camera) | 1.0.0 |  |  |||
 | [Vaddio RoboSHOT 30E-M HD PTZ Camera](https://www.legrandav.com/products/cameras/hd_ptz_camera/roboshot-30e-m) | 1.0.0 |  |  |||
+| ViewSonic UMB202 | Video Firmware Version: V100-20240729-173849; <br/> Audio Firmware Version: MUA_6MIC_Teams_RK3308_LiNUX_32BIT_20240531_150618_V0.0.3.0006 |  |  |||
 | [Yamaha CS-500](https://europe.yamaha.com/en/products/unified_communications/video_collaboration/cs-500/index.html) | 1.0.4 |  |  |||
 | [Yamaha CS-800](https://europe.yamaha.com/en/products/unified_communications/video_collaboration/cs-800/index.html) | 1.0.4 |  |  |||
 | [Yamaha ADECIA Ceiling Solution](https://europe.yamaha.com/en/products/contents/unified_communications/adecia_ceiling/index.html) | 1.2.0 |  |  |||

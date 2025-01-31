@@ -65,7 +65,7 @@ You can use a free PowerShell script to fetch the details of a peripheral and en
 
 ## Step 4 - Enable additional features for users
 
-You have the option to [enable the automatic work location update policy](/powershell/module/teams/new-csteamsworklocationdetectionpolicy) for your organization or for a group of users. Automatic work location updates are designed to enhance the end user experience by making it easier to keep their work location up-to-date and connect with others when they are in the office. With the policy enabled, users have the option to enable automatic work location updates. They can do so in Teams desktop client under **Settings** > **Privacy** > **Sharing your work location**. After users have opted-in, their work location will automatically update to **In the office** when they connect to a bookable desk, provided their work location was previously set to unknown or remote. The detected location lasts until the end of their working hours. If they plug in after work hours, the location will be set until 11:59pm that day. This feature allows for a seamless transition between remote and in-office work, which enhances collaboration and communication within your team and other users. 
+You have the option to [enable the automatic work location update policy](/powershell/module/teams/new-csteamsworklocationdetectionpolicy) for your organization or for a group of users. Automatic work location updates are designed to enhance the end user experience by making it easier to keep their work location up-to-date and connect with others when they are in the office. With the policy enabled, users have the option to enable automatic work location updates. They can do so in Teams desktop client under **Settings** > **Privacy** > **Manage my work location**. After users have opted-in, their work location will automatically update to **In the office** when they connect to a bookable desk, provided their work location was previously set to unknown or remote. If the desk pool is parented to a building, their work location can also change to a specific building when they connect to a bookable desk, provided their work location was previously set to unknown, remote, or In the office. The detected location lasts until the end of their working hours. If they plug in after work hours, the location will be set until 11:59pm that day. This feature allows for a seamless transition between remote and in-office work, which enhances collaboration and communication within your team and other users. 
 
 ## Step 5 - Test the end user experience
 
@@ -105,7 +105,6 @@ First, ensure that your Microsoft Teams module is on version 6.5.0 or higher. To
 
 ```powershell
 Import-Module MicrosoftTeams
-Connect-MicrosoftTeams
 Get-Module -Name MicrosoftTeams
 ```
 

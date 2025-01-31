@@ -98,6 +98,7 @@ The following providers offer contact center solutions that are integrated into 
 | `Unexus` | https://www.unexus.nl/en/solutions/unexus-connect/                |
 | `Vier` | https://www.vier.ai/                   |
 | `Vonage` |  https://www.vonage.com/contact-centers/integrations/microsoft-teams/                                 |
+| `Zoom` | https://www.zoom.com/en/products/contact-center/               |
 
 This list will be updated as more solution providers join and meet the certification criteria.
 

@@ -107,7 +107,7 @@ There are some things that you must install or configure for any server that's r
 > [!IMPORTANT]
 > - Skype For Business 2019 supports .NET Framework 4.8. and .NET Framework 4.8.1
 >
-> - Skype for Business (SfB) Server 2019 requires Visual C++ redistributable package for Visual Studio 2012 and Visual C++ redistributable package for Visual Studio 2013, which are automatically installed as part of the SfB Server 2019 installation.
+> - Skype for Business Server 2019 requires Visual C++ redistributable package for Visual Studio 2012 and Visual C++ redistributable package for Visual Studio 2013, which are automatically installed as part of the Skype for Business Server 2019 installation.
 >
 > - The system requirements for the Visual C++ redistributable package for Visual Studio 2012 and Visual C++ redistributable package for Visual Studio 2013 don't mention support for Windows Server 2016, Windows Server 2019, or Windows Server 2022, but the redistributable package is safe to install on these versions of Windows.
 

@@ -23,8 +23,8 @@ f1.keywords:
 ai-usage: ai-assisted
 description: This article provides a comprehensive overview of Native Bluetooth personal peripherals and outlines the certification requirements necessary for compatibility with Microsoft Teams.
 ---
-  
-# Native Bluetooth personal peripherals for Microsoft Teams
+
+  # Native Bluetooth personal peripherals for Microsoft Teams
 
 Native Bluetooth personal peripherals refer to personal headsets or speakerphones that are directly paired and connected to the integrated Bluetooth radio of a host device, such as a PC or mobile phone, without requiring an adapter or also called a dongle. This article provides a comprehensive overview of Native Bluetooth personal peripherals and outlines the certification requirements necessary for compatibility with Microsoft Teams.
 
@@ -50,7 +50,15 @@ To pair a Native Bluetooth Peripheral to your Windows 11 PC, start by ensuring t
 
 ### Hardware Requirements
 
-For a better and more consistent experience, ensure that you have the latest audio and Bluetooth drivers. PCs with Intel processors are recommended to use 12th Gen Intel processors or newer. Some Intel Bluetooth, Wi-Fi, and audio drivers have known compatibility issues with Native Bluetooth peripherals. Review the minimum driver versions suggested in the [Known Issues](#known-issues) section.
+For a better and more consistent experience, we suggest that customers should check if they have the latest Audio and Bluetooth drivers.   
+PCs with Intel processors are recommended to use Intel® Core™ 12th Gen Intel processors or newer. We recommend ensuring that your Intel-based PC has the following minimum driver versions before using Native Bluetooth peripherals:
+
+- **Intel Smart Sound Technology (Intel SST)**:
+  - Intel Core Ultra processors (Series 2): 20.42.11233.0 or newer
+  - Intel Core Ultra processors (Series 1): 20.40.11112.5 or newer
+  - Intel Core 12th Gen / 13th Gen: 10.29.00.11261 or newer
+- **Intel Bluetooth**: 23.70.x or newer
+- **Intel Wi-Fi**: 23.70.x or newer
 
 PCs that don't come with integrated Bluetooth radios and use aftermarket USB Bluetooth adapters aren't recommended.
 
@@ -70,14 +78,6 @@ PCs that don't come with integrated Bluetooth radios and use aftermarket USB Blu
   - Logging into more than one tenant under the same Teams desktop client.
   - When the Teams desktop client is closed and reopened, it needs a few seconds for the Teams button to work again. If this doesn't work, turn off and on your headset to resolve the issue.
 - Mute status sync from the Teams desktop client to the device works only with Teams-certified peripherals.
-- Some Intel driver versions are known to have compatibility issues. Ensure that your Intel-based PC has the following minimum driver versions before using Native Bluetooth peripherals:
-  - Intel Smart Sound Technology (iSST):
-    - Core Ultra 200V: 20.42.11233.0 or newer
-    - Core Ultra: 20.40.11112.5 or newer
-    - 12th Gen / 13th Gen: 10.29.00.11261 or newer
-  - Intel Bluetooth: 23.70.x or newer
-  - Intel Wi-Fi: 23.70.x or newer
-
 ### Checking driver versions
 
 #### Checking iSST driver version
@@ -107,7 +107,7 @@ PCs that don't come with integrated Bluetooth radios and use aftermarket USB Blu
 
 This certification is currently for Classic Bluetooth devices. The Microsoft Teams Certification Program has not started certifying Bluetooth Low Energy (LE) Audio headsets yet. We will update this article when the time comes. We do not anticipate issues with headsets that support both Classic Bluetooth and Bluetooth LE Audio, but the latter mode is not certified for Teams.
 
-To see a list of supported Bluetooth personal peripherals, see [Certified personal peripherals](usb-devices.md?tabs=bluetooth#tabpanel_1_bluetooth).
+To see a list of supported Bluetooth personal peripherals, see [Certified personal peripherals](/microsoftteams/devices/usb-devices?tabs=bluetooth).
 
 
 ## Troubleshooting

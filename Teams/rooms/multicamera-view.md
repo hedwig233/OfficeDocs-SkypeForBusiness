@@ -41,7 +41,7 @@ Multiple camera view activates multiple cameras in Microsoft Teams Rooms on Wind
 - USB has limited bandwidth. Each camera should be connected to the Microsoft Teams Rooms device USB port directly. If there are insufficient USB ports for all peripheral devices, a USB hub can be used to but it should have only one camera connected to it.
 - Older Microsoft Teams Rooms models might not have sufficient capacity to process multiple simultaneous videos. Video freeze or missing video streams might occur. Therefore, the following is our minimum compute recommendation:
   - Intel Core i5 processor or above
-  - For 2-3 camera setup, minimum Intel ninth Generation CPU
+  - For two or three camera setup, minimum Intel 9th Generation CPU
   - For four camera setup, minimum Intel 12th Generation CPU
   - Cameras should support MJPEG video format.
 

@@ -94,6 +94,7 @@ The following list contains the prerequisites for users to be able to access Fac
 - Be a Microsoft Teams Public preview participant.
   - For information on how to access Teams Public preview features, see [Microsoft Teams Public preview](/microsoftteams/public-preview-doc-updates).
 - [Have Loop experiences in Teams for AI-generated notes in meetings turned on](#3-turn-on-loop-experiences-in-teams-for-ai-generated-notes-in-meetings).
+- Transcription is auto-enabled and must stay on to use AI-generated notes in meetings.
 
 ## Facilitator note storage
 

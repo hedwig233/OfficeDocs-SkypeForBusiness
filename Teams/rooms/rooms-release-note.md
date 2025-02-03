@@ -67,6 +67,12 @@ Features with the :::image type="icon" source="../media/mtr-pro-icon.png"::: ico
 ### 5.2.115.0 (9/26/2024)
 
  >[!NOTE]
+ >The following two features were added to the 5.2.115.0 release with a service side change on January 22, 2025.
+
+- **Multiple camera view** :::image type="icon" source="../media/mtr-pro-icon.png"::: **:** Teams Rooms on Windows supports up to four single stream cameras that will be shown to remote meeting participants. With multiple camera view, remote meeting participants will have the ability to follow all the action in the room and manually toggle between views from the room that they want to see. [Learn more](/microsoftteams/rooms/multicamera-view).
+- **Start/stop recording** :::image type="icon" source="../media/mtr-pro-icon.png"::: **:** Users can start or stop recording directly from Teams Rooms on Windows devices without having to join the meeting on a companion device. IT admins can allow or prevent users (including resource accounts) from recording meetings using the meeting recording policy on the Teams admin center. When users start recording a Meet now or Whiteboard session initiated from a Teams Rooms device, users must ensure that they invite themselves to the meeting so that they can access the recording file through the meeting chat on their Teams desktop or mobile app after the meeting. To ensure that IT-managed resource accounts do not become owners of the recording files, avoid assigning any Microsoft OneDrive for Business license to your resource accounts. [Learn more](https://learn.microsoft.com/microsoftteams/tmr-meeting-recording-change#microsoft-teams-rooms-meetings).
+  
+ >[!NOTE]
  >The following two features were added to the 5.2.115.0 release with a service side change on October 31, 2024. 
 
 - **Digital signage** :::image type="icon" source="../media/mtr-pro-icon.png"::: : Inform, connect, and engage your employees with digital signage. Users can view dynamic content and relevant information on front-of-room displays when devices aren't in use. Admins can configure tenant-wide and room-specific settings from the Teams Rooms Pro Management portal. Native integrations with selected third-party digital signage providers ([Appspace](https://docs.appspace.com/latest/devices-app/advanced-registration-microsoft-meeting-room-devices/), [XOGO](https://www.xogo.io/xogo-for-microsoft-teams-rooms)) are available, along with the use of web URLs as signage sources. [Learn more](digital-signage.md).
@@ -86,7 +92,6 @@ Introduced in this update:
 
 - **Breakout rooms support:** With breakout room support, Teams Rooms on Windows can be added to a breakout room as an attendee and moved in and out of the main room making it easy for breakout session coordination. [Learn more](https://support.microsoft.com/en-us/office/use-breakout-rooms-in-microsoft-teams-meetings-7de1f48a-da07-466c-a5ab-4ebace28e461).
 
-- **Multiple camera view** :::image type="icon" source="../media/mtr-pro-icon.png"::: **:** Teams Rooms on Windows supports up to four single stream cameras that will be shown to remote meeting participants. With multiple camera view, remote meeting participants will have the ability to follow all the action in the room and manually toggle between views from the room that they want to see. [Learn more](/microsoftteams/rooms/multicamera-view).
 
 Resolved issues:
 

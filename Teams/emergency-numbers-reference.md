@@ -134,7 +134,7 @@ The following table lists country, ISO country code, and the associated emergenc
 | Lesotho | LS | 112 |
 | Liberia | LR | 911<br>     144<br>     4455 |
 | Libya | LY | 1415<br>     112<br>     193<br>     1515 |
-| Liechtenstein | LI | 112<br>     117<br>     118<br>     143<br>     144<br>     147 |
+| Liechtenstein | LI | 112<br>     117<br>     118<br>     143<br>     144<br>     145<br>     147<br>     1414 |
 |Lithuania|LT|112|
 |Luxembourg|LU|112<br>113|
 | Madagascar | MG | 17<br>     117<br>     118 |
@@ -199,7 +199,7 @@ The following table lists country, ISO country code, and the associated emergenc
 | Sudan | SD | 333<br>     777<br>     999 |
 |Svalbard|SJ|112|
 |Sweden|SE|112<br>11313<br>11414<br>1177|
-|Switzerland|CH|112<br>117<br>118<br>143<br>144<br>147|
+|Switzerland|CH|112<br>117<br>118<br>143<br>144<br>145<br>147<br>1414|
 |Taiwan|TW|112<br>110<br>119|
 | Tajikistan | TJ | 112<br>     101<br>     102<br>     103<br>     104 |
 | Tanzania | TZ | 110<br>     111<br>     112<br>     113<br>     114<br>     115 |

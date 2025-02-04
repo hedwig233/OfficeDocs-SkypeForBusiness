@@ -474,7 +474,7 @@ This update also includes these features, which were already available for certi
 - The date and time format specified under **Device Settings** is the same on the home screen.
 - When the **Explicit Recording Consent** policy is enabled, audio conference phones support auto consent.
 - The PSTN calling issue on the new shared line appearance experience is fixed.
-- When there are less than four apps on a given account, they appear on the home screen instead of being hidden under the **More** menu.
+- When there are fewer than four apps on a given account, they appear on the home screen instead of being hidden under the **More** menu.
 
 ### November 28, 2023
 
@@ -534,7 +534,7 @@ Today, on Teams Phone devices, delegators can share their phone line with their 
 - Date and time are now displayed on the title bar across apps.
 - Support added for reverse number lookup of PSTN numbers on call-queue calls.
 - The issue of autodialing on partially entered number is fixed.
-- Option to sign-out on common area phones. The advanced calling experience requires an admin PIN.
+- Option to sign out on common area phones. The advanced calling experience requires an admin PIN.
 - Lightweight meeting reduces the time it takes users to get connected to a meeting by selecting **Join**.
 
 ### July 12, 2023
@@ -591,7 +591,7 @@ Record one-on-one PSTN calls
 
 - Dial tone and mute LED sync issue is fixed on audio-conferencing phones.
 - Calling resiliency is improved.
-- Intermittent issue around greying out of call controls is fixed.
+- Intermittent issue around graying out of call controls is fixed.
 - Intermittent issue around not being able to end calls is fixed.
 
 ### January 25, 2023
@@ -714,7 +714,7 @@ Record one-on-one PSTN calls
 - Change your background during a video call or meeting from a set of pictures available in phones with video capability.
 - Contacts whose numbers are saved in Outlook are available in the People section of Teams Phones with read-only access. You need to manually dial the number.
 - Enforcement of authentication policies and tenant-based policies set by your admin. Login is blocked if the device doesn't meet the necessary policy requirements.
-- During a call, select the active-call icon to show more ptions. Additionally, when a contact has multiple numbers saved, you can choose the number you want to dial from the dropdown list.
+- During a call, select the active-call icon to show more options. Additionally, when a contact has multiple numbers saved, you can choose the number you want to dial from the dropdown list.
 - To facilitate quick responses for autoattendant scenarios, dial pad is available for early media scenarios.
 - Extending the live captions feature to calls, Teams detects what's said in a call and presents real-time captions in one-on-one calls.
 - Ongoing enhancements to improve user experience when using a delegate on touch screens.

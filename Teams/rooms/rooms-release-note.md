@@ -39,7 +39,7 @@ Teams Rooms is governed by the Modern Lifecycle Policy. For more information, se
 
 |Release |Published to <br/> Microsoft Store |
 |--- |--- |
-|[5.2.115.0](#521150-9262024)| 9/26/2024 |
+|[5.2.115.0](#521150-1222025)| 1/22/2025 |
 |[5.1.28.0](#51280-882024) | 8/8/2024 |
 |[5.1.24.0](#51240-7302024) | 7/30/2024 |
 |[5.0.305.0](#503050-632024) | 6/3/2024 |
@@ -64,7 +64,7 @@ Teams Rooms app updates happen either using the Microsoft Store or using [manual
 
 Features with the :::image type="icon" source="../media/mtr-pro-icon.png"::: icon are available only with Teams Rooms Pro license.
 
-### 5.2.115.0 (9/26/2024)
+### 5.2.115.0 (1/22/2025)
 
  >[!NOTE]
  >The following two features were added to the 5.2.115.0 release with a service side change on January 22, 2025.

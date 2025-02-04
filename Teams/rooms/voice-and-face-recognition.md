@@ -140,7 +140,7 @@ Set-CsTeamsMeetingPolicy -Identity -PolicyName -EnrollUserOverride Disabled
  
 
 > [!NOTE]
-> A new `csTeamsAIPolicy` for Microsoft Teams, now available via Microsoft PowerShell, will take effect in mid-February 2025. This policy will replace the existing enrollment setting in `csTeamsMeetingPolicy` and includes two settings: `EnrollFace` and `EnrollVoice`.
+> A new `csTeamsAIPolicy` for Microsoft Teams, now available via Microsoft PowerShell, will take effect in end of March 2025. This policy will replace the existing enrollment setting in `csTeamsMeetingPolicy` and includes two settings: `EnrollFace` and `EnrollVoice`.
 > To help you get started, review:
 - [Set-CsTeamsAIPolicy (MicrosoftTeamsPowerShell)](/powershell/module/teams/set-csteamsaipolicy)
 

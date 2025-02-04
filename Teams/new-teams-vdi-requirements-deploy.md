@@ -608,7 +608,8 @@ Learn more: [Manage accounts and organizations in Microsoft Teams](https://suppo
 
 ## Features currently not available and known issues in VDI with the new Teams
 
-- Teams version 24335.208.3315.1951 fails to install on Windows Server 2019 with DISM error 15606 (0x3CF6) due to a change in the AppxManifest.xml. Microsoft is working on a fix.
+- Teams version 24335.208.3315.1951 fails to install on Windows Server 2019 with DISM error 15606 (0x3CF6) due to a change in the AppxManifest.xml. This issue is fixed on 25007.607.3371.8436.
+- In some scenarios, Citrix RemotePC users might experience a Teams crash and restart loop when using VDA 2411 and accessing Teams locally (not via HDX). Check CTX585013 for more details.
 - New Microsoft Teams doesn't on-demand register during FSLogix profile creation (even with HotFix 4), and doesn't register during future signins, despite being installed. The issue is caused by a race condition between Process Lifetime Manager (PLM) service and AppxSvc causing a transient failure when updating the package with error 0x80004001 (E_NOTIMPL). If the PLM service is not running, the new Teams registration fails.
   - (In MSIX, Registration occurs on a per-user basis and begins when a user logs on. The OS then loads the preinstalled packaged app, creating user-specific app data, FTAs, and app tiles in the Start menu. This action is done by the AppReadiness Service, which is aware of all preinstalled apps and requests the Appx Deployment Service (AppxSvc) deploy those packages.)
   - Customers hitting this error, even with FSLogix Hotfix 4, must deploy these KBs:

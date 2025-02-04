@@ -388,9 +388,9 @@ This update also includes these features, which were already available for certi
 - You can turn on the Advanced Calling and Auto Restart settings.
 - You can add contacts and contact groups.
 - Admin's can turn on call forwarding on home screens via **Teams Admin Center** > **Configuration** > **Display call forwarding on home screen**, allowing Teams Phone device users to setup call forwarding directly from their home screens.
-- Admin's can turn off call-quality surveys on Teams Phone devices from **Teams Admin Center** > **Configuration**, and by turning off **Call quality survey**.
+- Admin's can turn off call-quality serveys on Teams Phone devices from **Teams Admin Center** > **Configuration**, and by turning off **Call quality survey**.
 
-  :::image type="content" source="media/new-in-microsoft-teams-devices/turn-off-call-surveys.png" alt-text="Screenshot showing the option to turn off call quality surveys on Teams Phone devices." lightbox="media/new-in-microsoft-teams-devices/turn-off-call-surveys.png":::
+  :::image type="content" source="media/new-in-microsoft-teams-devices/turn-off-call-serveys.png" alt-text="Screenshot showing the option to turn off call quality surveys on Teams Phone devices." lightbox="media/new-in-microsoft-teams-devices/turn-off-call-surveys.png":::
 
 - Send incoming calls to voicemail from the incoming call screen (configurable by calling a policy through PowerShell). You can control how you want to handle a secondary incoming call through the Busy-on-Busy setting (configurable by calling a policy in the Teams Admin Center).
 - When a contact has multiple numbers, you can choose which one to call.
@@ -428,7 +428,7 @@ This update also includes these features, which were already available for certi
 - Survival Branch Office (SBA) will be supported on Voice over Internet Protocol (VoIP) calls.
 - Admins have the option of disabling call-quality surveys on Teams Phone devices from **Teams Admin Center** > **Configuration**.
 
-  :::image type="content" source="media/new-in-microsoft-teams-devices/disabling-call-quality-surveys.png" alt-text="Screenshot showing how to disable call-quality surveys." lightbox="media/new-in-microsoft-teams-devices/disabling-call-quality-surveys.png":::
+  :::image type="content" source="media/new-in-microsoft-teams-devices/disabling-call-quality-surveys.png" alt-text="Screenshot showing how to disable call-quality serveys." lightbox="media/new-in-microsoft-teams-devices/disabling-call-quality-surveys.png":::
 
 > [!NOTE]
 > These features will be rolled out gradually.

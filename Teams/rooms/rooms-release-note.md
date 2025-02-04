@@ -79,7 +79,7 @@ Features with the :::image type="icon" source="../media/mtr-pro-icon.png"::: ico
 
 Introduced in this update:
 
-- **Proximity based join experience improvements**: Proximity based join experience is updated to disable auto accepting all nudges from external or federated tenants. In addition, Teams Rooms on Windows with compatible consoles supports proximity join using ultrasound, providing an alternative to Bluetooth. [Learn more](/microsoftteams/rooms/proximity-join?tabs=portal).
+- **Proximity based join experience improvements**: Proximity based join experience is updated to disable auto accepting all nudges from external or federated tenants. In addition, Teams Rooms on Windows with compatible consoles support proximity join using ultrasound, providing an alternative to Bluetooth. [Learn more](/microsoftteams/rooms/proximity-join?tabs=portal).
 - **Dynamic video tile resizing based on people count** :::image type="icon" source="../media/mtr-pro-icon.png"::: **:**  The room video tile on Teams desktop client dynamically adjusts size based on the number of people in the room. When one person is in the room, the tile matches the remote participant's size. With two or more people, the room tile expands to be four times larger. Room admins can enable or disable the people count. [Learn more](/microsoftteams/rooms/xml-config-file).
 - **Microsoft Teams Rooms on Windows room preview shows Cloud IntelliFrame** :::image type="icon" source="../media/mtr-pro-icon.png"::: **:** The Preview video of room shows IntelliFrame when Cloud IntelliFrame is enabled for the room, to let in room participants be aware of how they appear to those online. [Learn more](/microsoftteams/devices/cloud-intelliframe).
 - **Roster grouping for in-room participants through proximity join:**  When joining a meeting in a Microsoft Teams Room with a companion device, in-room participants are grouped under the room node. Participants must join through Proximity Join with Microsoft Teams Rooms. [Learn more](https://support.microsoft.com/en-us/office/microsoft-teams-rooms-windows-e667f40e-5aab-40c1-bd68-611fe0002ba2).
@@ -802,7 +802,7 @@ Resolved Issues:
 -	Resolved an issue where some Logi Rally Bar systems failed to swap screens [PM3.1]after restart.
 -	Fixed an issue where some backgrounds weren't being applied when set on Teams admin center.
 -	Resolved an issue where chat bubbles weren't not being displayed on some Front of room displays.
--	Resolved an issue where chats werent being refreshed on the display.
+-	Resolved an issue where chats weren't being refreshed on the display.
 -	Resolved an issue where content sharing in meetings would stop in a dual display setup.
 -	Resolved an issue where some meeting participants might be displayed as **Unverified** even when they shouldn't be.
 

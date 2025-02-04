@@ -152,8 +152,8 @@ To add a mobile system OS scanner:
 
 **Applies to:** *Teams app version - 1449/1.0.97.2022747803*
 
-- After an admin pairs a panel to a supported occupancy sensor through Device settings, you can see whether a room is occupied and auto check in when check in is enabled by your admin. If the room is available and someone's in the room, a message is displayed that the room is occupied. If the room is reserved but no one is in the room, you see a message that the room is unoccupied.
-- Yealink's Room Sensor and Crestron CEN-ODT-C-POE are supported. For more information, check check with your OEM.
+- After an admin pairs a panel to a supported occupancy sensor through Device settings, you can see whether a room is occupied and auto check-in when check-in is enabled by your admin. If the room is available and someone's in the room, a message is displayed that the room is occupied. If the room is reserved but no one is in the room, you see a message that the room is unoccupied.
+- Yealink's Room Sensor and Crestron CEN-ODT-C-POE are supported. For more information, check with your OEM.
 - Support for Teams Shared Device License.
 - Improvements and bug fixes.
 
@@ -203,7 +203,9 @@ To add a mobile system OS scanner:
 
 ## [Teams phones](#tab/phones)
 
-### January 8, 2024
+
+
+### January 8, 2025
 
 **Applies to:** *Teams app version: 1449/1.0.94.2024122303 (Poly, Yealink, AudioCodes)*
 
@@ -340,7 +342,7 @@ This update also includes these features, which were already available for certi
 - **Updates on user experiences** We changed the default home-screen experience for the meeting sign-in mode. It's now like the personal sign-in mode experience. Additionally, updates to remove the dial pad on the Calls app for touch phones with physical buttons.
 - **Explicit Consent for Recording**  Users see a notification on Teams Phone devices when a participant starts recording or transcription, asking for participant consent. This feature is turned off by default but can be enabled by admins. Admins can turn on this policy for users in your tenant by clicking on the highlighted switch on "Require participant agreement for recording, transcription, and Copilot."
 
-  :::image type="content" source="media/new-in-microsoft-teams-devices/recording-and-transcription.png" alt-text="Screenshot showing the option to require paerticipant agreement for recording transcription." lightbox="media/new-in-microsoft-teams-devices/recording-and-transcription.png":::
+  :::image type="content" source="media/new-in-microsoft-teams-devices/recording-and-transcription.png" alt-text="Screenshot showing the option to require participant agreement for recording transcription." lightbox="media/new-in-microsoft-teams-devices/recording-and-transcription.png":::
 
 - **Private Line**  The Private Line feature allows bosses to have a second private phone number on their Teams device, ensuring privacy for important calls. These calls are distinct in the call history. To learn more, see Configure private lines in Microsoft Teams.
 - **Lightweight People App**  The updated People app provides a faster and simplified experience for managing contacts, allowing users to switch between different contact lists and to create contact groups.
@@ -386,7 +388,7 @@ This update also includes these features, which were already available for certi
 - You can turn on the Advanced Calling and Auto Restart settings.
 - You can add contacts and contact groups.
 - Admin's can turn on call forwarding on home screens via **Teams Admin Center** > **Configuration** > **Display call forwarding on home screen**, allowing Teams Phone device users to setup call forwarding directly from their home screens.
-- Admin's can turn off call-quality surveys on Teams Phone devices from **Teams Admin Center** > **Configuration**, and by turning off **Call quality survey**.
+- Admin's can turn off call-quality serveys on Teams Phone devices from **Teams Admin Center** > **Configuration**, and by turning off **Call quality survey**.
 
   :::image type="content" source="media/new-in-microsoft-teams-devices/turn-off-call-serveys.png" alt-text="Screenshot showing the option to turn off call quality serveys on Teams Phone devices." lightbox="media/new-in-microsoft-teams-devices/turn-off-call-serveys.png":::
 
@@ -472,7 +474,7 @@ This update also includes these features, which were already available for certi
 - The date and time format specified under **Device Settings** is the same on the home screen.
 - When the **Explicit Recording Consent** policy is enabled, audio conference phones support auto consent.
 - The PSTN calling issue on the new shared line appearance experience is fixed.
-- When there are less than four apps on a given account, they appear on the home screen instead of being hidden under the **More** menu.
+- When there are fewer than four apps on a given account, they appear on the home screen instead of being hidden under the **More** menu.
 
 ### November 28, 2023
 
@@ -532,7 +534,7 @@ Today, on Teams Phone devices, delegators can share their phone line with their 
 - Date and time are now displayed on the title bar across apps.
 - Support added for reverse number lookup of PSTN numbers on call-queue calls.
 - The issue of autodialing on partially entered number is fixed.
-- Option to sign-out on common area phones. The advanced calling experience requires an admin PIN.
+- Option to sign out on common area phones. The advanced calling experience requires an admin PIN.
 - Lightweight meeting reduces the time it takes users to get connected to a meeting by selecting **Join**.
 
 ### July 12, 2023
@@ -589,7 +591,7 @@ Record one-on-one PSTN calls
 
 - Dial tone and mute LED sync issue is fixed on audio-conferencing phones.
 - Calling resiliency is improved.
-- Intermittent issue around greying out of call controls is fixed.
+- Intermittent issue around graying out of call controls is fixed.
 - Intermittent issue around not being able to end calls is fixed.
 
 ### January 25, 2023
@@ -712,7 +714,7 @@ Record one-on-one PSTN calls
 - Change your background during a video call or meeting from a set of pictures available in phones with video capability.
 - Contacts whose numbers are saved in Outlook are available in the People section of Teams Phones with read-only access. You need to manually dial the number.
 - Enforcement of authentication policies and tenant-based policies set by your admin. Login is blocked if the device doesn't meet the necessary policy requirements.
-- During a call, select the active-call icon to show more ptions. Additionally, when a contact has multiple numbers saved, you can choose the number you want to dial from the dropdown list.
+- During a call, select the active-call icon to show more options. Additionally, when a contact has multiple numbers saved, you can choose the number you want to dial from the dropdown list.
 - To facilitate quick responses for autoattendant scenarios, dial pad is available for early media scenarios.
 - Extending the live captions feature to calls, Teams detects what's said in a call and presents real-time captions in one-on-one calls.
 - Ongoing enhancements to improve user experience when using a delegate on touch screens.

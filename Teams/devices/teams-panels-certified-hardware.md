@@ -141,6 +141,7 @@ See [Microsoft Teams panels](../devices/overview-teams-panels.md) for features s
 #### <b> Poly </b>
 | Device model | Latest firmware version | Minimum firmware version | Included Microsoft applications | Release date |
 |:----------------|:-------------------|:----------------------------|:---------------------------------------------------------------------------------|:---------------------------------------------|
+| TC10 | `6.4.1-7000634` | N/A| Teams client: `1449/1.0.97.2024042504` <br> Company Portal: `5.0.6061.0` <br> Admin Agent: `1.0.0.202407050618.product`| February 3, 2025|
 | TC10 | `6.4.0-7000547` | N/A| Teams client: `1449/1.0.97.2024042504` <br> Company Portal: `5.0.6061.0` <br> Admin Agent: `1.0.0.202402202353.product`| December 16, 2024|
 | TC10 | `6.3.2.211744` | N/A| Teams client: `1449/1.0.97.2024042504` <br> Company Portal: `5.0.6061.0` <br> Admin Agent: `1.0.0.202402202353.product`| October 10, 2024|
 | TC10 | `6.3.0-211719` | N/A| Teams client: `1449/1.0.97.2024042504` <br> Company Portal: `5.0.6061.0` <br> Admin Agent: `1.0.0.202402202353.product`| August 1, 2024|

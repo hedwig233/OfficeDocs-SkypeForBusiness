@@ -152,8 +152,8 @@ To add a mobile system OS scanner:
 
 **Applies to:** *Teams app version - 1449/1.0.97.2022747803*
 
-- After an admin pairs a panel to a supported occupancy sensor through Device settings, you can see whether a room is occupied and auto check in when check in is enabled by your admin. If the room is available and someone's in the room, a message is displayed that the room is occupied. If the room is reserved but no one is in the room, you see a message that the room is unoccupied.
-- Yealink's Room Sensor and Crestron CEN-ODT-C-POE are supported. For more information, check check with your OEM.
+- After an admin pairs a panel to a supported occupancy sensor through Device settings, you can see whether a room is occupied and auto check-in when check-in is enabled by your admin. If the room is available and someone's in the room, a message is displayed that the room is occupied. If the room is reserved but no one is in the room, you see a message that the room is unoccupied.
+- Yealink's Room Sensor and Crestron CEN-ODT-C-POE are supported. For more information, check with your OEM.
 - Support for Teams Shared Device License.
 - Improvements and bug fixes.
 
@@ -342,7 +342,7 @@ This update also includes these features, which were already available for certi
 - **Updates on user experiences** We changed the default home-screen experience for the meeting sign-in mode. It's now like the personal sign-in mode experience. Additionally, updates to remove the dial pad on the Calls app for touch phones with physical buttons.
 - **Explicit Consent for Recording**  Users see a notification on Teams Phone devices when a participant starts recording or transcription, asking for participant consent. This feature is turned off by default but can be enabled by admins. Admins can turn on this policy for users in your tenant by clicking on the highlighted switch on "Require participant agreement for recording, transcription, and Copilot."
 
-  :::image type="content" source="media/new-in-microsoft-teams-devices/recording-and-transcription.png" alt-text="Screenshot showing the option to require paerticipant agreement for recording transcription." lightbox="media/new-in-microsoft-teams-devices/recording-and-transcription.png":::
+  :::image type="content" source="media/new-in-microsoft-teams-devices/recording-and-transcription.png" alt-text="Screenshot showing the option to require participant agreement for recording transcription." lightbox="media/new-in-microsoft-teams-devices/recording-and-transcription.png":::
 
 - **Private Line**  The Private Line feature allows bosses to have a second private phone number on their Teams device, ensuring privacy for important calls. These calls are distinct in the call history. To learn more, see Configure private lines in Microsoft Teams.
 - **Lightweight People App**  The updated People app provides a faster and simplified experience for managing contacts, allowing users to switch between different contact lists and to create contact groups.
@@ -390,7 +390,7 @@ This update also includes these features, which were already available for certi
 - Admin's can turn on call forwarding on home screens via **Teams Admin Center** > **Configuration** > **Display call forwarding on home screen**, allowing Teams Phone device users to setup call forwarding directly from their home screens.
 - Admin's can turn off call-quality surveys on Teams Phone devices from **Teams Admin Center** > **Configuration**, and by turning off **Call quality survey**.
 
-  :::image type="content" source="media/new-in-microsoft-teams-devices/turn-off-call-serveys.png" alt-text="Screenshot showing the option to turn off call quality serveys on Teams Phone devices." lightbox="media/new-in-microsoft-teams-devices/turn-off-call-serveys.png":::
+  :::image type="content" source="media/new-in-microsoft-teams-devices/turn-off-call-surveys.png" alt-text="Screenshot showing the option to turn off call quality surveys on Teams Phone devices." lightbox="media/new-in-microsoft-teams-devices/turn-off-call-surveys.png":::
 
 - Send incoming calls to voicemail from the incoming call screen (configurable by calling a policy through PowerShell). You can control how you want to handle a secondary incoming call through the Busy-on-Busy setting (configurable by calling a policy in the Teams Admin Center).
 - When a contact has multiple numbers, you can choose which one to call.
@@ -428,7 +428,7 @@ This update also includes these features, which were already available for certi
 - Survival Branch Office (SBA) will be supported on Voice over Internet Protocol (VoIP) calls.
 - Admins have the option of disabling call-quality surveys on Teams Phone devices from **Teams Admin Center** > **Configuration**.
 
-  :::image type="content" source="media/new-in-microsoft-teams-devices/disabling-call-quality-surveys.png" alt-text="Screenshot showing how to disable call-quality serveys." lightbox="media/new-in-microsoft-teams-devices/disabling-call-quality-surveys.png":::
+  :::image type="content" source="media/new-in-microsoft-teams-devices/disabling-call-quality-surveys.png" alt-text="Screenshot showing how to disable call-quality surveys." lightbox="media/new-in-microsoft-teams-devices/disabling-call-quality-surveys.png":::
 
 > [!NOTE]
 > These features will be rolled out gradually.

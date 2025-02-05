@@ -75,11 +75,9 @@ For details on shared mailboxes, see [About shared mailboxes - Microsoft 365 a
 
 ### Microsoft Teams Rooms meetings
 
-For **Microsoft Teams Rooms (MTR) meetings**, when an organizer creates a meeting using the meet-now button in MTR, the room itself becomes the meeting organizer, and the recording is stored in the MTR’s OneDrive account. However, none of the meeting participants have full permissions to the file. If you want meeting participants to have full permissions to the recording file, avoid assigning OneDrive storage to an MTR.
+For **Microsoft Teams Rooms (MTR) meetings**, when a user creates a meeting using the 'Meet now' button in MTR, the room itself becomes the meeting organizer, and by default, the recording is stored in the MTR’s OneDrive for Business account, if available. However, none of the meeting participants have full permissions to the file. If you want meeting participants to have full permissions to the recording file, avoid assigning a OneDrive for Business license to your MTR's resource account.
 
-When the MTR doesn't have a OneDrive account, the recording gets saved to the co-organizer's or recording initiator's OneDrive. For details on what happens if an organizer doesn't have a OneDrive account, see the **Recording storage for organizers without OneDrive accounts** section in this article.
-
-When an MTR attends a meeting that another user organizes, the MTR can't initiate the recording, but other meeting participants can.
+When an MTR's resource account doesn't have a OneDrive for Business license and storage, the recording gets saved to the co-organizer's or recording initiator's OneDrive for Business. For details on what happens if an organizer doesn't have a OneDrive for Business account, see the **Recording storage for organizers without OneDrive accounts** section in this article.
 
 To learn more about Microsoft Teams Rooms meetings, see [Microsoft Teams Rooms (Windows)](https://support.microsoft.com/office/microsoft-teams-rooms-windows-e667f40e-5aab-40c1-bd68-611fe0002ba2).
 

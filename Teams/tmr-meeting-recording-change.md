@@ -77,7 +77,7 @@ For details on shared mailboxes, see [About shared mailboxes - Microsoft 365 a
 
 For **Microsoft Teams Rooms meetings**, when a user creates a meeting using the 'Meet now' button in a Teams room, the Teams Room itself becomes the meeting organizer, and by default, the recording is stored in the Teams Room's OneDrive account, if available. However, none of the meeting participants have full permissions to the file. If you want meeting participants to have full permissions to the recording file, avoid assigning a OneDrive license to your Teams Room's resource account.
 
-When an Teams Room's resource account doesn't have a OneDrive license and storage, the recording gets saved to the co-organizer's or recording initiator's OneDrive. For details on what happens if a co-organizer or recording doesn't have a OneDrive account, see the **Recording storage for organizers without OneDrive accounts** section in this article.
+When a Teams Room's resource account doesn't have a OneDrive license and storage, the recording gets saved to the co-organizer's or recording initiator's OneDrive. For details on what happens if a co-organizer or recording doesn't have a OneDrive account, see the **Recording storage for organizers without OneDrive accounts** section in this article.
 
 To learn more about Microsoft Teams Rooms meetings, see [Microsoft Teams Rooms (Windows)](https://support.microsoft.com/office/microsoft-teams-rooms-windows-e667f40e-5aab-40c1-bd68-611fe0002ba2).
 

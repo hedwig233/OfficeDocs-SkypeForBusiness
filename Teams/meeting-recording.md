@@ -167,7 +167,7 @@ In PowerShell, the **`-ChannelRecordingDownload`** parameter in [Set-CsTeamsMeet
 The two values for this setting are:
 
 - **Allow** - Saves channel meeting recordings to a 'Recordings' folder in the channel. The permissions on the recording files are based off the channel's SharePoint permissions. This is the same as any other file uploaded for the channel. This is the default setting.
-- **Block** - Saves channel meeting recordings to a 'RecordingsOnly' folder in the channel. Channel owners have full rights on the recordings in this folder, but channel members have read access without ability to download.
+- **Block** - Saves channel meeting recordings to a 'Recordings\View Only' folder in the channel. Channel owners have full rights on the recordings in this folder, but channel members have read access without ability to download or edit.
 
 ## Expiration policy
 

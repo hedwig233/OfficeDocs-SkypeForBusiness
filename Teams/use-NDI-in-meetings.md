@@ -8,6 +8,7 @@ manager: pamgreen
 ms.topic: how-to
 audience: admin
 ms.service: msteams
+ms.subservice: meetings
 search.appverid: MET150
 description: Learn how to use NDI and SDI to broadcast meeting content in Microsoft Teams.
 ms.localizationpriority: medium

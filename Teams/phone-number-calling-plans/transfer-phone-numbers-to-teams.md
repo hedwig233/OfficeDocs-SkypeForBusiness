@@ -46,7 +46,7 @@ This article is an accompaniment for IT professionals and Teams Phone administra
        > - [Finland](/microsoftteams/phone-reference/manage-numbers/phone-number-management-for-finland)
        > - [France](/microsoftteams/phone-reference/manage-numbers/phone-number-management-for-france)
        > - [Germany](/microsoftteams/phone-reference/manage-numbers/phone-number-management-for-germany)
-       > - [Hong Kong](/microsoftteams/phone-reference/manage-numbers/phone-number-management-for-hong-kong)   
+       > - [Hong Kong SAR](/microsoftteams/phone-reference/manage-numbers/phone-number-management-for-hong-kong)   
        > - [Hungary](/microsoftteams/phone-reference/manage-numbers/phone-number-management-for-hungary)
        > - [Ireland](/microsoftteams/phone-reference/manage-numbers/phone-number-management-for-ireland)
        > - [Italy](/microsoftteams/phone-reference/manage-numbers/phone-number-management-for-italy)

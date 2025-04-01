@@ -7,6 +7,7 @@ ms.date: 6/6/2024
 manager: pamgreen
 ms.topic: article
 ms.service: msteams
+ms.subservice: meetings
 audience: admin
 ms.localizationpriority: medium
 search.appverid: MET150

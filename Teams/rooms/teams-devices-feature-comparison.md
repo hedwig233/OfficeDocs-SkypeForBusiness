@@ -4,7 +4,7 @@ author: mstonysmith
 ms.author: tonysmit
 manager: pamgreen
 ms.reviewer: mattslomka
-ms.date: 10/31/2024
+ms.date: 3/27/2025
 ms.topic: article
 audience: Admin
 ms.service: msteams
@@ -105,7 +105,7 @@ To help guide you as to what features are available on different platforms, you 
 | | Front of Room (16:9) (1920x1080 or 3840x2160) | Available | Available |
 | | Front of Room (21:9) (2560x1080 or 5120x2160) (Single Display Only) | Available | Not available |
 | **Security** | Secure mounting, security lock slot (Kensington lock), I/O ports access | Available | Available |
-| | Operating System | Windows 10 / Windows 11 | Android 9+ |
+| | Operating System | Windows 10 / Windows 11 | Android 10+ |
 | | Kiosk mode | Available | Available |
 | | Microsoft Defender for Endpoint | Available | Not available |
 | **Device Management** | Built-in backgrounds | Available | Available |
@@ -238,7 +238,7 @@ To help guide you as to what features are available on different platforms, you 
 | | Front of Room (16:9) (1920x1080 or 3840x2160) | Available | Available |
 | | Front of Room (21:9) (2560x1080 or 5120x2160) (Single Display Only) | Available | Not available |
 | **Security** | Secure mounting, security lock slot (Kensington lock), I/O ports access | Available | Available |
-| | Operating System | Windows 10 / Windows 11 | Android 9+ |
+| | Operating System | Windows 10 / Windows 11 | Android 10+ |
 | | Kiosk mode | Available | Available |
 | | Microsoft Defender for Endpoint | Available | Not available |
 | **Device Management** | Built-in backgrounds | Available | Available |
@@ -369,7 +369,7 @@ To help guide you as to what features are available on different platforms, you 
 | | Front of Room (16:9) (1920x1080 or 3840x2160) | Available | Available |
 | | Front of Room (21:9) (2560x1080 or 5120x2160) (Single Display Only) | Available | Not available |
 | **Security** | Secure mounting, security lock slot (Kensington lock), I/O ports access | Available | Available |
-| | Operating System | Windows 10 / Windows 11 | Android 9+ |
+| | Operating System | Windows 10 / Windows 11 | Android 10+ |
 | | Kiosk mode | Available | Available |
 | | Microsoft Defender for Endpoint | Available | Not available |
 | **Device Management** | Built-in backgrounds | Available | Available |

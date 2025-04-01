@@ -5,6 +5,7 @@ author: wlibebe
 manager: pamgreen
 ms.topic: how-to
 ms.service: msteams
+ms.subservice: meetings
 ms.reviewer: defnea
 ms.date: 9/18/2024
 audience: admin

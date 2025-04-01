@@ -6,6 +6,7 @@ manager: pamgreen
 audience: Admin
 ms.topic: how-to
 ms.service: msteams
+ms.subservice: meetings
 ms.reviewer: maahma
 ms.date: 5/22/2024
 ms.localizationpriority: medium

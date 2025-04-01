@@ -4,7 +4,7 @@ author: mstonysmith
 ms.author: tonysmit
 manager: pamgreen
 ms.reviewer: eviegrimshaw
-ms.date: 03/04/2025
+ms.date: 03/12/2025
 ms.topic: release-notes
 ms.service: msteams
 ms.subservice: itpro-devices
@@ -209,7 +209,59 @@ To add a mobile system OS scanner:
 
 ## [Teams phones](#tab/phones)
 
+## March 28, 2025
 
+**Applies to:** *Teams app version: 1449/1.0.94.2025084203 (Poly, Audiocodes)*
+
+> [!IMPORTANT]
+> Starting in June 2025, Teams applications that are older than five (5) months will no longer work be able to connect to the service. Please refer to the Message Center Post, MC969451 for more det
+
+> [!NOTE]
+> This update introduces a new versioning format, moving away from using dates. Going forward, this format will be used **1449/1.0.94.*year of release.internal codes***
+
+- Line keys are now available on touch phone devices. They will appear as an app on the home screen alongside other apps such as Calls, People, Calendar, and more. Users can assign speed dials by long pressing. For assigned contacts, users can manage and remove assignments by long pressing as well. Once assigned, outgoing calls can be placed to speed dials by pressing the line key. Additionally, the line key app can now be pinned, making it the default view on the home screen.
+
+> [!NOTE]
+> This experience isn't applicable to sidecars and ONLY includes experience on the Teams app running on touch phone devices.
+
+   ![Screenshot home screen.](media/phones-release-notes-1.png)
+
+- Shared line history is now available on phone devices. With shared line history, a delegate can now view call history of the entire shared line in the “Shared line appearance” app. A delegator/boss can view call history of the entire shared line on the Calls app.  
+
+- You can now pin apps of your choice to your home screen using settings named “Home screen”.  This is only available for touch phones.
+
+   ![Screenshot of adding line keys.](media/phones-release-notes-2.png)
+
+App also includes multiple bug fixes and improvements. Bug fixes impacting user experience are:
+
+- With this release, you will be able to resume held calls using a single entry.
+- Joining a meeting via dial-info on calendar is now fixed.
+- Deleted groups from People app will now sync across clients.
+- For non-touch phone devices, the Resume button will now be one of the four keys below the display. It can be triggered using the corresponding hard key on the device.
+- Issue on walkie talkie app and Teams channel is fixed.
+- Fixed auto-dial issue on emergency calls for non-touch devices.
+- Fixed issue on blind transfer for non-touch devices.
+- For Advanced calling experience on common area phones, issue on “Default to home screen” setting is fixed.
+
+## February 26, 2025
+
+**Applies to:** *Teams app version: 1449/1.0.94.2024121004 (Poly, Audiocodes)*
+
+> [!IMPORTANT]
+> Starting in June 2025, Teams applications that are older than five (5) months will no longer work be able to connect to the service. Please refer to the Message Center Post, MC969451 for more details.
+
+- App is available for government clouds (GCCH and DoD).
+
+- Speed dial on line keys: With this update, you will be able to configure custom contacts and speed dial using the line key buttons on non-touch phones certified for Microsoft Teams. You can quickly access frequently dialed numbers and contacts, using one-touch dialing, as well as easy management of contact lists on line keys.
+
+- **Queues app**: With this update, you will be able to use Queues app on phone devices. This is a Teams solution that empowers organizations to efficiently manage customer engagements, starting with calls on certified Teams Phones. The experience is primarily for agents and includes a dedicated Queues app on the home screen. This app allows agents to view and opt in or out of all the call queues an agent is part of. Agents can also view others on the line along with call history of the call queue.
+
+> [!NOTE]
+> The Queues app is enabled by default for all Teams users in your organization who are assigned both a Teams Premium and Teams Phone license and who are voice enabled. To learn more about managing the Queues app, see [Manage Queues app for Microsoft Teams](/microsoftteams/manage-queues-app).
+
+- Lightweight calling experience on non-touch phones.
+
+- Bug fixes and other improvements. 
 
 ## February 25, 2025
 
@@ -218,7 +270,6 @@ To add a mobile system OS scanner:
 
 
 Back-end telemetry fixes and improvements  
-
 ## February 11, 2025
 
 **Applies to:** *Teams app version: 1449/1.0.94.2025020301 (Poly, Yealink, AudioCodes)*

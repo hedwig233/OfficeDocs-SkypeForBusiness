@@ -6,6 +6,7 @@ manager: pamgreen
 audience: Admin
 ms.topic: article
 ms.service: msteams
+ms.subservice: meetings
 ms.reviewer: mfoland
 ms.date: 10/31/2024
 ms.localizationpriority: medium
@@ -67,7 +68,7 @@ The Teams client installs the correct add-in by determining if users need the 32
 
 The Teams Meeting add-in is automatically installed for users who have Microsoft Teams and either Office 2013, Office 2016, Office 2019, or Office 2021 installed on their Windows PC. Your users see the Teams Meeting add-in on the Outlook Calendar ribbon.
 
-If users are using an Office Outlook installation from the Microsoft Store, the Teams Meeting add-in isn't supported. Users who need this add-in should install Click-to-Run version of Office. For details on installing theClick-to-Run version of Office, see [Office on Windows 10 in S mode](https://support.office.com/article/faq-office-on-windows-10-in-s-mode-717193b5-ff9f-4388-84c0-277ddf07fe3f).
+If users are using an Office Outlook installation from the Microsoft Store, the Teams Meeting add-in isn't supported. Users who need this add-in should install Click-to-Run version of Office. For details on installing the Click-to-Run version of Office, see [Office on Windows 10 in S mode](https://support.office.com/article/faq-office-on-windows-10-in-s-mode-717193b5-ff9f-4388-84c0-277ddf07fe3f).
 
 If your users don't see the Teams Meeting add-in, they should follow these steps:
 

@@ -8,6 +8,7 @@ manager: pamgreen
 ms.topic: install-set-up-deploy
 audience: admin
 ms.service: msteams
+ms.subservice: meetings
 searchScope:
   - Microsoft Teams
 search.appverid: MET150

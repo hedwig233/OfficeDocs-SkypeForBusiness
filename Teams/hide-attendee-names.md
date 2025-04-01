@@ -6,11 +6,13 @@ manager: pamgreen
 audience: Admin
 ms.topic: how-to
 ms.service: msteams
+ms.subservice: meetings
 ms.reviewer: xonatia.lee
-ms.date: 11/30/2023
+ms.date: 3/31/2025
 ms.localizationpriority: medium
 ms.collection: 
   - M365-collaboration
+  - m365initiative-meetings
 description: Learn how to allow meeting and webinar organizers to hide the names of attendees in Microsoft Teams meetings and webinars so names of attendees are hidden from other attendees in meeting stage, roster, and chat. 
 appliesto: 
   - Microsoft Teams
@@ -39,13 +41,13 @@ The following table shows the behaviors of the settings for the **`-AttendeeIden
 |DisabledUserOverride| **This is the default value.** Attendee names are visible in meetings and webinars that organizers with this policy create. However, these organizers can choose to hide attendee names in their meetings and webinars through their meeting options.|
 |Disabled| For organizers with this policy, attendee names are always shown in their meetings and webinars.|
 
-To enable **`-AttendeeIdentityMasking`**, so attendee names are always hidden in meetings and webinars that organizers with this policy create, run the following script:
+To turn on **`-AttendeeIdentityMasking`**, so attendee names are always hidden in meetings and webinars that organizers with this policy create, run the following script:
 
 ```PowerShell
 Set-CsTeamsMeetingPolicy -Identity <policy name> -AttendeeIdentityMasking Enabled
 ```
 
-To disable **`-AttendeeIdentityMasking`** so attendee names are always shown in meetings and webinars organizers with this policy create, run the following script:
+To turn off **`-AttendeeIdentityMasking`** so attendee names are always shown in meetings and webinars organizers with this policy create, run the following script:
 
 ```PowerShell
 Set-CsTeamsMeetingPolicy -Identity <policy name> -AttendeeIdentityMasking Disabled

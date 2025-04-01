@@ -3,8 +3,8 @@ title: "How many telephone numbers can you get?"
 author: sfrancis206
 ms.author: scottfrancis
 manager: pamgreen
-ms.reviewer: davlick, roykuntz, jastark
-ms.date: 03/13/2024
+ms.reviewer: julienp
+ms.date: 03/31/2025
 ms.topic: article
 ms.assetid: 61dfb27c-5bfa-4481-a930-9c026e73ff3a
 ms.tgt.pltfrm: cloud
@@ -30,15 +30,11 @@ description: Learn about how many telephone numbers you can get in Microsoft Tea
 
 # How many telephone numbers can you get?
 
-When you're getting phone numbers from Microsoft for your organization, you can get more numbers than you have assigned licenses. The number you can get depends on the types of phone numbers and types of licenses you've bought and assigned.
-
 How you acquire and manage phone numbers differs depending on your Public Switched Telephone Network (PSTN) connectivity option: Microsoft Calling Plans, Operator Connect, Teams Phone Mobile, or Direct Routing. For more information, see [Manage phone numbers for your organization](manage-phone-numbers-landing-page.md).
 
-For information about Teams Phone and Audio Conferencing licensing, see [Add-on licenses](teams-add-on-licensing/microsoft-teams-add-on-licensing.md). For more information about Calling Plans, see [Microsoft Calling Plans](calling-plans-for-office-365.md).
+For Microsoft Calling Plans, the number of phone numbers you can get for your organization depends on the types of phone numbers and types of licenses you've bought and assigned. For information about Teams Phone and Audio Conferencing licensing, see [Add-on licenses](teams-add-on-licensing/microsoft-teams-add-on-licensing.md). For more information about Calling Plans, see [Microsoft Calling Plans](calling-plans-for-office-365.md).
 
-The following table applies to Microsoft Calling Plans, [Audio Conferencing](deploy-audio-conferencing-teams-landing-page.md), and voice apps, such as [Call Queues and Auto Attendants](plan-auto-attendant-call-queue.md). For information about Operator Connect, Teams Phone Mobile, or Direct Routing, contact your service provider.
-
-You can see the quantity of telephone numbers you can get from Microsoft during the search and acquire process in the Microsoft Teams admin center (**Get phone numbers**).
+The following table applies to Microsoft Calling Plans, [Audio Conferencing](deploy-audio-conferencing-teams-landing-page.md), and voice apps, such as [Call Queues and Auto Attendants](plan-auto-attendant-call-queue.md).
 
 > [!IMPORTANT]
 > The limits in the following table don't include phone numbers you have ported to Microsoft.
@@ -50,8 +46,9 @@ You can see the quantity of telephone numbers you can get from Microsoft during 
 |Toll-free service number   | The number of phone numbers is equal to the total number of **Teams Phone** and **Audio Conferencing** licenses and uses the following: <br/>  If there are **1-25 licenses**, then **5** phone numbers are given. <br/>  If there are **26-49 licenses**, then **10** phone numbers are given. <br/>  If there are **50-99 licenses**, then **20** phone numbers are given. <br/>  If there are **100-149 licenses**, then **30** phone numbers are given. <br/>  If there are **150-199 licenses**, then **40** phone numbers are given. <br/>  If there are **200-499 licenses**, then **65** phone numbers are given. <br/>  If there are **500-749 licenses**, then **90** phone numbers are given. <br/>  If there are **750-999 licenses**, then **110** phone numbers are given. <br/>  If there are **1,000-1,249 licenses**, then **125** phone numbers are given. <br/>  If there are **1,250-1,499 licenses**, then **135** phone numbers are given. <br/>  If there are **1,500-1,999 licenses**, then **160** phone numbers are given. <br/>  If there are **2,000-2,999 licenses**, then **210** phone numbers are given. <br/>  If there are **3,000-6,999 licenses**, then **420** phone numbers are given. <br/>  If there are **7,000-9,999 licenses**, then **500** phone numbers are given. <br/>  If there are **10,000-14,999 licenses**, then **600** phone numbers are given. <br/>  If there are **15,000-19,999 licenses**, then **700** phone numbers are given. <br/>  If there are **20,000-49,999 licenses**, then **1000** phone numbers are given. <br/>  If there are **50,000+ licenses**, then **1500** phone numbers are given.  |If you have a total of **1001** **Teams Phone** and **Audio Conferencing** licenses, you can get **125** toll-free service numbers. <br/> <br/> **Important:** [Communications Credits billing](set-up-communications-credits-for-your-organization.md) is required to reserve and use toll-free phone numbers.          |
 
 > [!NOTE]
-> If you need to get more phone numbers than this, contact the [Phone Number Service Center](https://pstnsd.powerappsportals.com/).
-  
+> You can see the quantity of telephone numbers you can get from Microsoft during the search and acquire process in the Microsoft Teams admin center (**Add phone numbers**).
+
+
 ## Related articles
 
 [Manage phone numbers for your organization](manage-phone-numbers-landing-page.md)

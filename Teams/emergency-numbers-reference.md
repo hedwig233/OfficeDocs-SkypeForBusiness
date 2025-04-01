@@ -1,6 +1,6 @@
 ---
 ms.date: 05/01/2024
-title: Emergency numbers country reference
+title: Emergency numbers country and region reference
 author: sfrancis206
 ms.author: scottfrancis
 manager: pamgreen
@@ -20,11 +20,11 @@ appliesto:
 ms.localizationpriority: medium
 f1.keywords: 
   - NOCSH
-description: Reference article listing emergency numbers for countries.
+description: Reference article listing emergency numbers for countries/regions.
 ms.custom: seo-marvel-mar2020
 ---
 
-# Emergency numbers for countries
+# Emergency numbers for countries and regions
 
 The following table lists country, ISO country code, and the associated emergency numbers for that country.
 
@@ -62,10 +62,10 @@ The following table lists country, ISO country code, and the associated emergenc
 |Burkina Faso |BF |15<br>16<br>17<br>18<br>112<br>199<br>1010<br>1111<br>1130 |
 |Burundi |BI |113<br>413 | 
 |Brazil|BR|128<br>180<br>185<br>190<br>191<br>192<br>193<br>194<br>197<br>198|
+|Cabo Verde |CV |112 |
 |Cambodia|KH|117<br>118<br>119<br>666|
 |Cameroon|CM|117<br>118<br>119|
 |Canada|CA|911<br>911 DialMask=1911<br>911 DialMask=9911<br>933|
-|Cape Verde |CV |112 |
 |Cayman Islands |KY |911 |
 |Central African Republic |CF |114<br>117<br>118 |
 |Chad |TD |114<br>115 |
@@ -78,7 +78,7 @@ The following table lists country, ISO country code, and the associated emergenc
 | Congo | CG | 112 |
 | Cook Islands | CK | 999<br>     996<br>     22664<br>     22499 |
 |Costa Rica|CR|911<br>112<br>1117<br>1118|
-|Ivory Coast (Côte d'Ivoire)|CI|100<br>110<br>111<br>170<br>180<br>185<br>145|
+|Côte d'Ivoire|CI|100<br>110<br>111<br>170<br>180<br>185<br>145|
 |Croatia|HR|192<br>193<br>194<br>195<br>1987<br>116000<br>116006<br>116111<br>112|
 |Cyprus|CY|112<br>199|
 |Czech Republic|CZ|112<br>150<br>155<br>156<br>158|
@@ -116,7 +116,7 @@ The following table lists country, ISO country code, and the associated emergenc
 | Haiti | HT | 114<br>     116<br>     122 |
 | Heard Island &<br>     McDonald Islands | HM | Not   applicable (uninhabited) |
 | Honduras | HN | 911<br>     198<br>     100 |
-|Hong Kong|HK|999|
+|Hong Kong SAR|HK|999|
 |Hungary|HU|104<br>105<br>107<br>112|
 |Indonesia|ID|112<br>110<br>119<br>113|
 | Iceland | IS | 112 |
@@ -216,7 +216,7 @@ The following table lists country, ISO country code, and the associated emergenc
 | Togo | TG | 117<br>     118<br>     9200 |
 |Trinidad & Tobago |TT |911<br>811<br>990<br>999 |
 | Tunisia | TN | 190<br>     193<br>     194<br>     197<br>     198 |
-|Turkey|TR|112<br>132<br>156<br>158<br>177|
+|Türkiye|TR|112<br>132<br>156<br>158<br>177|
 | Turkmenistan | TM | 001<br>     002<br>     003<br>     004<br>     009 |
 |Turks & Caicos Islands |TC |911 |
 |Uganda|UG|999<br>112|

@@ -58,7 +58,7 @@ The following apps and devices currently support shared line appearance:
 | See the delegate view of shared lines | Yes | Yes | Yes | Yes | Yes |
 | See the delegate view of manager's call activities | Yes | Yes | Yes | No | Yes |
 | See the manager view of delegates | Yes | Yes | Yes | Yes | Yes |
-| See shared call history | Yes | No | Yes | No | No|
+| See shared call history | Yes | No | Yes | No | Yes                                                            |
 | Delegate or manager can hold or resume | Yes | Yes | Yes | No | Yes |
 
 ## Limitations
@@ -67,7 +67,7 @@ Managers can add up to 25 delegates, and delegates can have up to 25 managers. T
 
 If the delegator and delegate aren't in the same geographic location, the PSTN provider must allow caller ID to show up from a different geographic location for a delegated call.
 
-Circular delegation configuration is only permitted for Teams phone devices. If the delegated users also have delegations between them, they'll only be able to see their delegation and not the initial delegation.
+If the delegated users also have delegations between them, they'll only be able to see their delegation and not the initial delegation.
 
 ## Enable delegation and shared line appearance
 

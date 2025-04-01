@@ -25,7 +25,7 @@ description: Learn how to set up a Campaign to enable SMS in Microsoft Teams.
 # Create a Campaign for SMS in Microsoft Teams
 
 > [!NOTE]
-> Due to a high volume of requests for SMS in Teams, processing times to approve Campaigns and Brands for SMS in Teams may take longer than usual. We appreciate your patience as we work diligently to address all requests. Thank you for your understanding.
+> Service update: If you receive a Brand or Campaign rejection, our Telephone Number Services team is aware and managing a case with you through the [Phone Number Service Center](https://pstnsd.powerappsportals.com) portal. Due to a high volume of requests for SMS in Teams, processing times to facilitate approvals of rejected Brand and Campaign applications for SMS in Teams may take 4 to 6 weeks.  We appreciate your patience as we work diligently to address all requests.
 
 This article is for IT administrators and IT professionals who are enabling Short Message Service (SMS) in Teams and need to register their company's Campaign with The Campaign Registry (TCR).
 

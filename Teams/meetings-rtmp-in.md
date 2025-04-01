@@ -6,7 +6,7 @@ manager: pamgreen
 ms.topic: how-to
 ms.service: msteams
 ms.reviewer: srajay
-ms.date: 03/5/2024
+ms.date: 3/28/2025
 audience: admin
 ms.localizationpriority: medium
 search.appverid: MET150
@@ -24,16 +24,16 @@ description: Learn to set up RTMP-In for Teams meetings for admins.
 
 # Manage RTMP-In for Teams meetings, webinars, and town halls
 
-**APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Meetings ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Webinars ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Town halls
+**APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Meetings ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Webinars ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Town halls
 
 [!INCLUDE[Teams Premium](includes/teams-premium-ecm.md)]
 
-RTMP-In allows meeting, webinar, and town hall organizers to produce their meetings and events directly from an external hardware or software-based encoder using Real-Time Messaging Protocol (RTMP).
+RTMP-In allows meeting, webinar, and town hall organizers to produce their meetings and events directly from an external hardware or software-based encoder using Real-Time Messaging Protocol (RTMP). To learn more about how organizers use RTMP-In, see [Use RTMP-In in Microsoft Teams](https://support.microsoft.com/office/use-rtmp-in-in-microsoft-teams-789d6090-8511-4e2e-add6-52a9f551be7f).
 
 > [!NOTE]
 > RTMP-In is a Teams Premium feature for all meeting and event formats, except town halls.
 
-As an admin, you can enable RTMP-In for meeting and event organizers. Organizers with this enabled policy can access the RTMP link and key needed to start streaming from the encoder through their **Meeting options**.
+As an admin, you can use meeting policies to turn on RTMP-In for meeting and event organizers. Organizers with this policy can access the RTMP link and key needed to start streaming from the encoder through their **Meeting options**. To learn more about encoders, see [Using an encoder for live event streaming with Microsoft Teams](teams-encoder-setup.md).
 
 The incoming RTMP feed must deliver:  
 
@@ -65,17 +65,17 @@ Verify that you also have the following domains/ports:
 
 To manage whether organizers can use RTMP-In, use the **`-AllowedStreamingMediaInput`** parameter within the PowerShell [**CsTeamsMeetingPolicy**](/powershell/module/teams/set-csteamsmeetingpolicy) cmdlet.
 
-### Enable RTMP-In
+### Turn on RTMP-In
 
-To enable RTMP-In for organizers with this policy, use the following script:
+To turn on RTMP-In for organizers with this policy, use the following script:
 
 ```powershell
 Set-CsTeamsMeetingPolicy -Identity <policy name> -AllowedStreamingMediaInput "RTMP"  
 ```
 
-### Disable RTMP-In
+### Turn off RTMP-In
 
-To disable RTMP-In for organizers with this policy, use a null value with `-AllowedStreamingMediaInput`. For example:
+To turn off RTMP-In for organizers with this policy, use a null value with `-AllowedStreamingMediaInput`. For example:
 
 ```powershell
 Set-CsTeamsMeetingPolicy -Identity Global -AllowedStreamingMediaInput ""
@@ -92,7 +92,5 @@ Get-CsTeamsMeetingPolicy -Identity <policy name>|fl AllowedStreamingMediaInput
 ## Related topics
 
 - [Teams policies reference](settings-policies-reference.md#audio--video)
-
 - [Teams PowerShell overview](teams-powershell-overview.md)
-
 - [Assign policies to your users in Teams](policy-assignment-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: Audio Conferencing Zone A (standard) countries
+title: Audio Conferencing Zone A (standard) countries and regions
 ms.author: wlibebe
 author: wlibebe
 manager: pamgreen

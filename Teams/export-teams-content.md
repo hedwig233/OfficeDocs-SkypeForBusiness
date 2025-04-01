@@ -36,7 +36,8 @@ Here are some examples on how you can use these export APIs:
 
 ## What is supported by the Teams Export APIs?
 
-- **Bulk Export of Teams Message:** Teams Export APIs support up to 200 RPS Per App Per tenant and 600 RPS for an Application, with these limits you should be able to bulk export of Teams messages.
+- **Bulk Export of Teams Message:** Teams Export APIs support up to 200 RPS Per App Per tenant and 600 RPS for an Application, with these limits you should be able to bulk export of Teams messages. 
+- **Top Limit for Teams Meesage:** The TOP filter limit for Teams Message APIs is recommended to be set at 250 as the maximum limit beyond which the performance would be limited.
 - **Application Context**: To call Microsoft Graph, your app must acquire an access token from the Microsoft identity platform. The access token contains information about your app and the permissions it has for the resources and APIs available through Microsoft Graph. To get an access token, your app must be registered with the Microsoft identity platform and be authorized by either a user or an administrator for access to the Microsoft Graph resources it needs.
     If you're already familiar with integrating an app with the Microsoft identity platform to get tokens, see the [Next Steps](/graph/auth/auth-concepts#next-steps) section for information and samples specific to Microsoft Graph.
 - **Hybrid Environment:** Export APIs support messages sent by users who are provisioned on Hybrid Environment (on-premises Exchange and Teams). Any messages sent by users who are configured for hybrid environment are accessible using Export APIs.
@@ -59,6 +60,10 @@ Here are some examples on how you can use these export APIs:
 - **Edited History:** If [your tenant is setup with Teams Retention Policy](/purview/create-retention-policies?tabs=teams-retention), Export API supports capturing messages' edited history for [individual & group chat](/graph/api/chat-getallretainedmessages), and [posts, comments in Public & Shared channels](/graph/api/channel-getallretainedmessages).
 
     To learn more about Teams Retention policy, see the [Manage retention policies for Microsoft Teams](/microsoftteams/retention-policies) for further details.
+  
+- **Meeting Transcripts:** Get all transcripts from scheduled online meeting instances for which the specified user is the organizer. This API currently only supports private scheduled meetings.
+
+- **Meeting Recordings:** Get all recordings from scheduled online meeting instances for which the specified user is the organizer. This API currently only supports private scheduled meetings.
 
 ## How to access Teams Export APIs
 
@@ -179,7 +184,7 @@ No model declaration enables access to APIs with limited usage per each requesti
                 "conversation": null,
                 "user": {
 
-                    "id": \[{"@odata.type": "microsoft.graph.user"}\],
+                    "id": [{"@odata.type": "microsoft.graph.user"}],
                     "displayName": "User Name",
 
                     "userIdentityType": "aadUser"                }
@@ -187,10 +192,10 @@ No model declaration enables access to APIs with limited usage per each requesti
     "body": {"@odata.type": "microsoft.graph.itemBody"},
     "summary": "string",
 
-    "chatId": \[{"@odata.type": "microsoft.graph.chat"}\]
+    "chatId": [{"@odata.type": "microsoft.graph.chat"}]
 
-    "attachments": \[{"@odata.type": "microsoft.graph.chatMessageAttachment"}\],
-    "mentions": \[{"@odata.type": "microsoft.graph.chatMessageMention"}\],
+    "attachments": [{"@odata.type": "microsoft.graph.chatMessageAttachment"}],
+    "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
     "importance": "string",
     "locale": "string",
     }
@@ -344,7 +349,7 @@ Export API hosted on the Teams Graph Service gets all user messages from the Sub
 
 Export API has filter parameters that help optimize the messages returned for a chat thread. The [API GET](https://graph.microsoft.com/v1.0/users/{id}/chats/getAllMessages) supports new filter parameters that allow a way to extract messages based on the sent user, bot, application and system event messages. The filter parameter supports messages sent by the following:
 
- - users (multiple user Ids supported in the same request).
+- users (multiple user Ids supported in the same request).
 
  - applications (bots, connectors, and so on).
 
@@ -386,7 +391,7 @@ $filter=from/application/applicationIdentityType eq '<appType>' or from/user/id 
 (<any of the previous filters>) and (lastModifiedDateTime+gt+<date>+and+lastModifiedDateTime+lt+<date>)  
 ```
 
- - The query returns messages sent by the specified user if `from/user/id eq ‘{oid}’` is present.
+- The query returns messages sent by the specified user if `from/user/id eq ‘{oid}’` is present.
    
  - The query returns messages sent by the federated users that are part of the user chats, if `from/user/userIdentityType eq ‘federatedUser’` is present.
 
@@ -438,5 +443,5 @@ The new Copilot Activity Export API allows you to export Copilot interactions da
 
 Application permissions are used by apps that run without a signed-in user present; application permissions can only be approved by an administrator. The following permissions are needed:
   
-  - *AiEnterpriseInteraction.Read.All*: enables access to all copilot interactions across Microsoft 365 apps and Microsoft 365 Chat
-  - A **Microsoft 365 Copilot license** is required for accessing the new Copilot Activity Export API.
+- *AiEnterpriseInteraction.Read.All*: enables access to all copilot interactions across Microsoft 365 apps and Microsoft 365 Chat
+- A **Microsoft 365 Copilot license** is required for accessing the new Copilot Activity Export API.

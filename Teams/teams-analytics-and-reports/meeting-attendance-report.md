@@ -6,6 +6,7 @@ manager: pamgreen
 audience: Admin
 ms.topic: how-to
 ms.service: msteams
+ms.subservice: meetings
 ms.reviewer: richardzhang
 ms.date: 10/14/2024
 f1.keywords:

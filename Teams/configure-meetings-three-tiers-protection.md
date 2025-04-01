@@ -5,6 +5,7 @@ author: wlibebe
 manager: pamgreen
 ms.topic: solution-overview
 ms.service: msteams
+ms.subservice: meetings
 ms.reviewer: 
 ms.date: 11/14/2024
 audience: admin

@@ -9,6 +9,7 @@ audience: Admin
 f1.keywords: NOCSH
 ms.topic: how-to
 ms.service: msteams
+ms.subservice: meetings
 ms.localizationpriority: medium
 ms.date: 9/18/2024
 ms.collection:

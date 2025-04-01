@@ -4,7 +4,7 @@ author: mstonysmith
 ms.author: tonysmit
 manager: pamgreen
 ms.reviewer: altsou
-ms.date: 1/27/2025
+ms.date: 3/28/2025
 ms.topic: install-set-up-deploy
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -97,7 +97,7 @@ To deploy the Teams Rooms app update tool to your consoles:
 3. Select **Add**. In the **Select app type** detail pane, select **Windows app (Win32)** in the drop-down menu.
 4. Browse to select the update tool app package file downloaded in Step 1.
 5. On this page, most fields are automatically populated. To see the update tool in the list, put in **Microsoft** as the publisher, then select **Next**.
-6. Under **Program**, select **Next**.
+6. Under **Program**, change **Device Restart Behavior** field to **Intune will force a mandatory device restart**. Select **Next**.
 7. Under **Requirements** set the following:
    1.  Under **Operating system architecture**, select **32-bit** and **64-bit**.
    1.  Under **Minimum operating system**, select **Windows 10 21H2**.

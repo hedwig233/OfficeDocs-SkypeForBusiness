@@ -5,6 +5,7 @@ author: wlibebe
 manager: pamgreen
 ms.topic: concept-article
 ms.service: msteams
+ms.subservice: meetings
 ms.reviewer: idilates
 ms.date: 12/6/2024
 audience: admin

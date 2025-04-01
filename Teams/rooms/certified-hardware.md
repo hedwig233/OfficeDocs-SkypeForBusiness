@@ -105,6 +105,7 @@ The following devices are Certified under the Microsoft Teams Rooms on Windows C
 | Logitech Tap and Intel Tiger Canyon NUC PC | Core i5 | 8 GB | 128 GB |
 | Logitech TAP Console with Lenovo Core Compute | Core i5 | 8 GB | 128 GB |
 | [Logitech Tap and Lenovo ThinkSmart Tiny](https://www.logitech.com/video-collaboration/partners/lenovo.html) | Core i5 | 8 GB | 128 GB |
+| [Logitech Tap with Lenovo ThinkSmart Core Gen 2](https://www.logitech.com/video-collaboration/partners/microsoft.html) | Core Ultra 7 | 32 GB | 256 GB |
 | MAXHUB XCore Kit | Core i3 | 8 GB | 128 GB |
 | MAXHUB XCore Kit Pro | Core i5 | 16 GB | 256 GB |
 | MAXHUB XBoard V865T | Core i5 | 16 GB | 256 GB |
@@ -122,6 +123,10 @@ The following devices are Certified under the Microsoft Teams Rooms on Windows C
 | Poly GC8 Console with Lenovo Thinksmart Core | Core i5 | 8 GB | 128 GB |
 | Poly GC8 Console with Dell Optiplex 7080 | Core i5 | 8 GB | 128 GB |
 | [Poly GC8 Console with HP 800 G9 Compute -MTR-W](https://www.poly.com/us/en/solutions/platform/microsoft/video/teams-rooms-windows) | Core i7 | 16 GB | 256 GB |
+| [Shure IntelliMix Room Kit 30](https://www.shure.com/products/bundles/intellimix-room-kits?variant=IMXRK30-V) | Core i5 | 16 GB | 256 GB |
+| [Shure IntelliMix Room Kit 50](https://www.shure.com/products/bundles/intellimix-room-kits?variant=IMXRK50-V) | Core i5 | 16 GB | 256 GB |
+| [Shure IntelliMix Room Kit 70](https://www.shure.com/products/bundles/intellimix-room-kits?variant=IMXRK70-V) | Core i5 | 16 GB | 256 GB |
+| [Shure IntelliMix Room Kit 80](https://www.shure.com/products/bundles/intellimix-room-kits?variant=IMXRK80-V) | Core i5 | 16 GB | 256 GB |
 | [ViewSonic TeamJoin TRS10](https://www.viewsonic.com/global/products/commercial-display/TRS10) bundle (Compute: [MPC310-W31-TU](https://www.viewsonic.com/global/products/commercial-display/MPC310-W31-TU) + Console: [MRC1010-TN](https://www.viewsonic.com/global/products/commercial-display/MRC1010-TN)) | Core i3 | 8 GB | 128 GB |
 | [Yealink Core2 Kit](https://www.yealink.com/en/product-detail/microsoft-teams-rooms-mvc640) | Core i5 | 8 GB | 128 GB |
 | Yealink MeetingBoard for MTR-Windows | Core i5 | 8 GB | 128 GB |
@@ -236,7 +241,7 @@ The following devices are certified under the Microsoft Teams Rooms peripherals 
 | [Nureva HDL410](https://www.nureva.com/audio-conferencing/hdl410) | 1.5.243554 |  |  |||
 | [Owl Labs Meeting Owl 3](https://owllabs.com/products/meeting-owl-3) | 6.4.10.42 |  |  |||
 | [Owl Labs Owl Bar](https://owllabs.com/products/owl-bar) | 6.6.24.43 |  |  |  |  |
-| [Panasonic 360 degree camera speakerphone PressIT360](https://panasonic.net/cns/prodisplays/products/ty-csp1/) | 0.0.7904.54 |  |  |||
+| [Panasonic 360 degree camera speakerphone PressIT360](https://docs.connect.panasonic.com/prodisplays/products/ty-csp1/) | 0.0.7904.54 |  |  |||
 | [Pansonic AW-UE4 camera](https://pro-av.panasonic.net/products/aw-ue4/) | 02.03 |  |  |||
 | [Poly Eagle Eye Cube Camera](https://www.polycom.com/products-services/hd-telepresence-video-conferencing/realpresence-accessories/eagleeye-cameras.html) | 1.2.0 |  |  |||
 | [Polycom EagleEye IV](https://www.poly.com/us/en/products/video-conferencing/eagleeye/eagleeye-iv) | 1.0.0 |  |  |||
@@ -251,6 +256,7 @@ The following devices are certified under the Microsoft Teams Rooms peripherals 
 | [Poly Studio E70 Camera](https://www.poly.com/us/en/products/video-conferencing/studio/studio-e70) | 1.1 |  |  |||
 | Poly Studio E60 Camera | 1.0.4.0 |  |  |||
 | [Poly Studio R30](https://www.poly.com/us/en/products/video-conferencing/studio/studio-r30) | 2.0.0.001096 |  |  |||
+| Poly Studio V12 | 1.4.6-430139 |  |  |||
 | Poly Studio V52 | 1.0.1-400045 |  |  |||
 | Poly Studio V72 | 1.4.5-424011 |  |  |||
 | EPOS SP 220 MS | 2.0.12.0 |  |  |||

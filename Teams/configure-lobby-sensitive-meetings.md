@@ -5,6 +5,7 @@ author: wlibebe
 manager: pamgreen
 ms.topic: article
 ms.service: msteams
+ms.subservice: meetings
 ms.reviewer: vivek.mohan
 ms.date: 11/12/2024
 audience: admin

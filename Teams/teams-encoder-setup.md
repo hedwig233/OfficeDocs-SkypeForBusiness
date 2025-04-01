@@ -35,6 +35,10 @@ Video encoders allow users to produce Microsoft Teams live events via external h
 
 An encoder takes audio and video content from various sources you use during a live event such as a camera, a microphone, a desktop screen capture. The encoder compresses and converts that media into a suitable digital format, and sends it to Teams for live streaming to your audience. To learn more about how you can use Teams production technologies (such as NDI) with external encoders, see our [Custom Production playbook](https://aka.ms/CustomProductionVEP).
 
+## Prerequisites
+
+Users must have a meeting policy that that has RTMP enabled. To learn more, see [Manage RTMP-In for Teams meetings, webinars, and town halls](meetings-rtmp-in.md).
+
 ## Production workflow when using an encoder
 
 Here's the workflow for producing a Teams Live Event:

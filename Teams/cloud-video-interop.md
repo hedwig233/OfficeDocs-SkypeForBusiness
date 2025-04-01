@@ -5,6 +5,7 @@ author: wlibebe
 manager: pamgreen
 ms.topic: install-set-up-deploy
 ms.service: msteams
+ms.subservice: meetings
 audience: admin
 search.appverid: MET150
 ms.reviewer: adam.jacobs

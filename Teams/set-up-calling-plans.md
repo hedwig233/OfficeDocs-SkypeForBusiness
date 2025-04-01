@@ -40,11 +40,11 @@ For more information about all Microsoft Calling Plan options, see [Calling Plan
 
 For more information about Teams Phone, see [What is Teams Phone](what-is-phone-system-in-office-365.md).
 
-## Step 1: Find out if Calling Plans are available in your country
+## Step 1: Find out if Calling Plans are available in your country/region
 
-Go to [Country and region availability for Audio Conferencing and Calling Plans](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md) and select your country to get availability information about Calling Plans.
+Go to [Country and region availability for Audio Conferencing and Calling Plans](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md) and select your country/region to get availability information about Calling Plans.
 
-If Calling Plans aren't available in your country, see [PSTN connectivity options](pstn-connectivity.md) for other available PSTN connectivity options.
+If Calling Plans aren't available in your country/region, see [PSTN connectivity options](pstn-connectivity.md) for other available PSTN connectivity options.
   
 ## Step 2: Buy and assign licenses
 
@@ -62,13 +62,13 @@ There are three ways to get new user numbers:
 
 - **Port your existing numbers.** You can port or transfer existing numbers from your current service provider or phone carrier to Microsoft 365. After you port your phone numbers to Teams, Microsoft will become your service provider and will bill you for those phone numbers. For more information, see [Transfer phone numbers to Teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md).
   
-- **Use a request form for new numbers.** Sometimes (depending on your country) you won't be able to get your new phone numbers using the Teams admin center, or you'll need specific phone numbers or area codes. If so, you'll need to download a form and send it back to us. For more information, see [Manage phone numbers for your organization](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
+- **Use a request form for new numbers.** Sometimes (depending on your country/region) you won't be able to get your new phone numbers using the Teams admin center, or you'll need specific phone numbers or area codes. If so, you'll need to download a form and send it back to us. For more information, see [Manage phone numbers for your organization](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
 
 
 ## Step 4: Add emergency addresses and locations for your organization
 <a name="bkmk_add_addresses"> </a>
 
-An emergency address must be associated with a phone number. When this association happens can vary among countries. For example, in the United States, you need to associate an emergency address when you assign the phone number to the user. In the United Kingdom, you need to associate an emergency address to the phone number when you're getting the phone numbers from Microsoft 365, or when transferring phone numbers from your current service provider.
+An emergency address must be associated with a phone number. When this association happens can vary among countries/regions. For example, in the United States, you need to associate an emergency address when you assign the phone number to the user. In the United Kingdom, you need to associate an emergency address to the phone number when you're getting the phone numbers from Microsoft 365, or when transferring phone numbers from your current service provider.
 
 For information about emergency calling and managing emergency addresses, see [Manage emergency calling](what-are-emergency-locations-addresses-and-call-routing.md).
 

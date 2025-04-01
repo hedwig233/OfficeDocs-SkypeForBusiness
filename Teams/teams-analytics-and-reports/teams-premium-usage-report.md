@@ -6,6 +6,7 @@ manager: pamgreen
 audience: Admin
 ms.topic: article
 ms.service: msteams
+ms.subservice: meetings
 ms.reviewer: vapati
 ms.date: 7/18/2024
 f1.keywords:

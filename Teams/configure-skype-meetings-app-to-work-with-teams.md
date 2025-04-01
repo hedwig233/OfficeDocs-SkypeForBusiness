@@ -7,6 +7,7 @@ manager: pamgreen
 ms.date: 06/21/2019
 ms.topic: how-to
 ms.service: msteams
+ms.subservice: meetings
 audience: admin
 search.appverid: MET150
 f1.keywords:

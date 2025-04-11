@@ -98,6 +98,10 @@ Set-CsTeamsMeetingPolicy -Identity Global -AllowWatermarkForCameraVideo $True
 Set-CsTeamsMeetingPolicy -Identity Global -AllowWatermarkForScreenSharing $True 
 ```
 
+## Platform support
+
+To view the list of platforms that support this feature, see [Microsoft Teams Premium - Overview for admins](enhanced-teams-experience.md#platform-support-for-advanced-management-for-meetings).
+
 ## Related topics
 
 - [Configure Teams meetings with three tiers of protection](configure-meetings-three-tiers-protection.md)

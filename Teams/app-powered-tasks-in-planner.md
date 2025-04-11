@@ -1,7 +1,7 @@
 ---
 title: Manage app-powered tasks in Planner for tailored task experiences
-author: lana-chin
-ms.author: v-chinlana
+author: MicrosoftHeidi
+ms.author: heidip
 manager: jtremper
 ms.topic: how-to
 ms.service: msteams

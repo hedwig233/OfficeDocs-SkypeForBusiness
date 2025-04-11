@@ -21,7 +21,7 @@ appliesto:
 # How Exchange and Microsoft Teams interact
 
 > [!TIP]
-> Watch the following session to learn how Teams interacts with Microsoft Entra ID, Microsoft 365 Groups, Exchange, SharePoint and OneDrive for Business: [Foundations of Microsoft Teams](https://aka.ms/teams-foundations)
+> Watch the following session to learn how Teams interacts with Microsoft Entra ID, Microsoft 365 Groups, Exchange, SharePoint, and OneDrive for Business: [Foundations of Microsoft Teams](https://aka.ms/teams-foundations)
 
 For the full Teams experience, every user should be enabled for Exchange Online, SharePoint Online, and Microsoft 365 Group creation.
 
@@ -76,7 +76,7 @@ The following table provides a helpful quick reference to feature availability b
 
 <sup>5</sup> If one of the owners of a team can add connectors, everyone else in that team will be able to do so, irrespective of whether their mailbox is homed on-premises or online.
 
-<sup>6</sup> Only contacts in default contacts folder. Access to other contacts folders or subfolders is not supported.
+<sup>6</sup> Only contacts in default contacts folder. Access to other contacts folders or subfolders isn't supported.
 
 <sup>7</sup> Teams honors the [Outlook on the web mailbox policy](/powershell/module/exchange/client-access/set-owamailboxpolicy) setting that's configured by tenant admins to control whether users can change their profile picture. If the **-SetPhotoEnabled** setting is turned off in the policy, users can't add, change, or remove their profile picture, so the profile picture won't be synced to teams if the admin changes the photo.
 
@@ -87,6 +87,10 @@ The following table provides a helpful quick reference to feature availability b
 <sup>10</sup> On-premises users can use Teams to update their profile picture even if the `SetPhotoEnabled` Outlook on the Web mailbox policy is set to `false`.
  > [!NOTE]
  > Setting Out of Office (OOF) via the Teams client is currently not supported for users whose mailboxes are hosted on-premises; these users should perform this action via the Outlook client.
+
+## Exchange on-premises and Teams Premium
+
+To learn which Teams Premium features work with Exchange on-premises, see [Microsoft Teams Premium - Overview for admins](enhanced-teams-experience.md).
 
 ## Requirements to get the most out of Microsoft Teams
 
@@ -101,7 +105,7 @@ Microsoft Teams works with several Microsoft 365 and Office 365 services to prov
 - Users must be enabled for Microsoft 365 group creation to create teams in Microsoft Teams.
 
   > [!IMPORTANT]
-  > If you uninstall the Skype for Business client after you move a user to **Teams Only** mode, presence may stop working in Outlook and other Office apps. Presence works fine in Teams. To resolve this issue, select the ellipses button at the left of your profile picture in the top right-hand corner of Microsoft Teams and then select **Settings**. On the **General** tab under **Application**, select **Register Teams as the chat app for Office (requires restarting Office applications)**. After you select this option, close and re-open all Office apps, including Outlook. After you open Outlook, presence information will be available.
+  > If you uninstall the Skype for Business client after you move a user to **Teams Only** mode, presence may stop working in Outlook and other Office apps. Presence works fine in Teams. To resolve this issue, select the ellipses button at the left of your profile picture in the top right-hand corner of Microsoft Teams and then select **Settings**. On the **General** tab under **Application**, select **Register Teams as the chat app for Office (requires restarting Office applications)**. After you select this option, close and reopen all Office apps, including Outlook. After you open Outlook, presence information will be available.
 
 ## Requirements to create and view meetings for mailboxes hosted on-premises
 
@@ -132,7 +136,7 @@ To enable calendar delegation for these users:
 - You must also complete steps as described in [Configure Integration and OAuth between Skype for Business Online and Exchange Server](/skypeforbusiness/deploy/integrate-with-exchange-server/oauth-with-online-and-on-premises); these steps provide the Teams scheduling application the required permissions to confirm delegate permissions.
 
   > [!NOTE]
-  > Step 2 includes role assignment for ArchiveApplication, which is not required for delegation.
+  > Step 2 includes role assignment for ArchiveApplication, which isn't required for delegation.
 
 - The Teams Scheduling add-in for Outlook requires Exchange 2013 CU19 or later when scheduling a meeting on behalf of someone else. This requirement is needed to support the unauthenticated discovery of the mailbox by our service to check delegate permissions against the delegator mailbox. The delegate and delegator location could be Exchange 2013 or later, or Exchange online, but Autodiscover must resolve to Exchange 2013 CU19 or later.
 
@@ -144,8 +148,8 @@ Because the menu option is hidden for Skype for Business users, if you want to u
 
 |Co-existance of IM providers  |Existing IM provider  |Expected behavior |Comment |
 |---------|---------|---------|---------|
-|SFB + Teams (T1 or T2.1) |Teams (T1 or T2.1)  |T2.1 automatically registers and starts as the IM provider.<br>Menu option on Settings is not available.  |This option is for users who upgrade from T1 or older version of T2.1, and are already using Teams as the IM provider. |
-|SFB + Teams (T1 or T2.1)  |SFB  |SFB is the IM provider.<br>Menu option on Settings is not available. |Because the menu isn't available, other means are needed to use Teams as the IM provider. Admins can push out a registry change by using a Windows policy or script. End users can also modify the registry directly.<br>Admins can also migrate users to TeamsOnly mode. |
+|SFB + Teams (T1 or T2.1) |Teams (T1 or T2.1)  |T2.1 automatically registers and starts as the IM provider.<br>Menu option on Settings isn't available.  |This option is for users who upgrade from T1 or older version of T2.1, and are already using Teams as the IM provider. |
+|SFB + Teams (T1 or T2.1)  |SFB  |SFB is the IM provider.<br>Menu option on Settings isn't available. |Because the menu isn't available, other means are needed to use Teams as the IM provider. Admins can push out a registry change by using a Windows policy or script. End users can also modify the registry directly.<br>Admins can also migrate users to TeamsOnly mode. |
 |Third party + Teams (T1 or T2.1) |Third party  |A third party is the IM provider.<br>Menu option is available on Settings.  |Admins can push out a registry change by using a Windows policy or script.<br>End users can select Teams as the IM provider from Settings.  |
 
 ## Additional considerations
@@ -158,7 +162,7 @@ Here are some extra things to think about as you implement Microsoft Teams in yo
 
 - If your organization has compliance requirements to ensure all meeting discussions are discoverable, you should disable private meetings if the organizer has an Exchange on-premises mailbox. For more information, see [Private meeting scheduling](./manage-who-can-schedule-meetings.md).
 
-- In an Exchange hybrid deployment, content from chat messages is searchable regardless of whether chat participants have a cloud-based mailbox or an on-premises mailbox. To learn more, read [Searching cloud-based mailboxes for on-premises users](/office365/securitycompliance/search-cloud-based-mailboxes-for-on-premises-users). To learn about searching for content in Teams, read [Content Search in the Microsoft Purview compliance portal](/Office365/SecurityCompliance/content-search#searching-microsoft-teams-and-office-365-groups).
+- In an Exchange hybrid deployment, content from chat messages is searchable regardless of whether chat participants have a cloud-based mailbox or an on-premises mailbox. To learn more, read [Searching cloud-based mailboxes for on-premises users](/office365/securitycompliance/search-cloud-based-mailboxes-for-on-premises-users). To learn about searching for content in Teams, read [Finding content in Microsoft Teams in eDiscovery](/purview/edisc-search-teams).
 
 - For presence status, Microsoft Teams must check whether the mailbox is hosted on Exchange Online or on-premises. The service then decides where to access the mailbox. To enable the Teams service to check the mailbox location through the REST API call to the Exchange Online service, you have to deploy an Exchange hybrid environment by running the Exchange Hybrid Configuration wizard, as described in [Create a hybrid deployment with the Hybrid Configuration wizard](/exchange/hybrid-deployment/deploy-hybrid).
 

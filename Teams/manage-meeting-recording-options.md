@@ -67,6 +67,10 @@ If you need to prevent meetings from being recorded entirely, you must use the [
 
 To learn more about how your organizers use this feature, see [Record a meeting in Microsoft Teams](https://support.microsoft.com/office/record-a-meeting-in-microsoft-teams-34dfbe7f-b07d-4a27-b4c6-de62f1348c24).
 
+### Platform support
+
+To view the list of platforms that support this feature, see [Microsoft Teams Premium - Overview for admins](enhanced-teams-experience.md#platform-support-for-advanced-management-for-meetings).
+
 ## Microsoft 365 Copilot in Teams meetings and events
 
 With a Teams admin policy or meeting template, you can manage how meeting transcripts are used with Copilot. The only Copilot policy setting that you can enforce is **On with saved transcript required**. The other settings create a default that your organizers can change. For details, see [Manage Microsoft 365 Copilot in Teams meetings and events](copilot-teams-transcription.md).

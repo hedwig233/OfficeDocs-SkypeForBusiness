@@ -1,8 +1,8 @@
 ---
 title: "Enable the users for Enterprise Voice on premises"
 ms.reviewer: 
-ms.author: crowe
-author: CarolynRowe
+ms.author: heidip
+author: MicrosoftHeidi
 manager: serdars
 ms.date: 2/15/2018
 audience: ITPro
@@ -52,7 +52,7 @@ For a user to use Phone System (Cloud PBX), you must first enable them for Enter
 
 In some cases, you may need to modify the way you enable users for Enterprise Voice to make sure that they can successfully make and receive calls. If you have users in your deployment that meet the following conditions, perform the steps included to enable the user for Enterprise Voice.
   
-- If a user is created in your on-premises AD and then synchronized with Skype for Business Online without being enabled for Skype for Business or for Enterprise Voice and do not have a LineURI set, run the following cmdlets for each affected user, replacing the values in \< \> with actual values for your environment:
+- If a user is created in your on-premises AD and then synchronized with Skype for Business Online without being enabled for Skype for Business or for Enterprise Voice and doesn't have a LineURI set, run the following cmdlets for each affected user, replacing the values in \< \> with actual values for your environment:
     
   ```powershell
   Enable-CsUser $username -HostingProvider sipfed.online.lync.com -SipAddress sip:<UserName>@<SIP Domain>
@@ -62,7 +62,7 @@ In some cases, you may need to modify the way you enable users for Enterprise Vo
   Set-CsUser $username -EnterpriseVoiceEnabled $true -LineUri "tel:+<Telephone Number>"
   ```
 
-- If a user is already enabled for Skype for Business on premises, but was not enabled for Enterprise Voice or assigned a LineURI before being moved to Skype for Business Online, run the following cmdlet for each user:
+- If a user is already enabled for Skype for Business on premises, but wasn't enabled for Enterprise Voice or assigned a LineURI before being moved to Skype for Business Online, run the following cmdlet for each user:
     
   ```powershell
   Set-CsUser $username -EnterpriseVoiceEnabled $true -LineUri "tel:+<Telephone Number>"

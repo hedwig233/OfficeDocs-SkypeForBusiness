@@ -68,16 +68,19 @@ If you're a manufacturer and want to join the certification program, see [How to
 
 ## [Certified USB devices](#tab/usb)
 
-*Table Updated March 2025*
+*Table Updated April 2025*
 
 > [!NOTE]
 > The date format is MM/DD/YYYY.
 
 | **Manufacturer**      | **Model**                                                    | **Qualified**       | **Certified Program**                                      |
 |:--------------------|:----------------------------------------------------------|:---------------|:-------------------------------------------------------|
+|Shure                |AONIC 50 GEN 2 UC Headset                                  |3/28/2025       |Certified for Microsoft Teams                           |
+|Shure                |AONIC 50 GEN 2 UC Headset and MV7+ Microphone              |3/28/2025       |Certified for Microsoft Teams                           |
 |Logitech             |Brio 4k                                                    |3/25/2025       |Certified for Microsoft Teams                           |
 |Logitech             |Brio                                                       |3/25/2025       |Certified for Microsoft Teams                           |
 |Yealink              |UH48 Headset                                               |3/10/2025       |Certified for Microsoft Teams                           |
+|Lenovo               |FHD Webcam                                                 |2/13/2025       |Certified for Microsoft Teams                           |
 |EPOS                 |ADAPT E1 TWS Earbuds                                       |1/9/2025        |Certified for Microsoft Teams                           |
 |Yealink              |WH64 Pro Headset                                           |12/12/2024      |Certified for Microsoft Teams                           |
 |Lenovo               |4k Pro Webcam                                              |12/6/2024       |Certified for Microsoft Teams                           |

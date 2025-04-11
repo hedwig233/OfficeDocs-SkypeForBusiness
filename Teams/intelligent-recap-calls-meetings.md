@@ -1,10 +1,10 @@
 ---
-title: Intelligent recap for Teams calls and meetings
+title: Intelligent recap for Teams calls, meetings, and events
 ms.author: wlibebe
 author: wlibebe
 manager: pamgreen
-ms.reviewer: weizxue, nijait, benjamin.olson
-ms.date: 3/17/2025
+ms.reviewer: weizxue, nijait, benjamin.olson, harinlee
+ms.date: 3/31/2025
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -54,8 +54,8 @@ Intelligent recap is automatically available to users in your organization with 
 
 To allow your users to use intelligent recap, you must turn on transcription:
 
-- PSTN, 1:1 peer-to-peer Voice over Internet Protocol (VoIP) calls: To turn on transcription, see [Configure call recording, transcription, and captions in Teams](call-recording-transcription-captions.md#enable-call-transcription).
-- Meetings, events, and group VoIP calls: To turn on transcription, see [Admins- Manage transcription and captions for Teams meetings](meeting-transcription-captions.md#live-transcription).
+- **PSTN, 1:1 peer-to-peer Voice over Internet Protocol (VoIP) calls:** To turn on transcription, see [Configure call recording, transcription, and captions in Teams](call-recording-transcription-captions.md#enable-call-transcription).
+- **Meetings, events, and group VoIP calls:** To turn on transcription, see [Admins- Manage transcription and captions for Teams meetings](meeting-transcription-captions.md#live-transcription).
 
 #### Recording
 
@@ -93,25 +93,34 @@ After the meeting or event ends, your users can access the following AI powered 
 
 :::image type="content" source="media/new-i-recap-meetings-small.png" alt-text="Screenshot of intelligent meeting recap from the recap tab." lightbox="media/new-i-recap-meetings-expand.png":::
 
-## Intelligent meeting recap for external meetings
+### Intelligent recap for external meetings
 
 Intelligent meeting recap for external meetings allows your users to share the meeting's recap with external attendees. To share the recap via Outlook with specified external attendees, after the meeting, in the **Recap** tab, users can select **Share** > **Share via Outlook**.
 
 To manage policies that allow external attendees to attend meetings in your organization, see [IT Admins - Manage external meetings and chat with people and organizations using Microsoft identities](trusted-organizations-external-meetings-chat.md).
 
+### Intelligent recap for multilingual meetings
+
+> [!NOTE]
+> This feature is currently in Public preview.
+
+> [!NOTE]
+> Intelligent meeting recap for multilingual meetings doesn't currently support town halls.
+
+Intelligent meeting recap for multilingual meetings translates the meeting's recap into each participant's language. Once the meeting ends, the recap appears in the language each participant selected for live translated transcription. Intelligent meeting recap currently supports the following languages: English, Spanish, Japanese, French, German, Portuguese, Italian, Mandarin (Simplified Chinese), and Korean.
+
+To learn more about live translated transcription, see [View live transcription in Microsoft Teams meetings](https://support.microsoft.com/office/view-live-transcription-in-microsoft-teams-meetings-dc1a8f23-2e20-4684-885e-2152e06a4a8b#bkmk_livetranslated).
+
 ## Supported meetings and call types
 
 Intelligent recap is supported on the following types of meetings and calls:
 
-- Meetings: Meetings scheduled in the Teams client, meetings scheduled in Outlook, meet now
+- Meetings: Meetings scheduled in the Teams client, meetings scheduled in Outlook, meet now, webinars, town halls
 - Calls: PSTN, 1:1, group peer-to-peer
 
-## Supported platforms
+## Platform support
 
-Intelligent recap is supported on the following platforms:
-
-- Desktop
-- Mobile
+To view the list of platforms that support this feature, see [Microsoft Teams Premium - Overview for admins](enhanced-teams-experience.md#platform-support-for-intelligent-meetings).
 
 ## Data and privacy
 

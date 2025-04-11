@@ -67,7 +67,7 @@ You can export the searched audit records as a CSV file. For more information, s
 > When one of the above activities is performed by a user or admin, Teams generates and stores an audit record. In Audit (Standard), records are retained for 90 days, which means you can search for activities that occurred within the past three months.
 
 > [!TIP]
-> You can commission the custom development of a per-user report to know if a user has blocked or muted a bot. For more information, see [Understand who blocked, muted or uninstalled a bot](/microsoftteams/platform/bots/how-to/conversations/send-proactive-messages#understand-who-blocked-muted-or-uninstalled-a-bot).
+> You can commission the custom development of a per-user report to know if a user has blocked or muted a bot. For more information, see [Understand who blocked, muted, or uninstalled a bot](/microsoftteams/platform/bots/how-to/conversations/send-proactive-messages#understand-who-blocked-muted-or-uninstalled-a-bot).
 
 ## Related articles
 

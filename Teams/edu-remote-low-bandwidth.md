@@ -5,6 +5,7 @@ ms.author: danismith
 manager: jtremper
 ms.topic: reference
 ms.service: msteams
+ms.subservice: teams-education
 audience: admin
 ms.reviewer: jesegher
 ms.date: 03/23/2020

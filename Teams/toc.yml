@@ -360,6 +360,8 @@ items:
 
 - name: AI, Copilot, and agents in Teams
   items:
+    - name: Overview of AI in Teams
+      href: copilot-ai-agents-overview.md
     - name: AI features in Teams
       items:
       - name: Intelligent recap for Teams calls and meetings
@@ -369,7 +371,7 @@ items:
       - name: Manage voice isolation for calls and meetings
         href: voice-isolation.md
       - name: Data, privacy, and security for intelligent recap
-        href: /privacy/intelligent-recap.md
+        href: privacy/intelligent-recap.md
       - name: Set up AI recommendations for educators
         href: institution-settings.md
     - name: Copilot in Teams
@@ -386,6 +388,8 @@ items:
           href: facilitator-teams.md
         - name: Facilitator in Teams Rooms
           href: rooms/facilitator-teams-rooms.md
+        - name: Manage Interpreter agent for your organization 
+          href: interpreter-agent-teams.md
 
 - name: Teams Premium
   items:
@@ -763,6 +767,8 @@ items:
           href: presence-admins.md
         - name: User work location in Teams
           href: user-work-location-in-teams.md
+        - name: User name pronunciation in Teams
+          href: name-pronunciation.md
         - name: Viva Engage experiences in Teams
           href: teams-viva-experiences.md
         - name: Custom emojis in Teams

@@ -184,7 +184,8 @@ You have to refresh the report to see any new data.
 1. Only the calls and caller actions in the first Auto attendant that answers the call are reported on. Calls and caller actions in chained Auto attendants (when one Auto attendant transfers to another Auto attendant) aren't reported on.
 1. Only 28 days of call history are available. Auto attendant data is considered personal data and is subject to data privacy retention policies.
 1. The Date selector sometimes shows dates outside the range of available data resulting in a blank report. Change the dates to be within the last 28 days to resolve the issue.
-1. If the **Historical Auto Attendant Metrics** permission in the Voice applications policy is set to **All** for an Authorized user, the report reverts back to reporting by Resource account instead of Auto attendant name. 
+1. If the **Historical Auto Attendant Metrics** permission in the Voice applications policy is set to **All** for an Authorized user, the report reverts back to reporting by Resource account instead of Auto attendant name.
+1. When reporting by Resource account, nested Auto attendants and Call queues that don't have resource accounts assigned to them are reported against the resource account that transferred the call.
 
 ### Cloud Call Queue Analytics report
 
@@ -219,6 +220,7 @@ You have to refresh the report to see any new data.
 1. Only 28 days of call history are available. Call queue data is considered personal data and is subject to data privacy retention policies.
 1. The Date selector sometimes shows dates outside the range of available data resulting in a blank report. Change the dates to be within the last 28 days to resolve the issue.
 1. If the **Historical Call Queue Metrics** permission in the Voice applications policy is set to **All** for an Authorized user, the report reverts back to reporting by Resource account instead of Call queue name. 
+1. When reporting by Resource account, nested Auto attendants and Call queues that don't have resource accounts assigned to them are reported against the resource account that transferred the call.
 
 ### Cloud Call Queue Agent Timeline report
 
@@ -256,6 +258,7 @@ You have to refresh the report to see any new data.
 1. Callback calls handled by agents aren't captured resulting in a discrepancy between the number of calls answered on the Call Queue report and the Agent Timeline report.
 1. The agent tooltip shows all calls for the agent instead of only the calls within the selected date range.
 1. If the **Historical Call Queue Metrics** permission in the Voice applications policy is set to **All** for an Authorized user, the report reverts back to reporting by Resource account instead of Call queue name. 
+1. When reporting by Resource account, nested Auto attendants and Call queues that don't have resource accounts assigned to them are reported against the resource account that transferred the call.
 
 ## Localization
 

@@ -63,7 +63,7 @@ The order of statuses, from most available to least available, is:
 1. Offline
 
 > [!NOTE]
-> For users that have their mailbox hosted on-prem, presence delays of one hour (maximum) are expected.
+> For users that have their mailbox hosted on-premises, presence delays of one hour (maximum) are expected.
 
 ## Automatic status settings
  
@@ -92,11 +92,11 @@ Users can set a duration for the presence that they set manually. If a user does
 - For 7 days if it's any other status
 
 ## Notifications and Do not disturb
- 
+
 Users receive all chat messages regardless of their presence. If a user is offline when someone sends them a message, the chat message appears in Teams the next time they come online. If a user is in a **Do not disturb** state, they still receive chat messages, but banner notifications aren't displayed.
- 
+
 Users receive calls in all presence states except for Do not disturb, in which case incoming calls go to voicemail.
- 
+
 Users can add people to a priority access list by going to **Settings** > **Privacy** in Teams. If they do, messages from these people display banner notifcations as normal for that user. Even if the user is in a **Do not disturb** state, the user still receives calls from these people.
 
 ## Admin settings in Teams compared to Skype for Business
@@ -110,7 +110,7 @@ The following admin settings Skype for Business are different in Teams:
 - The *Last seen* or *Away since* indicator is always enabled for users in Teams if the organization also uses Skype for Business.
 
 > [!NOTE]
-> The ability of a Teams admin to customize these settings is not currently supported.
+> The ability of a Teams admin to customize these settings isn't currently supported.
 
 ## Admin settings in Teams compared to Microsoft Outlook
 

@@ -106,6 +106,10 @@ To automatically pin the Queues app in the Teams client for your users, do the f
 
 To send feedback or report an issue, select **Settings and more** (**…**) in Teams, and then choose **Help** > **Give feedback**. Enter your feedback or details about the issue you're experiencing. Indicate at the beginning of your feedback report that you're sending feedback about Queues app so we can easily identify Queues app-related issues.
 
+## Platform support
+
+To view the list of platforms that support this feature, see [Microsoft Teams Premium - Overview for admins](enhanced-teams-experience.md#platform-support-for-queues-app).
+
 ## Related articles
 
 - [Plan for Auto attendant and Call queue authorized users](aa-cq-authorized-users-plan.md)

@@ -1,13 +1,14 @@
 ---
 title: "Connect your Session Border Controller (SBC) to Direct Routing"
-ms.reviewer: 
-ms.date: 10/03/2023
+ms.reviewer: filippse
+ms.date: 3/25/2025
 ms.author: scottfrancis
 author: sfrancis206
 manager: pamgreen
 audience: ITPro
 ms.topic: how-to
 ms.service: msteams
+ms.subservice: teams-calling
 ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection: 
@@ -35,23 +36,23 @@ For information on all the steps required to set up Direct Routing, see [Configu
 To configure and connect an SBC to Direct Routing, you can use the [Microsoft Teams admin center](#use-the-microsoft-teams-admin-center) or [PowerShell](#use-powershell) .
 
 > [!NOTE]
-> For GCC High and DoD clouds, you must use PowerShell. The option to connect the SBC is not available in the Teams admin center.
+> For GCC High and DoD clouds, you must use PowerShell. The option to connect the SBC isn't available in the Teams admin center.
 
 ## Use the Microsoft Teams admin center
 
-1. In the left navigation, go to **Voice** > **Direct Routing**, and then click the **SBCs** tab.
+1. In the left navigation, go to **Voice** > **Direct Routing**, and then select the **SBCs** tab.
 
-2. Click **Add**.
+2. Select **Add**.
 
 3. Enter an FQDN for the SBC. <br><br>Make sure the domain name portion of the FQDN matches a domain that's registered in your tenant. Keep in mind that the `*.onmicrosoft.com` domain name isn't supported for the SBC FQDN domain name. For example, if you have two domain names, `contoso.com` and `contoso.onmicrosoft.com`, use `sbc.contoso.com` as the SBC name. If using a subdomain, make sure this subdomain is also registered in your tenant. For example, if you want to use `sbc.service.contoso.com`, then `service.contoso.com` needs to be registered.
 
 4. Configure the settings for the SBC, based on your organization's needs. For details on each of these settings, see [SBC settings](#sbc-settings).
 
-5. When you're done, click **Save**.
+5. When you're done, select **Save**.
 
 ## Use PowerShell
 
-To connect your SBC to Direct Routing, you'll need to:
+To connect your SBC to Direct Routing, you need to do the following steps:
 
 1. [Connect to Teams by using PowerShell](#connect-to-teams-by-using-powershell).
 
@@ -69,7 +70,7 @@ After you establish a remote PowerShell session, verify that you can see the com
 Get-Command *onlinePSTNGateway*
 ```
 
-The command returns the four functions shown here that will let you manage the SBC.
+The command returns the four functions shown in the following table that lets you manage the SBC.
 
 <pre>
 CommandType    Name                       Version    Source 
@@ -89,18 +90,18 @@ New-CsOnlinePSTNGateway -Fqdn <SBC FQDN> -SipSignalingPort <SBC SIP Port> -MaxCo
 ```
 #### Considerations
 
- - Microsoft recommends that you set a maximum call limit in the SBC using information that can be found in the SBC documentation. The limit will trigger a notification if the SBC is at the capacity level.
+ - Microsoft recommends that you set a maximum call limit in the SBC using information that can be found in the SBC documentation. If the SBC is at maximum capacity level, the limit triggers a notification.
 
--  You can only connect the SBC if the domain portion of its FQDN matches one of the domains registered in your tenant, except \*.onmicrosoft.com. Using \*.onmicrosoft.com domain names is not supported for the SBC FQDN name. For example, if you have two domain names, **contoso**.com and **contoso**.onmicrosoft.com, you can use sbc.contoso.com for the SBC name. If you try to connect the SBC with a name such as sbc.contoso.abc, the system won't let you, as the domain is not owned by this tenant.
+-  You can only connect the SBC if the domain portion of its FQDN matches one of the domains registered in your tenant, except \*.onmicrosoft.com. Using \*.onmicrosoft.com domain names isn't supported for the SBC FQDN name. For example, if you have two domain names, **contoso**.com and **contoso**.onmicrosoft.com, you can use sbc.contoso.com for the SBC name. If you try to connect the SBC with a name such as sbc.contoso.abc, the system doesn't let you, as the domain isn't owned by this tenant.
 
    In addition to the domain registered in your tenant, it's important that there's a user with that domain and an assigned E3 or E5 license. If not, you'll receive the following error:<br/>
   `Can not use the "sbc.contoso.com" domain as it was not configured for this tenant`.
 
 -  To assign a user with that domain, the configured authentication type of the domain must be "Managed".
 
--  Multiple IPs mapped with the same FQDN on the SBC side are not supported.
+-  Multiple IPs mapped with the same FQDN on the SBC side aren't supported.
 
--  To provide the best-in-class encryption to our customers, Microsoft will force TLS1.2 usage for the Direct Routing SIP interface. To avoid any service impact, ensure that your SBCs are configured to support TLS1.2 and can connect using one of the following cipher suites:
+-  To provide the best-in-class encryption to our customers, Microsoft forces TLS1.2 usage for the Direct Routing SIP interface. To avoid any service impact, ensure that your SBCs are configured to support TLS1.2 and can connect using one of the following cipher suites:
 
      - TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 i.e. ECDHE-RSA-AES256-GCM-SHA384
      - TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 i.e. ECDHE-RSA-AES128-GCM-SHA256
@@ -109,13 +110,13 @@ New-CsOnlinePSTNGateway -Fqdn <SBC FQDN> -SipSignalingPort <SBC SIP Port> -MaxCo
 
 - SIP OPTIONS pings MUST NOT exceed a frequency of one transaction every 60 seconds and MUST NOT be more or less frequent than one transaction every 180 seconds for each configured trunk for each endpoint.
 
-Here's an example. This example shows only the minimum required parameters. There are additional parameters that you can set with the [New-CsOnlinePSTNGateway](/powershell/module/teams/new-csonlinepstngateway) cmdlet during the connection process. To learn more, see [SBC settings](#sbc-settings).
+The following example shows only the minimum required parameters. There are additional parameters that you can set with the [New-CsOnlinePSTNGateway](/powershell/module/teams/new-csonlinepstngateway) cmdlet during the connection process. For more information, see [SBC settings](#sbc-settings).
 
 ```PowerShell
 New-CsOnlinePSTNGateway -Identity sbc.contoso.com -Enabled $true -SipSignalingPort 5067 -MaxConcurrentSessions 100 
 ```
 
-Which returns:
+This example returns the following information:
 
 <pre>
 Identity              : sbc.contoso.com 
@@ -131,14 +132,14 @@ Enabled               : True
  
 ### Verify the SBC connection
 
-To verify the connection:
+To verify the connection, do the following steps:
 
 - [Check whether the SBC is on the list of paired SBCs](#check-whether-the-sbc-is-on-the-list-of-paired-sbcs).
 - [Validate SIP options](#validate-sip-options).
  
 #### Check whether the SBC is on the list of paired SBCs
 
-After you connect the SBC, use the [Get-CsOnlinePSTNGateway](/powershell/module/teams/get-csonlinepstngateway) cmdlet to verify that the SBC is present in the list of paired SBCs. Type the following in a remote PowerShell session, and then press Enter:
+After you connect the SBC, use the [Get-CsOnlinePSTNGateway](/powershell/module/teams/get-csonlinepstngateway) cmdlet to verify that the SBC is present in the list of paired SBCs. In a remote PowerShell session, type the following and then press **Enter**:
 
 ```PowerShell
 Get-CsOnlinePSTNGateway -Identity sbc.contoso.com  
@@ -146,7 +147,7 @@ Get-CsOnlinePSTNGateway -Identity sbc.contoso.com
 
 The paired gateway should appear in the list as shown in the example below, and the **Enabled** parameter should display a value of **True**.
 
-Which returns:
+This example returns the following information:
 
 <pre>
 Identity              : sbc.contoso.com  
@@ -164,7 +165,7 @@ Enabled               : True
 
 To validate the pairing using outgoing SIP options, use the SBC management interface and confirm that the SBC receives 200 OK responses to its outgoing OPTIONS messages.
 
-When Direct Routing sees incoming OPTIONS, it will start sending outgoing SIP Options messages to the SBC FQDN configured in the Contact header field in the incoming OPTIONS message. 
+When Direct Routing sees incoming OPTIONS, it starts sending outgoing SIP Options messages to the SBC FQDN configured in the Contact header field in the incoming OPTIONS message. 
 
 To validate the pairing using incoming SIP options, use the SBC management interface. Check to see that the SBC sends a reply to the OPTIONS messages coming in from Direct Routing, and that the response code it sends is 200 OK.
 
@@ -177,11 +178,11 @@ This table lists the options that you can set for the SBC in the Microsoft Teams
 |Yes|**Add an FQDN for the SBC**|FQDN |None|FQDN name, limit 63 characters|String, see the list of allowed and disallowed characters on [Naming conventions in Active Directory for computers, domains, sites, and OUs](https://support.microsoft.com/help/909264)|
 |No|**Enabled**|Enabled|Use to turn on the SBC for outbound calls. You can use this to temporarily remove the SBC from service while it's being updated or during maintenance. |False|True<br/>False|Boolean|
 |Yes|**SIP signaling port**|SipSignalingPort |This is the listening port that's used to communicate with Direct Routing by using the Transport Layer (TLS) protocol.|None|Any port|0 to 65535 |
-|No|**Send SIP options**|SendSIPOptions |Defines whether the SBC will send SIP options messages. We highly recommend that you turn on this setting. When this setting is off, the SBC is excluded from the Monitoring and Alert system.|True|True<br/>False|Boolean|
+|No|**Send SIP options**|SendSIPOptions |Defines whether the SBC sends SIP options messages. We highly recommend that you turn on this setting. When this setting is off, the SBC is excluded from the Monitoring and Alert system.|True|True<br/>False|Boolean|
 |No|**Forward call history**|ForwardCallHistory |Indicates whether call history information is forwarded through the trunk. When you turn this on, the Microsoft 365 proxy sends a History-info and Referred-by header. |False|True<br/>False|Boolean|
 |No|**Forward P-Asserted-identity (PAI) header**|ForwardPAI|Indicates whether the PAI header is forwarded along with the call. The PAI header provides a way to verify the identity of the caller. If this setting is on, the Privacy:ID header is also sent.|False|True<br/>False|Boolean|
-|No|**Concurrent call capacity**|MaxConcurrentSessions |When you set a value, the alerting system will notify you when the number of concurrent sessions is 90 percent or higher than this value. If you don't set a value, alerts aren't generated. However, the monitoring system will report the number of concurrent sessions every 24 hours. |Null|Null<br/>1 to 100,000 ||
-|No|**Failover response codes**|FailoverResponseCodes<br>|Specifying a failover response code forces Direct Routing to attempt connection with another SBC (if another one exists in the user's voice routing policy) upon receiving any of the specified response codes from the SBC on an SBC-terminated initial INVITE request. Note: A retry will only occur in the absence of prior non-100 provisional responses. To learn more, see [Failover of specific SIP codes received from the Session Border Controller (SBC)](direct-routing-trunk-failover-on-outbound-call.md).|408, 503, 504||Int|
+|No|**Concurrent call capacity**|MaxConcurrentSessions |When you set a value, the alerting system notifies you when the number of concurrent sessions is 90 percent or higher than this value. If you don't set a value, alerts aren't generated. However, the monitoring system still reports the number of concurrent sessions every 24 hours. |Null|Null<br/>1 to 100,000 ||
+|No|**Failover response codes**|FailoverResponseCodes<br>|Specifying a failover response code forces Direct Routing to attempt connection with another SBC (if another one exists in the user's voice routing policy) upon receiving any of the specified response codes from the SBC on an SBC-terminated initial INVITE request. A retry only occurs in the absence of prior non-100 provisional responses. For more information, see [Failover of specific SIP codes received from the Session Border Controller (SBC)](direct-routing-trunk-failover-on-outbound-call.md).|408, 503, 504||Int|
 |No|**Failover times (seconds)**|FailoverTimeSeconds |When you set a value, outbound calls that aren't answered by the gateway within the time that you set are routed to the next available trunk. If there are no additional trunks, the call is automatically dropped. The default value is 10 seconds. In an organization with slow networks and gateway responses, this could potentially result in calls being dropped unnecessarily.|10|Number|Int|
 |No|**SBC supports PIDF/LO for emergency calls**|PidfloSupported|Specify whether the SBC supports Presence Information Data Format Location Object (PIDF/LO) for emergency calls.||||
 

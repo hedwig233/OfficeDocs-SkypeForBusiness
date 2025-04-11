@@ -25,7 +25,7 @@ appliesto:
 
 ## Overview
 
-With a Teams Premium license, you, as an admin can decide if meeting and webinar organizers can hide the names and photos of attendees from other attendees in the stage, roster, and chat.
+As an admin, you can manage whether meeting and webinar organizers can hide the names and photos of attendees from other attendees in the stage, roster, and chat. Organizers must have a Teams Premium license to use this feature.
 
 To learn more about how your organizers can hide attendee names, see [Hide attendee names in Teams meetings and webinars](https://support.microsoft.com/office/hide-attendee-names-in-teams-meetings-and-webinars-00389c74-ee61-48b5-bad8-8295600085ed).
 
@@ -52,6 +52,10 @@ To turn off **`-AttendeeIdentityMasking`** so attendee names are always shown in
 ```PowerShell
 Set-CsTeamsMeetingPolicy -Identity <policy name> -AttendeeIdentityMasking Disabled
 ```
+
+## Platform support
+
+To view the list of platforms that support this feature, see [Microsoft Teams Premium - Overview for admins](enhanced-teams-experience.md#platform-support-for-advanced-management-for-meetings).
 
 ## Related articles
 

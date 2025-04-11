@@ -8,6 +8,7 @@ ms.date: 02/09/2025
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
+ms.subservice: teams-education
 audience: Admin
 f1.keywords: 
 - NOCSH

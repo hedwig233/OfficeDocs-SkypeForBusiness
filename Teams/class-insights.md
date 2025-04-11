@@ -5,6 +5,7 @@ ms.author: danismith
 manager: jtremper
 ms.topic: reference
 ms.service: msteams
+ms.subservice: teams-education
 audience: admin
 ms.reviewer: 
 ms.date: 05/29/2024
@@ -77,9 +78,6 @@ At the class level, if an educator owns a class Team, Insights is available with
 - Right select on the Insights icon and select **Pin**.
 
   :::image type="content" source="media/insights-pin-app.png" alt-text="Pin the Insights app.":::
-
-> [!TIP]
-> You can also locate the Insights app through this link: [https://aka.ms/addInsights](https://aka.ms/addInsights)
 
 ## When is Insights used?
 
@@ -182,8 +180,6 @@ Get your educational institution excited about using Insights.
 Feel free to distribute the following material to your **educators**:
 
 - Check the [Insights support page](https://support.microsoft.com/office/27b56255-90c0-47aa-bac3-1c9f50157181) for more help.
-- Get up and running quickly – [get the Insights one-pager PDF](https://aka.ms/insights/start).
-- Read the [complete guide PDF](https://aka.ms/insights/guide).
 - Watch [step-by-step tutorials](https://aka.ms/insights/resources) on how to use Insights.
 - Train yourself with the [free Insights course](https://aka.ms/insights/course) at the Microsoft Educator Center
 - And lastly, check out [this blog](https://techcommunity.microsoft.com/t5/education-blog/6-ways-to-be-insight-ful-and-support-student-engagement/ba-p/1903091) dedicated to Insights.

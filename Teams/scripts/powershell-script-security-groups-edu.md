@@ -7,6 +7,7 @@ ms.topic: article
 ms.reviewer: angch
 ms.date: 07/22/2020
 ms.service: msteams
+ms.subservice: teams-education
 audience: admin
 description: Use this PowerShell script to create the security groups that you need to manage Teams policies for educators and students in your school. 
 f1.keywords:

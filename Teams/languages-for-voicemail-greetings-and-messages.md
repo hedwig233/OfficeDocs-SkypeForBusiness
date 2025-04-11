@@ -1,14 +1,15 @@
 ---
 title: "Teams languages for voicemail greetings and messages"
-author: sfrancis206
-ms.author: scottfrancis 
+author: mkbond007
+ms.author: mabond
 manager: pamgreen
 ms.reviewer: colongma
-ms.date: 05/19/2021
+ms.date: 04/02/2025
 ms.topic: article
 ms.assetid: 4a57e3d0-8b08-494f-a195-b44afa9cbc0d
 ms.tgt.pltfrm: cloud
 ms.service: msteams
+ms.subservice: teams-calling
 search.appverid: MET150
 ms.collection: 
   - M365-voice
@@ -23,14 +24,14 @@ f1.keywords:
 ms.custom: 
   - Phone System
   - seo-marvel-apr2020
-description: Learn which languages you can set in Skype for Business for the default system messages and voicemail greetings.
+description: Learn which languages you can set in Microsoft Teams for the default system messages and voicemail greetings.
 ---
 
-# Teams languages for voicemail greetings and messages
+# Languages for voicemail greetings and messages in Microsoft Teams
 
-Teams supports the following languages for voicemail greetings.
-  
+When you set up voicemail in Microsoft Teams, you can choose the language for the default system messages and voicemail greetings.
 
+Teams supports the following languages for voicemail greetings and messages. The table lists the languages available for voicemail greetings and messages, the country or region where the language is used, and whether the language is available for users to see in email, when they call in, and if transcription is available
 
 |Language      |Country/region     |Id     |Available for a user to see it in email?     |Available when the user calls in?     |Transcription available?      |
 |:-------------|:------------------|:------|:--------------------------------------------|:-------------------------------------|:-----------------------------|
@@ -94,4 +95,14 @@ Teams supports the following languages for voicemail greetings.
 |Vietnamese    |Vietnam            |vi-VN  |Yes                                          |Yes                                   |No  |
 |Welsh         |Wales              |cy-GB  |Yes                                          |Yes                                   |No  |
 
- 
+## Related articles
+
+[Set up Cloud Voicemail](set-up-phone-system-voicemail.md)
+
+[Manage Cloud Voicemail policies for your users](manage-voicemail-policies.md)
+
+[Manage Cloud Voicemail settings for users](manage-voicemail-settings.md)
+
+[Change the default language for greetings and emails](change-the-default-language-for-greetings-and-emails.md)
+
+[Manage Shared Voicemail for Auto Attendants and Call Queues](manage-shared-voicemail.md)

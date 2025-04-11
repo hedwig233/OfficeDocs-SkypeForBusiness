@@ -102,6 +102,10 @@ Additionally, these templates are available in Teams for Education:
 
 For information about the class and lecture templates, see [Use education templates for Teams meetings](https://support.microsoft.com/topic/9567d25f-3ac5-4fcf-9b66-18f70e5d42b3).
 
+## Platform support
+
+To view the list of platforms that support this feature, see [Microsoft Teams Premium - Overview for admins](enhanced-teams-experience.md#platform-support-for-personalized-meetings).
+
 ## Related topics
 
 [Configure Teams meetings with three tiers of protection](configure-meetings-three-tiers-protection.md)

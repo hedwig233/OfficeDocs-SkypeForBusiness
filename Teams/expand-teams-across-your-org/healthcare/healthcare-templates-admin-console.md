@@ -1,7 +1,7 @@
 ---
 title: Use healthcare team templates
-author: lana-chin
-ms.author: v-chinlana
+author: MicrosoftHeidi
+ms.author: heidip
 manager: jtremper
 audience: ITPro
 ms.topic: how-to
@@ -25,6 +25,7 @@ ms.date: 09/10/2020
 description: Learn how to manage and use the healthcare team templates in the Teams admin center and with Microsoft Graph to quickly and easily create teams for your healthcare organization.
 ms.custom: seo-marvel-mar2020
 ---
+
 # Use healthcare team templates
 
 Team templates in Microsoft Teams allow you to quickly and easily create teams by providing a predefined team structure of settings, channels, and pre-installed apps.

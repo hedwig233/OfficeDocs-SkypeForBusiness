@@ -95,6 +95,10 @@ Learn more, see [Get started with Content search](/purview/ediscovery-content-se
 - Town hall chat isn't supported for town halls with more than 20,000 attendees.
 - Microsoft Teams Rooms on Windows with a Pro license can't use chat when they join town halls as a presenter.
 
+## Platform support
+
+To view the list of platforms that support this feature, see [Microsoft Teams Premium - Overview for admins](enhanced-teams-experience.md#platform-support-for-premium-town-halls).
+
 ## Related articles
 
 - [Plan for town halls](plan-town-halls.md)

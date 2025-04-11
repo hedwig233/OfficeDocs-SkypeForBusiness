@@ -156,14 +156,9 @@ Grant-CsTeamsMeetingBrandingPolicy -identity " alice@contoso.com" -PolicyName "P
 
 You can assign meeting customization policies to users or groups with a Teams Premium license in your organization.
 
-## Where are meeting themes visible
+## Platform support
 
-Supported clients:
-
-- Desktop client
-- Web client (Meeting themes aren't currently supported on Safari or Firefox)
-- Android (Versions 11+ only)
-- iOS
+To view the list of platforms that support this feature, see [Microsoft Teams Premium - Overview for admins](enhanced-teams-experience.md#platform-support-for-personalized-meetings).
 
 > [!NOTE]
 > Images aren't visible on mobile clients.

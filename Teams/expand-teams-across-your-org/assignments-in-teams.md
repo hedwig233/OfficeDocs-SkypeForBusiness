@@ -5,6 +5,7 @@ ms.author: danismith
 manager: jtremper
 ms.topic: article
 ms.service: msteams
+ms.subservice: teams-education
 audience: admin
 ms.collection: 
   - M365-collaboration

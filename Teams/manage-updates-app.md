@@ -1,7 +1,7 @@
 ---
 title: Manage the Updates app for your organization
-author: lana-chin
-ms.author: v-chinlana
+author: MicrosoftHeidi
+ms.author: heidip
 manager: jtremper
 ms.reviewer: diyu
 ms.date: 05/21/2024
@@ -29,13 +29,13 @@ ms.custom:
 
 ## Overview of Updates
 
-The Updates app in Microsoft Teams provides a centralized place for members of your organization to create, review, and submit updates. By creating update requests, you can use the Updates app to keep track of anything your organization needs. Updates is available for both desktop and mobile.
+The Updates app in Microsoft Teams provides a centralized place for members of your organization to create, review, and submit updates. By creating update requests, you can use the Updates app to keep track of anything your organization needs. Updates are available for both desktop and mobile.
 
 In Teams, users can get the Updates app from the Teams app store. You can share the [Get started in Updates article](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) with your users to help them get comfortable using Updates.
 
 :::image type="content" source="media/manage-updates-home.png" alt-text="Image of the Updates app on Teams desktop and mobile." lightbox="media/manage-updates-home.png":::
 
-Updates comes with out-of-the-box templates for common business scenarios and the option to create your own requests.
+Updates come with out-of-the-box templates for common business scenarios and the option to create your own requests.
 
 :::image type="content" source="media/manage-updates-templates.png" alt-text="Screenshot of templates available in the Updates app." lightbox="media/manage-updates-templates.png":::
 
@@ -77,7 +77,7 @@ Here are the prerequisites for deploying Updates:
 
 ## Storage with Microsoft Dataverse
 
-The Common Data Model (CDM) is the shared data language used by business and analytical applications in the Microsoft Dataverse. It consists of a set of standardized, extensible data schemas published by Microsoft and our partners that enables consistency of data and its meaning across applications and business processes. Learn more about the [Common Data Model](/common-data-model/).
+The Common Data Model (CDM) is the shared data language used by business and analytical applications in the Microsoft Dataverse. It consists of a set of standardized, extensible data schemas published by Microsoft and our partners that enable consistency of data and its meaning across applications and business processes. Learn more about the [Common Data Model](/common-data-model/).
 
 Updates that are created from a template still store data in Microsoft Dataverse, such as their title, details, template ID, and more.
 
@@ -140,7 +140,7 @@ From the Teams Updates app, users can create new updates and view updates that t
 
 ## Power Automate connector
 
-Updates supports the Power Automate connector, **Updates App (Microsoft 365)**. Using this connector can help you automate your organization's workflows. [Learn more](https://powerautomate.microsoft.com/blog/automate-workflows-with-power-automate-connector-for-updates-in-microsoft-teams/).
+Updates support the Power Automate connector, **Updates App (Microsoft 365)**. Using this connector can help you automate your organization's workflows. [Learn more](https://powerautomate.microsoft.com/blog/automate-workflows-with-power-automate-connector-for-updates-in-microsoft-teams/).
 
 ## Give feedback or report an issue
 

@@ -50,7 +50,7 @@ To access the best practice configuration dashboard, follow these steps:
 
 ## Interpret the dashboards
 
-The following sections provide details on the information in each best practice configuration's dashboard.
+The following sections provide details on the information in each best practice configuration's dashboard. Each dashboard is grouped by countries/regions, cities, and public IP addresses to identify systemic issues affecting your organization. These broader categories allow efficient detection and resolution of widespread problems impacting multiple users within a specific region or network segment, quickly identifying patterns and trends that indicate underlying issues, instead of trying to pinpoint every individual affected user.
 
 ### Update outdated Teams clients
 

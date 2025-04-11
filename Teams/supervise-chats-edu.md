@@ -8,6 +8,7 @@ ms.date: 01/22/2021
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
+ms.subservice: teams-education
 audience: Admin
 f1.keywords: 
   - NOCSH

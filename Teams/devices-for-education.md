@@ -8,7 +8,7 @@ ms.date: 2/27/2024
 ms.topic: article
 audience: Admin
 ms.service: msteams
-ms.subservice: itpro-rooms
+ms.subservice: teams-education
 appliesto: 
   - Microsoft Teams
 ms.collection: 

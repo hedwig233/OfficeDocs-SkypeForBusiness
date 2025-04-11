@@ -30,7 +30,7 @@ The following are the basic steps involved in a trial:
 
 1. **Pre-trial planning** - Including defining test cases, choosing users, and deciding which feature settings and policies you want to use.
 1. **Add the trial** - Including assigning licenses to users in your organization.
-1. **Administrative setup** - Including creating meeting templates, uploading logos and backgrounds, and assigning policies to users. If your organization uses sensitivity labels, setup also includes creating meeting sensitivity labels in the Microsoft Purview or Microsoft Purview compliance portal.
+1. **Administrative setup** - Including creating meeting templates, uploading logos and backgrounds, and assigning policies to users. If your organization uses sensitivity labels, setup also includes creating meeting sensitivity labels in the Microsoft Purview portal.
 1. **Start the trial** - Including notifying the trial participants to begin testing the use cases you defined and providing feedback to stakeholders.
 
 To better assist with planning for your Teams Premium trial, you can download the [Teams Premium Trial Guide](https://adoption.microsoft.com/files/microsoft-teams/teams-premium-trial-guide.pdf) from Microsoft Adoption and watch [Running a Successful Teams Premium Trial](https://www.youtube.com/watch?v=b7z3re0GPd4) on YouTube.

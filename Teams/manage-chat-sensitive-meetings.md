@@ -77,6 +77,10 @@ Meetings with a sensitivity label that prevents copying chat content to the clip
 > [!IMPORTANT]
 > If a sensitivity label that restricts copying from the chat is specified as the default channel label in a container label, then teams with that container label will restrict copying from the chat for all channels in the team, both in and out of channel meetings.
 
+### Platform support
+
+To view the list of platforms that support this feature, see [Microsoft Teams Premium - Overview for admins](enhanced-teams-experience.md#platform-support-for-advanced-management-for-meetings).
+
 ## Options for meetings without chat
 
 Some organizations require that meeting chat be turned off entirely for certain types of meetings. For example, an organization that holds meetings where personal data is discussed might want to turn off the meeting chat because of the regulatory requirements around storing this information.

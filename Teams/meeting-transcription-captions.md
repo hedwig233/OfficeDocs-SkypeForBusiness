@@ -76,6 +76,10 @@ By default, transcripts are shown in the language spoken that's during a meeting
 
 To turn on **Live translated transcription**, **Transcription** must be set to '**On**' in the corresponding meeting policy in the Teams admin center. To turn off **Live translated transcription**, set **Transcription** to **Off**.
 
+## Platform support for live translated transcription
+
+To view the list of platforms that support live translated transcription, see [Microsoft Teams Premium - Overview for admins](enhanced-teams-experience.md#platform-support-for-intelligent-meetings).
+
 ## Live captions
 
 Teams can detect what was said in a meeting, webinar, or town hall and present real-time captions along with speaker attribution.
@@ -108,6 +112,10 @@ To manage live captions using PowerShell, use the **`-LiveCaptionsEnabledType`**
 Live translated captions allow your users to see captions translated into the language they’re most comfortable with. By default, live captions are displayed in the language spoken during a meeting or event. For town halls, organizers can pre-select up to 6 languages for attendees to use during the event. With a Teams Premium license, this limit increases to 10 languages. The meeting or event organizer must have a Teams Premium license for attendees to use live translated captions.
 
 To turn on live translated captions, you must set **Live captions** to **Not enabled, but users can enable** in the corresponding meeting policy in the Teams admin center. To turn off live translated captions, set **Live captions** to **Off**.
+
+### Platform support for live translated captions
+
+To view the list of platforms that support live translated captions, see [Microsoft Teams Premium - Overview for admins](enhanced-teams-experience.md#platform-support-for-intelligent-meetings).
 
 ## Manage whether organizers can prevent participants from copying or forwarding meeting chat messages, live captions, and transcripts
 

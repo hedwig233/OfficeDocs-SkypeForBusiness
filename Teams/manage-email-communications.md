@@ -24,7 +24,7 @@ appliesto:
 
 ## Overview
 
-With a Teams Premium license, you can decide whether event organizers and coorganizers can edit email templates for their webinars and town halls. With email templates, organizers and co-organizers can manage waitlists, remind attendees about webinars they registered for, and provide clear instructions for attendees before, during, and after the event.
+With a Teams Premium license, you can decide whether event organizers and co-organizers can edit email templates for their webinars and town halls. With email templates, organizers and co-organizers can manage waitlists, remind attendees about webinars they registered for, and provide clear instructions for attendees before, during, and after the event.
 
 Your webinar organizers and co-organizers can edit the following email communication templates:
 
@@ -84,6 +84,10 @@ To learn more about **`-AllowEmailEditing`**, see the following cmdlet topics:
 - [Grant-CsTeamsEventsPolicy](/powershell/module/teams/grant-csteamseventspolicy)
 - [Get-CsTeamsEventsPolicy](/powershell/module/teams/get-csteamseventspolicy)
 - [Remove-CsTeamsEventsPolicy](/powershell/module/teams/remove-csteamseventspolicy)
+
+## Platform support
+
+To view the list of platforms that support this feature, see [Microsoft Teams Premium - Overview for admins](enhanced-teams-experience.md#platform-support-for-premium-town-halls).
 
 ## Related articles
 

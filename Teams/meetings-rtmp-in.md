@@ -89,6 +89,10 @@ To view the current status of RTMP-In for a meeting policy, use the following sc
 Get-CsTeamsMeetingPolicy -Identity <policy name>|fl AllowedStreamingMediaInput
 ```
 
+## Platform support
+
+To view the list of platforms that support this feature, see [Microsoft Teams Premium - Overview for admins](enhanced-teams-experience.md#platform-support-for-personalized-meetings).
+
 ## Related topics
 
 - [Teams policies reference](settings-policies-reference.md#audio--video)

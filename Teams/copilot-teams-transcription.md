@@ -56,7 +56,7 @@ Meeting or event organizers can also set Copilot's value to **Off** to prevent a
 > Microsoft 365 Copilot in Teams meetings and events isn’t available in end-to-end encrypted meetings. For more information on end-to-end encryption, see [Require end-to-end encryption for sensitive Teams meetings](end-to-end-encrypted-meetings.md).
 
 > [!NOTE]
-> Microsoft 365 Copilot in Teams isn’t available for GCC, GCC High, and DoD.
+> Microsoft 365 Copilot in Teams isn’t currently available for GCC High and DoD.
 
 ## Prerequisites
 

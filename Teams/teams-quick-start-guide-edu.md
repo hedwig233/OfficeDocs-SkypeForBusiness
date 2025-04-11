@@ -9,6 +9,7 @@ displayType: one-column
 ms.date: 08/30/2018
 ms.reviewer: 
 ms.service: msteams
+ms.subservice: teams-education
 ms.topic: tutorial
 ms.localizationpriority: medium
 search.appverid: MET150

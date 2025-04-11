@@ -11,6 +11,7 @@ f1.keywords:
 - ms.teamsadmincenter.assignments.overview
 ms.date: 03/01/2019
 ms.service: msteams
+ms.subservice: teams-education
 ms.collection: 
   - M365-collaboration
 search.appverid: MET150

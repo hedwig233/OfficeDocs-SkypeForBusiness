@@ -8,6 +8,7 @@ manager: pamgreen
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
+ms.subservice: teams-calling
 search.appverid: MET150
 ms.collection: 
   - M365-voice
@@ -50,7 +51,7 @@ Keep the following information in mind:
 
 - When you add a resource account to a policy, you must ensure that the number has a location/emergency address assigned to it.
 
-- If you remove, reassign, or port the number of a resource account used in a Shared Calling policy, the policy will remain intact, but outbound calls will fail for any users still configured to make calls from that number.
+- If you remove, reassign, or port the number of a resource account used in a Shared Calling policy, the policy remains intact, but outbound calls fail for any users still configured to make calls from that number.
 
 - In some Calling Plan markets, you aren't allowed to set the location on service numbers. For these markets, contact the [Telephone Number Services service desk](/microsoftteams/phone-reference/manage-numbers/contact-tns-service-desk) for assistance.
 
@@ -93,10 +94,10 @@ For information on the configuration of emergency locations, see [Manage emergen
 
 ### Using a Calling Plan service number
 
-If the resource account uses a Calling Plan service number, you can have a [Pay-As-You-Go Calling Plan](calling-plans-for-office-365.md#pay-as-you-go-calling-plan) assigned to the resource account and fund calls with [pay-as-you-go minutes](/microsoft-365/commerce/subscriptions/manage-pay-as-you-go-services#buy-a-pay-as-you-go-product-or-service-and-enable-overage). If your tenant has a [Calling Plan subscription with a Microsoft Online Subscription Agreement](what-are-communications-credits.md#customers-without-a-microsoft-online-subscription-agreement-mosa-billing-account), [set up Communications Credits for your organization](set-up-communications-credits-for-your-organization.md).
+If the resource account uses a Calling Plan service number, you must have a [Pay-As-You-Go Calling Plan](calling-plans-for-office-365.md#pay-as-you-go-calling-plan) assigned to the resource account and fund calls with [pay-as-you-go minutes](/microsoft-365/commerce/subscriptions/manage-pay-as-you-go-services#buy-a-pay-as-you-go-product-or-service-and-enable-overage). If your tenant has a [Calling Plan subscription with a Microsoft Online Subscription Agreement](what-are-communications-credits.md#customers-without-a-microsoft-online-subscription-agreement-mosa-billing-account), [set up Communications Credits for your organization](set-up-communications-credits-for-your-organization.md).
 
 > [!NOTE]
-> If funding is not available for a call, the caller will hear a voice treatment stating that "You are not setup to use this calling feature, please contact your admin". If only a Pay-As-You-Go Calling Plan is assigned to the Resource Account, be sure it's correctly enabled to fund calls. If Communication Credits are assigned, confirm that the Communication Credits have a funded balance.
+> If funding isn't available for a call, the caller hears a voice treatment stating that "You are not setup to use this calling feature, please contact your admin." If only a Pay-As-You-Go Calling Plan is assigned to the Resource Account, be sure it's correctly enabled in order to fund calls. If Communication Credits are assigned, confirm that the Communication Credits have a funded balance.
 
 ### Using an Operator Connect service number
 
@@ -135,7 +136,7 @@ To create a Shared Calling policy in the Teams admin center, do the following st
 
 ### Use PowerShell
 
-To configure and manage Shared Calling policies, you'll use the following Teams PowerShell cmdlets:
+To configure and manage Shared Calling policies with Teams PowerShell, you use the following cmdlets:
 
 - [New-CsTeamsSharedCallingRoutingPolicy](/powershell/module/teams/new-csteamssharedcallingroutingpolicy)
 - [Get-CsTeamsSharedCallingRoutingPolicy](/powershell/module/teams/get-csteamssharedcallingroutingpolicy)
@@ -183,7 +184,7 @@ By default, Shared Calling operates when a user doesn’t have an assigned phone
 If your organization also wants to allow users to place internal calls by dialing extensions, you can configure extension-based dialing with Shared Calling. With extension-based dialing, users are assigned a number as a Direct Routing number with a unique extension. Internal calls between users can then be made by dialing the user’s unique assigned extension in addition to dialing by name.
 
 > [!NOTE]
-> For extension dialing to operate as expected, as described in [Step 6: Create voice routing policy without PSTN usages](#step-6-create-voice-routing-policy-without-pstn-usages), the voice routing policy assigned to the user must not contain PSTN usages. If the policy is populated with PSTN usages, the end-user won’t use Shared Calling and instead will operate as if they have an assigned phone number.
+> For extension dialing to operate as expected, as described in [Step 6: Create voice routing policy without PSTN usages](#step-6-create-voice-routing-policy-without-pstn-usages), the voice routing policy assigned to the user must not contain PSTN usages. If the policy is populated with PSTN usages, the user doesn't use Shared Calling and instead operates as if they have an assigned phone number.
 
 You can assign an extension to a Shared Calling user with the Teams admin center and PowerShell.
 
@@ -231,7 +232,7 @@ The routing of emergency calls is based on how a resource account is configured.
 - If the emergency call routing policy used for the emergency call - either from user or network site assignment - has online PSTN usages configured, the routing of the emergency call will be based on the online PSTN usages.
 
 > [!NOTE]
-> If Shared Calling for Calling Plans or Operator Connect is configured in the same Tenant with Direct Routing, site assigned emergency call routing polices cannot be used.
+> If Shared Calling for Calling Plans or Operator Connect is configured in the same tenant with Direct Routing, site assigned emergency call routing policies can't be used.
 
 For more information, see [Manage emergency call routing policies](manage-emergency-call-routing-policies.md) and [Set-CsOnlinePstnUsage](/powershell/module/teams/set-csonlinepstnusage).
 
@@ -241,7 +242,7 @@ Emergency services must be able to call back the originator of an emergency call
 
 You define a list of emergency callback numbers in the Shared Calling policy by using the `-EmergencyNumbers` parameter. Each Shared Calling policy must have a unique emergency calling number. That is, you can't use the same emergency number in more than one Shared Calling policy.
 
-When an emergency call is made, the next free number in the emergency number list is used as the caller ID. This number will be reserved for the next 60 minutes.
+When an emergency call is made, the next free number in the emergency number list is used as the caller ID. This number is then reserved for the next 60 minutes.
 
 - If there are no free numbers available in the list, we'll reuse a phone number from the list.
 

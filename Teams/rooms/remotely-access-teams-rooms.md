@@ -4,7 +4,7 @@ author: mstonysmith
 ms.author: tonysmit
 manager: pamgreen
 ms.reviewer: kimmatlock
-ms.date: 2/28/2025
+ms.date: 4/02/2025
 ms.topic: install-set-up-deploy
 audience: admin
 appliesto:
@@ -38,7 +38,7 @@ Teams Rooms Pro Management has its own role-based access control, which helps yo
 
 See [Role Base access control in Teams Rooms Pro management portal](/microsoftteams/rooms/rooms-pro-rbac).
 
-- **Requires tenant level opt-in to enable the feature** By default, remote access isn't enabled for your tenant. It must be turned on using assign role-based permissions. You need put in the email address that provides an acknowledgement you're explicitly enabling this feature. Providing this acknowledgement creates an audit log record so someone can be held accountable. The Microsoft Teams Rooms Pro Management Remote access feature follows [Microsoft privacy](https://privacy.microsoft.com/) policies.
+- **Requires tenant level opt-in to enable the feature** By default, remote access isn't enabled for your tenant. It must be turned on using assign role-based permissions. You need put in the email address that provides an acknowledgment you're explicitly enabling this feature. Providing this acknowledgment creates an audit log record so someone can be held accountable. The Microsoft Teams Rooms Pro Management Remote access feature follows [Microsoft privacy](https://privacy.microsoft.com/) policies.
 
 > [!Note]
 > Before you enable and set up remote access, consider your privacy and compliance requirements.
@@ -68,7 +68,8 @@ Before setting up remote access, verify the following prerequisites are met:
 - Buy a Teams Rooms Pro license for the Teams Rooms console.
 - Verify the console is supported and is running Microsoft Teams Rooms on Windows. See [Teams Rooms Certified Devices](/microsoftteams/rooms/certified-hardware).
 - Install Microsoft Visual C++ 2015-2022 Redistributable (x64).
-- Prepare your organization's network for [Azure Communication Services]([/azure/communication-services/concepts/network-prep](/azure/communication-services/concepts/voice-video-calling/network-requirements#firewall-configuration).
+- Prepare your organization's network for [Azure Communication Services](/azure/communication-services/concepts/voice-video-calling/network-requirements#firewall-configuration)
+
 - Add the following URLs to your network's allowed list:
   - https://mmrprodnoampubsub.webpubsub.azure.com
   - https://mmrprodemeapubsub.webpubsub.azure.com
@@ -150,7 +151,7 @@ To remotely administer a Teams Rooms console:
     |End session|Terminates the session.|
 
 > [!NIMPORTANT]
-  > Users with view only access permission can use these commands. However, they won't have the ability to interact with the Teams Rooms console or save any changes. For those users that have modify access permissions, they can interact with the console and save any changes.
+> Users with view only access permission can use these commands. However, they won't have the ability to interact with the Teams Rooms console or save any changes. For those users that have modify access permissions, they can interact with the console and save any changes.
 
 ## Security best practices for remote access
 

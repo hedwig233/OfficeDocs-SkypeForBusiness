@@ -250,7 +250,7 @@ The complete topology consists of seven virtual machines that enable you to full
 |Lync Server 2010 Documentation Help File|March 2012 |
 |[Lync Server 2010 Welcome page](/previous-versions/office/skype-server-2010/gg398616(v=ocs.14))|October 2012 |
 |[IM an Expert for Microsoft Lync Server 2010 Documentation](https://www.microsoft.com/downloads/en/details.aspx?FamilyID=8E4546AA-9B24-435D-9043-A2181B4E6D06&displaylang=en)|March 2012 |
-|[Lync 2010 Release Notes](https://www.microsoft.com/downloads/en/details.aspx?FamilyID=d76f8027-d97f-4336-adbc-7979c2b069b3).aspx)|January 2011 |
+|[Lync 2010 Release Notes](https://www.microsoft.com/downloads/en/details.aspx?FamilyID=d76f8027-d97f-4336-adbc-7979c2b069b3.aspx)|January 2011 |
 |[Lync Server 2010 Release Notes](https://www.microsoft.com/downloads/en/details.aspx?FamilyID=782975c4-8610-46b6-9fc4-d1d30de7c76d)|January 2011 |
 |[Lync Server 2010 Planning Tool Readme](https://www.microsoft.com/downloads/en/details.aspx?FamilyID=c8ba3275-270f-4c0b-90bb-edc1d1216c2d)|January 2011 |
 |[Lync Server 2010 Edge Server Reference Architecture Diagrams](https://www.microsoft.com/download/details.aspx?id=13791)|March 2011 |

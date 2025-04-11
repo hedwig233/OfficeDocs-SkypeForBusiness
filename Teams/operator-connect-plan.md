@@ -3,7 +3,7 @@ title: Plan for Operator Connect
 author: sfrancis206
 ms.author: scottfrancis
 manager: pamgreen
-ms.date: 03/25/2024
+ms.date: 04/01/2025
 ms.topic: article
 ms.service: msteams
 audience: admin
@@ -12,7 +12,7 @@ ms.collection:
   - m365initiative-voice
   - highpri
   - Tier1
-ms.reviewer: scottfrancis
+ms.reviewer: hranapour
 search.appverid: MET150
 f1.keywords:
 - NOCSH
@@ -58,12 +58,12 @@ With Operator Connect, if your existing operator is a participant in the Microso
 To enable phone number assignments with Operator Connect, make sure your users are:
 
 - Teams Phone licensed. To learn more, see [What is Phone System?](what-is-phone-system-in-office-365.md) and [Assign Teams add-on licenses to users](teams-add-on-licensing/assign-teams-add-on-licenses.md).
-- In TeamsOnly mode. Note that the user needs to be in TeamsOnly mode, but your entire organization does not. To learn more, see [Understand Microsoft Teams and Skype for Business coexistence and interoperability](teams-and-skypeforbusiness-coexistence-and-interoperability.md).
+- In TeamsOnly mode. The user needs to be in TeamsOnly mode, but your entire organization doesn't. To learn more, see [Understand Microsoft Teams and Skype for Business coexistence and interoperability](teams-and-skypeforbusiness-coexistence-and-interoperability.md).
 
 For a list of operators participating in the Microsoft Operator Connect Program and the countries or regions where their service is available, see the [Microsoft 365 Operator Connect directory](https://cloudpartners.transform.microsoft.com/practices/microsoft-365-for-operators/directory).
 
 ## Support boundaries
-For technical support, please contact the customer support of your Operator Connect Operator first. If needed, Operator Connect Operators can escalate your support case directly to Microsoft engineering through shared support channels. 
+For technical support, contact the customer support of your Operator Connect Operator first. If needed, Operator Connect Operators can escalate your support case directly to Microsoft engineering through shared support channels. 
 
 ## Related articles
 

@@ -141,14 +141,9 @@ Use the following steps to apply blurred backgrounds for users that aren't using
 4. Toggle the **Apply background blur when no effect is selected** setting from **Off** to **On** to enable the setting.
 5. Select **Save**.
 
-## Where are custom backgrounds visible
+## Platform support
 
-The following list displays supported clients where custom backgrounds are visible:
-
-- Web client
-- Desktop client
-- Android
-- iOS
+To view the list of platforms that support this feature, see [Microsoft Teams Premium - Overview for admins](enhanced-teams-experience.md#platform-support-for-personalized-meetings).
 
 ### Who can select and apply custom meeting backgrounds
 

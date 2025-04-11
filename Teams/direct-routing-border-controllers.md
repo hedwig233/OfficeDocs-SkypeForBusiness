@@ -55,16 +55,16 @@ We're not accepting new nominations for certification until further notice.
 
 |Vendor|Product|Non-media bypass|Media bypass|Software version|911 Service Provider Capable*|ELIN capable|
 |---|---|---|---|---|---|---|
-|[AudioCodes](https://www.audiocodes.com/solutions-products/products/products-for-microsoft-365/direct-routing-for-microsoft-teams)|Mediant 500 SBC|&#10004;|&#10004;|Supported 7.20A.258 (Recommended 7.40A.500)|&#10004;|&#10004;|
+|[AudioCodes](https://www.audiocodes.com/solutions-products/products/products-for-microsoft-365/direct-routing-for-microsoft-teams)|Mediant 500 SBC|&#10004;|&#10004;|Supported 7.40A.600 (Recommended 7.40A.500)|&#10004;|&#10004;|
 ||Mediant 500 Li SBC|&#10004;|&#10004;|Supported 7.2x.xxx (Recommended 7.40A.400)|&#10004;|&#10004;|
-||Mediant 800 SBC|&#10004;|&#10004;|Supported 7.20A.258 (Recommended 7.40A.500)|&#10004;|&#10004;|
-||Mediant 2600 SBC|&#10004;|&#10004;|Supported 7.20A.258 (Recommended 7.40A.500)|&#10004;|&#10004;|
-||Mediant 4000 SBC|&#10004;|&#10004;|Supported 7.20A.258 (Recommended 7.40A.500)|&#10004;|&#10004;|
-||Mediant 1000B  SBC|&#10004;|&#10004;|Supported 7.20A.258 (Recommended 7.40A.500)|&#10004;|&#10004;|
-||Mediant 9000  SBC|&#10004;|&#10004;|Supported 7.20A.258 (Recommended 7.40A.500)|&#10004;|&#10004;|
-||Virtual Edition SBC|&#10004;|&#10004;|Supported 7.20A.258 (Recommended 7.40A.500)|&#10004;|&#10004;|
-||Mediant Cloud Edition SBC|&#10004;|&#10004;|Supported 7.20A.258 (Recommended 7.40A.500)|&#10004;|&#10004;|
-||Mediant 3100|&#10004;|&#10004;|Supported 7.20A.250 (Recommended 7.40A.500)|&#10004;|&#10004;|
+||Mediant 800 SBC|&#10004;|&#10004;|Supported 7.40A.600 (Recommended 7.40A.500)|&#10004;|&#10004;|
+||Mediant 2600 SBC|&#10004;|&#10004;|Supported 7.40A.600 (Recommended 7.40A.500)|&#10004;|&#10004;|
+||Mediant 4000 SBC|&#10004;|&#10004;|Supported 7.40A.600 (Recommended 7.40A.500)|&#10004;|&#10004;|
+||Mediant 1000B  SBC|&#10004;|&#10004;|Supported 7.40A.600 (Recommended 7.40A.500)|&#10004;|&#10004;|
+||Mediant 9000  SBC|&#10004;|&#10004;|Supported 7.40A.600 (Recommended 7.40A.500)|&#10004;|&#10004;|
+||Virtual Edition SBC|&#10004;|&#10004;|Supported 7.40A.600 (Recommended 7.40A.500)|&#10004;|&#10004;|
+||Mediant Cloud Edition SBC|&#10004;|&#10004;|Supported 7.40A.600 (Recommended 7.40A.500)|&#10004;|&#10004;|
+||Mediant 3100|&#10004;|&#10004;|Supported 7.40A.600 (Recommended 7.40A.500)|&#10004;|&#10004;|
 |[Ribbon Communications](https://ribboncommunications.com/solutions/enterprise-solutions/microsoft-skype-business)|SBC 5400|&#10004;|&#10004;|Supported on available versions of 11.1 and later, 10.1, 9.2, and 7.2 (Recommend latest version)|&#10004;||
 ||SBC 7000|&#10004;|&#10004;|Supported on available versions of 11.1 and later, 10.1, 9.2, and 7.2 (Recommend latest version)|&#10004;||
 ||All SBC SWe variants, including hosted offers|&#10004;|&#10004;|Supported on available versions of 11.1 and later, 10.1, 9.2, and 7.2 (Recommend latest version)|&#10004;||
@@ -89,15 +89,15 @@ We're not accepting new nominations for certification until further notice.
 ||Cisco Unified Border Element (CUBE) for 1000 V Series Cloud Services Router|&#10004;|&#10004;|Supported IOS XE Amsterdam 17.2.1r (Recommended 17.3.3)|&#10004;||
 ||Cisco Unified Border Element (CUBE) for 1000 Series Aggregation Services Routers|&#10004;|&#10004;|Supported IOS XE Amsterdam 17.2.1r (Recommended 17.6.1a)|&#10004;||
 ||Cisco Unified Border Element (CUBE) for Catalyst 8000 Edge Platforms|&#10004;|&#10004;|Supported IOS XE Amsterdam 17.3.2 (Recommended 17.6.1a)|&#10004;||
-|[Avaya](https://support.avaya.com/products/P0997/avaya-session-border-controller-for-enterprise/8.1.x)|Avaya Session Border Controller for Enterprise (ASBCE)|&#10004;|&#10004;|Release 8.1.1 or higher (8.1.2 or higher for Media Bypass)|&#10004;|&#10004;|
+|[Avaya](https://support.avaya.com/products/P0997/avaya-session-border-controller-for-enterprise/8.1.x)|Avaya Session Border Controller for Enterprise (ASBCE)|&#10004;|&#10004;|Release 8.1.1 or higher (8.1.2 or higher for Media Bypass, 10.2.0.2 for ELIN)|&#10004;|&#10004;|
 |[Nokia](https://documentation.nokia.com/aces/cgi-bin/chk_access.cgi/3TB30222GBAAACZZA.zip)|Nokia Session Border Controller|&#10004;|&#10004;|24.7|&#10004;||
 |[Italtel](https://www.italtel.com/italtels-sbc-obtains-microsoft-teams-direct-routing-certification/)|NetMatch-S CI|&#10004;|&#10004;|Supported 5.8 (Recommended the latest version)|&#10004;|&#10004;|
-|[Ericsson](https://www.ericsson.com/en/portfolio/cloud-software-and-services/cloud-communication/enterprise-communication/business-communication-applications-and-enablers/sip-trunking)|vSBC 2.16|&#10004;|||||
+|[Ericsson](https://www.ericsson.com/portfolio/cloud-software-and-services/cloud-core/communication-services-udm-and-exposure/communication-services--udm/cloud-ims/enterprise-communication/sip-trunking)|vSBC 2.16|&#10004;|||||
 |[Cataleya](https://cataleya.com/cataleya-launches-orchid-cloud-revolutionary-cloud-based-wholesale-voice-business-platform/)|Orchid Link|&#10004;||3.1|||
 |[ULTATEL](https://www.ultatel.com/services/direct-routing-teams-sbc)|Teams SBC|&#10004;|&#10004;|1.6|||
 |[Mitel](https://unify.com/en/solutions/voice-platforms/session-border-controller)|Unify OpenScape Session Border Controller|&#10004;|&#10004;|V10R2.2.0 or higher|||
 |[Sansay Inc.](https://www.sansay.com/solutions/microsoft-teams/)|vmVSXi|&#10004;|&#10004;|10.5.1.354-vm-S-x64|&#10004;||
-|[Enghouse Networks](https://www.enghousenetworks.com/portfolio/network-infrastructure/cloud-native-session-border-controller-sbc/)|Dialogic BorderNet SBC|&#10004;|&#10004;|3.9.x|||
+|[Enghouse Networks](https://www.enghousenetworks.com/portfolio/network-infrastructure/dialogic-session-border-controller/)|Dialogic BorderNet SBC|&#10004;|&#10004;|3.9.x|||
 |[Patton Electronics Co.](https://www.patton.com/microsoft/)|Patton SmartNode eSBC|&#10004;||3.19.x|||
 |[M5 Technologies (previously known as Media5 Corporation)](https://www.m5t.com/pages/sentinel-400-sbc-_-2023_0-2023-06-16)|Mediatrix Sentinel Series|&#10004;||DGW 48.0.2340 (Recommended DGW 48.1.2503)|||
 |[Ekinops](https://www.ekinops.com/solutions/voice-data-access/microsoft-direct-routing-sbc)|Ekinops Session Border Controller (ONeSBC)|&#10004;|&#10004;|Supported 6.9.x (Recommended 6.10.x)|||
@@ -116,6 +116,7 @@ We're not accepting new nominations for certification until further notice.
 ||GX-3100|&#10004;|&#10004;|Supported 7.20A.250 (Recommended 7.40A.500)|&#10004;|&#10004;|
 |[Telnyx LLC](https://telnyx.com/resources/direct-routing-overview)|Telnyx MS Teams SBC|&#10004;|&#10004;|v2024.0315.18.37.f2c7869|&#10004;||
 |[Vodia Networks Inc.](https://web.vodia.com/microsoft-teams)|Vodia PBX|&#10004;||v69.4|||
+|[Brekeke Software, Inc.](https://docs.brekeke.com/pbx/integration-with-microsoft-teams)|Brekeke PBX|&#10004;||3.17.1.5 or higher||
 
 \* **911 service providers**
 
@@ -159,7 +160,7 @@ The following table describes which SBC vendors support [Local Media Optimizatio
 ||AP 4900|9.x|
 |[Avaya](https://documentation.avaya.com/en-US/bundle/WorkingWithAvayaSBCEandMicrosoftTeams_r81x/page/About_Avaya_SBCE_and_MS_Teams.html)|Avaya Session Border Controller for Enterprise (ASBCE)|10.1.2 or higher|
 |[Italtel](https://www.italtel.com/italtels-sbc-obtains-microsoft-teams-direct-routing-certification/)|NetMatch-S CI|5.7 or higher SW version|
-|[Enghouse Networks](https://www.enghousenetworks.com/portfolio/network-infrastructure/cloud-native-session-border-controller-sbc/)|Enghouse BorderNet|3.9.2-XY or higher SW version|
+|[Enghouse Networks](https://www.enghousenetworks.com/portfolio/network-infrastructure/)|Enghouse BorderNet|3.9.2-XY or higher SW version|
 
 ## Direct Routing and analog devices interoperability
 

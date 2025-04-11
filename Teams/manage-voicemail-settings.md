@@ -72,7 +72,7 @@ You can also use PowerShell to manage voicemail settings as follows:
 
 ## Voicemail settings
 
-- **Voicemail  ** - This setting controls whether Cloud Voicemail is enabled for the user. If the setting is false, Cloud Voicemail service isn't available for the user, and a voicemail isn't recorded for the user.
+- **Voicemail** - This setting controls whether Cloud Voicemail is enabled for the user. If the setting is false, Cloud Voicemail service isn't available for the user, and a voicemail isn't recorded for the user.
 - **Prompt language** - This setting specifies the language used for the prompts in the Cloud Voicemail. For more information, see [Change the default language for greetings and emails](change-the-default-language-for-greetings-and-emails.md).
 - **Call answering mode** - This setting specifies the call answering rule. The rule can be:
   - *Caller can leave a voicemail* - The relevant greeting (normal or out-of-office) is played and the caller can leave a voicemail.
@@ -82,7 +82,7 @@ You can also use PowerShell to manage voicemail settings as follows:
 - **Default greeting prompt** - This setting specifies the text-to-speech greeting that plays if the user doesn't have a greeting recorded.
 - **Default out-of-office prompt** - This setting specifies the text-to-speech greeting that plays if the user is out-of-office and doesn't have a recorded out-of-office greeting recorded.
 - **Play out-of-office greetings** - This setting specifies whether or not to play the out-of-office greeting in a voicemail deposit scenario where a user has automatic replies set in Outlook.
-- **Share data for service improvements** (PowerShell only) - This setting pecifies whether voicemail and transcription data is shared with the service for training and improving accuracy. If set to false, voicemail data isn't shared, regardless of user choice.
+- **Share data for service improvements** (PowerShell only) - This setting specifies whether voicemail and transcription data is shared with the service for training and improving accuracy. If set to false, voicemail data isn't shared, regardless of user choice.
 
 ## Related articles
 

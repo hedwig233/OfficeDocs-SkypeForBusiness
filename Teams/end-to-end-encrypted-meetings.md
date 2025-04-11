@@ -85,6 +85,10 @@ To manage the end-to-end meeting encryption policy, follow these steps:
 
 1. Select **Save**.
 
+## Platform support
+
+To view the list of platforms that support this feature, see [Microsoft Teams Premium - Overview for admins](enhanced-teams-experience.md#platform-support-for-advanced-management-for-meetings).
+
 ## Related topics
 
 - [Configure Teams meetings with three tiers of protection](configure-meetings-three-tiers-protection.md)

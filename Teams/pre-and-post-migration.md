@@ -1,5 +1,5 @@
 ---
-title: Helpful tips during a ACM migration
+title: Best practices ACM migration
 author: surbhigupta12
 ms.author: surbhigupta
 manager: prkosh
@@ -24,7 +24,7 @@ appliesto:
 ms.custom: seo-marvel-apr2020
 ---
 
-# Important tips and tricks during ACM migration
+# Best practices during ACM migration
 
 It is recommended that customers follow these steps during self-serve migration to check pre- and post- ACM migration health.
 

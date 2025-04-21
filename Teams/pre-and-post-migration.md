@@ -97,10 +97,9 @@ Merge it with export from Manage apps page and anything that is blocked in Manag
 There is no Powershell command to get a list of users assigned to a policy. You can use an alternative way in TAC  **before migration** to get the list of users.
 
 1. Go to TAC - https://admin.teams.microsoft.com/
-1. Go to Manage Users page.
+1. Go to **Manage Users** page.
 
 > :::image type="content" source="media/step3-manage-users-page.png" alt-text="Screenshot showing manage users page.":::
-
 1. Click the filter located at the top right of the Manage Users table.
 
 > :::image type="content" source="media/step3-manage-users-page-filter.png" alt-text="Screenshot showing manage users page filter.":::
@@ -171,22 +170,18 @@ Another example:
 
 1. Made required changes to Teams Admin Center Configuration Updates.
 1. Applied all available apps to Teams Admin Distribution Group for smooth management.  
-
 PowerShell command used:
 `Import-Csv .\AppList1.csv | %{Update-M365TeamsApp -Id $_.AppId  -AppAssignmentType UsersAndGroups -Groups $_.GroupID -OperationType Add}`
 
 1. Assigned all Microsoft apps to a designated custom policy group to keep all Microsoft apps organized and managed under a specific policy for targeted user group.
-
 PowerShell command used:
 `Import-Csv .\AppList2.csv | %{Update-M365TeamsApp -Id $_.AppId  -AppAssignmentType UsersAndGroups -Groups $_.GroupID -OperationType Add}`
 
 1. Mapped specific apps to their respective custom policy groups for making access control more effective.
-
 PowerShell command used:
 `Import-Csv .\AppList3.csv | %{Update-M365TeamsApp -Id $_.AppId  -AppAssignmentType UsersAndGroups -Groups $_.GroupID -OperationType Add}`
 
-1. Updated **Global Policy** to make selected apps accessible to all users across the organization.
-
+1. Update **Global Policy** to make selected apps accessible to all users across the organization.
 PowerShell command used:
 `gc '.\GlobalApps.txt' | %{Update-M365TeamsApp -Id $_ -AppAssignmentType Everyone}`
 

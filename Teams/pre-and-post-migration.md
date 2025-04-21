@@ -24,24 +24,24 @@ appliesto:
 ms.custom: seo-marvel-apr2020
 ---
 
-# Important tips and triks during ACM migration
+# Important tips and tricks during ACM migration
 
-> It is recommended customers follow these steps during self-serve migration to check pre- and post- ACM migration health.
+It is recommended that customers follow these steps during self-serve migration to check pre- and post- ACM migration health.
 
 ## Pre-migration
 
 ### Summary
 
-> App centric management simplifies the process of allowing apps for your users and groups. ACM migration involves preserving the users and apps allowed in your App permission policies; you can also add or exclude users.
+App centric management simplifies the process of allowing apps for your users and groups. ACM migration involves preserving the users and apps allowed in your App permission policies; you can also add or exclude users.
 
 > In summary, you will:
 
-1. Export your app catalog and note your allowed apps.
-1. Review your permission policies and note your allowed/blocked apps.
-1. Identify the users allowed for each app through your permission policies.
-1. Reassign those users in the App centric management.
+1. [Export your app catalog and note your allowed apps](#step-1-export-your-app-catalog-and-note-your-allowed-apps).
+1. [Review your permission policies and note your allowed/blocked apps](#step-2-review-your-permission-policies-and-note-your-allowedblocked-apps).
+1. [Identify the users allowed for each app through your permission policies.](#step-3-identify-users-allowed-for-each-app)
+1. [Reassign those users in the App centric management](#get-a-list-of-users-assigned-to-a-policy).
 
-#### Step 1: Export app catalog and your allowed apps
+#### Step 1: Export your app catalog and note your allowed apps
 
 1. Start with the Manage Apps page. Export the full list of apps in the catalog as a CSV file, including each app’s allowed/blocked App status. The allow/block status determines whether the app is available to everyone or no one, respectively. This status is used in the following steps to narrow down your users. For more details, see [Export app catalog as CSV](https://learn.microsoft.com/en-us/microsoftteams/manage-apps#export-app-catalog-as-csv).
  
@@ -49,137 +49,146 @@ ms.custom: seo-marvel-apr2020
 
 #### Step 2: Review your permission policies and note your allowed/blocked apps
 
-Review your permission policies. You are likely reading this document because you have more than 1 permission policy.
+Review your permission policies. This section is intended for users who have multiple permission policies.
 
-Retrieve list of permission policies 
-UI
-1. Navigate to Teams admin center > Manage apps > Permission policies 
-1. Open each of the permission policies and note the apps allowed or blocked through each one. 
+Steps to retrieve the permission policies list using UI:
 
-PS cmdlet
-1. Run:  Get-CsTeamsAppPermissionPolicy Get-CsTeamsAppPermissionPolicy
-2. Interpreting results: 
+1. Navigate to Teams admin center > Manage apps > Permission policies.
+1. Open each permission policy and note which apps are allowed or blocked.
 
-> :::image type="content" source="media/step2–interpret-results.png" alt-text="Screenshot showing the export App catalog.":::
+Steps to retrieve the permission policies list using PS cmdlet:
+
+1. Run [Get-CsTeamsAppPermissionPolicy](/powershell/module/teams/get-csteamsapppermissionpolicy?view=teams-ps).
+2. Interpreting results:
+
+> :::image type="content" source="media/step2–interpret-results.png" alt-text="Screenshot showing the interpret results.":::
 
 Response legend:
 
-* Allowed app list with a list of apps = list of apps allowed, all others are blocked.
-* Allowed app list with empty list of apps = all apps are blocked.
-* Blocked app list with empty list of apps = all apps allowed.
-* Blocked app list with a list of apps = apps are blocked and all others are allowed.
+* Allowed app list with a list of apps = List of apps allowed, all other apps are blocked.
+* Allowed app list with an empty list of apps = All apps are blocked.
+* Blocked app list with an empty list of apps = All apps are allowed.
+* Blocked app list with a list of apps = Apps are blocked and all other apps are allowed.
 
-In the example above, there are three policies in the tenant: Global, Test Policy, Test 2.
+In the above example, there are three policies in the tenant: Global, Test Policy, and Test 2.
 
 Global:
+
 1. Microsoft apps (Default Catalog Apps): com.microsoft.teamspace.tab.vsts, cd2d8695-bdc9-4d8e-9620-cc963ed81f41, com.microsoft.teamspace.tab.planner, a6b63365-31a4-4f43-92ec-710b71557af9...(more) are allowed, the rest are blocked (Allowed app list)
-1. Third party apps (Global Catalog Apps) 3 apps are allowed, the rest are blocked (Allowed App list) 
+1. Third party apps (Global Catalog Apps) 3 apps are allowed, the rest are blocked (Allowed App list)
 1. Private Catalog Apps (Custom Apps) - All allowed (Blocked app list is empty)
 
 Retrieve allowed apps in each permission policy
-PS cmdlet 
-In the example above, not all default apps are shown in the response. To see all of them, you need to assign a variable to the result, example: 
+PS cmdlet
+In the example above, not all default apps are shown in the response. To see all the default apps, you need to assign a variable to the result.
+For example: 
 $msftApps = Get-CsTeamsAppPermissionPolicy -Identity "Global" | Select-Object -ExpandProperty DefaultCatalogApps
 $msftApps.id
 
 Filter out blocked apps
-So far we collected all apps that are allowed to somebody in the tenant. We need to know who the app is allowed for.
+We have gathered information on all applications permitted within the tenant. It is now necessary to identify the individuals or groups for whom each application is authorized.
 
 Merge it with export from Manage apps page and anything that is blocked in Manage apps will be blocked no matter what the policy assignment might return. 
 
 ### Step 3: Identify users allowed for each app 
-Get list of users assigned to policy 
-There is no Powershell command for it. But there is an alternative way in TAC **before migration**.
 
-Go to TAC - https://admin.teams.microsoft.com/
-Go to Manage Users page
+#### Get a list of users assigned to a policy
 
-> :::image type="content" source="media/step3-manage-users-page.png" alt-text="":::
+There is no Powershell command to get a list of users assigned to a policy. You can use an alternative way in TAC  **before migration** to get the list of users.
 
-Click on filter of the Manage users table on right side top button.
+1. Go to TAC - https://admin.teams.microsoft.com/
+1. Go to Manage Users page.
 
-> :::image type="content" source="media/step3-manage-users-page-filter.png" alt-text="":::
+> :::image type="content" source="media/step3-manage-users-page.png" alt-text="Screenshot showing manage users page.":::
 
-Select the policy name for which you need the user assignments and click apply.
+1. Click the filter located at the top right of the Manage Users table.
 
-> :::image type="content" source="media/step3-manage-users-page-filter-applied.png" alt-text="":::
+> :::image type="content" source="media/step3-manage-users-page-filter.png" alt-text="Screenshot showing manage users page filter.":::
 
-That will show all the users assigned to the policy filtered.
+1. Select the policy name for which you need the user assignments and click **Apply**.
 
-> :::image type="content" source="media/step3-manage-users-page-filter-applied-results.png" alt-text="":::
+> :::image type="content" source="media/step3-manage-users-page-filter-applied.png" alt-text="Screenshot showing manage users page applied page.":::
 
+All the users assigned to the policy filtered are shown.
 
-Optionally export the user list to CSV.
+> :::image type="content" source="media/step3-manage-users-page-filter-applied-results.png" alt-text="Screenshot showing manage users page filter results.":::
 
-> :::image type="content" source="media/step3-manage-users-page-export-csv.png" alt-text="":::
+1. You can also export the users list to CSV.
 
+> :::image type="content" source="media/step3-manage-users-page-export-csv.png" alt-text="Screenshot showing export manage users page csv.":::
 
 ## Post migration
 
-After migrating to ACM, customers can validate against their pre-migration posture using the same steps. Follow the instructions defined in this section to gather your previous permission policies and compare them to your ACM settings: Review your permission policies and note your allowed/blocked apps.
+After migrating to ACM, customers can validate against the pre-migration posture using the same steps. Follow the instructions defined in this section to gather your previous permission policies and compare them to your ACM settings. Review your permission policies and note your allowed/blocked apps.
 
-## Bulk App Management
+## Bulk app management
 
-1. Create Distribution Lists and Add Members: You can use the New-DistributionGroup and Add-DistributionGroupMember cmdlets to create distribution lists and add members. For example:
+1. **Create Distribution Lists and Add Members**: You can use the `New-DistributionGroup` and `Add-DistributionGroupMember` cmdlets to create distribution lists and add members.
 
-New-DistributionGroup -Name "DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins" -PrimarySmtpAddress "DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins@man-es.com"
-Add-DistributionGroupMember -Identity "DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins" -Member "user1@man-es.com"
+For example:
+`New-DistributionGroup -Name "DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins" -PrimarySmtpAddress "DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins@man-es.com"`
+`Add-DistributionGroupMember -Identity "DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins" -Member "user1@man-es.com"`
 
-1. Assign All Applications to a Distribution List: To assign all applications to the distribution list DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins@man-es.com, you can use the Update-M365TeamsApp cmdlet. Here is an example to assign all apps at once:
-$apps = Get-AllM365TeamsApps
+1. Assign all apps to a distribution list: To assign all apps to the distribution list DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins@man-es.com, you can use the `Update-M365TeamsApp` cmdlet. Here is an example to assign all apps together:
+
+`$apps = Get-AllM365TeamsApps
 foreach ($app in $apps) {
     Update-M365TeamsApp -Id $app.Id -AppAssignmentType UsersAndGroups -Groups "DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins@man-es.com"
-}
+}`
 
-1. Modify Availability of Specific Apps to Everyone: To modify the availability of 53 apps to Everyone, you can use the Update-M365TeamsApp cmdlet with the AppAssignmentType parameter set to Everyone. For example:
-$appIds = @("appId1", "appId2", "appId3", ...) # List of 53 app IDs
+1. Modify availability of specific apps to everyone: To modify the availability of specific apps to everyone, you can use the `Update-M365TeamsApp` cmdlet with the `AppAssignmentType` parameter set to `Everyone`.
+
+For example:
+`$appIds = @("appId1", "appId2", "appId3", ...) # List of 53 app IDs
 foreach ($appId in $appIds) {
     Update-M365TeamsApp -Id $appId -AppAssignmentType Everyone
-}
+}`
 
-1.	Allow Microsoft Apps to Multiple Distribution Lists: To allow all Microsoft apps to the distribution lists DTDEAUG_MSTeamsAppPolicy_ITTestMSPVA@man-es.com and DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins@man-es.com, you can use the Update-M365TeamsApp cmdlet. For example:
+1. Allow Microsoft apps to multiple distribution lists: To allow all Microsoft apps to the distribution lists DTDEAUG_MSTeamsAppPolicy_ITTestMSPVA@man-es.com and DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins@man-es.com, you can use the `Update-M365TeamsApp` cmdlet.
+
+For example:
 $msApps = Get-AllM365TeamsApps | Where-Object { $_.Publisher -eq "Microsoft" }
 foreach ($app in $msApps) {
     Update-M365TeamsApp -Id $app.Id -AppAssignmentType UsersAndGroups -Groups "DTDEAUG_MSTeamsAppPolicy_ITTestMSPVA@man-es.com","DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins@man-es.com"
 }
-1.	Here's an example of what the list.csv file might look like:
+
+1. Here's an example of the `list.csv` file:
 AppId,DistributionList
 appId1,DTDEAUG_MSTeamsAppPolicy_Group1@man-es.com
 appId2,DTDEAUG_MSTeamsAppPolicy_Group2@man-es.com
 appId3,DTDEAUG_MSTeamsAppPolicy_Group3@man-es.com
 ...
-You can then use the following PowerShell script to read the CSV file and assign the applications to the specified distribution lists:
-$csv = Import-Csv -Path "C:\path\to\list.csv"
-foreach ($row in $csv) {	
+
+The following PowerShell script can be used to read the CSV file and assign the applications to the specified distribution lists:
+`$csv = Import-Csv -Path "C:\path\to\list.csv"
+foreach ($row in $csv) {
     Update-M365TeamsApp -Id $row.AppId -AppAssignmentType UsersAndGroups -Groups $row.DistributionList
-}
-This script will loop through each row in the CSV file and assign the applications to the corresponding distribution lists.
+}`
 
-Another example 
+This PowerShell script loops through each row in the CSV file and assign the applications to the corresponding distribution lists.
 
-1. Made required changes to Teams Admin Center Configuration Updates
+Another example:
+
+1. Made required changes to Teams Admin Center Configuration Updates.
 1. Applied all available apps to Teams Admin Distribution Group for smooth management.  
 
-PowerShell Command Used:
- 
-Import-Csv .\AppList1.csv | %{Update-M365TeamsApp -Id $_.AppId  -AppAssignmentType UsersAndGroups -Groups $_.GroupID -OperationType Add}
- 
-3. Assigned all Microsoft apps to a designated custom policy group to keep all Microsoft apps organized and managed under a specific policy for targeted user group. 
+PowerShell command used:
+`Import-Csv .\AppList1.csv | %{Update-M365TeamsApp -Id $_.AppId  -AppAssignmentType UsersAndGroups -Groups $_.GroupID -OperationType Add}`
 
-** PowerShell Command Used:
- 
-Import-Csv .\AppList2.csv | %{Update-M365TeamsApp -Id $_.AppId  -AppAssignmentType UsersAndGroups -Groups $_.GroupID -OperationType Add}
+1. Assigned all Microsoft apps to a designated custom policy group to keep all Microsoft apps organized and managed under a specific policy for targeted user group.
 
-4. Mapped specific apps to their respective custom policy groups for making access control more effective.  
-  PowerShell Command Used:
- 
-Import-Csv .\AppList3.csv | %{Update-M365TeamsApp -Id $_.AppId  -AppAssignmentType UsersAndGroups -Groups $_.GroupID -OperationType Add}
- 
-5. Updated Global Policy to make selected apps accessible to all users across the organization.  
-  PowerShell Command Used:
- 
-gc '.\GlobalApps.txt' | %{Update-M365TeamsApp -Id $_ -AppAssignmentType Everyone}
- 
+PowerShell command used:
+`Import-Csv .\AppList2.csv | %{Update-M365TeamsApp -Id $_.AppId  -AppAssignmentType UsersAndGroups -Groups $_.GroupID -OperationType Add}`
+
+1. Mapped specific apps to their respective custom policy groups for making access control more effective.
+
+PowerShell command used:
+`Import-Csv .\AppList3.csv | %{Update-M365TeamsApp -Id $_.AppId  -AppAssignmentType UsersAndGroups -Groups $_.GroupID -OperationType Add}`
+
+1. Updated **Global Policy** to make selected apps accessible to all users across the organization.
+
+PowerShell command used:
+`gc '.\GlobalApps.txt' | %{Update-M365TeamsApp -Id $_ -AppAssignmentType Everyone}`
 
 ## Related articles
 

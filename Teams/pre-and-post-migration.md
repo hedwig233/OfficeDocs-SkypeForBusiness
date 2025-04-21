@@ -43,7 +43,7 @@ App centric management simplifies the process of allowing apps for your users an
 
 #### Step 1: Export your app catalog and note your allowed apps
 
-1. Start with the Manage Apps page. Export the full list of apps in the catalog as a CSV file, including each app’s allowed/blocked App status. The allow/block status determines whether the app is available to everyone or no one, respectively. This status is used in the following steps to narrow down your users. For more details, see [Export app catalog as CSV](https://learn.microsoft.com/en-us/microsoftteams/manage-apps#export-app-catalog-as-csv).
+1. Start with the Manage Apps page. Export the full list of apps in the catalog as a CSV file, including each app’s allowed/blocked App status. The allow/block status determines whether the app is available to everyone or no one, respectively. This status is used in the following steps to narrow down your users. For more details, see [Export app catalog as CSV](https://learn.microsoft.com/microsoftteams/manage-apps#export-app-catalog-as-csv).
  
 > :::image type="content" source="media/step1–export-app-catalog.png" alt-text="Screenshot showing the export App catalog.":::
 
@@ -58,7 +58,7 @@ Steps to retrieve the permission policies list using UI:
 
 Steps to retrieve the permission policies list using PS cmdlet:
 
-1. Run [Get-CsTeamsAppPermissionPolicy](/powershell/module/teams/get-csteamsapppermissionpolicy?view=teams-ps).
+1. Run Get-CsTeamsAppPermissionPolicy(/powershell/module/teams/get-csteamsapppermissionpolicy?view=teams-ps &preserve-view=true).
 2. Interpreting results:
 
 > :::image type="content" source="media/step2–interpret-results.png" alt-text="Screenshot showing the interpret results.":::
@@ -111,7 +111,7 @@ There is no Powershell command to get a list of users assigned to a policy. You 
 
 All the users assigned to the policy filtered are shown.
 
-> :::image type="content" source="media/step3-manage-users-page-filter-applied-results.png" alt-text="Screenshot showing manage users page filter results.":::
+> :::image type="content" source="media/step3-manage-users-page-filter-result.png" alt-text="Screenshot showing manage users page filter results.":::
 
 1. You can also export the users list to CSV.
 

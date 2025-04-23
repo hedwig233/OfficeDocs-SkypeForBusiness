@@ -26,7 +26,7 @@ ms.custom: seo-marvel-apr2020
 
 # Best practices during ACM migration
 
-It is recommended that customers follow these steps during self-serve migration to check pre- and post- ACM migration health.
+It is recommended that customers follow these steps during self-serve migration to check pre- and post- app centric management migration health.
 
 ## Pre-migration
 
@@ -43,8 +43,8 @@ App centric management simplifies the process of allowing apps for your users an
 
 #### Step 1: Export your app catalog and note your allowed apps
 
-1. Start with the Manage Apps page. Export the full list of apps in the catalog as a CSV file, including each app’s allowed/blocked App status. The allow/block status determines whether the app is available to everyone or no one, respectively. This status is used in the following steps to narrow down your users. For more details, see [Export app catalog as CSV](https://learn.microsoft.com/microsoftteams/manage-apps#export-app-catalog-as-csv).
- 
+1. Navigate to **Manage Apps** page. Export the full list of apps in the catalog as a CSV file, including each app’s allowed/blocked App status. The allow/block status determines whether the app is available to everyone or no one, respectively. This status is used in the following steps to narrow down your users. For more details, see [Export app catalog as CSV](https://learn.microsoft.com/microsoftteams/manage-apps#export-app-catalog-as-csv).
+
 > :::image type="content" source="media/step1–export-app-catalog.png" alt-text="Screenshot showing the export App catalog.":::
 
 #### Step 2: Review your permission policies and note your allowed/blocked apps
@@ -78,15 +78,16 @@ Global:
 1. Third party apps (Global Catalog Apps) 3 apps are allowed, the rest are blocked (Allowed App list)
 1. Private Catalog Apps (Custom Apps) - All allowed (Blocked app list is empty)
 
-Retrieve allowed apps in each permission policy
-PS cmdlet
+**Retrieve allowed apps in each permission policy**
+PowerShell cmdlet:
 In the example above, not all default apps are shown in the response. To see all the default apps, you need to assign a variable to the result.
-For example: 
-$msftApps = Get-CsTeamsAppPermissionPolicy -Identity "Global" | Select-Object -ExpandProperty DefaultCatalogApps
-$msftApps.id
+For example:
+`$msftApps = Get-CsTeamsAppPermissionPolicy -Identity "Global" | Select-Object -ExpandProperty DefaultCatalogApps
+$msftApps.id`
 
-Filter out blocked apps
-We have gathered information on all applications permitted within the tenant. It is now necessary to identify the individuals or groups for whom each application is authorized.
+**Filter out blocked apps**
+
+After gathering information on all applications permitted within the tenant, identify the individuals or groups for whom each application is authorized.
 
 Merge it with export from Manage apps page and anything that is blocked in Manage apps will be blocked no matter what the policy assignment might return. 
 

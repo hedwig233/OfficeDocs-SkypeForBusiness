@@ -285,7 +285,7 @@ You have to refresh the report to see any new data.
 | German (Germany)                     | Spanish (Spain, International Sort) |
 | Greek (Greece)                       | Swedish (Sweden)                    |
 | Hebrew (Israel)                      | Thai (Thailand)                     |
-| Hindi (India)                        | Turkish (Turkey)                    |
+| Hindi (India)                        | Turkish (Türkiye)                    |
 | Hungarian (Hungary)                  | Ukrainian (Ukraine)                 |
 | Icelandic (Iceland)                  | Vietnamese (Vietnam)                |
 | Indonesian (Indonesia)               | Welsh (United Kingdom)              |

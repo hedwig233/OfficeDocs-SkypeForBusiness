@@ -255,7 +255,7 @@ Computer Configuration > Administrative Templates > Windows Components > App Pac
 Known limitations:
 
 - Classic Teams on Windows Server 2019 isn't displaying the app switcher toggle if Classic Teams version is lower than 1.6.00.33567
-- New Teams on Windows Server 2019 needs [FSLogix 2210 HotFix 4](/fslogix/overview-release-notes#fslogix-2210-hotfix-4-29888427471).
+- If you are using FSLogix as the Profile Manager solution, New Teams on Windows Server 2019 needs [FSLogix 2210 HotFix 4](/fslogix/overview-release-notes#fslogix-2210-hotfix-4-29888427471) or higher (Microsoft recommends the latest available version).
 
 ### Outlook presence integration with New Teams in Windows Server 2019
 

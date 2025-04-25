@@ -101,6 +101,7 @@ The following devices are Certified under the Microsoft Teams Rooms on Windows C
 | [Lenovo ThinkSmart Core + IP Controller](https://www.lenovo.com/us/en/p/smart-devices/smart-office/thinksmart/lenovo-thinksmart-core-plus-ip-controller-for-microsoft-teams-rooms/len102e0015) | Core i5 | 16 GB | 256 GB |
 | [Lenovo ThinkSmart One + IP Controller](https://www.lenovo.com/us/en/p/smart-devices/smart-office/thinksmart/lenovo-thinksmart-one-plus-ip-controller-for-teams/12bw0002us) | Core i5 | 16 GB | 256 GB |
 |[Lenovo ThinkSmart Tiny Kit](https://psref.lenovo.com/Product/ThinkSmart/ThinkSmart_Tiny_Kit)| Core i3|16 GB|256 GB|
+| Lenovo ThinkSmart Core Gen 2 + Controller <br/> ThinkSmart Core Gen 2 + IP Controller <br/> ThinkSmart Core Gen 2 Full Room Kit <br/> ThinkSmart Core Gen 2 Full Room Kit IP | Core Ultra 7 | 32 GB | 256 GB |
 | [Logitech Tap with Intel NUC](https://www.logitech.com/product/microsoft-rooms) | Core i5 | 8 GB | 128 GB |
 | Logitech Tap and Intel Tiger Canyon NUC PC | Core i5 | 8 GB | 128 GB |
 | Logitech TAP Console with Lenovo Core Compute | Core i5 | 8 GB | 128 GB |

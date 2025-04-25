@@ -357,6 +357,8 @@ items:
           href: privacy/operator-connect-data-transfer.md
         - name: Intelligent recap
           href: privacy/intelligent-recap.md
+        - name: User location consent
+          href: privacy/user-location-data.md  
 
 - name: AI, Copilot, and agents in Teams
   items:
@@ -1418,7 +1420,7 @@ items:
           href: what-are-dial-plans.md
         - name: Create and manage dial plans
           href: create-and-manage-dial-plans.md
-        - name: Route calls to unassigned numbers
+        - name: Routing options for unassigned phone numbers
           href: routing-calls-to-unassigned-numbers.md
 
     - name: Network settings and topology
@@ -1613,6 +1615,8 @@ items:
                       href: app-support-on-Teams-panels.md
                     - name: Check-in and auto release
                       href: devices/check-in-and-auto-release.md
+                    - name: Occupancy states
+                      href: devices/teams-panels-occupancy.md
                     - name: Reserve rooms with a QR code
                       href: devices/reserving-rooms-with-a-qr-code.md
                     - name: Custom backgrounds on Teams panels

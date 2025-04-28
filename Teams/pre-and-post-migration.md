@@ -13,9 +13,9 @@ ms.collection:
   - M365-collaboration
   - Tier1
 search.appverid: MET150
-ms.date: 02/10/2025
+ms.date: 04/28/2025
 ms.reviewer: nguyenb
-description: Tips and tricks for ACM migration.
+description: Best practives for ACM migration.
 f1.keywords:
 - NOCSH
 ms.localizationpriority: high
@@ -24,7 +24,7 @@ appliesto:
 ms.custom: seo-marvel-apr2020
 ---
 
-# Best practices during ACM migration
+# Best practices for app centric migration
 
 It is recommended that customers follow these steps during self-serve migration to check pre- and post- app centric management migration health.
 
@@ -32,7 +32,7 @@ It is recommended that customers follow these steps during self-serve migration 
 
 ### Summary
 
-App centric management simplifies the process of allowing apps for your users and groups. ACM migration involves preserving the users and apps allowed in your App permission policies; you can also add or exclude users.
+App centric management simplifies the process of allowing apps for your users and groups. App centric management migration involves preserving the users and apps allowed in your App permission policies; you can also add or exclude users.
 
 > In summary, you will:
 
@@ -89,19 +89,21 @@ $msftApps.id`
 
 After gathering information on all applications permitted within the tenant, identify the individuals or groups for whom each application is authorized.
 
-Merge it with export from Manage apps page and anything that is blocked in Manage apps will be blocked no matter what the policy assignment might return. 
+Merge it with export from Manage apps page and anything that is blocked in Manage apps will be blocked no matter what the policy assignment might return.
 
-### Step 3: Identify users allowed for each app 
+### Step 3: Identify users permitted for each app
 
-#### Get a list of users assigned to a policy
+You can identify users permitted for each app in the following methods:
+* [UI](#get-a-list-of-users-assigned-to-a-policy-in-ui)
+* PowerShell
 
-There is no Powershell command to get a list of users assigned to a policy. You can use an alternative way in TAC  **before migration** to get the list of users.
+#### Get a list of users assigned to a policy in UI
 
 1. Go to TAC - https://admin.teams.microsoft.com/
-1. Go to **Manage Users** page.
+1. Go to **Users** > **Manage users**.
 
 > :::image type="content" source="media/step3-manage-users-page.png" alt-text="Screenshot showing manage users page.":::
-1. Click the filter located at the top right of the Manage Users table.
+1. Click the filter located at the top right of the Manage users table.
 
 > :::image type="content" source="media/step3-manage-users-page-filter.png" alt-text="Screenshot showing manage users page filter.":::
 
@@ -117,9 +119,60 @@ All the users assigned to the policy filtered are shown.
 
 > :::image type="content" source="media/step3-manage-users-page-export-csv.png" alt-text="Screenshot showing export manage users page csv.":::
 
+#### Identify users allowed for each app in PowerShell
+
+You can also use the following PowerShell command to export user assignments for each custom policy. This script generates an Excel file if the given policy has user assignments; otherwise, a message is shown indicating that no user assignments exist.
+
+PowerShell command output is as follows:
+
+> :::image type="content" source="media/step3b-pscommand-output.png" alt-text="PowerShell command output.":::
+
+The exported file appears as follows:
+> :::image type="content" source="media/step3b-exported-file.png" alt-text="Exported file output.":::
+
+* To define the base path for exports: `$basePath = "C:\Users\patelsagar\Downloads"`
+
+* To ensure the base path exists:
+if (-not (Test-Path -Path $basePath)) { 
+    New-Item -ItemType Directory -Path $basePath | Out-Null 
+} 
+
+* To retrieve all Teams app permission policies:
+`$policies = Get-CsTeamsAppPermissionPolicy | Select-Object Identity`
+
+* To loop through each policy:
+'foreach ($policy in $policies) {
+    $policyName = $policy.Identity
+    # Ignore 'Global' policy
+    if ($policyName -eq 'Global') {
+        continue
+    }'
+
+* To remove 'TAG:' prefix if it exists:
+
+    `if ($policyName -like 'TAG:*') { 
+        $policyName = $policyName -replace '^TAG:', '' 
+    }`
+
+* To retrieve the users assigned to the current policy:
+    `$users = Get-CsOnlineUser -Filter "TeamsAppPermissionPolicy -eq '$policyName' -and SoftDeletionTimestamp -eq `$null" |
+             Select-Object Identity, DisplayName, UserPrincipalName, TeamsAppPermissionPolicy, AccountEnabled, AccountType`
+ 
+* To check if the users count is zero:
+  `if ($users.Count -eq 0) {
+        Write-Host "`e[31m$policyName does not have any user assignments`e[0m"
+        continue
+    }`
+
+* To export users to a CSV file:
+    `$outputPath = "$basePath\users_$($policyName).csv"
+     $users | Export-Csv -Path $outputPath -NoTypeInformation`
+    Write-Host "`e[32mExported users for policy: $policyName to $outputPath`e[0m" 
+}
+
 ## Post migration
 
-After migrating to ACM, customers can validate against the pre-migration posture using the same steps. Follow the instructions defined in this section to gather your previous permission policies and compare them to your ACM settings. Review your permission policies and note your allowed/blocked apps.
+After migrating to , customers can validate against the pre-migration posture using the same steps. Follow the instructions defined in this section to gather your previous permission policies and compare them to your app centric management settings. Review your permission policies and note your allowed/blocked apps.
 
 ## Bulk app management
 

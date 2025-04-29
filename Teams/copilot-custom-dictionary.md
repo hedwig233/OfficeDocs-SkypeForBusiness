@@ -150,6 +150,10 @@ Uploaded custom dictionaries are safely stored. Only you and your users can acce
 
 Custom dictionary data is used solely within your organization for meetings. Nobody else accesses the data and it isn't included in any AI model training.
 
+## Supported clients and platforms
+
+[PLACEHOLDER]
+
 ## Related articles
 
 - Improving Teams Meeting transcriptions

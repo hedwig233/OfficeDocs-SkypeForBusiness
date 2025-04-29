@@ -37,6 +37,14 @@ As an admin, you can upload a custom dictionary in the Microsoft 365 admin cente
 > [!NOTE]
 > We'll update the licensing requirements for General availability. Check back soon for updates.
 
+### Admin
+
+As an admin, you must meet the following requirements to upload custom dictionaries:
+
+- You must have the AI administrator role. To learn more about admin roles, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
+
+### Your users
+
 Users in your organization must meet the following requirements to use custom dictionaries:
 
 - An eligible *Microsoft 365* base license.
@@ -104,10 +112,7 @@ You should compile the dictionary in a CSV plain-text format with UTF-8 encoding
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
 2. From the left navigation panel, select **Copilot**, and go to the **Settings**.
 3. Select **Copilot custom dictionary** and select on it to see the flyout view from the right for custom dictionary management.
-4. Select **Upload Dictionary** to go to the uploading sub view
-
-> [!NOTE]
-> You must have the AI Admin role to perform this action. To learn more about admin roles, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
+4. Select **Upload Dictionary** to go to the uploading sub view.
 
 ### Create the custom dictionary with a CSV file
 

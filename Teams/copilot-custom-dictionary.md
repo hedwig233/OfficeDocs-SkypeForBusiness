@@ -119,7 +119,7 @@ You should compile the dictionary in a CSV plain-text format with UTF-8 encoding
 5. Select the option to download the **CSV template with header only** from the portal.
 6. Open the template with Excel, open with UTF-8 and comma-delimited format.
 7. Fill in your custom terms in the **Term** column as a flat list.
-8. (optional) Fill in additional information in the **Sounds like form**, **Spell Out Form**, and **Description** columns.
+8. *(optional)* Fill in additional information in the **Sounds like form**, **Spell Out Form**, and **Description** columns.
 9. Save the file as CSV UTF-8 (Comma delimited) (.csv).
 
 ### Upload your custom dictionary

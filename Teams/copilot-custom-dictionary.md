@@ -1,16 +1,17 @@
 ---
 title: Admins- Manage custom dictionaries for Microsoft 365 Copilot in Teams
-ms.author: fezuo
-author: fei.zuo
-ms.reviewer: camillepack
-manager: scotv
+ms.author: wlibebe
+author: wlibebe
+ms.reviewer: fei.zuo
+manager: pamgreen
 ms.date: 4/16/2025
 audience: Admin
-ms.topic: concept-article
-ms.service: microsoft-365-copilot
+ms.topic: how-to
+ms.subservice: meetings
+ms.service: msteams
 ms.localizationpriority: medium
 ms.collection: 
-- scotvorg
+- m365initiative-meetings
 - m365copilot
 - magic-ai-copilot
 description: Learn about how to upload and manage a Copilot custom dictionary.
@@ -20,26 +21,36 @@ appliesto:
 
 # Admins- Manage custom dictionaries for Microsoft 365 Copilot in Teams
 
-As an admin, you can upload a custom dictionary in the Microsoft 365 admin center to improve the quality of Copilot in Teams and Recap. 
+## Overview
 
-Once you upload a dictionary, organizers
+> [!IMPORTANT]
+> This feature is currently in Teams Public preview.
+>
+> Features in preview might not be complete and could undergo changes before becoming available in the public release. They're provided for evaluation and exploration purposes only.
 
-If your admin has uploads the dictionary and you're the meeting organizer or initiator who starts the transcription, the custom dictionary is applied to improve the recognition of all entities throughout the meeting.
+Organizations often use their own special terms, acronyms, and jargon, like product names, department-specific language, and industry-specific terms. The AI models powering Teams transcription are trained using general datasets that might not recognize these specialized terms. When you import a custom dictionary, the model dynamically adapts during meetings and performs post-correction once the meeting ends, ensuring accurate transcription of these specialized terms.
+
+As an admin, you can upload a custom dictionary in the Microsoft 365 admin center to improve the quality of transcription in Microsoft 365 Copilot in Teams meetings, Facilitator, transcripts, and Intelligent meeting recap. Once you upload a dictionary, it enhances the recognition of all entities throughout the meeting when a meeting organizer or initiator with a Microsoft 365 Copilot or Teams Premium license starts transcription or any feature that uses transcription.
 
 ## Prerequisites
 
-Users in your organization with the following licenses can use custom dictionaries:
+> [!NOTE]
+> We'll update the licensing requirements for General availability. Check back soon for updates.
 
-- You must assign your users a Microsoft 365 subscription that includes Teams or a Microsoft 365 (no Teams) subscription with a separate Teams license.
-- You must assign a Teams Premium or Microsoft 365 Copilot license to your users.
+Users in your organization must meet the following requirements to use custom dictionaries:
 
-## Why do I need a custom dictionary?
+- An eligible *Microsoft 365* base license.
+  - For the list of eligible base licenses, see [Understand licensing requirements for Microsoft 365 Copilot](/copilot/microsoft-365/microsoft-365-copilot-licensing).
+- An eligible *Microsoft Teams* license.
+  - Teams licenses might be included in your *Microsoft 365* subscription, or you might need to purchase a separate Teams license if you have *Microsoft 365 (no Teams)* licenses.
+- A *Microsoft 365 Copilot* or *Teams Premium* license.
+  - For information on how to acquire *Microsoft 365 Copilot* licenses, see [Where can I get Microsoft Copilot?](https://support.microsoft.com/topic/where-can-i-get-microsoft-copilot-40a622db-6d25-4266-b008-4bbcb55cf52f). To learn more about Teams Premium, see [Manage Teams Premium for your organization](teams-premium-dashboard.md).
+- Be a Microsoft Teams Public preview participant.
+  - For information on how to access Teams Public preview features, see [Microsoft Teams Public preview](/microsoftteams/public-preview-doc-updates).
 
-Organizations often use their own special terms, acronyms, and jargon, like product names, department-specific language, and industry-specific terms. The AI models powering Teams transcription are trained using general datasets that might not recognize these specialized terms. When you import a custom dictionary, the model dynamically adapts during meetings and performs post correction once the meeting ends, leading to a significant improvement in the transcription accuracy of these specialized terms.
+## Understand custom dictionaries
 
-## What's included in a custom dictionary?
-
-The custom dictionary leverages captures organization-specific terminology to enhance the AI model's understanding of entities.
+The custom dictionary captures organization-specific terminology to enhance the transcript and AI model's understanding of entities. As an admin, you're the only one who can create and update the custom dictionary with new internal terms. Uploading a new dictionary replaces the existing one in the same language. Your users can't add terms to the dictionary; they need to ask you to upload an updated dictionary with new internal terms.
 
 ### Dictionary content
 
@@ -56,7 +67,7 @@ The following are examples of dictionary entries. The first column, **Term**, is
 | Term | Sounds like Form | Spell Out Form | Description |
 |:-----|:-----|:-----|:-----|
 |TAC| Tee-Ay-Cee| Teams Admin Center| Admin portal managing Teams|
-|TAT| Tee-Ay-Tee| Turn Around time| Metrics used to be applied by support team|
+|TAT| Tee-Ay-Tee| Turn Around time| Metric the support team uses and must meet|
 |Viva Glint| Vee-Vah-Glint | |  Part of Microsoft Viva|
 
 > [!TIP]
@@ -109,52 +120,36 @@ You should compile the dictionary in a CSV plain-text format with UTF-8 encoding
 11. Select the target language for this dictionary, then select **Upload**.
 
 > [!NOTE]  
-> Ensure that the language selection matches the intended language for transcription.
+> The language you select must match the intended language for transcription.
 
 12. After the loading page, a message appears at the top of the view, indicating if the upload was successful. If successful, your dictionary appears in the dictionary list in the management view.
-13. Wait for up to 24 hours for the dictionary to become effective in Teams transcription, applicable to all meetings from your tenant.
+13. Wait for up to 24 hours for the dictionary to become available for Teams meetings in your organization.
 
 ## Optimize your custom dictionary
 
-Follow these tips to optimize your custom dictionary:
+To optimize your custom dictionary, follow these tips:
 
-• Include key terminology: Add terminology, acronyms, and entity names that are frequently mentioned in your meetings, especially those related to your important products and teams.
+- Include frequently mentioned terminology, acronyms, and entity names related to your key products and teams in your meetings.
 
-• Allowed symbols in term: Don't include punctuation in the "Term" column and use fewer symbols. Symbols allowed in the middle of terms are: **-'/&·ㆍ**.
+- Allowed symbols in term: Don't include punctuation in the "Term" column and use fewer symbols. Symbols allowed in the middle of terms are: **-'/&·ㆍ**.
 
-• Localize dictionaries: Collect custom terms from each local group to create dictionaries in the corresponding languages. For example, in the Japanese dictionary, some terms might remain in their English Latin form, while others might have local variants. Include all these terms in the Japanese custom dictionary to benefit meetings where Japanese is the primary language.
+- Localize dictionaries: To create dictionaries in the corresponding languages, you should collect custom terms from each local group. For example, in the Japanese dictionary, some terms might remain in their English Latin form, while others might have local variants. Include all these terms in the Japanese custom dictionary to benefit meetings where Japanese is the primary language.
 
-• Break down multi-word names: For names with multiple words, consider splitting them into individual parts. For example, instead of "Copilot in Power Platform and Dynamics 365," create separate entries for "Copilot," "Power Platform," and "Dynamics 365."
+- Break down multi-word names: For names with multiple words, consider splitting them into individual parts. For example, instead of "Copilot in Power Platform and Dynamics 365," create separate entries for "Copilot," "Power Platform," and "Dynamics 365."
 
-• Use Copilot for extra fields: Use Copilot to generate entries for "Sounds like form," "Spell Out Form," and "Description," then review and modify them as needed.
+- Use Copilot for extra fields: Use Copilot To generate entries for "Sounds like form," "Spell Out Form," and "Description," then review and modify them as needed.
 
-• Avoid short words: Avoid using short terms like "AB."
+- Avoid short words: Avoid using short terms like "AB."
 
-• Avoid numeric terms: Avoid including terms that are purely numeric like "123."
+- Avoid numeric terms: Avoid including terms that are purely numeric like "123."
 
-• Avoid repeated chars: Avoid using terms with repeated chars like "AAA."
+- Avoid repeated chars: Avoid using terms with repeated chars like "AAA."
 
-## Frequently asked questions
+## Data storage
 
-### Can I update the custom dictionary after it has been uploaded?
+Uploaded custom dictionaries are safely stored. Only you and your users can access the dictionaries.
 
-Yes, IT administrators can update the custom dictionary with new terms and product names. Uploading a new dictionary replaces the existing one in the same language.
-
-### How does the custom dictionary affect the Teams transcription quality?
-
-The custom dictionary is used for dynamic adaptation in meeting transcriptions. It improves the accuracy of tenant-specific terms, ensuring they're correctly transcribed during Teams meetings. This also benefits downstream AI services that rely on the transcription.
-
-### Can end users add their custom terms directly to the dictionary?
-
-No, end users can't directly add terms to the dictionary. They need to ask their IT administrators to upload an updated dictionary with the new internal terms.
-
-### Is my uploaded custom dictionary safely stored and anyone can access it?
-
-Uploaded custom dictionary is safely stored. Only tenant user and IT administrators can access it.
-
-### Is my uploaded custom dictionary data being added in into the model?
-
-No, the custom dictionary data is used solely within the tenant for the user's meetings. It is treated as "eyes-off" data, meaning it will not be accessed by anyone or included in model training.
+Custom dictionary data is used solely within your organization for meetings. Nobody else accesses the data and it isn't included in any AI model training.
 
 ## Related articles
 

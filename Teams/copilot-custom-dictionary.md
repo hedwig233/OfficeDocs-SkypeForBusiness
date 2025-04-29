@@ -153,6 +153,6 @@ Custom dictionary data is used solely within your organization for meetings. Nob
 
 ## Related articles
 
-• Improving Teams Meeting transcriptions
-• Managing Custom Dictionaries in Microsoft 365
-• Enhancing Copilot Performance with Custom Data
+- Improving Teams Meeting transcriptions
+- Managing Custom Dictionaries in Microsoft 365
+- Enhancing Copilot Performance with Custom Data

@@ -38,7 +38,7 @@ App centric management simplifies the process of allowing apps for your users an
 
 1. [Export your app catalog and note your allowed apps](#step-1-export-your-app-catalog-and-note-your-allowed-apps).
 1. [Review your permission policies and note your allowed/blocked apps](#step-2-review-your-permission-policies-and-note-your-allowedblocked-apps).
-1. [Identify the users allowed for each app through your permission policies.](#step-3-identify-users-allowed-for-each-app)
+1. [Identify users permitted for each app through your permission policies](#step-3-identify-users-permitted-for-each-app).
 1. [Reassign those users in the App centric management](#get-a-list-of-users-assigned-to-a-policy).
 
 #### Step 1: Export your app catalog and note your allowed apps
@@ -135,7 +135,7 @@ The exported file appears as follows:
 * To ensure the base path exists:
 if (-not (Test-Path -Path $basePath)) { 
     New-Item -ItemType Directory -Path $basePath | Out-Null 
-} 
+}
 
 * To retrieve all Teams app permission policies:
 `$policies = Get-CsTeamsAppPermissionPolicy | Select-Object Identity`
@@ -151,13 +151,13 @@ if (-not (Test-Path -Path $basePath)) {
 * To remove 'TAG:' prefix if it exists:
 
     `if ($policyName -like 'TAG:*') { 
-        $policyName = $policyName -replace '^TAG:', '' 
+        $policyName = $policyName -replace '^TAG:', ''
     }`
 
 * To retrieve the users assigned to the current policy:
     `$users = Get-CsOnlineUser -Filter "TeamsAppPermissionPolicy -eq '$policyName' -and SoftDeletionTimestamp -eq `$null" |
              Select-Object Identity, DisplayName, UserPrincipalName, TeamsAppPermissionPolicy, AccountEnabled, AccountType`
- 
+
 * To check if the users count is zero:
   `if ($users.Count -eq 0) {
         Write-Host "`e[31m$policyName does not have any user assignments`e[0m"

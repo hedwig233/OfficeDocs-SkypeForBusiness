@@ -106,8 +106,8 @@ You should compile the dictionary in a CSV plain-text format with UTF-8 encoding
 3. Select **Copilot custom dictionary** and select on it to see the flyout view from the right for custom dictionary management.
 4. Select **Upload Dictionary** to go to the uploading sub view
 
-> [!TIP]
-> You must have AI Admin permissions to perform this action. To learn more about admin roles, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
+> [!NOTE]
+> You must have the AI Admin role to perform this action. To learn more about admin roles, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 
 ### Create the custom dictionary with a CSV file
 

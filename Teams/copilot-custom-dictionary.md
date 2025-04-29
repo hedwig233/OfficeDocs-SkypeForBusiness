@@ -56,15 +56,18 @@ The custom dictionary captures organization-specific terminology to enhance the 
 
 The dictionary is presented in a flat list format, with optional fields for recording the "sounds like form" and "spell out form," and a comments section to provide more context. This assists IT administrators in managing and collecting entries from internal systems or product groups effectively. Each custom dictionary includes the following columns:
 
-| Term | Sounds like Form | Spell Out Form | Description |
-|:-----|:-----|:-----|:-----|
-|The display form of the term or phrase. This field is required to validate an entry.| A column to record how the word was pronounced in a meeting. This field is optional. |A column to clarify potential acronyms or abbreviations. This field is optional. |A column to provide more context or full meaning of the term. This field is optional.|
+|Column | Definition |
+|:-----|:-----|
+|Term| The display form of the term or phrase. This field is required to validate an entry. **This field is required**.|
+|Sounds like form|A column to record how the word was pronounced in a meeting. This field is optional.|
+|Spell out form| A column to clarify potential acronyms or abbreviations. This field is optional. |
+|Description |A column to provide more context or full meaning of the term. This field is optional.|
 
 ### Dictionary sample
 
 The following are examples of dictionary entries. The first column, **Term**, is the most important and should be mapped to your expected format from the transcription output.
 
-| Term | Sounds like Form | Spell Out Form | Description |
+| Term | Sounds like form | Spell Out form | Description |
 |:-----|:-----|:-----|:-----|
 |TAC| Tee-Ay-Cee| Teams Admin Center| Admin portal managing Teams|
 |TAT| Tee-Ay-Tee| Turn Around time| Metric the support team uses and must meet|
@@ -131,13 +134,13 @@ To optimize your custom dictionary, follow these tips:
 
 - Include frequently mentioned terminology, acronyms, and entity names related to your key products and teams in your meetings.
 
-- Allowed symbols in term: Don't include punctuation in the "Term" column and use fewer symbols. Symbols allowed in the middle of terms are: **-'/&·ㆍ**.
+- Allowed symbols in term- Don't include punctuation in the **Term** column and use fewer symbols. Symbols allowed in the middle of terms are: **-'/&·ㆍ**.
 
-- Localize dictionaries: To create dictionaries in the corresponding languages, you should collect custom terms from each local group. For example, in the Japanese dictionary, some terms might remain in their English Latin form, while others might have local variants. Include all these terms in the Japanese custom dictionary to benefit meetings where Japanese is the primary language.
+- Localize dictionaries- To create dictionaries in the corresponding languages, you should collect custom terms from each local group. For example, in the Japanese dictionary, some terms might remain in their English Latin form, while others might have local variants. Include all these terms in the Japanese custom dictionary to benefit meetings where Japanese is the primary language.
 
-- Break down multi-word names: For names with multiple words, consider splitting them into individual parts. For example, instead of "Copilot in Power Platform and Dynamics 365," create separate entries for "Copilot," "Power Platform," and "Dynamics 365."
+- Break down multi-word names- For names with multiple words, consider splitting them into individual parts. For example, instead of "Copilot in Power Platform and Dynamics 365," create separate entries for "Copilot," "Power Platform," and "Dynamics 365."
 
-- Use Copilot for extra fields: Use Copilot To generate entries for "Sounds like form," "Spell Out Form," and "Description," then review and modify them as needed.
+- Use Copilot for extra fields- Use Copilot to generate entries for **Sounds like form**, **Spell Out form**, and **Description**, then review and modify them as needed.
 
 - Avoid short words: Avoid using short terms like "AB."
 

@@ -45,7 +45,7 @@ App centric management simplifies the process of allowing apps for your users an
 
 1. Navigate to **Manage Apps** page. Export the full list of apps in the catalog as a CSV file, including each app’s allowed/blocked App status. The allow/block status determines whether the app is available to everyone or no one, respectively. This status is used in the following steps to narrow down your users. For more details, see [Export app catalog as CSV](https://learn.microsoft.com/microsoftteams/manage-apps#export-app-catalog-as-csv).
 
-> :::image type="content" source="media/step1–export-app-catalog.png" alt-text="Screenshot showing the export App catalog.":::
+> :::image type="content" source="media/step1–export-app-catalog.png" alt-text="Screenshot showing  export App catalog and note your allowed apps.":::
 
 #### Step 2: Review your permission policies and note your allowed/blocked apps
 
@@ -61,7 +61,7 @@ Steps to retrieve the permission policies list using PS cmdlet:
 1. Run Get-CsTeamsAppPermissionPolicy(/powershell/module/teams/get-csteamsapppermissionpolicy?view=teams-ps &preserve-view=true).
 2. Interpreting results:
 
-> :::image type="content" source="media/step2–interpret-results.png" alt-text="Screenshot showing the interpret results.":::
+> :::image type="content" source="media/step2–interpret-results.png" alt-text="Screenshot showing interpreting results.":::
 
 Response legend:
 
@@ -95,7 +95,7 @@ Merge it with export from Manage apps page and anything that is blocked in Manag
 
 You can identify users permitted for each app in the following methods:
 * [UI](#get-a-list-of-users-assigned-to-a-policy-in-ui)
-* PowerShell
+* [PowerShell](#identify-users-allowed-for-each-app-in-powershell)
 
 #### Get a list of users assigned to a policy in UI
 

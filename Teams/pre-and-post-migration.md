@@ -39,7 +39,6 @@ App centric management simplifies the process of allowing apps for your users an
 1. [Export your app catalog and note your allowed apps](#step-1-export-your-app-catalog-and-note-your-allowed-apps).
 1. [Review your permission policies and note your allowed/blocked apps](#step-2-review-your-permission-policies-and-note-your-allowedblocked-apps).
 1. [Identify users permitted for each app through your permission policies](#step-3-identify-users-permitted-for-each-app).
-1. [Reassign those users in the App centric management](#get-a-list-of-users-assigned-to-a-policy).
 
 #### Step 1: Export your app catalog and note your allowed apps
 
@@ -143,7 +142,7 @@ if (-not (Test-Path -Path $basePath)) {
 * To loop through each policy:
 'foreach ($policy in $policies) {
     $policyName = $policy.Identity
-    # Ignore 'Global' policy
+    #Ignore 'Global' policy
     if ($policyName -eq 'Global') {
         continue
     }'

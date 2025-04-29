@@ -5441,6 +5441,16 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "Teams/what-are-dial-plans.md",
+      "redirect_url": "/microsoftteams/dial-plans-routing-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Teams/shared-line-appearance.md",
+      "redirect_url": "/microsoftteams/user-call-settings",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "Teams/new-teams-known-issues.md",
       "redirect_url": "/microsoftteams/teams-client-update",
       "redirect_document_id": true

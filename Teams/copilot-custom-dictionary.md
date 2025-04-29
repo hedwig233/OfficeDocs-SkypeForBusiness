@@ -82,7 +82,7 @@ The following are examples of dictionary entries. The first column, **Term**, is
 |Viva Glint| Vee-Vah-Glint | |  Part of Microsoft Viva|
 
 > [!TIP]
-> The **Term** column is mandatory, while all other columns are optional.
+> The **Term** column is required, while all other columns are optional.
 
 ### Dictionary file format and language
 

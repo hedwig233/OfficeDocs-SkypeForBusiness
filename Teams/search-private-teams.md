@@ -11,6 +11,7 @@ ms.service: msteams
 audience: Admin
 ms.custom:
   - admindeeplinkTEAMS
+  - teams-chat-and-channels
 ms.collection: 
   - M365-collaboration
 appliesto: 

@@ -819,7 +819,8 @@ Resolved Issues:
 
 - Fixed an issue where app wasn't functional after pressing back key on paired remote with some Logi devices.
 - Resolved an issue where local HDMI ingest sharing indicator status wasn't synced between display and console. 
-- Fixed an issue where Custom background resets to default. 
+- Fixed an issue where Custom background resets to default.
+- Fixed a bug that prevented Teams Rooms Android device from joining a meeting when invited from QR code or Bluetooth proximity.
 
 ### 1449/1.0.96.2025020302 (February 2025)
 
@@ -827,7 +828,6 @@ Resolved Issues:
 
 - Fixed an issue where pairing loss affected functionality of certain Teams Rooms on Android systems.
 -	Resolved an issue where the meeting UI (user interface) was misaligned after pressing the back button.
--	Fixed a bug that prevented Teams Rooms Android device from joining a meeting when invited from QR code or Bluetooth proximity.
 -	UI fixes and improvements for dual screen setups.
 -	Resolved an issue where users weren't able to file feedback using “Report a problem”. 
 

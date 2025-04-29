@@ -19,6 +19,7 @@ ms.custom:
   - chat-teams-channels-revamp
   - has-azure-ad-ps-ref
   - azure-ad-ref-level-one-done
+  - teams-chat-and-channels
 ms.collection:
   - M365-collaboration
 appliesto:

@@ -11,6 +11,7 @@ ms.date: 01/17/2025
 description: Learn how to set up and manage Live chat on your website and connect with customers in real time.
 ms.localizationpriority: medium
 search.appverid: MET150
+ms.custom: teams-chat-and-channels
 ms.collection: 
   - M365-collaboration
 f1.keywords:

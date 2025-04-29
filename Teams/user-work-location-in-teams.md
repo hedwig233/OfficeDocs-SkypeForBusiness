@@ -14,6 +14,7 @@ search.appverid: MET150
 ms.custom: 
   - seo-marvel-apr2020
   - chat-teams-channels-revamp
+  - teams-chat-and-channels
 ms.collection: 
   - M365-collaboration
 f1.keywords:

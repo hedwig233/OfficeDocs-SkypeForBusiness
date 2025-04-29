@@ -107,7 +107,7 @@ You should compile the dictionary in a CSV plain-text format with UTF-8 encoding
 4. Select **Upload Dictionary** to go to the uploading sub view
 
 > [!TIP]
-> Admins need to have Global Admin or AI Admin permissions to perform this action. To learn more about these roles, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles)
+> You must have AI Admin permissions to perform this action. To learn more about admin roles, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 
 ### Create the custom dictionary with a CSV file
 
@@ -130,22 +130,15 @@ You should compile the dictionary in a CSV plain-text format with UTF-8 encoding
 
 ## Optimize your custom dictionary
 
-To optimize your custom dictionary, follow these tips:
+To optimize your custom dictionary, follow these best practices:
 
 - Include frequently mentioned terminology, acronyms, and entity names related to your key products and teams in your meetings.
-
 - Allowed symbols in term- Don't include punctuation in the **Term** column and use fewer symbols. Symbols allowed in the middle of terms are: **-'/&·ㆍ**.
-
 - Localize dictionaries- To create dictionaries in the corresponding languages, you should collect custom terms from each local group. For example, in the Japanese dictionary, some terms might remain in their English Latin form, while others might have local variants. Include all these terms in the Japanese custom dictionary to benefit meetings where Japanese is the primary language.
-
 - Break down multi-word names- For names with multiple words, consider splitting them into individual parts. For example, instead of "Copilot in Power Platform and Dynamics 365," create separate entries for "Copilot," "Power Platform," and "Dynamics 365."
-
 - Use Copilot for extra fields- Use Copilot to generate entries for **Sounds like form**, **Spell Out form**, and **Description**, then review and modify them as needed.
-
 - Avoid short words: Avoid using short terms like "AB."
-
 - Avoid numeric terms: Avoid including terms that are purely numeric like "123."
-
 - Avoid repeated chars: Avoid using terms with repeated chars like "AAA."
 
 ## Data storage

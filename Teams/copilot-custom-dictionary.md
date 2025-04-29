@@ -15,8 +15,6 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 description: Learn about how to upload and manage a Copilot custom dictionary.
-appliesto:
-  - ✅ Microsoft 365 Copilot
 ---
 
 # Admins- Manage custom dictionaries for Microsoft 365 Copilot in Teams

@@ -122,7 +122,7 @@ You should compile the dictionary in a CSV plain-text format with UTF-8 encoding
 8. (optional) Fill in additional information in the **Sounds like form**, **Spell Out Form**, and **Description** columns.
 9. Save the file as CSV UTF-8 (Comma delimited) (.csv).
 
-### Upload the custom dictionary
+### Upload your custom dictionary
 
 10. Return to the uploading view and select your CSV file in the **Upload CSV file with terms** field.
 11. Select the target language for this dictionary, then select **Upload**.

@@ -1,5 +1,5 @@
 ---
-title: Best practices ACM migration
+title: Best migration practices for app centric management
 author: surbhigupta12
 ms.author: surbhigupta
 manager: prkosh
@@ -15,7 +15,7 @@ ms.collection:
 search.appverid: MET150
 ms.date: 04/28/2025
 ms.reviewer: nguyenb
-description: Best practives for ACM migration.
+description: Learn about the best practices for migrating to app centric migration, which includes pre and post migration best practices.
 f1.keywords:
 - NOCSH
 ms.localizationpriority: high
@@ -24,113 +24,100 @@ appliesto:
 ms.custom: seo-marvel-apr2020
 ---
 
-# Best practices for app centric migration
+# Best migration practices for app centric management
 
-It is recommended that customers follow these steps during self-serve migration to check pre- and post- app centric management migration health.
+App centric management simplifies the process of allowing apps for your users and groups. App centric management migration involves preserving the users and apps allowed in your app permission policies. You can also add or exclude users during the migration.
+
+We recommend you follow these steps before and after the manual migration to check app centric management migration health.
 
 ## Pre-migration
 
-### Summary
+1. [Export app catalog and note allowed apps](#step-1-export-app-catalog-and-note-allowed-apps)
+1. [Review permission policies and note allowed or blocked apps](#step-2-review-permission-policies-and-note-allowed or blocked-apps)
+1. [Identify users permitted for each app through permission policies](#step-3-identify-users-permitted-for-each-app)
 
-App centric management simplifies the process of allowing apps for your users and groups. App centric management migration involves preserving the users and apps allowed in your App permission policies; you can also add or exclude users.
+### Step 1: Export app catalog and note allowed apps
 
-> In summary, you will:
+Navigate to **Manage Apps** page and export the full list of apps in the catalog as a CSV file, including each app’s allowed or blocked app status. The allowed or blocked status determines whether the app is available to everyone or no one, respectively. This status is used in the following steps to filter your users. For more details, see [export app catalog as CSV](manage-apps.md#export-app-catalog-as-csv).
 
-1. [Export your app catalog and note your allowed apps](#step-1-export-your-app-catalog-and-note-your-allowed-apps).
-1. [Review your permission policies and note your allowed/blocked apps](#step-2-review-your-permission-policies-and-note-your-allowedblocked-apps).
-1. [Identify users permitted for each app through your permission policies](#step-3-identify-users-permitted-for-each-app).
+    :::image type="content" source="media/step1–export-app-catalog.png" alt-text="Screenshot showing  export App catalog and note your allowed apps.":::
 
-#### Step 1: Export your app catalog and note your allowed apps
+### Step 2: Review permission policies and note allowed or blocked apps
 
-1. Navigate to **Manage Apps** page. Export the full list of apps in the catalog as a CSV file, including each app’s allowed/blocked App status. The allow/block status determines whether the app is available to everyone or no one, respectively. This status is used in the following steps to narrow down your users. For more details, see [Export app catalog as CSV](https://learn.microsoft.com/microsoftteams/manage-apps#export-app-catalog-as-csv).
+If you have multiple permission policies, follow these steps to get the permission policies list:
 
-> :::image type="content" source="media/step1–export-app-catalog.png" alt-text="Screenshot showing  export App catalog and note your allowed apps.":::
-
-#### Step 2: Review your permission policies and note your allowed/blocked apps
-
-Review your permission policies. This section is intended for users who have multiple permission policies.
-
-Steps to retrieve the permission policies list using UI:
-
-1. Navigate to Teams admin center > Manage apps > Permission policies.
+1. Go to **Teams admin center** > **Manage apps** > **Permission policies**.
 1. Open each permission policy and note which apps are allowed or blocked.
 
-Steps to retrieve the permission policies list using PS cmdlet:
+Steps to get the permission policies list using PS cmdlet:
 
 1. Run Get-CsTeamsAppPermissionPolicy(/powershell/module/teams/get-csteamsapppermissionpolicy?view=teams-ps &preserve-view=true).
-2. Interpreting results:
 
-> :::image type="content" source="media/step2–interpret-results.png" alt-text="Screenshot showing interpreting results.":::
+<expand>Interpreting results:
+    :::image type="content" source="media/step2–interpret-results.png" alt-text="Screenshot showing interpreting results.":::
 
-Response legend:
+In the preceeding example, there are three policies in the tenant: Global, Test Policy, and Test 2.
 
-* Allowed app list with a list of apps = List of apps allowed, all other apps are blocked.
-* Allowed app list with an empty list of apps = All apps are blocked.
-* Blocked app list with an empty list of apps = All apps are allowed.
-* Blocked app list with a list of apps = Apps are blocked and all other apps are allowed.
+For the Global policy, these are the permission policies:
+* Microsoft apps (Default Catalog Apps): com.microsoft.teamspace.tab.vsts, cd2d8695-bdc9-4d8e-9620-cc963ed81f41, com.microsoft.teamspace.tab.planner, a6b63365-31a4-4f43-92ec-710b71557af9 and so on are allowed, the rest are blocked (allowed app list)
+* Third-party apps (Global Catalog Apps) three apps are allowed, the rest are blocked (allowed App list)
+* Custom apps (Private Catalog Apps): All allowed (blocked app list is empty)
 
-In the above example, there are three policies in the tenant: Global, Test Policy, and Test 2.
+Response legend<sentence>:
 
-Global:
+* Allowed app list with a list of apps: List of apps allowed, all other apps are blocked.
+* Allowed app list with an empty list of apps: All apps are blocked.
+* Blocked app list with an empty list of apps: All apps are allowed.
+* Blocked app list with a list of apps: Apps are blocked and all other apps are allowed.
 
-1. Microsoft apps (Default Catalog Apps): com.microsoft.teamspace.tab.vsts, cd2d8695-bdc9-4d8e-9620-cc963ed81f41, com.microsoft.teamspace.tab.planner, a6b63365-31a4-4f43-92ec-710b71557af9...(more) are allowed, the rest are blocked (Allowed app list)
-1. Third party apps (Global Catalog Apps) 3 apps are allowed, the rest are blocked (Allowed App list)
-1. Private Catalog Apps (Custom Apps) - All allowed (Blocked app list is empty)
+#### Retrieve allowed apps in each permission policy
 
-**Retrieve allowed apps in each permission policy**
 PowerShell cmdlet:
 In the example above, not all default apps are shown in the response. To see all the default apps, you need to assign a variable to the result.
-For example:
-`$msftApps = Get-CsTeamsAppPermissionPolicy -Identity "Global" | Select-Object -ExpandProperty DefaultCatalogApps
-$msftApps.id`
+For example: $msftApps = Get-CsTeamsAppPermissionPolicy -Identity "Global" | Select-Object -ExpandProperty DefaultCatalogApps $msftApps.id
 
-**Filter out blocked apps**
+#### Filter out blocked apps
 
-After gathering information on all applications permitted within the tenant, identify the individuals or groups for whom each application is authorized.
+After gathering information on all apps permitted within the tenant, identify the individuals or groups for whom each app is authorized.
 
-Merge it with export from Manage apps page and anything that is blocked in Manage apps will be blocked no matter what the policy assignment might return.
+Merge it with export from Manage apps page and anything that is blocked in Manage apps are blocked no matter what the policy assignment might return.
 
 ### Step 3: Identify users permitted for each app
 
 You can identify users permitted for each app in the following methods:
-* [UI](#get-a-list-of-users-assigned-to-a-policy-in-ui)
+* [Teams admin center](#get-a-list-of-users-assigned-to-a-policy-in-ui)
 * [PowerShell](#identify-users-allowed-for-each-app-in-powershell)
 
 #### Get a list of users assigned to a policy in UI
 
-1. Go to TAC - https://admin.teams.microsoft.com/
+1. Go to Teams admin center - https://admin.teams.microsoft.com/
 1. Go to **Users** > **Manage users**.
+    :::image type="content" source="media/step3-manage-users-page.png" alt-text="Screenshot showing manage users page.":::
 
-> :::image type="content" source="media/step3-manage-users-page.png" alt-text="Screenshot showing manage users page.":::
-1. Click the filter located at the top right of the Manage users table.
-
-> :::image type="content" source="media/step3-manage-users-page-filter.png" alt-text="Screenshot showing manage users page filter.":::
+1. Select the filter located at the top right of the Manage users table.
+    :::image type="content" source="media/step3-manage-users-page-filter.png" alt-text="Screenshot showing manage users page filter.":::
 
 1. Select the policy name for which you need the user assignments and click **Apply**.
+    :::image type="content" source="media/step3-manage-users-page-filter-applied.png" alt-text="Screenshot showing manage users page applied page.":::
 
-> :::image type="content" source="media/step3-manage-users-page-filter-applied.png" alt-text="Screenshot showing manage users page applied page.":::
+All the users assigned to the policy filtered are displayed.
 
-All the users assigned to the policy filtered are shown.
-
-> :::image type="content" source="media/step3-manage-users-page-filter-result.png" alt-text="Screenshot showing manage users page filter results.":::
+    :::image type="content" source="media/step3-manage-users-page-filter-result.png" alt-text="Screenshot showing manage users page filter results.":::
 
 1. You can also export the users list to CSV.
-
-> :::image type="content" source="media/step3-manage-users-page-export-csv.png" alt-text="Screenshot showing export manage users page csv.":::
+    :::image type="content" source="media/step3-manage-users-page-export-csv.png" alt-text="Screenshot showing export manage users page csv.":::
 
 #### Identify users allowed for each app in PowerShell
 
 You can also use the following PowerShell command to export user assignments for each custom policy. This script generates an Excel file if the given policy has user assignments; otherwise, a message is shown indicating that no user assignments exist.
 
 PowerShell command output is as follows:
-
-> :::image type="content" source="media/step3b-pscommand-output.png" alt-text="PowerShell command output.":::
+    :::image type="content" source="media/step3b-pscommand-output.png" alt-text="PowerShell command output.":::
 
 The exported file appears as follows:
-> :::image type="content" source="media/step3b-exported-file.png" alt-text="Exported file output.":::
+    :::image type="content" source="media/step3b-exported-file.png" alt-text="Exported file output.":::
 
 * To define the base path for exports: `$basePath = "C:\Users\patelsagar\Downloads"`
-
 * To ensure the base path exists:
 if (-not (Test-Path -Path $basePath)) { 
     New-Item -ItemType Directory -Path $basePath | Out-Null 

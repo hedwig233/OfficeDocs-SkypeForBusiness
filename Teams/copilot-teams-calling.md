@@ -4,10 +4,11 @@ author: mkbond007
 ms.author: mabond
 manager: pamgreen
 ms.reviewer: nijait
-ms.date: 03/06/2025
+ms.date: 05/01/2025
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
+ms.subservice: teams-calling
 audience: Admin
 appliesto: 
   - Microsoft Teams
@@ -26,7 +27,7 @@ ms.collection:
 description: Learn how to manage Microsoft 365 Copilot in Teams calls with admin policies in the Teams admin center. Learn how to manage transcripts and transcription for Copilot Microsoft Teams calls.
 ---
 
-# Manage Microsoft 365 Copilot in Teams calls/Phone?
+# Manage Microsoft 365 Copilot in Teams calls
 
 **APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png) 1:1 Calls ![Image of a checkmark for yes](/office/media/icons/success-teams.png) PSTN Calls ![Image of a x for no](/office/media/icons/cancel-teams.png) Meetings ![Image of a x for no](/office/media/icons/cancel-teams.png) Webinars ![Image of a x for no](/office/media/icons/cancel-teams.png) Town halls
 
@@ -56,7 +57,7 @@ For information about Copilot Only Mode for Teams *meetings*, see [Manage Micros
 
 ## Manage Copilot for Teams calls
 
-...add more info
+**...add more info**
 
 As an admin, you can manage how users in your organization use Copilot for Teams calls. You can set the preferred method for Copilot with or without a saved transcript of the call. You can turn off the ability for users to transcribe calls, but still allow them to use Copilot for other purposes.
 

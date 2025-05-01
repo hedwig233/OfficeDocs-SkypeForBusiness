@@ -52,10 +52,6 @@ Before following the procedures in this article, make sure you read [Plan for Te
 - November 5
   - [Nested Auto attendants and Call queues](#nested-auto-attendants-and-call-queues) no longer require a resource account and associated licensing.
 
-- September 16
-  - [Callback](#callback-via-powershell) functionality is available through PowerShell cmdlets.
-  - Conference mode is now supported for Skype for Business clients and calls that are routed to the queue from Skype for Business Server.
-
 ## Steps to create a Call queue
 
 The steps to set up a Call queue includes:

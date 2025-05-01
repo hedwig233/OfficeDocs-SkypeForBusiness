@@ -101,6 +101,7 @@ The following devices are Certified under the Microsoft Teams Rooms on Windows C
 | [Lenovo ThinkSmart Core + IP Controller](https://www.lenovo.com/us/en/p/smart-devices/smart-office/thinksmart/lenovo-thinksmart-core-plus-ip-controller-for-microsoft-teams-rooms/len102e0015) | Core i5 | 16 GB | 256 GB |
 | [Lenovo ThinkSmart One + IP Controller](https://www.lenovo.com/us/en/p/smart-devices/smart-office/thinksmart/lenovo-thinksmart-one-plus-ip-controller-for-teams/12bw0002us) | Core i5 | 16 GB | 256 GB |
 |[Lenovo ThinkSmart Tiny Kit](https://psref.lenovo.com/Product/ThinkSmart/ThinkSmart_Tiny_Kit)| Core i3|16 GB|256 GB|
+| Lenovo ThinkSmart Core Gen 2 + Controller <br/> ThinkSmart Core Gen 2 + IP Controller <br/> ThinkSmart Core Gen 2 Full Room Kit <br/> ThinkSmart Core Gen 2 Full Room Kit IP | Core Ultra 7 | 32 GB | 256 GB |
 | [Logitech Tap with Intel NUC](https://www.logitech.com/product/microsoft-rooms) | Core i5 | 8 GB | 128 GB |
 | Logitech Tap and Intel Tiger Canyon NUC PC | Core i5 | 8 GB | 128 GB |
 | Logitech TAP Console with Lenovo Core Compute | Core i5 | 8 GB | 128 GB |
@@ -174,6 +175,7 @@ The following devices are certified under the Microsoft Teams Rooms peripherals 
 | [Aver CAM 130](https://www.averusa.com/products/conference-camera/cam130) | 0.0.7450.02 | &#x2714; |  |||
 | [Aver Fone540](https://www.averusa.com/products/vc-accessories/fone540) | 0.0.7002.17 |  |  |||
 | Aver VB130 Camera Soundbar | 0.0.7300.71 |  |  |||
+| [Aver TR211 Camera](https://www.averusa.com/products/ptz-camera/tr211) | 0.0.0001.50 |  |  |||
 | [Aver TR313V2 Camera](https://www.averusa.com/products/ptz-camera/tr313v2) | 0.3.0011.38 |  |  |||
 | [Aver TR315 Camera](https://www.averusa.com/products/ptz-camera/tr315) | 0.0.0001.50 |  |  |||
 | [AudioCodes RXVCam70](https://www.audiocodes.com/solutions-products/products/room-experience-rx-suite/rxvcam70-ptz-camera) | 8.1.49_20241108 |  |  |||
@@ -183,6 +185,7 @@ The following devices are certified under the Microsoft Teams Rooms peripherals 
 | [Bose Video Bar VB1](https://pro.bose.com/en_us/products/conferencing/videobars/bose-videobar-vb1.html?mc=25_PS_VB_BO_00_BI_&&msclkid=fc99b79880f714727a63e86ea0e5642a&utm_source=bing&utm_medium=cpc&utm_campaign=US%20-%20Brand_Videobar%20VB1_Exact&utm_term=bose%20videobar%20vb1&utm_content=Bose%20Videobar%20VB1&gclid=fc99b79880f714727a63e86ea0e5642a&gclsrc=3p.ds) | 19.2 |  |  |||
 | [Bose VB-S AV Bar](https://pro.bose.com/en_us/products/conferencing/videobars/bose-videobar-vb-s.html) | 1.1.2 |  |  |||
 | [Biamp Vidi 250 camera](https://support.biamp.com/Vidi/Cameras/Vidi_250_overview) | 1.1.1 | | |||
+| [Biamp Vidi 280 Camera](https://products.biamp.com/product-details/-/o/ecom-item/910.1981.900/category/4442EDF5-8BBA-4D2F-81E5-BA6526AAC307%7C1D0C8247-8096-44C8-B5D4-F4E1F833ABF0) | 1.0.15 |  |  |||
 | [:::no-loc text="Devio"::: SCR-20CX Web-Based Conferencing Hub with Ceiling Microphone](https://www.biamp.com/products/product-families/devio/huddle-room-solutions) [Biamp :::no-loc text="Devio"::: SCR-20CX Web-Based Conferencing Hub with Ceiling Microphone](https://www.biamp.com/products/product-families/devio/huddle-room-solutions) | 2.2.0.9 |  |  |||
 | [:::no-loc text="Devio"::: SCR-20TX Web-Based Conferencing Hub with Tabletop Microphone](https://www.biamp.com/products/product-families/devio/huddle-room-solutions) [Biamp :::no-loc text="Devio"::: SCR-20TX Web-Based Conferencing Hub with Tabletop Microphone](https://www.biamp.com/products/product-families/devio/huddle-room-solutions) | 2.2.0.9 |  |  |||
 | [Biamp Parlé VBC 2500 & Parlé VBC 2500a Conferencing Video Bars](https://www.biamp.com/products/product-families/parle/conferencing-bars) | 1.3.0 |  |  |||

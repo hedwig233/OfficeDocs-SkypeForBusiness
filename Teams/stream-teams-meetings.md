@@ -3,8 +3,8 @@ title: Live streaming Teams meetings
 ms.author: wlibebe
 author: wlibebe
 manager: pamgreen
-ms.reviewer: bryannyce
-ms.date: 04/29/2024
+ms.reviewer: chbalaki
+ms.date: 04/30/2025
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -44,7 +44,7 @@ Follow these steps to manage live streaming in the Teams admin center:
 
 1. In the Teams admin center, expand **Meetings** and then select **Meeting policies**.
 1. Select the policy that you want to edit.
-1. Under **Audio & video**, set **Live streaming** to **On**.
+1. Under **Audio & video**, set **Live streaming** to **On** from the dropdown.
 1. Select **Save**
 
 ### Manage live streaming with PowerShell

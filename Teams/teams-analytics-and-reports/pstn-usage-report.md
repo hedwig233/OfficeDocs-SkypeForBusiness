@@ -23,9 +23,9 @@ ms.collection:
 ---
 # Microsoft Teams PSTN usage report
 
-The Teams PSTN (Public Switched Telephone Network) and SMS usage report in the Microsoft Teams admin center gives you an overview of calling and audio conferencing activity in your organization. You can view detailed calling activity for Calling Plans if you use Microsoft as your telephony carrier and for Direct Routing if you use your own telephony carrier.
+The Teams PSTN (Public Switched Telephone Network) usage report in the Microsoft Teams admin center gives you an overview of calling and audio conferencing activity in your organization. You can view detailed calling activity for Calling Plans if you use Microsoft as your telephony carrier and for Direct Routing if you use your own telephony carrier.
 
-The **Calling Plans** tab groups PSTN calling information for both Calling Plans and Operator Connect. This shows information including the number of minutes that users spent in inbound and outbound PSTN calls and the cost of these calls. The **Direct Routing** tab shows you information including the call start and end times, SIP address, and SIP call flow for diagnosing issues between your organization's SBC and Microsoft's SIP Proxy.between  . Use the information in this report to gain insight into PSTN usage in your organization and help you to investigate, plan, and make business decisions.
+The **Calling Plans** tab groups PSTN calling information for both Calling Plans and Operator Connect. This shows information including the number of minutes that users spent in inbound and outbound PSTN calls and the cost of these calls. The **Direct Routing** tab shows you information including the call start and end times, SIP address, and SIP call flow for diagnosing issues between your organization's SBC and Microsoft's SIP Proxy. Use the information in this report to gain insight into PSTN usage in your organization and help you to investigate, plan, and make business decisions.
 
 > [!NOTE]
 > If you have a Telstra or Softbank calling plan, you will not see any call detail records in the PSTN usage report. Please contact Telstra or Softbank for your reporting needs. 

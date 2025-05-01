@@ -107,7 +107,7 @@ To manage policies that allow external attendees to attend meetings in your orga
 > [!NOTE]
 > Intelligent meeting recap for multilingual meetings doesn't currently support town halls.
 
-Intelligent meeting recap for multilingual meetings translates the meeting's recap into each participant's language. Once the meeting ends, the recap appears in the language each participant selected for live translated transcription. Intelligent meeting recap currently supports the following languages: English, Spanish, Japanese, French, German, Portuguese, Italian, Mandarin (Simplified Chinese), and Korean.
+Intelligent meeting recap for multilingual meetings translates the meeting's recap into each participant's language. Once the meeting ends, the recap appears in the language each participant selected for live translated transcription. Intelligent meeting recap for multilingual meetings currently supports translation in the following languages: English, Spanish, Japanese, French, German, Portuguese, Italian, Mandarin (Simplified Chinese), and Korean.
 
 To learn more about live translated transcription, see [View live transcription in Microsoft Teams meetings](https://support.microsoft.com/office/view-live-transcription-in-microsoft-teams-meetings-dc1a8f23-2e20-4684-885e-2152e06a4a8b#bkmk_livetranslated).
 

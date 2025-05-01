@@ -39,6 +39,7 @@ Teams Rooms is governed by the Modern Lifecycle Policy. For more information, se
 
 |Release |Published to <br/> Microsoft Store |
 |--- |--- |
+|[5.3.111.0](#531110-4222025) | 4/22/2025 |
 |[5.3.69.0](#53690-3172025) | 3/17/2025 |
 |[5.2.115.0](#521150-9262024) | 9/26/2024 |
 |[5.1.28.0](#51280-882024) | 8/8/2024 |
@@ -64,6 +65,15 @@ Teams Rooms is governed by the Modern Lifecycle Policy. For more information, se
 Teams Rooms app updates happen either using the Microsoft Store or using [manual update](manual-update.md). Updates are applied to the Universal Windows Platform (UWP) application that is installed locally on the device.
 
 Features with the :::image type="icon" source="../media/mtr-pro-icon.png"::: icon are available only with Teams Rooms Pro license.
+
+### 5.3.111.0 (4/22/2025)
+
+Introduced in this update: 
+
+- **Live transcription** :::image type="icon" source="../media/mtr-pro-icon.png"::: **:** Users can start or stop transcription and view the meeting transcript directly from Teams Rooms devices. Users can also change the meeting spoken language, translate the transcript to their desired language, as well as view the original and translated transcript side by side, ensuring that the transcript is accurate and meaningful for non-English speakers. IT admins can allow or prevent users (including resource accounts) from transcribing meetings using the meeting transcription policy in Teams admin center. [Learn more](/Microsoftteams/meeting-transcription-captions#transcription).
+- **Translated captions** :::image type="icon" source="../media/mtr-pro-icon.png"::: **:** Captions on Teams Rooms support additional languages and translation capabilities, enhancing meeting accessibility and inclusivity for non-English speaking users. Users can change the meeting spoken language directly from Teams Rooms devices and translate the spoken language as desired, allowing for real-time translation of captions. IT admins can turn on captions by default for all calls and meetings, as well as turn off the filtering of any profanity in captions and transcripts as necessary. To configure calling and meeting policies in the Teams admin center, see [Enable call captions](/microsoftteams/call-recording-transcription-captions#enable-call-captions) and [Manage live captions](/microsoftteams/meeting-transcription-captions#live-captions). 
+- **Updated Gallery view:** The updated Gallery View in Teams Rooms on Windows arranges all participants in consistent tile sizes, prioritizes video on the meeting stage, offers additional layout options, increases video for single and dual displays, and more. In 1:1 calls/meetings, preview video will be positioned at the bottom right, overlapping the other participant, on the primary display. This provides a unified meeting experience across both Teams Rooms and desktop. [Learn more](https://support.microsoft.com/en-us/office/microsoft-teams-rooms-windows-e667f40e-5aab-40c1-bd68-611fe0002ba2).
+
 
 ### 5.3.69.0 (3/17/2025)
  >[!NOTE]
@@ -809,7 +819,8 @@ Resolved Issues:
 
 - Fixed an issue where app wasn't functional after pressing back key on paired remote with some Logi devices.
 - Resolved an issue where local HDMI ingest sharing indicator status wasn't synced between display and console. 
-- Fixed an issue where Custom background resets to default. 
+- Fixed an issue where Custom background resets to default.
+- Fixed a bug that prevented Teams Rooms Android device from joining a meeting when invited from QR code or Bluetooth proximity.
 
 ### 1449/1.0.96.2025020302 (February 2025)
 
@@ -817,7 +828,6 @@ Resolved Issues:
 
 - Fixed an issue where pairing loss affected functionality of certain Teams Rooms on Android systems.
 -	Resolved an issue where the meeting UI (user interface) was misaligned after pressing the back button.
--	Fixed a bug that prevented Teams Rooms Android device from joining a meeting when invited from QR code or Bluetooth proximity.
 -	UI fixes and improvements for dual screen setups.
 -	Resolved an issue where users weren't able to file feedback using “Report a problem”. 
 

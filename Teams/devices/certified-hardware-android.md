@@ -105,17 +105,21 @@ The following devices are certified under the Microsoft Teams Rooms on Android C
 | Poly TC8 | `4.1.0.211075` | September 3, 2025 | Compatible with Poly Studio X30, Poly Studio X50, Poly Studio X70 and Poly G7500 | 11 |
 | Poly TC10 | `4.1.0-211075` | September 3, 2025 |Compatible with Poly Studio X30, Poly Studio X50, Poly Studio X70, Poly Studio X32, Poly Studio X52, Poly Studio X72, Poly G7500 and Poly Studio G62| 11 |
 | Yealink DeskVision A24 | `156.15.0.29` | September 3, 2025 | Phone room (2 m x 2 m) | 10 |
-| Yealink CTP18 touch console | `137.320.0.77` | August 15, 2027 | Compatible with Yealink MeetingBar A20 and Yealink MeetingBar A30 | 13 |
+| Yealink CTP18 touch console | `137.320.0.81` | August 15, 2027 | Compatible with Yealink Meeting Board 86/65, MeetingBar A20 and Yealink MeetingBar A30 | 13 |
 | Yealink MeetingBar A10 | `278.15.0.6` | September 3, 2025 | Small meeting room (4.5 m x 4.5 m) | 11 |
 | Yealink MeetingBar A20 | `133.320.0.113` | August 15, 2027 | Small meeting room(4.5 m x 4.5 m) | 13 |
 | Yealink MeetingBar A30 | `133.320.0.113` | August 15, 2027 | Medium size room (4.5 m x 6 m) | 13 |
 | Yealink MeetingBar A40 | `289.320.0.11` | August 15, 2027 | Medium size room (4.5 m x 6 m) | 13 |
 | Yealink MeetingBar A50 | `323.320.0.3 ` | August 15, 2027 | Large meeting room (4.5 m x 8.5 m) | 13 |
-| Yealink MeetingBoard 86" | `155.15.0.10` | September 3, 2025 | Medium size room (4.5 m x 6 m) | 10 |
-| Yealink MeetingBoard 65" | `155.15.0.6` | September 3, 2025 | Medium size room (4.5 m x 6 m) | 10 |
+| Yealink MeetingBoard 86" | `155.15.0.90` | August 15, 2027 | Medium size room (4.5 m x 6 m) | 13 |
+| Yealink MeetingBoard 65" | `155.15.0.90` | August 15, 2027 | Medium size room (4.5 m x 6 m) | 13 |
 | Yealink CTP25 touch console | `311.320.0.2` | August 15, 2027 | Compatible with Yealink MeetingBar A40 | 13 |
-| Yealink MeetingBoard 65"/86" with MB-Camera-6X | `155.15.0.37 ` | September 3, 2025 | Medium size room (4.5 m x 6 m) | 10|
+| Yealink MeetingBoard 65"/86" with MB-Camera-6X | `155.15.0.37` | September 3, 2025 | Medium size room (4.5 m x 6 m) | 10|
 | Yealink MeetingBoard 75 Pro | `331.320.0.27` | August 15, 2027 | Medium size room (4.5 m x 6 m) | 13|
+| Yealink MeetingBar A40 | `289.320.0.56 (MDEP)` | August 15, 2027 | Medium size room (4.5 m x 6 m) | 13 |
+| Yealink MeetingBoard 86 Pro | `331.320.0.27` | August 15, 2027 | Medium size room (4.5 m x 6 m) | 13|
+| Yealink MeetingBoard 65 Pro | `331.320.0.27` | August 15, 2027 | Medium size room (4.5 m x 4.5 m) | 13|
+
 
 ## [Firmware](#tab/firmware)
 
@@ -163,6 +167,17 @@ For information about the latest Teams app releases, see [What's new in Microsof
 
 | Device model | Latest Firmware version | Minimum Firmware version required | Teams client | Company Portal | Microsoft Intune | Authenticator | Admin Agent | Release date |
 |:-------------------|:----------------------------|:--------------------------------------------|:-------------------------------|:-------------------------------|:--------------------------------|:--------------------------------|:--------------------------------|:--------------------------------|
+| Cisco Board Pro 55 | `ce11.25.1.6 (AOSP)` | N/A | `1449/1.0.96.2025010301` | `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| April 9, 2025|
+| Cisco Board Pro 75 | `ce11.25.1.6 (AOSP)` |  N/A | `1449/1.0.96.2025010301` | `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| April 9, 2025|
+| Cisco Room Bar | `ce11.25.1.6 (AOSP)` |  N/A | `1449/1.0.96.2025010301` | `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| April 9, 2025|
+| Cisco Room Kit Pro | `ce11.25.1.6 (AOSP)` | N/A | `1449/1.0.96.2025010301` | `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| April 9, 2025|
+| Cisco Desk Pro | `ce11.25.1.6 (AOSP)` |  N/A | `1449/1.0.96.2025010301` | `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| April 9, 2025|
+| Cisco Room Bar Pro | `ce11.25.1.6 (AOSP)` |  N/A | `1449/1.0.96.2025010301` | `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| April 9, 2025|
+| Cisco Room Kit EQ | `ce11.25.1.6 (AOSP)` |  N/A | `1449/1.0.96.2025010301` | `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| April 9, 2025|
+| Cisco Navigator | `ce11.25.1.6 (AOSP)` | N/A | `1449/1.0.96.2025010301` | `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| April 9, 2025|
+| Cisco Room Kit EQX | `ce11.25.1.6 (AOSP)` | N/A | `1449/1.0.96.2025010301` | `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| April 9, 2025|
+| Cisco Board Pro G2 55 | `ce11.25.1.6 (AOSP)` | N/A | `1449/1.0.96.2025010301` | `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.produc (733)`| April 9, 2025|
+| Cisco Board Pro G2 75 | `ce11.25.1.6 (AOSP)` | N/A | `1449/1.0.96.2025010301` | `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| April 9, 2025|
 | Cisco Board Pro 55 | `ce11.24.1.8 (AOSP)` | N/A | `1449/1.0.96.2025010301` | `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.product (733)`| February 19, 2025|
 | Cisco Board Pro 75 | `ce11.24.1.8 (AOSP)` |  N/A | `1449/1.0.96.2025010301` | `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.product (733)`| February 19, 2025|
 | Cisco Room Bar | `ce11.24.1.8 (AOSP)` |  N/A | `1449/1.0.96.2025010301` | `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.product (733)`| February 19, 2025|
@@ -172,7 +187,7 @@ For information about the latest Teams app releases, see [What's new in Microsof
 | Cisco Room Kit EQ | `ce11.24.1.8 (AOSP)` |  N/A | `1449/1.0.96.2025010301` | `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.product (733)`| February 19, 2025|
 | Cisco Navigator | `ce11.24.1.8 (AOSP)` | N/A | `1449/1.0.96.2025010301` | `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.product (733)`| February 19, 2025|
 | Cisco Room Kit EQX | `ce11.24.1.8 (AOSP)` | N/A | `1449/1.0.96.2025010301` | `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.product (733)`| February 19, 2025|
-| Cisco Board Pro G2 55 | `ce11.24.1.8 (AOSP)` | N/A | `1449/1.0.96.2025010301` | `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.produc (733)t`| February 19, 2025|
+| Cisco Board Pro G2 55 | `ce11.24.1.8 (AOSP)` | N/A | `1449/1.0.96.2025010301` | `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.produc (733)`| February 19, 2025|
 | Cisco Board Pro G2 75 | `ce11.24.1.8 (AOSP)` | N/A | `1449/1.0.96.2025010301` | `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.product (733)`| February 19, 2025|
 | Cisco Board Pro 55 | `ce11.22.1.12` |  `N/A`  | `1449/1.0.96.2024101004` | `5.0.6152.0` | `N/A` | `N/A` | `1.0.0.202407050618.product` | December 16, 2024|
 | Cisco Board Pro 75 | `ce11.22.1.12` |   `N/A`  | `1449/1.0.96.2024101004` | `5.0.6152.0` | `N/A` | `N/A` | `1.0.0.202407050618.product` |  December 16, 2024|

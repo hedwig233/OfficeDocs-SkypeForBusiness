@@ -84,7 +84,7 @@ For more information on when to use **Voice app** or **Resource account** as the
 
 The following diagram shows an example of call routing using Auto attendants and Call queues.
 
-![Diagram of call routing using Auto attendants and Call queues.](media/attendant-and-queue-call-routing.png)
+:::image type="content" source="media/plan-your-call-routing-flow-01.svg" alt-text="sample call flow diagram":::
 
 In this example:
 

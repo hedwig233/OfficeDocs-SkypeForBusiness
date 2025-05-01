@@ -81,7 +81,7 @@ Call queues don't provide separate call routing for off hours and holidays. Even
 
 To configure Auto attendants and Call queues, you need the following resources:
 
-- A [Resource Account](manage-resource-accounts.md) for each Auto attendant or Call queue that directly answers calls. Nested auto attendants or call queues that receive calls from an auto attendant or call queue that has already answered the call don't require a resource account.
+- A [Resource Account](manage-resource-accounts.md) for each Auto attendant or Call queue that directly answers calls. Nested auto attendants or call queues that receive calls from an auto attendant or call queue that answered the call don't require a resource account.
 - A free [Microsoft Teams Phone Resource Account license](teams-add-on-licensing/virtual-user.md) for each resource account.
 - External phone calls:
   - At least one [Microsoft service number](getting-service-phone-numbers.md), [Operator Connect number](operator-connect-plan.md), [Direct Routing number](direct-routing-plan.md), or a hybrid number for each resource account that you want to be directly dialable from external phone numbers.
@@ -119,12 +119,13 @@ You can nest Auto attendants and Call queues in two ways:
 2. Reference the resource account assigned to the auto attendant or call queue you want nested
 
     - Each resource account must have a Teams Phone Resource Account license.
-    - In addition to the Teams Phone Resource Account license, when a nested auto attendant or call queue transfers calls to an external number, the resource account on the nested auto attendant or call queue must also have one of the following assigned:
 
-      - A [Calling Plan](calling-plans-for-office-365.md) license and a phone number.
-      - An [Operator Connect](operator-connect-plan.md) phone number.
-      - An [online voice routing policy](manage-voice-routing-policies.md).
-        - Phone number assignment is optional when using Direct Routing.
+In addition to the Teams Phone Resource Account license, when a nested auto attendant or call queue transfers calls to an external number, the resource account on the nested auto attendant or call queue must also have one of the following assigned:
+
+- A [Calling Plan](calling-plans-for-office-365.md) license and a phone number.
+- An [Operator Connect](operator-connect-plan.md) phone number.
+- An [online voice routing policy](manage-voice-routing-policies.md).
+- Phone number (this assignment is optional when using Direct Routing).
 
 For more information, see [Nested Auto attendants and Call queues](#nested-auto-attendants-and-call-queues).
 
@@ -196,8 +197,23 @@ However, there might be times when you require nesting with resource accounts. F
 
 > [!IMPORTANT]
 > Nesting Auto attendants and Call queues without a resource account isn't currently supported for [Authorized users](aa-cq-authorized-users-plan.md) in Queues App. If you nest an Auto attendant or Call queue without a resource account, authorized users can't edit the auto attendant or call queue.
->
-> Teams Admin Center Usage reports currently don't report on auto attendants or call queues that are nested without resource accounts.
+
+### Reporting and Nested Auto attendants and Call queues
+
+The **Auto Attendant Usage** report, **Call Queue Usage** report, and **[Auto attendant and Call queue historical reports](./aa-cq-cqd-historical-reports.md)** only report on the calls and caller actions in the first Auto attendant or Call queue that answers the call.
+
+For more information about reporting with nested Auto attendants and Call queues in Queues app, see [Use the Queues app for Microsoft Teams](https://support.microsoft.com/office/370ad83e-c2c1-4a9f-8a59-16c98be102e9).
+
+#### Teams admin center
+ 
+If you require Teams admin center reporting, nest with resource accounts. Usage reports in Teams admin center don't support reporting on Auto attendants or Call queues that are nested without resource accounts.
+ 
+#### Auto attendant and Call queue historical reports
+ 
+For Auto attendant and Call queue historical reports, users can access reports in the following ways:
+
+- Authorized users see the report by Auto attendant or Call Queue name.
+- Administrators see the report by resource account.
 
 ## Click-to-call restrictions
 
@@ -244,6 +260,10 @@ See the following articles for information on how to create Auto attendants and 
 > This doesn't apply to Call queue agent memberships that are configured via distribution lists or channels. It also doesn't apply to users who are reached through the **Dial by Name** or **Dial by Number** feature of Auto attendants.
 
 If you need more extensive capabilities, such as integration with workflows, bots, and SMS (Short Message Service), consider [Azure Communication Services](/azure/communication-services/overview).
+
+## Alternate provisioning tools
+
+[Auto Attendant and Call Queue Backup and Bulk Provisioning Tools](https://github.com/MicrosoftDocs/Teams-Auto-Attendant-and-Call-Queue-Backup-and-Bulk-Provisioning-Tools/) are a set of tools that provide a way to configure Auto attendants, Call queues and Authorized users through Excel spreadsheets and PowerShell scripts.
 
 ## Related articles
 

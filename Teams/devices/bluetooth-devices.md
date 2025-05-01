@@ -50,8 +50,11 @@ To pair a Native Bluetooth Peripheral to your Windows 11 PC, start by ensuring t
 
 ### Hardware Requirements
 
-For a better and more consistent experience, we suggest that customers should check if they have the latest Audio and Bluetooth drivers.   
-PCs with Intel processors are recommended to use Intel® Core™ 12th Gen Intel processors or newer. We recommend ensuring that your Intel-based PC has the following minimum driver versions before using Native Bluetooth peripherals:
+PCs with an integrated Bluetooth radio is required. PCs that don't come with integrated Bluetooth radios and use aftermarket USB Bluetooth adapters aren't recommended.  
+  
+For a better and more consistent experience, we suggest that customers should check if they have the latest Audio and Bluetooth drivers.  
+  
+On PCs with Intel processors, it's recommended to use Intel® Core™ 12th Gen Intel processors or newer. We recommend ensuring that your Intel-based PC has the following minimum driver versions before using Native Bluetooth peripherals:
 
 - **Intel Smart Sound Technology (Intel SST)**:
   - Intel Core Ultra processors (Series 2): 20.42.11233.0 or newer
@@ -59,8 +62,6 @@ PCs with Intel processors are recommended to use Intel® Core™ 12th Gen Intel 
   - Intel Core 12th Gen / 13th Gen: 10.29.00.11261 or newer
 - **Intel Bluetooth**: 23.70.x or newer
 - **Intel Wi-Fi**: 23.70.x or newer
-
-PCs that don't come with integrated Bluetooth radios and use aftermarket USB Bluetooth adapters aren't recommended.
 
 ### OS and software requirements
 
@@ -100,7 +101,7 @@ PCs that don't come with integrated Bluetooth radios and use aftermarket USB Blu
 1. Open **Device Manager**.
 2. Locate **Network Adapters** and expand it.
 3. Find **Intel(R) Wi-Fi Component**.
-4. Right-click and select **Properties** and go to the **Driver** tab to check the driver version.
+1. Right-click and select **Properties** and go to the **Driver** tab to check the driver version.
 5. Download the latest version from [Intel Wireless Wi-Fi Drivers for Windows 10 and Windows 11](https://www.intel.com/content/www/us/en/download/19351/intel-wireless-wi-fi-drivers-for-windows-10-and-windows-11.html?wapkw=wifi).
 
 ## Certified Native Bluetooth peripherals

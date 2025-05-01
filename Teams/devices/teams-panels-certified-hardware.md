@@ -88,13 +88,15 @@ See [Microsoft Teams panels](../devices/overview-teams-panels.md) for features s
 #### <b> Cisco </b>
 | Device model | Latest firmware version | Minimum firmware version | Included Microsoft applications | Release date |
 |:----------------|:-------------------|:----------------------------|:-------------------------------------------------------------------|:---------------------------|
-| Cisco Room Navigator | `11.24.1.8 (AOSP) ` | N/A| Teams client: `1449/1.0.972024081207` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2410.7268` <br> Admin Agent: `1.0.0.202412110504.product (753)`| February 19, 2025|
+| Cisco Room Navigator | `11.25.1.6 (AOSP) ` | N/A| Teams client: `1449/1.0.97.2024122401` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2410.7268` <br> Admin Agent: `1.0.0.202412110504.product (753)`| April 9, 2025|
+| Cisco Room Navigator | `11.24.1.8 (AOSP) ` | N/A| Teams client: `1449/1.0.97.2024081207` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2410.7268` <br> Admin Agent: `1.0.0.202412110504.product (753)`| February 19, 2025|
 | Cisco Room Navigator | `11.22.1.12` | N/A | Teams client: `1449/1.0.97.2024081207` <br> Company Portal: `5.0.6152.0` <br> Admin Agent: `1.0.0.202402202353.product`| December 20, 2024|
 
 #### <b> Crestron </b>
 | Device model | Latest firmware version | Minimum firmware version | Included Microsoft applications | Release date |
 |:----------------|:-------------------|:----------------------------|:-------------------------------------------------------------------|:---------------------------|
-| TSS-770/TSS-1070 | `2.006.0054` | N/A| Teams client: `1449/1.0.97.2024061108` <br> Company Portal: `5.0.6152.0` <br> Admin Agent: `1.0.0.202402202353.product`| September 24, 2024|
+| TSS-770/TSS-1070 | `3.000.0110` | N/A| Teams client: `1449/1.0.97.2024061108` <br> Company Portal: `5.0.6152.0` <br> Admin Agent: `1.0.0.202402202353.product(703)`| April 8, 2025|
+| TSS-770/TSS-1070 | `2.006.0054` | N/A| Teams client: `1449/1.0.97.2024061108` <br> Company Portal: `5.0.6152.0` <br> Admin Agent: `1.0.0.202402202353.product(703)`| September 24, 2024|
 | TSS-770/TSS-1070 | `2.004.1054` | N/A| Teams client: `1449/1.0.97.2023080401` <br> Company Portal: `5.0.5484.0` <br> Admin Agent: `1.0.0.202306202019.product`| January 8, 2024|
 | TSS-770/TSS-1070 | `2.004.1029` | N/A| Teams client: `1449/1.0.97.2022748302` <br> Company Portal: `5.0.5484.0` <br> Admin Agent: `1.0.0.202301162118.product`| July 3, 2023|
 | TSS-770/TSS-1070 | `2.004.1026` | N/A| Teams client: `1449/1.0.97.2022748302` <br> Company Portal: `5.0.5484.0` <br> Admin Agent: `1.0.0.202301162118.product`| June 9, 2023|

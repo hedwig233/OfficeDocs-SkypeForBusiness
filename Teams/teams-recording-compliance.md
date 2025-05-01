@@ -108,7 +108,8 @@ Compliance recording isn't supported for:
 
 **Large Meetings**
 
-The Compliance Recording platform is optimized for meetings, however performance may be impacted during meetings with over 250 users in paired bot mode. We're actively working on improvements in a future update to enhance the experience.
+The Compliance Recording platform is optimized for meetings. However, performance might be impacted during meetings with over 250 users in paired bot mode. We're actively working on improvements in a future update to enhance the experience.
+For extra-large meetings with over 250 users, it's recommended to use town halls as the meeting type.
 Please contact your recording partner for more information.
 
 **Call queues**
@@ -192,6 +193,7 @@ The following partners are in the process of certifying their solution for Micro
 |Cloud World Wide Services |[https://recordia.net/microsoft-teams-call-recording/](https://recordia.net/microsoft-teams-call-recording/) |
 |CreaLog |[https://www.crealog.com/en/products-solutions/recording/](https://www.crealog.com/en/products-solutions/recording/) |
 |Landis Technologies |[https://landistechnologies.com/](https://landistechnologies.com/) |
+|Liquid Voice |[https://www.liquidvoice.com/microsoft-teams-recording/](https://www.liquidvoice.com/microsoft-teams-recording/) |
 |Redwood Technologies |[https://www.contentguru.com/en-us/solutions/needs/compliance-recording-ms-teams/](https://www.contentguru.com/en-us/solutions/needs/compliance-recording-ms-teams/) |
 |TollRing |[https://www.analytics-365.com/call-recording/](https://www.analytics-365.com/call-recording/) |
 

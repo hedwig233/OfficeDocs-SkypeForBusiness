@@ -288,10 +288,12 @@ For information about the latest Teams app releases, see [What's new in Microsof
 
 #### Crestron
 
-| Device model | Latest Firmware version | Minimum Firmware version required | Teams client | Company Portal | Admin Agent | Release date |
-|:-------------------|:----------------------------|:---------------------------------------------|:-------------------------------|:-------------------------------|:--------------------------------|:--------------------------------|
-| Crestron AIO Video Bar 70 | `1.240912.1415` | N/A | `1449/1.0.96.2024080804 ` | `5.0.6152.0` | `1.0.0.202402202353.product`| November 11, 2024 |
-| Crestron Touch Panel TS-1070 | `2.005.1054.001` | N/A | `1449/1.0.96.2024080804 ` | `5.0.6152.0` | `1.0.0.202402202353.product`| November 11, 2024 |
+| Device model | Latest Firmware version | Minimum Firmware version required | Teams client | Company Portal | Microsoft Intune | Authenticator | Admin Agent | Release date |
+|:-------------------|:----------------------------|:--------------------------------------------|:-------------------------------|:-------------------------------|:--------------------------------|:--------------------------------|:--------------------------------|:--------------------------------|
+| Crestron AIO Video Bar 70 | `1.250401.1604 (AOSP)` | N/A | `1449/1.0.96.2025020302`| `N/A` |`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.product (733)` | April 30, 2025 |
+| Crestron Touch Panel TS-1070 | `2.005.1110 (AOSP)` | N/A | `1449/1.0.96.2025020302`| `N/A` |`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.product (733)` | April 30, 2025 |
+| Crestron AIO Video Bar 70 | `1.240912.1415` | N/A | `1449/1.0.96.2024080804 ` | `5.0.6152.0` |`N/A` | `N/A` | `1.0.0.202402202353.product`| November 11, 2024 |
+| Crestron Touch Panel TS-1070 | `2.005.1054.001` | N/A | `1449/1.0.96.2024080804 ` | `5.0.6152.0` |`N/A` | `N/A` | `1.0.0.202402202353.product`| November 11, 2024 |
 
 #### DTEN
 
@@ -589,6 +591,9 @@ For information about the latest Teams app releases, see [What's new in Microsof
 #### Yealink
 | Device model | Latest Firmware version | Minimum Firmware version required | Teams client | Company Portal | Microsoft Intune | Authenticator | Admin Agent | Release date |
 |:-------------------|:----------------------------|:--------------------------------------------|:-------------------------------|:-------------------------------|:--------------------------------|:--------------------------------|:--------------------------------|:--------------------------------|
+| Yealink DeskVisionA24 | `156.15.0.45 (AOSP)` | N/A | `1449/1.0.96.2025031102`| `N/A` |`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)` | April 30, 2025 |
+| Yealink MeetingBar A40 | `289.320.0.60 (MDEP)` | N/A | `1449/1.0.96.2024091202`| `N/A` |`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.product (733)` | April 30, 2025 |
+| Yealink CTP25 | `311.320.0.55 (MDEP)` | N/A | `1449/1.0.96.2024091202`| `N/A` |`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.product (733)` | April 30, 2025 |
 | Yealink MeetingBar A10 | `278.320.0.58 (AOSP)` | N/A | `1449/1.0.96.2024091202`| `N/A` |`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.product (733)` | February 19, 2025 |
 | Yealink MeetingBar A20 | `133.320.0.65 (AOSP)` | N/A | `1449/1.0.96.2024091202`| `N/A` |`24.09.1`|`6.2410.7268`|  `1.0.0.202407050618.product (733)` | February 19, 2025 |
 | Yealink MeetingBar A30 | `133.320.0.65 (AOSP)` | N/A | `1449/1.0.96.2024091202`| `N/A` |`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.product (733)` | February 19, 2025 |

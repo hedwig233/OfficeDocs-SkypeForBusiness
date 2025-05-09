@@ -4,7 +4,7 @@ author: mkbond007
 ms.author: mabond
 manager: pamgreen
 ms.reviewer: nijait
-ms.date: 04/16/2025
+ms.date: 05/01/2025
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -49,13 +49,13 @@ As an IT admin, you can also set Copilot's value to **Off** for calling to preve
 
 ## Prerequisites
 
-You must assign an add-on Microsoft 365 Copilot license for your intended users. To learn more about the Microsoft 365 Copilot license, see [Microsoft 365 Copilot documentation](/microsoft-365-copilot).
+For 1:1 Teams calls, you must assign an add-on Microsoft 365 Copilot license for your intended users. To learn more about the Microsoft 365 Copilot license, see [Microsoft 365 Copilot documentation](/microsoft-365-copilot).
 
-If you want to use Copilot in Teams calls for Public Switched Telephone Network (PSTN) calls, you must also assign a Teams Phone license to your users. For more information about Teams Phone with PSTN connectivity licenses, see [Microsoft Teams add-on licenses](/teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
+For Teams calls using the Public Switched Telephone Network (PSTN), you must also assign a Teams Phone license to your users. For more information about Teams Phone with PSTN connectivity licenses, see [Microsoft Teams add-on licenses](/teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
 
 ## Transcription
 
-You can use the **Recording & Transcription** section in the Teams admin center or the **`-AllowTranscriptionForCalling`** parameter in the [**CsTeamsCallingPolicy**](/powershell/module/teams/set-csteamscallingpolicy) PowerShell cmdlet to manage your calling transcription policy. This setting's value impacts how, or if Copilot works for your users.
+You can use the **Calling policies** section in the Teams admin center or the **`-AllowTranscriptionForCalling`** parameter in the [**CsTeamsCallingPolicy**](/powershell/module/teams/set-csteamscallingpolicy) PowerShell cmdlet to manage your calling transcription policy. This setting's value impacts how or if Copilot works for your users.
 
 To learn more about managing transcription, see [Configure call recording, transcription, and captions in Teams calls](call-recording-transcription-captions.md).
 
@@ -73,18 +73,16 @@ The following table shows the behaviors of the settings for the **`-Copilot`** p
 
 ### Manage Copilot for Teams calls in the Teams admin center
 
-**[UPDATE THIS SECTION TO ALIGN WITH CALLING TAC]**
-
 1. Open the Teams admin center.
 2. Expand **Voice** from the navigation pane.
 3. Under **Voice**, select **Calling policies**.
 4. Either select an existing policy or create a new one.
-5. Select **On**, **On with saved transcript required**, or **Off** from the dropdown for the **Copilot** setting.
+5. From the dropdown for the **Copilot** setting, select **On**, **On with saved transcript required**, or **Off**.
 6. Select **Save**
 
 ### Manage Copilot for Teams calls using PowerShell
 
-To manage how users in your org use Copilot in Teams meetings and events, use the **`-Copilot`** parameter within the  [**CsTeamsCallingPolicy**](/powershell/module/teams/set-csteamscallingpolicy) PowerShell cmdlet.
+To manage how users in your org use Copilot in Teams calls, use the **`-Copilot`** parameter within the  [**CsTeamsCallingPolicy**](/powershell/module/teams/set-csteamscallingpolicy) PowerShell cmdlet.
 
 To allow users to use Copilot during calls without requiring transcription, use the following command:
 

@@ -34,13 +34,13 @@ description: Learn how Microsoft supports validation of your business with PSTN 
 
 This article provides an overview of the Know Your Customer value and process, and a guide for setting it up in your Teams admin center.
 
-Know Your Customer, also known as **KYC** is a PSTN industry practice that allows PSTN operators to validate the identity of their customer before providing communication services. It is a way to identify your business so that PSTN operators can help prevent your business from carrying illegal traffic, receiving nuisance calls, and more. KYC is designed to help prevent fraud and ensure national security, and therefore it is a PSTN operator investment into your risk management strategy.
+Know Your Customer, also known as **KYC** is a PSTN industry practice that allows PSTN operators to validate the identity of their customer before providing communication services. It's a way to identify your business so that PSTN operators can help prevent your business from carrying illegal traffic, receiving nuisance calls, and more. KYC is designed to help prevent fraud and ensure national security, and therefore it's a PSTN operator investment into your risk management strategy.
 
 In some countries and regions, KYC is a prerequisite for allowing customers to acquire or port telephone numbers. National Regulatory Authorities in different countries and regions set the rules for the information needed from users or businesses to get, transfer, or activate phone numbers for calling and messaging services.
 
 Microsoft supports the KYC process by storing your KYC profile in your tenant.
 
-Having your KYC profile stored in Teams expedites PSTN service requests and increases reqeust approvals for PSTN services.
+Having your KYC profile stored in Teams expedites PSTN service requests and increases request approvals for PSTN services.
 
 ## Setting up KYC in your Teams admin center
 
@@ -62,7 +62,7 @@ Provide an email address for the business contact responsible for verification.
 
 No free or generic email addresses are accepted.
 
-A one-time code will be sent. Submit the received code to confirm the email address. Status change notifications are sent to this email address.
+A one-time code is sent. Submit the received code to confirm the email address. Status change notifications are sent to this email address.
 
 ### Step 2: Provide Business information
 
@@ -78,8 +78,7 @@ Ensure all information provided matches the supporting documents requested in th
 
 ### Step 3: Upload Supporting Documents
 
-Submit documents that are up to 12 months old. A Registry extract copy should contain both the Company Name and the Tax ID/Business Registration Number. Additional supporting documents are optional but recommended.
-KYC submission and status
+Submit documents that are up to 12 months old. A Registry extract copy should contain both the Company Name and the Tax ID/Business Registration Number. Other supporting documents are optional but recommended.
 
 ### Submit
 
@@ -89,7 +88,7 @@ Your KYC Status indicates *Submitted* and its information can no longer be modif
 
 Status change notifications are sent to the email address provided. The Service Level Agreement for KYC approval or rejection is three days maximum.
 
-Once your KYC has been approved, move on to [Getting numbers with Microsoft Calling Plan](manage-phone-numbers-landing-page.md).
+Once your KYC is approved, move on to [Getting numbers with Microsoft Calling Plan](manage-phone-numbers-landing-page.md).
 
 ## KYC status definitions
 
@@ -97,11 +96,11 @@ KYC submittal status and status definitions are listed in the following table.
 
 |Status |Description |
 |:-----|:-----|
-|Draft |The customer has started a KYC request process but has not submitted it for vetting yet. |
-|Submitted |The customer has submitted the KYC request for the vetting process. Automated and manual checks by Microsoft are being performed. |
+|Draft |The customer started a KYC request process but hasn't submitted it for vetting. |
+|Submitted |The customer submitted the KYC request for the vetting process. Automated and manual checks by Microsoft are in progress. |
 |Pending Customer Update |Microsoft determined additional information from the customer is required to approve the KYC request. Customer action required. |
 |Approved |Microsoft successfully validated the KYC request. Customer is now able to acquire or port telephone numbers. |
-|Denied |Microsoft determined the KYC request did not pass the vetting process. No further action allowed. |
+|Denied |Microsoft determined the KYC request didn't pass the vetting process. No further action allowed. |
 
 ## Related articles
 
@@ -109,4 +108,4 @@ KYC submittal status and status definitions are listed in the following table.
 
 [PSTN connectivity options](pstn-connectivity.md)
 
-[Microsfot Teams Calling Plans](calling-plans-for-office-365.md)
+[Microsoft Teams Calling Plans](calling-plans-for-office-365.md)

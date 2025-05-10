@@ -30,7 +30,7 @@ description: Learn how Microsoft supports validation of your business with PSTN 
 
 # Validate your business identity with PSTN operators using Know Your Customer
 
-**APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Microsoft Calling Plans, Operator Connect, Teams Phone Mobile, and Direct Routing
+**APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Microsoft Calling Plans
 
 This article provides an overview of the Know Your Customer value and process, and a guide for setting it up in your Teams admin center.
 
@@ -40,7 +40,7 @@ In some countries and regions, KYC is a prerequisite for allowing customers to a
 
 Microsoft supports the KYC process by storing your KYC profile in your tenant.
 
-Having your KYC profile stored in Teams expedites PSTN service requests and increases request approvals for PSTN services.
+Having your KYC profile stored in Teams expedites PSTN service requests and increases request approvals for Microsoft Calling Plan services wherever Microsoft offers Calling Plans.
 
 ## Setting up KYC in your Teams admin center
 
@@ -66,7 +66,7 @@ A one-time code is sent. Submit the received code to confirm the email address. 
 
 ### Step 2: Provide Business information
 
-In the Business information section of the KYC form, provide details of your company, as denoted in its country/region. 
+In the Business information section of the KYC form, provide details of your company, as denoted in its country/region.
 
 Ensure all information provided matches the supporting documents requested in the next step.
 
@@ -105,7 +105,5 @@ KYC submittal status and status definitions are listed in the following table.
 ## Related articles
 
 [Setting up Teams Phone](setting-up-your-phone-system.md)
-
-[PSTN connectivity options](pstn-connectivity.md)
 
 [Microsoft Teams Calling Plans](calling-plans-for-office-365.md)

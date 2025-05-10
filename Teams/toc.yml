@@ -1261,12 +1261,12 @@ items:
       items:
         - name: Overview
           href: pstn-connectivity.md
-        - name: Know your customer
-          href: teams-phone-know-your-customer.md
         - name: Teams Calling Plans
           items: 
             - name: Calling Plans overview
               href: calling-plans-for-office-365.md
+            - name: Know your customer
+              href: teams-phone-know-your-customer.md
             - name: Set up Calling Plans
               href: set-up-calling-plans.md
             - name: Country and region availability for Calling Plans

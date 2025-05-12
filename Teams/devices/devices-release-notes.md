@@ -4,7 +4,7 @@ author: mstonysmith
 ms.author: tonysmit
 manager: pamgreen
 ms.reviewer: eviegrimshaw
-ms.date: 04/24/2025
+ms.date: 05/05/2025
 ms.topic: release-notes
 ms.service: msteams
 ms.subservice: itpro-devices
@@ -223,6 +223,17 @@ To add a mobile system OS scanner:
 - Hide meeting names for sensitive spaces. This setting is off by default (the **Show meeting names** setting is on). The tenant admin can enable it through **Settings** > **Device settings** > **Admin Settings** > **Panels App Settings** > **Meetings** > **Show meeting names**. When meeting names is turned off, the meeting name is replaced with the meeting organizer's name.
 
 ## [Teams phones](#tab/phones)
+
+## May 5, 2025
+
+**Applies to:** *Teams app version: 1449/1.0.94.2025087003 (Poly, Yealink and Audiocodes)*
+
+> [!IMPORTANT]
+> Starting in June 2025, Teams applications that are older than five (5) months will no longer work be able to connect to the service. Please refer to the Message Center Post, MC969451 for more details.
+
+- Bug fixes for caller name resolution in certain scenarios, improvements for Multi-Factor Authentication using Device Code Flow (DCF) wherein user account name can be used to sign-in. 
+
+- UI fixes for end call screen. Users will see a toast notification instead of a full screen view when a call ends. 
 
 ## March 28, 2025
 

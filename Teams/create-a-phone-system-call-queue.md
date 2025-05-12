@@ -9,6 +9,7 @@ ms.topic: how-to
 ms.assetid: 67ccda94-1210-43fb-a25b-7b9785f8a061
 ms.tgt.pltfrm: cloud
 ms.service: msteams
+ms.subservice: teams-calling
 search.appverid: MET150
 ms.collection: 
   - M365-voice
@@ -120,7 +121,7 @@ After you create this new resource account for calling ID, you still need to:
 
 Service level measures the efficiency and responsiveness to incoming customer requests within a specific Service level threshold.
 
-You can set the threshold target to any value from 0 to 40 minutes (2,400 seconds). The value must be less than the value set for [Call timeout](#call-timeout-set-how-to-handle-call-timeouts). Setting the value to blank (empty) disables the service level metric calculation for the call queue.
+You can set the threshold target to any value from 0 to 40 minutes (2,400 seconds). The value should be less than the value set for [Call timeout](#call-timeout-set-how-to-handle-call-timeouts), however, this value difference isn't enforced. Setting the threshold value higher than the call timeout results in the service level always being 100% if there are answered calls or 0% if there are no answered calls. Setting the value to blank (empty) disables the service level metric calculation for the call queue.
 
 >[!NOTE]
 > Service level metrics aren't currently available in historical reporting.
@@ -216,7 +217,7 @@ In the following example, this script uses a text to speech greeting and uses th
 ````PowerShell
 New-CsCallQueue -Name "Call Queue Name" -WelcomeTextToSpeechPrompt "Welcome to the call queue " -UseDefaultMusicOnHold $true
 ````
-*Note: This example example doesn't contain the minimum number of parameters required to create a new call queue.*
+*Note: This example doesn't contain the minimum number of parameters required to create a new call queue.*
 
 To modify an existing call queue, use the Set-CsCallQueue cmdlet, as shown in the following example:
 

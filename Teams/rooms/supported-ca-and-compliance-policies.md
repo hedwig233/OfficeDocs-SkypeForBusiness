@@ -4,7 +4,7 @@ author: mstonysmith
 ms.author: tonysmit
 manager: pamgreen
 ms.reviewer: dimehta
-ms.date: 08/22/2024
+ms.date: 05/08/2025
 ms.topic: article
 audience: Admin
 ms.service: msteams
@@ -62,7 +62,7 @@ The following list includes the supported Conditional Access policies for Teams 
 | Require token protection for sign-in sessions (Preview)     | Not supported      | Not supported    | Not supported
 
 > [!NOTE]
-> Using the sign-in frequency policy will cause devices to periodically sign out.
+> Using the sign-in frequency policy will cause devices to periodically sign out and this may not be desired. Likewise, configuring sign-in frequency on individual Microsoft 365 services can interupt or stop the Teams Device sign in flow and isn't supported.
 
 > [!NOTE]
 > Authentication Strength including but not limited to, FIDO2 Security keys, is not supported for use with Conditional Access policies that affect all Teams Devices.

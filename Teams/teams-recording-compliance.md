@@ -120,7 +120,7 @@ Inbound call queue calls are recorded where users have an assigned compliance re
 
 To be eligible for compliance recording, a user account must be equipped with any one of the following licenses:
 
-- Microsoft 365 A3/A5/E3/E5/Business Premium
+- Microsoft 365 A3/A5/E3/E5/G3/G5/Business Premium/Business Standard
 - Office 365 A3/A5/E3/E5
 - Microsoft Teams Room (Pro or Basic) license
 - Teams Shared Device license

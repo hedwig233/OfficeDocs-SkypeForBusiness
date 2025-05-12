@@ -8,7 +8,9 @@ ms.date: 06/28/2024
 ms.topic: concept-article
 ms.service: msteams
 audience: admin
-ms.custom: chat-teams-channels-revamp
+ms.custom: 
+  - chat-teams-channels-revamp
+  - guest-access-external-collab
 ms.collection: 
 - Teams_ITAdmin_GuestAccess
 - M365-collaboration

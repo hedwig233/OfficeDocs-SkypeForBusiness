@@ -937,6 +937,7 @@ Calling policies are used to control what calling features are available to peop
 |Spam filtering|On|This setting allows you to control the type of Spam filtering available on incoming calls.|
 |SIP devices can be used for calls|Off|This setting enables users to use a SIP device to make and receive calls.|
 |Open apps in browser for incoming PSTN calls|Off|This setting controls whether apps are automatically opened in the browser for incoming PSTN calls to your users. This setting can be used to pass the phone of an inbound caller to an app to find the associated customer record while the call is taking place.|
+|Copilot|On with saved transcript required|This setting . Read more [Manage Microsoft 365 Copilot in Teams calls](copilot-teams-calling-transcription.md)|
 
 **PowerShell-only calling policies**
 

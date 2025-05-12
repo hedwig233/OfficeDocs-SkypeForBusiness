@@ -1,5 +1,5 @@
 ---
-title: Manage Microsoft 365 Copilot in Teams calls
+title: Configure Copilot mode (or other name) in Teams calls
 author: mkbond007
 ms.author: mabond
 manager: pamgreen
@@ -27,7 +27,7 @@ ms.collection:
 description: Learn how to manage Microsoft 365 Copilot in Teams calling admin policies in the Teams admin center. Learn how to manage transcripts and transcription for Copilot Microsoft Teams calls.
 ---
 
-# Manage Microsoft 365 Copilot in Teams calls
+# Configure Copilot mode (or other name) in Teams calls
 
 **APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png) 1:1 Teams calls ![Image of a checkmark for yes](/office/media/icons/success-teams.png) PSTN calls
 

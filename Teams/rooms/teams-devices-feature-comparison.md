@@ -385,7 +385,22 @@ To help guide you as to what features are available on different platforms, you 
 | | Remote configuration (restart, settings, & log collection) | Available | Available |
 | | Automatic Teams app updates | Available | Not available |
 | | Real-time and call quality analytics | Available | Available |
-| **Pro Management Portal** | Portal access | Not available | Not available |
+| **Pro Management Portal** | Automatic onboarding | Available | Available |
+| | Overall device health monitoring | Available | Available |
+| | Connected peripheral health monitoring | Available | Not available |
+| | Remote Access | Not available | Not available |
+| | Partner Delegation | Not available | Not available |
+| | Autopilot + Autologin | Not available | Not available |
+| | One Time Passcode | Not available | Not available |
+| | ServiceNow Integration | Not available | Not available |
+| | Device grouping & Role-based access control | Available | Available |
+| | Device Settings Management | Available | Not available |
+| | Update Management | Available | Not available |
+| | Log Collection | Available | Available |
+| | Incident Management | Available | Available |
+| | Health and usage reports | Available | Available |
+| | Events | Available | Available |
+| | Standards and Rooms Planner | Available | Available |
 
 ## Teams panels
 

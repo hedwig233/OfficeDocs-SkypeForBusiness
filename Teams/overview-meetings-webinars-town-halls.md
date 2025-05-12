@@ -42,24 +42,6 @@ The sections below include further information for planning and configuring thes
 
 For a detailed look at which features are available in meetings, webinars, and town halls, see [Meetings, webinars, and town halls feature comparison](meeting-webinar-town-hall-feature-comparison.md).
 
-|Feature|Meetings|Webinars|Town halls|
-|:------|:-------|:-------|:---------|
-|Lobby|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
-|Attendee mic and camera|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
-|End-to-end encryption|Premium|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
-|Watermarks|Premium|Premium|![Image of a x for no](/office/media/icons/cancel-teams.png)|
-|Theme|Premium|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
-|Registration|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
-|Breakout rooms|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)<sup>1</sup>|![Image of a x for no](/office/media/icons/cancel-teams.png)|
-|Content sharing and interaction|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|Q&A only</br>- Teams Premium town halls allow chat for attendees and reactions.|
-|Interactive participants|1,000 (Enterprise plans)<br>300 (Business plans)<br>1,000|Town halls: 10,000<br> Teams Premium town halls: 50,000|
-|View-only participants|10,000<sup>2</sup> (Enterprise plans only)|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
-|Maximum total participants|11,000<sup>2</sup> (Enterprise plans only)|1,000|Town halls: 10,000<br> Teams Premium town halls: 50,000|
-
-<sup>1</sup> Breakout rooms can be used if a webinar has fewer than 300 participants. However, if the number of participants increases to above 300, breakout rooms aren't supported.<br>
-
-<sup>2</sup>The usual maximum is increased to 20,000 until further notice. The maximum total participants for meetings is the sum of the interactive participants plus view-only participants.
-
 For more information on limits and specifications for Teams webinars, meetings, and town halls, see [Limits and specifications for Microsoft Teams.](limits-specifications-teams.md)
 
 ## Manage who can create meetings, webinars, and town halls

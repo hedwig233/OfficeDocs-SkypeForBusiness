@@ -28,12 +28,9 @@ description: Learn about how to upload and manage a Copilot custom dictionary.
 
 Organizations often use their own special terms, acronyms, and jargon, like product names, department-specific language, and industry-specific terms. The AI models powering Teams transcription are trained using general datasets that might not recognize these specialized terms. When you import a custom dictionary, the model dynamically adapts during meetings and performs post-correction once the meeting ends, ensuring accurate transcription of these specialized terms.
 
-As an admin, you can upload a custom dictionary in the Microsoft 365 admin center to improve the quality of transcription in Microsoft 365 Copilot in Teams meetings, Facilitator, transcripts, and Intelligent meeting recap. Once you upload a dictionary, it enhances the recognition of all entities throughout the meeting when a meeting organizer or initiator with a Microsoft 365 Copilot or Teams Premium license starts transcription or any feature that uses transcription.
+As an admin, you can upload a custom dictionary in the Microsoft 365 admin center to improve the quality of transcription. Once you upload a dictionary, it enhances the recognition of all entities throughout the meeting. This improvement benefits meeting Recap, Copilot and overall downstream AI quality.
 
 ## Prerequisites
-
-> [!NOTE]
-> We'll update the licensing requirements for General availability. Check back soon for updates.
 
 ### Admin
 
@@ -60,20 +57,20 @@ The custom dictionary captures organization-specific terminology to enhance the 
 
 ### Dictionary content
 
-The dictionary is presented in a flat list format, with optional fields for recording the "sounds like form" and "spell out form," and a comments section to provide more context. This assists IT administrators in managing and collecting entries from internal systems or product groups effectively. Each custom dictionary includes the following columns:
+The dictionary is presented in a flat list format, with optional fields for recording the "Sounds like" and "Long form of the term," and a comments section to provide more context. This assists IT administrators in managing and collecting entries from internal systems or product groups effectively. Each custom dictionary includes the following columns:
 
 |Column | Definition |
 |:-----|:-----|
-|Term| The display form of the term or phrase. This field is required to validate an entry. **This field is required**.|
-|Sounds like form|A column to record how the word was pronounced in a meeting. This field is optional.|
-|Spell out form| A column to clarify potential acronyms or abbreviations. This field is optional. |
-|Description |A column to provide more context or full meaning of the term. This field is optional.|
+|Term *(required)*| The display form of the term or phrase. This field is required to validate an entry. **This field is required**.|
+|Sounds like|A column to record how the word was pronounced in a meeting. This field is optional.|
+|Long form of the term *(for acronyms)*| A column to clarify potential acronyms or abbreviations. This field is optional. |
+|Definition and context |A column to provide more context or definition of the term. This field is optional.|
 
 ### Dictionary sample
 
 The following are examples of dictionary entries. The first column, **Term**, is the most important and should be mapped to your expected format from the transcription output.
 
-| Term | Sounds like form | Spell Out form | Description |
+| Term *(required)* | Sounds like | Long form of the term *(for acronyms)* | Definition and context |
 |:-----|:-----|:-----|:-----|
 |TAC| Tee-Ay-Cee| Teams Admin Center| Admin portal managing Teams|
 |TAT| Tee-Ay-Tee| Turn Around time| Metric the support team uses and must meet|
@@ -86,7 +83,7 @@ The following are examples of dictionary entries. The first column, **Term**, is
 
 You should compile the dictionary in a CSV plain-text format with UTF-8 encoding and comma-delimited format. We recommend the Excel output format option "CSV UTF-8 (comma delimited)." Each dictionary can contain up to 500 terms/entries. You can upload one dictionary per language, which is applied to the target Teams transcription language(region) setting as described in the following table.
 
-| custom dictionary Language | Teams transcription Language |
+| Custom dictionary Language | Teams transcription Language |
 |:-----|:-----|
 |English|English (United States)|
 |English  |English (United Kingdom)|
@@ -116,8 +113,8 @@ You should compile the dictionary in a CSV plain-text format with UTF-8 encoding
 
 5. Select the option to download the **CSV template with header only** from the portal.
 6. Open the template with Excel, open with UTF-8 and comma-delimited format.
-7. Fill in your custom terms in the **Term** column as a flat list.
-8. *(optional)* Fill in additional information in the **Sounds like form**, **Spell Out Form**, and **Description** columns.
+7. Fill in your custom terms in the **Term *(required)*** column as a flat list.
+8. *(optional)* Fill in additional information in the **Sounds like**, **Long form of the term *(for acronyms)***, and **Definition and context** columns.
 9. Save the file as CSV UTF-8 (Comma delimited) (.csv).
 
 ### Upload your custom dictionary
@@ -139,20 +136,30 @@ To optimize your custom dictionary, follow these best practices:
 - Allowed symbols in term- Don't include punctuation in the **Term** column and use fewer symbols. Symbols allowed in the middle of terms are: **-'/&·ㆍ**.
 - Localize dictionaries- To create dictionaries in the corresponding languages, you should collect custom terms from each local group. For example, in the Japanese dictionary, some terms might remain in their English Latin form, while others might have local variants. Include all these terms in the Japanese custom dictionary to benefit meetings where Japanese is the primary language.
 - Break down multi-word names- For names with multiple words, consider splitting them into individual parts. For example, instead of "Copilot in Power Platform and Dynamics 365," create separate entries for "Copilot," "Power Platform," and "Dynamics 365."
-- Use Copilot for extra fields- Use Copilot to generate entries for **Sounds like form**, **Spell out form**, and **Description**, then review and modify them as needed.
+- Use Copilot for extra fields- Use Copilot to generate entries for **Sounds like**, **Long form of the term *(for acronyms)***, and **Definition and context**, then review and modify the entries as needed.
 - Avoid short words: Avoid using short terms like "AB."
 - Avoid numeric terms: Avoid including terms that are purely numeric like "123."
 - Avoid repeated chars: Avoid using terms with repeated chars like "AAA."
 
-## Data storage
-
-Uploaded custom dictionaries are safely stored. Only you and your users can access the dictionaries.
+## Data safety
 
 Custom dictionary data is used solely within your organization for meetings. Nobody else accesses the data and it isn't included in any AI model training.
 
-## Supported clients and platforms
+## Supported scenarios
 
-[PLACEHOLDER]
+### Supported
+
+Custom Dictionary enhances entity recognition for Teams transcription in the following scenarios:
+
+- Scheduled meetings
+- Town halls
+- Webinars
+
+### Not supported
+
+Custom Dictionary isn't supported in the following scenarios:
+
+- Group and 1:1 calls
 
 ## Related articles
 

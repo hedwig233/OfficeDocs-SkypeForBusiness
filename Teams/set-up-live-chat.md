@@ -74,6 +74,26 @@ You must consent to adding the live chat bot to your organization.
 
 The Live chat widget is now added to your website and ready for customers to use.
 
+## Add appointment booking to live chat (Private Preview)
+
+Let your customers schedule appointments directly from your live chat widget.
+
+1. Go to **Teams Admin App** in Teams.
+
+1. Select **Live chat** in the left rail **Admin** app menu.
+
+1. Select **Set up** on the suggestion **bookings in live chat** to begin setting up bookings in live chat.
+
+1. From the dropdown list, choose your existing Bookings page.
+
+   1. If you don’t have a shared Bookings page, select **Create new booking page**. This will launch the Microsoft Bookings app, where you can create a **shared public booking page** and then return back to the admin app. [Learn more](/microsoft-365/bookings/enter-business-information?view=o365-worldwide)
+   
+1. Once you've selected a page, select **Save** to apply your changes.
+
+Bookings in Live Chat allows your website visitors to schedule appointments with your business through the live chat widget. Once a booking is made, it is automatically added to the assigned staff member’s calendar, and Teams will update the original live chat request with the relevant appointment details.
+
+Terms - The Bookings in Live Chat Private Preview is governed by the most updated [Microsoft Products and Services Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA"https://www.microsoft.com/licensing/docs/view/microsoft-products-and-services-data-protection-addendum-dpa"). For clarity, the Terms of this Bookings in Live Chat Private Preview allows Personal Data Processing. The information collected falls under the [Microsoft Privacy Statement](https://www.microsoft.com/en-us/privacy/privacystatement?msockid=095b42c218b6653d2333579519266455"https://www.microsoft.com/en-us/privacy/privacystatement?msockid=095b42c218b6653d2333579519266455"). 
+
 ## Add an AI chatbot to your live chat experience
 
 For tenants with a Microsoft Copilot Studio license, you can add an AI chatbot to your live chat widget to answer frequently asked customer questions before customers are connected to your support team. Learn more about Copilot Studio at [Microsoft Copilot Studio](https://www.microsoft.com/microsoft-copilot/microsoft-copilot-studio).

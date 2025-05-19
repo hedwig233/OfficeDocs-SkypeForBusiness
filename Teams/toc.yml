@@ -364,7 +364,7 @@ items:
   items:
     - name: Overview of AI in Teams
       href: copilot-ai-agents-overview.md
-    - name: Custom dictionary for Copilot in Teams
+    - name: Custom dictionary for Teams meetings and events
       href: copilot-custom-dictionary.md
     - name: AI features in Teams
       items:

@@ -111,6 +111,7 @@ The following devices are Certified under the Microsoft Teams Rooms on Windows C
 | MAXHUB XCore Kit Pro | Core i5 | 16 GB | 256 GB |
 | MAXHUB XBoard V865T | Core i5 | 16 GB | 256 GB |
 | MAXHUB XBoard V655T | Core i5 | 16 GB | 256 GB |
+| MAXHUB XBoard V555T | Core i5 | 16 GB | 256 GB |
 | [Microsoft Surface Hub 3 50"](https://www.microsoft.com/surface/business/surface-hub-3) | Core i5 | 32 GB | 512 GB |
 | [Microsoft Surface Hub 3 85"](https://www.microsoft.com/surface/business/surface-hub-3) | Core i5 | 32 GB | 512 GB |
 | [Microsoft Surface Hub 2S 50" upgraded with the Surface Hub 3 Pack](https://www.microsoft.com/d/surface-hub-3-pack-for-business/8mf5qhhn1t4g) | Core i5 | 32 GB | 512 GB |
@@ -175,6 +176,8 @@ The following devices are certified under the Microsoft Teams Rooms peripherals 
 | [Aver CAM 130](https://www.averusa.com/products/conference-camera/cam130) | 0.0.7450.02 | &#x2714; |  |||
 | [Aver Fone540](https://www.averusa.com/products/vc-accessories/fone540) | 0.0.7002.17 |  |  |||
 | Aver VB130 Camera Soundbar | 0.0.7300.71 |  |  |||
+| [Aver PTZ211 Camera](https://www.averusa.com/products/ptz-camera/ptz211) | 0.0.0001.50 |  |  |||
+| [Aver PTZ310UV2 Camera](https://averusa.com/products/ptz-camera/ptz310uv2) | 0.0.0001.50 |  |  |||
 | [Aver TR211 Camera](https://www.averusa.com/products/ptz-camera/tr211) | 0.0.0001.50 |  |  |||
 | [Aver TR313V2 Camera](https://www.averusa.com/products/ptz-camera/tr313v2) | 0.3.0011.38 |  |  |||
 | [Aver TR315 Camera](https://www.averusa.com/products/ptz-camera/tr315) | 0.0.0001.50 |  |  |||

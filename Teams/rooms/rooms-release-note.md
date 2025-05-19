@@ -777,6 +777,7 @@ Introduced in this update:
 
 |Release  |Release date  |
 |---------|---------|
+|[1449/1.0.96.2025126202](#144910962025126202-may-2025) | May 2025 |
 |[1449/1.0.96.2025031102](#144910962025031102-march-2025) | March 2025 |
 |[1449/1.0.96.2025020302](#144910962025020302-february-2025) | February 2025 |
 |[1449/1.0.96.2025010301](#144910962025010301-january-2025) | January 2025 |
@@ -812,6 +813,19 @@ Introduced in this update:
 > There can be a delay between when features are released by Microsoft and when they become available on a device make and model. If an update isn't available on your device, check with your device manufacturer for information on when it might become available.
 
 Features with :::image type="icon" source="../media/mtr-pro-icon.png"::: are only available with Teams Rooms Pro license.
+
+### 1449/1.0.96.2025126202 (May 2025)
+
+Introduced in this update:
+
+- **Preview of Facilitator agent note taking in Rooms for offline/ad hoc discussions:** Power your ad-hoc in-person discussions by inviting the Facilitator agent in your Teams Room. Learn more here: Facilitator in Teams Rooms - Microsoft Teams | Microsoft Learn
+- **New Microsoft-managed policy to help further secure your tenants against potential threats to accounts using device code flow (DCF) authentication.**
+- **Disabled auto accept for external tenant nudges:** Teams Rooms on Android will now also no longer automatically accept any Proximity joins using an external account for security reasons.
+- **Local PTZ controls:** If the camera is not currently auto-framing the room, in-room users can control the Pan-Tilt-Zoom (PTZ) of the active camera to keep the focus where they want it. 
+- **Speaker recognition and attribution in Teams Rooms on Android:** Microsoft Teams Rooms on Android will soon support Intelligent Speakers, providing advanced speaker recognition to clearly identify who said what in meeting transcripts. This feature significantly enhances Microsoft 365 Copilot and AI Recap, enabling accurate, personalized summaries and actionable insights from your meetings. This capability seamlessly integrates with both intelligent speakers and your existing room speakers via the cloud. Each participant is securely recognized through a unique voice profile, ensuring precise attribution in live transcripts and maximizing the effectiveness of your Teams meeting experience.
+- **Proximity join performance and reliability improvements:** These enhancements are for standalone consoles where calls used to drop sometimes and then rejoin automatically a few seconds later.
+-	**Call Join performance improvements:** Multiple improvements to call join performance in standalone consoles. These improvements should significantly reduce the time it takes for the console to join a meeting, especially the ones with more than 50 participants.
+
 
 ### 1449/1.0.96.2025031102 (March 2025)
 

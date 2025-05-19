@@ -545,6 +545,8 @@ items:
           items: 
             - name: Configure external meetings & chat
               href: trusted-organizations-external-meetings-chat.md
+            - name: Set up a bilateral chat policy
+              href: bilateral-chat-enforcement.md
             - name: Cross-cloud meetings
               href: cross-cloud-meetings.md
             - name: Native Teams chats
@@ -825,11 +827,11 @@ items:
       items:
         - name: Overview
           href: overview-meetings-webinars-town-halls.md
-        - name: Meetings
+        - name: Plan for meetings
           href: plan-meetings.md
-        - name: Webinars
+        - name: Plan for webinars
           href: plan-webinars.md
-        - name: Town halls
+        - name: Plan for town halls
           href: plan-town-halls.md
         - name: Policies overview
           href: meeting-policies-overview.md
@@ -925,6 +927,8 @@ items:
               href: manage-meeting-presentation-experience.md
             - name: Manage chat
               href: manage-chat-sensitive-meetings.md
+            - name: Detect sensitive content during screen sharing
+              href: detect-sensitive-content.md
             - name: Encrypt meetings
               href: end-to-end-encrypted-meetings.md
             - name: Watermark meetings
@@ -953,7 +957,7 @@ items:
               href: cloud-video-interop.md
             - name: Configure Quality of Service (QoS)
               href: meetings-real-time-media-traffic.md
-            - name: Stream Teams meetings
+            - name: Live stream with RTMP-Out
               href: stream-teams-meetings.md
             - name: Streaming encoders
               href: teams-encoder-setup.md
@@ -1342,8 +1346,6 @@ items:
                   href: direct-routing-trunk-failover-on-outbound-call.md
                 - name: Media path country codes
                   href: direct-routing-country-codes.md
-                - name: PowerShell script to test Session Border Controller connections
-                  href: sip-tester-powershell-script.md
                 - name: Protocols
                   items: 
                     - name: Definitions and RFC standards
@@ -1458,22 +1460,6 @@ items:
           href: manage-your-network-topology.md
         - name: Manage video and media settings
           href: network-roaming-policy.md
-    - name: Contoso voice migration case study
-      items: 
-        - name: Overview
-          href: voice-case-study-overview.md
-        - name: Teams upgrade plan
-          href: voice-case-study-migration-plan.md
-        - name: Teams Phone
-          href: voice-case-study-phone-system.md
-        - name: Location-Based-Routing
-          href: voice-case-study-location-based-routing.md
-        - name: Emergency calling
-          href: voice-case-study-emergency-calling.md
-        - name: Audio Conferencing
-          href: voice-case-study-audio-conferencing.md
-        - name: Auto attendants and Call queues
-          href: voice-case-study-call-queues.md
   
     - name: Reference
       items: 

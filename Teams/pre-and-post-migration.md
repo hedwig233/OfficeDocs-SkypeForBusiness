@@ -40,7 +40,7 @@ We recommend you follow these steps before and after the manual migration to che
 
 Navigate to **Manage Apps** page and export the full list of apps in the catalog as a CSV file, including each app’s allowed or blocked app status. The allowed or blocked status determines whether the app is available to everyone or no one, respectively. This status is used in the following steps to filter your users. For more details, see [export app catalog as CSV](manage-apps.md#export-app-catalog-as-csv).
 
-    :::image type="content" source="media/step1–export-app-catalog.png" alt-text="Screenshot showing  export App catalog and note your allowed apps.":::
+:::image type="content" source="media/step1–export-app-catalog.png" alt-text="Screenshot showing  export App catalog and note your allowed apps.":::
 
 ### Step 2: Review permission policies and note allowed or blocked apps
 
@@ -54,7 +54,7 @@ Steps to get the permission policies list using PS cmdlet:
 1. Run the powershell command: 'Get-CsTeamsAppPermissionPolicy(/powershell/module/teams/get-csteamsapppermissionpolicy?view=teams-ps &preserve-view=true)'.
 
 The following result is displayed:
-    :::image type="content" source="media/step2–interpret-results.png" alt-text="Screenshot showing interpreting results.":::
+:::image type="content" source="media/step2–interpret-results.png" alt-text="Image showing interpreting results.":::
 
 #### Retrieve allowed apps in each permission policy
 
@@ -63,9 +63,10 @@ To retrieve allowed apps in each permission policy using PowerShell cmdlet:
 For example: '$msftApps = Get-CsTeamsAppPermissionPolicy -Identity "Global" | Select-Object -ExpandProperty DefaultCatalogApps $msftApps.id'
 
 #### Filter out blocked apps
+
 1. After collecting information on all apps permitted within the tenant, identify the users or groups authorized to use each app.
 
-2. Merge this data with the export from the Manage Apps page.
+1. Merge this data with the export from the Manage Apps page.
 
 > [!NOTE]
 > Any app marked as blocked in Manage Apps will remain blocked, regardless of the policy assignment results.
@@ -100,10 +101,10 @@ You can also export the users list to CSV.
 You can also use the following PowerShell command to export user assignments for each custom policy. This script generates an Excel file if the given policy has user assignments; otherwise, a message is shown indicating that no user assignments exist.
 
 PowerShell command output is as follows:
-    :::image type="content" source="media/step3b-pscommand-output.png" alt-text="PowerShell command output.":::
+:::image type="content" source="media/step3b-pscommand-output.png" alt-text="PowerShell command output.":::
 
 The exported file appears as follows:
-    :::image type="content" source="media/step3b-exported-file.png" alt-text="Exported file output.":::
+:::image type="content" source="media/step3b-exported-file.png" alt-text="Exported file output.":::
 
 * To define the base path for exports: `$basePath = "C:\Users\patelsagar\Downloads"`
 * To ensure the base path exists:

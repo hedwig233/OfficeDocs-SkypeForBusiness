@@ -39,11 +39,19 @@ This article explains how Microsoft 365 Copilot in Teams calls works and gives a
 
 ## Prerequisites
 
-To use Microsoft 365 Copilot in Teams calls, your users must have following prerequisites:
+Copilot only mode is automatically available to users in your organization with the following required licenses and policies:
 
-- A Teams Phone license
-- An add-on Microsoft 365 Copilot license. To learn more about the Microsoft 365 Copilot license, see [Microsoft 365 Copilot documentation](/microsoft-365-copilot)
-- Voice-enabled users
+### Licensing
+
+- You must assign your users a Microsoft 365 subscription that includes Teams or a Microsoft 365 (no Teams) subscription with a separate Teams license.
+- You must assign a Microsoft 365 Copilot license to your users.
+- For Public Switched Telephone Network (PSTN) calls, you must also assign a Teams Phone license and have a calling plan for your users. For information on Teams Phone licensing, see [Microsoft Teams add-on licenses](/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing). To learn more about PSTN connectivity options, see [PSTN connectivity options](pstn-connectivity.md).
+
+### Policies
+
+#### Transcription
+
+To allow your users to use Copilot with Teams calls *after* a PSTN or 1:1 peer-to-peer Voice over Internet Protocol (VoIP) call, you must turn on transcription. To turn on transcription, see [Configure call recording, transcription, and captions in Teams](call-recording-transcription-captions.md#enable-call-transcription). Otherwise, depending on your Copilot setting, Copilot is only available during the call.
 
 ## Copilot Only Mode for Teams calls
 
@@ -59,7 +67,7 @@ The following table describes the differences between these two settings and how
 | Copilot setting in Calling Policy | Transcription enabled during call  | Copilot available during call | Transcription available after call| Copilot available after call |
 | --- | --- | --- | --- |
 | Enabled | Yes | Yes | Yes | Yes |
-| Enabled | No | Yes | Yes | No |
+| Enabled | No | Yes | No | No |
 | EnabledWithTranscript | Yes | Yes | Yes| Yes|
 | EnabledWithTranscript | No | No | No | No |
 | Disabled | Yes | No | Yes | No |
@@ -77,16 +85,16 @@ Once someone with a Microsoft 365 Copilot license selects the Copilot button dur
 
 For information about Copilot Only Mode for Teams *meetings*, see [Manage Microsoft 365 Copilot in Teams meetings and events](copilot-teams-transcription.md).
 
-## Manage Copilot for Teams calls
-
-**...add more info**
+## Configure Copilot for Teams calls
 
 As an admin, you can manage how users in your organization use Copilot for Teams calls. You can set the preferred method for Copilot with or without a saved transcript of the call. You can turn off the ability for users to transcribe calls, but still allow them to use Copilot for other purposes.
 
-To set the user-level policy for Copilot in Teams calls, follow these steps:
+To configure Copilot in Teams calls for your users, follow these steps:
 
-1. In the Teams admin center, go to ......
-1. 
+1. In the Teams admin center, go to **Voice** > **Calling policies**.
+1. For the policy you want to modify, select **Edit**.
+1. In the **Copilot** dropdown, select **On**, **On with saved transcript required**, or **Off**.
+1. Select **Save**.
 
 To learn more about managing call transcription, see [Configure call recording, transcription, and captions in Teams](call-recording-transcription-captions.md).
 

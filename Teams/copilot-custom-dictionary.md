@@ -1,5 +1,5 @@
 ---
-title: Admins- Manage custom dictionaries for Microsoft 365 Copilot in Teams
+title: Admins- Manage custom dictionaries Microsoft Teams meetings and events
 ms.author: wlibebe
 author: wlibebe
 ms.reviewer: fei.zuo
@@ -17,7 +17,7 @@ ms.collection:
 description: Learn about how to upload and manage a Copilot custom dictionary.
 ---
 
-# Admins- Manage custom dictionaries for Microsoft 365 Copilot in Teams
+# Admins- Manage custom dictionaries Microsoft Teams meetings and events
 
 ## Overview
 
@@ -28,7 +28,7 @@ description: Learn about how to upload and manage a Copilot custom dictionary.
 
 Organizations often use their own special terms, acronyms, and jargon, like product names, department-specific language, and industry-specific terms. The AI models powering Teams transcription are trained using general datasets that might not recognize these specialized terms. When you import a custom dictionary, the model dynamically adapts during meetings and performs post-correction once the meeting ends, ensuring accurate transcription of these specialized terms.
 
-As an admin, you can upload a custom dictionary in the Microsoft 365 admin center to improve the quality of transcription. Once you upload a dictionary, it enhances the recognition of all entities throughout the meeting. This improvement benefits meeting Recap, Copilot and overall downstream AI quality.
+As an admin, you can upload a custom dictionary in the Microsoft 365 admin center to improve the quality of transcription. Once you upload a dictionary, it enhances the recognition of all entities throughout the meeting. This improvement enhances the meeting transcript and benefits the AI quality for Copilot and Recap.
 
 ## Prerequisites
 
@@ -46,8 +46,8 @@ Users in your organization must meet the following requirements to use custom di
   - For the list of eligible base licenses, see [Understand licensing requirements for Microsoft 365 Copilot](/copilot/microsoft-365/microsoft-365-copilot-licensing).
 - An eligible *Microsoft Teams* license.
   - Teams licenses might be included in your *Microsoft 365* subscription, or you might need to purchase a separate Teams license if you have *Microsoft 365 (no Teams)* licenses.
-- A *Microsoft 365 Copilot* or *Teams Premium* license.
-  - For information on how to acquire *Microsoft 365 Copilot* licenses, see [Where can I get Microsoft Copilot?](https://support.microsoft.com/topic/where-can-i-get-microsoft-copilot-40a622db-6d25-4266-b008-4bbcb55cf52f). To learn more about Teams Premium, see [Manage Teams Premium for your organization](teams-premium-dashboard.md).
+- A *Microsoft 365 Copilot* license.
+  - For information on how to acquire *Microsoft 365 Copilot* licenses, see [Where can I get Microsoft Copilot?](https://support.microsoft.com/topic/where-can-i-get-microsoft-copilot-40a622db-6d25-4266-b008-4bbcb55cf52f).
 - Be a Microsoft Teams Public preview participant.
   - For information on how to access Teams Public preview features, see [Microsoft Teams Public preview](/microsoftteams/public-preview-doc-updates).
 
@@ -98,7 +98,7 @@ You should compile the dictionary in a CSV plain-text format with UTF-8 encoding
 |German  |German (Germany)|
 |Portuguese  |Portuguese (Brazil)|
 |Italian  |Italian (Italy)|
-|Chinese(Simplified) |Chinese (Simplified, China)|
+|Chinese (Simplified) |Chinese (Simplified, China)|
 
 ## Upload a custom dictionary
 
@@ -163,6 +163,6 @@ Custom Dictionary isn't supported in the following scenarios:
 
 ## Related articles
 
-- Improving Teams Meeting transcriptions
-- Managing Custom Dictionaries in Microsoft 365
-- Enhancing Copilot Performance with Custom Data
+- [Admins- Manage transcription and captions for Teams meetings](meeting-transcription-captions.md)
+- [Manage Microsoft 365 Copilot in Teams meetings and events](copilot-teams-transcription.md)
+- [Intelligent recap for Teams calls and meetings](intelligent-recap-calls-meetings.md)

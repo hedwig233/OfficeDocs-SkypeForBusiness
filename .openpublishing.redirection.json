@@ -543,7 +543,7 @@
     {
       "source_path": "Teams/transferring-phone-numbers-common-questions.md",
       "redirect_url": "/MicrosoftTeams/phone-number-calling-plans/port-order-overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "Skype/SfbOnline/what-are-calling-plans-in-office-365/manually-submit-a-custom-service-request.md",
@@ -5448,6 +5448,51 @@
     {
       "source_path": "Teams/shared-line-appearance.md",
       "redirect_url": "/microsoftteams/user-call-settings",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Teams/phone-number-calling-plans/more-information-about-porting.md",
+      "redirect_url": "/MicrosoftTeams/phone-number-calling-plans/port-order-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Teams/sip-tester-powershell-script.md",
+      "redirect_url": "/MicrosoftTeams/direct-routing-monitor-and-troubleshoot",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Teams/voice-case-study-overview.md",
+      "redirect_url": "/MicrosoftTeams/cloud-voice-landing-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Teams/voice-case-study-migration-plan.md",
+      "redirect_url": "/MicrosoftTeams/cloud-voice-landing-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Teams/voice-case-study-phone-system.md",
+      "redirect_url": "/MicrosoftTeams/cloud-voice-landing-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Teams/voice-case-study-location-based-routing.md",
+      "redirect_url": "/MicrosoftTeams/cloud-voice-landing-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Teams/voice-case-study-emergency-calling.md",
+      "redirect_url": "/MicrosoftTeams/cloud-voice-landing-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Teams/voice-case-study-audio-conferencing.md",
+      "redirect_url": "/MicrosoftTeams/cloud-voice-landing-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Teams/voice-case-study-call-queues.md",
+      "redirect_url": "/MicrosoftTeams/cloud-voice-landing-page",
       "redirect_document_id": true
     },
     {

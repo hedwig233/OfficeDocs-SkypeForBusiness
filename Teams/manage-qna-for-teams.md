@@ -2,8 +2,8 @@
 title: Manage Q&A in Teams meetings and events
 author: wlibebe
 ms.author: wlibebe
-ms.reviewer: sameer.sitaram
-ms.date: 4/18/2024
+ms.reviewer: sameer.sitaram, pallaviverma
+ms.date: 4/30/2025
 manager: pamgreen
 ms.topic: how-to
 ms.service: msteams

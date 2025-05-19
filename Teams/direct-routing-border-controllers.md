@@ -2,12 +2,13 @@
 title: "Session Border Controllers certified for Direct Routing"
 ms.author: scottfrancis
 ms.reviewer: FilippSe
-ms.date: 06/12/2024
+ms.date: 05/06/2025
 author: sfrancis206
 manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: msteams
+ms.subservice: teams-calling
 ms.localizationpriority: high
 search.appverid: MET150
 ms.collection:
@@ -95,7 +96,7 @@ We're not accepting new nominations for certification until further notice.
 |[Ericsson](https://www.ericsson.com/portfolio/cloud-software-and-services/cloud-core/communication-services-udm-and-exposure/communication-services--udm/cloud-ims/enterprise-communication/sip-trunking)|vSBC 2.16|&#10004;|||||
 |[Cataleya](https://cataleya.com/cataleya-launches-orchid-cloud-revolutionary-cloud-based-wholesale-voice-business-platform/)|Orchid Link|&#10004;||3.1|||
 |[ULTATEL](https://www.ultatel.com/services/direct-routing-teams-sbc)|Teams SBC|&#10004;|&#10004;|1.6|||
-|[Mitel](https://unify.com/en/solutions/voice-platforms/session-border-controller)|Unify OpenScape Session Border Controller|&#10004;|&#10004;|V10R2.2.0 or higher|||
+|[Mitel](https://www.mitel.com/products/openscape-session-border-controller)|Unify OpenScape Session Border Controller|&#10004;|&#10004;|V10R2.2.0 or higher|||
 |[Sansay Inc.](https://www.sansay.com/solutions/microsoft-teams/)|vmVSXi|&#10004;|&#10004;|10.5.1.354-vm-S-x64|&#10004;||
 |[Enghouse Networks](https://www.enghousenetworks.com/portfolio/network-infrastructure/dialogic-session-border-controller/)|Dialogic BorderNet SBC|&#10004;|&#10004;|3.9.x|||
 |[Patton Electronics Co.](https://www.patton.com/microsoft/)|Patton SmartNode eSBC|&#10004;||3.19.x|||

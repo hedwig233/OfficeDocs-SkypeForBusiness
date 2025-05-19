@@ -162,7 +162,7 @@ An example might look like this:
 >Thank you for opting in to receive [type of messages] from [Brand Name]. Msg frequency varies. Msg & data rates may apply. Reply HELP for help. Reply STOP to opt out from receiving messages from this number.*" automated message is sent to the recipient send START to resume a conversation.
 
 > [!IMPORTANT]
-> Only the keywords START, HELP, and STOP are monitored and enforced in SMS in Teams.
+> Only the keywords START, HELP, and STOP, QUIT, END, REVOKE, OPT OUT, CANCEL, UNSUBSCRIBE are monitored and enforced in SMS in Teams.
 
 ##### Opt-Out Message
 
@@ -177,7 +177,7 @@ An example might look like this:
 >You have successfully opted out of messages from this [Brand Name] number. You'll receive no further messages. Reply START to resume. Msg & data rates may apply.
 
 > [!IMPORTANT]
-> Only the keywords START, HELP, and STOP are monitored and enforced in Teams SMS.
+> Only the keywords START, HELP, and STOP, QUIT, END, REVOKE, OPT OUT, CANCEL, UNSUBSCRIBE are monitored and enforced in Teams SMS.
 
 ##### Help Message
 
@@ -192,7 +192,7 @@ The Help Message must include the following information:
 >Thank you for contacting [Brand Name] support. Please email us at [email address] for support. Reply STOP to opt-out from receiving messages from this number. Msg & data rates may apply.
 
 > [!IMPORTANT]
-> Only the keywords START, HELP, and STOP are monitored and enforced for SMS in Teams.
+> Only the keywords START, HELP, and STOP, QUIT, END, REVOKE, OPT OUT, CANCEL, UNSUBSCRIBE are monitored and enforced for SMS in Teams.
 
 ##### Content
 

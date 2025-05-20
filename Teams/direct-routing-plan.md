@@ -5,9 +5,10 @@ ms.author: scottfrancis
 manager: pamgreen
 audience: ITPro
 ms.reviewer: filippse
-ms.date: 06/17/2024
+ms.date: 05/06/2025
 ms.topic: concept-article
 ms.service: msteams
+ms.subservice: teams-calling
 ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection: 

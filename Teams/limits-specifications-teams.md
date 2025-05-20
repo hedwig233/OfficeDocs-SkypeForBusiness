@@ -42,7 +42,7 @@ This article describes some of the limits, specifications, and other requirement
 |Number of members in a Private channel    |250|
 |Maximum size of distribution list, security group, or Microsoft 365 group that can be imported in to a team    |3,500|
 |Maximum number of members in a Microsoft 365 group that can be converted to a team    |10,000<sup>6</sup>     |
-|Channel conversation post size | Approximately 28 KB per post<sup>5</sup> |
+|Channel conversation post size | Approximately 40 KB per post<sup>5</sup> |
 
 <sup>1</sup> Any directory object in Microsoft Entra ID counts towards this limit. Global admins are exempt from this limit, as are apps calling Microsoft Graph using [application permissions](/graph/permissions-reference).
 
@@ -52,7 +52,7 @@ This article describes some of the limits, specifications, and other requirement
 
 <sup>4</sup> Deleted channels can be restored within 30 days. During these 30 days, a deleted channel continues to be counted towards the 1,000 channel or 30 private channel per team limit. After 30 days, a deleted channel and its content are permanently deleted and the channel no longer counts toward the per-team limit.
 
-<sup>5</sup> 28 KB is an approximate limit because it includes the message itself (text, image links, etc.), @-mentions, number of connectors, and reactions.
+<sup>5</sup> 40 KB is an approximate limit because it includes the message itself (text, image links, etc.), @-mentions, number of connectors, and reactions.
 
 <sup>6</sup> Shared channels members from outside the team count toward this limit. Further note that teams/channel mentions are blocked in teams with over 10,000 members.
 
@@ -97,7 +97,7 @@ Users who participate in conversations that are part of the chat list in Teams m
 |Number of people in a video or audio call from chat | 20                                       |
 |Number of file attachments<sup>3</sup>              |10                                        |
 |File size limitation                                |100 MB                                    |
-|Chat size                                           | Approximately 28 KB per post<sup>4</sup> |
+|Chat size                                           | Approximately 40 KB per post<sup>4</sup> |
 
 <sup>1</sup> If you have more than 20 people in a chat, the following chat features are turned off: Outlook automatic replies and Teams status messages; typing indicator; video and audio calling; sharing; read receipts. The "Set Delivery Options" button (!) is also removed when private group chats contain more than 20 members.
 
@@ -105,7 +105,7 @@ Users who participate in conversations that are part of the chat list in Teams m
 
 <sup>3</sup> If the number of attachments exceeds this limit, you see an error message.
 
-<sup>4</sup> 28 KB is an approximate limit because it includes the message itself (text, image links, etc.), @-mentions, and reactions.
+<sup>4</sup> 40 KB is an approximate limit because it includes the message itself (text, image links, etc.), @-mentions, and reactions.
 
 ### Emailing a channel
 

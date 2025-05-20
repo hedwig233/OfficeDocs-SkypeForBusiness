@@ -95,6 +95,7 @@ The following minimum versions are necessary to support the new Teams client:
 - Remote Desktop Client for Windows 1.2.2606
 - Remote Desktop Client for Mac 10.7.7
 - Windows 365 app for Windows via the Microsoft Store
+- Web browsers do not support Microsoft Teams optimization
 
 In addition, you must deploy the following registry key on the virtual desktop for the new Teams client to be optimized:
 
@@ -642,8 +643,9 @@ Learn more: [Manage accounts and organizations in Microsoft Teams](https://suppo
   - After sealing the golden image and deploying it at scale (with provisioning tools like Citrix MCS/PVS or VMware Instant-Clones), users log in to the virtual machines and click on the new Teams icon, but aren't able to launch the app. The issue is caused by a failed registration of the MSIX package at the user level with different profile management software (FSLogix before 2210 HotFix 4, Citrix CPM 2308 or 2311 **but not on 2402**, Ivanti UEM, and so on), even though the staging of the package was successful (the OS stored the package’s contents on the disk in the %ProgramFiles%\WindowsApps directory). This issue can be confirmed by running Get-AppxPackage -name MsTeams for the affected users. Running this code returns an empty output.
   - If Get-AppxPackage -name MsTeams -allusers is now run from an elevated powershell command window, the output shows that Teams is registered (see line PackageFullName) and the Status is **OK**.
   - This issue is fixed in FSLogix 2210 HotFix 4.
-- Teams meetings can't be launched when selecting a link from Outlook. There's an authentication prompt (Access to '{tenant}' tenant is denied) when users attempt to join an **external** meeting. This is fixed on New Teams 24091.214.2846.1452.
-- The PowerShell window shows after New Teams is provisioned. If the virtual machine's OS has the right KB fixes (see [Deploy the new Microsoft Teams client](#deploy-the-new-microsoft-teams-client), the second bullet in the Notes section), then Admins can delete this registry key and the Powershell window won't show anymore:
+- When using Azure Virtual Desktops or Windows 365, and the MAC Remote Desktop Client or Windows app, Microsoft Teams UI doesn't enumerate all the peripherals connected to the device. Instead, only the device selected at the macOS-level is shown in the Devices' drop-down menu of Microsoft Teams. The peripheral is labeled. An example of this labeling is "MAC device name" + "Speakers".
+- Teams meetings can't be launched when selecting a link from Outlook. There's an authentication prompt (Access to '{tenant}' tenant is denied) when users attempt to join an **external** meeting. This is fixed in new Teams 24091.214.2846.1452.
+- The PowerShell window shows after new Teams is provisioned. If the virtual machine's OS has the right KB fixes (see [Deploy the new Microsoft Teams client](#deploy-the-new-microsoft-teams-client), the second bullet in the Notes section), then admins can delete this registry key and the Powershell window won't show anymore:
 
  ```powershell
  Location: "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run"

@@ -288,10 +288,12 @@ For information about the latest Teams app releases, see [What's new in Microsof
 
 #### Crestron
 
-| Device model | Latest Firmware version | Minimum Firmware version required | Teams client | Company Portal | Admin Agent | Release date |
-|:-------------------|:----------------------------|:---------------------------------------------|:-------------------------------|:-------------------------------|:--------------------------------|:--------------------------------|
-| Crestron AIO Video Bar 70 | `1.240912.1415` | N/A | `1449/1.0.96.2024080804 ` | `5.0.6152.0` | `1.0.0.202402202353.product`| November 11, 2024 |
-| Crestron Touch Panel TS-1070 | `2.005.1054.001` | N/A | `1449/1.0.96.2024080804 ` | `5.0.6152.0` | `1.0.0.202402202353.product`| November 11, 2024 |
+| Device model | Latest Firmware version | Minimum Firmware version required | Teams client | Company Portal | Microsoft Intune | Authenticator | Admin Agent | Release date |
+|:-------------------|:----------------------------|:--------------------------------------------|:-------------------------------|:-------------------------------|:--------------------------------|:--------------------------------|:--------------------------------|:--------------------------------|
+| Crestron AIO Video Bar 70 | `1.250401.1604 (AOSP)` | N/A | `1449/1.0.96.2025020302`| `N/A` |`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.product (733)` | April 30, 2025 |
+| Crestron Touch Panel TS-1070 | `2.005.1110 (AOSP)` | N/A | `1449/1.0.96.2025020302`| `N/A` |`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.product (733)` | April 30, 2025 |
+| Crestron AIO Video Bar 70 | `1.240912.1415` | N/A | `1449/1.0.96.2024080804 ` | `5.0.6152.0` |`N/A` | `N/A` | `1.0.0.202402202353.product`| November 11, 2024 |
+| Crestron Touch Panel TS-1070 | `2.005.1054.001` | N/A | `1449/1.0.96.2024080804 ` | `5.0.6152.0` |`N/A` | `N/A` | `1.0.0.202402202353.product`| November 11, 2024 |
 
 #### DTEN
 
@@ -589,6 +591,9 @@ For information about the latest Teams app releases, see [What's new in Microsof
 #### Yealink
 | Device model | Latest Firmware version | Minimum Firmware version required | Teams client | Company Portal | Microsoft Intune | Authenticator | Admin Agent | Release date |
 |:-------------------|:----------------------------|:--------------------------------------------|:-------------------------------|:-------------------------------|:--------------------------------|:--------------------------------|:--------------------------------|:--------------------------------|
+| Yealink DeskVisionA24 | `156.15.0.45 (AOSP)` | N/A | `1449/1.0.96.2025031102`| `N/A` |`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)` | April 30, 2025 |
+| Yealink MeetingBar A40 | `289.320.0.60 (MDEP)` | N/A | `1449/1.0.96.2024091202`| `N/A` |`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.product (733)` | April 30, 2025 |
+| Yealink CTP25 | `311.320.0.55 (MDEP)` | N/A | `1449/1.0.96.2024091202`| `N/A` |`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.product (733)` | April 30, 2025 |
 | Yealink MeetingBar A10 | `278.320.0.58 (AOSP)` | N/A | `1449/1.0.96.2024091202`| `N/A` |`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.product (733)` | February 19, 2025 |
 | Yealink MeetingBar A20 | `133.320.0.65 (AOSP)` | N/A | `1449/1.0.96.2024091202`| `N/A` |`24.09.1`|`6.2410.7268`|  `1.0.0.202407050618.product (733)` | February 19, 2025 |
 | Yealink MeetingBar A30 | `133.320.0.65 (AOSP)` | N/A | `1449/1.0.96.2024091202`| `N/A` |`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.product (733)` | February 19, 2025 |
@@ -709,6 +714,13 @@ For information about the latest Teams app releases, see [What's new in Microsof
 
 | Device model | Latest Firmware version | Minimum Firmware version required | Teams client | Company Portal | Admin Agent | Release date | Cloud |
 |:-------------------|:----------------------------|:---------------------------------------------|:-------------------------------|:-------------------------------|:--------------------------------|:--------------------------------|:---------------------------------|
+| Neat Pad touch console | `NFA1.20241113.0515`  | N/A | `1449/1.0.96.2024101004`| `5.0.6152.0` | `1.0.0.202407050618.product`| April 29, 2025| GCCH |
+| Neat Bar | `NFB1.20241113.0013` | N/A | `1449/1.0.96.2024101004`| `5.0.6152.0` | `1.0.0.202407050618.product`| April 29, 2025| GCCH |
+| Neat Board | `NFC1.20241113.0013` |  N/A | `1449/1.0.96.2024101004`| `5.0.6152.0` | `1.0.0.202407050618.product`| April 29, 2025| GCCH |
+| Neat Bar Pro| `NFD1.20241113.0013` | N/A | `1449/1.0.96.2024101004`| `5.0.6152.0` | `1.0.0.202407050618.product`| April 29, 2025| GCCH |
+| Neat Bar Gen2 | `NFE1.20241113.0013` | N/A | `1449/1.0.96.2024101004`| `5.0.6152.0` | `1.0.0.202407050618.product`| April 29, 2025| GCCH |
+| Neat Board 50 | `NFH1.20241113.0013` |  N/A | `1449/1.0.96.2024101004`| `5.0.6152.0` | `1.0.0.202407050618.product`| April 29, 2025| GCCH |
+| Neat Board Pro 65 | `NFK1.20241113.0013` | N/A | `1449/1.0.96.2024101004` | `5.0.6152.0` | `1.0.0.202407050618.product`| April 29, 2025| GCCH |
 | Neat Bar Gen2 | `NFE1.20240620.1740` | N/A | `1449/1.0.96.2024061103`| `5.0.6061.0` | `1.0.0.202402202353.product`| October 7, 2024| GCCH |
 | Neat Bar | `NFB1.20240620.0015` | N/A | `1449/1.0.96.2024061103`| `5.0.6061.0` | `1.0.0.202402202353.product`| October 7, 2024| GCCH |
 | Neat Bar Pro| `NFD1.20240620.1740` | N/A | `1449/1.0.96.2024061103`| `5.0.6061.0` | `1.0.0.202402202353.product`| October 7, 2024| GCCH |

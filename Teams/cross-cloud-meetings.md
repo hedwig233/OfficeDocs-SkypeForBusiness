@@ -6,7 +6,7 @@ manager: jtremper
 ms.topic: how-to
 ms.service: msteams
 audience: admin
-ms.custom: 
+ms.custom: guest-access-external-collab
 ms.collection: 
   - Teams_ITAdmin_GuestAccess
   - M365-collaboration

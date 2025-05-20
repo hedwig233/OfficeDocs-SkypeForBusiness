@@ -49,6 +49,8 @@ To set up and use Bookable Desks in your organization, you must perform these ta
 
 - Ensure that your users have access to the new version of Microsoft Teams desktop app on Windows or Mac.
 
+- If you're planning to use individual desks, verify that your users have a Teams Premium license. Individual desk booking is a Teams Premium feature.
+
 ## Step 2 - Create Desk Pool or Individual Desk Accounts
 
 Desk pool accounts, known as **'workspaces'** in Exchange, are slightly different from room accounts. The capacity of a desk pool represents the number of seats in that pool and is set by the admin. The pool can be reserved by multiple users at the same time until all seats (the capacity) are taken. For example, the capacity on a desk pool is set to 2. User A and User B are both able to reserve it from 8am to 5pm, and the remaining capacity will be 0. This means that a third user won't be able to reserve it between 8am and 5pm.
@@ -71,7 +73,7 @@ You have the option to [enable the automatic work location update policy](/power
 
 ## Step 5 - Test the end user experience
 
-Wait 24 hours after associating to test this experience. After that point, ensure that you're signed into Teams on a Windows or Mac laptop. Upon plugging the laptop into a peripheral you associated to a desk pool or individual desk account and assuming there is availability to book, you should receive an activity feed notification that 'The [space or desk] is reserved and ready for you' along with a booking in your calendar. You can also reserve the desk for a future time slot. To learn more on the end user experience, see [First things to know about bookable desks in Microsoft Teams](https://support.microsoft.com/office/first-things-to-know-about-bookable-desks-in-microsoft-teams-5d10c217-1205-48a1-a883-ff4533f4ae71?preview=true).
+Wait 24 hours after associating to test this experience. After that point, ensure that you're signed into Teams on a Windows or Mac laptop. Upon plugging the laptop into a peripheral you associated to a desk pool or individual desk account and assuming there's availability to book, you should receive an activity feed notification that 'The [space or desk] is reserved and ready for you' along with a booking in your calendar. You can also reserve the desk for a future time slot. To learn more on the end user experience, see [First things to know about bookable desks in Microsoft Teams](https://support.microsoft.com/office/first-things-to-know-about-bookable-desks-in-microsoft-teams-5d10c217-1205-48a1-a883-ff4533f4ae71?preview=true).
 
 ## Step 6 - Review data in usage reports 
 
@@ -101,7 +103,7 @@ Below the top metrics, there's a table that provides a granular breakdown of eac
 
 ### Turning off automatic discovery and usage data collection in the Teams client 
 
-Bookable desks in Microsoft Teams use peripheral data crowdsourced from the Teams desktop client running on the users' laptops to discover peripherals as well as understand when those desk pools or individual desks they are associated to are used. No personally identifiable data is collected, but should you feel this data collection is inappropriate for your tenant or a group of users in your tenant, you may use the following PowerShell cmdlets to configure the policy appropriately. Please note that for government clouds, this policy is off by default. 
+Bookable desks in Microsoft Teams use peripheral data crowdsourced from the Teams desktop client running on the users' laptops to discover peripherals as well as understand when those desk pools or individual desks they're associated to are used. No personally identifiable data is collected, but should you feel this data collection is inappropriate for your tenant or a group of users in your tenant, you may use the following PowerShell cmdlets to configure the policy appropriately. Please note that for government clouds, this policy is off by default. 
 
 First, ensure that your Microsoft Teams module is on version 6.5.0 or higher. To confirm the version, please run the following:
 
@@ -159,6 +161,10 @@ The inventory management permission in Teams Rooms Pro Management portal allows 
 
 **Answer**: No, the bookable desk experience is only available on the new Teams client. To download and switch to the latest Teams client see, [New Microsoft Teams](https://adoption.microsoft.com/new-microsoft-teams/).
 
+**Question: Is the bookable desks feature available in VDI?**
+
+**Answer:** Yes, this feature set is supported in the [New VDI solution for Teams](/MicrosoftTeams/vdi-2).  
+
 **Question: Does Bookable** **desks work with Microsoft Places?**
 
 **Answer**: Yes, it does! If a user is automatically reserved in a desk pool or at an individual desk, the booking will also appear as the user's desk booking for the day in Places. If a user books a seat in a desk pool or individual desk in advance through Places, upon plug-in to a bookable desk, the user sees a confirmation message that they're all set for their reservation.
@@ -169,7 +175,7 @@ The inventory management permission in Teams Rooms Pro Management portal allows 
 
 **Question: Is there another way I can associate my devices other than the PowerShell script?**
 
-**Answer**: Yes, there is! You can also associate the device manually through Pro Management portal. Navigate to **Planning > Inventory > Devices >** select on an unassociated device (one with a 'Needs action' tag) > select on 'Add device to a room or desk' > search for the desired desk pool you'd like to assign the device to. To make it easier to discover devices, they are automatically discovered using your users' Teams app. Once five unique users have plugged into a device on a desk, it will automatically surface in the **Devices** tab for association.
+**Answer**: Yes, there is! You can also associate the device manually through Pro Management portal. Navigate to **Planning > Inventory > Devices >** select on an unassociated device (one with a 'Needs action' tag) > select on 'Add device to a room or desk' > search for the desired desk pool you'd like to assign the device to. To make it easier to discover devices, they're automatically discovered using your users' Teams app. Once five unique users have plugged into a device on a desk, it will automatically surface in the **Devices** tab for association.
 
 **Question: What do I need to access usage reports?**
 

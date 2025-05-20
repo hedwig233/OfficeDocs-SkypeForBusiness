@@ -1,13 +1,14 @@
 ---
 title: "What is Teams Phone"
 ms.reviewer: roykuntz
-ms.date: 03/07/2024
+ms.date: 05/01/2025
 author: sfrancis206
 ms.author: scottfrancis
 manager: pamgreen
 ms.topic: concept-article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
+ms.subservice: teams-calling
 search.appverid: MET150
 ms.collection: 
   - M365-voice

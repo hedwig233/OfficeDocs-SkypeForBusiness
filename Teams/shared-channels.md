@@ -198,6 +198,9 @@ For information about how to prepare your app for shared channels, see [Microsof
 
 The following apps are supported for use in shared channels.
 
+> [!NOTE]
+> Several of these apps are not available in DOD and GCCH environments.
+
 - Activity
 - Adobe Acrobat Sign
 - Asana

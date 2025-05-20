@@ -108,7 +108,8 @@ Compliance recording isn't supported for:
 
 **Large Meetings**
 
-The Compliance Recording platform is optimized for meetings, however performance may be impacted during meetings with over 250 users in paired bot mode. We're actively working on improvements in a future update to enhance the experience.
+The Compliance Recording platform is optimized for meetings. However, performance might be impacted during meetings with over 250 users in paired bot mode. We're actively working on improvements in a future update to enhance the experience.
+For extra-large meetings with over 250 users, it's recommended to use town halls as the meeting type.
 Please contact your recording partner for more information.
 
 **Call queues**
@@ -119,7 +120,7 @@ Inbound call queue calls are recorded where users have an assigned compliance re
 
 To be eligible for compliance recording, a user account must be equipped with any one of the following licenses:
 
-- Microsoft 365 A3/A5/E3/E5/Business Premium
+- Microsoft 365 A3/A5/E3/E5/G3/G5/Business Premium/Business Standard
 - Office 365 A3/A5/E3/E5
 - Microsoft Teams Room (Pro or Basic) license
 - Teams Shared Device license

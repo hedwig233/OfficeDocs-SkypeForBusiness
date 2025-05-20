@@ -4,7 +4,7 @@ author: mstonysmith
 ms.author: tonysmit
 manager: pamgreen
 ms.reviewer: eviegrimshaw
-ms.date: 04/24/2025
+ms.date: 05/05/2025
 ms.topic: release-notes
 ms.service: msteams
 ms.subservice: itpro-devices
@@ -224,6 +224,17 @@ To add a mobile system OS scanner:
 
 ## [Teams phones](#tab/phones)
 
+## May 5, 2025
+
+**Applies to:** *Teams app version: 1449/1.0.94.2025087003 (Poly, Yealink and Audiocodes)*
+
+> [!IMPORTANT]
+> Starting in June 2025, Teams applications that are older than five (5) months will no longer work be able to connect to the service. Please refer to the Message Center Post, MC969451 for more details.
+
+- Bug fixes for caller name resolution in certain scenarios, improvements for Multi-Factor Authentication using Device Code Flow (DCF) wherein user account name can be used to sign-in. 
+
+- UI fixes for end call screen. Users will see a toast notification instead of a full screen view when a call ends. 
+
 ## March 28, 2025
 
 **Applies to:** *Teams app version: 1449/1.0.94.2025084203 (Poly, Yealink and Audiocodes)*
@@ -233,6 +244,8 @@ To add a mobile system OS scanner:
 
 > [!NOTE]
 > This update introduces a new versioning format, moving away from using dates. Going forward, this format will be used **1449/1.0.94.*year of release.internal codes***
+
+- This app is available for government clouds (GCCH and DoD).
 
 - Line keys are now available on touch phone devices. They will appear as an app on the home screen alongside other apps such as Calls, People, Calendar, and more. Users can assign speed dials by long pressing. For assigned contacts, users can manage and remove assignments by long pressing as well. Once assigned, outgoing calls can be placed to speed dials by pressing the line key. Additionally, the line key app can now be pinned, making it the default view on the home screen.
 

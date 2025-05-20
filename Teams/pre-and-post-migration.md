@@ -49,16 +49,16 @@ If you have multiple permission policies, follow these steps to get the permissi
 1. Go to **Teams admin center** > **Manage apps** > **Permission policies**.
 1. Open each permission policy and note which apps are allowed or blocked.
 
-Steps to get the permission policies list using PS cmdlet:
+Steps to get the permission policies list using PowerShell commands:
 
 1. Run the PowerShell command: `Get-CsTeamsAppPermissionPolicy(/powershell/module/teams/get-csteamsapppermissionpolicy?view=teams-ps &preserve-view=true)`.
 
-The following result is displayed:
+    The following result is displayed:
     :::image type="content" source="media/step2–interpret-results.png" alt-text="Image showing interpreting results.":::
 
 #### Retrieve allowed apps in each permission policy
 
-To retrieve allowed apps in each permission policy using PowerShell cmdlet:
+To retrieve allowed apps in each permission policy using PowerShell commands:
 1. Not all default apps are displayed in the response. To view the complete list, assign the result to a variable.
     For example: `$msftApps = Get-CsTeamsAppPermissionPolicy -Identity "Global" | Select-Object -ExpandProperty DefaultCatalogApps $msftApps.id`
 
@@ -158,59 +158,60 @@ After migration customers can validate against the pre-migration posture using t
 
 1. **Assign all apps to a distribution list**: To assign all apps to the distribution list DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins@man-es.com, you can use the `Update-M365TeamsApp` PowerShell command. Here is an example to assign all apps together:
 
- `$apps = Get-AllM365TeamsApps
-  foreach ($app in $apps) {
-    Update-M365TeamsApp -Id $app.Id -AppAssignmentType UsersAndGroups -Groups "DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins@man-es.com"
-  }`
+   `$apps = Get-AllM365TeamsApps
+      foreach ($app in $apps) {
+      Update-M365TeamsApp -Id $app.Id -AppAssignmentType UsersAndGroups -Groups "DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins@man-es.com"
+    }`
 
 1. **Modify availability of specific apps to everyone**: To modify the availability of specific apps to everyone, you can use the `Update-M365TeamsApp` PowerShell command with the `AppAssignmentType` parameter set to `Everyone`.
 
- For example:
- `$appIds = @("appId1", "appId2", "appId3", ...) # List of 53 app IDs
-  foreach ($appId in $appIds) {
-    Update-M365TeamsApp -Id $appId -AppAssignmentType Everyone
-  }`
+    For example:
+    `$appIds = @("appId1", "appId2", "appId3", ...) # List of 53 app IDs
+     foreach ($appId in $appIds) {
+     Update-M365TeamsApp -Id $appId -AppAssignmentType Everyone
+     }`
 
-1. **Allow Microsoft apps to multiple distribution lists**: To allow all Microsoft apps to the distribution lists DTDEAUG_MSTeamsAppPolicy_ITTestMSPVA@man-es.com and DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins@man-es.com, you can use the `Update-M365TeamsApp` cmdlet.
+1. **Allow Microsoft apps to multiple distribution lists**: To allow all Microsoft apps to the distribution lists DTDEAUG_MSTeamsAppPolicy_ITTestMSPVA@man-es.com and DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins@man-es.com, you can use the `Update-M365TeamsApp` command.
 
- For example:
- `$msApps = Get-AllM365TeamsApps | Where-Object { $_.Publisher -eq "Microsoft" }
-  foreach ($app in $msApps) {
+    For example:
+    `$msApps = Get-AllM365TeamsApps | Where-Object { $_.Publisher -eq "Microsoft" }
+    foreach ($app in $msApps) {
     Update-M365TeamsApp -Id $app.Id -AppAssignmentType UsersAndGroups -Groups "DTDEAUG_MSTeamsAppPolicy_ITTestMSPVA@man-es.com","DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins@man-es.com"
-  }`
+    }`
 
-Here's an example of the `list.csv` file:
-AppId,DistributionList
-appId1,DTDEAUG_MSTeamsAppPolicy_Group1@man-es.com
-appId2,DTDEAUG_MSTeamsAppPolicy_Group2@man-es.com
-appId3,DTDEAUG_MSTeamsAppPolicy_Group3@man-es.com
-...
+    Here's an example of the `list.csv` file:
+    `AppId,DistributionList
+    appId1,DTDEAUG_MSTeamsAppPolicy_Group1@man-es.com
+    appId2,DTDEAUG_MSTeamsAppPolicy_Group2@man-es.com
+    appId3,DTDEAUG_MSTeamsAppPolicy_Group3@man-es.com`
+    ...
 
 The following PowerShell script can be used to read the CSV file and assign the applications to the specified distribution lists:
- `$csv = Import-Csv -Path "C:\path\to\list.csv"
-  foreach ($row in $csv) {
+    `$csv = Import-Csv -Path "C:\path\to\list.csv"
+    foreach ($row in $csv) {
     Update-M365TeamsApp -Id $row.AppId -AppAssignmentType UsersAndGroups -Groups $row.DistributionList
- }`
- This PowerShell script loops through each row in the CSV file and assign the applications to the corresponding distribution lists.
+    }`
+    This PowerShell script loops through each row in the CSV file and assign the applications to the corresponding distribution lists.
 
 The following is another example:
 
 1. Made required changes to Teams Admin Center Configuration Updates.
 1. Applied all available apps to Teams Admin Distribution Group for smooth management.  
-The following PowerShell command is used:
-`Import-Csv .\AppList1.csv | %{Update-M365TeamsApp -Id $_.AppId  -AppAssignmentType UsersAndGroups -Groups $_.GroupID -OperationType Add}`
+
+   The following PowerShell command is used:
+   `Import-Csv .\AppList1.csv | %{Update-M365TeamsApp -Id $_.AppId  -AppAssignmentType UsersAndGroups -Groups $_.GroupID -OperationType Add}`
 
 1. Assigned all Microsoft apps to a designated custom policy group to keep all Microsoft apps organized and managed under a specific policy for targeted user group.
-The following PowerShell command is used:
-`Import-Csv .\AppList2.csv | %{Update-M365TeamsApp -Id $_.AppId  -AppAssignmentType UsersAndGroups -Groups $_.GroupID -OperationType Add}`
+   The following PowerShell command is used:
+   `Import-Csv .\AppList2.csv | %{Update-M365TeamsApp -Id $_.AppId  -AppAssignmentType UsersAndGroups -Groups $_.GroupID -OperationType Add}`
 
 1. Mapped specific apps to their respective custom policy groups for making access control more effective.
-The following PowerShell command is used:
-`Import-Csv .\AppList3.csv | %{Update-M365TeamsApp -Id $_.AppId  -AppAssignmentType UsersAndGroups -Groups $_.GroupID -OperationType Add}`
+   The following PowerShell command is used:
+    `Import-Csv .\AppList3.csv | %{Update-M365TeamsApp -Id $_.AppId  -AppAssignmentType UsersAndGroups -Groups $_.GroupID -OperationType Add}`
 
 1. Update **Global Policy** to make selected apps accessible to all users across the organization.
-The following PowerShell command is used:
-`gc '.\GlobalApps.txt' | %{Update-M365TeamsApp -Id $_ -AppAssignmentType Everyone}`
+   The following PowerShell command is used:
+    `gc '.\GlobalApps.txt' | %{Update-M365TeamsApp -Id $_ -AppAssignmentType Everyone}`
 
 ## Related articles
 

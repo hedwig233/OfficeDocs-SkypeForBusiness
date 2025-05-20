@@ -158,26 +158,26 @@ After migration customers can validate against the pre-migration posture using t
 
 1. **Assign all apps to a distribution list**: To assign all apps to the distribution list DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins@man-es.com, you can use the `Update-M365TeamsApp` PowerShell command. Here is an example to assign all apps together:
 
-`$apps = Get-AllM365TeamsApps
-foreach ($app in $apps) {
+ `$apps = Get-AllM365TeamsApps
+  foreach ($app in $apps) {
     Update-M365TeamsApp -Id $app.Id -AppAssignmentType UsersAndGroups -Groups "DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins@man-es.com"
-}`
+  }`
 
 1. **Modify availability of specific apps to everyone**: To modify the availability of specific apps to everyone, you can use the `Update-M365TeamsApp` PowerShell command with the `AppAssignmentType` parameter set to `Everyone`.
 
-For example:
-`$appIds = @("appId1", "appId2", "appId3", ...) # List of 53 app IDs
-foreach ($appId in $appIds) {
+ For example:
+ `$appIds = @("appId1", "appId2", "appId3", ...) # List of 53 app IDs
+  foreach ($appId in $appIds) {
     Update-M365TeamsApp -Id $appId -AppAssignmentType Everyone
-}`
+  }`
 
 1. **Allow Microsoft apps to multiple distribution lists**: To allow all Microsoft apps to the distribution lists DTDEAUG_MSTeamsAppPolicy_ITTestMSPVA@man-es.com and DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins@man-es.com, you can use the `Update-M365TeamsApp` cmdlet.
 
-For example:
-$msApps = Get-AllM365TeamsApps | Where-Object { $_.Publisher -eq "Microsoft" }
-foreach ($app in $msApps) {
+ For example:
+ `$msApps = Get-AllM365TeamsApps | Where-Object { $_.Publisher -eq "Microsoft" }
+  foreach ($app in $msApps) {
     Update-M365TeamsApp -Id $app.Id -AppAssignmentType UsersAndGroups -Groups "DTDEAUG_MSTeamsAppPolicy_ITTestMSPVA@man-es.com","DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins@man-es.com"
-}
+  }`
 
 Here's an example of the `list.csv` file:
 AppId,DistributionList
@@ -187,11 +187,11 @@ appId3,DTDEAUG_MSTeamsAppPolicy_Group3@man-es.com
 ...
 
 The following PowerShell script can be used to read the CSV file and assign the applications to the specified distribution lists:
-`$csv = Import-Csv -Path "C:\path\to\list.csv"
-foreach ($row in $csv) {
+ `$csv = Import-Csv -Path "C:\path\to\list.csv"
+  foreach ($row in $csv) {
     Update-M365TeamsApp -Id $row.AppId -AppAssignmentType UsersAndGroups -Groups $row.DistributionList
-}`
-This PowerShell script loops through each row in the CSV file and assign the applications to the corresponding distribution lists.
+ }`
+ This PowerShell script loops through each row in the CSV file and assign the applications to the corresponding distribution lists.
 
 The following is another example:
 

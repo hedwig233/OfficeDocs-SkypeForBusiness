@@ -51,16 +51,16 @@ If you have multiple permission policies, follow these steps to get the permissi
 
 Steps to get the permission policies list using PS cmdlet:
 
-1. Run the powershell command: 'Get-CsTeamsAppPermissionPolicy(/powershell/module/teams/get-csteamsapppermissionpolicy?view=teams-ps &preserve-view=true)'.
+1. Run the PowerShell command: `Get-CsTeamsAppPermissionPolicy(/powershell/module/teams/get-csteamsapppermissionpolicy?view=teams-ps &preserve-view=true)`.
 
 The following result is displayed:
-:::image type="content" source="media/step2–interpret-results.png" alt-text="Image showing interpreting results.":::
+    :::image type="content" source="media/step2–interpret-results.png" alt-text="Image showing interpreting results.":::
 
 #### Retrieve allowed apps in each permission policy
 
 To retrieve allowed apps in each permission policy using PowerShell cmdlet:
 1. Not all default apps are displayed in the response. To view the complete list, assign the result to a variable.
-For example: '$msftApps = Get-CsTeamsAppPermissionPolicy -Identity "Global" | Select-Object -ExpandProperty DefaultCatalogApps $msftApps.id'
+    For example: `$msftApps = Get-CsTeamsAppPermissionPolicy -Identity "Global" | Select-Object -ExpandProperty DefaultCatalogApps $msftApps.id`
 
 #### Filter out blocked apps
 
@@ -79,7 +79,7 @@ You can identify users permitted for each app in the following ways:
 
 #### Get a list of users assigned to a policy in UI
 
-1. Go to Teams admin center - https://admin.teams.microsoft.com/
+1. Go to [Teams admin center](https://admin.teams.microsoft.com/).
 1. Go to **Users** > **Manage users**.
     :::image type="content" source="media/step3-manage-users-page.png" alt-text="Screenshot showing manage users page.":::
 
@@ -90,11 +90,10 @@ You can identify users permitted for each app in the following ways:
     :::image type="content" source="media/step3-manage-users-page-filter-applied.png" alt-text="Screenshot showing manage users page applied page.":::
 
 All the users assigned to the policy filtered are displayed.
-
-    :::image type="content" source="media/step3-manage-users-page-filter-result.png" alt-text="Screenshot showing manage users page filter results.":::
+ :::image type="content" source="media/step3-manage-users-page-filter-result.png" alt-text="Screenshot showing manage users page filter results.":::
 
 You can also export the users list to CSV.
-    :::image type="content" source="media/step3-manage-users-page-export-csv.png" alt-text="Screenshot showing export manage users page csv.":::
+ :::image type="content" source="media/step3-manage-users-page-export-csv.png" alt-text="Screenshot showing export manage users page csv.":::
 
 #### Identify users allowed for each app in PowerShell
 
@@ -116,12 +115,12 @@ if (-not (Test-Path -Path $basePath)) {
 `$policies = Get-CsTeamsAppPermissionPolicy | Select-Object Identity`
 
 * To loop through each policy:
-'foreach ($policy in $policies) {
+`foreach ($policy in $policies) {
     $policyName = $policy.Identity
     #Ignore 'Global' policy
     if ($policyName -eq 'Global') {
         continue
-    }'
+    }`
 
 * To remove 'TAG:' prefix if it exists:
 
@@ -151,20 +150,20 @@ After migration customers can validate against the pre-migration posture using t
 
 ## Bulk app management
 
-1. **Create distribution lists and add members**: You can use the `New-DistributionGroup` and `Add-DistributionGroupMember` cmdlets to create distribution lists and add members.
+1. **Create distribution lists and add members**: You can use the `New-DistributionGroup` and `Add-DistributionGroupMember` PowerShell commands to create distribution lists and add members.
 
-For example:
-`New-DistributionGroup -Name "DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins" -PrimarySmtpAddress "DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins@man-es.com"`
-`Add-DistributionGroupMember -Identity "DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins" -Member "user1@man-es.com"`
+    For example:
+    `New-DistributionGroup -Name "DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins" -PrimarySmtpAddress "DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins@man-es.com"`
+    `Add-DistributionGroupMember -Identity "DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins" -Member "user1@man-es.com"`
 
-1. **Assign all apps to a distribution list**: To assign all apps to the distribution list DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins@man-es.com, you can use the `Update-M365TeamsApp` cmdlet. Here is an example to assign all apps together:
+1. **Assign all apps to a distribution list**: To assign all apps to the distribution list DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins@man-es.com, you can use the `Update-M365TeamsApp` PowerShell command. Here is an example to assign all apps together:
 
 `$apps = Get-AllM365TeamsApps
 foreach ($app in $apps) {
     Update-M365TeamsApp -Id $app.Id -AppAssignmentType UsersAndGroups -Groups "DTDEAUG_MSTeamsAppPolicy_M365TeamsAdmins@man-es.com"
 }`
 
-1. **Modify availability of specific apps to everyone**: To modify the availability of specific apps to everyone, you can use the `Update-M365TeamsApp` cmdlet with the `AppAssignmentType` parameter set to `Everyone`.
+1. **Modify availability of specific apps to everyone**: To modify the availability of specific apps to everyone, you can use the `Update-M365TeamsApp` PowerShell command with the `AppAssignmentType` parameter set to `Everyone`.
 
 For example:
 `$appIds = @("appId1", "appId2", "appId3", ...) # List of 53 app IDs

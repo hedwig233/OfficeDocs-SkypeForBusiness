@@ -364,13 +364,10 @@ items:
   items:
     - name: Overview of AI in Teams
       href: copilot-ai-agents-overview.md
-    - name: Custom dictionary for Teams meetings and events
-      href: copilot-custom-dictionary.md
     - name: AI features in Teams
       items:
       - name: Intelligent recap for Teams calls and meetings
         href: intelligent-recap-calls-meetings.md
-        anchor: intelligent-recap-calls-meetings
       - name: Manage transcriptions and captions for Teams meetings
         href: meeting-transcription-captions.md
       - name: Manage voice isolation for calls and meetings
@@ -379,6 +376,8 @@ items:
         href: privacy/intelligent-recap.md
       - name: Set up AI recommendations for educators
         href: institution-settings.md
+      - name: Custom dictionary for Teams meetings and events
+        href: copilot-custom-dictionary.md
     - name: Copilot in Teams
       items:
         - name: Manage Copilot for multitenant organizations

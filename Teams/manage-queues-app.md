@@ -8,6 +8,7 @@ ms.topic: how-to
 ms.reviewer: colongma, emkirby
 audience: admin
 ms.service: msteams
+ms.subservice: teams-calling
 description: Learn how to configure the Queues app in Teams.
 f1.keywords: 
   - NOCSH

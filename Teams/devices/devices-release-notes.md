@@ -245,6 +245,8 @@ To add a mobile system OS scanner:
 > [!NOTE]
 > This update introduces a new versioning format, moving away from using dates. Going forward, this format will be used **1449/1.0.94.*year of release.internal codes***
 
+- This app is available for government clouds (GCCH and DoD).
+
 - Line keys are now available on touch phone devices. They will appear as an app on the home screen alongside other apps such as Calls, People, Calendar, and more. Users can assign speed dials by long pressing. For assigned contacts, users can manage and remove assignments by long pressing as well. Once assigned, outgoing calls can be placed to speed dials by pressing the line key. Additionally, the line key app can now be pinned, making it the default view on the home screen.
 
 > [!NOTE]

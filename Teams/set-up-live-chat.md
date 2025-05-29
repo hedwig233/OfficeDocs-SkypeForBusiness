@@ -82,7 +82,7 @@ Let your customers schedule appointments directly from your live chat widget.
 1. Select **Live chat** in the left rail **Admin** app menu.
 1. Select **Set up** on the suggestion **bookings in live chat** to begin setting up bookings in live chat.
 1. From the dropdown list, choose your existing Bookings page.
-   1. If you don’t have a shared Bookings page, select **Create new booking page**. This will launch the Microsoft Bookings app, where you can create a **shared public booking page** and then return back to the admin app. [Learn more](/microsoft-365/bookings/enter-business-information?view=o365-worldwide).
+   1. If you don’t have a shared Bookings page, select **Create new booking page**. This will launch the Microsoft Bookings app, where you can create a **shared public booking page** and then return back to the admin app. [Learn more](/microsoft-365/bookings/enter-business-information).
 1. Once you've selected a page, select **Save** to apply your changes.
 
 Bookings in live chat allows your website visitors to schedule appointments with your business through the live chat widget. Once a booking is made, it's automatically added to the assigned staff member’s calendar, and Teams updates the original live chat request with the relevant appointment details.

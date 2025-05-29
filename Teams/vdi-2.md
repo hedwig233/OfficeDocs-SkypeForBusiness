@@ -325,7 +325,7 @@ This policy is now expanded with an additional argument as the only configuratio
 |Gallery View 3x3 and 7x7          |Yes                                                             |No                            |
 |Quality of Service                |Yes                                                             |No                            |
 |Noise suppression                 |Yes                                                             |Yes (AVD)                     |
-|Voice isolation                   |Yes                                                             |No                            |
+|Voice isolation                   |No                                                              |No                            |
 |HID                               |Yes                                                             |Yes (AVD and Omnissa)         |
 |Presenter mode                    |Yes                                                             |No                            |
 |Teams Premium                     |Check the Teams Premium page                                    |Check the Teams Premium page  |

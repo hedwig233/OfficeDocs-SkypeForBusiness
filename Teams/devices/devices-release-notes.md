@@ -224,6 +224,24 @@ To add a mobile system OS scanner:
 
 ## [Teams phones](#tab/phones)
 
+## May 26, 2025
+
+**Applies to:** *Teams app version: 1449/1.0.94.2025165302 (Poly, Yealink and Audiocodes)*
+
+- Copilot-generated summaries for call transfers: This feature provides agents with a copilot-generated summary of the call before transferring it. The summary includes key details such as caller information, call reason, prior actions, and next steps. Supports both consult and blind transfers, ensuring effective communication and improved efficiency. *Pre-requisite:* This feature requires an additional license when available in GA: M365 Copilot. Visit here for more details: [License options for Microsoft 365 Copilot](/copilot/microsoft-365/microsoft-365-copilot-licensing). Transcription needs to be enabled in Calling policies for both transferor and transferee.  
+
+- Line Keys for Shared Line, Collaborative call delegation, Call queues and Call transfers: Line keys are now available for shared lines on Teams certified phone devices. Users can assign shared lines to a line key and view the boss/delegates and members of the group along with their presence. Delegates can pick up calls on behalf of the boss or group members by pressing the line key and join active calls. This is also supported for collaborative call delegation groups. Users can also now assign call queues to a line key and monitor their status if the call queue has an active ongoing call or is available. Users can pick up calls on the call queue by pressing the line key. Additionally, users can assign the transfer action to the line key, enabling them to transfer active calls to specific contacts by simply pressing that line key. This will also be supported on sidecars now, in addition to automatic syncing of speed dials, groups and shared line delegates users can now explicitly assign line keys. 
+
+- External Contacts Management: This feature allows users to add and edit external contacts using the lightweight People app on Teams phone devices. Users can manage and interact with contacts outside of their organization.
+
+- App also includes multiple bug fixes and improvements. Bug fixes impacting user experience are:
+
+  - Fixed an issue where the count of enabled Call Queues was not displaying on the Queues App
+  
+  - Fixed an issue where the delegate of a selected boss was not appearing under the Delegates tab
+  
+  - Addressed a UI issue where the Search and Dial Pad icons appeared too small under the Speed Dial, Transfer, and Consult Transfer sections of the Assign Line Key page
+  
 ## May 5, 2025
 
 **Applies to:** *Teams app version: 1449/1.0.94.2025087003 (Poly, Yealink and Audiocodes)*

@@ -5496,6 +5496,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "Teams/hide-attendee-names.md",
+      "redirect_url": "/MicrosoftTeams/overview-meetings-webinars-town-halls",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "Teams/new-teams-known-issues.md",
       "redirect_url": "/microsoftteams/teams-client-update",
       "redirect_document_id": true

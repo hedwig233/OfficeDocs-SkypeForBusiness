@@ -65,7 +65,7 @@ Once someone with a Microsoft 365 Copilot license selects the Copilot button dur
 
 With Copilot for Teams calls, you can turn off Copilot for calls for users in your organization. All call artifacts are removed immediately after the call ends. This is useful if you want to limit the use of Copilot in Teams calls for compliance or regulatory reasons. For example, if your organization is in a regulated industry such as finance or healthcare, you may want to turn off Copilot for Teams calls for users in your organization because of transcript retention and eDiscovery implications. You can also turn off the ability for users to record or transcribe calls, but still allow them to use Copilot for other purposes.
 
-For information about using Copilot only during Teams *meetings*, see [Manage Microsoft 365 Copilot in Teams meetings and events](copilot-teams-transcription.md).
+This policy is only available for Teams *calls*. It’s not available for Teams meetings or events. For more information about Copilot in Teams meetings and events, see [Manage Microsoft 365 Copilot in Teams meetings and events](copilot-teams-transcription.md).
 
 ## Prerequisites
 
@@ -74,7 +74,7 @@ Copilot only mode is automatically available to users in your organization with 
 ### Licensing
 
 - You must assign your users a Microsoft 365 subscription that includes Teams or a Microsoft 365 (no Teams) subscription with a separate Teams license.
-- You must assign a Microsoft 365 Copilot license to your users.
+- For 1:1 Teams calls, you must assign an add-on Microsoft 365 Copilot license for your intended users. To learn more about the Microsoft 365 Copilot license, see [Microsoft 365 Copilot documentation](/microsoft-365-copilot).
 - For Public Switched Telephone Network (PSTN) calls, you must also assign a Teams Phone license and have a calling plan for your users. For information on Teams Phone licensing, see [Microsoft Teams add-on licenses](/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing). To learn more about PSTN connectivity options, see [PSTN connectivity options](pstn-connectivity.md).
 
 ### Policies
@@ -82,6 +82,12 @@ Copilot only mode is automatically available to users in your organization with 
 #### Transcription
 
 To allow your users to use Copilot with Teams calls *after* a PSTN or 1:1 peer-to-peer Voice over Internet Protocol (VoIP) call, you must turn on transcription via Teams calling policy. To turn on transcription, see [Configure call recording, transcription, and captions in Teams](call-recording-transcription-captions.md#enable-call-transcription). Otherwise, depending on your Copilot setting, Copilot is only available during the call.
+
+> [!IMPORTANT]
+> Microsoft 365 Copilot in Teams calls isn’t available in end-to-end encrypted Teams calls. For more information on end-to-end encryption, see [Use end-to-end encryption for one-to-one Microsoft Teams calls](teams-end-to-end-encryption.md).
+
+> [!NOTE]
+> Microsoft 365 Copilot in Teams isn’t currently available for GCC High and DoD.
 
 ## Configure Copilot for Teams calls
 

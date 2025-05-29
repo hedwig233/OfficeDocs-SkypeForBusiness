@@ -79,7 +79,7 @@ The following providers offer contact center solutions that are integrated into 
 | `IPDynamics` | https://www.ipdynamics.de/ | |![Image of a checkmark for yes](/office/media/icons/success-teams.png) | |
 | `Landis Technologies` | https://landistechnologies.com/microsoft-teams-contact-center/ | |![Image of a checkmark for yes](/office/media/icons/success-teams.png) | |
 | `Luware` | https://luware.com/ | |![Image of a checkmark for yes](/office/media/icons/success-teams.png) | |
-| `Mida Solutions` | https://www.midasolutions.com/c3-cloud-contact-center-for-teams/ | | |![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
+| `NUSO` | https://lp.nuso.cloud/connect-for-business-ms/  | |![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | `Netcall` | https://www.netcall.com/platform/contact-centre/ | | |![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | `NICE inContact` | https://www.niceincontact.com/microsoft-teams | | |![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | `Puzzel` | https://www.puzzel.com/ | | |![Image of a checkmark for yes](/office/media/icons/success-teams.png) |

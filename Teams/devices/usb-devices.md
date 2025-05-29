@@ -83,6 +83,7 @@ If you're a manufacturer and want to join the certification program, see [How to
 |Yealink              |WH63 E2 DECT Headset                                       |2/14/2025       |Certified for Microsoft Teams                           |
 |Lenovo               |FHD Webcam                                                 |2/13/2025       |Certified for Microsoft Teams                           |
 |EPOS                 |ADAPT E1 TWS Earbuds                                       |1/9/2025        |Certified for Microsoft Teams                           |
+|Incase               |Modern USB/USB-C Headset                                   |12/13/2024      |Certified for Microsoft Teams                           |
 |Yealink              |WH64 Pro Headset                                           |12/12/2024      |Certified for Microsoft Teams                           |
 |Lenovo               |4k Pro Webcam                                              |12/6/2024       |Certified for Microsoft Teams                           |
 |Lenovo               |QHD Webcam                                                 |12/6/2024       |Certified for Microsoft Teams                           | 

@@ -68,13 +68,14 @@ If you're a manufacturer and want to join the certification program, see [How to
 
 ## [Certified USB devices](#tab/usb)
 
-*Table Updated April 2025*
+*Table Updated May 2025*
 
 > [!NOTE]
 > The date format is MM/DD/YYYY.
 
 | **Manufacturer**      | **Model**                                                    | **Qualified**       | **Certified Program**                                      |
 |:--------------------|:----------------------------------------------------------|:---------------|:-------------------------------------------------------|
+|Yealink              |UH46 Mono/Dual Headset                                     |5/23/2025       |Certified for Microsoft Teams                           |
 |Shure                |AONIC 50 GEN 2 UC Headset                                  |3/28/2025       |Certified for Microsoft Teams                           |
 |Shure                |AONIC 50 GEN 2 UC Headset and MV7+ Microphone              |3/28/2025       |Certified for Microsoft Teams                           |
 |Logitech             |Brio 4k                                                    |3/25/2025       |Certified for Microsoft Teams                           |

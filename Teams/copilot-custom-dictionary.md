@@ -143,7 +143,8 @@ To optimize your custom dictionary, follow these best practices:
 
 ## Data safety
 
-Custom dictionary data is used solely within your organization for meetings. Nobody else accesses the data and it isn't included in any AI model training.
+- Custom dictionary should be restricted to tenant-specific terms that are relevant to the tenant's needs and must not contain any confidential, sensitive, or personal information.
+- Custom dictionary data is used solely within your organization for meetings. Nobody else accesses the data and it isn't included in any AI model training.
 
 ## Supported scenarios
 

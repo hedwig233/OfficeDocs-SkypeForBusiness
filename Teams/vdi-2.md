@@ -424,7 +424,7 @@ Customers with Thin Clients with [Unified Write Filters](/windows/configuration/
   - Stopping and resharing the window should resolve the issue.
   - This issue is resolved in new Teams 24335.206.X.X or higher versions.
 - If you're on a video call and you open the Start menu on the virtual machine, a blank screen shows in the Teams meeting window instead of the video feed.
-- In CQD, VdiMode (x2xx) represents both VDI SlimCore Optimized and Unoptimized Fallback, which may misattribute poor call quality. See [CQD Section for more details](microsoftteams/vdi-2#call-quality-dashboard-in-vdi)
+- In CQD, VdiMode (x2xx) represents both VDI SlimCore Optimized and Unoptimized Fallback, which may misattribute poor call quality. See [CQD Section for more details](/microsoftteams/vdi-2#call-quality-dashboard-in-vdi)
   
 ## Cross Cloud Collaboration
  

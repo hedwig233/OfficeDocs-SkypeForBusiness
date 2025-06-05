@@ -463,7 +463,25 @@ This error is caused by GPOs affecting Windows Installer, and includes [**Disabl
 
 #### Deployment method for non-persistent environments where Teams auto-update is disabled
 
-You can install the MSI that is located in the new Teams installation directory from an Admin Command prompt using:  
+>[!Note]
+> teamsbootstrapper.exe (Product version 1.0.2508703) now supports an additional parameter that installs Teams Meeting Add In (TMA) for Outlook automatically, in a machine-wide installation fashion (i.e msiexec /ALLUSERS=1).
+>
+>-Fresh install (will provision Teams and install TMA machine-wide): teamsbootstrapper.exe -p --installTMA
+>
+>-If Teams was already provisioned and you want to install TMA only: teamsbootstrapper.exe --installTMA
+>
+>-Uninstall TMA (Outlook Classic must be closed): teamsbootstrapper.exe --uninstallTMA
+>
+>-Uninstall Teams and TMA (Outlook Classic must be closed): teamsbootstrapper.exe -x
+>
+>-If Teams is not provisioned (is not present or failed to provision), TMA will not be installed
+>
+>-Running teamsbootstrapper.exe -p or teamsbootstrapper.exe -p -o "full path to msix" alone will not install TMA machine-wide
+>
+>-Outlook Classic must be closed when trying to uninstall TMA using the bootstrapper
+
+
+If Administrators don't want to use the new --installTMA flag, they can still install the TMA MSI that is located in the new Teams installation directory from an Admin Command prompt using:  
 
 ```powershell
 

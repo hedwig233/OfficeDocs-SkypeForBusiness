@@ -152,15 +152,24 @@ Outlook mobile can only support creating Skype for Business **or** Teams meeting
 
 To learn more, see [Choose your upgrade journey from Skype for Business to Teams](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md).
 
-### Manage Outlook meeting add-in availability for users on Islands mode
+### Manage Outlook Meeting add-in availability for users on Islands mode
 
-As an admin, you can configure a Teams meeting policy setting to control which Outlook meeting add-in is used for *users who are in Islands mode*. You can specify whether users can only use the Teams Meeting add-in or both the Teams Meeting and Skype for Business Meeting add-ins to schedule meetings in Outlook. You can only apply this policy to users who are in Islands mode and have the **AllowOutlookAddIn** parameter set to **True** in their Teams meeting policy. For steps on how to set this policy, see [Meeting policy settings - General](meeting-policies-in-teams-general.md#meeting-provider-for-islands-mode).
+As an admin, you can configure a Teams meeting policy setting to control which Outlook Meeting add-in is used for *users who are in Islands mode*. You can specify whether users can only use the Teams Meeting add-in or both the Teams Meeting and Skype for Business Meeting add-ins to schedule meetings in Outlook. You can only apply this policy to users who are in Islands mode and have the **AllowOutlookAddIn** parameter set to **True** in their Teams meeting policy. For steps on how to set this policy, see [Meeting policy settings - General](meeting-policies-in-teams-general.md#meeting-provider-for-islands-mode).
 
-Determines the Outlook meeting add-in availability to users on Islands mode. With the default value of TeamsAndSfb, users see both the Skype for Business and Teams add-ins. If you set this value to Teams, the Skype for Business add-in is removed and only the Teams add-in is shown.
+Determines the Outlook Meeting add-in availability to users on Islands mode. With the default value of TeamsAndSfb, users see both the Skype for Business and Teams add-ins. If you set this value to Teams, the Skype for Business add-in is removed and only the Teams add-in is shown.
 
-You can use the **Preferred app for users to join Skype for Business meetings** to control the Outlook meeting add-in availability for users on Islands mode. To learn more, see [Configure the Skype Meetings App to work with Teams](configure-skype-meetings-app-to-work-with-teams.md). For details on managing this setting through PowerShell, see [Teams settings and policies reference](settings-policies-reference.md#audio--video).
+You can use the **Preferred app for users to join Skype for Business meetings** to control the Outlook Meeting add-in availability for users on Islands mode. To learn more, see [Configure the Skype Meetings App to work with Teams](configure-skype-meetings-app-to-work-with-teams.md). For details on managing this setting through PowerShell, see [Teams settings and policies reference](settings-policies-reference.md#audio--video).
 
 Learn more about [meetings and calling in Microsoft Teams](https://support.office.com/article/Meetings-and-calls-d92432d5-dd0f-4d17-8f69-06096b6b48a8).
+
+## Meeting options in the Meeting add-in for Outlook
+
+When scheduling meetings in Outlook, your users might see an option to set up meeting settings ahead of time. When they select **Set up**, side pane opens that displays customized meeting option suggestions for their meeting. Users can review and edit these settings before sending the meeting invite.
+
+To learn more about this experience, see [PLACEHOLDER FOR END USER DOC].
+
+> [!NOTE]
+> No policies control whether users see this option when scheduling meetings.
 
 ## Related topics
 

@@ -167,7 +167,7 @@ When scheduling meetings in Outlook, your users might see an option to set up me
 To learn more about this experience, see [PLACEHOLDER FOR END USER DOC].
 
 > [!NOTE]
-> No policies control whether users see this option when scheduling meetings.
+> No admin policies control whether users see this option when scheduling meetings.
 
 ## Related topics
 

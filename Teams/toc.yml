@@ -1748,6 +1748,9 @@ items:
                       href: rooms/enroll-a-device.md
                     - name: Resource accounts
                       href: rooms/resource-accounts.md
+                    - name: AI assistant
+                      href: ./rooms/rooms-pro-aiassistant.md
+                      displayName: Natural language, queries, Copilot
                 - name: Manage
                   items: 
                     - name: Managing your inventory

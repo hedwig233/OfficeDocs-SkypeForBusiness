@@ -1,5 +1,5 @@
 ---
-title: Admin - authentication requirements and functionality of the Teams Meeting add-in in Outlook
+title: Admin - Authentication requirements and functionality of the Teams Meeting add-in in Outlook
 ms.author: wlibebe
 author: wlibebe
 manager: pamgreen
@@ -7,8 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: msteams
 ms.subservice: meetings
-ms.reviewer: mfoland
-ms.date: 10/31/2024
+ms.reviewer: jessica.wilczek,mfoland
+ms.date: 6/6/2025
 ms.localizationpriority: medium
 search.appverid: MET150
 description: IT Admins - Learn about the requirements and policy settings for the Teams Meeting add-in in Outlook
@@ -24,15 +24,15 @@ appliesto:
   - Microsoft Teams
 ---
 
-# Admin - authentication requirements and functionality of the Teams Meeting add-in in Outlook
+# Admin - Authentication requirements and functionality of the Teams Meeting add-in in Outlook
 
 The Teams Meeting add-in lets users schedule a Teams meeting from Outlook. This add-in is available for Outlook on Windows, Mac, web, and mobile. The add-in is for scheduled meetings with specific participants, not for meetings in a channel. Your users must schedule channel meetings within Teams.
 
-This article details authentication requirements and functionality of the Teams Meeting add-in in Outlook for your users. Additionally, it provides guidance on enabling private meetings and managing policy settings for users in Island Mode.
+This article details authentication requirements and functionality of the Teams Meeting add-in in Outlook. Additionally, it provides guidance on enabling private meetings and managing policy settings for users in Island Mode.
 
-If you're having issues with the add-in, see [Resolve issues that affect the Teams Meeting add-in for classic Outlook](/MicrosoftTeams/troubleshoot/meetings/resolve-teams-meeting-add-in-issues).
+If your users are having issues with the add-in, see [Resolve issues that affect the Teams Meeting add-in for classic Outlook](/MicrosoftTeams/troubleshoot/meetings/resolve-teams-meeting-add-in-issues).
 
-For details on how your users can schedule meetings in Outlook, see [Schedule a Microsoft Teams meeting from Outlook](https://support.microsoft.com/office/schedule-a-microsoft-teams-meeting-from-outlook-883cc15c-580f-441a-92ea-0992c00a9b0f). To understand the differences between new and classic Outlook, see [Feature comparison between new Outlook and classic Outlook](https://support.microsoft.com/office/feature-comparison-between-new-outlook-and-classic-outlook-de453583-1e76-48bf-975a-2e9cd2ee16dd).
+For details on how your users can schedule meetings in Outlook, see [Schedule a Microsoft Teams meeting from Outlook](https://support.microsoft.com/office/schedule-a-microsoft-teams-meeting-from-outlook-883cc15c-580f-441a-92ea-0992c00a9b0f). To understand the differences between new and Classic Outlook, see [Feature comparison between new Outlook and classic Outlook](https://support.microsoft.com/office/feature-comparison-between-new-outlook-and-classic-outlook-de453583-1e76-48bf-975a-2e9cd2ee16dd).
 
 ## Prerequisites
 
@@ -54,10 +54,8 @@ Use the following steps to turn on these settings:
 3. Under **Meetings**, select **Meeting Policies**.
 4. Either select an existing policy or create a new one.
 5. Navigate to the **Meeting scheduling** section
-6. Toggle **Allow the Outlook Add-in** and **Allow scheduling for private meetings** to **On**.
-7. Select **Save**
-
-:::image type="content" source="media/meeting-schedule-small.png" alt-text="Screenshot of Teams meeting scheduling policies in the Teams admin center." lightbox="media/meeting-schedule-expand.png":::
+6. Toggle the **Private meeting scheduling** and **Outlook add-in** settings to **On**.
+7. Select **Save**.
 
 The Teams client installs the correct add-in by determining if users need the 32-bit or 64-bit version.
 

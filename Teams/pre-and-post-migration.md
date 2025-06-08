@@ -51,16 +51,16 @@ If you have multiple permission policies, follow these steps to get the permissi
 
 Steps to get the permission policies list using PowerShell commands:
 
-1. Run the PowerShell command: `Get-CsTeamsAppPermissionPolicy(/powershell/module/teams/get-csteamsapppermissionpolicy?view=teams-ps &preserve-view=true)`.
+1. Run the PowerShell command: `Get-CsTeamsAppPermissionPolicy`.
 
     The following result is displayed:
     :::image type="content" source="media/step2–interpret-results.png" alt-text="Image showing interpreting results.":::
 
 #### Retrieve allowed apps in each permission policy
 
-To retrieve allowed apps in each permission policy using PowerShell commands:
-1. Not all default apps are displayed in the response. To view the complete list, assign the result to a variable.
-    For example: `$msftApps = Get-CsTeamsAppPermissionPolicy -Identity "Global" | Select-Object -ExpandProperty DefaultCatalogApps $msftApps.id`
+You can retrieve allowed apps in each permission policy using PowerShell commands. But not all default apps are displayed in the response. To view the complete list, assign the result to a variable.
+
+For example: `$msftApps = Get-CsTeamsAppPermissionPolicy -Identity "Global" | Select-Object -ExpandProperty DefaultCatalogApps $msftApps.id`
 
 #### Filter out blocked apps
 

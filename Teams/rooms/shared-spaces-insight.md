@@ -17,7 +17,7 @@ ms.collection:
   - Tier1
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Provide a view of the health of your meeting rooms.
+description: Providing guidance to IT admins about the Shared Spaces Insights feature.
 f1keywords: 
 ---
 
@@ -51,7 +51,7 @@ To view the Shared Spaces insights in the Teams Pro Management portal, perform t
         1. Days of week
         1. Business hours
 
-        :::image type="content" source="media/shared-spaces-insights-page.png" alt-text="Screenshot that shows the Shared Spaces insights page." lightbox="media/shared-spaces-insights-page.png":::
+        :::image type="content" source="../media/shared-spaces-insights-page.png" alt-text="Screenshot that shows the Shared Spaces insights page." lightbox="../media/shared-spaces-insights-page.png":::
 
 ## Space Utilization Metric Definition
 
@@ -60,7 +60,7 @@ The space utilization metric is a metric derived from two inputs: calendar reser
 - Reserved and not occupied
 - Not Reserved and occupied
 
-:::image type="content" source="media/space-utilization-metric-definition.png" alt-text="Screenshot that shows the space utilization metric definition page." lightbox="media/space-utilization-metric-definition.png":::
+:::image type="content" source="../media/space-utilization-metric-definition.png" alt-text="Screenshot that shows the space utilization metric definition page." lightbox="../media/space-utilization-metric-definition.png":::
 
 The device signals from Teams Rooms that contribute to the room occupancy include:
 - Joining a Teams meeting

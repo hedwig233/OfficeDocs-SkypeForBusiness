@@ -66,3 +66,26 @@ The device signals from Teams Rooms that contribute to the room occupancy includ
 - Joining a Teams meeting
 - Making a call
 - Local HDMI ingest outside of a meeting
+
+## Feature Walkthrough
+
+### Data Visualization Description
+
+You can hover over the “i” to see a brief description of the data visualization.
+
+:::image type="content" source="../media/data-visualization.png" alt-text="Screenshot that shows the page on which you can view the description of Data Visualization." lightbox="../media/data-visualization.png":::
+
+### Global Page Filters
+
+- **Location Discovery**: This filter's pane is located on the top of the page at which it lets you filter the data for your preferred location (country, city, building, floor, and room). The floor and room options are selectable once a building is selected. The location data is pulled from the room account. If the address information in your room account isn't complete, it won't appear in the location filters. For example, if the room account only has the building information filled out and not information about country, state/province, or city, this room appears when the building is selected but not when the country, state/province, or city is selected.
+
+:::image type="content" source="../media/location-discovery.png" alt-text="Screenshot that shows the page on which can apply filters to the location-related attributes." lightbox="../media/location-discovery.png":::
+
+- **Days of the week and business hours filter**: You can customize the business hours and days to make the insights customized to your organization’s schedule. These filters apply to the whole insights page.
+
+After setting the filters based on your preference, you must select **Apply** to generate the data.
+
+- **Date range selector**: Above the filter box, there's a date range selector that allows you to customize the data displayed. The default setting for the date filter is **Last 30 days**, but you can adjust this setting to view data from the past 7 days, 30 days, 90 days, or a custom range up to 6 months. To set a custom date range, you must select **Custom range** and then specify the start and end dates using a calendar interface. After setting the desired dates, selecting **Apply** will update the graph to reflect data from the selected period.
+
+:::image type="content" source="../media/date-range-selector.png" alt-text="Screenshot that shows the page on which can apply filters to the date range to define a preferred date." lightbox="../media/date-range-selector.png":::
+

@@ -104,8 +104,8 @@ We're not accepting new nominations for certification until further notice.
 |[Enghouse Networks](https://www.enghousenetworks.com/portfolio/network-infrastructure/dialogic-session-border-controller/)|Dialogic BorderNet SBC|&#10004;|&#10004;|3.9.x|||
 |[Patton Electronics Co.](https://www.patton.com/microsoft/)|Patton SmartNode eSBC|&#10004;||3.19.x|||
 |[M5 Technologies (previously known as Media5 Corporation)](https://www.m5t.com/pages/sentinel-400-sbc-_-2023_0-2023-06-16)|Mediatrix Sentinel Series|&#10004;||DGW 48.0.2340 (Recommended DGW 48.1.2503)|||
-|[Ekinops](https://www.ekinops.com/solutions/voice-data-access/microsoft-direct-routing-sbc)|Ekinops Session Border Controller (ONeSBC)|&#10004;|&#10004;|Supported 6.9.x (Recommended 6.10.x)|||
-||Ekinops Virtual Session Border Controller (ONEvSBC)|&#10004;|&#10004;|Supported 6.9.x (Recommended 6.10.x)|||
+|[Ekinops](https://www.ekinops.com/solutions/voice-data-access/microsoft-direct-routing-sbc)|Ekinops Session Border Controller (ONeSBC)|&#10004;|&#10004;|Supported 6.12.x (Recommended 6.14.x)|||
+||Ekinops Virtual Session Border Controller (ONEvSBC)|&#10004;|&#10004;|Supported 6.12.x (Recommended 6.14.x)|||
 |[46 Labs LLC](https://46labs.atlassian.net/wiki/spaces/peeredge/pages/61603842/Microsoft+Teams+Implementation+Guide+v1.0)|Peeredge Orchestrator|&#10004;|&#10004;|1.0.6|||
 |[Frafos](https://www.frafos.com/ms-teams-abc-sbc)|ABC SBC|&#10004;||4.6|||
 |[Nuera](https://www.nuera.com/sbc-media-gateway)|GX-500 SBC|&#10004;|&#10004;|Supported 7.20A.258 (Recommended 7.40A.500)|&#10004;|&#10004;|
@@ -121,7 +121,7 @@ We're not accepting new nominations for certification until further notice.
 |[Telnyx LLC](https://telnyx.com/resources/direct-routing-overview)|Telnyx MS Teams SBC|&#10004;|&#10004;|v2024.0315.18.37.f2c7869|&#10004;||
 |[Vodia Networks Inc.](https://web.vodia.com/microsoft-teams)|Vodia PBX|&#10004;||v69.4|||
 |[Brekeke Software, Inc.](https://docs.brekeke.com/pbx/integration-with-microsoft-teams)|Brekeke PBX|&#10004;||3.17.1.5 or higher||
-|[Nextgen, Inc.](https://www.nextgen.co.jp/english/solution/carrier/border_solutions/sbc/nx-b5000.html)|NX-B5000|&#10004;|&#10004;|7.3 or higher||
+|[Nextgen, Inc.](https://www.nextgen.co.jp/english/solution/carrier/border_solutions/sbc/directrouting_for_microsoftteams.html)|NX-B5000|&#10004;|&#10004;|7.3 or higher||
 
 \* **911 service providers**
 

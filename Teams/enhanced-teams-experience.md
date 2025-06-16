@@ -61,6 +61,8 @@ Teams Premium provides more ways to safeguard and monitor users' Teams experienc
 
 - **Custom user policy packages** - Create policy packages to simplify, streamline, and help provide consistency when managing policies for groups of users across your organization.
 
+- **Detect sensitive content during screen sharing** - When sensitive content is detected in a meeting or event, both the presenter and organizer receive notifications to stop sharing. The presenter sees a **Stop sharing** button.
+
 - **Microsoft eCDN** - **This feature is only supported for town halls and view-only meetings**. Optimize network performance for video streaming within an enterprise network. Microsoft eCDN allows millions of enterprise users around the world to communicate face-to-face efficiently and reliably. Organizers with a Teams Premium license use the Microsoft eCDN by default, but you can also select one of our partner providers for these organizers.
 
 - **End-to-end encryption** - Enforced through a sensitivity label, end-to-end encryption provides increased security for meetings that require a higher level of protection.
@@ -94,6 +96,7 @@ Teams Premium provides more ways to safeguard and monitor users' Teams experienc
   | Advanced collaboration analytics |No, contact support for assistance.| [Advanced Collaboration Analytics for Microsoft Teams](advanced-collaboration-analytics.md) | No end-user control |
   | Audio quality alerts |Yes, you can add or remove users.| [Alerts for in-progress meeting audio quality issues](/MicrosoftTeams/alerts/alerts-in-progress-meeting-audio) | No end-user control |
   | Custom user policy packages |Yes| [Managing policy packages in Teams](manage-policy-packages.md) | No end-user control |
+  | Detect sensitive content during screen sharing | Yes |[Manage whether meetings in your organization can detect sensitive content during screen sharing](detect-sensitive-content.md) | [Sensitive content detection in Microsoft Teams meetings](https://support.microsoft.com/office/sensitive-content-detection-in-microsoft-teams-meetings-11f235f9-a170-4490-8bcb-703019d20a63)  |
   | End-to-end encryption (E2EE) | Yes |[Encryption for sensitive meetings](end-to-end-encrypted-meetings.md) | [Use encryption](https://support.microsoft.com/office/use-end-to-end-encryption-for-teams-meetings-a8326d15-d187-49c4-ac99-14c17dbd617c)  |
   | External domain activity report|No, contact support for assistance.| [Microsoft Teams external domain activity report](/microsoftteams/teams-analytics-and-reports/external-domain-activity-report) | No end-user control |
   | Manage what attendees see | No, contact support for assistance.| No admin control | [Manage what attendees see in Teams meetings](https://support.microsoft.com/office/manage-what-attendees-see-in-teams-meetings-19bfd690-8122-49f4-bc04-c2c5f69b4e16)|
@@ -143,7 +146,7 @@ Teams Premium provides more ways to personalize your Teams meeting experiences w
 
 - **Meeting templates** - Control meeting settings that the meeting organizer normally controls. With templates, you can create consistent meeting experiences in your organization and help enforce compliance requirements and business rules.
 
-- **Meeting themes** - Set up and create meeting themes for various business units and departments within a single tenant.
+- **Meeting themes** - Create custom organization themes to customize the visual appearance of the meeting invite, pre-join screen, and lobby. Organizers can use these themes for their meetings, webinars, and town halls.
 
 - **Real Time Messaging Protocol (RTMP)-In** - Organizers can produce their Teams meetings directly from an external hardware or software-based encoder.
 

@@ -52,6 +52,7 @@ The following table shows which features are available in meetings, webinars, an
 |[Convenience recording](meeting-recording.md)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 |[Custom backgrounds](custom-meeting-backgrounds.md)|Premium|Premium|Premium|
 |[Decorate my background](https://support.microsoft.com/office/change-your-background-in-microsoft-teams-meetings-f77a2381-443a-499d-825e-509a140f4780)|Premium|Premium|Premium|
+|[Detect sensitive content during screen sharing](detect-sensitive-content.md)|Premium|Premium|Premium|
 |[Download town hall transcripts](https://support.microsoft.com/office/manage-town-hall-recordings-in-microsoft-teams-88ac3af7-db67-4556-a202-b73a1d6c2e46)|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 |[Download webinar transcripts](https://support.microsoft.com/office/manage-webinar-recordings-in-microsoft-teams-8cf1ba61-c9d8-4628-8b5d-0dcdb8503144)|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
 |[eCDN](streaming-ecdn-enterprise-content-delivery-network.md)|For view-only meetings only.|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
@@ -71,7 +72,7 @@ The following table shows which features are available in meetings, webinars, an
 |[Lobby](who-can-bypass-meeting-lobby.md)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
 |[Manage what attendees see](https://support.microsoft.com/office/manage-what-attendees-see-in-teams-meetings-19bfd690-8122-49f4-bc04-c2c5f69b4e16)|Premium|Premium|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 |[Meeting chat](manage-meeting-chat.md)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|For organizers, co-organizers, and presenters only.|
-|[Meeting themes](meeting-themes.md)|Premium|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
+|[Meeting themes](meeting-themes.md)|Premium|Premium|Premium|
 |[Microsoft 365 Copilot in Teams meetings and events](copilot-teams-transcription.md)|Microsoft 365 Copilot|Microsoft 365 Copilot|Microsoft 365 Copilot for organizers, co-organizers, and presenters only.|
 |[Microsoft Teams Rooms (Windows) can join as a presenter](https://support.microsoft.com/office/microsoft-teams-rooms-windows-e667f40e-5aab-40c1-bd68-611fe0002ba2)<sup>2</sup> |![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 |[Microsoft Teams Rooms (Windows) can join as an attendee](https://support.microsoft.com/office/microsoft-teams-rooms-windows-e667f40e-5aab-40c1-bd68-611fe0002ba2)<sup>2</sup> |![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
@@ -99,7 +100,7 @@ The following table shows which features are available in meetings, webinars, an
 |[Streaming encoders](teams-encoder-setup.md)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 |[Town hall attendee reactions](https://support.microsoft.com/office/schedule-a-town-hall-in-microsoft-teams-d493b5cc-9f61-4dac-8027-d837dafb7a4c#bkmk_townhall_reactions)|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|Premium|
 |[Video effects](meeting-policies-audio-and-video.md)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
-|[View-only attendees](view-only-meeting-experience.md)|10,000<sup>3</sup>|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
+|[View-only attendees](view-only-meeting-experience.md)|10,000<sup>4</sup>|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
 |[VOD](manage-vod-publishing.md)|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 |[Voice isolation](voice-isolation.md)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 |[Watermarks](watermark-meeting-content-video.md)|Premium|Premium|![Image of a x for no](/office/media/icons/cancel-teams.png)|
@@ -108,12 +109,11 @@ The following table shows which features are available in meetings, webinars, an
 
 <sup>1</sup> Your users can use breakout rooms if a webinar has fewer than 300 attendees. However, if the number of attendees increases to above 300, breakout rooms aren't supported.
 
-<sup>2</sup> Only Microsoft Teams Rooms on Windows with a Pro license are officially supported to join meetings and events as a presenter or as an attendee. To allow Rooms to join as a presenter in meetings, organizers must set **Who can present** to either **Organizer or co-organizer only** or **Specific people**. To allow Rooms to join as an atteendee in townhalls, organizers must add the room during the townhall creation as an attendee. To allow Rooms to join as an atteendee in webinars, the registered attendee must send the registration link to the room.  
+<sup>2</sup> Only Microsoft Teams Rooms on Windows with a Pro license are officially supported to join meetings and events as a presenter or as an attendee. To allow Rooms to join as a presenter in meetings, organizers must set **Who can present** to either **Organizer or co-organizer only** or **Specific people**. To allow Rooms to join as an attendee in town halls, organizers must add the Room as an attendee when creating the town hall. To allow Rooms to join as an attendee in webinars, the registered attendee must send the registration link to the Room.  
 
-<sup>3</sup> The experience on Microsoft Teams Rooms on Android is not officially supported. The existent experience will change since only Teams Rooms on Android with a Pro license will be officially supported to join meetings and events as a presenter or an attendee.
+<sup>3</sup> The experience for Microsoft Teams Rooms on Android isn't officially supported. Soon, only Teams Rooms on Androids with a Pro license will be officially supported to join meetings and events as a presenter or an attendee.
 
-
-<sup>3</sup> The usual maximum is increased to 20,000 until further notice.
+<sup>4</sup> The usual maximum is increased to 20,000 until further notice.
 
 ## Capacity comparison
 
@@ -122,7 +122,7 @@ The following table details capacity for meetings, webinars, and town halls:
 |Feature|Meetings|Webinars|Town halls|
 |:------|:-------|:-------|:---------|
 |Duration|30 hours|30 hours|30 hours|
-|Recording maximum length|4 hours or 1.5 GB. When this limit is reached, the recording ends and automatically restarts.|4 hours or 1.5 GB. When this limit is reached, the recording ends and automatically restarts.|4 hours or 1.5 GB. When this limit is reached, the recording ends and automatically restarts.|
+|Recording maximum length|Four hours or 1.5 GB. When this limit is reached, the recording ends and automatically restarts.|Four hours or 1.5 GB. When this limit is reached, the recording ends and automatically restarts.|Four hours or 1.5 GB. When this limit is reached, the recording ends and automatically restarts.|
 |Interactive participants|1,000 (Enterprise plans)<br>300 (Business plans)|1,000|Town halls: 10,000<br> Teams Premium town halls: 50,000|
 |View-only participants|10,000<sup>1</sup> (Enterprise plans only)|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
 |Maximum total participants|11,000<sup>1</sup> (Enterprise plans only)|1,000|Town halls: 10,000<br> Teams Premium town halls: 50,000|

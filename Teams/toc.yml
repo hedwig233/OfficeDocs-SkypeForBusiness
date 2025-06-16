@@ -413,6 +413,8 @@ items:
           href: alerts/alerts-in-progress-meeting-audio.md
         - name: Managing policy packages in Teams
           href: manage-policy-packages.md
+        - name: Detect sensitive content during screen sharing
+          href: detect-sensitive-content.md
         - name: Encrypt meetings
           href: end-to-end-encrypted-meetings.md
         - name: Restrict copying and forwarding

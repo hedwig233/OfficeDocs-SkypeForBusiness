@@ -23,9 +23,9 @@ ms.localizationpriority: medium
 # Diagnostic logs for Teams Client
 
 > [!IMPORTANT]
-> This article describes a Microsoft Teams feature that hasn't yet been released. It's been announced, and it's coming soon. If you're an admin, you can find out when this feature will be released in the Message Center (in the Microsoft 365 admin center). For more information, see Remote Log collection. This article provides an overview of the new tool for Teams admins to collect diagnostic logs for Teams clients from the Microsoft Teams admin center.
+> This article describes a Microsoft Teams feature that hasn't yet been released. It's been announced, and it's coming soon. If you're an admin, you can find out when this feature is released in the Message Center (in the Microsoft 365 admin center). For more information, see Remote Log collection. This article provides an overview of the new tool for Teams admins to collect diagnostic logs for Teams clients from the Microsoft Teams admin center.
 > 
-> This is currently supported for Windows (non-VDI) and Mac Applications only.
+> This feature is currently supported for Windows (non-VDI) and Mac Applications only.
 
 Diagnostic data from clients is essential for triaging and mitigating problems. To streamline problem resolution, reduce overhead, and avoid end user interruptions, we're giving admins the ability to remotely gather diagnostic logs from Teams clients without end-user interruptions. Admins can now remotely collect diagnostic logs from users’ machines from the users page in the Microsoft Teams admin center.
 
@@ -44,7 +44,7 @@ Diagnostic data from clients is essential for triaging and mitigating problems. 
 
 ## Manage Logs
 
-1. You can view the status for all logs collected in your tenant from the Teams Client health page by selecting **View client logs**.
+1. Selecting **View client logs** from the Teams client health page lets you view the status for all logs collected in your tenant.
 1. This page shows tabs for in-progress and ready to download log requests.
   - You can also delete one or all logs collected using the **Delete** option.
 
@@ -52,6 +52,6 @@ Diagnostic data from clients is essential for triaging and mitigating problems. 
 
 - These logs are stored for 30 days (in line with the standard EU guidelines).
 - Logs are stored in a Microsoft secure and compliant storage called the Outlook Diagnostics System. This location is the same storage where M365 diagnostics and other diagnostics are currently stored. This storage follows standard compliance practices.
-- User consent isn't required, as this is support data. Admins should have permissions to gather diagnostic logs, and this new functionality empowers admins to collect these diagnostics remotely from users' devices without requiring any end-user interruptions.
+- User consent isn't required, as this data is support data. Admins should have permissions to gather diagnostic logs, and this new functionality empowers admins to collect these diagnostics remotely from users' devices without requiring any end-user interruptions.
 - The types of logs collected are client logs and shell logs (media logs). There are no screenshots or heaps collected.
-- The collection process will take 0-4 hrs if the device is online. The collection request expires after 3 days.
+- The collection process takes 0-4 hrs if the device is online. The collection request expires after 3 days.

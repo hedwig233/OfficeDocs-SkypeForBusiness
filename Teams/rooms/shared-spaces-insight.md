@@ -89,3 +89,15 @@ After setting the filters based on your preference, you must select **Apply** to
 
 :::image type="content" source="../media/date-range-selector.png" alt-text="Screenshot that shows the page on which can apply filters to the date range to define a preferred date." lightbox="../media/date-range-selector.png":::
 
+- **Group filter**: The data can also be filtered by the group filter at the top of the Pro Management Portal as a page-level filter.
+
+:::image type="content" source="../media/group-level-filtering.png" alt-text="Screenshot that shows the page on which group-level filtering can be applied." lightbox="../media/group-level-filtering.png":::
+
+### Data Tiles
+
+The tiles on the top of the page show the following details:
+
+- **Total number of rooms**: The current number of Teams Rooms available based on the locations selected.
+- **Total capacity**: The summed-up value of the capacity from the capacity property in the room resource account of all the latest Teams Rooms based on the locations selected. If the capacity information isn't available, it will be excluded.
+
+After the data tiles, there are different data visualizations of your shared spaces usage and insights.

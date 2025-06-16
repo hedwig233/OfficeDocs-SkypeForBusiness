@@ -505,6 +505,10 @@ items:
           href: aa-cq-real-time-reports.md
         - name: Auto attendant and Call queue historical reports
           href: aa-cq-cqd-historical-reports.md
+    - name: Licensing
+      items:
+        - name: Teams Premium licensing
+          href: teams-add-on-licensing/licensing-enhance-teams.md
 
 - name: Manage and monitor Teams
   items: 
@@ -1240,8 +1244,6 @@ items:
       items:
         - name: Intelligent recap for teams calls
           href: intelligent-recap-calls-meetings.md#intelligent-call-recap
-        - name: Teams Premium licensing
-          href: teams-add-on-licensing/licensing-enhance-teams.md
     - name: PSTN connectivity options
       items:
         - name: Overview

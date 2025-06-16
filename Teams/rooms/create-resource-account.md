@@ -63,7 +63,8 @@ You may need one or more roles to create, license, and configure resource accoun
 [!INCLUDE [mtr-device-config-account-include](../includes/mtr-device-config-account-include.md)]
 
 > [!IMPORTANT]
-> If you're creating resource accounts for Teams Rooms, the resource account's UPN must match the SMTP address of the resource account.
+> - The default time zone for resource accounts is Pacific Standard Time. You must change the time zone setting of the resource account to match the time zone where the physical resource is located. Go to [Time zone settings are incorrect or missing for multiple mailboxes in Microsoft 365](/exchange/troubleshoot/user-and-shared-mailboxes/incorrect-missing-time-zone-settings) for more information on changing the time zone of resource accounts.
+> - If you're creating resource accounts for Teams Rooms, the resource account's UPN must match the SMTP address of the resource account.
 
 ## Configure Exchange mailbox properties
 

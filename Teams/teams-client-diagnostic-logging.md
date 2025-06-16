@@ -22,7 +22,12 @@ ms.localizationpriority: medium
 
 # Diagnostic logs for Teams Client
 
-Diagnostic data from clients is essential for triaging and mitigating problems. To streamline problem resolution, reduce overhead, and avoid end user interruptions, we're giving admins the ability to remotely gather diagnostic logs from users without end-user involvement. Admins can now remotely collect diagnostic logs from users’ machines, and client health can be monitored per-user from the users page within the Microsoft Teams admin center.
+> [!IMPORTANT]
+> This article describes a Microsoft Teams feature that hasn't yet been released. It's been announced, and it's coming soon. If you're an admin, you can find out when this feature will be released in the Message Center (in the Microsoft 365 admin center). For more information, see Remote Log collection. This article provides an overview of the new tool for Teams admins to collect diagnostic logs for Teams clients from the Microsoft Teams admin center.
+> 
+> This is currently supported for Windows (non-VDI) and Mac Applications only.
+
+Diagnostic data from clients is essential for triaging and mitigating problems. To streamline problem resolution, reduce overhead, and avoid end user interruptions, we're giving admins the ability to remotely gather diagnostic logs from Teams clients without end-user interruptions. Admins can now remotely collect diagnostic logs from users’ machines from the users page in the Microsoft Teams admin center.
 
 ## Steps to gather diagnostic logs
 
@@ -32,15 +37,21 @@ Diagnostic data from clients is essential for triaging and mitigating problems. 
 1. Choose the client and version you want to collect diagnostic logs from and select the **Request client logs** option.
 1. Once log collection is started, the **Client log status** column on this page with be set to **Pending**.
 1. Once log collection is complete, you can download and share the logs with your team or Microsoft, and you can also view the collected logs. You can also view the status for all logs collected within your tenant.
+1. You can also view the status for all logs collected within your tenant.
+
+> [!IMPORTANT]
+> Client log collection is unsupported for users running Teams in commercial and government clouds. These devices are marked as **Device not eligible**.
 
 ## Manage Logs
 
-You can delete one or all logs collected using the **Delete** option.
+1. You can view the status for all logs collected in your tenant from the Teams Client health page by selecting **View client logs**.
+1. This page shows tabs for in-progress and ready to download log requests.
+  - You can also delete one or all logs collected using the **Delete** option.
 
 ## Further information
 
-- These logs will be stored for 30 days (in line with the standard EU guidelines).
-- User consent is not required, as this is support data. Admins should have permissions to gather diagnostic logs, and this new functionality empowers admins to be able to collect these diagnostics remotely from users' devices without requiring any end-user interruptions.
+- These logs are stored for 30 days (in line with the standard EU guidelines).
+- Logs are stored in a Microsoft secure and compliant storage called the Outlook Diagnostics System. This location is the same storage where M365 diagnostics and other diagnostics are currently stored. This storage follows standard compliance practices.
+- User consent isn't required, as this is support data. Admins should have permissions to gather diagnostic logs, and this new functionality empowers admins to collect these diagnostics remotely from users' devices without requiring any end-user interruptions.
 - The types of logs collected are client logs and shell logs (media logs). There are no screenshots or heaps collected.
 - The collection process will take 0-4 hrs if the device is online. The collection request expires after 3 days.
-- Logs are stored in a Microsoft secure and compliant storage called the Outlook Diagnostics System. This is the same storage where M365 diagnostics and other diagnostics are currently being stored. This follows standard compliance practices.

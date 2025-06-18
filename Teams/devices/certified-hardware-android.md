@@ -61,11 +61,11 @@ The following devices are certified under the Microsoft Teams Rooms on Android C
 | Cisco Room Bar | `RoomOS11.5` | September 3, 2026 | Small Meeting Room (4.5 m x 4.5 m) | 11 |
 | Cisco Desk Pro | `RoomOS11.5` | September 3, 2026 | Focus Room | 11 |
 | Cisco Room Navigator | `RoomOS11.5` | August 15, 2027 | Compatible with Cisco Room Bar and Cisco Room Kit Pro | 12 |
-| Cisco Room Kit EQX | `RoomOS11.15` | September 3, 2025 |  Large Meeting Room (4.5 m x 8.5 m)| 11 |
-| Cisco Board Pro G2 55 | `RoomOS11.15` | September 3, 2025 |  Medium size room (4.5 m x 6 m) | 11 |
-| Cisco Board Pro G2 75 | `RoomOS11.15` | September 3, 2025 |  Medium size room (4.5 m x 6 m) | 11 |
-| Crestron AIO Video Bar 70 | `1.240618.1240` | September 3, 2025 | Large meeting room (4.5 m x 8.5 m) | 10|
-| Crestron Touch Panel TS-1070 | `2.005.1030` | September 3, 2025 | Compatible with Crestron AIO Video Bar 70 | 10 |
+| Cisco Room Kit EQX | `RoomOS11.15` | September 3, 2026 |  Large Meeting Room (4.5 m x 8.5 m)| 11 |
+| Cisco Board Pro G2 55 | `RoomOS11.15` | September 3, 2026 |  Medium size room (4.5 m x 6 m) | 11 |
+| Cisco Board Pro G2 75 | `RoomOS11.15` | September 3, 2026 |  Medium size room (4.5 m x 6 m) | 11 |
+| Crestron AIO Video Bar 70 | `1.240618.1240` | September 3, 2026 | Large meeting room (4.5 m x 8.5 m) | 10|
+| Crestron Touch Panel TS-1070 | `2.005.1030` | September 3, 2026 | Compatible with Crestron AIO Video Bar 70 | 10 |
 | DTEN Bar | `1.4.20` | August 15, 2027|  Medium size room (4.5 m x 6 m) | 12 |
 | DTEN Bar | `1.0.2` | August 15, 2027|  Small size room (4.5 m x 4.5 m) | 12 |
 | DTEN D7X 55" + Vue Pro | `1.5.8` |August 15, 2027| Small size room (4.5 m x 4.5 m) | 12 |
@@ -82,12 +82,12 @@ The following devices are certified under the Microsoft Teams Rooms on Android C
 | Jabra PanaCast 50 VBS | `1.1.0-1` | September 3, 2026 | Medium size room (4.5 m x 6 m) | 10 |
 | Jabra PanaCast 50 Touch Console | `1.1.0-1` | September 3, 2026 | Compatible with Jabra PanaCast 50 VBS | 10 |
 | Logitech Rally Board 65 (VR0039)  | `0.901.13` | August 15, 2027 | Medium size room (4.5 m x 6 m) | 13 |
-| Logitech Rally Bar Huddle (VR0034)  | `0.903.73` | September 3, 2025 | Focus room (3 m x 3 m) | 11 |
-| Logitech Tap IP Touch console (VR0029) | `1.6.565` | September 3, 2025 | Compatible with Logitech Room Mate, Rally Bar, Rally Bar Mini, Rally Bar Huddle and Rally Board 65 | 10 |
-| Logitech Roommate (VR0030) | `1.4.71` | September 3, 2025 | Large meeting room (4.5 m x 8.5 m) | 10 |
-| Logitech Tap USB Touch Console | `1.2.982` | September 3, 2025 | Compatible with Logitech Rally Bar, Rally Bar Mini, Rally Bar Huddle, Roommate and Rally Board 65 | N/A |
-| Logitech Rally Bar Mini (VR0020) | `1.2.982` | September 3, 2025 | Small Meeting Room (4.5 m x 4.5 m) | 10 |
-| Logitech Rally Bar (VR0019) | `1.2.788` | September 3, 2025 | Medium size room (4.5 m x 6 m) | 10 |
+| Logitech Rally Bar Huddle (VR0034)  | `0.903.73` | September 3, 2026 | Focus room (3 m x 3 m) | 11 |
+| Logitech Tap IP Touch console (VR0029) | `1.6.565` | September 3, 2026 | Compatible with Logitech Room Mate, Rally Bar, Rally Bar Mini, Rally Bar Huddle and Rally Board 65 | 10 |
+| Logitech Roommate (VR0030) | `1.4.71` | September 3, 2026 | Large meeting room (4.5 m x 8.5 m) | 10 |
+| Logitech Tap USB Touch Console | `1.2.982` | September 3, 2026 | Compatible with Logitech Rally Bar, Rally Bar Mini, Rally Bar Huddle, Roommate and Rally Board 65 | N/A |
+| Logitech Rally Bar Mini (VR0020) | `1.2.982` | September 3, 2026 | Small Meeting Room (4.5 m x 4.5 m) | 10 |
+| Logitech Rally Bar (VR0019) | `1.2.788` | September 3, 2026 | Medium size room (4.5 m x 6 m) | 10 |
 | MAXHUB XBar V50 | `ATB001.00.20250326.1141 (MDEP)` | August 15, 2027 | Small Meeting Room (4.5 m x 4.5 m) | 13 |
 | MAXHUB Panel AP30 | `ATT101.00.20250326.1236 (MDEP)` | August 15, 2027 | Compatible with XBar 50 | 13 |
 | Neat Bar Pro + Shure Complete Room Bundle| `NFD1.20241113.0013`| September 3, 2026 | Medium size room (4.5 m x 6 m) | 10 |

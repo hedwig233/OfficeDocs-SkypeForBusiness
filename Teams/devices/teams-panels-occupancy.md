@@ -40,7 +40,7 @@ When the room is in use, the panel's LED adjusts to the color selected by the ad
 
 :::image type="content" source="./media/occupy-reserve-low-res.png" alt-text="Screenshot of Inventory rooms tab." lightbox="./media/occupy-reserve-hi-res.png":::
 
-If the device is paired with a Microsoft Teams Rooms on Android, after a user reserves the occupied room from the device, a message will appear on the room display to let the user inside of the room know that the room has been reserved and to exit. This notification will be off by default, and the admin will need to enable it after pairing the device. This feature is coming soon. 
+If the device is paired with a Microsoft Teams Rooms on Android, after a user reserves the occupied room from the device, a message will appear on the room display to let the user inside of the room know that the room has been reserved and to exit. This notification will be off by default, and the admin will need to enable it after pairing the device. To utilize this feature, please make sure you are on 1449/1.0.96.2025126202 or higher on Teams Rooms on Android. 
 
 An admin can choose to turn off these features from the device in Teams admin settings > _Device settings > Occupied state._ The two settings are _Allow occupied state_ and _Allow booking notifications_. If _Allow occupied state_ is turned off, the booking notifications will also be turned off.
 

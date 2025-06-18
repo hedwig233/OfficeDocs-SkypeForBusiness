@@ -25,7 +25,7 @@ f1keywords:
 
 ## Overview
 
-The new Shared Spaces insights page in the Pro Management portal provides IT administrators with customized utilization insights, including time-series data visualizations, for shared spaces beginning with Teams Rooms. This feature uses calendar data and occupancy signals from Teams Rooms to track usage with filters for location, business hours, days of the week, and date ranges. Future updates will include desk and Bring Your Own Device (BYOD) room spaces.
+The new Shared Spaces insights page in the Pro Management portal provides IT administrators with customized utilization insights, including time-series data visualizations, for shared spaces beginning with Teams Rooms. This feature uses calendar data and occupancy signals from Teams Rooms to track usage with filters for location, business hours, days of the week, and date ranges. Future updates include desk and Bring Your Own Device (BYOD) room spaces.
 
 ## Prerequisites for IT admins
 
@@ -39,7 +39,7 @@ To view the Shared Spaces insights in the Teams Pro Management portal, perform t
 1. Launch the Pro Management Portal using the URL https://portal.rooms.microsoft.com/.
 1. Navigate to the new **Analytics & Reports** tab.
 1. From the left navigation menu, select **Shared Spaces Insights (Preview)**.
-1. Select the desired location, business hours and days.
+1. Select the desired location, business hours, and days.
     1. To select the desired location, choose a value from the following dropdown lists:
         1. Country/Region
         1. State/Province
@@ -55,7 +55,7 @@ To view the Shared Spaces insights in the Teams Pro Management portal, perform t
 
 ## Space Utilization Metric Definition
 
-The space utilization metric is a metric derived from two inputs: calendar reservations and device signals as a proxy for room occupancy. A room is considered utilized when it is either:
+The space utilization metric is a metric derived from two inputs: calendar reservations and device signals as a proxy for room occupancy. A room is considered utilized when it's either:
 - Reserved and occupied
 - Reserved and not occupied
 - Not Reserved and occupied
@@ -98,6 +98,41 @@ After setting the filters based on your preference, you must select **Apply** to
 The tiles on the top of the page show the following details:
 
 - **Total number of rooms**: The current number of Teams Rooms available based on the locations selected.
-- **Total capacity**: The summed-up value of the capacity from the capacity property in the room resource account of all the latest Teams Rooms based on the locations selected. If the capacity information isn't available, it will be excluded.
+- **Total capacity**: The summed-up value of the capacity from the capacity property in the room resource account of all the latest Teams Rooms based on the locations selected. If the capacity information isn't available, it's excluded.
 
 After the data tiles, there are different data visualizations of your shared spaces usage and insights.
+
+### Shared Spaces Utilization Percentage
+
+:::image type="content" source="../media/shared-spaces-utilization-percentage.png" alt-text="Screenshot that shows the utilization percentage of shared spaces in a tile format." lightbox="../media/shared-spaces-utilization-percentage.png":::
+
+This stacked column chart shows the utilization percentage of your shared spaces during the selected time period and provides insights on how your shared spaces are used. It's derived from the following two primary sources: 
+- Reservations data sourced from exchange
+- Occupancy captured from device signals spaces insight
+
+The categories for which the tiles (in the preceding diagram) provide data are:
+
+- **Reserved and Occupied**: Percentage of time the space was both booked and occupied
+- **Reserved and not Occupied**: Percentage of time the space was booked but not occupied
+- **Not Reserved and Occupied**: Percentage of time the space was occupied but not booked
+- **Not Reserved and Not Occupied**: Percentage of time the space was neither booked nor occupied
+
+### Peak Utilization Chart
+
+:::image type="content" source="../media/peak-utilization-chart.png" alt-text="Screenshot that shows the data of the time period during which the shared spaces' utlization was at its peak." lightbox="../media/peak-utilization-chart.png":::
+
+This chart shows the peak utilization of your spaces throughout the week, with color gradients indicating the percentage of room utilization ranges of 0-10% up to 90-100% during different time slots. The blue rectangle below the heat map highlights the top 5 busiest timeslots.
+
+You can use this chart to identify the peak space usage timeslot on a given day, when the rooms or desks are most and least used.
+
+### Overall Shared Spaces Utilization
+
+This column chart illustrates the overall utilization of the spaces in the chosen timeframe. The x-axis represents the selected period while the y-axis shows the percentage of shared spaces' utilization.
+
+:::image type="content" source="../media/overall-shared-spaces-utilization.png" alt-text="Screenshot that shows the chart depicting the overall utilization percentage of the shared spaces." lightbox="../media/overall-shared-spaces-utilization.png":::
+
+### Most and Least Utilized Rooms
+
+:::image type="content" source="../media/most-least-utilized-rooms.png" alt-text="Screenshot that shows the chart depicting the rooms that most utilized and least utilized." lightbox="../media/most-least-utilized-rooms.png":::
+
+The most and least utilized rooms' tables provide insights into the utilization of your shared spaces based on the selected period and location. The first table in the preceding screenshot lists the most-used rooms and second the least-used rooms sorted by the utilization rate. The utilization rate, average reservation rate, and average occupancy rate columns are defined in the metrics definitions above.

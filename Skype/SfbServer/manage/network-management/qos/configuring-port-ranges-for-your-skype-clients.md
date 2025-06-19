@@ -20,6 +20,8 @@ description: "This article describes how to configure port ranges for your clien
 
 # Configuring port ranges and a Quality of Service policy for your clients in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 This article describes how to configure port ranges for your clients and configuring Quality of Service policies in Skype for Business Server for clients running on Windows 10.
 
 ## Configure port ranges

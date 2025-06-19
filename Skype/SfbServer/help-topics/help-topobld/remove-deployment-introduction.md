@@ -18,6 +18,8 @@ description: "Run the Remove Deployment Wizard only if you want to decommission 
 ---
 
 # Remove Deployment Introduction
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 Run the **Remove Deployment Wizard** only if you want to decommission your entire deployment. This wizard creates an empty topology that consists of a single Front End Server. After you run this wizard and publish the empty topology, you can't revert to your original topology.
   

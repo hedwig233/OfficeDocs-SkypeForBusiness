@@ -16,6 +16,8 @@ description: "Summary: Learn how to remove CDR configuration settings in Skype f
 ---
 
 # Delete an existing collection of CDR configuration settings in Skype for Business Server
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 **Summary:** Learn how to remove CDR configuration settings in Skype for Business Server.
   
@@ -25,7 +27,7 @@ When you install Skype for Business Server, a single, global collection of CDR c
   
 Note that you can also "delete" the global settings. However, the global settings will not actually be removed. Instead, all the properties in that collection will be reset to their default values. For example, by default purging is enabled in a collection of CDR configuration settings. Suppose you modify the global collection so that purging is disabled. If you later delete the global settings, all the properties will be reset to their default values. In this case, that means that purging will once again be enabled.
   
-You can remove CDR configuration settings by using the Skype for Business Server Control Panel or the [Remove-CsCdrConfiguration](/powershell/module/skype/remove-cscdrconfiguration?view=skype-ps) cmdlet.
+You can remove CDR configuration settings by using the Skype for Business Server Control Panel or the [Remove-CsCdrConfiguration](/powershell/module/skype/remove-cscdrconfiguration?view=skype-ps&preserve-view=true) cmdlet.
   
 ### To remove CDR configuration settings with Skype for Business Server Control Panel
 
@@ -65,7 +67,7 @@ You can delete call detail recording configuration settings by using Windows Pow
   Get-CsCdrConfiguration | Where-Object {$_.EnableCDR -eq $False} | Remove-CsCdrConfiguration
   ```
 
-For more information, see the help topic for the [Remove-CsCdrConfiguration](/powershell/module/skype/remove-cscdrconfiguration?view=skype-ps) cmdlet.
+For more information, see the help topic for the [Remove-CsCdrConfiguration](/powershell/module/skype/remove-cscdrconfiguration?view=skype-ps&preserve-view=true) cmdlet.
   
 ## See also
 

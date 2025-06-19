@@ -18,6 +18,8 @@ description: "This is preliminary documentation and is subject to change. Blank 
 ---
 
 # Install Database Create Mirror Database Page
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 This is preliminary documentation and is subject to change. Blank topics are included as placeholders.
   

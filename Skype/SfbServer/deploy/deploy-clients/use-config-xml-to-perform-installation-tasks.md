@@ -17,6 +17,8 @@ description: "Summary: How to use the Config.xml file to specify other installat
 
 # Use Config.xml to perform installation tasks in Skype for Business clients
 
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** How to use the Config.xml file to specify other installation instructions.
 
 Although the Office Customization Tool (OCT) is the primary tool for customization installation, administrators can use the Config.xml file to specify other installation instructions that aren't available in the OCT. The following customizations can only be made by using the Config.xml file:

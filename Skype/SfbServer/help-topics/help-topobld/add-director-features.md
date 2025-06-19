@@ -19,6 +19,8 @@ description: "If you want the Director pool to include Monitoring Server, select
 
 # Add Director Features
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 If you want the Director pool to include Monitoring Server, select **Monitoring (CDR and QoE Metrics)**.
 
 For more details about adding a Director pool, see [Scenarios for the Director](/previous-versions/office/lync-server-2013/lync-server-2013-scenarios-for-the-director) and [Setting Up the Director](/previous-versions/office/lync-server-2013/lync-server-2013-setting-up-the-director).

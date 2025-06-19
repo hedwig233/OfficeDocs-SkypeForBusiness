@@ -16,7 +16,9 @@ description: "Summary: Learn how to manually purge records from the CDR and the 
 ---
 
 # Manually purge the call detail recording and Quality of Experience databases in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to manually purge records from the CDR and the QoE databases used by Skype for Business Server.
   
 The CDR and QoE databases can be manually or automatically purged of records. Purging records can be important so that data doesn't become stale or when needing to reset reports from a starting baseline.

@@ -11,15 +11,17 @@ ms.service: skype-for-business-server
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
-description: "This topic highlights configuration settings you should be aware of prior to deploying your Skype for Business Server 2019 Edge Server. The deployment and configuration processes for Skype for Business Server 2019 are very similar to Skype for Business Server 2015. This section only highlights key points you should consider as part of your pilot pool deployment. For detailed steps, see Deploying external user access in Skype for Business Server 2019 in the Deployment documentation, which describes the deployment process and also gives configuration information for external user access."
+description: "This topic highlights configuration settings you should be aware of before deploying your Skype for Business Server 2019 Edge Server. The deployment and configuration processes for Skype for Business Server 2019 are similar to Skype for Business Server 2015. This section only highlights key points you should consider as part of your pilot pool deployment. For detailed steps, see Deploying external user access in Skype for Business Server 2019 in the Deployment documentation, which describes the deployment process and also gives configuration information for external user access."
 ---
 
 # Deploy pilot Edge Server
 
-This topic highlights configuration settings you should be aware of before deploying your Skype for Business Server 2019 Edge Server. The deployment and configuration processes for Skype for Business Server 2019 are very similar to Skype for Business Server 2015. This section only highlights key points you should consider as part of your pilot pool deployment. <!-- For detailed steps, see 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../includes/appliesto-xxx-2019-sub.md)]
+
+This topic highlights configuration settings you should be aware of before deploying your Skype for Business Server 2019 Edge Server. The deployment and configuration processes for Skype for Business Server 2019 are similar to Skype for Business Server 2015. This section only highlights key points you should consider as part of your pilot pool deployment. <!-- For detailed steps, see 
  [Deploying external user access in Skype for Business Server 2019](../deployment/deploying-external-user-access/deploying-external-user-access.md) in the Deployment documentation, which describes the deployment process and also gives configuration information for external user access.  -->
   
-As you navigate through the **Define New Edge Pool** wizard, review the key configuration settings shown in the following steps. Note that only a few pages of the **Define New Edge Pool** wizard are shown. 
+As you navigate through the **Define New Edge Pool** wizard, review the key configuration settings shown in the following steps. Only a few pages of the **Define New Edge Pool** wizard are shown. 
   
 ### To define an Edge Pool
 

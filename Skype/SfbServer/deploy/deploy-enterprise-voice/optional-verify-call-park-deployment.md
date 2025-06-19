@@ -17,6 +17,8 @@ description: "Verifying your deployment of Call Park in Skype for Business Serve
 ---
 
 # (Optional) Verify Call Park deployment in Skype for Business
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 Verifying your deployment of Call Park in Skype for Business Server Enterprise Voice. 
   

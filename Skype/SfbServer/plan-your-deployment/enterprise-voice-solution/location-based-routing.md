@@ -21,6 +21,8 @@ description: "Planning for location-based routing in Skype for Business Server E
 
 # Plan for location-based routing in Skype for Business
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Planning for location-based routing in Skype for Business Server Enterprise Voice, including interaction with simultaneous ringing and delegation, and supported scenarios for location-based routing.
 
 Location-Based Routing makes it possible to restrict the routing of calls between VoIP endpoints and PSTN endpoints based on the location of the parties in the call. Location-Based Routing is a call management feature that controls how calls are routed by Skype for Business Server. It enforces call authorization rules on whether calls can be routed to PBX or PSTN endpoints based on the Skype for Business caller's geographic location.
@@ -31,11 +33,11 @@ The following scenarios illustrate the main types of restrictions Location-Based
 
 - Egress calls - Location-Based Routing can enforce outgoing calls to egress to a PSTN gateway that is located in the same region as where the caller is to prevent PSTN toll bypass, which prevents calls to egress to a PSTN gateway located in a different region as the caller.
 
-- Ingress calls - Location-Based Routing can prevent incoming PSTN calls to ring Skype for Business endpoints if the PSTN gateway routing the incoming call is not located in the same region as the called Skype for Business user.
+- Ingress calls - Location-Based Routing can prevent incoming PSTN calls to ring Skype for Business endpoints if the PSTN gateway routing the incoming call isn't located in the same region as the called Skype for Business user.
 
-- Unknown regions - Location-Based Routing restricts incoming and outgoing PSTN calls to and from users that are located in undetermined locations (i.e. remote users connecting from the Internet or located in unknown regions).
+- Unknown regions - Location-Based Routing restricts incoming and outgoing PSTN calls to and from users that are located in undetermined locations (that is, remote users connecting from the Internet or located in unknown regions).
 
-- International regions - Location-Based Routing enforces routing of outgoing calls through international PSTN gateways if a gateway local to the user's location cannot be found.
+- International regions - Location-Based Routing enforces routing of outgoing calls through international PSTN gateways if a gateway local to the user's location can't be found.
 
 ## Guidance for where to apply Location-Based Routing
 
@@ -43,7 +45,7 @@ Location-Based Routing depending on the situation can be applied at the user's e
 
 ### Applying Location-Based Routing at the user's location
 
-Location-Based Routing leverages the same network regions, sites and subnets as defined in Skype for Business Server used by E9-1-1, CAC and Media Bypass to apply call routing restrictions to prevent PSTN toll bypass. A user's location is determined by the IP subnet of the user's Skype for Business endpoint(s) are connected from. Each IP subnet is associated to a network site, which are aggregated into network regions defined by the administrator. Location-Based Routing is enforced based on the user's network site.
+Location-Based Routing uses the same network regions, sites and subnets as defined in Skype for Business Server used by E9-1-1, CAC and Media Bypass to apply call routing restrictions to prevent PSTN toll bypass. A user's location is determined by the IP subnet of the user's Skype for Business endpoint(s) are connected from. Each IP subnet is associated to a network site, which are aggregated into network regions defined by the administrator. Location-Based Routing is enforced based on the user's network site.
 
 Location-Based Routing rules are applied on a per network site basis, meaning that a given set of rules will be applied to all endpoints enabled for Location-Based Routing that are located within the same network site. Administrators can apply Location-Based Routing to network sites that require it.
 
@@ -51,11 +53,11 @@ Voice routing policies can be defined on a per network site basis to define a pa
 
 A user location can be categorized in the following ways:
 
-- The user is located in a known network site enabled for Location-Based Routing and his DID (Direct Inward Dial) number terminates on a PSTN gateway placed in the same network site (i.e. office). The routing of outbound calls will be through the voice routing policy of the network site in which the user is located. Incoming PSTN calls to the user are routed to endpoints that are located in the same network site as the PSTN gateway.
+- The user is located in a known network site enabled for Location-Based Routing and his DID (Direct Inward Dial) number terminates on a PSTN gateway placed in the same network site (that is, office). The routing of outbound calls will be through the voice routing policy of the network site in which the user is located. Incoming PSTN calls to the user are routed to endpoints that are located in the same network site as the PSTN gateway.
 
-- The user is located in a known network site that is in different from the network site where the PSTN gateway is located. (i.e. the user traveled to another corporate office). The routing of outbound calls will be using the voice routing policy of the network site in which the user is located. Incoming PSTN calls to the user will not be routed to endpoints that are located in different sites than the PSTN gateway to prevent PSTN toll bypassing.
+- The user is located in a known network site that is in different from the network site where the PSTN gateway is located. (that is, the user traveled to another corporate office). The routing of outbound calls will be using the voice routing policy of the network site in which the user is located. Incoming PSTN calls to the user won't be routed to endpoints that are located in different sites than the PSTN gateway to prevent PSTN toll bypassing.
 
-- When a user is located in a network site that is unknown to the Skype for Business Server deployment, the routing of outbound calls will be based on the voice policy assigned to the user to PSTN gateways not bound to Location-Based Routing restrictions. Incoming PSTN calls will not be routed to endpoints that are located in unknown network sites to prevent PSTN toll bypassing.
+- When a user is located in a network site that is unknown to the Skype for Business Server deployment, the routing of outbound calls will be based on the voice policy assigned to the user to PSTN gateways not bound to Location-Based Routing restrictions. Incoming PSTN calls won't be routed to endpoints that are located in unknown network sites to prevent PSTN toll bypassing.
 
 ### Applying Location-Based Routing at the PSTN gateway's location
 
@@ -71,7 +73,7 @@ Trunks can be enabled for Location-Based Routing in two ways:
 
 - The trunk is defined for a PSTN gateway that egresses calls to the PSTN. Incoming calls routed by a trunk of this type will be routed only to endpoints located within the same network site as the trunk.
 
-- The trunk is defined for a Mediation Server peer that doesn't egress calls to the PSTN and services users with legacy phones in a static locations (i.e. PBX phones). For this particular configuration, all incoming calls routed by a trunk of this type will be considered to be originating from the same network site as the trunk. Calls from PBX users will have the same Location-Based Routing enforcement as Skype for Business users who are located in the same network site as the trunk. If two PBX systems located in separate network sites are connected through Skype for Business Server, Location-Based Routing will allow routing from one PBX endpoint in one network site to another PBX endpoint in the other network site. This scenario will not be blocked by Location-Based Routing. In addition to this scenario and in a similar way as a Skype for Business user in the same location, endpoints connected to a Mediation Server peer with this configuration will be able to make or receive calls to and from other Mediation Server peer that do not route calls to the PSTN (i.e. an endpoint connected to a different PBX) regardless of the network site to which the Mediation Server peer is associated. All inbound calls, outbound calls, call transfers and call forwards involving PSTN endpoints will be subject to Location Based Routing to use only PSTN gateways that are defined as local to such Mediation Server peer.
+- The trunk is defined for a Mediation Server peer that doesn't egress calls to the PSTN and services users with legacy phones in a static locations (that is, PBX phones). For this particular configuration, all incoming calls routed by a trunk of this type will be considered to be originating from the same network site as the trunk. Calls from PBX users will have the same Location-Based Routing enforcement as Skype for Business users who are located in the same network site as the trunk. If two PBX systems located in separate network sites are connected through Skype for Business Server, Location-Based Routing will allow routing from one PBX endpoint in one network site to another PBX endpoint in the other network site. This scenario won't be blocked by Location-Based Routing. In addition to this scenario and in a similar way as a Skype for Business user in the same location, endpoints connected to a Mediation Server peer with this configuration will be able to make or receive calls to and from other Mediation Server peer that don't route calls to the PSTN (that is, an endpoint connected to a different PBX) regardless of the network site to which the Mediation Server peer is associated. All inbound calls, outbound calls, call transfers and call forwards involving PSTN endpoints will be subject to Location Based Routing to use only PSTN gateways that are defined as local to such Mediation Server peer.
 
 ## Scenarios for Location-Based Routing
 
@@ -90,7 +92,7 @@ The routing of outbound calls of users enabled for Location-Based Routing is aff
 
 ### Incoming Calls
 
-The routing of incoming calls to users enabled for Location-Based Routing depends on the location of the user's endpoint. The routing of incoming calls is affected in the following way. If a user has an incoming call to an endpoint located in a Location-Based Routing enabled network site, and the endpoint is located in the same network site as the PSTN gateway, the call will be routed. If a user has an incoming call to an endpoint located in a Location-Based Routing enabled network site, and the endpoint is located in a different network site than the PSTN gateway, the call will not be routed. When a user has no endpoints located in the same network site as the PSTN gateway where the incoming call is originating from, the incoming call will be routed directly to the user's voicemail and a missed call notification will be sent to the called party.
+The routing of incoming calls to users enabled for Location-Based Routing depends on the location of the user's endpoint. The routing of incoming calls is affected in the following way. If a user has an incoming call to an endpoint located in a Location-Based Routing enabled network site, and the endpoint is located in the same network site as the PSTN gateway, the call will be routed. If a user has an incoming call to an endpoint located in a Location-Based Routing enabled network site, and the endpoint is located in a different network site than the PSTN gateway, the call won't be routed. When a user has no endpoints located in the same network site as the PSTN gateway where the incoming call is originating from, the incoming call will be routed directly to the user's voicemail and a missed call notification will be sent to the called party.
 
 The call forwarding settings of a user that is enabled for Location-Based Routing will continue to be enforced, however, calls forwarded will be subject to Location-Based Routing restrictions of the user.
 
@@ -100,11 +102,11 @@ The following table illustrates how Location-Based Routing affects the routing o
 
 |&nbsp;|Callee's endpoint located in the same network site as PSTN gateway|Callee's endpoint not located in the same network site as PSTN gateway|Callee's endpoint located in unknown network site or not enabled for Location-Based Routing|
 |:-----|:-----|:-----|:-----|
-|Routing of inbound PSTN call   |Incoming call is routed to callee's endpoints   |Incoming call is not routed to callee's endpoints   |Incoming call is not routed to callee's endpoints   |
+|Routing of inbound PSTN call   |Incoming call is routed to callee's endpoints   |Incoming call isn't routed to callee's endpoints   |Incoming call isn't routed to callee's endpoints   |
 
 ### Call transfers and call forwarding
 
-When a PSTN endpoint is involved, Location-Based Routing analyzes the location of the calle's endpoint and the endpoint where the call will be transferred or forwarded to (i.e. transfer/forward target). Location-Based Routing determines whether the call should be transferred or forwarded depending on the location of both endpoints.
+When a PSTN endpoint is involved, Location-Based Routing analyzes the location of the calle's endpoint and the endpoint where the call will be transferred or forwarded to (that is, transfer/forward target). Location-Based Routing determines whether the call should be transferred or forwarded depending on the location of both endpoints.
 
 The following table illustrates the scenario of a Skype for Business user in a call with a PSTN endpoint, and the Skype for Business user transfers the call to another Skype for Business user. Depending on the network site location of the transferee's endpoint, Location-Based Routing affects the routing of the call transfer or forward.
 
@@ -112,7 +114,7 @@ The following table illustrates the scenario of a Skype for Business user in a c
 
 |User initiating the call transfer/forward|Target endpoint is in same network site as user initiating call transfer or forward|Target endpoint is in different network site as user initiating call transfer or forward|Target endpoint is in unknown network site or network site not enabled for Location-Based Routing
 |:-----|:-----|:-----|:-----|
-|Skype for Business user   |Call forward or transfer is allowed   |Call forward or transfer is not allowed   |Call forward or transfer is not allowed   |
+|Skype for Business user   |Call forward or transfer is allowed   |Call forward or transfer isn't allowed   |Call forward or transfer isn't allowed   |
 
 For example: a Skype for Business user in a call with a PSTN endpoint transfers the call to another Skype for Business user that is in the same network site. In this case, the call transfer is allowed.
 
@@ -138,7 +140,7 @@ The following table illustrates a user configured with simultaneous ringing, and
 |:-----|:-----|:-----|:-----|
 |Skype for Business user   |Simultaneous ring allowed   |Simultaneous ring not allowed   |Simultaneous ring not allowed   |
 
-The following table illustrates a call from a Skype for Business user (i.e. Skype for Business caller) in the same network site, in a different network site, or from an unknown network site. The callee has a PSTN endpoint (i.e. cellphone) configured as a simultaneous ring target. In this scenario, Location-Based Routing will determine whether the call should be routed to the simultaneous ring target (i.e. cellphone) of the callee or not.
+The following table illustrates a call from a Skype for Business user (that is, Skype for Business caller) in the same network site, in a different network site, or from an unknown network site. The callee has a PSTN endpoint (that is, cellphone) configured as a simultaneous ring target. In this scenario, Location-Based Routing will determine whether the call should be routed to the simultaneous ring target (that is, cellphone) of the callee or not.
 
 ****
 
@@ -162,7 +164,7 @@ The following table will walk you through some of the post-Cumulative Update 4 s
 |:-----|:-----|:-----|:-----|
 |Skype for Business Mobile   |PSTN   |Skype for Business Mobile receives an incoming PSTN call.   |The call is routed via Call via Work (CvW), and not VoIP.   |
 |Skype for Business Mobile   |PSTN   |Skype for Business Mobile makes an outgoing PSTN call.   |The call is routed via CvW, and not VoIP.   |
-|Skype for Business Mobile   |PSTN   |Skype for Business Mobile is in a PSTN call. Skype for Business Mobile then escalates the call to another user or contact.   |The call is routed via VoIP if the user or contact is local to the PSTN gateway leg.  <br/> If the user or contact is remote from the PSTN gateway leg, the call is routed via CvW.  <br/> If the target user is not reachable via the PSTN, then the call fails.  <br/> If the target contact is a Conference Auto Attendant (CAA), the call is blocked.   |
+|Skype for Business Mobile   |PSTN   |Skype for Business Mobile is in a PSTN call. Skype for Business Mobile then escalates the call to another user or contact.   |The call is routed via VoIP if the user or contact is local to the PSTN gateway leg.  <br/> If the user or contact is remote from the PSTN gateway leg, the call is routed via CvW.  <br/> If the target user isn't reachable via the PSTN, then the call fails.  <br/> If the target contact is a Conference Auto Attendant (CAA), the call is blocked.   |
 |Skype for Business Mobile   |Skype for Business client or Federated user   |A Skype for Business Mobile initiates a voice call to another Skype for Business client or Federated user.   |The call is completed via VoIP.   |
 |Skype for Business Mobile   |Skype for Business client or Federated user   | A Skype for Business client or Federated user initiates a voice call to a Skype for Business Mobile Location-Based Routing user.  |The call is completed via VoIP.   |
 |Skype for Business Mobile   |Skype for Business client or Federated user   |A Skype for Business client or Federated user is on a VoIP call to a Skype for Business Mobile user. Either party escalates to an additional Skype for Business or Federated user.   |The call is completed via VoIP.   |
@@ -188,11 +190,11 @@ When planning Location-Based Routing, you should consider the impact to the foll
 
 ### Disaster Recovery
 
-During a failover from the primary pool to a backup pool as well as when restoring normal operations to the primary pool, Location-Based Routing remains enforced at all times during a disaster and recovery procedure.
+During a failover from the primary pool to a backup pool and when restoring normal operations to the primary pool, Location-Based Routing remains enforced at all times during a disaster and recovery procedure.
 
 ### Survivable Branch Appliance
 
-Configuring Location-Based Routing impacts the planning of where you deploy the gateways associated to your Survivable Branch Appliances. The gateway associated to your SBA must be located in the same network site as your Survivable Branch Appliance; otherwise, users homed on your Survivable Branch Appliance will not be permitted to place outbound calls if Location-Based Routing is configured. When the WAN connection between your Survivable Branch Appliance and the central site is down, Location-Based Routing restrictions remains enforced.
+Configuring Location-Based Routing impacts the planning of where you deploy the gateways associated to your Survivable Branch Appliances. The gateway associated to your SBA must be located in the same network site as your Survivable Branch Appliance; otherwise, users homed on your Survivable Branch Appliance won't be permitted to place outbound calls if Location-Based Routing is configured. When the WAN connection between your Survivable Branch Appliance and the central site is down, Location-Based Routing restrictions remains enforced.
 
 ## Client and server support for Location-Based Routing
 
@@ -200,7 +202,7 @@ Location-Based Routing is enforced by Skype for Business Server. Skype for Busin
 
 ### Server Support
 
-Location-Based Routing requires that Skype for Business Server or Lync Server 2013 CU1 is deployed on all Front End pools and Standard Edition servers in a given topology. If these versions of the server are not installed,Location-Based Routing restrictions cannot be fully enforced.
+Location-Based Routing requires that Skype for Business Server or Lync Server 2013 CU1 is deployed on all Front End pools and Standard Edition servers in a given topology. If these versions of the server aren't installed, Location-Based Routing restrictions can't be fully enforced.
 
 The following table identifies the combination of server roles and versions that is supported for Location-Based Routing.
 
@@ -239,7 +241,7 @@ The following table identifies the clients that Location-Based Routing supports.
 
 ## Capabilities not supported by Location-Based Routing
 
-Location-Based Routing does not apply to the following types of interactions. Location-Based Routing is not enforced when Skype for Business endpoints interact with PSTN endpoints using these capabilities.
+Location-Based Routing doesn't apply to the following types of interactions. Location-Based Routing isn't enforced when Skype for Business endpoints interact with PSTN endpoints using these capabilities.
 
 - PSTN dial-in to conferences
 

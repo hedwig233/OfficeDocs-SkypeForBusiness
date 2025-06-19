@@ -18,6 +18,8 @@ description: "Deploy (install) an Always On Availability Group in your Skype for
 
 # Deploy an Always On Availability Group on a Back End Server in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Deploy (install) an Always On Availability Group (AG) in your Skype for Business Server deployment.
   
 How you deploy an AG depends on whether you're deploying it in a new pool, an existing pool that uses mirroring, or an existing pool that currently has no high availability for the Back End database.

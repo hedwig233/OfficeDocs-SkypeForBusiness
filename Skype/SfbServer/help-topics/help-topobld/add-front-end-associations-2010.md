@@ -19,6 +19,8 @@ description: "You can enable support for specific features that require the depl
 
 # Add Front End Associations 2010
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 You can enable support for specific features that require the deployment of other servers by associating the server roles with the Front End pool at this time. You can also associate server roles with the Front End pool at a later time. The server roles that can be associated with a Front End pool include the following:
 
 1. Archiving Server. For details about planning and implementing archiving support, see [Defining Your Organization's Requirements for Archiving](/previous-versions/office/lync-server-2013/lync-server-2013-defining-your-requirements-for-archiving) in the Planning documentation and [Define and Configure a Front End Pool or Standard Edition Server](/previous-versions/office/lync-server-2013/lync-server-2013-define-and-configure-a-front-end-pool-or-standard-edition-server) and [Deploying Archiving](/previous-versions/office/lync-server-2013/lync-server-2013-deploying-archiving) in the Deployment documentation.

@@ -17,6 +17,8 @@ description: "Summary: These features are new in Skype for Business Server 2019.
 
 # What's in Skype for Business Server 2019
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../SfBServer2019/includes/appliesto-xxx-2019-sub.md)]
+
 **Summary:** Read this topic to learn about new features in Skype for Business Server 2019.  
 
 New features in Skype for Business Server 2019 include the following:

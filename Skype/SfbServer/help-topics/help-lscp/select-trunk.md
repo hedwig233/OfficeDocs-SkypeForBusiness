@@ -18,7 +18,9 @@ description: "Use the Select Trunk dialog box to find an existing trunk that you
 ---
 
 # Select Trunk
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Use the **Select Trunk** dialog box to find an existing trunk that you can use.
   
 > [!NOTE]

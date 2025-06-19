@@ -19,6 +19,8 @@ description: "To configure a Monitoring Server and associate it with the Directo
 
 # Associate Director With Monitoring Page for Lync Server 2010
  
+[!INCLUDE [appliesto-2015-xxx-xxx](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 To configure a Monitoring Server and associate it with the Director or Director pool:
   
 Under **Monitoring Server** select from the list a Monitoring Server.

@@ -20,17 +20,19 @@ description: "Learn about outbound voice routing in Skype for Business Server En
 ---
 
 # Plan for outbound voice routing in Skype for Business Server
+
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 Learn about outbound voice routing in Skype for Business Server Enterprise Voice, including call routing settings, dial plans, normalization rules, voice policies, PSTN usage records, and voice routes.
   
-Outbound call routing applies to Enterprise Voice calls that are destined for a public switched telephone network (PSTN) gateway, trunk, or private branch exchange (PBX). When a Skype for Business user places a call, the server normalizes the phone number to E.164 format, if necessary, and attempts to match it to a SIP URI. If the server cannot make the match, it applies outbound call routing logic based on the supplied dial string. You define that logic by configuring the server settings that are described in the following table.
+Outbound call routing applies to Enterprise Voice calls that are destined for a public switched telephone network (PSTN) gateway, trunk, or private branch exchange (PBX). When a Skype for Business user places a call, the server normalizes the phone number to E.164 format, if necessary, and attempts to match it to a SIP URI. If the server can't make the match, it applies outbound call routing logic based on the supplied dial string. You define that logic by configuring the server settings that are described in the following table.
   
 **Skype for Business Server Outbound Call Routing Settings**
 
 |**Object**|**Description**|
 |:-----|:-----|
 |Dial Plan  <br/> |A dial plan is a named set of normalization rules that translates phone numbers for a named location, individual user, or contact object into a single standard (E.164) format for purposes of phone authorization and call routing.  <br/> |
-|Normalization rule  <br/> |Normalization rules define how phone numbers expressed in various formats are to be routed for each specified location, user, or contact object. The same dial string may be interpreted and translated differently, depending on the location from which it is dialed and the person or contact object that makes the call. A set of normalization rules associated with a particular location constitutes a dial plan.  <br/> |
+|Normalization rule  <br/> |Normalization rules define how phone numbers expressed in various formats are to be routed for each specified location, user, or contact object. The same dial string might be interpreted and translated differently, depending on the location from which it's dialed and the person or contact object that makes the call. A set of normalization rules associated with a particular location constitutes a dial plan.  <br/> |
 |Voice policy  <br/> |A voice policy associates one or more PSTN usage records with one user or a group of users. A voice policy also provides a list of calling features that you can enable or disable.  <br/> |
 |PSTN usage record  <br/> |A PSTN usage record specifies a class of call (such as internal, local, or long distance) that can be made by various users, or groups of users, in an organization.  <br/> |
 |Call Route  <br/> |A call route associates destination phone numbers with particular trunks and PSTN usage records. A PSTN gateway is considered a trunk.  <br/> |
@@ -39,13 +41,13 @@ Outbound call routing applies to Enterprise Voice calls that are destined for a 
 
 A dial plan is a named set of normalization rules that translates phone numbers for a named location, individual user, or contact object into a single standard (E.164) format for purposes of phone authorization and call routing. 
   
-Normalization rules define how phone numbers expressed in various formats are to be routed for each specified location, user, or contact object. The same dial string may be interpreted and translated differently, depending on the location from which it is dialed and the person or contact object making the call.
+Normalization rules define how phone numbers expressed in various formats are to be routed for each specified location, user, or contact object. The same dial string might be interpreted and translated differently, depending on the location from which it's dialed and the person or contact object making the call.
   
 ### Dial Plan Scope
 
-A dial plan's scope determines the hierarchical level at which the dial plan can be applied. In Skype for Business Server, a user can be assigned a specific per-user dial plan. If a user dial plan is not assigned, the Front End pool dial plan is applied. If there is no Front End pool dial plan, the site dial plan is applied. Finally, if there is no other dial plan applicable to the user, the global dial plan is applied.
+A dial plan's scope determines the hierarchical level at which the dial plan can be applied. In Skype for Business Server, a user can be assigned a specific per-user dial plan. If a user dial plan isn't assigned, the Front End pool dial plan is applied. If there's no Front End pool dial plan, the site dial plan is applied. Finally, if there's no other dial plan applicable to the user, the global dial plan is applied.
   
-Clients obtain dial plan scope levels through in-band provisioning settings that are provided when users log on to Skype for Business. As the administrator, you can manage and assign dial plan scope levels by using Skype for Business Server Control Panel.
+Clients obtain dial plan scope levels through in-band provisioning settings that are provided when users sign in Skype for Business. As the administrator, you can manage and assign dial plan scope levels by using Skype for Business Server Control Panel.
   
 > [!NOTE]
 > The service level public switched telephone network (PSTN) gateway dial plan is applied to the incoming calls from a particular gateway. 
@@ -58,7 +60,7 @@ Dial plan scope levels are defined as follows:
     
 - **Site dial plan**: Can be created for an entire site, except for any users, groups, or contact objects that are assigned a pool dial plan or user dial plan. To define a site dial plan, you must specify the site to which the dial plan applies.
     
-- **Global dial plan**: The default dial plan installed with the product. You can edit the global dial plan, but you cannot delete it. This dial plan applies to all Enterprise Voice users, groups, and contact objects in your deployment, unless you configure and assign a dial plan with a more specific scope.
+- **Global dial plan**: The default dial plan installed with the product. You can edit the global dial plan, but you can't delete it. This dial plan applies to all Enterprise Voice users, groups, and contact objects in your deployment, unless you configure and assign a dial plan with a more specific scope.
     
 ### Planning for Dial Plans
 
@@ -66,11 +68,11 @@ To plan a dial plan, follow these steps:
   
 - List all the locales in which your organization has an office.
     
-    The list must be up-to-date and complete. It will need to be revised as company organization evolves. In a large, multinational company with numerous small branch offices, this can be a time-consuming task.
+    The list must be up-to-date and complete. It needs to be revised as company organization evolves. In a large, multinational company with numerous small branch offices, this can be a time-consuming task.
     
 - Identify valid number patterns for each site.
     
-    The most time-consuming part of planning your dial plans is identifying the valid number patterns for each site. In some cases, you may be able to copy normalization rules that you have written for one dial plan to other dial plans, especially if the corresponding sites are within the same country/region or even continent. In other cases, small changes to numbers in one dial plan may be enough to use them in other dial plans.
+    The most time-consuming part of planning your dial plans is identifying the valid number patterns for each site. In some cases, you might be able to copy normalization rules that you have written for one dial plan to other dial plans, especially if the corresponding sites are within the same country/region or even continent. In other cases, small changes to numbers in one dial plan might be enough to use them in other dial plans.
     
 - Develop an organization-wide scheme for naming dial plans.
     
@@ -78,19 +80,19 @@ To plan a dial plan, follow these steps:
     
 - Decide whether multiple dial plans are required for a single location. 
     
-    If your organization maintains a single dial plan across multiple locations, you may still need to create a separate dial plan for Enterprise Voice users who are migrating from a private branch exchange (PBX) and who need to have their existing extensions retained.
+    If your organization maintains a single dial plan across multiple locations, you might still need to create a separate dial plan for Enterprise Voice users who are migrating from a private branch exchange (PBX) and who need to have their existing extensions retained.
     
 - Decide whether per-user dial plans are required. For example, if you have users at a branch site who are registered with the central site or if you have users who are registered on a Survivable Branch Appliance, you can consider special dialing scenarios for such users using per-user dial plans and normalization rules. For details, see [Plan for Enterprise Voice resiliency in Skype for Business Server](enterprise-voice-resiliency.md).
     
-- Determine dial plan scope (as previously described in this topic).
+- Determine dial plan scope (as previously described in this article).
     
 To create a dial plan, you specify values in the following fields, as required, by using Skype for Business Server Control Panel or Skype for Business Server Management Shell.
   
 #### Name and Simple Name
 
-For user dial plans, you should specify a descriptive name that identifies the users, groups, or contact objects to which the dial plan will be assigned. For site dial plans, the Name field is pre-populated with the site name and cannot be changed. For pool dial plans, the Name field is pre-populated with the PSTN gateway or Front End pool fully qualified domain name (FQDN) and cannot be changed.
+For user dial plans, you should specify a descriptive name that identifies the users, groups, or contact objects to which the dial plan will be assigned. For site dial plans, the Name field is pre-populated with the site name and can't be changed. For pool dial plans, the Name field is pre-populated with the PSTN gateway or Front End pool fully qualified domain name (FQDN) and can't be changed.
   
-The dial plan Simple Name is pre-populated with a string that is derived from the dial plan name. The Simple Name field is editable, which enables you to create a more descriptive naming convention for your dial plans. TheSimple Name value cannot be empty and must be unique. A best practice is to develop a naming convention for your entire organization and then use this convention consistently across all sites and users.
+The dial plan Simple Name is pre-populated with a string that is derived from the dial plan name. The Simple Name field is editable, which enables you to create a more descriptive naming convention for your dial plans. TheSimple Name value can't be empty and must be unique. A best practice is to develop a naming convention for your entire organization and then use this convention consistently across all sites and users.
   
 #### Description
 
@@ -98,18 +100,18 @@ We recommend that you type the common, recognizable name of the geographic locat
   
 #### Dial-in Conferencing Region
 
-If you are deploying dial-in conferencing, you will need to specify a dial-in conferencing region to associate dial-in conferencing access numbers with a dial plan. 
+If you're deploying dial-in conferencing, you'll need to specify a dial-in conferencing region to associate dial-in conferencing access numbers with a dial plan. 
   
 #### External Access Prefix
 
 You can specify an external access prefix of up to four characters (#, \*, and 0-9) if users need to dial one or more additional leading digits (for example, 9) to get an external line.
   
 > [!NOTE]
-> If you specify an external access prefix, you do not need to create an additional normalization rule to accommodate the prefix. 
+> If you specify an external access prefix, you don't need to create an additional normalization rule to accommodate the prefix. 
   
 ### Normalization Rules
 
-Normalization rules define how phone numbers expressed in various formats are to be routed for the named location. The same number string may be interpreted and translated differently, depending on the locale from which it is dialed. Normalization rules are necessary for call routing because users can, and do, use various formats when entering phone numbers in their Contacts lists.
+Normalization rules define how phone numbers expressed in various formats are to be routed for the named location. The same number string might be interpreted and translated differently, depending on the locale from which it's dialed. Normalization rules are necessary for call routing because users can, and do, use various formats when entering phone numbers in their Contacts lists.
   
 Normalizing user-supplied phone numbers provides a consistent format that facilitates the following tasks:
   
@@ -117,7 +119,7 @@ Normalizing user-supplied phone numbers provides a consistent format that facili
     
 - Apply dialing authorization rules to the calling party.
     
-The following number fields are among those that your normalization rules may need to account for:
+The following number fields are among those that your normalization rules might need to account for:
   
 - Dial plan
     
@@ -138,7 +140,7 @@ For details about using .NET Framework regular expressions, see [".NET Framework
 #### Sample Normalization Rules
 <a name="BKMK_SampleNormalizationRules"> </a>
 
-The following table shows sample normalization rules that are written as .NET Framework regular expressions. The samples are examples only and are not meant to be a prescriptive reference for creating your own normalization rules.
+The following table shows sample normalization rules that are written as .NET Framework regular expressions. The samples are examples only and aren't meant to be a prescriptive reference for creating your own normalization rules.
   
 **Table 1.Normalization Rules Using .NET Framework Regular Expressions**
 
@@ -172,7 +174,7 @@ The following table illustrates a sample dial plan for Redmond, Washington, Unit
 |RedmondOperator  <br/> |
    
 > [!NOTE]
-> The normalization rules names shown in the preceding table do not include spaces, but this is a matter of choice. The first name in the table, for example, could have been written "5 digit extension" or "5-digit Extension" and still be valid. 
+> The normalization rules names shown in the preceding table don't include spaces, but this is a matter of choice. The first name in the table, for example, could have been written "5 digit extension" or "5-digit Extension" and still be valid. 
   
 ## Voice policies
 
@@ -182,9 +184,9 @@ Skype for Business Server voice policies define the following for each user, sit
     
 - A set of public switched telephone network (PSTN) usage records that define what types of calls are authorized. 
     
-The following steps will help you plan the voice policies that you will need for your Enterprise Voice deployment:
+The following steps help you plan the voice policies that you'll need for your Enterprise Voice deployment:
   
-- Determine how you will configure your global voice policy (the default voice policy that is installed with the product). This policy will apply to all Enterprise Voice users who are not explicitly assigned a site-level or per-user policy.
+- Determine how you'll configure your global voice policy (the default voice policy that is installed with the product). This policy applies to all Enterprise Voice users who aren't explicitly assigned a site-level or per-user policy.
     
 - Identify any site-level voice policies that you might need.
     
@@ -198,14 +200,14 @@ The following steps will help you plan the voice policies that you will need for
 
 Voice policy scope determines the hierarchical level at which the policy can be applied. In Skype for Business Server, you can configure voice policies with the following scope levels (listed from the most specific to the most general).
   
-- **User voice policy** can be assigned to individual users, groups, or contact objects. This is the lowest level policy. User voice policies can be deployed to enable features for certain users or groups at a site, but not for others in the same site. For example, you may want to disable long distance dialing for some employees. For the purpose of assigning a voice policy, a contact object is treated as an individual user.
+- **User voice policy** can be assigned to individual users, groups, or contact objects. This is the lowest level policy. User voice policies can be deployed to enable features for certain users or groups at a site, but not for others in the same site. For example, you might want to disable long distance dialing for some employees. For the purpose of assigning a voice policy, a contact object is treated as an individual user.
     
     > [!NOTE]
     > We recommend that you deploy a user voice policy for branch site Enterprise Voice users who are registered with the central site deployment, or users who are registered on a Survivable Branch Appliance. 
   
-- **Site voice policy** applies to an entire site, except for any users, groups, or contact objects that are assigned a user voice policy. To define a site voice policy, you must specify the site to which the policy applies. If a user voice policy is not assigned, the site voice policy is used.
+- **Site voice policy** applies to an entire site, except for any users, groups, or contact objects that are assigned a user voice policy. To define a site voice policy, you must specify the site to which the policy applies. If a user voice policy isn't assigned, the site voice policy is used.
     
-- **Global voice policy** is the default voice policy that is installed with the product. You can edit the global voice policy to meet the specific needs of your organization, but you cannot rename or delete it. This voice policy applies to all Enterprise Voice users, groups, and contact objects in your deployment unless you configure and assign a voice policy with more specific scope. If you want to disable this policy entirely, be sure that all sites and users have custom policies assigned to them.
+- **Global voice policy** is the default voice policy that is installed with the product. You can edit the global voice policy to meet the specific needs of your organization, but you can't rename or delete it. This voice policy applies to all Enterprise Voice users, groups, and contact objects in your deployment unless you configure and assign a voice policy with more specific scope. If you want to disable this policy entirely, be sure that all sites and users have custom policies assigned to them.
     
 ### Call Features
 
@@ -242,7 +244,7 @@ Each voice policy should have one or more associated PSTN usage records. PSTN us
   
 ## PSTN usage records
 
-Planning PSTN usage records consists mainly of listing all the call permissions that are currently in force in your organization, from the CEO to temporary workers, consultants, and contingent staff. This process also provides an opportunity to reexamine existing call permissions and revise them. You can create PSTN usage records only for those call permissions that apply to your anticipated Enterprise Voice users, but a better long-range solution might be to create PSTN usage records for all call permissions, regardless of whether some may not currently apply to the group of users to be enabled for Enterprise Voice. If call permissions change or new users with different call permissions are added, you will have already created the required PSTN usage records.
+Planning PSTN usage records consists mainly of listing all the call permissions that are currently in force in your organization, from the CEO to temporary workers, consultants, and contingent staff. This process also provides an opportunity to reexamine existing call permissions and revise them. You can create PSTN usage records only for those call permissions that apply to your anticipated Enterprise Voice users, but a better long-range solution might be to create PSTN usage records for all call permissions, regardless of whether some may not currently apply to the group of users to be enabled for Enterprise Voice. If call permissions change or new users with different call permissions are added, you'll have already created the required PSTN usage records.
   
 The following table shows a typical PSTN usage table.
   
@@ -258,7 +260,7 @@ The following table shows a typical PSTN usage table.
 |RedmondTemps  <br/> |Redmond temporary employees  <br/> |
 |Zurich  <br/> |Zurich full-time employees  <br/> |
    
-By themselves, PSTN usage records do not do anything. For them to work, you must associate them with the following:
+By themselves, PSTN usage records don't do anything. For them to work, you must associate them with the following:
   
 - Voice policies, which are assigned to users.
     
@@ -266,7 +268,7 @@ By themselves, PSTN usage records do not do anything. For them to work, you must
     
 ## Voice routes
 
-Call routes specify how Skype for Business Server handles outbound calls placed by Enterprise Voice users. When a user dials a number, the Front End Server normalizes the dial string to E.164 format, if necessary, and attempts to match it to a SIP URI. If the server cannot make the match, it applies outgoing call routing logic based on the number. The final step in defining that logic is to create a separate named call route for each set of destination phone numbers that are listed in each dial plan.
+Call routes specify how Skype for Business Server handles outbound calls placed by Enterprise Voice users. When a user dials a number, the Front End Server normalizes the dial string to E.164 format, if necessary, and attempts to match it to a SIP URI. If the server can't make the match, it applies outgoing call routing logic based on the number. The final step in defining that logic is to create a separate named call route for each set of destination phone numbers that are listed in each dial plan.
   
 Before you define outbound call routes, you should complete the following steps:
   
@@ -282,9 +284,9 @@ For each route, you must specify:
   
 - A name by which the route can be easily identified.
     
-- An optional description in cases where the name alone may not be sufficient to describe the route.
+- An optional description in cases where the name alone might not be sufficient to describe the route.
     
-- The regular expression matching pattern that identifies the destination phone numbers to which the route is applied, along with exceptions to which the matching pattern is not to be applied.
+- The regular expression matching pattern that identifies the destination phone numbers to which the route is applied, along with exceptions to which the matching pattern isn't to be applied.
     
 - One or more trunks that you want to assign to the route.
     
@@ -294,28 +296,28 @@ You can specify call routes in the Skype for Business Server Control Panel. Thes
   
 ### M:N Trunk Support
 
-Skype for Business Server provides flexibility in how calls are routed to the PSTN. A voice route specifies a set of trunks to the PSTN that can be used for a particular voice call. A trunk associates a Mediation Server and a port number with a PSTN gateway and listening port number. This logical association enables a Mediation Server to be associated with multiple gateways and have multiple connections to the same gateway. When defining a call route, you specify the trunks associated with that route, but you do not specify which Mediation Servers are associated with the route. To create trunks by defining the relationships between Mediation Servers and PSTN gateways, IP-PBXs, and Session Border Controllers (SBCs), use the Topology Builder.
+Skype for Business Server provides flexibility in how calls are routed to the PSTN. A voice route specifies a set of trunks to the PSTN that can be used for a particular voice call. A trunk associates a Mediation Server and a port number with a PSTN gateway and listening port number. This logical association enables a Mediation Server to be associated with multiple gateways and have multiple connections to the same gateway. When defining a call route, you specify the trunks associated with that route, but you don't specify which Mediation Servers are associated with the route. To create trunks by defining the relationships between Mediation Servers and PSTN gateways, IP-PBXs, and Session Border Controllers (SBCs), use the Topology Builder.
   
 ### Least-Cost Routing
 
-The ability to specify the trunks to which various numbers are routed enables you to determine which routes incur the lowest costs and implement them accordingly. The general rule in selecting trunks is to choose the trunk with the closest gateway to the location of the destination number in order to minimize long-distance charges. For example, if you are in New York and calling a number in Rome, you would carry the call over the IP network to the trunk with the gateway in your Rome office, thereby incurring a charge only for a local call.
+The ability to specify the trunks to which various numbers are routed, enables you to determine which routes incur the lowest costs and implement them accordingly. The general rule in selecting trunks is to choose the trunk with the closest gateway to the location of the destination number in order to minimize long-distance charges. For example, if you are in New York and calling a number in Rome, you would carry the call over the IP network to the trunk with the gateway in your Rome office, thereby incurring a charge only for a local call.
   
 For an example of how least-cost routing might be used, consider the following: Fabrikam decides to enable German users to dial U.S. numbers by using the U.S. trunk. Fabrikam also wants to configure the system so that all calls from U.S. Skype for Business Server users to Germany and adjacent countries/regions terminate on the trunk with the gateway in Germany. This routing will save money, because a call from Germany to Austria, for example, is less expensive than a call from the U.S. to Austria.
   
 ### Translating Outbound Dial Strings
 
-Skype for Business Server requires all dial strings to be normalized to E.164 format for the purpose of performing reverse number lookup (RNL). For trunks with gateways or private branch exchanges (PBXs) that require numbers translated in local dialing formats, Skype for Business Server enables you to create one or more rules that assist in manipulating the called number (i.e. Request URI) prior to routing it to the trunk. For example, you could write a rule to remove +44 from the head of a dial string and replace it with 0144.
+Skype for Business Server requires all dial strings to be normalized to E.164 format for the purpose of performing reverse number lookup (RNL). For trunks with gateways or private branch exchanges (PBXs) that require numbers translated in local dialing formats, Skype for Business Server enables you to create one or more rules that assist in manipulating the called number (that is, Request URI) prior to routing it to the trunk. For example, you could write a rule to remove +44 from the head of a dial string and replace it with 0144.
   
-With Skype for Business Server, it is possible to create one or more rules that assist in manipulating the calling number prior to routing it to the trunk.
+With Skype for Business Server, it's possible to create one or more rules that assist in manipulating the calling number prior to routing it to the trunk.
   
-In planning your trunks that associate gateway:port pairs with Mediation Server:port pairs, it may be useful to group trunks with similar local dialing requirements, and therefore reduce the number of required translation rules and the time it takes to write them.
+In planning your trunks that associate gateway:port pairs with Mediation Server:port pairs, it might be useful to group trunks with similar local dialing requirements, and therefore reduce the number of required translation rules and the time it takes to write them.
   
 ### Configuring Caller ID
 
 Skype for Business Server provides a way to manipulate the caller ID for outbound calls. For example, if an organization wants to mask employees' direct-dial extensions and replace them with the generic corporate or departmental number, an administrator can do that by using Skype for Business Server Control Panel to suppress the caller ID and replace it with a specified alternative caller ID. In planning your routing logic, consider which individuals, groups, sites you'll want this option for—perhaps, even, for all employees.
   
 > [!NOTE]
-> For calls that are rerouted over the PSTN, the generic caller ID will be presented instead of the original caller ID. This can cause the call to bypass Do Not Disturb or privacy settings that the callee may have configured. 
+> For calls that are rerouted over the PSTN, the generic caller ID is presented instead of the original caller ID. This can cause the call to bypass Do Not Disturb or privacy settings that the callee might have configured. 
   
 ### Additional Routing Logic
 
@@ -323,9 +325,9 @@ In creating outbound call routes, you should be aware of the following factors t
   
 - Where a call is established over a federated boundary, the domain portion of the URI is used to route the call over to the enterprise that is responsible for applying the outbound routing logic.
     
-- If the domain portion of the request URI does not contain a supported domain for the enterprise, the outbound routing component on the server does not process the call.
+- If the domain portion of the request URI doesn't contain a supported domain for the enterprise, the outbound routing component on the server doesn't process the call.
     
-- If a user is not enabled for Enterprise Voice, the server applies other routing logic, as appropriate.
+- If a user isn't enabled for Enterprise Voice, the server applies other routing logic, as appropriate.
     
-- If a call is routed to a gateway that is fully occupied (all trunk lines are busy), the gateway rejects the call and the outbound routing logic redirects the call to the next-least-cost route. Give this careful consideration, because a gateway sized for a small office overseas (for example, Zurich) may actually carry a significant amount of nonlocal traffic for international calls to Switzerland. If the gateway is not correctly sized for this additional traffic, calls to Switzerland may be routed by way of a gateway in Germany, resulting in larger toll charges.
+- If a call is routed to a gateway that is fully occupied (all trunk lines are busy), the gateway rejects the call and the outbound routing logic redirects the call to the next-least-cost route. Give this careful consideration, because a gateway sized for a small office overseas (for example, Zurich) might actually carry a significant amount of nonlocal traffic for international calls to Switzerland. If the gateway isn't correctly sized for this additional traffic, calls to Switzerland might be routed by way of a gateway in Germany, resulting in larger toll charges.
 

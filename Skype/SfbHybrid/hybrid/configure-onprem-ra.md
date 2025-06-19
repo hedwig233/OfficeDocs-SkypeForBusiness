@@ -19,6 +19,7 @@ description: "Set up a resource account for Skype for Business Server 2019."
 # Configure resource accounts
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
+[!INCLUDE[appliesto-xxx-2019-sub.md](../../SfBServer2019/includes/appliesto-xxx-2019-sub.md)]
 
 Skype for Business Server 2019 hybrid implementations only use Cloud services provided by Phone System for unified messaging and don't integrate with Exchange Online. In Skype for Business Server 2019, you're now able to use the Cloud call queues and auto attendants described in [Here's what you get with Phone System in Microsoft 365 or Office 365](/MicrosoftTeams/here-s-what-you-get-with-phone-system).
 

@@ -18,7 +18,9 @@ description: "You use Archiving configurations to control archiving options for 
 ---
 
 # Archiving Configuration
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 You use Archiving configurations to control archiving options for your Skype for Business Server deployment, including enabling and disabling the following options:
   
 - Blocking of instant messaging (IM) or conferencing sessions if archiving fails

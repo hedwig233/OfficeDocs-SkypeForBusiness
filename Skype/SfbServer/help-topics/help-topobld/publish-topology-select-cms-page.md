@@ -19,6 +19,8 @@ description: "You publish the topology that you configure using Topology Builder
 
 # Publish Topology Select CMS Page
 
+[!INCLUDE [appliesto-2015-xxx-xxx](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 You publish the topology that you configure using Topology Builder. You're asked to select from a list which Front End Server or Front End pool assume the role of holding the Central Management store. Only one Front End Server or Front End pool can hold this role at any given time.
 
 For more information on what the Central Management store is, see [Move the Lync Server 2010 Central Management Server to Lync Server 2013](/previous-versions/office/lync-server-2013/move-the-lync-server-2010-central-management-server-to-lync-server-2013).

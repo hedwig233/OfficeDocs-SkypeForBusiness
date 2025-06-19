@@ -19,7 +19,9 @@ description: "Read about the Busy Options feature in Skype for Business Server."
 ---
 
 # Plan for Busy Options for Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Read about the Busy Options feature in Skype for Business Server.
   
 Busy Options is a new voice policy introduced in the July 2016 Cumulative Update that allows you to configure how incoming calls are handled when a user is already in a call or conference, or has a call placed on hold. New or incoming calls can be rejected with a busy signal or forwarded to voice mail. 
@@ -38,9 +40,9 @@ If Busy Options is enabled for the organization, all users in your organization,
     
 The Busy Options feature provides failover capability. If a problem occurs and users fail over to another Front End Server or to another pool in Skype for Business Server, their Busy Options settings will be preserved.
   
-Regardless of how their busy options are configured, users in a call or conference, or those with a call on hold, are not prevented from initiating new calls or conferences. 
+Regardless of how their busy options are configured, users in a call or conference, or those with a call on hold, aren't prevented from initiating new calls or conferences. 
   
-After configuration, the Busy Options setting is in effect for all the user's Skype for Business call devices and clients. Based on the user's Busy Options settings, the call that is rejected or sent to voice mail would not ring on any of the user's call devices--including Macintosh, Windows Desktop, mobile clients, or IP phones--on which the user is signed in. 
+After configuration, the Busy Options setting is in effect for all the user's Skype for Business call devices and clients. Based on the user's Busy Options settings, the call that is rejected or sent to voice mail wouldn't ring on any of the user's call devices--including Macintosh, Windows Desktop, mobile clients, or IP phones--on which the user is signed in. 
   
 Users will see missed-call notifications on their Skype for Business clients and devices, and they will be notified by email as well. Callers whose call was rejected due to Busy on Busy will see a notification in their Skype for Business client stating that the user they attempted to reach is busy on another call.
   
@@ -66,7 +68,7 @@ Busy Options provides interoperability with the following Voice applications in 
     
   - The current Attendant routing experience in Response Groups will remain unchanged for the Agents with Busy Options settings.
     
-  - The calls coming from Response Groups to the users who are Response Groups Agents will not be throttled by Busy Options settings and the current RGS experience will be maintained.
+  - The calls coming from Response Groups to the users who are Response Groups Agents won't be throttled by Busy Options settings and the current RGS experience will be maintained.
     
   - The non-RGS related calls to the Agents will be honored by their Busy Options settings.
     
@@ -94,19 +96,19 @@ Busy Options provides interoperability with the following Voice applications in 
     
 - Call Parking Service 
     
-  - Parked calls that were not retrieved and are ringing back due to timing out will be allowed to ring though to the user who parked the call by the Busy Options. 
+  - Parked calls that weren't retrieved and are ringing back due to timing out will be allowed to ring though to the user who parked the call by the Busy Options. 
     
 - Call Conferencing
     
   - Users in conference calls are considered Busy and new incoming calls will be rejected with a busy signal or forwarded to voice mail according to their Busy Options settings.
     
-  - Users in conferences are not prevented from initiating new calls or conferences by Busy Options.
+  - Users in conferences aren't prevented from initiating new calls or conferences by Busy Options.
     
   - Users in conferences are still able to receive new conference invitations, but new peer-to-peer calls will be rejected according to their Busy Options settings.
     
 - Simultaneous Ring and Call Forwarding
     
-    The Busy on Busy feature is not designed to work with Simultaneous Ring and Call Forwarding.
+    The Busy on Busy feature isn't designed to work with Simultaneous Ring and Call Forwarding.
     
 
 

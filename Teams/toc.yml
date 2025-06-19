@@ -20,7 +20,7 @@ items:
             - name: Use Network Planner for Teams
               href: network-planner.md
             - name: Network Planner walkthrough
-              href: tutorial-network-planner-example.yml
+              href: tutorial-network-planner-example.md
             - name: Proxy servers for Teams or Skype for Business Online
               href: proxy-servers-for-skype-for-business-online.md
             - name: Plan for lifecycle management in Teams
@@ -1929,7 +1929,7 @@ items:
           href: teams-custom-app-policies-and-settings.md
         - name: Publish custom apps submitted using API
           href: submit-approve-custom-apps.md
-        - name: Manage custom apps created using Power Platform
+        - name: Manage shared agents
           href: manage-power-platform-apps.md
 
     - name: Admin controls to govern apps

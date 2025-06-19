@@ -17,6 +17,8 @@ description: "Summary: Learn how to configure add-ins for Persistent Chat Server
 
 # Configure add-ins for Persistent Chat rooms in Skype for Business Server 
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to configure add-ins for Persistent Chat Server chat rooms in Skype for Business Server.
   
 Add-ins are used to extend the in-room experience by associating URLs with chat rooms. These URLs appear in the client conversation extensibility pane. A typical add-in might include a URL pointing to a Silverlight application that intercepts when a stock ticker is posted to a chat room, and shows the stock history in the extensibility pane. Other examples include embedding a OneNote 2013 URL in the chat room as an add-in to include some shared context, such as "Top of mind" or "Topic of the day."

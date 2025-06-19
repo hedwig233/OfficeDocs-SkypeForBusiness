@@ -16,7 +16,9 @@ description: "Summary: Learn about the Call Detail Report used in Skype for Busi
 ---
 
 # Call Detail Report in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn about the Call Detail Report used in Skype for Business Server.
   
 The Call Detail Report provides a detailed look at an individual call; the report includes nearly all the Quality of Experience metrics and statistics collected by Skype for Business Server, divided into report sections such as:

@@ -18,7 +18,11 @@ description: "You right click on an existing SIP trunk in Topology Builder to pe
 ---
 
 # Trunk Scope Node
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
+[!INCLUDE [appliesto-2015-xxx-xxx](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 You right click on an existing SIP trunk in Topology Builder to perform the following:
   
 - **Edit Properties**: Starts the **Edit Properties** wizard used to edit or redefine the configuration of an existing SIP trunk

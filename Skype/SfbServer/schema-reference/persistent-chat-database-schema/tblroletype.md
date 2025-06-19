@@ -16,7 +16,9 @@ description: "tblRoleType is a static lookup table with role types and their ass
 ---
 
 # tblRoleType
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 tblRoleType is a static lookup table with role types and their associated permission sets.
   
 **Columns**

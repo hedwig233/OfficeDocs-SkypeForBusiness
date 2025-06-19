@@ -18,6 +18,8 @@ description: "To add a new server to an existing pool of servers, where the pool
 ---
 
 # Add Server
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 To add a new server to an existing pool of servers, where the pool is one of the following:
   
@@ -31,7 +33,7 @@ To add a new server to an existing pool of servers, where the pool is one of the
     
 - Trusted Application server
     
-Each of the new pool servers has different requirements. In the following sections, locate the type of server that you are adding to the existing pool, and supply the information requested as it is defined for each server type. You provide the requested information to define the new pool server.
+Each of the new pool servers has different requirements. In the following sections, locate the type of server that you're adding to the existing pool, and supply the information requested as it's defined for each server type. You provide the requested information to define the new pool server.
   
  **Enterprise Edition Front End Server**
   
@@ -56,7 +58,7 @@ Each of the new pool servers has different requirements. In the following sectio
 - Select **Use all configured IP addresses**, which means that any IP address defined on the computer can be used. Alternatively, you select **Limit service usage to selected IP addresses** and enter a specific IP address on the new server as the Primary IP address, and an enter an IP address for the public switched telephone network (PSTN) IP address. The IP addresses entered are the only IP address which will respond for the designated services.
     
     > [!NOTE]
-    > For the Mediation Server, the IP address entered for the Primary IP address and the PSTN IP address is the same by default. The IP addresses can be defined separately if you are using dedicated network interfaces or separate IP addresses on the same network interface. If you have two network interfaces, one for the local network connection and one for the PSTN connection, you must assign different IP addresses. 
+    > For the Mediation Server, the IP address entered for the Primary IP address and the PSTN IP address is the same by default. The IP addresses can be defined separately if you're using dedicated network interfaces or separate IP addresses on the same network interface. If you have two network interfaces, one for the local network connection and one for the PSTN connection, you must assign different IP addresses. 
   
   **Audio/Video Conferencing Server**
   

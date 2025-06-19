@@ -19,6 +19,8 @@ description: "What do you want to do? Click the link to the task that you want t
 
 # Dial-in Access Number
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 What do you want to do? Click the link to the task that you want to perform.
 
 - [Create or Modify a Dial-in Conferencing Access Number](/previous-versions/office/lync-server-2013/lync-server-2013-create-or-modify-a-dial-in-conferencing-access-number)

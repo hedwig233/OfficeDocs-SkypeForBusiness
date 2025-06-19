@@ -18,6 +18,8 @@ description: "Overview of antivirus scanner interoperation with Skype for Busine
 
 # Antivirus scanning exclusions for Skype for Business Server
 
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Overview of antivirus scanner interoperation with Skype for Business Server.
 
 To ensure that the antivirus scanner does not interfere with the operation of Skype for Business Server, you must exclude specific processes and directories for each Skype for Business Server server or server role on which you run an antivirus scanner. The following processes and directories should be excluded:

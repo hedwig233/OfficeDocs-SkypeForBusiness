@@ -18,6 +18,8 @@ description: "You can add a device log configuration to the Edit Log Setting pag
 ---
 
 # Device Log Configuration: Edit
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 You can add a device log configuration to the **Edit Log Setting** page that determines the maximum log cache size, maximum log file size, or length of time a log file is kept before it is purged. You can change these settings according to your organization's requirements.
   

@@ -15,8 +15,10 @@ ms.assetid: 42b797c6-8db8-4ad7-886e-8ddf8deb06f9
 description: "Summary: Learn how to associate Monitoring Reports with a mirror database used by Skype for Business Server."
 ---
 
-# Associate Monitoring Reports with a mirror database in Skype for Business Server 
- 
+# Associate Monitoring Reports with a mirror database in Skype for Business Server
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to associate Monitoring Reports with a mirror database used by Skype for Business Server.
   
 ## Monitor reports with a mirror database

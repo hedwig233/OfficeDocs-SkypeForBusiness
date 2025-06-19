@@ -16,9 +16,11 @@ description: "In general, you must use the administrative tool that corresponds 
 
 # Administering servers after migration
 
-In general, you must use the administrative tool that corresponds to the server version that you want to manage. You cannot install administrative tools from different releases on the same computer.
+[!INCLUDE[appliesto-xxx-2019-sub.md](../includes/appliesto-xxx-2019-sub.md)]
+
+In general, you must use the administrative tool that corresponds to the server version that you want to manage. You can't install administrative tools from different releases on the same computer.
   
 > [!IMPORTANT]
-> After a Skype for Business Server pilot pool is deployed, you cannot use Topology Builder or Control Panel to manage any 2019 resources. You must use 2019 tools to manage all current and previous version resources. 
+> After a Skype for Business Server pilot pool is deployed, you can't use Topology Builder or Control Panel to manage any 2019 resources. You must use 2019 tools to manage all current and previous version resources. 
   
 

@@ -16,7 +16,9 @@ description: "tblSystemRevision contains the revision number that is used with t
 ---
 
 # tblSystemRevision
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 tblSystemRevision contains the revision number that is used with the tblAdminLock table to achieve consistency across multiple administrator clients.
   
 **Columns**

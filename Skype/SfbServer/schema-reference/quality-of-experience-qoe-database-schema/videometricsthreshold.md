@@ -16,7 +16,9 @@ description: "The VideoMetricsThreshold table contains optimal and acceptable va
 ---
 
 # VideoMetricsThreshold table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The VideoMetricsThreshold table contains optimal and acceptable values for the Quality of Experience metrics used with video calls.
   
 

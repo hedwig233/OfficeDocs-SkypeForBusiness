@@ -19,6 +19,8 @@ ms.collection:
 
 # Manage your topology in Skype for Business Server 
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn about the steps to manage your topology in Skype for Business Server.
   
 The following topics provide step-by-step instructions on tasks involved with managing your Skype for Business Server topology and your Front End Servers.

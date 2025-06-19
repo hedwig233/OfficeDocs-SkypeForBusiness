@@ -19,6 +19,8 @@ description: "You edit the properties of the configured Office Web Apps Server. 
 
 # Edit Office Web Apps Server Settings
 
+[!INCLUDE [appliesto-2015-xxx-xxx](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 You edit the properties of the configured Office Web Apps Server. The following properties are available to edit:
 
  **Office Web Apps Server FQDN**: This property defines the fully qualified domain name of the Office Web Apps Server and should match a domain name system (DNS) host A or AAAA (if IPv6 is being used) record.

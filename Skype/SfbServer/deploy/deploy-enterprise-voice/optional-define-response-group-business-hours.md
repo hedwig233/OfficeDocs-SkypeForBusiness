@@ -16,7 +16,9 @@ ms.assetid: d62551b2-1847-4e1b-abe8-683b72aa94d5
 description: "Create or modify Response Group business hours, in Skype for Business Server Enterprise Voice."
 ---
 
-# (Optional) Define Response Group business hours in Skype for Business 
+# (Optional) Define Response Group business hours in Skype for Business
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 Create or modify Response Group business hours, in Skype for Business Server Enterprise Voice.
   
@@ -62,6 +64,6 @@ Business hour settings define when the workflow is available to answer calls and
 
 ## See also
 
-[New-CsRgsTimeRange](/powershell/module/skype/new-csrgstimerange?view=skype-ps)
+[New-CsRgsTimeRange](/powershell/module/skype/new-csrgstimerange?view=skype-ps&preserve-view=true)
   
-[New-CsRgsHoursOfBusiness](/powershell/module/skype/new-csrgshoursofbusiness?view=skype-ps)
+[New-CsRgsHoursOfBusiness](/powershell/module/skype/new-csrgshoursofbusiness?view=skype-ps&preserve-view=true)

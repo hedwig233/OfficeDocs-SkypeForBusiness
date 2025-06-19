@@ -18,6 +18,8 @@ description: "Specify the domain name of each additional domain that you want to
 ---
 
 # Add Additional SIP Domains
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 Specify the domain name of each additional domain that you want to support in your deployment. For example, if you have specified contoso.net as the primary Session Initiation Protocol (SIP) domain and you also want to support fabrikam.net for SIP traffic in your deployment, specify fabrikam.net as an additional supported domain.
   

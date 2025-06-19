@@ -21,6 +21,8 @@ description: "Summary: Information for organizations who don't use Microsoft 365
 
 # Skype Meetings App minimum network requirements
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Information for organizations who don't use Microsoft 365 or Office 365 and need to access meetings hosted by organizations that do. This article is not intended for Office 365 or Microsoft 365 end-users.
 
 Users of the Skype Meetings App in organizations that don't use Microsoft 365 or Office 365 might need to attend meetings hosted in Skype for Business Online. To attend these meetings, their network administrators need to allow the following FQDNs, IP addresses, and ports through their firewall.

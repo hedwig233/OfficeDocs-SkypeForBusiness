@@ -21,6 +21,8 @@ description: "Summary: Review the network component considerations below before 
 
 # Plan network requirements for Skype for Business
 
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Review the network component considerations below before implementing Skype for Business Server.
 
 The information in these articles is also discussed in the whitepaper [Network Planning, Monitoring, and Troubleshooting with Lync Server](https://www.microsoft.com/download/details.aspx?id=39084) with more details and depth. While the content refers explicitly to Lync 2010 and Lync 2013, the considerations for Skype for Business Server are unchanged.
@@ -220,10 +222,10 @@ The following tables provide values for the various scenarios.
 |:-----|:-----|:-----|:-----|:-----|
 |Audio  <br/> |G.722  <br/> |46.1  <br/> |100.6  <br/> |164.6  <br/> |
 |Audio  <br/> |Siren  <br/> |25.5  <br/> |52.6  <br/> |68.6  <br/> |
-|Main video receive  <br/> |H.264 and RTVideo¹  <br/> |260  <br/> |8015  <br/> |Not applicable  <br/> |
+|Main video receive  <br/> |H.264 and RTVideo<sup>1</sup>  <br/> |260  <br/> |8015  <br/> |Not applicable  <br/> |
 |Main video send  <br/> |H.264 and RTVideo  <br/> |270  <br/> |8015  <br/> |Not applicable  <br/> |
 |Panoramic video receive  <br/> |H.264 and RTVideo  <br/> |190  <br/> |2010 (for maximum resolution of 1920x288)  <br/> |Not applicable  <br/> |
-|Panoramic video send  <br/> |H.264 and RTVideo  <br/> |190  <br/> |2515 ²  <br/> |Not applicable  <br/> |
+|Panoramic video send  <br/> |H.264 and RTVideo  <br/> |190  <br/> |2515 <sup>2</sup>  <br/> |Not applicable  <br/> |
 
 1. RT Video is sent in addition to H.264 when Lync 2010 clients are connected to the conference.
 

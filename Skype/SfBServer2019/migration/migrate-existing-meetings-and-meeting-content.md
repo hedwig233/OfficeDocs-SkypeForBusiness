@@ -16,6 +16,8 @@ description: "When a user account is moved from to a Skype for Business Server 2
 
 # Migrate existing meetings and meeting content
 
+[!INCLUDE [appliesto-xxx-2019-sub](../includes/appliesto-xxx-2019-sub.md)]
+
 When a user account is moved to a Skype for Business Server 2019 server, the following information is moved with that user account:
   
 - **Meetings already scheduled by the user**. This includes moving the conferencing directories and conferencing data.

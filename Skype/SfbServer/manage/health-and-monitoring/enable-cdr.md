@@ -17,6 +17,8 @@ description: "Summary: Learn how to enable Call detail recording (CDR) records i
 
 # Enable call detail recording in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to enable Call detail recording (CDR) records in Skype for Business Server.
 
 Call detail recording (CDR) records usage and diagnostic information about peer-to-peer activities including instance messaging, Voice over Internet Protocol (VoIP) calls, application sharing, file transfer, and meetings. The usage data can be used to calculate return on investment (ROI) and the diagnostic data can be used to troubleshoot peer-to-peer activities and meetings.
@@ -67,7 +69,7 @@ You can enable CDR by using Windows PowerShell and the **Set-CsCdrConfiguration*
   Get-CsCdrConfiguration | Set-CsCdrConfiguration -EnableCDR $True
   ```
 
-For more information, see the help topic for the [Set-CsCdrConfiguration](/powershell/module/skype/set-cscdrconfiguration?view=skype-ps) cmdlet.
+For more information, see the help topic for the [Set-CsCdrConfiguration](/powershell/module/skype/set-cscdrconfiguration?view=skype-ps&preserve-view=true) cmdlet.
 
 ## See also
 

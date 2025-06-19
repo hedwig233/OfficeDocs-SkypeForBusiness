@@ -18,6 +18,8 @@ description: "For a Single Edge Server or Load-balanced consolidated Edge server
 ---
 
 # Legacy Merge Edge Type
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 For a **Single Edge Server** or **Load-balanced consolidated Edge** server, click **Next** to specify configuration information. For an **Expanded Edge**, each server's configuration must be changed to a consolidated Edge configuration before it can be merged with Lync Server 2013. 
   

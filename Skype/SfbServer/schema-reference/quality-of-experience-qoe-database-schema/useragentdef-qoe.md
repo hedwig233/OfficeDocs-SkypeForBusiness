@@ -16,7 +16,9 @@ description: "The UserAgentDef table maps user agent identifiers to the agent's 
 ---
 
 # UserAgentDef table (QoE)
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The UserAgentDef table maps user agent identifiers to the agent's descriptive names. User agents are software clients used to connect to Skype for Business Server.
   
 |**UAType**|**UAName**|**UACategory**|

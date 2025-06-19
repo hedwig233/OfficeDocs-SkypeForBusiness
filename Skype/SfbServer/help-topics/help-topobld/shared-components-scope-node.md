@@ -18,6 +18,8 @@ description: "You right click on Shared Components in the Topology Builder hiera
 ---
 
 # Shared Components Scope Node
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 You right click on **Shared Components** in the Topology Builder hierarchy tree to create new shared components or to access Topology level options.
   

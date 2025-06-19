@@ -17,6 +17,8 @@ description: "Summary: Learn how to manage user policies for archiving for Skype
 
 # Manage archiving policies in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to manage user policies for archiving for Skype for Business Server.
   
 You initially set up archiving policies when you deploy archiving, but you can change, add, and delete configurations after deployment. Archiving policies determine whether to archive: 

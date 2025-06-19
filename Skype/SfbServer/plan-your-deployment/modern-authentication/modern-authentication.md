@@ -17,6 +17,8 @@ description: "Planning articles for Authentication and Authorization for Skype f
 
 # Discussing Authentication and Authorization in Skype for Business
 
+[!INCLUDE [appliesto-xxx-2019-sub](../../../SfBServer2019/includes/appliesto-xxx-2019-sub.md)]
+
 Authentication and authorization are related concepts, but do different work for you (though both are necessary). Put in simple terms, authentication (AuthN) depends on secrets only a valid user knows or has, and that can be a password, code, fingerprint, certificate, a combination of claims about the user that are true, or a combination of these things used together. AuthN is a process out to prove you're who you say you are.
 
 Authorization (AuthZ) is concerned with what you have access to after you prove who you are. It determines what you've been allowed to see, edit, and otherwise access. For example, you might have powerful Site Collection Administrator access to SharePoint Online, but if you switch to another online workload, like Skype for Business Online, you might have the privileges to troubleshoot user issues, not change the configuration of the server or servers. In a third workload, such as Exchange Online, you might only have the average user's access. AuthZ checks what and how much access you have to services/worloads, applications, files, and other data.

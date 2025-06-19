@@ -19,7 +19,9 @@ description: "Summary: Learn how to build, publish, and export your Edge Server 
 ---
 
 # Create your Edge topology for Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to build, publish, and export your Edge Server topology in Skype for Business Server.
   
 Topology Builder is the tool you need to use to build your Edge Server topology, just as it's used for any topology component for Skype for Business Server. Before following the steps below, you will need to have set up at least one Front End pool or a Standard Edition server.

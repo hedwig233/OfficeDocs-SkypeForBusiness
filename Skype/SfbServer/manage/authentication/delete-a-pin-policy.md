@@ -17,7 +17,9 @@ description: "Summary: Delete a user's dial-in conferencing PIN for Skype for Bu
 ---
 
 # Delete a PIN policy in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Delete a user's dial-in conferencing PIN for Skype for Business Server.
   
 Follow these steps to delete a personal identification number (PIN) policy.
@@ -67,5 +69,5 @@ You can delete PIN policies by using Windows PowerShell and the Remove-CsPinPoli
   et-CsPinPolicy | Where-Object {$_.AllowCommonPatterns -eq $True} | Remove-CsPinPolicy
   ```
 
-For more information, see the help topic for the [Remove-CsPinPolicy](/powershell/module/skype/remove-cspinpolicy?view=skype-ps) cmdlet.
+For more information, see the help topic for the [Remove-CsPinPolicy](/powershell/module/skype/remove-cspinpolicy?view=skype-ps&preserve-view=true) cmdlet.
 

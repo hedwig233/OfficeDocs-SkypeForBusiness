@@ -18,7 +18,9 @@ description: "In Deployed gateway, click the gateway where you want to import th
 ---
 
 # View Gateways (Import Configuration)
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 In **Deployed gateway**, click the gateway where you want to import the voice configuration file that you selected.
   
 For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).

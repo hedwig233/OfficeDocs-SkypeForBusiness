@@ -21,6 +21,8 @@ description: "Summary: Review these posters as needed while planning, implementi
 
 # Technical diagrams for Skype for Business Server
 
+[!INCLUDE[appliesto-2015-2019-sub](../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Review these posters as needed while planning, implementing, or managing Skype for Business Server.
 
 These resources are available in Visio (.vsdx) format (Visio 2015) and PDF format. For information about how to print documents, see [Tips for printing large-format posters](technical-diagrams.md#tips).

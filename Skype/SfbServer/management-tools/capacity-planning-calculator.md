@@ -17,7 +17,9 @@ description: "Summary: How to use the Capacity Calculator Tool."
 ---
 
 # Skype for Business Server Capacity Planning Calculator
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** How to use the Capacity Calculator Tool.
 
 > [!NOTE]

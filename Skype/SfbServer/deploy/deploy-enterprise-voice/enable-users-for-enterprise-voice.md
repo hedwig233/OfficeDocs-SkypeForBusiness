@@ -21,6 +21,8 @@ description: "Summary: Learn how to enable users to make and receive calls by us
 
 # Enable users for Enterprise Voice in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to enable users to make and receive calls by using Enterprise Voice in Skype for Business Server.
   
 After you deploy Enterprise Voice or Call Via Work, you can use the following procedures to enable a user to make calls by using Enterprise Voice:
@@ -82,7 +84,7 @@ Global and site-level voice policies are automatically assigned to all user acco
 ## Dial Plan Assignment
 <a name="BKMK_DialPlanAssignment"> </a>
 
-To complete user account configuration for either users of Enterprise Voice or users of dial-in conferencing, the user must be assigned a dial plan. User accounts will automatically use the global dial plan or, if one exists, the site-level dial plan, when you do not explicitly assign an existing per-user dial plan. If you want to use the global or site dial plan for all users who are enabled for Enterprise Voice, you can skip this section.
+To complete user account configuration for either users of Enterprise Voice or users of dial-in conferencing, the user must be assigned a dial plan. User accounts will automatically use the global dial plan or, if one exists, the site-level dial plan, when you don't explicitly assign an existing per-user dial plan. If you want to use the global or site dial plan for all users who are enabled for Enterprise Voice, you can skip this section.
   
 ### To assign a user-specific dial plan
 

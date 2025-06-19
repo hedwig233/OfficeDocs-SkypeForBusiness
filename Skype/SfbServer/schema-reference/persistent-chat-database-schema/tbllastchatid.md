@@ -16,6 +16,8 @@ description: "tblLastChatId contains the last chat ID that was generated (and us
 ---
 
 # tblLastChatId
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 tblLastChatId contains the last chat ID that was generated (and used in the tblChat table) for each user.
   

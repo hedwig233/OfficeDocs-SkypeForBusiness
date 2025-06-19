@@ -18,6 +18,8 @@ description: "Click Finish to create an empty topology as the first step in deco
 ---
 
 # Remove Deployment
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 Click **Finish** to create an empty topology as the first step in decommissioning your entire deployment.
   

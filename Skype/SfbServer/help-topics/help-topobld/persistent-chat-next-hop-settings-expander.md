@@ -18,7 +18,9 @@ description: "You configure the Persistent Chat Next hop pool by selecting a Fro
 ---
 
 # Persistent Chat Next Hop Settings Expander
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 You configure the Persistent Chat **Next hop pool** by selecting a Front End Server or Front End pool from the list.
   
  **OK** Accepts and commits changes to the dialog.

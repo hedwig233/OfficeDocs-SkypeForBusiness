@@ -16,7 +16,9 @@ description: "Summary: Learn how to manage conferencing in Skype for Business Se
 ---
 
 # Manage conferencing in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to manage conferencing in Skype for Business Server.
   
 This topic describes how to manage conferencing. For more information about how to plan and deploy conferencing, see [Plan for conferencing in Skype for Business Server](../../plan-your-deployment/conferencing/conferencing.md) and [Deploy conferencing in Skype for Business Server](../../deploy/deploy-conferencing/deploy-conferencing.md).
@@ -83,29 +85,29 @@ You can use the following Skype for Business Server Management Shell cmdlets to 
 
 |**Cmdlet**|**Description**|
 |:-----|:-----|
-|[Get-CsConferencingPolicy](/powershell/module/skype/get-csconferencingpolicy?view=skype-ps) <br/> |Returns information about the conferencing policies that have been configured for use in your organization. Conferencing policies determine the features and capabilities that can be used in a conference; this includes everything from whether or not the conference can include IP audio and video to the maximum number of people who can attend a meeting.  <br/> |
-|[Grant-CsConferencingPolicy](/powershell/module/skype/grant-csconferencingpolicy?view=skype-ps) <br/> |Assigns a conferencing policy at the per-user scope.  <br/> |
-|[New-CsConferencingPolicy](/powershell/module/skype/new-csconferencingpolicy?view=skype-ps) <br/> |Creates a new conferencing policy for use in your organization.  <br/> |
-|[Remove-CsConferencingPolicy](/powershell/module/skype/remove-csconferencingpolicy?view=skype-ps) <br/> |Removes the specified conferencing policy.  <br/> |
-|[Set-CsConferencingPolicy](/powershell/module/skype/set-csconferencingpolicy?view=skype-ps) <br/> |Modifies an existing conferencing policy.  <br/> |
+|[Get-CsConferencingPolicy](/powershell/module/skype/get-csconferencingpolicy?view=skype-ps&preserve-view=true) <br/> |Returns information about the conferencing policies that have been configured for use in your organization. Conferencing policies determine the features and capabilities that can be used in a conference; this includes everything from whether or not the conference can include IP audio and video to the maximum number of people who can attend a meeting.  <br/> |
+|[Grant-CsConferencingPolicy](/powershell/module/skype/grant-csconferencingpolicy?view=skype-ps&preserve-view=true) <br/> |Assigns a conferencing policy at the per-user scope.  <br/> |
+|[New-CsConferencingPolicy](/powershell/module/skype/new-csconferencingpolicy?view=skype-ps&preserve-view=true) <br/> |Creates a new conferencing policy for use in your organization.  <br/> |
+|[Remove-CsConferencingPolicy](/powershell/module/skype/remove-csconferencingpolicy?view=skype-ps&preserve-view=true) <br/> |Removes the specified conferencing policy.  <br/> |
+|[Set-CsConferencingPolicy](/powershell/module/skype/set-csconferencingpolicy?view=skype-ps&preserve-view=true) <br/> |Modifies an existing conferencing policy.  <br/> |
    
 **Meeting configuration settings**
 
 |**Cmdlet**|**Description**|
 |:-----|:-----|
-|[Get-CsMeetingConfiguration](/powershell/module/skype/get-csmeetingconfiguration?view=skype-ps) <br/> |Returns information about the meeting configuration settings currently in use in your organization. Meeting configuration settings help dictate the type of meetings that users can create, and control how (or even if) anonymous users and dial-in conferencing users can join these meetings.  <br/> |
-|[New-CsMeetingConfiguration](/powershell/module/skype/new-csmeetingconfiguration?view=skype-ps) <br/> |Creates a new collection of meeting configuration settings at the site or service scope. Note that these settings only affect scheduled meetings; they do not affect ad-hoc meetings created by clicking the Meet Now option in Skype for Business.  <br/> |
-|[Remove-CsMeetingConfiguration](/powershell/module/skype/remove-csmeetingconfiguration?view=skype-ps) <br/> |Deletes an existing collection of meeting configuration settings.  <br/> |
-|[Set-CsMeetingConfiguration](/powershell/module/skype/set-csmeetingconfiguration?view=skype-ps) <br/> |Modifies the meeting configuration settings currently in use in your organization.  <br/> |
+|[Get-CsMeetingConfiguration](/powershell/module/skype/get-csmeetingconfiguration?view=skype-ps&preserve-view=true) <br/> |Returns information about the meeting configuration settings currently in use in your organization. Meeting configuration settings help dictate the type of meetings that users can create, and control how (or even if) anonymous users and dial-in conferencing users can join these meetings.  <br/> |
+|[New-CsMeetingConfiguration](/powershell/module/skype/new-csmeetingconfiguration?view=skype-ps&preserve-view=true) <br/> |Creates a new collection of meeting configuration settings at the site or service scope. Note that these settings only affect scheduled meetings; they do not affect ad-hoc meetings created by clicking the Meet Now option in Skype for Business.  <br/> |
+|[Remove-CsMeetingConfiguration](/powershell/module/skype/remove-csmeetingconfiguration?view=skype-ps&preserve-view=true) <br/> |Deletes an existing collection of meeting configuration settings.  <br/> |
+|[Set-CsMeetingConfiguration](/powershell/module/skype/set-csmeetingconfiguration?view=skype-ps&preserve-view=true) <br/> |Modifies the meeting configuration settings currently in use in your organization.  <br/> |
    
 **Conferencing configuration settings**
 
 |**Cmdlet**|**Description**|
 |:-----|:-----|
-|[Get-CsConferencingConfiguration](/powershell/module/skype/get-csconferencingconfiguration?view=skype-ps) <br/> |Returns information about the conference configuration settings for your organization. Conference settings determine such things as the maximum-allowed size for conference content and handouts, the content grace period (that is, the amount of time content will be stored before being deleted), and the URLs for the internal and external downloads of the supported client.  <br/> |
-|[New-CsConferencingConfiguration](/powershell/module/skype/new-csconferencingconfiguration?view=skype-ps) <br/> |Creates a new collection of conference configuration settings.  <br/> |
-|[Remove-CsConferencingConfiguration](/powershell/module/skype/remove-csconferencingconfiguration?view=skype-ps) <br/> |Removes the specified collection of conference configuration settings.  <br/> |
-|[Set-CsConferencingConfiguration](/powershell/module/skype/set-csconferencingconfiguration?view=skype-ps) <br/> |Modifies an existing collection of conferencing configuration settings.  <br/> |
+|[Get-CsConferencingConfiguration](/powershell/module/skype/get-csconferencingconfiguration?view=skype-ps&preserve-view=true) <br/> |Returns information about the conference configuration settings for your organization. Conference settings determine such things as the maximum-allowed size for conference content and handouts, the content grace period (that is, the amount of time content will be stored before being deleted), and the URLs for the internal and external downloads of the supported client.  <br/> |
+|[New-CsConferencingConfiguration](/powershell/module/skype/new-csconferencingconfiguration?view=skype-ps&preserve-view=true) <br/> |Creates a new collection of conference configuration settings.  <br/> |
+|[Remove-CsConferencingConfiguration](/powershell/module/skype/remove-csconferencingconfiguration?view=skype-ps&preserve-view=true) <br/> |Removes the specified collection of conference configuration settings.  <br/> |
+|[Set-CsConferencingConfiguration](/powershell/module/skype/set-csconferencingconfiguration?view=skype-ps&preserve-view=true) <br/> |Modifies an existing collection of conferencing configuration settings.  <br/> |
    
 **Dial-in configuration settings**
 

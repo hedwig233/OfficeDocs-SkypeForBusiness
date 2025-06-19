@@ -19,6 +19,8 @@ description: "To edit the settings for an existing Survivable Branch Appliance o
 
 # Branch Office Appliance General Settings Expander
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 To edit the settings for an existing Survivable Branch Appliance or Survivable Branch Server, you're presented with the following sections:
 
 - General settings

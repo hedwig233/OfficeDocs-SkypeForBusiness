@@ -17,6 +17,8 @@ description: "Instructions for configuring Call Data Connector, which allows tel
 
 # Configure Call Data Connector
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../../SfBServer2019/includes/appliesto-xxx-2019-sub.md)]
+
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 

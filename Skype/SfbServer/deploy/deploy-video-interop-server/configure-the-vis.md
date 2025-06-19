@@ -17,7 +17,9 @@ description: "Summary: Configure the Video Interop Server (VIS) role in Skype fo
 ---
 
 # Configure the Video Interop Server in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Configure the Video Interop Server (VIS) role in Skype for Business Server.
   
  Configure the settings that the VIS associates with video trunks using Windows PowerShell. A video trunk configuration with global scope is created once the VIS service is installed. This video trunk configuration applies to the VIS to all trunks, which don't have video trunk configuration with a more specific scope. The video trunk configuration is a collection of settings that is applicable to video trunks.

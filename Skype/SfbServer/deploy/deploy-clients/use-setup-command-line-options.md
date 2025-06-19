@@ -17,6 +17,8 @@ description: "Summary: Learn about Setup.exe command line operations in Office s
 
 # Use Setup command-line options with Skype for Business clients
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn about Setup.exe command line operations in Office setup.
   
 The Setup.exe command line is used for very few operations in Office setup. Instead of using the Setup command-line options, you'll typically use the Office Customization Tool and the Config.xml file for product setup and feature customization.

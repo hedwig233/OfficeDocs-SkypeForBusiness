@@ -17,6 +17,8 @@ description: "Summary: Learn about the Conference Summary Report in Skype for Bu
 
 # Conference Summary Report in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn about the Conference Summary Report in Skype for Business Server.
   
 The Conference Summary Report provides an overall view of your online conferencing sessions. A conference typically involves more than two users and requires the use of conferencing services. By comparison, a peer-to-peer session typically involves just two users and doesn't require the use of Skype for Business Server conferencing services. Peer-to-peer activities are reported on the [Peer-to-Peer Activity Summary Report in Skype for Business Server](peer-to-peer-activity-summary-report.md).

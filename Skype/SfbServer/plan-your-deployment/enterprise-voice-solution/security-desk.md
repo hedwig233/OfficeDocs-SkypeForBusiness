@@ -20,7 +20,9 @@ description: "Planning how to include your organization's security desk in an E9
 ---
 
 # Include the security desk in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Planning how to include your organization's security desk in an E9-1-1 deployment, in Skype for Business Server Enterprise Voice.
   
 Your company may require the security desk to become involved in an emergency call. To help decide how to integrate the Security Desk into you E9-1-1 deployment, you should answer the following questions.

@@ -16,7 +16,9 @@ description: "The DeviceDriver table is a supporting table. Each record represen
 ---
 
 # DeviceDriver table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The DeviceDriver table is a supporting table. Each record represents a driver used by either a capture device or render device.
   
 |**Column**|**Data Type**|**Key/Index**|**Details**|

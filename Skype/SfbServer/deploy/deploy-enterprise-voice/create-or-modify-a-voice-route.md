@@ -21,6 +21,8 @@ description: "Summary: Learn how to create or modify a voice route in Skype for 
 
 # Create or modify a voice route in Skype for Business
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to create or modify a voice route in Skype for Business Server by using the Skype for Business Server Control Panel.
   
 ### To create a voice route by using the Skype for Business Server Control Panel

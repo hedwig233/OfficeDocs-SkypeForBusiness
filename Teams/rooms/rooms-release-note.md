@@ -777,6 +777,7 @@ Introduced in this update:
 
 |Release  |Release date  |
 |---------|---------|
+|[1449/1.0.96.2025203502](#144910962025203502-june-2025) | June 2025 |
 |[1449/1.0.96.2025126202](#144910962025126202-may-2025) | May 2025 |
 |[1449/1.0.96.2025031102](#144910962025031102-march-2025) | March 2025 |
 |[1449/1.0.96.2025020302](#144910962025020302-february-2025) | February 2025 |
@@ -813,6 +814,19 @@ Introduced in this update:
 > There can be a delay between when features are released by Microsoft and when they become available on a device make and model. If an update isn't available on your device, check with your device manufacturer for information on when it might become available.
 
 Features with :::image type="icon" source="../media/mtr-pro-icon.png"::: are only available with Teams Rooms Pro license.
+
+### 1449/1.0.96.2025203502 (June 2025)
+
+- Introduced in this update:
+
+- **Real time text (RTT) support:** Users can view real time text (RTT) messages on the front of room display. If users wish to send RTT messages, they will need to join the meeting with their laptop/mobile as a companion device. This feature is currently in TAP/Beta ring on Teams desktop and mobile. 
+
+Resolved Issues:
+
+- Fixed an issue where explicit consent for Microsoft Copilot was not being displayed on Teams Rooms Android
+-	Fixed an issue where layout options were not being shown when content is being shared
+-	Resolved an issue where dual display mode was being set automatically.
+-	Fixed crashes leading to meeting drops in some situations.
 
 ### 1449/1.0.96.2025126202 (May 2025)
 
@@ -878,7 +892,7 @@ Introduced in this update:
 - **Receive Cloud IntelliFrame** :::image type="icon" source="../media/mtr-pro-icon.png":::. Cloud IntelliFrame enhances non-AI cameras, showing in-room participants in individual frames like remote attendees for a more natural, engaging experience. Teams Rooms on Android can now receive Cloud IntelliFrame video feeds, bringing uniformity across Windows and Android devices. [Learn more](/microsoftteams/devices/cloud-intelliframe). 
 - **Whiteboard enhancements**. When using the whiteboard outside of meetings, your content is retained even when a meeting begins. The whiteboard's contents are preserved and shared with remote participants instantly. You can also use the 'Follow me' function to guide participants as you navigate, and collaborative cursors let you see everyone working in real-time.   
 - **Net Promoter Score (NPS) survey**. Users can rate how likely they are to recommend Microsoft Teams Rooms from 1 to 5 and provide additional comments on NPS surveys delivered on Teams Rooms on Android devices. NPS surveys will show up periodically after meetings end. IT admins can manage policies and allow or prevent room accounts from getting NPS surveys using PowerShell. [Learn more](/microsoftteams/manage-feedback-policies-in-teams).
-- **Admin email support for Report a problem**. IT admins can designate an email address for receiving 'Report a problem' submissions from Teams Rooms on Android devices. The email address can be set from the device settings. 
+- **Admin email support for Report a problem**. IT admins can designate an email address for receiving 'Report a problem' submissions from Teams Rooms on Android devices. The email address can be set from the Teams admin settings on the device or from the Teams Rooms on Android configuration profile on the Teams admin center. Once the email is set up, the 'Report a problem' option shows up on the app for users to submit issues to the organization.    
 
 <sup>1</sup> The swap screens setting will only be available on devices with the proper firmware support. If you don’t see the setting on your device, contact the device manufacturer for firmware support timelines.   
 <sup>2</sup> Due to device capability requirements and performance implications, 3x3 video gallery support for dual displays is available on the following Teams Rooms on Android devices: Yealink MeetingBar A40, Poly Studio X52, and Poly Studio G62. 

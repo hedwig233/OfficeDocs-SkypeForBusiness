@@ -17,6 +17,8 @@ description: "Summary: Learn how to enable or disable archiving in Skype for Bus
 
 # Enable or disable archiving in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to enable or disable archiving in Skype for Business Server.
   
 ## Enable or disable archiving by using the Control Panel

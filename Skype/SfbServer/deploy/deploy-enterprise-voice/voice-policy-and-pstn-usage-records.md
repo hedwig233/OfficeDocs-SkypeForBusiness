@@ -21,6 +21,8 @@ description: "Summary: Create or modify voice policies and configure PSTN usage 
 
 # Create or modify a voice policy and configure PSTN usage records in Skype for Business
 
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Create or modify voice policies and configure PSTN usage records by using the Skype for Business Server Control Panel.
 
 > [!NOTE]

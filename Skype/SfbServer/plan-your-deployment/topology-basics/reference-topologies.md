@@ -21,6 +21,8 @@ description: "Reference topologies for Skype for Business Server, including diag
 
 # Reference topologies for Skype for Business Server
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Reference topologies for Skype for Business Server, including diagrams and decisions to make for large, medium, and small organizations.
 
 The best Skype for Business Server topology for you depends on your organization's size, the workloads you want to deploy, and your preferences for high availability versus cost of investment.

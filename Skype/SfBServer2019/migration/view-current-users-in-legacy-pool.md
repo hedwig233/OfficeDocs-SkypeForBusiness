@@ -16,6 +16,8 @@ description: "Prior to learning the various ways you can move users between pool
 
 # View current users in legacy pool
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../includes/appliesto-xxx-2019-sub.md)]
+
 Before learning the various ways you can move users between pools, we must first determine which users exist in the legacy pool. The **Registrar pool** column identifies users who are configured for the legacy pool. These are the test users we move to the Skype for Business Server 2019 pool.
   
 ### To see the list of users in the legacy pool

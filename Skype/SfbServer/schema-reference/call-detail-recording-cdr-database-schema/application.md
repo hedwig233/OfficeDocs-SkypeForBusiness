@@ -16,6 +16,8 @@ description: "This table stores information about the various processes within S
 ---
 
 # Application table in Skype for Business Server 2015
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 This table stores information about the various processes within Skype for Business Server 2015 involved in routing and connections.
   

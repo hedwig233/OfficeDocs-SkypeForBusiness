@@ -19,6 +19,8 @@ description: "To begin the installation of Skype for Business Server 2015, you m
 
 # Prepare Active Directory
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 To begin the installation of Skype for Business Server 2015, you must prepare the Active Directory Domain Services schema, forest, and domains that will host servers and users. The Skype for Business Server Deployment Wizard will guide you through the steps required to prepare Active Directory, beginning with the schema and then into the forest preparation. After confirming that Active Directory replication is successful, you then prepare each domain that will host users or servers.
 
 > [!IMPORTANT]

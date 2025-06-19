@@ -18,6 +18,8 @@ description: "Because Skype for Business Server is an enterprise-class communica
 
 # Common security threats in modern day computing
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Because Skype for Business Server is an enterprise-class communications system, you should be aware of common security attacks that could affect its infrastructure and communications.
   
 ## Compromised-Key Attack

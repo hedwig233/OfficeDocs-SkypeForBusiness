@@ -18,6 +18,8 @@ description: "The A/V Conferencing pools node lists the A/V Conferencing pools i
 ---
 
 # AV MCUs Scope Node
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The **A/V Conferencing pools** node lists the A/V Conferencing pools in your topology. You can perform the following action:
   

@@ -16,7 +16,9 @@ description: "The Pool table is a supporting table that stores information about
 ---
 
 # Pool table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The Pool table is a supporting table that stores information about the various Front End pools. Each record in the table represents one pool.
   
 |**Column**|**Data Type**|**Key/Index**|**Details**|

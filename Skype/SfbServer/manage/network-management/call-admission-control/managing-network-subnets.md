@@ -16,6 +16,8 @@ description: "In most deployments of Skype for Business Server where call admiss
 
 # Managing network subnets in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 You can use either the Skype for Business Server Control Panel or the Skype for Business Server Management Shell to manage network subnets. In most deployments of Skype for Business Server where call admission control (CAC) is implemented, there will typically be a large number of subnets. Because of this, it is often best to configure subnets from the Skype for Business Server Management Shell.
 
 Use the sections in this article to view network subnet information or create, modify, or delete network subnets. 

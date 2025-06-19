@@ -16,7 +16,9 @@ description: "tblFileToken contains temporary tokens for file transfer purposes.
 ---
 
 # tblFileToken
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 tblFileToken contains temporary tokens for file transfer purposes.
   
 **Columns**

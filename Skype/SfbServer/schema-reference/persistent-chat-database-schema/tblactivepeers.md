@@ -16,7 +16,9 @@ description: "tblActivePeers contains the current peer-to-peer connections betwe
 ---
 
 # tblActivePeers
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 tblActivePeers contains the current peer-to-peer connections between chat services.
   
 **Columns**

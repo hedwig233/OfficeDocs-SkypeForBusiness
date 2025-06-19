@@ -16,6 +16,8 @@ description: "XMPP federation defines an external deployment based on the eXtens
 
 # Configure XMPP gateway access policies and certificates
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../includes/appliesto-xxx-2019-sub.md)]
+
 XMPP federation defines an external deployment based on the eXtensible Messaging and Presence Protocol (XMPP). An XMPP configuration allows users access to XMPP domain users by:
   
 - IM and Presence - person to person only

@@ -20,6 +20,8 @@ description: "Planning for private (secondary) telephone lines in Skype for Busi
 ---
 
 # Plan for private telephone lines with Skype for Business
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 Planning for private (secondary) telephone lines in Skype for Business Server Enterprise Voice.
   

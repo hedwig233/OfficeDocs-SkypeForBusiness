@@ -19,6 +19,8 @@ description: "UNRESOLVED_TOKEN_VAL(»bigfin_UI_help_intro)"
 
 # Test Voice Routing: Create New or Edit Existing Test Cases
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 UNRESOLVED_TOKEN_VAL(»bigfin_UI_help_intro)
 
 - [Create a Voice Routing Test Case](/previous-versions/office/lync-server-2013/lync-server-2013-create-a-voice-routing-test-case)

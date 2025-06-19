@@ -21,6 +21,8 @@ description: "Summary: Review the load balancing considerations before implement
 
 # Load balancing requirements for Skype for Business
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Review the load balancing considerations before implementing Skype for Business Server.
   
 Load balancing distributes traffic among the servers in a pool. If you have Front End pools, Mediation Server pools, or Edge Server pools, you need to deploy load balancing for these pools.
@@ -29,15 +31,15 @@ Skype for Business Server supports two types of load balancing solutions for cli
   
 Decide for yourself which load balancing solution is appropriate for each pool in your deployment, but keep in mind the following restrictions: 
   
-- The internal Edge interface and external Edge interface must use the same type of load balancing. You cannot use DNS load balancing on one interface and hardware load balancing on the other.
+- The internal Edge interface and external Edge interface must use the same type of load balancing. You can't use DNS load balancing on one interface and hardware load balancing on the other.
     
-- Some types of traffic require a hardware load balancer. For example, HTTP traffic requires a hardware load balancer instead of DNS load balancing. DNS load balancing does not work with client-to-server web traffic.
+- Some types of traffic require a hardware load balancer. For example, HTTP traffic requires a hardware load balancer instead of DNS load balancing. DNS load balancing doesn't work with client-to-server web traffic.
     
 If you choose to use DNS load balancing for a pool but still need to implement hardware load balancers for traffic such as HTTP traffic, the administration of the hardware load balancers is greatly simplified. For example, configuring the hardware load balancer will be simpler as it will only manage the HTTP and HTTPS traffic, while all other protocols will be managed by DNS load balancing. For details, see [DNS Load Balancing](load-balancing.md#BKMK_DNSLoadBalancing). 
   
-For server-to-server traffic, Skype for Business Server uses topology-aware load balancing. Servers read the published topology in the Central Management store to obtain the FQDNs of servers in the topology, and automatically distribute the traffic among the servers. Administrators do not need to set up or manage this type of load balancing. 
+For server-to-server traffic, Skype for Business Server uses topology-aware load balancing. Servers read the published topology in the Central Management store to obtain the FQDNs of servers in the topology, and automatically distribute the traffic among the servers. Administrators don't need to set up or manage this type of load balancing. 
   
-If you use DNS load balancing and you need to block traffic to a specific computer, it is not sufficient to just remove the IP address entries from the Pool FQDN. You must remove the DNS entry for the computer as well. 
+If you use DNS load balancing and you need to block traffic to a specific computer, it isn't sufficient to just remove the IP address entries from the Pool FQDN. You must remove the DNS entry for the computer as well. 
   
 ## Hardware load balancer requirements
 
@@ -50,13 +52,13 @@ The Skype for Business Server scaled consolidated Edge topology is optimized for
 - Connectivity to public IM users
     
 > [!IMPORTANT]
-> Using DNS load balancing on one interface and hardware load balancing on the other is not supported. You must use hardware load balancing for both interfaces or DNS load balancing for both. 
+> Using DNS load balancing on one interface and hardware load balancing on the other isn't supported. You must use hardware load balancing for both interfaces or DNS load balancing for both. 
   
 > [!NOTE]
-> If you are using a hardware load balancer, the load balancer deployed for connections with the internal network must be configured to load balance only the traffic to servers running the Access Edge service and the A/V Edge service. It cannot load balance the traffic to the internal Web Conferencing Edge service or the internal XMPP Proxy service. 
+> If you're using a hardware load balancer, the load balancer deployed for connections with the internal network must be configured to load balance only the traffic to servers running the Access Edge service and the A/V Edge service. It can't load balance the traffic to the internal Web Conferencing Edge service or the internal XMPP Proxy service. 
   
 > [!NOTE]
-> The direct server return (DSR) NAT is not supported with Skype for Business Server. 
+> The direct server return (DSR) NAT isn't supported with Skype for Business Server. 
   
 To determine whether your hardware load balancer supports the necessary features required by Skype for Business Server, see [Infrastructure for Skype for Business](../../../SfbPartnerCertification/certification/infra-gateways.md). 
   
@@ -68,7 +70,7 @@ Following are the hardware load balancer requirements for Edge Servers running t
     
 - Turn off TCP nagling for external port range 50,000 - 59,999. 
     
-- Do not use NAT on the internal or external firewall. 
+- Don't use NAT on the internal or external firewall. 
     
 - The edge internal interface must be on a different network than the Edge Server external interface and routing between them must be disabled. 
     
@@ -78,34 +80,34 @@ Following are the hardware load balancer requirements for Edge Servers running t
     
 ### Other Hardware Load Balancer requirements
 
-Cookie-based affinity requirements are greatly reduced in Skype for Business Server for Web services. If you are deploying Skype for Business Server and will not retain any Lync Server 2010 Front End Servers or Front End pools, you do not need cookie-based persistence. However, if you will temporarily or permanently retain any Lync Server 2010 Front End Servers or Front End pools, you still use cookie-based persistence as it is deployed and configured for Lync Server 2010. 
+Cookie-based affinity requirements are greatly reduced in Skype for Business Server for Web services. If you're deploying Skype for Business Server and won't retain any Lync Server 2010 Front End Servers or Front End pools, you don't need cookie-based persistence. However, if you'll temporarily or permanently retain any Lync Server 2010 Front End Servers or Front End pools, you still use cookie-based persistence as it is deployed and configured for Lync Server 2010. 
   
 > [!NOTE]
-> **If you decide to use cookie-based affinity even though your deployment does not require it**, there is no negative impact to doing so. 
+> **If you decide to use cookie-based affinity even though your deployment does not require it**, there's no negative impact to doing so. 
   
 For deployments that **will not use** cookie-based affinity:
   
-- On the reverse proxy publishing rule for port 4443, set **Forward host header** to True. This will ensure that the original URL is forwarded.
+- On the reverse proxy publishing rule for port 4443, set **Forward host header** to True. This ensures that the original URL is forwarded.
     
 For deployments that **will use** cookie-based affinity:
   
-- On the reverse proxy publishing rule for port 4443, set **Forward host header** to True. This will ensure that the original URL is forwarded.
+- On the reverse proxy publishing rule for port 4443, set **Forward host header** to True. This ensures that the original URL is forwarded.
     
 - Hardware load balancer cookie MUST NOT be marked httpOnly
     
 - Hardware load balancer cookie MUST NOT have an expiration time
     
-- Hardware load balancer cookie MUST be named **MS-WSMAN** (This is the value that the Web services expect, and cannot be changed)
+- Hardware load balancer cookie MUST be named **MS-WSMAN** (This is the value that the Web services expect, and can't be changed)
     
-- Hardware load balancer cookie MUST be set in every HTTP response for which the incoming HTTP request did not have a cookie, regardless of whether a previous HTTP response on that same TCP connection had already obtained a cookie. If the load balancer optimizes cookie insert to only occur once per TCP connection, that optimization MUST NOT be used
+- Hardware load balancer cookie MUST be set in every HTTP response for which the incoming HTTP request didn't have a cookie, regardless of whether a previous HTTP response on that same TCP connection had already obtained a cookie. If the load balancer optimizes cookie insert to only occur once per TCP connection, that optimization MUST NOT be used
     
 > [!NOTE]
 > Typical hardware load balancer configurations use source-address affinity and a 20 min. TCP session lifetime, which is fine for Lync Server and Lync 2013 clients because session state is maintained through client usage and/or and application interaction. 
   
-If you are deploying mobile devices, your hardware load balancer must be able to load balance individual request within a TCP session (in effect, you must be able to load balance an individual request based on the target IP address).
+If you're deploying mobile devices, your hardware load balancer must be able to load balance individual request within a TCP session (in effect, you must be able to load balance an individual request based on the target IP address).
   
 > [!CAUTION]
-> If you are deploying mobile devices, your hardware load balancer must be able to individually load balance each request within a TCP connection. The latest Apple iOS mobile apps require Transport Layer Security (TLS) version 1.2.  
+> If you're deploying mobile devices, your hardware load balancer must be able to individually load balance each request within a TCP connection. The latest Apple iOS mobile apps require Transport Layer Security (TLS) version 1.2.  
   
 > [!CAUTION]
 > For details on third party hardware load balancers, see [Infrastructure for Skype for Business](../../../SfbPartnerCertification/certification/infra-gateways.md).  
@@ -149,7 +151,7 @@ You define port monitoring on the hardware load balancers to determine when spec
 
 Skype for Business Server enables DNS load balancing, a software solution that can greatly reduce the administration overhead for load balancing on your network. DNS load balancing balances the network traffic that is unique to Skype for Business Server, such as SIP traffic and media traffic.
   
-If you deploy DNS load balancing, your organization's administration overhead for hardware load balancers will be minimized. Additionally, complex troubleshooting of problems related to misconfiguration of load balancers for SIP traffic will be eliminated. You can also prevent server connections so that you can take servers offline. DNS load balancing also ensures that hardware load balancer problems do not affect elements of SIP traffic such as basic call routing.
+If you deploy DNS load balancing, your organization's administration overhead for hardware load balancers will be minimized. Additionally, complex troubleshooting of problems related to misconfiguration of load balancers for SIP traffic will be eliminated. You can also prevent server connections so that you can take servers offline. DNS load balancing also ensures that hardware load balancer problems don't affect elements of SIP traffic such as basic call routing.
 
 The following diagram shows an example that includes both internal and external DNS load balancing: 
   
@@ -180,7 +182,7 @@ For example, if there are three front end servers in a pool named pool01.contoso
 - If the client tries all cached entries without a successful connection, the user is notified that no servers running Skype for Business Server are available at the moment.
     
 > [!NOTE]
-> DNS-based load balancing is different from DNS round robin (DNS RR) which typically refers to load balancing by relying on DNS to provide a different order of IP addresses corresponding to the servers in a pool. Typically DNS RR only enables load distribution, but does not enable failover. For example, if the connection to the one IP address returned by the DNS A and AAAA (if you are using IPv6 addressing) query fails, the connection fails. Therefore, DNS round robin by itself is less reliable than DNS-based load balancing. You can use DNS round robin in conjunction with DNS load balancing. 
+> DNS-based load balancing is different from DNS round robin (DNS RR) which typically refers to load balancing by relying on DNS to provide a different order of IP addresses corresponding to the servers in a pool. Typically DNS RR only enables load distribution, but doesn't enable failover. For example, if the connection to the one IP address returned by the DNS A and AAAA (if you're using IPv6 addressing) query fails, the connection fails. Therefore, DNS round robin by itself is less reliable than DNS-based load balancing. You can use DNS round robin in conjunction with DNS load balancing. 
   
 DNS load balancing is used for the following:
   
@@ -192,7 +194,7 @@ DNS load balancing is used for the following:
     
 - Load balancing all client-to-server traffic between clients and Edge Servers
     
-DNS load balancing cannot be used for the following:
+DNS load balancing can't be used for the following:
   
 - Client-to-server web traffic to Director or Front End Servers
     
@@ -204,7 +206,7 @@ If multiple DNS records are returned by a DNS SRV query, the Access Edge service
     
 - The weight field specifies a relative weight for entries with the same priority. Larger weights SHOULD be given a proportionately higher probability of being selected. DNS administrators SHOULD use Weight 0 when there isn't any server selection to do. In the presence of records containing weights greater than 0, records with weight 0 should have a very small chance of being selected.
     
-If multiple DNS SRV records with equal priority and weight are returned, the Access Edge service will select the SRV record that was received first from the DNS server.
+If multiple DNS SRV records with equal priority and weight are returned, the Access Edge service selects the SRV record that was received first from the DNS server.
   
 ### DNS Load Balancing on Front End Pools and Director Pools
 
@@ -214,9 +216,9 @@ Although you still need hardware load balancers for these pools, their setup and
   
 #### DNS Load Balancing and Supporting Older Clients and Servers
 
-DNS load balancing supports automatic failover only for servers running Skype for Business Server or Lync Server 2010, and for Lync 2013 and Skype for Business clients. Earlier versions of clients and Office Communications Server can still connect to pools running DNS load balancing, but if they cannot make a connection to the first server that DNS load balancing refers them to, they are unable to fail over to another server in the pool. 
+DNS load balancing supports automatic failover only for servers running Skype for Business Server or Lync Server 2010, and for Lync 2013 and Skype for Business clients. Earlier versions of clients and Office Communications Server can still connect to pools running DNS load balancing, but if they can't make a connection to the first server that DNS load balancing refers them to, they're unable to fail over to another server in the pool. 
   
-Additionally, if you are using Exchange UM, you must use a minimum of Exchange 2010 SP1 to get support for Skype for Business Server DNS load balancing. If you use an earlier version of Exchange, your users will not have failover capabilities for these Exchange UM scenarios:
+Additionally, if you're using Exchange UM, you must use a minimum of Exchange 2010 SP1 to get support for Skype for Business Server DNS load balancing. If you use an earlier version of Exchange, your users will not have failover capabilities for these Exchange UM scenarios:
   
 - Playing their Enterprise voicemail on their phone
     
@@ -236,7 +238,7 @@ Deploying DNS load balancing on Front End pools and Director pools requires you 
 - To support the FQDN used by DNS load balancing, you must provision DNS to resolve the pool FQDN (such as pool01.contoso.com) to the IP addresses of all the servers in the pool (for example, 192.168.1.1, 192.168.1.2, and so on). You should include only the IP addresses of servers that are currently deployed.
     
     > [!CAUTION]
-    > If you have more than one Front End pool or Front End Server the external Web services FQDN must be unique. For example, if you define the external Web services FQDN of a Front End Server as **pool01.contoso.com**, you cannot use **pool01.contoso.com** for another Front End pool or Front End Server. If you are also deploying Directors, the external Web services FQDN defined for any Director or Director pool must be unique from any other Director or Director pool as well as any Front End pool or Front End Server. If decide to override the Internal web services with a self-defined FQDN, each FQDN must be unique from any other Front End pool, Director or a Director pool.
+    > If you have more than one Front End pool or Front End Server the external Web services FQDN must be unique. For example, if you define the external Web services FQDN of a Front End Server as **pool01.contoso.com**, you can't use **pool01.contoso.com** for another Front End pool or Front End Server. If you're also deploying Directors, the external Web services FQDN defined for any Director or Director pool must be unique from any other Director or Director pool as well as any Front End pool or Front End Server. If decide to override the Internal web services with a self-defined FQDN, each FQDN must be unique from any other Front End pool, Director, or a Director pool.
   
 ### DNS Load Balancing on Edge Server Pools
 <a name="BK_Edge"> </a>
@@ -251,7 +253,7 @@ Using DNS load balancing on your Edge Servers causes a loss of failover ability 
     
 These scenarios will work as long as all Edge Servers in the pool are up and running, but if one Edge Server is unavailable, any requests for these scenarios that are sent to it will fail, instead of routing to another Edge Server.
   
- If you are using Exchange UM, you must use a minimum of Exchange 2013 to get support for Skype for Business Server DNS load balancing on Edge. If you use an earlier version of Exchange, your remote users will not have failover capabilities for these Exchange UM scenarios:
+ If you're using Exchange UM, you must use a minimum of Exchange 2013 to get support for Skype for Business Server DNS load balancing on Edge. If you use an earlier version of Exchange, your remote users won't have failover capabilities for these Exchange UM scenarios:
   
 - Playing their Enterprise voicemail on their phone
     
@@ -259,7 +261,7 @@ These scenarios will work as long as all Edge Servers in the pool are up and run
     
 All other Exchange UM scenarios will work properly.
   
-The internal Edge interface and external Edge interface must use the same type of load balancing. You cannot use DNS load balancing on one Edge interface and hardware load balancing on the other Edge interface.
+The internal Edge interface and external Edge interface must use the same type of load balancing. You can't use DNS load balancing on one Edge interface and hardware load balancing on the other Edge interface.
   
 #### Deploying DNS Load Balancing on Edge Server Pools
 
@@ -283,7 +285,7 @@ To deploy DNS load balancing on a Mediation Server pool, you must provision DNS 
 ### Blocking Traffic to a Server With DNS Load Balancing
 <a name="BK_Mediation"> </a>
 
-If you use DNS load balancing and you need to block traffic to a specific computer, it is not sufficient to just remove the IP address entries from the Pool FQDN. You must remove the DNS entry for the computer as well. 
+If you use DNS load balancing and you need to block traffic to a specific computer, it isn't sufficient to just remove the IP address entries from the Pool FQDN. You must remove the DNS entry for the computer as well. 
   
 Note that for server-to-server traffic, Skype for Business Server uses topology-aware load balancing. Servers read the published topology in the Central Management store to obtain the FQDNs of servers in the topology, and automatically distribute the traffic among the servers. To block a server from receiving server-to-server traffic, you must remove the server from the topology. 
 

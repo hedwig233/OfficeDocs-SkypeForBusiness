@@ -18,6 +18,8 @@ description: "To grant access to the Skype for Business Server 2015, do the foll
 ---
 
 # Create Skype for Business Server Control Panel Administrators
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 To grant access to the Skype for Business Server 2015, do the following:
   

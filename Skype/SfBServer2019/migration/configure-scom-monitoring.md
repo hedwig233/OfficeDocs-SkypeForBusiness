@@ -16,6 +16,8 @@ description: "After migrating to Microsoft Skype for Business Server 2019, you m
 
 # Configure SCOM monitoring
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../includes/appliesto-xxx-2019-sub.md)]
+
 After migrating to Skype for Business Server 2019, you must complete a few tasks to configure Skype for Business Server 2019 to work with System Center Operations Manager.
   
 - Apply updates to a server elected to manage the central discovery logic.
@@ -36,7 +38,7 @@ Instructions for carrying out each of these tasks are provided below.
 
 1. On the server elected to manage the central discovery logic, open a Windows PowerShell command window. 
     
-2. At the command line, type the following:
+2. At the command line, type the following command:
     
    ```PowerShell
    New-Item -Path "HKLM:\Software\Microsoft\Real-Time Communications\Health"

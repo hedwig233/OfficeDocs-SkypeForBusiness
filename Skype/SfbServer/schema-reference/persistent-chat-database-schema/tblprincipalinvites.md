@@ -16,6 +16,8 @@ description: "tblPrincipalInvites contain invitations for all provisioned users 
 ---
 
 # tblPrincipalInvites
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 tblPrincipalInvites contain invitations for all provisioned users for all nodes with autoinvite on.
   

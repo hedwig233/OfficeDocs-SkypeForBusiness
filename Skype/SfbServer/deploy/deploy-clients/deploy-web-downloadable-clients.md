@@ -17,6 +17,8 @@ description: "Summary: Deploy the Skype for Business Web App and Skype Meetings 
 
 # Deploy Web downloadable clients in Skype for Business Server
 
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Deploy the Skype for Business 2015 Web App and Skype Meetings App used with Skype for Business Server.
 
 Skype for Business Web App is an Internet Information Services (IIS) web client that is installed on the server running Skype for Business Server. By default it's deployed on demand to meeting users who don't already have the Skype for Business client. These meeting users are more often than not connecting from outside your network. Whenever a user select a meeting URL but doesn't have the Skype for Business client installed, the user is presented with the option to join the meeting by using the latest version of Skype for Business Web App, Skype Meetings App, or Skype for Business for Mac.

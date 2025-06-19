@@ -16,7 +16,9 @@ description: "Summary: Learn how to view conferencing policies in Skype for Busi
 ---
 
 # View conferencing policies in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to view conferencing policies in Skype for Business Server.
   
 You can view conferencing policies by using Skype for Business Server Control Panel or by using Skype for Business Server Management Shell.

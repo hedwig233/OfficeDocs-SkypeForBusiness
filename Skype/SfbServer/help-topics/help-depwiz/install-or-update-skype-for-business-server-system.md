@@ -19,6 +19,8 @@ description: "To begin the installation, or to update an existing deployment of 
 
 # Install or Update Skype for Business Server System
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 To begin the installation, or to update an existing deployment of Skype for Business Server 2015, select **Install or Update Skype for Business Server**. The steps in this section installs components specific to a given server role, based on the Topology Builder document. Before you begin this series of steps, you must define the deployment in Topology Builder. You must be logged into the computer that you're deploying as the local administrator and as a member of the Domain Admins group in the domain where the server is located. The computer must be joined to the domain prior to completing this step.
 
 If you're updating a currently deployed server, you must make the changes that you intend to make in Topology Builder.

@@ -16,6 +16,8 @@ description: "A network region route defines the route between a pair of network
 
 # Managing network region routes in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 A *network region route* defines the route between a pair of network regions. Each pair of network regions in your call admission control deployment requires a network region route. This enables every network region within the deployment to access every other region. Use the procedures in this artilce to view, create, modify, or delete network region routes.
 
 ## View network region route information 

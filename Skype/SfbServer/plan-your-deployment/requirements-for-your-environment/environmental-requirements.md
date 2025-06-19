@@ -20,6 +20,8 @@ description: "Summary: Configure your nonserver requirements for Skype for Busin
 ---
 
 # Environmental requirements for Skype for Business Server 2015
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 **Summary:** Configure your nonserver requirements for Skype for Business Server 2015. There are various things you'll want configured before doing your deployment, including Active Directory, DNS, Certs, and Fileshares.
   

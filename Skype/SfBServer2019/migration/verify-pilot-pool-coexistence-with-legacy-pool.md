@@ -16,6 +16,8 @@ description: "Process to verify pilot pool coexistence with legacy pool."
 
 # Verify pilot pool coexistence with legacy pool
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../includes/appliesto-xxx-2019-sub.md)]
+
  **In this article**
   
 [Verify that Skype for Business Server 2019 services have started](#sectionSection0)

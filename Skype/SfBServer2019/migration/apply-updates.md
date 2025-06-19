@@ -16,6 +16,8 @@ description: "Before you migrate updates must be applied to your environment. Fo
 
 # Apply updates
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../includes/appliesto-xxx-2019-sub.md)]
+
 Before you migrate, updates must be applied to your environment. For the most up-to-date information, see the **Skype for Business downloads and updates** at [https://go.microsoft.com/fwlink/p/?linkid=232630](../../SfbServer/software-updates.md).
 
 

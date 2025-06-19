@@ -12,11 +12,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 565e3675-a30a-4962-9e12-738ba8c0a19a
-
+description: "The following topics detail the Schema reference for Skype for Business Server 2015."
 ---
 
 # Schema reference for Skype for Business Server 2015
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)] 
 
 ## In this section
 

@@ -17,6 +17,8 @@ description: "Use the procedures in this article to enable or disable media bypa
 
 # Enabling and disabling media bypass in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Use the procedures in this article to enable or disable media bypass by using the Skype for Business Server Control Panel.
 
 ## Enable network media bypass 

@@ -17,7 +17,9 @@ description: "Requirements or prerequisites for the Skype for Business Server 20
 ---
 
 # Prerequisites and setup for the Skype for Business Stress and Performance Tool
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Requirements or prerequisites for the Skype for Business Server 2015 Stress and Performance Tool. How to install or set up the Stress and Performance Tool.
   
 We have the following sections of hardware, software and system configuration requirements you need to be aware of prior to running the Stress and Performance Tool:

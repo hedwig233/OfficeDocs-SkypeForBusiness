@@ -19,6 +19,8 @@ description: "What do you want to do? Click the link to the task that you want t
 
 # Users: View or Configure Conferencing Policy
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 What do you want to do? Click the link to the task that you want to perform.
 
 - [Assign a Conferencing Policy to Modify a User's Default Meeting Experience](/previous-versions/office/lync-server-2013/lync-server-2013-assign-a-per-user-conferencing-policy)

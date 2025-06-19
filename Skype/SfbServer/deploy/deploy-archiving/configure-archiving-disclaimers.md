@@ -12,14 +12,16 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 394ac291-05cd-4fa1-acb3-714af538b47f
-description: "Summary: Read this topic to learn how to configure an archiving disclaimer for Skype for Business Server."
+description: "Summary: Read this article to learn how to configure an archiving disclaimer for Skype for Business Server."
 ---
 
 # Configure archiving disclaimers for external users in Skype for Business Server
  
-**Summary:** Read this topic to learn how to configure an archiving disclaimer for Skype for Business Server.
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
+**Summary:** Read this article to learn how to configure an archiving disclaimer for Skype for Business Server.
   
-If your organization communicates with external partners, you need to let them know that you are archiving communications with them. When you deploy an Edge Server and enable federation for your organization, you are asked whether you want to automatically send an archiving disclaimer to external partners. 
+If your organization communicates with external partners, you need to let them know that you're archiving communications with them. When you deploy an Microsoft Edge Server and enable federation for your organization, you're asked whether you want to automatically send an archiving disclaimer to external partners. 
   
 If you need to change this configuration, you can use the Skype for Business Server Control Panel or the Windows PowerShell **Set-CsAccessEdgeConfiguration** cmdlet. Cmdlets can be run either from the Skype for Business Server management shell or from a remote session of Windows PowerShell.
   
@@ -27,17 +29,17 @@ To enable external users to collaborate with users in your Skype for Business Se
   
 ## Enable or disable archiving disclaimer using the Control Panel
 
-1. From a user account that is a member of the RTCUniversalServerAdmins group (or has equivalent user rights), or is assigned to the CsAdministrator role, log on to any computer in your internal deployment.
+1. From a user account that is a member of the RTCUniversalServerAdmins group (or has equivalent user rights), or is assigned to the CsAdministrator role, sign in any computer in your internal deployment.
     
 2. Open a browser window, and then enter the Admin URL to open the Skype for Business Server Control Panel. 
     
-3. In the left navigation bar, click **Federation and External Access**, and then click **Access Edge Configuration**.
+3. In the left navigation bar, select **Federation and External Access**, and then select **Access Edge Configuration**.
     
-4. On the **Access Edge Configuration** tab, click **Global**, click **Edit**, and then click **Show details**.
+4. On the **Access Edge Configuration** tab, select **Global**, select **Edit**, and then select **Show details**.
     
 5. In **Edit Access Edge Configuration**, under **Enable federation and public IM connectivity**, select or clear the **Send archiving disclaimer to federated partners** check box to enable or disable automatically sending the archiving disclaimer.
     
-6. Click **Commit**.
+6. Select **Commit**.
     
 ## Enable or disable archiving disclaimer using Windows PowerShell
 

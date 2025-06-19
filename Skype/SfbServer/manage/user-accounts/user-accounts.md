@@ -17,6 +17,8 @@ description: "The sections in this article describe how to enable, temporarily d
 
 # Manage user accounts for Skype for Business Server
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../../../SfBServer2019/includes/appliesto-xxx-2019-sub.md)]
+
 The sections in this article describe how to enable, temporarily disable, or remove Active Directory users from Skype for Business Server.
 
 For information on how to enable an Active Directory user, see [Create a New User Account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732336(v=ws.11)). For information on how to delete an Active Directory user, see [Delete a User Account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)).

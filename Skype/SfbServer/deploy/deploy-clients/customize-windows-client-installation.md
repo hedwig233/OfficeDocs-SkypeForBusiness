@@ -17,6 +17,8 @@ description: "Summary: Overview of installation methods and tools for Skype for 
 
 # Customize Windows client installation in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Overview of installation methods and tools for Skype for Business.
   
 > [!NOTE]

@@ -16,7 +16,9 @@ description: "Summary: Learn about the Mobility Service in Skype for Business Se
 ---
 
 # Configure Mobility Service for high performance in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn about the Mobility Service in Skype for Business Server.
   
 > [!IMPORTANT]

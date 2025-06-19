@@ -16,11 +16,13 @@ description: "Each record represents one media type used in a peer-to-peer sessi
 ---
 
 # Media table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Each record represents one media type used in a peer-to-peer session. One session is represented by multiple records in the table, if more than one media type is used.
   
 > [!NOTE]
-> The Media table should not be used to calculate the media duration for a session. This table contains the signaling details of media exchange in a session. Media exchange is done by the INVITE request, and StartTime indicates the time that the INVITE was sent out. The invite time does not necessarily mean the media start time, because media starts only after the sessionee accepts the session. The EndTime usually means the end time of this session. 
+> The Media table shouldn't be used to calculate the media duration for a session. This table contains the signaling details of media exchange in a session. Media exchange is done by the INVITE request, and StartTime indicates the time that the INVITE was sent out. The invite time doesn't necessarily mean the media start time, because media starts only after the sessionee accepts the session. The EndTime usually means the end time of this session. 
   
 |**Column**|**Data Type**|**Key/Index**|**Details**|
 |:-----|:-----|:-----|:-----|

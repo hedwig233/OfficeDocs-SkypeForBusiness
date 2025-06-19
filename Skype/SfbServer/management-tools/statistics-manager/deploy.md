@@ -18,6 +18,8 @@ description: "Summary: Read this article to learn how to deploy Statistics Manag
 
 # Deploy Statistics Manager for Skype for Business Server
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Read this article to learn how to deploy Statistics Manager for Skype for Business Server.
 
  Statistics Manager for Skype for Business Server is a powerful tool that allows you to view Skype for Business Server health and performance data in real time. You can poll performance data across hundreds of servers every few seconds, and view the results instantly on the Statistics Manager Website.
@@ -25,7 +27,7 @@ description: "Summary: Read this article to learn how to deploy Statistics Manag
 Before you attempt to install Statistics Manager, be sure you're familiar with the software, networking, and hardware requirements. For more information, see [Plan for Statistics Manager for Skype for Business Server](plan.md).
 
 > [!NOTE]
-> If you are upgrading from a previous version of Statistics Manager, see [Upgrade Statistics Manager for Skype for Business Server](upgrade.md).
+> If you're upgrading from a previous version of Statistics Manager, see [Upgrade Statistics Manager for Skype for Business Server](upgrade.md).
 
 > [!NOTE]
 > The Statistics Manager Website has been tested and works correctly on Internet Explorer 11+, Edge 20.10240+ , and Chrome 46+ (current evergreen version).
@@ -166,11 +168,11 @@ Install an Agent on each Skype for Business Server that you wish to monitor by r
 
 3. Select **Install**.
 
-If you're installing an Agent on numerous machines, you'll probably want to do this in unattended mode. For example:
+   If you're installing an Agent on numerous machines, you'll probably want to do this in unattended mode. For example:
 
-```console
-msiexec /l install.log /i StatsManPerfAgent.msi SERVICE_THUMBPRINT=<thumbprint> SERVICE_PASSWORD=<password> SERVICE_URI=https://<hostname>:<servicePort>/[INSTALLDIR=<directory>][DIR_STATSMANAPPDATA=<directory>]
-```
+   ```console
+   msiexec /l install.log /i StatsManPerfAgent.msi SERVICE_THUMBPRINT=<thumbprint> SERVICE_PASSWORD=<password> SERVICE_URI=https://<hostname>:<servicePort>/[INSTALLDIR=<directory>][DIR_STATSMANAPPDATA=<directory>]
+   ```
 
 ### Import the topology
 <a name="BKMK_ImportTopology"> </a>
@@ -250,19 +252,19 @@ If an Agent fails to start, check for the following issues:
 
    2. Make sure the port is open to the Listener service, and that the Agent computer can communicate with the port.
 
-- To ensure that Statistics Manager is collecting data, you can check the CSV file as follows.
+     - To ensure that Statistics Manager is collecting data, you can check the CSV file as follows.
 
     The following command retrieves the counter storage names:
 
-  ```console
-  .\PerfAgentStorageManager.exe -redis=localhost -a=listcounterstoragenames -mode=verbose | findstr /i processor
-  ```
+    ```console
+    .\PerfAgentStorageManager.exe -redis=localhost -a=listcounterstoragenames -mode=verbose | findstr /i processor
+    ```
 
     The next command retrieves the values for the specified counters:
 
-  ```console
-  .\PerfAgentStorageManager.exe -redis=localhost -a=getcountervalues  -counter="\\*\Processor Information\% Processor Time_Mean_Mean\_Total" -file:all-processor.csv
-  ```
+    ```console
+    .\PerfAgentStorageManager.exe -redis=localhost -a=getcountervalues  -counter="\\*\Processor Information\% Processor Time_Mean_Mean\_Total" -file:all-processor.csv
+    ```
 
 For information about all the events you might see in the application event log, see [Troubleshoot Statistics Manager for Skype for Business Server](troubleshoot.md).
 
@@ -277,7 +279,7 @@ Microsoft strongly recommends that you use a certificate signed by a trusted cer
    New-SelfSignedCertificate -DnsName StatsManListener -CertStoreLocation Cert:\LocalMachine\My
    ```
 
-2. Type  `certlm.msc`. This will open the Certificate Manager for the local machine.
+2. Type `certlm.msc`. This will open the Certificate Manager for the local machine.
 
 3. Navigate to **Personal**, and then open **Certificates**.
 
@@ -285,7 +287,7 @@ Microsoft strongly recommends that you use a certificate signed by a trusted cer
 
 5. Click **Add**.
 
-6. In the **Enter the object names to select** box, type the following text: Network Service
+6. In the **Enter the object names to select** box, type the following text: Network Service.
 
 7. Click **OK**.
 

@@ -18,6 +18,8 @@ description: "The Access Edge Pool internal FQDN is used in several scenarios wh
 ---
 
 # Legacy Merge FQDN
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The **Access Edge Pool internal FQDN** is used in several scenarios where internal users communicate with external users for federation, remote user access, and public IM connectivity. If a load-balanced Edge Server was deployed in your legacy environment, enter the fully qualified domain name (FQDN) of the internal load balancer.
   

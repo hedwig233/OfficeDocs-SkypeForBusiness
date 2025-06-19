@@ -16,6 +16,8 @@ description: "In Skype for Business Server 2019, you define sites on your networ
 
 # Migration phases
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../includes/appliesto-xxx-2019-sub.md)]
+
 In Skype for Business Server 2019, you define sites on your network that contain Skype for Business Server 2019 components. A site is a set of computers that are well-connected by a high-speed, low-latency network, such as a single local area network (LAN) or two networks connected by a high-speed fiber optic network. 
   
 A Front End pool is a set of Front End Servers that are configured identically and work together to provide services for a common group of users. A pool provides scalability and failover capability to your users. Each server in a pool must run an identical server role or roles. A Standard Edition server, designed for small organizations, also defines a pool and runs on a single server. This enables you to have Skype for Business Server 2019 functionality for a lesser cost, but does not provide a true high-availability solution. 

@@ -18,6 +18,8 @@ description: "The Survivable Branch Appliances node lists the Survivable Branch 
 ---
 
 # Branch Office Appliances Scope Node
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The **Survivable Branch Appliances** node lists the Survivable Branch Appliances at this branch site. You can perform the following action:
   

@@ -21,6 +21,8 @@ description: "Summary: Learn how to configure Caller ID by using the Skype for B
 
 # Create or modify a translation rule for caller ID presentation in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to configure Caller ID by using the Skype for Business Server Control Panel.
 
 With Skype for Business Server, the called party's phone number (that is, the phone number called) can be translated from E.164 format to the local dialing format that is required by the  _trunk peer_ (that is, the associated gateway, private branch exchange (PBX), or SIP trunk). To do this, you must define one or more translation rules to translate the Request URI before routing it to the trunk peer.

@@ -18,6 +18,8 @@ description: "You can create new server roles in the Lync Server 2010 node of To
 ---
 
 # Lync Server 2010 Create New Expander
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 You can create new server roles in the Lync Server 2010 node of Topology Builder by right clicking on **Lync Server 2010**, select **New**, then select the server role to create.
   

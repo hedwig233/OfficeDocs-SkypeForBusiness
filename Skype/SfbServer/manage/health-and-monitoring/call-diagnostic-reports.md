@@ -16,7 +16,9 @@ description: "Summary: Learn about the multi-user Call Diagnostic Reports used i
 ---
 
 # Call Diagnostic Reports in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn about the multi-user Call Diagnostic Reports used in Skype for Business Server.
   
 The Call Diagnostic Reports provide summary information and diagnostic data for failed peer-to-peer and conferencing sessions.

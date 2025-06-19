@@ -17,6 +17,8 @@ description: "Summary: Learn how to manage purging of archived data for Skype fo
 
 # Manage purging of archived data in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to manage purging of archived data for Skype for Business Server.
   
 The Archiving database isn't intended for long-term retention, and Skype for Business Server doesn't provide an e-discovery (search) solution for archived data, so data needs to be moved to other storage. Skype for Business Server provides a session export tool that you can use to export archived data into searchable transcripts. You need to define when to purge archived and exported data. 

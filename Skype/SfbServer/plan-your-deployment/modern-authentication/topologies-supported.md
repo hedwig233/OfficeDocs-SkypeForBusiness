@@ -20,6 +20,8 @@ description: "This article lists what online and on-premises topologies are supp
 
 # Skype for Business topologies supported with Modern Authentication
 
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 This article lists what online and on-premises topologies are supported with Modern Authentication in Skype for Business, and security features that apply to each topology.
 
 ## Modern Authentication in Skype for Business

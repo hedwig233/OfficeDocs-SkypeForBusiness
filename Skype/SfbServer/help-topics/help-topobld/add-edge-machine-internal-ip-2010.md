@@ -19,6 +19,8 @@ description: "Use this page to specify the internal IP address and the internal 
 
 # Add Edge Machine Internal IP 2010
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Use this page to specify the internal IP address and the internal fully qualified domain name (FQDN) for the Edge Server.
 
 - In **Internal IPv4 address**, type the IP address of the Edge Server that you want to add to the pool.

@@ -17,6 +17,8 @@ description: "You might decide to use paired Front End pools to provide disaster
 
 # Deploy paired Front End pools for disaster recovery in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 You might decide to use paired Front End pools to provide disaster recovery protection, but doing so isn't a requirement.
   
 You can easily deploy the disaster recovery topology of paired Front End pools using Topology Builder. 

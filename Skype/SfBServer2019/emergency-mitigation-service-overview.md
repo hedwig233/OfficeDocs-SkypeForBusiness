@@ -16,6 +16,9 @@ description: "This article provides an overview of the Emergency Mitigation Serv
 ---
 
 # Emergency Mitigation Service
+
+[!INCLUDE [appliesto-xxx-2019-sub](includes/appliesto-xxx-2019-sub.md)]
+
 Skype for Business (SfB) Server EMS helps keep your Skype for Business servers secure by applying mitigations to address specific potential threats against your servers.  
 
 EMS uses the cloud-based Office Config Service (OCS) to check for new mitigations, download available mitigations, and send diagnostic data to Microsoft.  
@@ -42,7 +45,7 @@ If Microsoft learns about a security exploit, an appropriate mitigation may be c
 
 EMS checks OCS for available mitigations every hour. EMS subsequently downloads newly discovered XML file mitigations and validates the signature to prevent file tampering. EMS checks the issuer, the extended Key Usage, and the certificate chain. After successful validation, EMS applies mitigation. 
 
-Each mitigation is a temporary “fix” until the security update that fixes the vulnerability in the code is applied. EMS is not a replacement for Skype for Business SUs and CUs. However, it's the fastest and easiest way to mitigate the highest risks to internet-connected, on-premises SfB servers before updating. Customers do not have to undo the pre-existing mitigation when applying the SU or CU. The mitigation is automatically removed once a proper fix has been released.
+Each mitigation is a temporary "fix" until the security update that fixes the vulnerability in the code is applied. EMS is not a replacement for Skype for Business SUs and CUs. However, it's the fastest and easiest way to mitigate the highest risks to internet-connected, on-premises SfB servers before updating. Customers do not have to undo the pre-existing mitigation when applying the SU or CU. The mitigation is automatically removed once a proper fix has been released.
 
 ## Connectivity
 

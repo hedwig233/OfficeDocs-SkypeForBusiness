@@ -12,14 +12,16 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 7392dfa7-791a-4723-88ff-0ef8a9ef11c8
-description: "Summary: Read this topic to learn about planning your conferencing topology in Skype for Business Server."
+description: "Summary: Read this article to learn about planning your conferencing topology in Skype for Business Server."
 ---
 
 # Plan your conferencing topology for Skype for Business Server
  
-**Summary:** Read this topic to learn about planning your conferencing topology in Skype for Business Server.
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
+**Summary:** Read this article to learn about planning your conferencing topology in Skype for Business Server.
   
-This topic describes topology basics for conferencing in Skype for Business Server:
+This article describes topology basics for conferencing in Skype for Business Server:
   
 - Supported topologies
     
@@ -45,7 +47,7 @@ You can deploy conferencing in the following topologies and configurations:
     
 ## Dial-in conferencing considerations
 
-If you are deploying dial-in conferencing, you must consider the following:
+If you're deploying dial-in conferencing, you must consider the following:
   
 - Dial-in conferencing requires a Mediation Server to translate signaling (and media in some configurations) between Skype for Business Server and the PSTN gateway, and a PSTN gateway to translate signaling and media between the Mediation Server and the PSTN gateway.
     
@@ -59,7 +61,7 @@ If you are deploying dial-in conferencing, you must consider the following:
     
 - You can deploy the Application service, Conferencing Attendant application, and Conferencing Announcement application in a central site, but not in a branch site.
     
-- You must deploy dial-in conferencing in every pool where you deploy Skype for Business Server conferencing. You do not need to assign access numbers in every pool, but you must deploy the dial-in conferencing feature in every pool. This requirement supports the recorded name feature when a user calls an access number from one pool to join a Skype for Business Server conference in a different pool. 
+- You must deploy dial-in conferencing in every pool where you deploy Skype for Business Server conferencing. You don't need to assign access numbers in every pool, but you must deploy the dial-in conferencing feature in every pool. This requirement supports the recorded name feature when a user calls an access number from one pool to join a Skype for Business Server conference in a different pool. 
     
 For more information, see [Plan for dial-in conferencing in Skype for Business Server](dial-in-conferencing.md).
   
@@ -78,20 +80,20 @@ Skype for Business Server provides the following ways to configure Office Web Ap
   
 - **Install both Skype for Business Server and Office Web Apps Server/Office Online Server on-premises behind your organization's firewall, and in the same network zone.** With this topology, external access to Office Web Apps Server/Office Online Server will be provided through your reverse proxy server. Ideally, you should install Office Web Apps Server/Office Online Server in the same network zone as Skype for Business Server.
     
-    External Skype for Business clients can connect to Skype for Business Server and to Office Web Apps Server/Office Online Server by using a reverse proxy server, which is a server that takes requests from the Internet and forwards them to the internal network. (Internal clients do not need to use the reverse proxy server because they can connect to Office Web Apps Server/Office Online Server directly.) This topology works best if you want to use a dedicated Office Web Apps Server/Office Online Server farm that is only used by Skype for Business Server.
+    External Skype for Business clients can connect to Skype for Business Server and to Office Web Apps Server/Office Online Server by using a reverse proxy server, which is a server that takes requests from the Internet and forwards them to the internal network. (Internal clients don't need to use the reverse proxy server because they can connect to Office Web Apps Server/Office Online Server directly.) This topology works best if you want to use a dedicated Office Web Apps Server/Office Online Server farm that is only used by Skype for Business Server.
     
-- **Use an externally deployed Office Web Apps Server/Office Online Server.** In this topology, Skype for Business Server is deployed on-premises, and uses an Office Web Apps Server/Office Online Server that is deployed outside of the Skype for Business Server network zone. This may happen when Office Web Apps Server/Office Online Server is shared across multiple applications in the corporation and is deployed in a network requiring Skype for Business Server to use the external interface of Office Web Apps Server/Office Online Server and vice versa.
+- **Use an externally deployed Office Web Apps Server/Office Online Server.** In this topology, Skype for Business Server is deployed on-premises, and uses an Office Web Apps Server/Office Online Server that is deployed outside of the Skype for Business Server network zone. This might happen when Office Web Apps Server/Office Online Server is shared across multiple applications in the corporation and is deployed in a network requiring Skype for Business Server to use the external interface of Office Web Apps Server/Office Online Server and vice versa.
     
-    You do not need to install a reverse proxy server; instead, all the requests from the Office Web Apps Server/Office Online Server to Skype for Business Server are routed through your Edge Server. Both your internal and your external Skype for Business clients connect to Office Web Apps Server/Office Online Server using the external URL.
+    You don't need to install a reverse proxy server; instead, all the requests from the Office Web Apps Server/Office Online Server to Skype for Business Server are routed through your Edge Server. Both your internal and your external Skype for Business clients connect to Office Web Apps Server/Office Online Server using the external URL.
     
     If the Office Web Apps Server/Office Online Server is deployed outside your internal firewall, then select the option **Office Web Apps Server is deployed in an external network** (that is, perimeter/Internet) in Topology Builder.
     
 For more information, see [Configure integration with Office Web Apps Server in Skype for Business Server](../../deploy/deploy-conferencing/office-web-app-server.md). 
   
-Regardless of the topology you select, it is critical that the correct firewall ports be opened. You must make sure that DNS names, IP addresses, and ports are not blocked by firewalls on the Office Web Apps Server/Office Online Server, the load balancer, or Skype for Business Server.
+Regardless of the topology you select, it's critical that the correct firewall ports be opened. You must make sure that DNS names, IP addresses, and ports aren't blocked by firewalls on the Office Web Apps Server/Office Online Server, the load balancer, or Skype for Business Server.
   
 > [!NOTE]
-> Another option for providing external access to Office Web Apps Server/Office Online Server is to deploy the server in the perimeter network. If you elect to do this, keep in mind that Office Web Apps Server/Office Online Server setup requires the server computer to be a member of your Active Directory domain. Unless your network policy allows computers in the perimeter network to be Active Directory domain members, it is recommended that you do not install Office Web Apps Server/Office Online Server in the perimeter network. Instead, you should install Office Web Apps Server/Office Online Server in the internal network and provide external user access through your reverse proxy server. 
+> Another option for providing external access to Office Web Apps Server/Office Online Server is to deploy the server in the perimeter network. If you elect to do this, keep in mind that Office Web Apps Server/Office Online Server setup requires the server computer to be a member of your Active Directory domain. Unless your network policy allows computers in the perimeter network to be Active Directory domain members, it's recommended that you don't install Office Web Apps Server/Office Online Server in the perimeter network. Instead, you should install Office Web Apps Server/Office Online Server in the internal network and provide external user access through your reverse proxy server. 
   
 ## Topology requirements for large meetings
 
@@ -101,11 +103,11 @@ A single large meeting requires at least one Front End Server and one Back End S
 
 ![Large meeting topology.](../../media/06858900-a262-4a47-96d0-51abd6827064.png)
   
-The user who hosts the large meetings must have their user account homed in Front End pool. However, we do not recommend that you host other user accounts in this pool. Instead, use it only for the large meetings. The best practice is to create a special user account in this pool to be used only to host large meetings. Since the large meeting setting is optimized for performance, using it as a normal user could have problems such as the inability to promote a P2P session to a meeting when a PSTN endpoint is involved.
+The user who hosts the large meetings must have their user account homed in Front End pool. However, we don't recommend that you host other user accounts in this pool. Instead, use it only for the large meetings. The best practice is to create a special user account in this pool to be used only to host large meetings. Since the large meeting setting is optimized for performance, using it as a user could have problems such as the inability to promote a P2P session to a meeting when a PSTN endpoint is involved.
   
 Managing a pool with exactly two Front End Servers requires some special considerations. For more information, see [Topology Basics for Skype for Business Server 2015](../../plan-your-deployment/topology-basics/topology-basics.md) and [Reference topologies for Skype for Business Server 2015](../../plan-your-deployment/topology-basics/reference-topologies.md).
   
-Additionally, if you want to optionally provide disaster recovery backup and failover for the pool used for large meetings, you can pair it with a similarly set up dedicated pool in a different data center. For details, see [Plan for high availability and disaster recovery in Skype for Business Server](../../plan-your-deployment/high-availability-and-disaster-recovery/high-availability-and-disaster-recovery.md).
+Additionally, if you want to optionally provide disaster recovery backup and failover for the pool used for large meetings, you can pair it with a similarly setup dedicated pool in a different data center. For details, see [Plan for high availability and disaster recovery in Skype for Business Server](../../plan-your-deployment/high-availability-and-disaster-recovery/high-availability-and-disaster-recovery.md).
   
 Additional notes about the topology include:
   

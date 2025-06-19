@@ -16,7 +16,9 @@ description: "Summary: Learn about the Media Quality Summary Report in Skype for
 ---
 
 # Media Quality Summary Report in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn about the Media Quality Summary Report in Skype for Business Server.
   
 The Media Quality Summary Report is perhaps your best bet for analyzing call quality in your organization: this report provides detailed Quality of Experience (QoE) call metrics broken down into the following categories:

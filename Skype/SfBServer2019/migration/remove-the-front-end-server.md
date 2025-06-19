@@ -16,6 +16,8 @@ description: "The procedures outlined in this topic are designed to guide you th
 
 # Remove the Front End Server
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../includes/appliesto-xxx-2019-sub.md)]
+
 The procedures outlined in this section are designed to guide you through the process of removing an Enterprise Edition Front End pool or a Standard Edition Front End Server. After migrating to Skype for Business Server 2019, this is one of the first steps in decommissioning your legacy environment.
   
 ## In this section

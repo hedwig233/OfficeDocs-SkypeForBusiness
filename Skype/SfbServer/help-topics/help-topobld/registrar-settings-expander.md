@@ -14,10 +14,12 @@ ms.custom:
 ms.service: skype-for-business-server
 ms.localizationpriority: medium
 ms.assetid: c7486ab3-61fd-45c6-9edc-a15535f273ff
-description: "Resiliency provides high availability and disaster recovery for the Registrar pool. By providing a backup Registrar if there is a failure of the primary Registrar, the backup Registrar can take over for the failed Registrar, allowing users to sign in and communicate. Users can potentially experience reduced functionality, depending on which systems have failed with the primary Registrar."
+description: "Resiliency provides high availability and disaster recovery for the Registrar pool. By providing a backup Registrar if there's a failure of the primary Registrar, the backup Registrar can take over for the failed Registrar, allowing users to sign in and communicate. Users can potentially experience reduced functionality, depending on which systems have failed with the primary Registrar."
 ---
 
 # Registrar Settings Expander
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 Resiliency provides high availability and disaster recovery for the Registrar pool. By providing a backup Registrar in the event of failure of the primary Registrar, the backup Registrar can take over for the failed Registrar, allowing users to sign in and communicate. Users can potentially experience reduced functionality, depending on which systems have failed with the primary Registrar.
   
@@ -32,6 +34,6 @@ In the **Resiliency** section of the **Edit Properties** dialog box for your Sur
 - **Fallback detection interval (sec)** Type the number of seconds that should elapse before it's determined that the primary Registrar is backed up. The default value is 240 seconds. This field is required if you select **Enable Failover and Fallback**.
     
 > [!IMPORTANT]
-> When you define the failure detection interval and the fallback detection interval, be careful not to enter an interval that will cause the failover and fallback to occur if the Registrar fails to respond for a short period of time. It is possible that the primary Registrar may not respond for short periods of time based on the loading of the pool or servers. 
+> When you define the failure detection interval and the fallback detection interval, be careful not to enter an interval that will cause the failover and fallback to occur if the Registrar fails to respond for a short period of time. It's possible that the primary Registrar may not respond for short periods of time based on the loading of the pool or servers. 
   
 

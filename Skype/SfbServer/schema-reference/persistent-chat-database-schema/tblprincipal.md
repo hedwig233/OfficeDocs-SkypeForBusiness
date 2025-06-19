@@ -16,7 +16,9 @@ description: "tblPrincipal contains all principals, including users, folders, an
 ---
 
 # tblPrincipal
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 tblPrincipal contains all principals, including users, folders, and groups.
   
 **Columns**

@@ -16,6 +16,8 @@ description: "Prior to deploying the pilot pool, you must update the DNS Host A 
 
 # Configure DNS records for pilot pool deployment
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../includes/appliesto-xxx-2019-sub.md)]
+
 Before deploying the pilot pool, you must update the DNS Host A entries for the pilot pool. To successfully complete this procedure, you should be logged on to the server or domain as a member of the Domain Admins group or a member of the DnsAdmins group.
   
 ### To configure DNS Host A records

@@ -20,6 +20,8 @@ description: "Learn about normalization rules for Call Park in Skype for Busines
 ---
 
 # Verify normalization rules for Call Park in Skype for Business
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 Learn about normalization rules for Call Park in Skype for Business Server Enterprise Voice.
   

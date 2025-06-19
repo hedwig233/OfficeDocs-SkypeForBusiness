@@ -17,7 +17,9 @@ description: "Summary: Learn how to install a service that generates Monitoring 
 ---
 
 # Install Monitoring Reports in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to install a service that generates Monitoring reports in Skype for Business Server.
   
 Skype for Business Server Monitoring Reports provides you with a wealth of information about the quality and quantity of the communication sessions that take place in your organization. 
@@ -27,7 +29,7 @@ Skype for Business Server Monitoring Reports provides you with a wealth of infor
 Monitoring Reports aren't automatically installed when you install Skype for Business Server; instead, you must install Monitoring Reports separately, and only after Skype for Business Server are installed on the computer.
   
 > [!NOTE]
-> It is recommended that you install Monitoring Reports on the same computer where the monitoring database is installed. This simplifies the process of assigning permissions for accessing the reports: installing Monitoring Reports on the computer that hosts the monitoring store means that you will not have to configure permissions that allow a database on one computer to interact with Reporting Services running on a second computer. 
+> It's recommended that you install Monitoring Reports on the same computer where the monitoring database is installed. This simplifies the process of assigning permissions for accessing the reports: installing Monitoring Reports on the computer that hosts the monitoring store means that you won't have to configure permissions that allow a database on one computer to interact with Reporting Services running on a second computer. 
   
 Skype for Business Server Monitoring Reports includes over 30 reports designed to provide detailed information about conferences, peer-to-peer IM sessions, user registrations, the Response Group application, and much more. For the 2013 version, Skype for Business Server Monitoring Reports include many enhancements:
   
@@ -40,7 +42,7 @@ Skype for Business Server Monitoring Reports includes over 30 reports designed t
 More information on the individual reports can be found in the Monitoring Reports documentation.
   
 > [!NOTE]
-> There is another report - QoE Call Detail Subreport - included in Skype for Business Server. However, this report is primarily for internal use, and is not intended to be directly accessed. 
+> There's another report - QoE Call Detail Subreport - included in Skype for Business Server. However, this report is primarily for internal use, and isn't intended to be directly accessed. 
   
 There are two ways to install Skype for Business Server Monitoring Reports: you can use the Skype for Business Server Deployment Wizard or you can use a Windows PowerShell script included with the Skype for Business Server installation files. Regardless of the method you use to install the reports you must first make sure that you:
   
@@ -76,11 +78,11 @@ The parameters used in the preceding command are described in the following tabl
 |:-----|:-----|:-----|
 |storedUserName  <br/> |Yes  <br/> |User account (in the format domain\username) used to access the monitoring store; for example:  <br/> ```-storedUserName "litwareinc\kenmyer"``` This account must have the previously-specified SQL Server and SQL Server Reporting Services permissions or the script fails.  <br/> |
 |storedPassword  <br/> |Yes  <br/> |Password for the user account used to access the monitoring store.  <br/> |
-|readOnlyGroupName  <br/> |No  <br/> |Domain or local security group whose members are granted read-only access to the Monitoring Reports. The script fails if the specified group does not exist. If you later decide to revoke these permissions, or if you decide to grant other users or other groups access permissions, you can do so using the SQL Service Reporting Services Report Manager.  <br/> |
-|reportSqlServerInstance  <br/> |No  <br/> |SQL Server instance that hosts the Reporting Service. The Reporting instance must be specified using the fully qualified domain name of the Report Server; for example:  <br/> ```-reportServerSqlInstance atl-sql-001.litwareinc.com``` If this parameter is not included the script will assume that the reporting services are hosted by the same SQL Server instance that hosts the monitoring database.  <br/> |
+|readOnlyGroupName  <br/> |No  <br/> |Domain or local security group whose members are granted read-only access to the Monitoring Reports. The script fails if the specified group doesn't exist. If you later decide to revoke these permissions, or if you decide to grant other users or other groups access permissions, you can do so using the SQL Service Reporting Services Report Manager.  <br/> |
+|reportSqlServerInstance  <br/> |No  <br/> |SQL Server instance that hosts the Reporting Service. The Reporting instance must be specified using the fully qualified domain name of the Report Server; for example:  <br/> ```-reportServerSqlInstance atl-sql-001.litwareinc.com``` If this parameter isn't included the script will assume that the reporting services are hosted by the same SQL Server instance that hosts the monitoring database.  <br/> |
 |monitoringDatabaseId  <br/> |No  <br/> |Service Identity for the monitoring database. You can return the Identities for your monitoring databases by running this command:  <br/> ```Get-CsService -MonitoringDatabase```|
    
-After the Monitoring Reports have been installed you must then use the New-CsReportingConfiguration cmdlet to configure the URL used to access these reports. This task can be carried out from the Skype for Business Server Management Shell by running the following Windows PowerShell command. Note that it is recommended, but not required, that you use the HTTPS protocol when configuring the reporting URL:
+After the Monitoring Reports have been installed you must then use the New-CsReportingConfiguration cmdlet to configure the URL used to access these reports. This task can be carried out from the Skype for Business Server Management Shell by running the following Windows PowerShell command. Note that it's recommended, but not required, that you use the HTTPS protocol when configuring the reporting URL:
   
 ```powershell
 New-CsReportingConfiguration -Identity 'service:MonitoringDatabase:atl-sql-001.litwareinc.com' -ReportingURL 'https://atl-sql-001.litwareinc.com:443/Reports_ARCHINST'
@@ -92,7 +94,7 @@ In the preceding command, the ReportingUrl property should be set to the Report 
     
 2. In the Reporting Services Configuration Connection dialog box, make sure that the name of the Reporting Services computer appears in the Server Name box. Select the SQL Server instance from the Report Server Instance dropdown list and then click Connect.
     
-3. In Reporting Services Configuration Manager, click Report Manager URL. One or more URLs should appear in the Report Manager URL pane. Any of these URLs can be used as the Reporting URL although, again, it is recommended that the ReportingUrl use the HTTPS protocol.
+3. In Reporting Services Configuration Manager, click Report Manager URL. One or more URLs should appear in the Report Manager URL pane. Any of these URLs can be used as the Reporting URL although, again, it's recommended that the ReportingUrl use the HTTPS protocol.
     
 If you have set up a mirror database for your monitoring database then you must also associate the Monitoring Reports with the mirror database. See the article [Associate Monitoring Reports with a mirror database in Skype for Business Server](monitoring-reports-with-a-mirror-database.md) for details.
   

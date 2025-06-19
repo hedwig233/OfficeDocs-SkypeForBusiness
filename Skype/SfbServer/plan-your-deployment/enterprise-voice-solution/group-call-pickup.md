@@ -20,6 +20,8 @@ description: "Planning for Group Call Pickup in Skype for Business Server Enterp
 ---
 
 # Plan for Group Call Pickup in Skype for Business
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 Planning for Group Call Pickup in Skype for Business Server Enterprise Voice, which enables users to answer calls originally intended for others.
   

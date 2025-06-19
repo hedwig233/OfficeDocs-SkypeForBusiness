@@ -18,7 +18,9 @@ description: "On the Import Certificate Summary page, you're presented with a su
 ---
 
 # Import Certificate (Summary)
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 On the **Import Certificate Summary** page, you're presented with a summary of the File Name, path, and presence of a private key. After you review the summary, select **Next** to continue.
   
 

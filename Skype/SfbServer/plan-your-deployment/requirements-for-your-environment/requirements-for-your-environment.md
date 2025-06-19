@@ -20,6 +20,8 @@ description: "Summary: Outline of topics for systems requirements and network or
 ---
 
 # Requirements for your Skype for Business 2015 environment
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 **Summary:** Outline of topics for systems requirements and network or infrastructure requirements for Skype for Business Server 2015. If you need to install or configure anything as a prerequisite to installing and deploying Skype for Business Server 2015, it will be here.
   

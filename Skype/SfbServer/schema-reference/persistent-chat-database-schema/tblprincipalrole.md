@@ -16,7 +16,9 @@ description: "tblPrincipalRole contains explicit roles assigned to nodes."
 ---
 
 # tblPrincipalRole
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 tblPrincipalRole contains explicit roles assigned to nodes.
   
 **Columns**

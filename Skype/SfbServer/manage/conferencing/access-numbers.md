@@ -16,7 +16,9 @@ description: "Summary: Learn how to manage dial-in conferencing access numbers i
 ---
 
 # Manage dial-in conferencing access numbers in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to manage dial-in conferencing access numbers in Skype for Business Server.
   
 When you deploy dial-in conferencing, you need to set up phone numbers that users can dial from the public switched telephone network (PSTN) to join the audio portion of conferences. These dial-in access numbers appear in meeting invitations and on the Dial-in Conferencing Settings webpage. 
@@ -66,7 +68,7 @@ HostingProvider    :
 Regions            : {US}
 </pre>
 
-For more information, see [Get-CsDialInConferencingAccessNumber](/powershell/module/skype/get-csdialinconferencingaccessnumber?view=skype-ps).
+For more information, see [Get-CsDialInConferencingAccessNumber](/powershell/module/skype/get-csdialinconferencingaccessnumber?view=skype-ps&preserve-view=true).
   
 ## Modify dial-in conferencing access numbers
 
@@ -142,7 +144,7 @@ In the next example, the dial-in conferencing access number with the Identity si
 Set-CsDialInConferencingAccessNumber -Identity "sip:RedmondDialIn@litwareinc.com" -Regions "Redmond", "Seattle"
 ```
 
-For more information, see [Set-CsDialInConferencingAccessNumber](/powershell/module/skype/set-csdialinconferencingaccessnumber?view=skype-ps).
+For more information, see [Set-CsDialInConferencingAccessNumber](/powershell/module/skype/set-csdialinconferencingaccessnumber?view=skype-ps&preserve-view=true).
   
 ## Delete a dial-in conferencing access number
 
@@ -182,5 +184,5 @@ The next command deletes all the dial-in conferencing access numbers where Itali
 Get-CsDialInConferencingAccessNumber | Where-Object {$_.PrimaryLanguage -eq "it-IT"} | Remove-CsDialInConferencingAccessNumber
 ```
 
-For more information, see [Remove-CsDialInConferencingAccessNumber](/powershell/module/skype/remove-csdialinconferencingaccessnumber?view=skype-ps).
+For more information, see [Remove-CsDialInConferencingAccessNumber](/powershell/module/skype/remove-csdialinconferencingaccessnumber?view=skype-ps&preserve-view=true).
 

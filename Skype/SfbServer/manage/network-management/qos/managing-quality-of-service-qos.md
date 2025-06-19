@@ -20,12 +20,13 @@ description: "Quality of Service (QoS) is a networking technology used in some o
 
 # Managing Quality of Service (QoS) in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
 
 Quality of Service (QoS) is a networking technology used in some organizations to help provide an optimal end-user experience for audio and video communications. QoS is most-commonly used on networks where bandwidth is limited: with a large number of network packets competing for a relatively small amount of available bandwidth, Quality of Service provides a way for administrators to assign higher priorities to packets carrying audio or video data. By giving these packets a higher priority, audio and video communications are likely to complete faster, and with less interruption, than network sessions involving things like file transfers, web browsing, or database backups. That's because network packets used for file transfers or database backups are assigned a "best effort" priority.
 
 
 > [!NOTE]  
-> As a general rule, Quality of Service applies only to communication sessions on your internal network. When you implement QoS, you configure your servers and routers to support packet marking; however, you configure these devices to support packet marking in a particular manner. You cannot assume that Quality of Service will be supported on the Internet or on other networks. Even if Quality if Service is supported on other networks, there is no guarantee that QoS will be configured the same way that you configured the service on your network.
+> As a general rule, Quality of Service applies only to communication sessions on your internal network. When you implement QoS, you configure your servers and routers to support packet marking; however, you configure these devices to support packet marking in a particular manner. You can't assume that Quality of Service will be supported on the Internet or on other networks. Even if Quality if Service is supported on other networks, there's no guarantee that QoS will be configured the same way that you configured the service on your network.
 
 Skype for Business Server doesn't require Quality of Service; if you don't currently use QoS there's no requirement that you install the service before installing Skype for Business Server. If you experience a considerable amount of packet loss on your network the recommended way to alleviate this problem is to add extra bandwidth. If adding more bandwidth isn't possible, then you might want to implement Quality of Service instead.
 

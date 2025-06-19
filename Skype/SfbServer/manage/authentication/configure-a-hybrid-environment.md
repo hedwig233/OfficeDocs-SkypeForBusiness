@@ -21,6 +21,8 @@ description: "Summary: Configure server-to-server authentication for a Skype for
 
 # Configure server-to-server authentication for a Skype for Business Server hybrid environment.
 
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Configure server-to-server authentication for Skype for Business Server hybrid environment.
 
 In a hybrid configuration, some of your users are homed on an on-premises installation of Skype for Business Server. Other users are homed on the Microsoft 365 or Office 365 version of Skype for Business Server. In order to configure server-to-server authentication in a hybrid environment, you must first configure your on-premises installation of Skype for Business Server to trust the authorization server. The initial step in this process can be carried out by running the following Skype for Business Server Management Shell script:

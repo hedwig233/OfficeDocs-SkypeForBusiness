@@ -16,7 +16,9 @@ description: "The SessionCorrelation table is a supporting table. Each record re
 ---
 
 # SessionCorrelation table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The SessionCorrelation table is a supporting table. Each record represents one CorrelationID which is used to correlate multiple sessions. 
   
 |**Column**|**Data Type**|**Key/Index**|**Details**|

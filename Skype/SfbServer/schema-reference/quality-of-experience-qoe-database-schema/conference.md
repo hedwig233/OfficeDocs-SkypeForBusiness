@@ -16,7 +16,9 @@ description: "The Conference table is a supporting table. Each record represents
 ---
 
 # Conference table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The Conference table is a supporting table. Each record represents one conference or peer-to-peer session.
   
 |**Column**|**Data Type**|**Key/Index**|**Details**|

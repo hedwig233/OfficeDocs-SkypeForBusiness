@@ -23,6 +23,8 @@ description: "Use the Skype for Business Server Hybrid Manageability wizard to h
 
 # Hybrid wizard: Sign in to Microsoft 365 or Office 365
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Use the Skype for Business Server Hybrid Manageability wizard to help you configure your environment for hybrid with Skype for Business Online.
 
 ## Sign in to Microsoft 365 or Office 365

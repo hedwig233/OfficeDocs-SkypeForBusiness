@@ -19,8 +19,10 @@ description: "In the Specify Read-Only Group, specify the group to whom you want
 
 # SQL Server Reporting Services (Groups)
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 In the **Specify Read-Only Group**, specify the group to whom you want to grant read-only access to Monitoring reports. Use the format &lt;domain&gt;\\&lt;access group&gt;. For example: contoso\RTCUniversalReadOnlyAdmins.
   
-Assigning a group read-only access is optional. If you do not want to grant read-only access now, you can configure it later directly in SQL Server Reporting Services.
+Assigning a group read-only access is optional. If you don't want to grant read-only access now, you can configure it later directly in SQL Server Reporting Services.
   
 

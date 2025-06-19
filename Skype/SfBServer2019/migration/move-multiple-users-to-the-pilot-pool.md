@@ -16,6 +16,8 @@ description: "You can move multiple users from your legacy pool to your Skype fo
 
 # Move multiple users to the pilot pool
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../includes/appliesto-xxx-2019-sub.md)]
+
 You can move multiple users from your legacy pool to your Skype for Business Server 2019 pilot pool using Skype for Business Server 2019 Control Panel or Skype for Business Server 2019 Management Shell.
 
  **In this article**

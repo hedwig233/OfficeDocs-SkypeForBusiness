@@ -19,6 +19,8 @@ description: "Summary: Review the client video requirements while planning for S
 ---
 
 # Skype for Business client video resolutions
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 **Summary:** Review the client video requirements while planning for Skype for Business Server.
   

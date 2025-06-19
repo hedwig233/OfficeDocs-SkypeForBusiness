@@ -21,6 +21,8 @@ description: "Deploying call management features in Skype for Business Server En
 
 # Deploy call management features in Skype for Business
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Deploying call management features in Skype for Business Server Enterprise Voice.
   
 Enterprise Voice call management features control how incoming calls are routed and answered. Skype for Business Server provides the following call management features: 

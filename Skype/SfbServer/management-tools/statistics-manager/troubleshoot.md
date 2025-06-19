@@ -18,6 +18,8 @@ description: "Summary: Read this article to troubleshoot your deployment of Stat
 
 # Troubleshoot Statistics Manager for Skype for Business Server
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Read this article to troubleshoot your deployment of Statistics Manager for Skype for Business Server.
 
 This article describes how to troubleshoot your Statistics Manager deployment by describing events you might see in the Application event log, and appropriate actions you might take to rectify the event. This article contains the following sections:

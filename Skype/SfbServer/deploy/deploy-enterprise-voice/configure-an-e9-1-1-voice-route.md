@@ -21,6 +21,8 @@ description: "Configure E9-1-1 voice routes in Skype for Business Server Enterpr
 
 # Configure an E9-1-1 voice route in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Configure E9-1-1 voice routes in Skype for Business Server Enterprise Voice. 
   
 To deploy E9-1-1, you first need to configure an emergency call voice route. For details about creating voice routes, see [Create or modify a voice route in Skype for Business](create-or-modify-a-voice-route.md). You may define more than one route if, for example, your deployment includes a primary SIP trunk and a secondary SIP trunk. 

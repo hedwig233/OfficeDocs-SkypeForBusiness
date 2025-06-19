@@ -16,7 +16,9 @@ description: "The UserAgent View stores information about the user agents that a
 ---
 
 # UserAgent view
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The UserAgent View stores information about the user agents that are involved in sessions that have records in the database. This view was introduced in Microsoft Lync Server 2013.
   
 |**Column**|**Data Type**|**Details**|

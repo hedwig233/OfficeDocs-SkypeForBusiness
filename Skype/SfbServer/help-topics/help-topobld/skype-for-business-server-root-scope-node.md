@@ -18,6 +18,8 @@ description: "The Lync Server node lists the central sites in your topology. You
 ---
 
 # Skype for Business Server Root Scope Node
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The **Lync Server** node lists the central sites in your topology. You can perform the following actions:
   

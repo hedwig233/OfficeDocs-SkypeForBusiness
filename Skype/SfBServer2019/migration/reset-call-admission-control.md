@@ -16,6 +16,8 @@ description: "If a legacy Front End pool is hosting call admission control (CAC)
 
 # Reset call admission control
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../includes/appliesto-xxx-2019-sub.md)]
+
 If a legacy Front End pool is hosting call admission control (CAC), you must move CAC hosting to a Skype for Business Server 2019 pool before you can remove the legacy Front End pool.
   
 ### To reset CAC

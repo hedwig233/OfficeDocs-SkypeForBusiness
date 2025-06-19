@@ -17,6 +17,8 @@ description: "Summary: Learn how to back up and restore Persistent Chat Server d
 
 # Back up and restore Persistent Chat databases in Skype for Business Server 
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to back up and restore Persistent Chat Server databases in Skype for Business Server.
   
 Persistent Chat Server requires SQL Server database software to store chat room data, such as history and content, configuration, user provisioning, and other relevant metadata. In addition, if your organization has regulations that require Persistent Chat activity to be archived, and the optional Compliance service is enabled, SQL Server database software is used to store compliance data, including chat content and events, such as joining and leaving rooms. Chat room content is stored in the Persistent Chat database (mgc). Compliance data is stored in the Compliance database (mgccomp). This is business-critical data that should be backed up regularly. 

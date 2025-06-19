@@ -18,9 +18,11 @@ description: "Summary: Read this topic to learn about new features in Skype for 
 
 # What's new in Skype for Business Server 2015
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 **Summary:** Read this topic to learn about new features in Skype for Business Server 2015. For detailed information about the new client experience, see [Lync is now Skype for Business -- see what's new](https://go.microsoft.com/fwlink/p/?LinkId=529022).
   
-Lync is now Skype for Business, a communications and collaboration platform that brings together an experience inspired by Skype with the enterprise-grade security, compliance, and control of Lync. Skype for Business offers features including presence, IM, voice and video calls, and online meetings. Skype for Business provides a new client experience, a new server release, and updates to the service in Microsoft 365 or Office 365. If users in your organization are already familiar with Skype, they'll appreciate the power and simplicity of Skype for Business where it's easy to find and connect with co-workers. If users in your organization are coming to Skype for Business from Lync, they'll recognize all of the features they already use but in a fresh new interface with simplified controls and new additions. In addition to the new client experience, Skype for Business Server 2015 provides several new features to improve manageability of on-premises servers and hybrid solutions.
+Lync is now Skype for Business, a communications and collaboration platform that brings together an experience inspired by Skype with the enterprise-grade security, compliance, and control of Lync. Skype for Business offers features including presence, IM, voice and video calls, and online meetings. Skype for Business provides a new client experience, a new server release, and updates to the service in Microsoft 365 or Office 365. If users in your organization are already familiar with Skype, they'll appreciate the power and simplicity of Skype for Business where it's easy to find and connect with coworkers. If users in your organization are coming to Skype for Business from Lync, they'll recognize all of the features they already use but in a fresh new interface with simplified controls and new additions. In addition to the new client experience, Skype for Business Server 2015 provides several new features to improve manageability of on-premises servers and hybrid solutions.
   
 New features in Skype for Business Server 2015 include improvements to:
   
@@ -33,12 +35,12 @@ New features in Skype for Business Server 2015 include improvements to:
     
 ## User experience
 
-The Skype for Business client looks very similar to the consumer version of Skype and uses the same buttons and icons. Fewer menus and a flatter task hierarchy make it easy for users to quickly find the controls and commands they need. 
+The Skype for Business client looks similar to the consumer version of Skype and uses the same buttons and icons. Fewer menus and a flatter task hierarchy make it easy for users to quickly find the controls and commands they need. 
   
 Skype for Business includes the new user experience described above and the Lync 2013 user experience released previously. The inclusion of both experiences allows enterprises to manage change for their users by controlling the process and timing of the new client roll-out. The default user experience depends on which version of the server you're using. Administrators choose the preferred experience by using the **Set-CsClientPolicy** cmdlet with the EnableSkypeUI parameter. For more information about configuring the client experience, see [Configure the client experience with Skype for Business](deploy/deploy-clients/configure-the-client-experience.md) and [Desktop client feature comparison for Skype for Business](plan-your-deployment/clients-and-devices/desktop-feature-comparison.md).
   
 > [!NOTE]
-> The Lync 2013 client experience is not an option for Skype for Business 2016 client versions. Before you attempt to configure your client environment to use the Lync 2013 client, please check the client version to ensure it does not start with the number 16; for example: 16.x.x.x. 
+> The Lync 2013 client experience isn't an option for Skype for Business 2016 client versions. Before you attempt to configure your client environment to use the Lync 2013 client, check the client version to ensure it doesn't start with the number 16; for example: 16.x.x.x. 
   
 ## Voice and video improvements
 
@@ -54,7 +56,7 @@ The Video Interop Server (VIS) acts as an intermediary between Skype for Busines
   
 ### Call via Work
 
-The Call via Work feature allows enterprise users to make voice calls from the Skype for Business client. When a user places a voice call, it is routed from Skype for Business to the originator's PBX or PSTN phone. Once the originator answers the phone, the call is then directed to the destination number. The call recipient answers, and the call is established with Skype for Business serving as the control panel. The originator can manage their presence and call controls from Skype for Business. Server administrators enable and configure Call via Work for the enterprise. For more information, see [Plan for Call Via Work in Skype for Business Server 2015](plan-your-deployment/enterprise-voice-solution/call-via-work.md). 
+The Call via Work feature allows enterprise users to make voice calls from the Skype for Business client. When a user places a voice call, it's routed from Skype for Business to the originator's PBX or PSTN phone. Once the originator answers the phone, the call is then directed to the destination number. The call recipient answers, and the call is established with Skype for Business serving as the control panel. The originator can manage their presence and call controls from Skype for Business. Server administrators enable and configure Call via Work for the enterprise. For more information, see [Plan for Call Via Work in Skype for Business Server 2015](plan-your-deployment/enterprise-voice-solution/call-via-work.md). 
   
 ## Mobile device support improvements
 
@@ -101,7 +103,7 @@ You can now upgrade Lync Server 2013 systems to Skype for Business Server 2015 u
 There are two scenarios for in-place upgrade: The Move User method, which requires no downtime, and the Offline method, which requires downtime. For more information about which upgrade procedure is right for your business, see [Plan to upgrade to Skype for Business Server 2015](plan-your-deployment/upgrade.md). 
   
 > [!NOTE]
-> The in-place option is not available if you are upgrading from Lync Server 2010. For more information about upgrading from Lync Server 2010, see [Plan to upgrade to Skype for Business Server 2015](plan-your-deployment/upgrade.md). 
+> The in-place option isn't available if you're upgrading from Lync Server 2010. For more information about upgrading from Lync Server 2010, see [Plan to upgrade to Skype for Business Server 2015](plan-your-deployment/upgrade.md). 
   
 ### Smart Setup
 
@@ -111,11 +113,11 @@ The Smart Setup feature, which automatically detects and downloads updates, is n
 
 Skype for Business Server introduces two new cmdlets that help make upgrading or patching Front End Servers much easier than in previous versions of Lync Server.
   
-When you need to apply a patch, or perform any other maintenance, to a Front End Server, simply type **Invoke-CsComputerFailOver** and specify that server's name. Skype for Business Server moves that server's workload temporarily to the other servers in the pool. You can then perform the maintenance, and then use the **Invoke-CsComputerFailback** cmdlet to bring that server back into service. If you need to patch each server in a pool, simply follow this procedure for each server, one at a time. These new cmdlets enable you to patch servers much quicker than in previous versions, and with more reliability and a simpler workflow.
+When you need to apply a patch, or perform any other maintenance, to a Front End Server, simply type **Invoke-CsComputerFailOver** and specify that server's name. Skype for Business Server moves that server's workload temporarily to the other servers in the pool. You can then perform the maintenance, and then use the **Invoke-CsComputerFailback** cmdlet to bring that server back into service. If you need to patch each server in a pool, follow this procedure for each server, one at a time. These new cmdlets enable you to patch servers much quicker than in previous versions, and with more reliability and a simpler workflow.
   
 ### Improved Front End pool cold start capability
 
-Skype for Business Server introduces a new cmdlet that simplifies and improves the process of cold-starting an entire Front End pool. When you use the new **Start-CsPool** cmdlet, it checks pre-requisites for all the Front End Servers in the pool, then attempts to start each server. If it encounters any problems, it diagnoses them and alerts you with details and workarounds. In some cases it enables you to start the pool even if some of the individual servers are unable to start.
+Skype for Business Server introduces a new cmdlet that simplifies and improves the process of cold-starting an entire Front End pool. When you use the new **Start-CsPool** cmdlet, it checks prerequisites for all the Front End Servers in the pool, then attempts to start each server. If it encounters any problems, it diagnoses them and alerts you with details and workarounds. In some cases it enables you to start the pool even if some of the individual servers are unable to start.
   
 ### SQL Server AlwaysOn support for on-premises servers
 
@@ -123,7 +125,7 @@ Skype for Business Server 2015 adds support for both SQL Server AlwaysOn Availab
   
 SQL Server AlwaysOn Availability Groups is a high availability and disaster recovery solution in SQL Server 2012 and SQL Server 2014 that provides an alternative to database mirroring. An availability group supports a failover environment for a discrete set of databases (known as availability databases) that fail over together. An availability group supports a set of read-write primary databases and one to four sets of corresponding secondary databases. Optionally, secondary databases can be made available for read-only access and for some backup operations.
   
-SQL Server Failover Cluster Instances leverage Windows Server Failover Clustering (WSFC) functionality to provide local high availability through redundancy at the server-instance level—a failover cluster instance (FCI). An FCI is a single instance of SQL Server that is installed across Windows Server Failover Clustering (WSFC) nodes and, possibly, across multiple subnets.
+SQL Server Failover Cluster Instances use Windows Server Failover Clustering (WSFC) functionality to provide local high availability through redundancy at the server-instance level—a failover cluster instance (FCI). An FCI is a single instance of SQL Server that is installed across Windows Server Failover Clustering (WSFC) nodes and, possibly, across multiple subnets.
   
 For more information, see [Plan for high availability and disaster recovery in Skype for Business Server 2015](plan-your-deployment/high-availability-and-disaster-recovery/high-availability-and-disaster-recovery.md).
   
@@ -133,7 +135,7 @@ The Centralized Logging Service is the preferred logging environment for Skype f
   
 Skype for Business Server 2015 uses Windows PowerShell cmdlets to manage the logging service agents, initiate tracing, and generate reports. (Lync Server 2013 used ClsController.exe to perform these tasks.)
   
-The Centralized Logging Service can run on any Skype for Business Server 2015. The built-in scenarios (pre-defined traces) remain the same, as does the ability to create custom scenarios. There is a special scenario called AlwaysOn that is always running, and allows administrators to locate common issues in near real-time.
+The Centralized Logging Service can run on any Skype for Business Server 2015. The built-in scenarios (predefined traces) remain the same, as does the ability to create custom scenarios. There's a special scenario called AlwaysOn that is always running, and allows administrators to locate common issues in near real-time.
   
 The Snooper debugging tool has also been updated to allow debugging of mobility logs and will work with devices connecting to either Lync 2013 or Skype for Business Server 2015. The tool is available as a Web download from [Debugging tools](https://go.microsoft.com/fwlink/?LinkId=285257).
   
@@ -148,22 +150,22 @@ Skype for Business Server 2015 enables hybrid deployment administration and mana
 - Control Panel features to identify and filter on-premises user objects that have been moved to Skype for Business Online (that is, hybrid users) from on-premises users.
 - Admin Center features to identify and filter cloud users initially created in Skype for Business Online from hybrid users migrated from on-premises to Online.
 - The ability to administer hybrid users using the Control Panel for properties manageable from on-premises, and Admin Center for properties manageable from Skype for Business Online.
-- Using Password Synchronization with DirSync, the ability to synchronize on-premises Active Directory passwords with the online tenant. If configured, this feature removes the need to deploy AD FS for federated authentication, but AD FS is still required for multi-factor authentication. 
+- Using Password Synchronization with DirSync, the ability to synchronize on-premises Active Directory passwords with the online tenant. If configured, this feature removes the need to deploy AD FS for federated authentication, but AD FS is still required for multifactor authentication. 
 - Continued support for coexistence between Skype for Business Online and Exchange on-premises.
     
 > [!NOTE]
-> There is no change from the Lync Online 2013 and Exchange on-premises coexistence and support experience. 
+> There's no change from the Lync Online 2013 and Exchange on-premises coexistence and support experience. 
   
 ## Multi-factor authentication
 
-Multi-factor authentication is a method of authentication that requires the use of more than one verification method and adds a critical second layer of security to user sign-ins and transactions. For example, requiring a user name and password, and a certificate. Skype for Business Server 2015 continues to build on the multi-factor authentication features available in the Lync Server 2013 Cumulative Updates. The significant changes in multi-factor authentication are:
+Multifactor authentication is a method of authentication that requires the use of more than one verification method and adds a critical second layer of security to user sign-ins and transactions. For example, requiring a user name and password, and a certificate. Skype for Business Server 2015 continues to build on the multifactor authentication features available in the Lync Server 2013 Cumulative Updates. The significant changes in multifactor authentication are:
   
 - Use of the Office 2013 SP1 Active Directory Authentication Library for integration with Exchange and SharePoint
-- Support for the multi-factor authentication feature in the Skype for Business Web App client
+- Support for the multifactor authentication feature in the Skype for Business Web App client
     
-With Skype for Business multi-factor authentication, it is now possible to provide different authentication options based on geography. For example, customers can configure their environment so that internal authentication relies on Integrated Windows Authentication, while employees authenticating from outside the organization use multi-factor authentication. 
+With Skype for Business multifactor authentication, it's now possible to provide different authentication options based on geography. For example, customers can configure their environment so that internal authentication relies on Integrated Windows Authentication, while employees authenticating from outside the organization use multifactor authentication. 
   
-The Skype for Business multi-factor authentication experience is seamless regardless of:
+The Skype for Business multifactor authentication experience is seamless regardless of:
   
 - Geographic Location - Whether the user is signing in from inside or outside the organization 
 - Client/Device Type - Which Skype for Business client is used and which device the client is running on (PC, mobile, iPad, etc.)

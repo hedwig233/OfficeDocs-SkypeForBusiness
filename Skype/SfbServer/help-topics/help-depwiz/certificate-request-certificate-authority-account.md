@@ -18,7 +18,9 @@ description: 'To submit a request, your certification authority (CA) may require
 ---
 
 # Certificate Request (Certificate Authority Account)
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 To submit a request, your certification authority (CA) may require credentials other than the ones for the user that you are currently logged in as. To allow a certificate request as a different user, select the check box **Specify alternate credentials for the certification authority**, and then type the user name or  _domain_\ _username_ for a user who can request the certificate. In the **Password** text box, type the password for the user that you specified. The user name and password are then sent as part of the certificate request process, but not in the actual certificate request, to an online CA.
   
 

@@ -19,6 +19,8 @@ description: "For Mediation Server, you can specify to collocate by selecting th
 
 # Mediation Service Settings Expander
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 For **Mediation Server**, you can specify the following:
 
 If you're collocating the Mediation Server onto the Front End pool or the Standard Edition server, select the check box **Collocated Mediation Server enabled**. If you choose not to collocate the Mediation Server, there are no definable settings in this section.

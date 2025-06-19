@@ -19,6 +19,8 @@ description: "Response Group queues hold calls to a response group until an agen
 
 # Response Groups Queue: Create New or Edit Existing
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Response Group queues hold calls to a response group until an agent answers the call.
 
 ## UI Reference

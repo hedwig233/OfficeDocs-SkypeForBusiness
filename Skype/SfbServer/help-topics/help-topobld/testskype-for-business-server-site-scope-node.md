@@ -18,6 +18,8 @@ description: "This node shows one of the sites defined on your topology. You can
 ---
 
 # Test - Skype for Business Server Site Scope Node
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 This node shows one of the sites defined on your topology. You can perform the following actions: 
   

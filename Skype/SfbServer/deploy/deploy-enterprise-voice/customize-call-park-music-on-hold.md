@@ -21,6 +21,8 @@ description: "Customize the Call Park music on hold in Skype for Business Server
 
 # Customize Call Park music on hold inSkype for Business
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Customize the Call Park music on hold in Skype for Business Server Enterprise Voice.
   
 You can specify your own music file to use for music on hold, instead of the default music file that ships with Skype for Business Server. To customize music on hold, use the **Set-CsCallParkServiceMusicOnHoldFile** cmdlet.

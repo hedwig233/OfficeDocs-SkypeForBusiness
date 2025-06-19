@@ -17,7 +17,9 @@ description: "Summary: Set a user's dial-in conferencing PIN for Skype for Busin
 ---
 
 # Set a user's dial-in conferencing PIN in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Set a user's dial-in conferencing PIN for Skype for Business Server.
   
 To join a dial-in conference as an authenticated user, a Skype for Business Server user with Active Directory Domain Services (AD DS) credentials requires a personal identification number (PIN). If a user forgets the dial-in conferencing PIN or has not set the PIN by using Skype for Business Server, you can set the user's PIN from Skype for Business Server Control Panel. You can automatically generate the PIN or create one manually.
@@ -95,5 +97,5 @@ This command uses the Pin parameter to assign the PIN number 121989 to the user 
   Set-CsClientPin -Identity "Ken Myer" -Pin 121989
   ```
 
-For more information, see the help topic for the [Set-CsClientPin](/powershell/module/skype/set-csclientpin?view=skype-ps) cmdlet.
+For more information, see the help topic for the [Set-CsClientPin](/powershell/module/skype/set-csclientpin?view=skype-ps&preserve-view=true) cmdlet.
 

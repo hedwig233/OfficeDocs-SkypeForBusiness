@@ -20,7 +20,9 @@ description: "Read this topic to learn how to plan location policies for an enha
 ---
 
 # Plan location policies for Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Read this topic to learn how to plan location policies for an enhanced emergency services (E9-1-1) deployment in Skype for Business Server Enterprise Voice. 
   
 > [!NOTE]
@@ -40,14 +42,14 @@ This setting is used only when **Enable Enhanced 9-1-1** is enabled.
   
 You can configure the **Location** setting to define the client behavior as follows:
   
-- Setting the value to **No** means that the user will not be prompted for a location.
+- Setting the value to **No** means that the user won't be prompted for a location.
     
 - Setting the value to **Yes** means that the user will be prompted for a location, but can dismiss the prompt.
     
 - Setting the value to **Disclaimer** means that the user will be prompted for a location and also will be shown a disclaimer if they try to dismiss the prompt. In all cases, the user can continue to use the client.
     
 > [!NOTE]
-> The disclaimer text will not appear if a user manually entered a location before being enabled for E9-1-1. Updates to the disclaimer text will not be viewed by users that have already viewed the disclaimer. 
+> The disclaimer text won't appear if a user manually entered a location before being enabled for E9-1-1. Updates to the disclaimer text won't be viewed by users that have already viewed the disclaimer. 
   
  **Enhanced Emergency Service Disclaimer**
   
@@ -58,11 +60,11 @@ This setting specifies the disclaimer that users see if they dismiss the prompt 
 This dial string (less the leading "+", but including any normalization done by the user's Dial Plan) signifies that a call is an emergency call. The **Emergency Dial String** causes the client to include location and callback information with the call.
   
 > [!NOTE]
-> If your organization does not use an external line access prefix, you do not need to create a corresponding Dial Plan normalization rule that adds a "+" to the 911 string prior to sending the call to Outbound Routing on a server running Skype for Business Server; the "+" will be automatically prepended by the Skype for Business client as a result of the location policy. However, if your site uses an external access prefix, you need to add a normalization rule to the applicable Dial Plan policy that strips the external access prefix and adds the "+". For example, if your location uses an external access prefix of 9 and a user dials 9 911 to place an emergency call, the client will use its Dial Plan policy to normalize this to +911 before the dialed number is evaluated by the routes in the caller's location profile. 
+> If your organization doesn't use an external line access prefix, you don't need to create a corresponding Dial Plan normalization rule that adds a "+" to the 911 string prior to sending the call to Outbound Routing on a server running Skype for Business Server; the "+" will be automatically prepended by the Skype for Business client as a result of the location policy. However, if your site uses an external access prefix, you need to add a normalization rule to the applicable Dial Plan policy that strips the external access prefix and adds the "+". For example, if your location uses an external access prefix of 9 and a user dials 9 911 to place an emergency call, the client will use its Dial Plan policy to normalize this to +911 before the dialed number is evaluated by the routes in the caller's location profile. 
   
  **Emergency Dial String Masks (E9-1-1 dial mask)**
   
-A semicolon-separated list of dial strings that is translated into the specified **Emergency Dial String**. For example, you may want to add 112, which is the emergency service number for most of Europe. A visiting Skype for Business user from Europe may not know that 911 is the U.S. emergency number, but they can dial 112 and get the same result. As with the Emergency Dial String, do not include a "+" before each number, and if you use external line access codes, be sure there are normalization rules in the user's Dial Plan policy to strip off the access code digit.
+A semicolon-separated list of dial strings that is translated into the specified **Emergency Dial String**. For example, you may want to add 112, which is the emergency service number for most of Europe. A visiting Skype for Business user from Europe may not know that 911 is the U.S. emergency number, but they can dial 112 and get the same result. As with the Emergency Dial String, don't include a "+" before each number, and if you use external line access codes, be sure there are normalization rules in the user's Dial Plan policy to strip off the access code digit.
   
  **PSTN usage**
   

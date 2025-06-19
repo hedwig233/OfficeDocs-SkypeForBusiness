@@ -19,6 +19,8 @@ description: "What do you want to do? Click the link to the task that you want t
 
 # Topology: View Service Detail
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 What do you want to do? Click the link to the task that you want to perform.
 
 - [View a List of Computers Running Lync Server 2010](/previous-versions/office/lync-server-2013/lync-server-2013-view-a-list-of-computers-running-lync-server-2013)

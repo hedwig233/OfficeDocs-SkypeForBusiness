@@ -16,7 +16,9 @@ description: "tblSiopWhiteList is the list of registered add-ins that can be ass
 ---
 
 # tblSiopWhiteList
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 tblSiopWhiteList is the list of registered add-ins that can be associated with nodes.
   
 **Columns**

@@ -21,6 +21,8 @@ description: "Decisions necessary for planning an E9-1-1 deployment in Skype for
 
 # Define the scope of the E9-1-1 deployment in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Decisions necessary for planning an E9-1-1 deployment in Skype for Business Server Enterprise Voice.
 
 Before you configure Skype for Business for E9-1-1, you need to plan your E9-1-1 deployment. Some of the questions to consider include:
@@ -39,10 +41,10 @@ Before you configure Skype for Business for E9-1-1, you need to plan your E9-1-1
 
  **Will you enable E9-1-1 for users working outside the network?**
 
- Automatic location acquisition is available only for clients located inside the organization's network, so your organization needs to decide whether it will support E9-1-1 calls made from Skype for Business clients while off-premises. For example, will you enable users to place emergency calls if they are working from home or from a customer site? If a client is located outside the enterprise network, the client can be configured to prompt the user for a location. However, because these user-provided locations cannot be prevalidated against the Master Street Address Guide (MSAG), the emergency services service provider dispatcher will need to confirm the validity of the location verbally with the caller before routing the call to the Public Safety Answering Point (PSAP).
+ Automatic location acquisition is available only for clients located inside the organization's network, so your organization needs to decide whether it will support E9-1-1 calls made from Skype for Business clients while off-premises. For example, will you enable users to place emergency calls if they're working from home or from a customer site? If a client is located outside the enterprise network, the client can be configured to prompt the user for a location. However, because these user-provided locations can't be prevalidated against the Master Street Address Guide (MSAG), the emergency services service provider dispatcher needs to confirm the validity of the location verbally with the caller before routing the call to the Public Safety Answering Point (PSAP).
 
 > [!NOTE]
-> Skype for Business clients of users who connect to your organization's network by using VPN can pick up internal IP address information, but because these addresses cannot be used to identify the user's actual location, it is essential that VPN subnets are excluded from the Location Information service.
+> Skype for Business clients of users who connect to your organization's network by using VPN can pick up internal IP address information, but because these addresses can't be used to identify the user's actual location, it's essential that VPN subnets are excluded from the Location Information service.
 
  **Do you want to provide emergency call routing to sites outside the U.S.?**
 

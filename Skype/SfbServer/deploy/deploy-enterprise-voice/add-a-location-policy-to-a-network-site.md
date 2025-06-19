@@ -21,6 +21,8 @@ description: "Assign E9-1-1 location policies to network sites in Skype for Busi
 
 # Add a location policy to a network site in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Assign E9-1-1 location policies to network sites in Skype for Business Server Enterprise Voice. 
   
 The following examples show how to add the **Redmond** location policy defined in [Create location policies in Skype for Business Server](create-location-policies.md) to an existing network site and how to create a new network site that uses the **Redmond** location policy.

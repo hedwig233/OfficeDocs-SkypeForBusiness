@@ -16,7 +16,9 @@ description: "Summary: Learn about the Location Trend Report in Skype for Busine
 ---
 
 # Location Trend Report in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn about the Location Trend Report in Skype for Business Server.
   
 The Location Trend Report provides call quality trend information for network locations.

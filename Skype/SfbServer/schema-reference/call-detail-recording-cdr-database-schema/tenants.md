@@ -16,6 +16,8 @@ description: "The Tenants table is a supporting table that stores a list of the 
 ---
 
 # Tenants table
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The Tenants table is a supporting table that stores a list of the various tenants. Each record in the table represents one tenant.
   

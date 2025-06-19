@@ -16,6 +16,8 @@ description: "The Session View stores information about sessions that have recor
 ---
 
 # Session view
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The Session View stores information about sessions that have records in the database. This view was introduced in Microsoft Lync Server 2013.
   

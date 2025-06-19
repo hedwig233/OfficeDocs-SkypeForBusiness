@@ -17,10 +17,12 @@ description: "Skype for Business Server 2015 topology changes or provisioning to
 ---
 
 # Provisioning the topology to run load in Stress and Performance scenarios
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 Skype for Business Server 2015 topology changes or provisioning to allow users to successfully run the Stress and Performance tool.
   
-Depending on your existing settings and configuration for your deployment of Skype for Business Server 2015, you might need to make some changes in your environment. The following is a list of those changes:
+Depending on your existing settings and configuration for your deployment of Skype for Business Server 2015, you might need to make some changes in your environment. The following list describes those changes:
   
 1. Set the Windows PowerShell execution policy to Unrestricted. If you're not sure what it's set to currently, you can open the Skype for Business Server Management Shell and run this command:
     
@@ -28,7 +30,7 @@ Depending on your existing settings and configuration for your deployment of Sky
    Get-ExecutionPolicy
    ```
 
-   If the value Unrestricted is not returned, you'll need to run this next:
+   If the value Unrestricted isn't returned, you'll need to run this next:
     
    ```PowerShell
    Set-ExecutionPolicy -Unrestricted

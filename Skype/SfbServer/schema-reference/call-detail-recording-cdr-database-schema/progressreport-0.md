@@ -16,7 +16,9 @@ description: "The ProgressReport view stores information about completed session
 ---
 
 # ProgressReport view
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The ProgressReport view stores information about completed sessions. Progress reports will be written only for calls and sessions that Lync Server 2013 determines might be useful for diagnostic purposes. This view was introduced in Microsoft Lync Server 2013.
   
 > [!NOTE]

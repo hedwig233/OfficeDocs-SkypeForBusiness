@@ -18,7 +18,9 @@ description: "Use this page to define the Next Hop from the Persistent Chat Serv
 ---
 
 # Add Persistent Chat Next Hop Page
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Use this page to define the Next Hop from the Persistent Chat Server server in your deployment. For more information about how to deploy Persistent Chat Server, see [Deploy Persistent Chat Server in Skype for Business Server](../../deploy/deploy-persistent-chat-server/deploy-persistent-chat-server.md). 
   
 

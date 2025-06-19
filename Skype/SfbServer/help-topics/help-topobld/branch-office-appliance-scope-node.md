@@ -18,10 +18,12 @@ description: "This node shows the fully qualified domain name (FQDN), associated
 ---
 
 # Branch Office Appliance Scope Node
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 This node shows the fully qualified domain name (FQDN), associated pools and servers, and resiliency information about this Survivable Branch Appliance. You can perform the following actions:
   
-- **Edit Properties**. Opens the **Edit Properties** page for this Survivable Branch Appliance, where you can change the FQDN (if the topology is not already published), the associations, and resiliency settings.
+- **Edit Properties**. Opens the **Edit Properties** page for this Survivable Branch Appliance, where you can change the FQDN (if the topology isn't already published), the associations, and resiliency settings.
     
 - **Delete**. Deletes the server from the topology.
     

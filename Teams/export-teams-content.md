@@ -30,13 +30,14 @@ Here are some examples on how you can use these export APIs:
 
 - **Example 2**: If you want to programmatically export all user or team messages daily by providing a date range. Export APIs can retrieve all the messages created or updated during the given date range.
 
-- **Example 3**: If you want to programmatically export the links to Teams meeting recordings for a given meeting organizer, and then download the actual recordings.
+- **Example 3**: If you want to programmatically export the links to Teams meeting recordings for a given meeting organizer and then download the actual recordings.
 
-- **Example 4**: If you want to programmatically export the links to Teams meeting transcripts for a given meeting organizer, and then download the actual transcripts.
+- **Example 4**: If you want to programmatically export the links to Teams meeting transcripts for a given meeting organizer and then download the actual transcripts.
 
 ## What is supported by the Teams Export APIs?
 
-- **Bulk Export of Teams Message:** Teams Export APIs support up to 200 RPS Per App Per tenant and 600 RPS for an Application, with these limits you should be able to bulk export of Teams messages. 
+- **Bulk Export of Teams Message:** Please refer to [Teams Export APIs throttling limits](/graph/throttling-limits). With these limits you should be able to bulk export Teams messages. 
+
 - **Top Limit for Teams Meesage:** The TOP filter limit for Teams Message APIs is recommended to be set at 250 as the maximum limit beyond which the performance would be limited.
 - **Application Context**: To call Microsoft Graph, your app must acquire an access token from the Microsoft identity platform. The access token contains information about your app and the permissions it has for the resources and APIs available through Microsoft Graph. To get an access token, your app must be registered with the Microsoft identity platform and be authorized by either a user or an administrator for access to the Microsoft Graph resources it needs.
     If you're already familiar with integrating an app with the Microsoft identity platform to get tokens, see the [Next Steps](/graph/auth/auth-concepts#next-steps) section for information and samples specific to Microsoft Graph.
@@ -49,21 +50,31 @@ Here are some examples on how you can use these export APIs:
 > Reactions customized with color changes are currently not supported by Export API.
 
 - **Shared Channel Messages:** Export APIs support capturing messages from a Shared Channel.
-- **Deleted Teams:** Export API supports [capturing messages from deleted Teams](/graph/api/deletedteam-getallmessages) and deleted standard, private, and shared channels.
+- **Deleted Teams:** Export API supports [capturing messages from deleted Teams](/graph/api/deletedteam-getallmessages) and deleted standard, private, and shared channels for a maximum of 30 days from the day of deletion. After 30 days the teams and channels are hard deleted, and messages can't be retrieved.
+
 - **Deleted Users**: Export API supports capturing messages for deleted users up to 30 days from the time the user was deleted. To find the list of deleted users, see [Deleted Items](/graph/api/directory-deleteditems-list).
+- **Inactive Users**: Export API supports capturing messages for inactive users up to 30 days from the time the user becomes inactive. To find the list of inactive mailboxes, see [Inactive mailboxes](/purview/create-and-manage-inactive-mailboxes#view-a-list-of-inactive-mailboxes).
 - **Chat Message Properties:** Refer to the [complete list of properties that Teams Export APIs support](/graph/api/resources/chatmessage#properties).
 - **Control Messages:** Export API supports capturing control messages in addition to the user generated messages. Control Messages are system generated messages that appear on the Teams client and carry important information such as "User A added User B to the chat and shared all chat history" along with the timestamp. System messages enable the caller to have insights about events that happened in a team, a channel, or a chat. Refer to [the list of control messages](/graph/system-messages#supported-system-message-events) that Export API currently supports.
+
+Learn more about exporting messages in [chat](/graph/api/chats-getallmessages?view=graph-rest-1.0&preserve-view=true) and [channel](/graph/api/channel-getallmessages?view=graph-rest-1.0&preserve-view=true).
 
 > [!NOTE]
 > Meeting related control messages are currently not supported by Export API.
 
-- **Edited History:** If [your tenant is setup with Teams Retention Policy](/purview/create-retention-policies?tabs=teams-retention), Export API supports capturing messages' edited history for [individual & group chat](/graph/api/chat-getallretainedmessages), and [posts, comments in Public & Shared channels](/graph/api/channel-getallretainedmessages).
+- **Edited History:** If [your tenant is setup with Teams Retention Policy](/purview/create-retention-policies?tabs=teams-retention), Export API supports capturing messages' edited history for individual and group chats, as well as posts and comments in Public and Shared channels.
 
-    To learn more about Teams Retention policy, see the [Manage retention policies for Microsoft Teams](/microsoftteams/retention-policies) for further details.
-  
+   To learn more about Teams retention policy, see the [Manage retention policies for Microsoft Teams](/microsoftteams/retention-policies) for further details.
+
+   Learn more about exporting edited history messages in [chats](/graph/api/chat-getallretainedmessages?view=graph-rest-1.0&preserve-view=true) and [channels](/graph/api/channel-getallmessages?view=graph-rest-1.0&preserve-view=true).
+
 - **Meeting Transcripts:** Get all transcripts from scheduled online meeting instances for which the specified user is the organizer. This API currently only supports private scheduled meetings.
 
+Learn more about [exporting meeting transcripts](/graph/api/onlinemeeting-getalltranscripts?view=graph-rest-1.0&preserve-view=true).
+
 - **Meeting Recordings:** Get all recordings from scheduled online meeting instances for which the specified user is the organizer. This API currently only supports private scheduled meetings.
+
+Learn more about [exporting meeting recordings](/graph/api/onlinemeeting-getallrecordings?view=graph-rest-beta&preserve-view=true).
 
 ## How to access Teams Export APIs
 
@@ -110,7 +121,7 @@ Here are some examples on how you can use these export APIs:
 > The API returns response with next page link in case of multiple results. For getting next set of results, simply call GET on the url from @odata.nextlink. If @odata.nextlink isn't present or null, then all messages are retrieved.
 
 > [!NOTE]
-> The order of messages in the response isn't guaranteed to be sorted by any datetime, such as createdDateTime nor lastModifiedDateTime.
+> The order of messages in the response isn't guaranteed to be sorted by any datetime, such as createdDateTime or lastModifiedDateTime.
 
 ## Prerequisites to access Teams Export APIs
 
@@ -353,9 +364,7 @@ Export API has filter parameters that help optimize the messages returned for a 
 
  - applications (bots, connectors, and so on).
 
- - anonymous users.
-
- - federated users (external access users).
+ - All [userIdentityTypes](/graph/api/resources/teamworkuseridentity) except emailUser and unknownFutureValue.
    
  - system event messages (control messages).
    
@@ -368,9 +377,7 @@ $filter=from/application/applicationIdentityType eq '<appType>' (bots/tenantBots
   
 $filter=from/user/id eq '<oid>' (any number of id filters)  
   
-$filter=from/user/userIdentityType eq 'anonymousGuest'  
-  
-$filter=from/user/userIdentityType eq 'federatedUser' (guest/external)  
+$filter=from/user/userIdentityType eq '<userIdentityType>'  
   
 $filter=from/application/applicationIdentityType eq '<appType>' or from/user/id eq '<oid>' (sent by app or userid)  
   
@@ -423,9 +430,14 @@ If [your tenant is setup with Teams Retention Policy](/purview/create-retention-
 - **Message is soft deleted by a user in a chat or a channel** If there's a valid retention policy set, then beyond the 21 days of deletion period, the message can be exported through the API.
 - **Message is edited by a user in a chat or a channel** If there's a valid retention policy set, the previous edited versions of the message can be exported.
 
+> [!NOTE]
+> The /getAllRetainedMessages API enables the retrieval of deleted teams or channel messages for a maximum of 30 days from the day of deletion. After 30 days, the teams and channels are hard deleted, and messages can't be retrieved.
+
 ## Microsoft 365 Copilot Interactions & Microsoft 365 Chat (Preview)
 
 The new Copilot Activity Export API allows you to export Copilot interactions data which includes the user prompt to Copilot and the Copilot response back to the user. This API captures the user intent and Copilot accessed resources and the response back to the user across Microsoft 365 Copilot apps such as Teams, Word and Outlook. 
+
+Learn more about the[ Copilot Interactions Export API](/graph/api/aiinteractionhistory-getallenterpriseinteractions?view=graph-rest-beta&preserve-view=true).
 
 ## How to access Copilot Activity Export APIs (Preview)
 
@@ -442,6 +454,5 @@ The new Copilot Activity Export API allows you to export Copilot interactions da
 ## Prerequisites to access Copilot Activity Export APIs (Preview)
 
 Application permissions are used by apps that run without a signed-in user present; application permissions can only be approved by an administrator. The following permissions are needed:
-  
 - *AiEnterpriseInteraction.Read.All*: enables access to all copilot interactions across Microsoft 365 apps and Microsoft 365 Chat
 - A **Microsoft 365 Copilot license** is required for accessing the new Copilot Activity Export API.

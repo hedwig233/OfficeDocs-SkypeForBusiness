@@ -17,7 +17,9 @@ description: "With Persistent Chat Server, users can participate in multiparty, 
 ---
 
 # Persistent Chat planning tool
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Persistent Chat Server enables users to participate in multiparty, topic-based conversations that persist over time.
   
 For more details about preparing your environment for Persistent Chat Server, see [Plan for Persistent Chat Server in Skype for Business Server](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md).

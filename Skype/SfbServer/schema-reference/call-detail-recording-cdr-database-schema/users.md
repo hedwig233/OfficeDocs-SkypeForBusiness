@@ -16,7 +16,9 @@ description: "The Users table is a supporting table. Each record in the table st
 ---
 
 # Users table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The Users table is a supporting table. Each record in the table stores information about one user involved in calls or sessions that have records in the database.
   
 |**Column**|**Data Type**|**Key/Index**|**Details**|

@@ -19,6 +19,8 @@ description: "To define the Mediation Server, specify a fully qualified domain n
 
 # Add Mediation Server
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 To define the Mediation Server, specify a fully qualified domain name (FQDN) for the Mediation Server pool. If you're creating a pool of Mediation Servers, you specify the name of the pool for the Mediation Servers you're deploying. You define the FQDNs of the individual servers in another step. If you deploy a single Mediation Server, the FQDN you specify is the FQDN of the single Mediation Server. For details, see [Deploy a Mediation Server in Topology Builder in Skype for Business Server 2015](../../deploy/deploy-enterprise-voice/deploy-a-mediation-server.md).
   
 

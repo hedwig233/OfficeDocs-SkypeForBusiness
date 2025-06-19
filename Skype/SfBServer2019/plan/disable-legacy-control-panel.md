@@ -20,7 +20,9 @@ description: "This article provides a script to disable the Old Control Panel."
 
 # Disable Legacy Control Panel (CSCP)
 
-Post the launch of New Control Panel, from Skype for Business Server build 2019 2046.524, we are adding support for two new registry keys that, when present, validate the input and disable the original Control Panel (CSCP) from the launch option menu.
+[!INCLUDE [appliesto-xxx-2019-sub](../includes/appliesto-xxx-2019-sub.md)]
+
+Post the launch of New Control Panel, from Skype for Business Server build 2019 2046.524, we're adding support for two new registry keys that, when present, validate the input and disable the original Control Panel (CSCP) from the launch option menu.
 
 **SOFTWARE\Microsoft\Real-Time Communications\{5DC8C4D5-5133-4CE5-BF4E-8C459BF419D6}\DMR :** 
 Adds validation for the Monitoring Server  
@@ -29,7 +31,7 @@ Adds validation for the Monitoring Server
 Registry key for disabling the original Control Panel (CSCP)
 
 > [!NOTE]
-> If the registry keys aren't present, then there will be no change to the Control Panel launch behavior.
+> If the registry keys aren't present, then there's no change to the Control Panel launch behavior.
 
 The following PowerShell script adds the two new registry keys: 
 

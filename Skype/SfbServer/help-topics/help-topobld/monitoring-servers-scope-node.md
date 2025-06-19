@@ -18,6 +18,8 @@ description: "The Monitoring Servers node lists the Monitoring Servers in your t
 ---
 
 # Monitoring Servers Scope Node
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The **Monitoring Servers** node lists the Monitoring Servers in your topology. You can perform the following action:
   

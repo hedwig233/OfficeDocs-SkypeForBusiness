@@ -16,7 +16,9 @@ description: "tblChat contains all chat messages."
 ---
 
 # tblChat
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 tblChat contains all chat messages.
   
 **Columns**

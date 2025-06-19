@@ -17,7 +17,9 @@ description: "Summary: Lock or unlock a user's dial-in conferencing PIN for Skyp
 ---
 
 # Lock or unlock a user PIN in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Lock or unlock a user's dial-in conferencing PIN for Skype for Business Server.
   
 You can lock or unlock a user's PIN from the **Users** section of Skype for Business Server Control Panel.
@@ -104,4 +106,4 @@ You can lock and unlock user PINs by using Windows PowerShell and the Lock-CsCli
   Unlock-CsClientPin -Identity "Ken Myer"
   ```
 
-For more information, see the help topic for the [Lock-CsClientPin](/powershell/module/skype/lock-csclientpin?view=skype-ps) and [Unlock-CsClientPin](/powershell/module/skype/unlock-csclientpin?view=skype-ps) cmdlets.
+For more information, see the help topic for the [Lock-CsClientPin](/powershell/module/skype/lock-csclientpin?view=skype-ps&preserve-view=true) and [Unlock-CsClientPin](/powershell/module/skype/unlock-csclientpin?view=skype-ps&preserve-view=true) cmdlets.

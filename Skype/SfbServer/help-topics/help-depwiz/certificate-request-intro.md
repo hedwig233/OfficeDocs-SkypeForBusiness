@@ -18,7 +18,9 @@ description: "To continue with the certificate request process, click Next. To e
 ---
 
 # Certificate Request (Intro)
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 To continue with the certificate request process, click **Next**. To exit the process with no changes to the system, click **Cancel**.
   
 

@@ -18,18 +18,20 @@ description: "Learn about Front End pool management in Skype for Business Server
 
 # Front End Pool high availability and management
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Learn about Front End pool management in Skype for Business Server, including managing pools, quorum loss, and special steps for pools with only two Front End Servers.
   
 In Skype for Business Server, the architecture of Front End pools uses a distributed systems model, with each user's data kept on as many as three Front End Servers in the pool. We recommend that all your Enterprise Edition Front End pools include at least three Front End Servers.
 
 > [!NOTE]
-> Skype for Business Server 2019 does not support Enterprise Edition Front End pools with two Front End Servers, and will not allow the topology to be published in that scenario.
+> Skype for Business Server 2019 doesn't support Enterprise Edition Front End pools with two Front End Servers, and won't allow the topology to be published in that scenario.
   
 ## Planning for the management of Front End pools
 
- Skype for Business Server uses a distributed systems model based on Windows Fabric. In this model, important data for each user and conference is stored on three Front End Servers in a Front End pool. These three servers storing a certain set of data are calledreplicas.
+ Skype for Business Server uses a distributed systems model based on Windows Fabric. In this model, important data for each user and conference is stored on three Front End Servers in a Front End pool. These three servers storing a certain set of data are called replicas.
   
-With the distributed model for Front End pools, a certain numbers of a pool's servers must be running for the pool to function. There are two loss modes for a pool.
+With the distributed model for Front End pools, a certain number of a pool's servers must be running for the pool to function. There are two loss modes for a pool.
   
 - Routing Group Level quorum loss, caused by not enough replica servers for a particular routing group. A routing group is a set of users homed in the pool. Each routing group has three replicas in the pool: one primary replica and two secondary replicas.
     
@@ -37,7 +39,7 @@ With the distributed model for Front End pools, a certain numbers of a pool's se
     
 ### Routing Group Level quorum loss
 
-The first time you start a new Front End pool, it is essential that 85% of the servers are up and running, as shown in the following table. If fewer servers are running, the services might be stuck in the starting state and the pool might not start.
+The first time you start a new Front End pool, it's essential that 85% of the servers are up and running, as shown in the following table. If fewer servers are running, the services might be stuck in the starting state and the pool might not start.
   
 |Total number of servers in the pool  <br/> |Number of servers that must be running for the pool to be started the first time  <br/> |
 |:-----|:-----|
@@ -56,14 +58,14 @@ The first time you start a new Front End pool, it is essential that 85% of the s
 
 
    
-Every subsequent time the pool is started, 85% of the servers should be started (as shown in the preceding table). If this number of servers cannot be started (but enough servers can be started so that you are not at pool-level quorum loss), you can use the  `Reset-CsPoolRegistrarState -ResetType QuorumLossRecovery` cmdlet to enable the pool to recover from this routing group level quorum loss and make progress. For more information about how to use this cmdlet, see [Reset-CsPoolRegistrarState](/powershell/module/skype/reset-cspoolregistrarstate?view=skype-ps). 
+Every subsequent time the pool is started, 85% of the servers should be started (as shown in the preceding table). If this number of servers can't be started (but enough servers can be started so that you aren't at pool-level quorum loss), you can use the  `Reset-CsPoolRegistrarState -ResetType QuorumLossRecovery` cmdlet to enable the pool to recover from this routing group level quorum loss and make progress. For more information about how to use this cmdlet, see [Reset-CsPoolRegistrarState](/powershell/module/skype/reset-cspoolregistrarstate?view=skype-ps&preserve-view=true). 
   
 > [!NOTE]
-> In pools with an even number of servers, Skype for Business Server uses the Primary SQL database as Witness. In a pool like this, if you shut down the primary database and switch to the Mirror copy, and shut down enough Front End servers so that not enough are running according to the preceding table, the entire pool will go down. For more information, see [Database Mirroring Witness](/sql/database-engine/database-mirroring/database-mirroring-witness). 
+> In pools with an even number of servers, Skype for Business Server uses the Primary SQL database as Witness. In a pool like this, if you shut down the primary database and switch to the Mirror copy, and shut down enough Front End servers so that not enough are running according to the preceding table, the entire pool goes down. For more information, see [Database Mirroring Witness](/sql/database-engine/database-mirroring/database-mirroring-witness). 
   
 #### Pool-level quorum loss
 
-For a Front End pool to function at all, it cannot be in pool-level quorum loss. If the number of servers running falls below the functional level as shown in the following table, the remaining servers in the pool will stop all Skype for Business Server services. Note that the numbers in the following table assume that the Back End Servers in the pool are running.
+For a Front End pool to function at all, it can't be in pool-level quorum loss. If the number of servers running falls below the functional level as shown in the following table, the remaining servers in the pool stop all Skype for Business Server services. The numbers in the following table assume that the Back End Servers in the pool are running.
   
 |Total number of Front End Servers in the pool  <br/> |Number of servers that must be running for pool to be functional  <br/> |
 |:-----|:-----|
@@ -90,7 +92,7 @@ You should watch for a couple of other factors to ensure that your Front End poo
     
 ## Front End pool with two Front End servers
 
-We do not recommend deploying a Front End pool that contains only two Front End Servers. This small pool will not provide a robust high-availability solution like a larger pool would, and needs extra care in managing. Additionally, if the Back End Server of a two-server pool went down, the whole pool itself would likely soon go down as well. If you want to deploy just one or two servers running Skype for Business Server, we recommend you deploy them as Standard Edition servers.
+We don't recommend deploying a Front End pool that contains only two Front End Servers. This small pool won't provide a robust high-availability solution like a larger pool would, and needs extra care in managing. Additionally, if the Back End Server of a two-server pool went down, the whole pool itself would likely soon go down as well. If you want to deploy just one or two servers running Skype for Business Server, we recommend you deploy them as Standard Edition servers.
   
 If you do ever need to deploy a pool with two Front End Servers, follow these guidelines:
   
@@ -100,17 +102,17 @@ If you do ever need to deploy a pool with two Front End Servers, follow these gu
     
   - The best practice is to restart both Front End Servers at the same time. 
     
-  - If the two servers cannot be restarted at the same time, you should bring them back up in the reverse order of the order they went down.
+  - If the two servers can't be restarted at the same time, you should bring them back up in the reverse order of the order they went down.
     
-  - If you cannot bring them back up in that order, then use the following cmdlet before bringing the pool back up:  `Reset-CsPoolRegistrarState -ResetType QuorumLossRecovery -PoolFQDN <FQDN>`
+  - If you can't bring them back up in that order, then use the following cmdlet before bringing the pool back up:  `Reset-CsPoolRegistrarState -ResetType QuorumLossRecovery -PoolFQDN <FQDN>`
     
 ## Front End pool configuration failures and changes
 
-If a Front End server fails and is unlikely to be replaced for a few days or more, remove the server from the topology. Add the new Front End server to the topology when it is available again.
+If a Front End server fails and is unlikely to be replaced for a few days or more, remove the server from the topology. Add the new Front End server to the topology when it's available again.
   
 Whenever you make a configuration change to a Front End pool, such as adding or removing servers, you must follow these guidelines:
   
-- After the new topology has been published, you must restart each Front End server in the pool. Restart them one at a time.
+- After the new topology is published, you must restart each Front End server in the pool. Restart them one at a time.
     
-- If the entire pool has been down during the configuration change, then run the following cmdlet after the new topology is published:  `Reset-CsPoolRegistrarState -PoolFQDN <PoolFQDN> -ResetType ServiceReset`
+- If the entire pool is down during the configuration change, then run the following cmdlet after the new topology is published:  `Reset-CsPoolRegistrarState -PoolFQDN <PoolFQDN> -ResetType ServiceReset`
 

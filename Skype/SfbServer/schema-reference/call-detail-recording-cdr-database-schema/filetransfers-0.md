@@ -16,7 +16,9 @@ description: "Each record represents one file transfer session."
 ---
 
 # FileTransfers table in Skype for Business Server 2015
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Each record represents one file transfer session.
   
 |**Column**|**Data Type**|**Key/Index**|**Details**|

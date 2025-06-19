@@ -16,7 +16,9 @@ description: "The Manufacturers table is a supporting table. Each record stores 
 ---
 
 # Manufacturers table in Skype for Business Server 2015
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The Manufacturers table is a supporting table. Each record stores information about one device (desk phone) manufacturer.
   
 |**Column**|**Data Type**|**Key/Index**|**Details**|

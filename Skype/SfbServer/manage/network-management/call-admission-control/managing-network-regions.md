@@ -16,7 +16,9 @@ description: "Network region* are the network hubs or backbones used in the conf
 
 # Managing network regions in Skype for Business Server
 
-*Network regions* are the network hubs or backbones used in the configuration of call admission control, E9-1-1, and media bypass. Use the following procedures to view, create, or modify network regions. For example, if you have already created network regions for one Voice feature, you do not need to create new network regions; other advanced Enterprise Voice features will use those same network regions. You may, however, need to modify an existing network region definition to apply feature-specific settings. For example, if you have created network regions for E9-1-1 (which do not require an associated central site) and you then deploy call admission control, you need to modify the network region definitions to specify a central site. 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
+*Network regions* are the network hubs or backbones used in the configuration of call admission control, E9-1-1, and media bypass. Use the following procedures to view, create, or modify network regions. For example, if you have already created network regions for one Voice feature, you don't need to create new network regions; other advanced Enterprise Voice features will use those same network regions. You may, however, need to modify an existing network region definition to apply feature-specific settings. For example, if you have created network regions for E9-1-1 (which don't require an associated central site) and you then deploy call admission control, you need to modify the network region definitions to specify a central site. 
 
 Use the procedures in this article to view network region information or create, modify, or delete network regions. 
 
@@ -82,15 +84,15 @@ A network region interconnects various parts of a network across multiple geogra
 
 6.  From the **Central site** drop-down list, select the central site for this network region.
 
-7.  The **Enable audio alternate path** check box is checked by default. This field determines whether audio calls will be routed through an alternate path if adequate bandwidth does not exist in the primary path. Clear this check box only if you need to turn off the offload to the Internet. If any of your calls will be Internet calls, this check box must be checked, regardless of bandwidth settings.
+7.  The **Enable audio alternate path** check box is checked by default. This field determines whether audio calls will be routed through an alternate path if adequate bandwidth doesn't exist in the primary path. Clear this check box only if you need to turn off the offload to the Internet. If any of your calls will be Internet calls, this check box must be checked, regardless of bandwidth settings.
 
-8.  The **Enable video alternate path** check box is checked by default. This field determines whether video calls will be routed through an alternate path if adequate bandwidth does not exist in the primary path. Clear this check box only if you need to turn off the offload to the Internet. If any of your calls will be Internet calls, this check box must be checked, regardless of bandwidth settings.
+8.  The **Enable video alternate path** check box is checked by default. This field determines whether video calls will be routed through an alternate path if adequate bandwidth doesn't exist in the primary path. Clear this check box only if you need to turn off the offload to the Internet. If any of your calls will be Internet calls, this check box must be checked, regardless of bandwidth settings.
 
-9.  (Optional) Type a value in the **Description** field to provide more information about this region that cannot be expressed by the name alone.
+9.  (Optional) Type a value in the **Description** field to provide more information about this region that can't be expressed by the name alone.
 
 10. Click **Commit**.
 
-The **Associated sites** table is not used for creating a network region. You associate a site with a region when you create or modify the site. For details, see [Managing call admission control for sites](managing-call-admission-control-for-sites.md).
+The **Associated sites** table isn't used for creating a network region. You associate a site with a region when you create or modify the site. For details, see [Managing call admission control for sites](managing-call-admission-control-for-sites.md).
 
 ### To modify a network region
 
@@ -108,7 +110,7 @@ The **Associated sites** table is not used for creating a network region. You as
 
 7.  Click **Commit**.
 
-You cannot modify the **Associated sites** on this page. The list of associated sites is provided for reference so you are aware of which sites will be affected when you modify the region settings.
+You can't modify the **Associated sites** on this page. The list of associated sites is provided for reference so you're aware of which sites will be affected when you modify the region settings.
 
 
 ## Delete existing network regions 
@@ -134,7 +136,7 @@ A network region interconnects various parts of a network across multiple geogra
 
 
     > [!WARNING]  
-    > A network region cannot be removed if it is associated with a network site. If you attempt to remove a region associated with a site, you will receive an error message. To see if a region is associated with any sites, select the region and then click **Show details** on the **Edit** menu.
+    > A network region can't be removed if it's associated with a network site. If you attempt to remove a region associated with a site, you'll receive an error message. To see if a region is associated with any sites, select the region and then click **Show details** on the **Edit** menu.
 
 
 ## See Also

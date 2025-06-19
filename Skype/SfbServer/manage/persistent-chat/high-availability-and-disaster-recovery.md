@@ -17,6 +17,8 @@ description: "Summary: Learn how to manage Persistent Chat Server high availabil
 
 # Manage high availability and disaster recovery for Persistent Chat Server in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to manage Persistent Chat Server high availability and disaster recovery in Skype for Business Server.
   
 This topic describes how to fail over and fail back Persistent Chat Server. Before reading this topic, be sure to read [Plan for high availability and disaster recovery for Persistent Chat Server in Skype for Business Server](../../plan-your-deployment/persistent-chat-server/high-availability-and-disaster-recovery.md) and [Configure high availability and disaster recovery for Persistent Chat Server in Skype for Business Server](../../deploy/deploy-persistent-chat-server/configure-hadr-for-persistent-chat.md).

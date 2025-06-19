@@ -16,6 +16,8 @@ description: "This topic contains the recommended client deployment steps you sh
 
 # Configure clients for migration
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../includes/appliesto-xxx-2019-sub.md)]
+
 This topic contains the recommended client deployment steps you should take before migrating to Skype for Business Server 2019. These configuration changes should be made on Lync Server 2013 or Skype for Business Server 2015 (the version you are migrating **from**).
   
 ### To configure clients before migration

@@ -20,7 +20,9 @@ description: "Summary: Learn about the servers and server roles you must configu
 ---
 
 # Install prerequisites for Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn about the servers and server roles you must configure before you install Skype for Business Server.
   
 Installing prerequisites consists of setting up Windows Server by installing the required roles and features on each of the servers in the topology. The requirements are based on the role the server will fulfill in the topology. You can do steps 1 through 5 in any order. However, you must do steps 6, 7, and 8 in order, and after steps 1 through 5, as outlined in the diagram. Installing prerequisites is step 1 of 8.
@@ -32,7 +34,7 @@ Installing prerequisites consists of setting up Windows Server by installing the
 Skype for Business Server requires the Windows Server operating system and a number of prerequisites before it can be installed. For details on planning for prerequisites, see [Server requirements for Skype for Business Server](../../../SfBServer2019/plan/system-requirements.md). 
   
 > [!TIP]
-> This procedure uses Windows Server 2012 R2. If you are using a different version of Windows Server, the procedure might be slightly different. 
+> This procedure uses Windows Server 2012 R2. If you're using a different version of Windows Server, the procedure might be slightly different. 
   
 > [!IMPORTANT]
 > Before you begin, make sure that Windows Server is up-to-date by using Windows Update. 
@@ -50,18 +52,18 @@ You can install the required roles and features using Server Manager.
 1. Install the prerequisite software features listed in [Server requirements for Skype for Business Server](../../../SfBServer2019/plan/system-requirements.md). The required software must be on the server that will run Skype for Business Server.
     
     > [!CAUTION]
-    > Windows Server 2012 R2 does not install all of the source files for the required features by default. 
-    > If the server is not connected to the Internet, you will need to insert the Windows Server 2012 R2 media and select **Specify an alternate source path** in order to install the required features. 
+    > Windows Server 2012 R2 doesn't install all of the source files for the required features by default. 
+    > If the server isn't connected to the Internet, you'll need to insert the Windows Server 2012 R2 media and select **Specify an alternate source path** in order to install the required features. 
     > The source files are located in the sources\sxs directory. 
     > For example, if the Windows Server 2012 R2 media is in drive D, you would set the path to `d:\sources\sxs`. 
-    > It is important that you have the latest updates from Windows Update. 
-    > If you are not connected to the Internet, you will need to manually install all relevant updates as well as any prerequisites to the required updates. 
+    > It's important that you have the latest updates from Windows Update. 
+    > If you aren't connected to the Internet, you'll need to manually install all relevant updates and any prerequisites to the required updates. 
   
-1. When the dialog box indicates that the installation has completed, you will need to reboot the server to complete the process.
+1. When the dialog box indicates that the installation has completed, you'll need to reboot the server to complete the process.
     
 1. Run **Windows Update** again to check if there are any updates to the roles and services that were installed.
     
-1. If you will be using Skype for Business Server Control Panel on this server then you must also install Silverlight. To install Silverlight, see [Microsoft Silverlight](https://www.microsoft.com/silverlight/).
+1. If you'll be using Skype for Business Server Control Panel on this server then you must also install Silverlight. To install Silverlight, see [Microsoft Silverlight](https://www.microsoft.com/silverlight/).
 
 
 > [!IMPORTANT]

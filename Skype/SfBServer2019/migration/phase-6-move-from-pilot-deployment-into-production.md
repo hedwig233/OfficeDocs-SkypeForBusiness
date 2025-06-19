@@ -16,6 +16,8 @@ description: "The topics in this section describe tasks you must complete prior 
 
 # Phase 6: Move from pilot deployment into production
 
+[!INCLUDE [appliesto-xxx-2019-sub](../includes/appliesto-xxx-2019-sub.md)]
+
 The topics in this section describe tasks you must complete before moving your deployment of Skype for Business Server 2019 from a pilot deployment to a production-level deployment.
   
 ## In this section

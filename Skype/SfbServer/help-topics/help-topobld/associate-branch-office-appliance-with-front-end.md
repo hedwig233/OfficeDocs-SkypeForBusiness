@@ -18,6 +18,8 @@ description: "To associate the Survivable Branch Appliance or Survivable Branch 
 ---
 
 # Associate Branch Office Appliance With Front End
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 To associate the Survivable Branch Appliance or Survivable Branch Server with a Front End pool or a Standard Edition server, on the **Select the Front End pool** page, select the Front End pool or a Standard Edition server from the **Front End pool** drop-down list. Click **Next** to continue.
   

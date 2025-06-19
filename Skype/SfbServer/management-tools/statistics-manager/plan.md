@@ -18,6 +18,8 @@ description: "Summary: Read this article to learn about Statistics Manager for S
 
 # Plan for Statistics Manager for Skype for Business Server
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Read this article to learn about Statistics Manager for Skype for Business Server.
 
  Statistics Manager for Skype for Business Server is a powerful tool that allows you to view Skype for Business Server health and performance data in real time. You can poll performance data across hundreds of servers every few seconds, and view the results instantly on the Statistics Manager Website.

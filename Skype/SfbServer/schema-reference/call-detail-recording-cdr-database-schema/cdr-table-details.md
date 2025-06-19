@@ -16,6 +16,8 @@ description: "The following topics detail the columns in each of the call detail
 ---
 
 # CDR table details in Skype for Business Server 2015
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The following topics detail the columns in each of the call detail records (CDR) database schema tables.
   

@@ -18,7 +18,9 @@ description: "You configure the compliance SQL Server stores that will provide d
 ---
 
 # Add Persistent Chat Compliance SQL Server Store
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 You configure the compliance SQL Server stores that will provide databases for the Persistent Chat Server or Persistent Chat Server compliance feature.
   
  **SQL Server store**: Select an existing SQL Server and optionally an instance for Persistent Chat.

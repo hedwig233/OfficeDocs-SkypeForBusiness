@@ -18,6 +18,7 @@ description: "Overview of using a Cloud auto attendant with Skype for Business S
 # Plan Cloud auto attendants
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
+[!INCLUDE[appliesto-xxx-2019-sub.md](../../SfBServer2019/includes/appliesto-xxx-2019-sub.md)]
 
 The auto attendant used with Exchange Unified Messaging (Exchange Server 2013 or Exchange Server 2016) is no longer available in Exchange Server 2019 or Exchange Online. If your implementation of Skype for Business Server 2019 integrates with either of these Exchange versions, you need to use the online Cloud Voice features associated with Phone System. See [Plan for Skype for Business Server and Exchange Server migration](plan-um-migration.md) for information about moving Exchange UM services homed on Exchange server 2013 and 2016 to the cloud.
 

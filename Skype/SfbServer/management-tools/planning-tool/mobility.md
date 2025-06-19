@@ -17,7 +17,9 @@ description: "The Skype for Business Server 2015 mobility feature supports funct
 ---
 
 # Mobility planning tool
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The mobility feature in Skype for Business Server 2015 supports Skype for Business functionality on mobile devices.
   
 Mobility functionality is the same as in Lync Server 2013. For more information about preparing your environment for mobility, see [Plan for Mobility for Skype for Business Server](../../plan-your-deployment/mobility.md).

@@ -20,6 +20,8 @@ description: "A summary of the Enterprise Voice components in Skype for Business
 ---
 
 # Components required for Enterprise Voice in Skype for Business Server
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 A summary of the Enterprise Voice components in Skype for Business Server.
   

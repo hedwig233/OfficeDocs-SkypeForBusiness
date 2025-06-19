@@ -16,7 +16,9 @@ description: "The ClientVersions view stores information about the various clien
 ---
 
 # ClientVersions view
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The ClientVersions view stores information about the various client types and versions that have participated in sessions recorded in the database. Each record in the view represents one client version. This view was introduced in Microsoft Lync Server 2013.
   
 > [!NOTE]

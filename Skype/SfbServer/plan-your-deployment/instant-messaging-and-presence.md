@@ -17,6 +17,8 @@ description: "Summary: Learn how to plan for instant messaging and presence in S
 
 # Plan for instant messaging and presence in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to plan for instant messaging and presence in Skype for Business Server.
   
 Plan for instant messaging and presence in Skype for Business Server. To learn about specific deployment options, such as enabling or disabling Offline Instant Messaging (IM), see [Deploy instant messaging and presence in Skype for Business Server](../deploy/im-and-presence/im-and-presence.md).

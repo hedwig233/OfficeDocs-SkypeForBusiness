@@ -18,6 +18,8 @@ description: "The Online Certificate Request Status page returns the current sta
 ---
 
 # Pending Certificate (Returned)
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The **Online Certificate Request Status** page returns the current status of the certificate. If the certificate is still in a pending approval state with the certification authority administrator—that is, if it isn't approved—the status indicates that the certificate is still being processed.
   

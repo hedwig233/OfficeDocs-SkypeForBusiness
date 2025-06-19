@@ -16,6 +16,8 @@ description: "For details, see Deploying clients and devices in Skype for Busine
 
 # Deploy Skype for Business Server clients
 
+[!INCLUDE [appliesto-xxx-2019-sub](../includes/appliesto-xxx-2019-sub.md)]
+
 For details, see [Deploy clients for Skype for Business Server](../../SfbServer/deploy/deploy-clients/deploy-clients.md) in the Deployment documentation.
   
 

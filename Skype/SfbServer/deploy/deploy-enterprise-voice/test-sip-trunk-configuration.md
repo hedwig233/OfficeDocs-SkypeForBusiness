@@ -20,6 +20,8 @@ description: "Summary: Learn how to test SIP trunk configuration settings by usi
 ---
 
 # Skype for Business Server: Test SIP trunk configuration settings
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 **Summary:** Learn how to test SIP trunk configuration settings by using the Skype for Business Server Management Shell.
   
@@ -27,7 +29,7 @@ SIP trunk configuration settings define the relationship and capabilities betwee
   
 - Whether media bypass should be enabled on the trunks
     
-- The conditions under which Realtime Transport Control Protocol (RTCP) packets are sent
+- Define the conditions under which Realtime Transport Control Protocol (RTCP) packets are to be sent
     
 - Whether Secure Realtime Transport Protocol (SRTP) encryption is required on each trunk
     

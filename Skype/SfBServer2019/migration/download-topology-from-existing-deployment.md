@@ -16,6 +16,8 @@ description: "When creating a Skype for Business Server 2019 pool, you use the C
 
 # Download topology from existing deployment
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../includes/appliesto-xxx-2019-sub.md)]
+
 When creating a Skype for Business Server 2019 pool, you use the Central Management Store that is associated with the legacy installation. When you start Topology Builder on first use and subsequent edit sessions, you're prompted for the location where you want Topology Builder to load the current configuration document. Because you already have a topology defined and established the Central Management store, you should choose to download a topology from an existing deployment. Topology Builder reads the database and retrieve the current definition. 
   
 ### To download a topology from an existing deployment

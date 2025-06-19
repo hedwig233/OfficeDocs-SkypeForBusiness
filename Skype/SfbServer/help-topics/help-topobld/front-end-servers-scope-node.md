@@ -18,6 +18,8 @@ description: "The Enterprise Edition Front End pools node lists the Front End po
 ---
 
 # Front End Servers Scope Node
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The **Enterprise Edition Front End pools** node lists the Front End pools at this site, and the **Standard Edition Front End Servers** nodes lists the Standard Edition servers at this site. You can perform the following action:
   

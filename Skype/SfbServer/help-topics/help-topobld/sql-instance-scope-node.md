@@ -18,10 +18,12 @@ description: "This node shows the fully qualified domain name (FQDN) of this Mic
 ---
 
 # SQL Instance Scope Node
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 This node shows the fully qualified domain name (FQDN) of this Microsoft SQL Server and the instance of SQL Server on that server, and the pools or servers that use this SQL Server. You can perform the following actions:
   
-- **Edit Properties**. Opens the **Edit Properties** page for this server, where you can change the FQDN of the server (if the topology is not already published), and the instance of SQL Server to be used.
+- **Edit Properties**. Opens the **Edit Properties** page for this server, where you can change the FQDN of the server (if the topology isn't already published), and the instance of SQL Server to be used.
     
 - **Delete**. Deletes the server from the topology.
     

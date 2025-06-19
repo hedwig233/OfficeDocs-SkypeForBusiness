@@ -18,15 +18,17 @@ description: "Summary: Review integration steps for Exchange Server 2016 or Exch
 
 # Integrate Skype for Business Server with Exchange Server
 
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Review integration steps for Exchange Server 2013 or later and Skype for Business Server.
 
-Exchange Server 2013 or later and Skype for Business Server are compatible and integrate well. For example, Skype for Business user presence information can be reported in Microsoft Outlook; likewise, Skype for Business can access a user's Outlook calendar, notice the user has a meeting scheduled, and show the user's presence as Busy during the meeting. Although you do not have to run Exchange Server in order to run Skype for Business Server (or vice-versa) the two products together enhance each other's user experience.
+Exchange Server 2013 or later and Skype for Business Server are compatible and integrate well. For example, Skype for Business user presence information can be reported in Microsoft Outlook; likewise, Skype for Business can access a user's Outlook calendar, notice the user has a meeting scheduled, and show the user's presence as Busy during the meeting. Although you don't have to run Exchange Server in order to run Skype for Business Server (or vice-versa) the two products together enhance each other's user experience.
 
 This documentation provides information on integrating Skype for Business Server and Exchange Server 2016 or Exchange Server 2013, but it assumes the initial setup and configuration of these two products has already happened. For details about deploying Skype for Business Server see the [Skype for Business Server Tech Center](../../../Hub/index.yml). For details about deploying Exchange Server see the deployment documentation for your version of Exchange.
 
-If you are integrating an on premises installation of Skype for Business Server with Microsoft Exchange Online, see [Configure integration between on-premises Skype for Business Server and Outlook Web App](outlook-web-app.md).
+If you're integrating an on premises installation of Skype for Business Server with Microsoft Exchange Online, see [Configure integration between on-premises Skype for Business Server and Outlook Web App](outlook-web-app.md).
 
-If you are integrating Skype for Business Online with Exchange Server on premises, see [Configure OAuth between Skype for Business Online and Exchange on premises](oauth-with-online-and-on-premises.md).
+If you're integrating Skype for Business Online with Exchange Server on premises, see [Configure OAuth between Skype for Business Online and Exchange on premises](oauth-with-online-and-on-premises.md).
 
 ## In this section
 

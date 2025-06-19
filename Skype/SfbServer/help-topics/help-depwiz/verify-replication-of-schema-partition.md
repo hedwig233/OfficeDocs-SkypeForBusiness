@@ -18,6 +18,8 @@ description: "To verify that the schema extensions are successfully replicated i
 ---
 
 # Verify Replication of Schema Partition
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 To verify that the schema extensions are successfully replicated in your Active Directory Domain Services forest, do the following:
   

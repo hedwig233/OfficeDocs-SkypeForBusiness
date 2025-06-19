@@ -21,6 +21,8 @@ description: "Summary: Learn how to deploy Enterprise Voice for Skype for Busine
 
 # Deploy Enterprise Voice in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to deploy Enterprise Voice for Skype for Business Server at a central site.
 
 Use this topic to deploy Enterprise Voice at a central site. To deploy Enterprise Voice at a branch site, skip to [Deploying Branch Sites](/previous-versions/office/lync-server-2013/lync-server-2013-deploying-branch-sites).

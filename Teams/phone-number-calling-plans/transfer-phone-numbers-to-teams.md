@@ -4,10 +4,11 @@ author: sfrancis206
 ms.author: scottfrancis
 manager: pamgreen
 ms.reviewer: leiaglezer
-ms.date: 01/10/2025
+ms.date: 05/09/2025
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
+ms.subservice: teams-calling
 audience: Admin
 f1.keywords:
 - NOCSH
@@ -26,7 +27,7 @@ ms.custom: seo-marvel-mar2020
 
 # Submitting a port request
 
-This article is an accompaniment for IT professionals and Teams Phone administrators in the process of porting phone numbers to Microsoft Calling Plans.
+This article is an accompaniment for IT professionals and Teams Phone administrators in the process of porting phone numbers to Microsoft Teams Calling Plans.
 
 ## Prerequisites
 
@@ -78,6 +79,8 @@ This article is an accompaniment for IT professionals and Teams Phone administra
 
 ## Create a port order and transfer your phone numbers to Teams
 
+To learn how to create a port order and transfer your phone numbers in the Teams admin center, select the appropriate tab for country-specific instructions.
+
 ### [**Porting wizard - New (U.S. & Canada)**](#tab/new-porting-wizard)
 
 #### Launch the port wizard
@@ -112,7 +115,7 @@ Select **US & Canada** and select **Start port**.
     - If the wizard categorized your numbers into more than one group, you must submit a separate port request for each. See [Planning number ports](port-order-overview.md).
     - If the wizard detects that your requested numbers are invalid for porting, the error is shown here.
 
-3. Once your numbers are validated in the wizard, you have the option to save your progress and continue later. If you need to exit and return to your order, follow these steps:
+3. Once your numbers are validated in the wizard, you can save your progress and continue later. If you need to exit and return to your order, follow these steps:
     - Go to **Teams Admin Center**
     - Navigate to **Voice** > **Phone Numbers**
     - Select **Order History**
@@ -123,7 +126,7 @@ Select **US & Canada** and select **Start port**.
 
 Enter the Billing telephone number (BTN) for the account with your existing service provider.
 
-- The Billing telephone number (BTN) for the phone numbers being ported must match what the current service provider has on file for the account. Also, if there's a freeze on the account it must be removed. If the BTN is incorrect or there's a freeze on the account, your port request will be rejected after it's submitted.
+- The Billing telephone number (BTN) for the phone numbers being ported must match what the current service provider has on file for the account. Also, if there's a freeze on the account it must be removed. If the BTN is incorrect or there's a freeze on the account, your port request will be rejected after submitting.
 - The BTN can also be referred to as the 'Account telephone number.' It's the primary phone number associated with your account. Your service provider uses the BTN to track activities, payments, and customer service records.
 - You can usually find your BTN on an account statement. If you're unsure, ask your current service provider's account representative to help you identify your BTN.
 - In a **full** port request, all numbers associated with the BTN are ported to Microsoft, including the BTN, and the respective account with the current provider is closed.
@@ -173,7 +176,7 @@ You have two options for submitting.
 1. Offline signature.
     1. In this case, you download the Letter of Authorization, get it signed, upload it, and submit to Microsoft.
 
-In **Edit Mode**, you can modify any field of your validated order, except for the Country or Region that was selected on the Get Started page. If your updates impact the LOA (Letter of Authorization) and the LOA has already been signed and uploaded, we must refresh the LOA with your modifications. Download, sign, and reupload the updated LOA. Only after re-uploading the refreshed LOA will you be able to submit edits to your order.
+In **Edit Mode**, you can modify any field of your validated order, except for the Country or Region that was selected on the Get Started page. If your updates impact the LOA (Letter of Authorization) and the LOA has already been signed and uploaded, we must refresh the LOA with your modifications. Download, sign, and reupload the updated LOA. Only after reuploading the refreshed LOA can you submit edits to your order.
 
 #### Confirmation
 
@@ -284,6 +287,34 @@ To update the number usage, check the desired number and select **Update number 
   - Once they electronically sign, the port request proceeds.
 
 ---
+
+## What's the status of your port orders?
+
+**APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Microsoft Calling Plans
+
+To see the status of your port order, in the left navigation of the Microsoft Teams admin center, go to  > **Voice** > **Phone numbers**, and then select **Order history**. Each port order status is listed in the **Status** column.
+
+If the **Status** column isn't listed, select the gear-shaped setting icon in the **Order history** table, and enable the **Status** column.
+
+You can view orders that are saved but not submitted, and orders that are submitted and in progress by selecting the order name.
+
+|Status |Description | Supported Action | Considerations and Rules |
+|:-----|:-----|:-----|:-----|
+|Draft |You started your order, but it isn't yet validated. |You can edit, delete, or validate your order. |Only available in the new port wizard (for example, US & CA currently). </br>Your LOA isn't yet generated. |
+|Not submitted |Your order is validated and ready to be signed and submitted. |You can edit or delete your order. |In this status, you need to sign and submit your LOA in one of two ways in the port wizard: </br>1. Upload a signed LOA (available in all supported markets), </br>2. Request an E-signature submission (US & CA only currently). |
+|Manual review |Your order is in review with Microsoft support. |You can edit the order name, extra contacts, and number usage. |Microsoft support corrects and resubmits the order and contacts you if other information is required. |
+|Pending operator approval |Your order is submitted to the losing provider and awaiting their response. |You can edit the order name, extra contacts, and number usage. |Planned port date is available in the order details in Teams admin center. |
+|Exception |The carrier that currently owns your porting phone numbers rejects your order. |You can edit the order name, extra contacts, and number usage. |Exceptions are due to incorrect info in the LOA (for example, PIN, ZIP code). </br></br>Microsoft support corrects and resubmits the order and contacts user if additional information is required. |
+|Approved (FOCAccepted) |Your order is approved to port to Microsoft. |You can edit the order name, extra contacts, and number usage. |**Direct Routing and Operator Connect preassignment in the US or CA**: preassignment isn't allowed. But we can maintain your existing number assignment. Ensure you have a Calling Plan license and emergency calling location assigned for each number before port completion. </br></br>**Direct Routing and Operator Connect preassignment outside US or CA**: preassignment isn't allowed, and numbers transfer as unassigned into Calling Plans. </br></br>**New number preassignment**: If you're porting numbers from an external carrier into Calling Plans, preassignment is allowed. The rules are as follows: </br></br>1. A phone system license must be enabled for the user. </br>2. A phone resource account license must be enabled for the resource account. </br>3. A Calling Plan license must be enabled for the intended users or resource account: </br></br>  a. The intended user's usage location must match the telephone number's country for primary and private phone. </br>  b. The intended resource account's usage location must match the telephone number's country for assignment. </br></br>4. For Toll Free numbers, the tenant must have a positive balance of [Communication Credits](../what-are-communications-credits.md).
+|Completed |Porting complete and numbers are active in Microsoft’s system. |No fields are editable. | |
+|Cancellation requested |Customer requests cancellation. |No fields are editable. | |
+|Canceled |Port order is canceled and closed. |No fields are editable. |The numbers aren't ported, and no further actions are allowed. If you must start a new port order, no prior validations or documents are reused. |
+
+Keep in mind the lead times for order processing, as described in [Port planning](port-order-overview.md).
+
+If you need to inquire about an existing order, use the [Phone Number Service Center Portal](https://pstnsd.powerappsportals.com/) to contact the [Telephone Number Services (TNS) Service Desk](../manage-phone-numbers-for-your-organization/contact-tns-service-desk.md).
+
+When making an inquiry about an existing port request, find the related case for your order in the Phone Number Service Center Portal and provide your inquiry in the case comments, rather than opening a new case.
 
 ## What happens next
 

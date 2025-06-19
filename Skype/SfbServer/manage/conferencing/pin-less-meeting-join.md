@@ -17,6 +17,8 @@ description: "Summary: Learn how to configure the PIN-less meeting join option i
 
 # Configure PIN-less meeting join in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to configure the PIN-less meeting join option in Skype for Business Server.
   
 When a dial-in caller attempts to join a meeting, the Conference Auto Attendant (CAA) service places the caller in a holding pen that is different from the Lobby &#x2014; if a presenter isn't already on a call, and the dial-in caller hasn't entered a leader PIN. The PIN-less meeting join option allows dial-in callers to join a meeting without entering a leader PIN even if they're the first person on a call. 
@@ -41,7 +43,7 @@ Keep the following in mind when configuring this feature:
     
 ## Configure PIN-less meeting join
 
-To enable PIN-less meeting join for your users, use the [Set-CsDialInConferencingConfiguration](/powershell/module/skype/set-csdialinconferencingconfiguration?view=skype-ps) cmdlet with the AllowAnonymousPstnActivation parameter as follows:
+To enable PIN-less meeting join for your users, use the [Set-CsDialInConferencingConfiguration](/powershell/module/skype/set-csdialinconferencingconfiguration?view=skype-ps&preserve-view=true) cmdlet with the AllowAnonymousPstnActivation parameter as follows:
   
 ```PowerShell
 Set-CsDialInConferencingConfiguration -Identity  < global or site:sitename>  -AllowAnonymousPstnActivation $True
@@ -59,5 +61,5 @@ For security purposes, when PIN-less meeting join is turned on, you might want t
 Set-CsConferencingPolicy [-Identity <XdsIdentity>] -AllowAnonymousUsersToDialOut $False
 ```
 
-For more information, see [Set-CsConferencingPolicy](/powershell/module/skype/set-csconferencingpolicy?view=skype-ps).
+For more information, see [Set-CsConferencingPolicy](/powershell/module/skype/set-csconferencingpolicy?view=skype-ps&preserve-view=true).
 

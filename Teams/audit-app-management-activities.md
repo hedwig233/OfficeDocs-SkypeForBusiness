@@ -71,7 +71,6 @@ You can export the searched audit records as a CSV file. For more information, s
 
 ## Related articles
 
-* [Use audit logs to investigate Microsoft Power Platform installation activity](manage-power-platform-apps.md#use-audit-logs-to-check-microsoft-power-platform-installation-activity).
 * [Search the audit logs in Microsoft Purview](/purview/audit-log-search).
 * [Overview of Microsoft Purview Audit Premium](/purview/audit-premium).
 * [Turn auditing on or off](/purview/audit-log-enable-disable).

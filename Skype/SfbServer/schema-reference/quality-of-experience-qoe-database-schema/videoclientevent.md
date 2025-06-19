@@ -16,6 +16,8 @@ description: "Each record contains client event for one endpoint in a video call
 ---
 
 # VideoClientEvent table
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 Each record contains client event for one endpoint in a video call. Usually, one call has two records, one for caller and one for callee.
   

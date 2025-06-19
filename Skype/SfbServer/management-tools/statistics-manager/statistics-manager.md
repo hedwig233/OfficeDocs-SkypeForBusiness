@@ -17,6 +17,8 @@ description: "Summary: Read this topic to learn about Statistics Manager for Sky
 ---
 
 # Statistics Manager for Skype for Business Server
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 **Summary:** Read this topic to learn about Statistics Manager for Skype for Business Server, a powerful tool that allows you to view Skype for Business Server health and performance data in real time.
   

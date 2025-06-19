@@ -41,7 +41,7 @@ In addition, virtual machines must meet the minimum requirements listed here:
 
 |Requirement |Version|
 |:-----|:-----|
-|Windows|- Windows 10.0.19041 or higher (excluding Windows 10 LTSC for Teams desktop app) </br>- Windows Server 2019 (10.0.17763) </br>- Windows Server 2022 (20348.2402) or higher</br>- -Windows Server 2025 (26100.2886) or higher, in public preview</br>- Windows Server 2016 is NOT supported. Plan upgrades.</br>- WebView2 framework required in Windows Server and Windows 10/11 Multi-User environments|
+|Windows|- Windows 10.0.19041 or higher (excluding Windows 10 LTSC for Teams desktop app) </br>- Windows Server 2019 (10.0.17763) </br>- Windows Server 2022 (20348.2402) or higher</br>- -Windows Server 2025 (26100.2886) or higher</br>- Windows Server 2016 is NOT supported. Plan upgrades.</br>- WebView2 framework required in Windows Server and Windows 10/11 Multi-User environments|
 |Webview2|Update to the most current version. Learn more: [Enterprise management of WebView2 Runtimes](/microsoft-edge/webview2/concepts/enterprise)|
 |Classic Teams app |Version 1.6.00.4472 or later to see the Try the new Teams toggle. Important: Classic Teams is only a requirement if you want users to be able to switch between classic Teams and new Teams. This prerequisite is optional if you only want your users to see the new Teams client. |
 |Settings |Turn on the **Show Notification Banners** setting in System > Notifications > Microsoft Teams to receive Teams Notifications. |
@@ -463,7 +463,25 @@ This error is caused by GPOs affecting Windows Installer, and includes [**Disabl
 
 #### Deployment method for non-persistent environments where Teams auto-update is disabled
 
-You can install the MSI that is located in the new Teams installation directory from an Admin Command prompt using:  
+>[!Note]
+> teamsbootstrapper.exe (Product version 1.0.2508703) now supports an additional parameter that installs Teams Meeting Add In (TMA) for Outlook automatically, in a machine-wide installation fashion (i.e msiexec /ALLUSERS=1).
+>
+>-Fresh install (will provision Teams and install TMA machine-wide): teamsbootstrapper.exe -p --installTMA
+>
+>-If Teams was already provisioned and you want to install TMA only: teamsbootstrapper.exe --installTMA
+>
+>-Uninstall TMA (Outlook Classic must be closed): teamsbootstrapper.exe --uninstallTMA
+>
+>-Uninstall Teams and TMA (Outlook Classic must be closed): teamsbootstrapper.exe -x
+>
+>-If Teams is not provisioned (is not present or failed to provision), TMA will not be installed
+>
+>-Running teamsbootstrapper.exe -p or teamsbootstrapper.exe -p -o "full path to msix" alone will not install TMA machine-wide
+>
+>-Outlook Classic must be closed when trying to uninstall TMA using the bootstrapper
+
+
+If Administrators don't want to use the new --installTMA flag, they can still install the TMA MSI that is located in the new Teams installation directory from an Admin Command prompt using:  
 
 ```powershell
 

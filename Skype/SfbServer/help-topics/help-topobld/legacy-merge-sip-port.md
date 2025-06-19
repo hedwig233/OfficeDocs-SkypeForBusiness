@@ -18,6 +18,8 @@ description: "The default Transmission Control Protocol (TCP) SIP port for commu
 ---
 
 # Legacy Merge SIP Port
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The default Transmission Control Protocol (TCP) SIP port for communicating with clients, legacy Front End pools, and servers is 5061. If the default value was not used, select **SIP port for all pools and servers:** and enter the new value.
   

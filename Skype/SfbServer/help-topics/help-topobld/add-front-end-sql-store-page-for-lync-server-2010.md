@@ -14,15 +14,17 @@ ms.custom:
 ms.service: skype-for-business-server
 ms.localizationpriority: medium
 ms.assetid: 84bbd899-4ce1-4b3b-9bdb-a08cefb626d3
-description: "You define the properties of the SQL Server stores for the new Front End pool that you are configuring."
+description: "You define the properties of the SQL Server stores for the new Front End pool that you're configuring."
 ---
 
 # Add Front End Sql Store Page for Lync Server 2010
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
-You define the properties of the SQL Server stores for the new Front End pool that you are configuring.
+You define the properties of the SQL Server stores for the new Front End pool that you're configuring.
   
 > [!IMPORTANT]
-> If you are configuring a Standard Edition server, this dialog will be displayed but you will not be able to configure settings. Click **Next** to continue.
+> If you're configuring a Standard Edition server, this dialog will be displayed but you won't be able to configure settings. Click **Next** to continue.
   
 Settings that you can configure:
   

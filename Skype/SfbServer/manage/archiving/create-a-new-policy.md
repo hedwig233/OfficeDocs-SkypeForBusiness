@@ -17,6 +17,8 @@ description: "Summary: Learn how to create a new archiving policy for Skype for 
 
 # Create a new archiving policy in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to create a new archiving policy for Skype for Business Server.
   
 You can create new archiving policies by using the Control Panel or by using Windows PowerShell cmdlets.

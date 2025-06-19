@@ -18,6 +18,8 @@ description: "To start the task to extend the schema for Skype for Business Serv
 ---
 
 # Prepare Schema (Intro)
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 To start the task to extend the schema for Skype for Business Server 2015, you begin on the **Prepare Schema** page. Click **Next** to continue with the schema preparation.
   

@@ -17,6 +17,8 @@ description: "Summary: Learn how to block IM and conferencing sessions if Skype 
 
 # Configure archiving options to handle failures in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to block IM and conferencing sessions if Skype for Business Server failure that would prevent archiving.
   
 If archiving is a requirement for your organization, you can block IM and conferencing sessions if Skype for Business Server failure that would prevent archiving. This is sometimes called critical mode. For example, if there's a problem with a storage service, IM would be blocked for users whose communications are enabled for archiving. Both IM and conferencing automatically recover after the failures are corrected. 

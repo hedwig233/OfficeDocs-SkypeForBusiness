@@ -3,7 +3,7 @@ title: Create and manage meeting themes for Teams meetings
 ms.author: wlibebe
 author: wlibebe
 manager: pamgreen
-ms.date: 3/28/2025
+ms.date: 6/11/2025
 ms.reviewer: margidesai
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
@@ -26,25 +26,25 @@ description: Using approved corporate branding assets like images and logos to c
 
 # Create and manage meeting themes for Teams meetings
 
-**APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Meetings ![Image of a x for no](/office/media/icons/cancel-teams.png)Webinars ![Image of a x for no](/office/media/icons/cancel-teams.png)Town halls
+**APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Meetings ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Webinars ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Town halls
 
 [!INCLUDE[Teams Premium](includes/teams-premium-ecm.md)]
 
 ## Overview
 
-Meeting themes include your organization’s brand colors, a custom image, and logo. As an admin, applying a custom theme allows you to customize the visual appearance of the meeting invite, pre-join screen, and lobby for your users' meetings. With the support of your brand management and corporate communications teams, you can easily set up and create meeting themes for various business units and departments within your organization. Meeting themes don't apply to webinars; instead, the webinar registration page is used to configure the webinar's branding for registration and emails.
+Meeting themes include your organization’s brand colors, a custom image, and logo. As an admin, applying a custom theme allows you to customize the visual appearance of a meeting, webinar, or town hall invite, pre-join screen, and lobby for your users' meetings. With the support of your brand management and corporate communications teams, you can easily set up and create meeting themes for various business units and departments within your organization. For webinars, organizers can also use the webinar registration page to configure the webinar's branding for registration and emails.
 
-Only organizers with a Teams Premium license can create meetings that include meeting themes. Anyone who joins these meetings can see the themes, including users in your organization without a Teams Premium license, guests, and anonymous users.
+Only organizers with a Teams Premium license can create meetings, webinars, and town halls that include meeting themes. Anyone who joins these meetings can see the themes, including users in your organization without a Teams Premium license, guests, and anonymous users.
 
-You can set up or manage meeting themes for Teams meetings with the Teams admin center or PowerShell.
+You can set up or manage meeting themes for Teams meetings, webinars, and town halls with the Teams admin center or PowerShell.
 
 :::image type="content" source="media/meeting-themes-edu-small.png" alt-text="Screenshot of Contoso Education's meeting theme featuring their brand logo, image, and colors." lightbox="media/meeting-themes-edu.png":::
 
 > [!IMPORTANT]
-> Microsoft doesn't validate the ownership of brand logos or images associated with meeting themes. When your users join meetings with other organizations, they should always verify the authenticity of the organization they're meeting with.
+> Microsoft doesn't validate the ownership of brand logos or images associated with meeting themes. When your users join meetings, webinars, and town halls with other organizations, they should always verify the authenticity of the organization they're meeting with.
 
 > [!NOTE]
-> All meeting participants can see uploaded images and their associated image URL; including external users, guests, unverified users, and anyone with a link to join the meeting. To stop displaying your images, you must delete the images from your meeting theme. To remove images from a meeting theme, navigate to the **Meeting customization policy** in the Teams admin center, select the chosen meeting theme, and select **Delete theme**.
+> All participants can see uploaded images and their associated image URL; including external users, guests, unverified users, and anyone with a link to join the meeting or event. To stop displaying your images, you must delete the images from your meeting theme. To remove images from a meeting theme, navigate to the **Meeting customization policy** in the Teams admin center, select the chosen meeting theme, and select **Delete theme**.
 
 ## Prerequisites
 
@@ -58,7 +58,7 @@ Before setting up meeting themes in Teams meetings, check to make sure you have 
 
 Meeting themes display the following visual assets for your theme:
 
-- Logo - Your organization's logo that appears on key surfaces during your meeting, including the lobby screen.
+- Logo - Your organization's logo that appears on key surfaces during meetings, webinars, and town halls, including the lobby screen.
 - Custom image - A brand image from your organization (custom images aren't the same as [custom meeting backgrounds](custom-meeting-backgrounds.md)).
 - Custom color - We recommend using either your brand's primary or secondary color - whichever one best complements your brand image and logo.
 
@@ -90,7 +90,7 @@ We recommend using images with the dimensions of 1,440 x 810 pixels. The custom 
 
 ## Create or manage meeting themes in the Teams admin center
 
-All Teams Premium licensed users are automatically assigned the global default policy. Any custom customization policies you create override the global default. You can upload a maximum of five themes to each policy. Adding multiple themes to each policy gives your organizers more options, allowing them to select the right branding for different meetings.
+All Teams Premium licensed users are automatically assigned the global default policy. Any custom customization policies you create override the global default. You can upload a maximum of five themes to each policy. Adding multiple themes to each policy gives your organizers more options, allowing them to select the right branding for different meetings, webinars, and town halls.
 
 To create or manage meeting themes, follow these steps:
 
@@ -102,9 +102,9 @@ To create or manage meeting themes, follow these steps:
 6. If you're creating a new policy, select the **Add a theme** button to upload your logo, image, and select a custom color. If you're managing an existing policy, select the **Edit meeting themes** button if you'd like to make changes to your theme.
 7. In the **Meeting themes** pane, upload your images and create your custom color:
 
-      - **Logo**: Select the **Upload logo** buttons to upload a light and dark version of your logo. These square logos appear on key surfaces during your meeting, including the lobby screen.
-      - **Images**: Select the **Upload image** buttons to upload a light and dark version of your custom image. Your organization's images are shown on the meetings screen and provide a colorful backdrop.
-      - **Color**: Enter the hex code value of your organization's color, which displays on key surfaces of the meeting experience. To meet accessibility standards, the final color might differ from the color you enter.
+      - **Logo**: Select the **Upload logo** buttons to upload a light and dark version of your logo. These square logos appear on key surfaces during the meeting or event, including the lobby screen.
+      - **Images**: Select the **Upload image** buttons to upload a light and dark version of your custom image. Your organization's images are shown on the meetings or event screen and provide a colorful backdrop.
+      - **Color**: Enter the hex code value of your organization's color, which displays on key surfaces of the meeting or event experience. To meet accessibility standards, the final color might differ from the color you enter.
 8. Select the **Preview** button to see how your theme looks on desktop.
 9. Select **Apply**.
 10. In the **Custom meeting visuals** table, on your theme's row, toggle the **Currently Active** setting to **Yes**.
@@ -117,7 +117,7 @@ To create or manage meeting themes, follow these steps:
 
 ## Allow organizers to turn off meeting themes for a meeting
 
-You can give meeting organizers the option to turn off meeting themes for specific meetings. When organizers turn off meeting themes, the meeting reverts to the default Teams theme.
+You can give meeting and event organizers the option to turn off meeting themes for specific meetings, webinars, and town halls. When organizers turn off meeting themes, the meeting reverts to the default Teams theme.
 
 To allow your meeting organizers to turn off meeting themes:
 
@@ -132,7 +132,7 @@ Meeting organizers can turn off meeting themes by:
 > [!NOTE]
 >
 > - For recurring meetings or series, the meeting option applies for every instance of the meeting.
-> - Meeting themes aren't disabled for meetings that are in-progress. To apply changes, your users must end the call and restart the meeting.
+> - Meeting themes aren't disabled for meetings, webinars, and town halls that are in-progress. To apply changes, your users must end the call and restart the meeting or event.
 
 ## Manage meeting themes in PowerShell
 
@@ -163,7 +163,7 @@ To view the list of platforms that support this feature, see [Microsoft Teams Pr
 > [!NOTE]
 > Images aren't visible on mobile clients.
 
-|  Asset type       | Join Launcher | Meeting Pre-Join | Meeting Lobby | Meeting Stage | Meeting invite |
+|  Asset type       | Join Launcher | Pre-Join | Lobby | Meeting Stage | Invite |
 | :---:          |     :---:      |         :---:  |         :---:  |         :---:  |       :---:  |
 | **Logo**   | Yes | Yes| Yes| No| Yes |
 | **Image**     | Yes | Yes| Yes| No| No |
@@ -176,7 +176,7 @@ To view the list of platforms that support this feature, see [Microsoft Teams Pr
 
 ## Who can view a meeting theme
 
-While only licensed users who are assigned a meeting customization policy can create meeting themes-enabled meetings, anyone can view the themes that are applied to a meeting. These users include:
+While only licensed users who are assigned a meeting customization policy can create meeting themes-enabled meetings and events, anyone can view the themes that are applied to a meeting, webinars, and town halls. These users include:
 
 - Teams Premium licensed users in your organization
 - Users in your organization that don't have a Teams Premium license
@@ -198,11 +198,11 @@ Here are a few points to ensure accessibility requirements are met:
 
 - Follow existing UI patterns and structure – The current structure and text on the screen aren’t being modified with this feature.
 - Image Contrast Ratio – Image assets are required to meet the 4:5:1 color contrast ratio.
-- Accessible Color Generation Support – We calculate the accessible color output that is the closest match to the brand color input while maintain Microsoft Accessibility standards.
-- High Contrast support – For users with high contrast settings enabled, branding doesn't apply. They continue to see the default Teams meeting experience.
+- Accessible color generation support – We calculate the accessible color output that is the closest match to the brand color input while maintain Microsoft Accessibility standards.
+- High contrast support – For users with high contrast settings enabled, branding doesn't apply. They continue to see the default Teams meeting experience.
 - Controls – You and your organizers can prevent users with accessibility concerns from seeing the branding through:
   - Policies – To ensure users with accessibility concerns don't create branding-enabled meetings, avoid assigning them a customization policy.
-  - Meeting Options – Meeting organizers can turn off themes for a meeting if a user with accessibility concerns joins their meeting.
+  - Meeting Options – Meeting organizers can turn off themes if a user with accessibility concerns joins their meeting or event.
 
 ## Use cases for multiple departments or business units in one organization
 

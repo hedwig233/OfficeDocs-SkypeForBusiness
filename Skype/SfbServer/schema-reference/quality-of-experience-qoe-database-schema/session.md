@@ -16,7 +16,9 @@ description: "Each record represents one session, which involves audio or audio 
 ---
 
 # Session table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Each record represents one session, which involves audio or audio and video. It contains overall information about the session. A session is defined as an audio or video Session Initiation Protocol (SIP) dialog between two endpoints.
   
 |**Column**|**Data Type**|**Key/Index**|**Details**|

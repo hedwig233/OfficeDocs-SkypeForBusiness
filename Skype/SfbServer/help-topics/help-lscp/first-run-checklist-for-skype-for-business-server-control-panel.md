@@ -19,6 +19,8 @@ description: "Welcome to the Skype for Business Server Control Panel, the web-ba
 
 # First Run Checklist for Skype for Business Server Control Panel
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Welcome to the Skype for Business Server Control Panel, the web-based user interface for administration and management of Skype for Business Server. You can use the control panel to perform the types of administrative tasks that were performed for by using the Microsoft Management Console in previous releases.
 
 There are a number of important tasks that we strongly recommend you perform after you have deployed Skype for Business Server. Some of these tasks are initial configuration steps that you may have already performed during deployment, while others are refinements or modifications to settings that you configured during deployment or default settings. Other tasks described in this topic validate the configurations you made during the deployment process.

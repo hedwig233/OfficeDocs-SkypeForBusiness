@@ -19,6 +19,8 @@ description: "You edit the properties of the Front End Server or Front End pool 
 
 # Front End General Settings Expander for Lync Server 2010
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 You edit the properties of the Front End Server or Front End pool by editing or configuring the following attributes. The configuration page is separated into the following sections:
 
  **General**
@@ -28,7 +30,7 @@ You edit the properties of the Front End Server or Front End pool by editing or 
 - Select **Use all configured IP addresses** to make use of all addresses configured on Front End Server or Front End pool.
 
     > [!IMPORTANT]
-    > You should not select this option if you collocate the Mediation Server on the Front End Server or Front End pool. Mediation Servers and Front End Servers need dedicated IP addresses on which to communicate.
+    > You shouldn't select this option if you collocate the Mediation Server on the Front End Server or Front End pool. Mediation Servers and Front End Servers need dedicated IP addresses on which to communicate.
 
 - Select **Limit service usage to selected IP addresses** and enter the IP address for **Primary IP address** for the Front End Server or Front End pool communication with the rest of the deployment. Type in **PSTN IP address** the IP address that is associated with the Mediation Server.
 
@@ -54,7 +56,7 @@ You edit the properties of the Front End Server or Front End pool by editing or 
 
   **Resiliency**
 
-- Select the **Associated backup Registrar pool** check box to select from the list a Front End Server or Front End pool that will be the backup Registrar ( that is, the Front End Server or Front End pool designated as a secondary registrar in the event that the primary fails)
+- Select the **Associated backup Registrar pool** check box to select from the list a Front End Server or Front End pool that will be the backup Registrar (that is, the Front End Server or Front End pool designated as a secondary registrar in the event that the primary fails)
 
 - If you selected Associated backup Registrar pool and have chosen a backup registrar, you can select the checkbox for **Automatic failover and failback for Voice**. You can now define numerical properties for **Voice failover detection internal (sec)** and **Voice failback interval (sec)**. For details, see [Planning for Enterprise Voice Resiliency](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-enterprise-voice-resiliency)
 

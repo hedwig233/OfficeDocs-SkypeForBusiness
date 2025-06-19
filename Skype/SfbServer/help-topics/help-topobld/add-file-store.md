@@ -18,6 +18,8 @@ description: "To define a new file store, specify the following:"
 ---
 
 # Add File Store
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 To define a new file store, specify the following:
   

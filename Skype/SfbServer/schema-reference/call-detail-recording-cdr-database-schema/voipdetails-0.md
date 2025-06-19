@@ -16,6 +16,8 @@ description: "Each record represents one two-party call in which at least one us
 ---
 
 # VoipDetails table
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 Each record represents one two-party call in which at least one user is a VoIP user.
   

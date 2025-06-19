@@ -17,6 +17,8 @@ description: "This article describes the tools in the Skype for Business Server 
 
 # Skype for Business Server 2015 Resource Kit Tools Documentation
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 This article describes the tools in the Skype for Business Server 2015 Resource Kit, including the purpose of each tool, and examples of its use. The Skype for Business Server 2015 Resource Kit helps to make routine tasks easier for IT administrators who deploy and manage Skype for Business Server 2015. For example, the **Web Conf Data** tool can be used to easily control data that is uploaded by users during an online meeting. The **SEFAUtil** tool can be used to set up delegate call forwarding and answering for users. We encourage IT administrators to use these tools to more effectively manage Skype for Business Server 2015.
 
 ## Installation of the Resource Kit Tools
@@ -83,7 +85,7 @@ The primary scenarios for the tool are the following:
 The ABSConfig tool can be started by using the ABSConfig.exe file. The tool opens to the **Configure Attributes** tab. This table has options to map Active Directory Domain Services attributes to the attribute fields for Skype for Business Server 2015 and to specify which users to include or exclude in Address Book Service files based on specific attribute filters. It also has options to customize which value of the phone number to be included in the Address Book file. The **Restore Defaults** option enables administrators to restore Address Book Service settings to default values.
 
 > [!NOTE]
-> Re-mapping of AD attributes to different OC Field Names will only work for Address Book File Download, and is not supported by Address Book Web Query.
+> Re-mapping of AD attributes to different OC Field Names will only work for Address Book File Download, and isn't supported by Address Book Web Query.
 
 ### Output
 
@@ -155,11 +157,11 @@ The **Machine Info** tab shows the details of the Bandwidth Policy Service that 
 The **Topology Info** tab shows a list of all the links that are configured in the Network configuration settings. For each link, the audio and video bandwidth capacity is displayed. Additionally, the currently utilized bandwidth is displayed, both in Kbps and as a percentage of the capacity. The tool uses color-coding to highlight links that have utilization that is close to the capacity—this allows administrators to quickly isolate such links.
 
 > [!NOTE]
->  If the Bandwidth Policy Service Monitor tool experiences failure when it connects to any of the configured Bandwidth Policy services, the information in the **Machine Info** and the **Topology Info** tabs won't be populated. However, it is possible that the tool might connect initially but subsequently lose its connection to the service. In such cases, administrators might see outdated information. There is a **Last Updated** time stamp on each of the tabs that can allow administrators to see when the data was last updated for a particular Bandwidth Policy Service.
+>  If the Bandwidth Policy Service Monitor tool experiences failure when it connects to any of the configured Bandwidth Policy services, the information in the **Machine Info** and the **Topology Info** tabs won't be populated. However, it's possible that the tool might connect initially but later lose its connection to the service. In such cases, administrators might see outdated information. There's a **Last Updated** time stamp on each of the tabs that can allow administrators to see when the data was last updated for a particular Bandwidth Policy Service.
 
 ### Output
 
-There is no command-line output; the program output is contained within the main graphical user interface (GUI).
+There's no command-line output; the program output is contained within the main graphical user interface (GUI).
 
 ### Purpose
 
@@ -194,7 +196,7 @@ In any voice and video deployment, it's critical to monitor and understand the t
 
 - Helps with more effective capacity planning and iteration on the bandwidth capacity that is assigned to various links
 
-Bandwidth Utilization Analyzer can generate graphical plots of bandwidth capacity and utilization reports; they are as follows:
+Bandwidth Utilization Analyzer can generate graphical plots of bandwidth capacity and utilization reports; they're as follows:
 
 - All the WAN links in the enterprise network
 
@@ -536,17 +538,17 @@ The data flushed out of the Storage Service could have been automatic (periodic)
 
  **Scenario 1:** during pool failover, files may be flushed out from storage service for each front end. After failover is completed, the tool should be run to reimport the data.
 
- **Scenario 2:** data is being flushed automatically each day or in response to Storage Service database exceeding certain size thresholds (for example 60%, 80%, 90% full). This automatically flushed data should be reimported routinely by the administrator. In the above situation, if the monitoring SCOM pack is not deployed, there are events for Skype for Business Server Storage Service relating to data being flushed from the Storage Service. Event IDs of 32075 (full flush operation is started), 32076 (full flush has completed), 32082 (maintenance level flush started), 32083 (maintenance level flush complete), 32089 (flush occurred due to filling up of database). Note these event Ids correspond to the RTM release. When an administrator sees these events, it means that there are files that have been flushed out. This data should routinely be imported back using this tool, for example once per week.
+ **Scenario 2:** data is being flushed automatically each day or in response to Storage Service database exceeding certain size thresholds (for example 60%, 80%, 90% full). This automatically flushed data should be reimported routinely by the administrator. In the above situation, if the monitoring SCOM pack isn't deployed, there are events for Skype for Business Server Storage Service relating to data being flushed from the Storage Service. Event IDs of 32075 (full flush operation is started), 32076 (full flush has completed), 32082 (maintenance level flush started), 32083 (maintenance level flush complete), 32089 (flush occurred due to filling up of database). Note these event Ids correspond to the RTM release. When an administrator sees these events, it means that there are files that have been flushed out. This data should routinely be imported back using this tool, for example once per week.
 
 For the Online Service release, if health monitoring SCOM pack for Skype for Business Server is deployed, there are new alerts that may be raised which ask the administrator to reimport the flushed data back into Storage Service. There will be a corresponding event in the event log on the Front-End server that triggered the alert. The event will give a description of the Parent path under which the flushed data files are located, and how many files there are which meet the alert criteria. The alert criteria is that there are X or more files under the particular parent path that are at least Y days old (where X and Y are preset within the StorageService but can be overridden by changing the APPCONFIG file.)Two examples of events that can trigger the health alert are shown below, with the difference being their parent path. One possibility is under Web service file share, while the other possibility is the local Application Data directory of each front end. (for example c:\ProgramData\Microsoft\Skype for Business Server 2015\StorageService). The administrator will then run this reskit tool.
 
-This tool will increase CPU and IO load on the front end it is running on, and other front ends, in the situation that the data is not owned by the front end that the tool is executed on. We recommend running this tool when front ends are not under heavy CPU and IO load, for example outside of peak hours. Secondly, this tool can 2 to 3 minutes to import one data file. Keep this in mind when estimating how long tool will be running. The verbose log file generated by the tool will by default appear on the File Store. Delete it if there are no errors reported, because the log file can be tens of MB or more.
+This tool will increase CPU and IO load on the front end it is running on, and other front ends, in the situation that the data isn't owned by the front end that the tool is executed on. We recommend running this tool when front ends are not under heavy CPU and IO load, for example outside of peak hours. Secondly, this tool can take 2 to 3 minutes to import one data file. Keep this in mind when estimating how long tool will be running. The verbose log file generated by the tool will by default appear on the File Store. Delete it if there are no errors reported, because the log file can be tens of MB or more.
 
 ![Sample Storage Server event log events.](../media/Reskit_2012_Tools_Documentation_Image1.jpg)
 
 ### Requirements
 
-Install the Skype for Business Server 2015 Resource Kit tools. The tool runs on domain-joined machines where Skype for Business Server and Skype for Business Server Management Shell are installed. The tool uses a cmdlet from the management shell to identify all the Front-End servers in the pool. Secondly, the tool must be executed from a machine in the pool that has the **RtcLocal** database installed. This database is used by the tool to retrieve the location of the WEBSERVICE file share for the pool. Additionally, before using the tool, each Front-End server must first enable Windows PowerShell Remoting using **Enable-PSRemoting** on each Front-End server, and the machine that the tool is executed from. Otherwise, remote Windows PowerShell commands from this tool will fail. Windows PowerShell Remoting can be turned off on all Front-End servers in the pool after it is finished. Finally, the account or credential invoking the tool must have read/write permission to the webservice file share for the pool they are executing this tool on. Otherwise the tool will fail with IO Permission errors.
+Install the Skype for Business Server 2015 Resource Kit tools. The tool runs on domain-joined machines where Skype for Business Server and Skype for Business Server Management Shell are installed. The tool uses a cmdlet from the management shell to identify all the Front-End servers in the pool. Secondly, the tool must be executed from a machine in the pool that has the **RtcLocal** database installed. This database is used by the tool to retrieve the location of the WEBSERVICE file share for the pool. Additionally, before using the tool, each Front-End server must first enable Windows PowerShell Remoting using **Enable-PSRemoting** on each Front-End server, and the machine that the tool is executed from. Otherwise, remote Windows PowerShell commands from this tool will fail. Windows PowerShell Remoting can be turned off on all Front-End servers in the pool after it is finished. Finally, the account or credential invoking the tool must have read/write permission to the webservice file share for the pool they're executing this tool on. Otherwise the tool will fail with IO Permission errors.
 
 > [!NOTE]
 > On Windows Server 2012, Windows PowerShell Remoting is enabled by default, but not on the Windows Server 2008 operating system.
@@ -1014,7 +1016,7 @@ This tool has the following limitations:
 
 - Supported only for users homed in a Skype for Business Server pool
 
-- Bulk-edit of call routing settings for several users is not supported
+- Bulk-edit of call routing settings for several users isn't supported
 
 ### Output
 
@@ -1105,7 +1107,7 @@ Call Forward No Answer to: voicemail
 
 #### Set the Call Forward/No Answer Destination
 
-This example sets the call forward/no answer destination and the ring delay. Here, the /server switch is not provided; SEFAUtil attempts to autodiscover the Skype for Business Server 2015.
+This example sets the call forward/no answer destination and the ring delay. Here, the /server switch isn't provided; SEFAUtil attempts to autodiscover the Skype for Business Server 2015.
 
 ```console
 SEFAUtil.exe /server:SfBserver.contoso.com sip:katarina@contoso.com /enablefwdnoanswer /callanswerwaittime:30 /setfwddestination:+14255550126@contoso.com;user=phone
@@ -1242,7 +1244,7 @@ SEFAUtil.exe /server:SfBserver.contoso.com sip:katarina@contoso.com /setsimulrin
 ```
 
 > [!NOTE]
-> To change the simultaneous ringing destination number of a user that has already simultaneous ringing enabled, keep the command with the /enablesimulring switch, otherwise the destination number will not be changed.
+> To change the simultaneous ringing destination number of a user that has already simultaneous ringing enabled, keep the command with the `/enablesimulring` switch, otherwise the destination number won't be changed.
 
  **Output**
 
@@ -1536,7 +1538,7 @@ This tool allows the administrator to perform the following operations:
   > [!NOTE]
   > The Resource Kit Tools for Lync Server 2010 supported moving all Web conferencing data associated with a single user when that user is moved from one pool to another. That functionality is now deprecated from this tool in favor of the **MoveConferenceData** parameter. For details about this parameter, see the [Move-CsUser](/powershell/module/skype/move-csuser?) cmdlet.
 
-The tool deletes meeting data only for meetings that are inactive. Active meetings (or meetings in sessions) cannot be deleted.
+The tool deletes meeting data only for meetings that are inactive. Active meetings (or meetings in sessions) can't be deleted.
 
 This tool must be run from a computer that is in the same pool as the target user. The user whose meeting content data is being managed by this tool must be homed in the same user pool.
 

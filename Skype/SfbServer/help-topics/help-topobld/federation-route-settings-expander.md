@@ -18,6 +18,8 @@ description: "To set a site federation route assignment, you must first have fed
 ---
 
 # Federation Route Settings Expander
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 To set a site federation route assignment, you must first have federation enabled on the Microsoft Edge Server or Microsoft Edge Server pool. If federation isn't enabled on the Edge Server or pool, the federation route assignment settings for the site aren't available for modification.
   

@@ -16,7 +16,9 @@ description: "tblComplianceData contains the compliance events that haven't been
 ---
 
 # tblComplianceData
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 tblComplianceData contains the compliance events that haven't been processed by the compliance adapter yet.
   
 **Columns**

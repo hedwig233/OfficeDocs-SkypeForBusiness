@@ -19,4 +19,6 @@ description: "To incorporate a Monitoring Server into your topology design, you 
 
 # Add Monitoring Server
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 To incorporate a Monitoring Server into your topology design, you must specify the fully qualified domain name (FQDN) of the server on which you want to deploy Monitoring Server. Prior to publishing a topology that includes the Monitoring Server and installing Skype for Business Server on the server, you should complete all prerequisites for deploying monitoring. For details about these prerequisites, see [Deploying Monitoring](/previous-versions/office/lync-server-2013/lync-server-2013-deploying-monitoring) in the Deployment documentation.

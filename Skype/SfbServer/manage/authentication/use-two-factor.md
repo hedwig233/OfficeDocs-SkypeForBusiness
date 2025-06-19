@@ -17,7 +17,9 @@ description: "Summary: Use two-factor authentication with Skype for Business Ser
 ---
 
 # Use two-factor authentication with Skype for Business client and Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Use two-factor authentication with Skype for Business Server and Skype for Business.
   
 ## Sign in to Skype for Business for the first time

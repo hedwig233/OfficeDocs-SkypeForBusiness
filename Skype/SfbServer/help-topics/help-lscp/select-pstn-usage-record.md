@@ -18,7 +18,9 @@ description: "Use the Select PSTN Usage Record dialog box to find an existing pu
 ---
 
 # Select PSTN Usage Record
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Use the **Select PSTN Usage Record** dialog box to find an existing public switched telephone network (PSTN) usage record that you can use.
   
 > [!NOTE]

@@ -19,6 +19,8 @@ description: "You see this page if there's no Monitoring Server deployed in your
 
 # SQL Server Reporting Services (Prerequisites Not Satisfied)
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 You see this page if there's no Monitoring Server deployed in your infrastructure. This indicates that the minimum requirements for deploying Monitoring Server reports aren't met.
 
 To resolve this issue, make sure that you have a Monitoring Server joined to the domain, that it's defined in Topology Builder, and that the topology is published. SQL Server Reporting Services must also be available on the SQL Server, and installed as a feature into the Monitoring Server database on the SQL Server.

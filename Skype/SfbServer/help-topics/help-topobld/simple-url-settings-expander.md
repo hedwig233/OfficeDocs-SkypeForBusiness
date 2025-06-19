@@ -19,6 +19,8 @@ description: "To specify new, remove existing, or to change the active the simpl
 
 # Simple URL Settings Expander
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 To specify new, remove existing, or to change the active the simple URLs, do the following:
 
 ## Simple URLs

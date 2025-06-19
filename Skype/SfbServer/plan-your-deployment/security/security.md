@@ -19,6 +19,8 @@ description: "Skype for Business Server security content."
 
 # Plan for security in Skype For Business Server 
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Skype for Business Server security content. 
   
 This content relates to Skype for Business Server security. Security is a very broad topic. Security reaches across every feature of Skype for Business Server as well as databases, services, and hardware that make up the ecosystem. This content is a supplement for specific security topics regarding Skype for Business Server.

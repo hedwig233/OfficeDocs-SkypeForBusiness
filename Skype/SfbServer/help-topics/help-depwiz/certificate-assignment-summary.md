@@ -18,6 +18,8 @@ description: "Before the certificate assignment is finished, you're presented wi
 ---
 
 # Certificate Assignment (Summary)
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 Before the certificate assignment is finished, you're presented with a **Certificate Assignment Summary** that lists the details of the certificate that are assigned. Review the information to be sure that the subject name and the subject alternative names are correct. When you are finished reviewing the certificate summary, select **Next**.
   

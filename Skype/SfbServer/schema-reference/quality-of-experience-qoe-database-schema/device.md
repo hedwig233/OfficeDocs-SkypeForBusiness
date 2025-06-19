@@ -16,7 +16,9 @@ description: "The Device table is a supporting table that stores information abo
 ---
 
 # Device table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The Device table is a supporting table that stores information about the various capture or render devices. Each record in the table represents one device.
   
 |**Column**|**Data Type**|**Key/Index**|**Details**|

@@ -21,6 +21,8 @@ description: "Learn about SIP trunking at branch sites in Skype for Business Ser
 
 # Branch site SIP trunking in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Learn about SIP trunking at branch sites in Skype for Business Server Enterprise Voice.
   
 In some cases, you may need to implement distributed SIP trunking at selected branch sites. To determine whether a SIP trunk is needed for a branch site, and for details about the supported topology options for deploying SIP trunks in branch sites, see [SIP trunking in Skype for Business Server](sip-trunking.md).

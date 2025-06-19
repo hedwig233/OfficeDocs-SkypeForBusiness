@@ -16,7 +16,9 @@ description: "tblPrincipalMembers contain principal memberships."
 ---
 
 # tblPrincipalMembers
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 tblPrincipalMembers contain principal memberships.
   
 **Columns**

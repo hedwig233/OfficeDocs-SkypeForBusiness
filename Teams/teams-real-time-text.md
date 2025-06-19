@@ -3,8 +3,8 @@ title: Manage real-time text (RTT) in Teams for users in your organization
 ms.author: wlibebe
 author: wlibebe
 manager: pamgreen
-ms.reviewer: harinlee
-ms.date: 4/28/2025
+ms.reviewer: csano, harinlee
+ms.date: 6/19/2025
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams

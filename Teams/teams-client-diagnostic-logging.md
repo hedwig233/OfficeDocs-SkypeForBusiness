@@ -43,7 +43,7 @@ Diagnostic data from clients is essential for triaging and mitigating problems. 
 
 ### Devices that use a government cloud account
 
-Client log collection is unsupported for users running Teams in commercial and government clouds. These devices are marked as **Ineligible**.
+Client log collection isn't supported on devices that have both commercial and government cloud accounts added simultaneously to the Teams client.
 
 :::image type="content" source="media/diagnostic-log-ineligible.png" alt-text="A screenshot of the log collection page showing Ineligible under the Client log status column.":::
 
@@ -55,8 +55,7 @@ Client log collection is unsupported for users running Teams in commercial and g
 
 ## Further information
 
-- These logs are stored for 30 days (in line with the standard EU guidelines).
-- Logs are stored in a Microsoft secure and compliant storage called the Outlook Diagnostics System. This location is the same storage where M365 diagnostics and other diagnostics are currently stored. This storage follows standard compliance practices.
-- User consent isn't required, as this data is support data. Admins should have permissions to gather diagnostic logs, and this new functionality empowers admins to collect these diagnostics remotely from users' devices without requiring any end-user interruptions.
+- These logs are stored for 30 days.
+- Logs are stored in a Microsoft secure and compliant storage location.
+- User consent isn't required and no prompt or message is shown to users when logs are collected.
 - The types of logs collected are client logs and shell logs (media logs). There are no screenshots or heaps collected.
-- The collection process takes 0-4 hrs if the device is online. The collection request expires after 3 days.

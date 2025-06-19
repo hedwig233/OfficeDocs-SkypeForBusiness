@@ -93,7 +93,7 @@ The following are supported versions of the Intune app:
 
 - Telemetry improvements for more efficient investigations
 
-  Customers using Conditional Access policies should first deploy the updated AOSP Agent to a small group of devices and confirm Conditional Access continues to work as expected, before deploying the updated AOSP Agent to your entire device fleet.
+- Customers using Conditional Access policies should first deploy the updated AOSP Agent to a small group of devices and confirm Conditional Access continues to work as expected, before deploying the updated AOSP Agent to your entire device fleet.
 
 ## [Microsoft Authenticator](#tab/Authenticator)
 
@@ -101,7 +101,21 @@ The following are supported versions of the Microsoft Authenticator app:
 
 |**Release date**|**App version**|**Related devices**|
 |:-----|:-----|:-----|
-|Coming soon|Coming soon|Coming soon|
+|June, 2025|[6.2505.3166](#625053166)|All certified Teams device models|
+
+### 6.2505.3166
+
+**This release is currently available for all Teams certified devices and contains following updates.**
+
+_Note: This version is a hotfix release targeted specifically at resolving ANR (App Not Responding) issues observed in a limited set of environments using the May 2024 GA candidate._ 
+
+- Fixed __App Not Responding (ANR)__ issues during sign-in and device provisioning flows.
+
+- Improved __Multi-Factor Authentication (MFA)__ upgrade prompt experience.
+
+- Built on stable baseline: __GA candidate version 6.2410.__ 
+
+- This version includes a __validated and stable broker version: 13.3.2__ and __common library: 17.3.1__.
 
 ## Related articles
 - [Microsoft Teams certified Android devices](/microsoftteams/devices/teams-ip-phones)

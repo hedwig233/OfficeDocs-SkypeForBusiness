@@ -19,6 +19,8 @@ description: "Right-click Trunks in Topology Builder to perform the following:"
 
 # Trunks Scope Node
  
+[!INCLUDE [appliesto-2015-xxx-xxx](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Right-click **Trunks** in Topology Builder to perform the following:
   
 - **New Trunk**: Starts the **Define New Trunk** wizard used to define a new SIP trunk.

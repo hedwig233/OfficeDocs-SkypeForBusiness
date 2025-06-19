@@ -16,7 +16,9 @@ description: "You can use the procedures in this section to modify individual us
 ---
 
 # Customize user account properties for Skype for Business Server
- 
+
+[!INCLUDE[appliesto-xxx-2019-sub.md](../../../SfBServer2019/includes/appliesto-xxx-2019-sub.md)]
+
 You can use the procedures in this section to modify individual user account properties.
  
 There are two basic operations that can be done at the individual user level:

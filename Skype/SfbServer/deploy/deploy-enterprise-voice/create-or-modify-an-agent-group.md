@@ -20,6 +20,8 @@ description: "Create or modify an agent group in Response Group, in Skype for Bu
 ---
 
 # Create or modify an agent group in Skype for Business
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 Create or modify an agent group in Response Group, in Skype for Business Server Enterprise Voice.
   
@@ -142,10 +144,10 @@ Use one of the following procedures to create or modify an agent group.
 
 ## See also
 
-[Get-CsService](/powershell/module/skype/get-csservice?view=skype-ps)
+[Get-CsService](/powershell/module/skype/get-csservice?view=skype-ps&preserve-view=true)
   
-[New-CsRgsAgentGroup](/powershell/module/skype/new-csrgsagentgroup?view=skype-ps)
+[New-CsRgsAgentGroup](/powershell/module/skype/new-csrgsagentgroup?view=skype-ps&preserve-view=true)
   
-[Set-CsRgsAgentGroup](/powershell/module/skype/set-csrgsagentgroup?view=skype-ps)
+[Set-CsRgsAgentGroup](/powershell/module/skype/set-csrgsagentgroup?view=skype-ps&preserve-view=true)
   
-[Get-CsRgsAgentGroup](/powershell/module/skype/get-csrgsagentgroup?view=skype-ps)
+[Get-CsRgsAgentGroup](/powershell/module/skype/get-csrgsagentgroup?view=skype-ps&preserve-view=true)

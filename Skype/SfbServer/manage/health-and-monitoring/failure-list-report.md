@@ -15,8 +15,10 @@ ms.assetid: b6f3a605-e0c6-461e-b17a-41d8039ace9d
 description: "Summary: Learn about the Failure List Report in Skype for Business Server."
 ---
 
-# Failure List Report in Skype for Business Server 
- 
+# Failure List Report in Skype for Business Server
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn about the Failure List Report in Skype for Business Server.
   
 The Failure List report provides information about the individual participants who took part in a failed peer-to-peer or conferencing session. This information includes the URI of the user who experienced the problem, as well as the SIP Response code and Diagnostic ID associated with the failure.

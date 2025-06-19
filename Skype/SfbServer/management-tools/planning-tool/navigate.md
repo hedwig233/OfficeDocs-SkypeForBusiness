@@ -18,6 +18,8 @@ description: "You navigate the Skype for Business Server 2015 Planning Tool by u
 
 # Navigate the Planning Tool in Skype for Business Server 2015
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 You navigate the Skype for Business Server 2015 Planning Tool by using a combination of a toolbar, page-specific buttons and links, and context-specific panes. The context-specific panes provide design information for planning and capacity that is relevant to the selection options on a specific page.
 
 On starting the Planning Tool, a designer first sees the **Welcome to the Planning Tool for Skype for Business Server 2015** page.

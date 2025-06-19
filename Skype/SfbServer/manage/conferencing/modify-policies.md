@@ -16,6 +16,8 @@ description: "Summary: Learn how to modify conferencing policies in Skype for Bu
 ---
 
 # Modify conferencing policies in Skype for Business Server
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 **Summary:** Learn how to modify conferencing policies in Skype for Business Server.
   

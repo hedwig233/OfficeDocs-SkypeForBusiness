@@ -17,7 +17,9 @@ description: "Policy configuration for Skype for Business Server 2015 Stress and
 ---
 
 # Configuring policies for the Skype for Business Server 2015 Stress and Performance Tool
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Policy configuration for Skype for Business Server 2015 Stress and Performance Tool.
   
 There are several policies and other areas that you can configure in Skype for Business Server 2015, prior to running the Stress and Performance Tool:

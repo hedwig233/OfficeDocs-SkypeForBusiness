@@ -16,6 +16,8 @@ description: "The IPAddress table maps IP addresses to the unique IP address ide
 ---
 
 # IPAddress table
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The IPAddress table maps IP addresses to the unique IP address identifiers used elsewhere in the Quality of Experience database. This table was introduced in Microsoft Lync Server 2013.
   

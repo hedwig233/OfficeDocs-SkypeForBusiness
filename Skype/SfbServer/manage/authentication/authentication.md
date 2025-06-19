@@ -18,6 +18,8 @@ description: "Summary: Use the following procedures to manage Skype for Business
 
 # Manage authentication in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Use the following procedures to manage Skype for Business Server security and authentication.
   
 Use the following procedures to manage Skype for Business Server security and authentication.

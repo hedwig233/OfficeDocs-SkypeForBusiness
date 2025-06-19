@@ -16,7 +16,9 @@ description: "The UserAgentDef table maps user agent identifiers to the agent's 
 ---
 
 # UserAgentDef table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The UserAgentDef table maps user agent identifiers to the agent's descriptive names. User agents are software clients used to connect to Skype for Business Server 2015. This table was introduced in Microsoft Lync Server 2013.
   
 |**UAType**|**UAName**|**UACategory**|
@@ -60,5 +62,3 @@ The UserAgentDef table maps user agent identifiers to the agent's descriptive na
 |16410  <br/> |XmppTGW  <br/> |XmppGateway  <br/> |
 |32769  <br/> |Gateway  <br/> |Gateway  <br/> |
 |32770  <br/> |GatewayMediationServerPair  <br/> |GatewayMediationServerPair  <br/> |
-   
-

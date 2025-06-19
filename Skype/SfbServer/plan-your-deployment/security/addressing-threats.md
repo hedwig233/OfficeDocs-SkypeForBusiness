@@ -17,6 +17,8 @@ description: "In addition to following best practices for your Skype for Busines
 
 # Addressing threats to your core infrastructure for Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 In addition to following best practices for your Skype for Business Server deployment, you can help to ensure security by reviewing, understanding, and addressing any needs in specific areas of your deployment.
   
 ## In this section

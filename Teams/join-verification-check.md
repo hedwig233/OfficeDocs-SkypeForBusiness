@@ -86,9 +86,9 @@ Verification checks are supported on the following clients and platforms:
 
 When participants from the following clients and platforms attend meetings that require a verification check, they join without completing the CAPTCHA challenge:
 
-**Clients:** Cloud Video Interop (CVI), Azure Communication Services (ACS) platform, Meeting Teams Rooms Android devices
+**Clients:** Cloud Video Interop (CVI), Azure Communication Services (ACS) platform, Microsoft Teams Rooms on Windows, Microsoft Teams Rooms on Android 
 
-**Platforms:** Third party devices
+**Platforms:** Third party devices joining Teams meetings via Direct Guest Join
 
 ## Related articles
 

@@ -17,6 +17,8 @@ description: "Before you begin the migration perform a full system backup and do
 
 # Back up systems and data
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../includes/appliesto-xxx-2019-sub.md)]
+
 Before you begin the migration, perform a full system backup and document your existing system, including an inventory of user accounts that are homed on each pool, so that you can roll back if it becomes necessary. Multiple tools and programs are available for backing up and restoring data, settings, and systems.
 
 For details and procedures, see backup and restore procedures for your version. 

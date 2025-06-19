@@ -20,6 +20,8 @@ description: "Skype for Business Server Enterprise Voice supports M:N trunking b
 ---
 
 # M:N trunk in Skype for Business Server
+
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 Skype for Business Server Enterprise Voice supports M:N trunking between Mediation Server and components such as PSTN gateways, session border controllers, and IP-PBX.
   

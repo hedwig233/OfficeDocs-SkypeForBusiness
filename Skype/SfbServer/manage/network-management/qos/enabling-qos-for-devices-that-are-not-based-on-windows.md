@@ -1,31 +1,29 @@
 ---
-ms.date: 09/26/2018
-title: 'Enabling QoS for devices that are not based on Windows'
+ms.date: 03/17/2018
+title: "Enabling QoS in Skype for Business Server for devices that aren't based on Windows"
 ms.reviewer: 
-ms:assetid: 26f793df-aef8-4028-9e3b-6c2c37ea61b9
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ204750(v=OCS.15)
-ms:contentKeyID: 48183661
-mtps_version: v=OCS.15
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: skype-for-business-server
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
+ms.assetid: c99ee134-8294-4481-bb4e-710fe85a39ca
 description: "Learn how to enable QoS for devices used in your organization that use an operating system other than Windows."
 ---
 
-# Enabling QoS in Skype for Business Server for devices that are not based on Windows
+# Enabling QoS in Skype for Business Server for devices that aren't based on Windows
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
 
 When you install Skype for Business Server, Quality of Service (QoS) won't be enabled for any devices used in your organization that use an operating system other than Windows. You can verify it by running the following command from within the Skype for Business ServerManagement Shell:
 
 **Get-CsMediaConfiguration**
 
-Assuming you did not make any changes to your media configuration settings, you should get back information similar to this:
+Assuming you didn't make any changes to your media configuration settings, you should get back information similar to this:
 
 Identity                          : Global<br/>
 EnableQoS                         : False<br/>
@@ -64,5 +62,5 @@ This gives you the ability to implement QoS on some portions of your network (fo
 QoS can only be enabled and disabled by using Windows PowerShell. These options aren't available in the Skype for Business Server Control Panel.
 
 > [!NOTE]
-> Skype for Business clients for iOS Version 6.17 and later now support QoS.  This QoS capability is only applicable to Skype for Business clients and IP phone devices which are registered directly to an internal Skype for Business or Lync pool Server on managed networks. QoS is not applicable for traffic routed over the Internet.
+> Skype for Business clients for iOS Version 6.17 and later now support QoS.  This QoS capability is only applicable to Skype for Business clients and IP phone devices which are registered directly to an internal Skype for Business or Lync pool Server on managed networks. QoS isn't applicable for traffic routed over the Internet.
 

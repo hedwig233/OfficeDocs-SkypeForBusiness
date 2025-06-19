@@ -18,6 +18,8 @@ description: "Information on Edge Server Single FQDN Page."
 ---
 
 # Add Edge Server With Single FQDN Page
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 Information on Edge Server Single FQDN Page.
   

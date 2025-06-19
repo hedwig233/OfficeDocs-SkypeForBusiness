@@ -19,6 +19,8 @@ description: "Archiving requires a supported 64-bit edition of the Microsoft SQL
 
 # Add Front End Archiving Store
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Archiving requires a supported 64-bit edition of the Microsoft SQL Server database software to store the archiving data. You can either select a previously defined SQL Server database to be used for archiving, or define a new SQL Server database by specifying a fully qualified domain name (FQDN) of the server on which the SQL Server database is to reside, in addition to the instance of SQL Server that you want to use for the new SQL Server database (which can be the default instance, or a named instance that you specify).
 
 > [!NOTE]

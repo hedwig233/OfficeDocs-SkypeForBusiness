@@ -21,6 +21,8 @@ description: "Create network inter-site policies, which are used by Enterprise V
 
 # Create network intersite policies in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Create network inter-site policies, which are used by Enterprise Voice call admission control in Skype for Business Server. 
   
 A network inter-site policy defines bandwidth limitations between sites that have direct WAN links between them.
@@ -44,10 +46,10 @@ In the example topology North America region, there is a direct link between the
     
 ## See also
 
-[New-CsNetworkInterSitePolicy](/powershell/module/skype/new-csnetworkintersitepolicy?view=skype-ps)
+[New-CsNetworkInterSitePolicy](/powershell/module/skype/new-csnetworkintersitepolicy?view=skype-ps&preserve-view=true)
   
-[Get-CsNetworkInterSitePolicy](/powershell/module/skype/get-csnetworkintersitepolicy?view=skype-ps)
+[Get-CsNetworkInterSitePolicy](/powershell/module/skype/get-csnetworkintersitepolicy?view=skype-ps&preserve-view=true)
   
-[Set-CsNetworkInterSitePolicy](/powershell/module/skype/set-csnetworkintersitepolicy?view=skype-ps)
+[Set-CsNetworkInterSitePolicy](/powershell/module/skype/set-csnetworkintersitepolicy?view=skype-ps&preserve-view=true)
   
-[Remove-CsNetworkInterSitePolicy](/powershell/module/skype/remove-csnetworkintersitepolicy?view=skype-ps)
+[Remove-CsNetworkInterSitePolicy](/powershell/module/skype/remove-csnetworkintersitepolicy?view=skype-ps&preserve-view=true)

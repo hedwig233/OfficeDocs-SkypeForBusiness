@@ -18,6 +18,8 @@ description: "Summary: Assign per-user PIN policies to users in Skype for Busine
 
 # Assign a per-user PIN policy in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Stage AV and OAuth certificates for Skype for Business Server.
 
 The dial-in conferencing personal identification number (PIN) policy is one of the individual settings of a user account that can be configured in the Skype for Business Server Control Panel.
@@ -72,7 +74,7 @@ After creating at least one per-user PIN policy, use the procedures in this topi
      > [!TIP]
      > To help you decide the policy you want to assign, after you click a policy name, click **View** to view the user rights and permissions defined in the policy.
 
-8. When you are finished, click **OK**.
+8. When you're finished, click **OK**.
 
 ## Assigning a Per-User PIN Policy by Using Windows PowerShell Cmdlets
 

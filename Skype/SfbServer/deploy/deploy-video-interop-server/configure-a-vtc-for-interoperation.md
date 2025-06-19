@@ -17,10 +17,12 @@ description: "Summary: Configure the VTC devices to work with Skype for Business
 ---
 
 # Configure a VTC for Interoperation with Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Configure the VTC devices to work with Skype for Business Server.
   
-You will need to perform the following configuration customization procedures for each VTC that will connect to the Skype for Business VIS server through a SIP trunk and Cisco Unified Communications Manager (CallManager, or CUCM) video gateway.
+You'll need to perform the following configuration customization procedures for each VTC that will connect to the Skype for Business VIS server through a SIP trunk and Cisco Unified Communications Manager (CallManager, or CUCM) video gateway.
   
 The settings described here are meant only as examples of how CUCM can be configured to work with a VIS. Other settings and/or usages of alternate CUCM functionality could also be used to achieve the same result. No recommendation is implied as to the optimal configuration for a particular scenario.
   
@@ -106,6 +108,6 @@ The VTC is now configured for interoperation. Before service can begin, there ar
    
 5. When finished, scroll to the top of the screen and press **Save**. 
     
-Configuration is now complete for this VTC device. You will need to repeat this process for other VTC devices in your enterprise.
+Configuration is now complete for this VTC device. You'll need to repeat this process for other VTC devices in your enterprise.
 
 

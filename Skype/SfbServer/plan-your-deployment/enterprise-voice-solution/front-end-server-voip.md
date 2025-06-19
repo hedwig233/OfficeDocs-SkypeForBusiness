@@ -21,6 +21,8 @@ description: "Learn about the Enterprise Voice components that are located on Fr
 
 # Front End Server VoIP components for Skype for Business Server
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Learn about the Enterprise Voice components that are located on Front End Servers in Skype for Business Server, including translation service and various routing components.
 
 The VoIP components located on Front End Servers are as follows:

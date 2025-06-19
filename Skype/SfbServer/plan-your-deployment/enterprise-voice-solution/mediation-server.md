@@ -20,6 +20,8 @@ description: "Learn about Mediation Servers in Skype for Business Server, includ
 ---
 
 # Mediation Server component in Skype for Business Server
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 Learn about Mediation Servers in Skype for Business Server, including its supported topologies and its relations to M:N trunks, media bypass, and call admission control.
   

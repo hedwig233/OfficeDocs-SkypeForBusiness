@@ -17,6 +17,8 @@ description: "This article describes the client preferences and defaults availab
 
 # Customize the Mac client experience in Skype for Business
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 This article describes the client preferences and defaults available for the Skype for Business on Mac client, and how to edit them from outside the App.
   
 ## Skype for Business on Mac client preference settings
@@ -47,17 +49,17 @@ To set these preferences, get to a terminal prompt on the client's Mac and as ne
    
 ### Usage examples
 
-To add a single domain (Contoso.com) to the trusted domain list you would use the trustedDomainList key as shown:
+To add a single domain (Contoso.com) to the trusted domain list, you would use the trustedDomainList key as shown:
   
 defaults write com.microsoft.SkypeForBusiness trustedDomainList -array-add "Contoso.com"
   
-To add several domains to the trusted domain list you would use the trustedDomainList key as shown:
+To add several domains to the trusted domain list, you would use the trustedDomainList key as shown:
   
 defaults write com.microsoft.SkypeForBusiness trustedDomainList -array-add "sfb.com" "abc.com" "test.org"
   
 ### Sample unedited settings
 
-For reference, here is a sample settings file using default settings only: 
+For reference, here's a sample settings file using default settings only: 
   
 ```console
 {

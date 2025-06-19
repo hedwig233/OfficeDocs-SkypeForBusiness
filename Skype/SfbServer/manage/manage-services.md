@@ -17,6 +17,8 @@ description: "This article describes how to manage services running in a Skype f
 
 # Manage services for Skype for Business Server
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../../SfBServer2019/includes/appliesto-xxx-2019-sub.md)]
+
 This article describes how to manage services running in a Skype for Business Server topology.
   
 ## View a list of computers running Skype for Business Server

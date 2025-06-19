@@ -21,6 +21,8 @@ description: "Summary: Review the feature support for the mobile client while pl
 ---
 
 # Mobile client feature comparison for Skype for Business
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 **Summary:** Review the feature support for the mobile client while planning for Skype for Business Server.
   

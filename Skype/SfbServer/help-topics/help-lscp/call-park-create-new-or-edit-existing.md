@@ -19,6 +19,8 @@ description: "Call Park number ranges define the temporary numbers where parked 
 
 # Call Park: Create New or Edit Existing
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Call Park number ranges define the temporary numbers where parked calls are held until someone retrieves them or they time out.
 
 ## UI Reference

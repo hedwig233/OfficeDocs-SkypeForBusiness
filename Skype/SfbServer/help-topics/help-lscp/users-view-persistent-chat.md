@@ -19,6 +19,8 @@ description: "Members of the CsPersistentChatAdministrator role (Persistent Chat
 
 # Users: View Persistent Chat
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Members of the **CsPersistentChatAdministrator** role (Persistent Chat Administrators) can grant chat room manager rights and permissions to other users and to themselves.
 
 A Persistent Chat Administrator can do the following:

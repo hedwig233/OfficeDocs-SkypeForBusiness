@@ -17,6 +17,8 @@ description: "Summary: Learn how to manage Persistent Chat Server chat rooms in 
 
 # Manage chat rooms in Persistent Chat Server in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to manage Persistent Chat Server chat rooms in Skype for Business Server.
   
 Creating and managing chat rooms is much easier with the correct use of categories. A category defines who can create or join the chat rooms. Before you attempt to manage chat rooms, be sure to read [Persistent chat categories, chat rooms, and user roles in Skype for Business Server](../../plan-your-deployment/persistent-chat-server/categories-chat-rooms-and-user-roles.md) and [Manage categories in Persistent Chat Server in Skype for Business Server](categories.md).

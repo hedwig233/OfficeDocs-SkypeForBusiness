@@ -17,6 +17,8 @@ description: "Summary: Learn how to manage Persistent Chat Server in Skype for B
 
 # Manage Persistent Chat Server in Skype for Business Server 
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to manage Persistent Chat Server in Skype for Business Server.
   
 When you set up Persistent Chat Server for your organization, you specify the initial configuration during deployment. However, there may be times when you want to change how you implement Persistent Chat Server support. For example you may need to set up Persistent Chat Server support and controls differently for a specific team or group within your organization. This section provides information and procedures to help you customize your Persistent Chat Server deployment. For details about the features and functionality that you can configure for Persistent Chat Server, see [Plan for Persistent Chat Server in Skype for Business Server](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md). For details about deploying Persistent Chat Server, see [Deploy Persistent Chat Server in Skype for Business Server](../../deploy/deploy-persistent-chat-server/deploy-persistent-chat-server.md). 

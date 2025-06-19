@@ -18,7 +18,9 @@ description: "Use the Region Link dialog box to find region links available in y
 ---
 
 # Select a Region Link
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Use the **Region Link** dialog box to find region links available in your environment. To use an existing region link, click a region link in the list and then click **OK**.
   
 > [!NOTE]

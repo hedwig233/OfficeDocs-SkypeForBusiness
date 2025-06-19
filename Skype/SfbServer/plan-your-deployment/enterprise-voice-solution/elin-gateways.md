@@ -16,25 +16,27 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom:
 ms.assetid: ced79c13-4e7e-4034-95cd-6fc913f4f222
-description: "Decisions necessary for planning an the location information database, or a similar external database, for an E9-1-1 deployment using ELIN gateways, in Skype for Business Server Enterprise Voice."
+description: "Decisions necessary for planning the location information database, or a similar external database, for an E9-1-1 deployment using ELIN gateways, in Skype for Business Server Enterprise Voice."
 ---
 
 # Manage locations for ELIN gateways in Skype for Business Server
 
-Decisions necessary for planning an the location information database, or a similar external database, for an E9-1-1 deployment using ELIN gateways, in Skype for Business Server Enterprise Voice.
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
+Decisions necessary for planning the location information database, or a similar external database, for an E9-1-1 deployment using ELIN gateways, in Skype for Business Server Enterprise Voice.
 
 To have Skype for Business Server automatically provide locations for clients within a network, you need to perform the following tasks:
 
 - Populate the Location Information service database with a network wiremap, and include the Emergency Location Identification Numbers (ELINs) in the CompanyName field.
 
-- Publish the locations so that they are available for clients in your network.
+- Publish the locations so that they're available for clients in your network.
 
 - Upload the ELINs to your public switched telephone network (PSTN) carrier's Automatic Location Identification (ALI) database.
 
 For details about how to perform these tasks, see [Configure the Location Database](/previous-versions/office/lync-server-2013/lync-server-2013-configure-the-location-database) in the Deployment documentation.
 
 > [!NOTE]
-> Locations added to the central location database are not available to the client until they have been published by using a Skype for Business Server Management Shell command and are replicated to the pool's local stores. For details, see [Publishing the Location Database](/previous-versions/office/lync-server-2013/lync-server-2013-publish-the-location-database) in the Deployment documentation.
+> Locations added to the central location database aren't available to the client until they have been published by using a Skype for Business Server Management Shell command and are replicated to the pool's local stores. For details, see [Publishing the Location Database](/previous-versions/office/lync-server-2013/lync-server-2013-publish-the-location-database) in the Deployment documentation.
 
 This section describes things to consider as you plan to update and maintain the location database.
 

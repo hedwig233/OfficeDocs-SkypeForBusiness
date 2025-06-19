@@ -18,6 +18,8 @@ description: "You must specify a fully qualified domain name (FQDN) for the Acce
 ---
 
 # Add Edge Server FQDN
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 You must specify a fully qualified domain name (FQDN) for the Access Edge service. If you did not select the **Use a single FQDN &amp; IP address** option on the **Select features** page, you must also specify an FQDN for the Web Conferencing Edge service and for the A/V Edge service.
   

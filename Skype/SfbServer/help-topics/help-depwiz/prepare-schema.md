@@ -18,6 +18,8 @@ description: 'To prepare the schema for Active Directory Domain Services, you ru
 ---
 
 # Prepare Schema
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 To prepare the schema for Active Directory Domain Services, you run the Prepare Schema step in the Skype for Business Server Deployment Wizard. Click **Run** to begin the preparation of the schema. The Prepare Schema step reads the supplied schema definition files in the \Program Files\Microsoft Lync Server 2013\Deployment\Setup directory on the system that the Deployment Wizard is running on. These files are also available on the installation media in the \Support\Schema directory. The Prepare Schema step will extend the schema and report the status of the process. It will also notify you when the process is complete. The summary screen will enable you to view the logs of the process. Review the logs to be sure that the preparation was complete and successful.
   
@@ -27,7 +29,7 @@ To prepare the schema for Active Directory Domain Services, you run the Prepare 
 Classes and attributes are added to extend the Active Directory Domain Services schema to support Skype for Business Server 2015 server, service, and user objects. Before extending the schema, you should take a System State backup of the domain controller that holds the schema master role. For details about the backup process for Windows Server 2008 R2 with SP1, see [https://go.microsoft.com/fwlink/p/?linkId=207198](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee849849(v=ws.10)). For Windows Server 2003 and Windows Server 2003 R2, see [https://go.microsoft.com/fwlink/p/?linkId=207199](/previous-versions/windows/it-pro/windows-server-2003/cc787254(v=ws.10)).
   
 > [!CAUTION]
-> Extending the schema is not reversible. You should make all possible efforts to limit the potential impact of a failed schema extension, and to ensure that the extension of the schema will be successful. This is particularly critical in the event of loss of communication or any other failure at the server. You should perform a backup of the schema master domain controller and a complete backup of Active Directory. 
+> Extending the schema isn't reversible. You should make all possible efforts to limit the potential impact of a failed schema extension, and to ensure that the extension of the schema will be successful. This is critical in the event of loss of communication or any other failure at the server. You should perform a backup of the schema master domain controller and a complete backup of Active Directory. 
   
 To perform a backup of the schema master domain controller and a complete backup of Active Directory:
   

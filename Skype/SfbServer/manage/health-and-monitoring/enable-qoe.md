@@ -17,6 +17,8 @@ description: "Summary: learn how to enable Quality of Experience (QoE) in Skype 
 
 # Enable Quality of Experience in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** learn how to enable Quality of Experience (QoE) in Skype for Business Server.
 
 Quality of Experience (QoE) records numeric data that indicates the media quality and information about participants, device names, drivers, IP addresses, and endpoint types involved in calls and sessions. For details, see [Planning for Monitoring](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-monitoring) in the Planning documentation.
@@ -64,7 +66,7 @@ You can enable QoE by using Windows PowerShell and the **Set-CsQoEConfiguration*
   Get-CsQoEConfiguration | Set-CsQoEConfiguration "site:Redmond" -EnableQoE $True
   ```
 
-For details, see [Set-CsQoEConfiguration](/powershell/module/skype/set-csqoeconfiguration?view=skype-ps).
+For details, see [Set-CsQoEConfiguration](/powershell/module/skype/set-csqoeconfiguration?view=skype-ps&preserve-view=true).
 
 ## See also
 

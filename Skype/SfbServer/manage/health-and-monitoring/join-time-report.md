@@ -17,6 +17,8 @@ description: "Summary: Learn about the Conference Join Time Summary Report in Sk
 
 # Conference Join Time Report in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn about the Conference Join Time Summary Report in Skype for Business Server.
   
 The Conference Join Time Summary enables you to determine how long it takes your users to join a conference. The report shows the average join time (in milliseconds), and also provides a breakdown that lets you know how many users were able to join a conference in 2 seconds or less, how many users required between 2 and 5 seconds to join the conference, and so on.

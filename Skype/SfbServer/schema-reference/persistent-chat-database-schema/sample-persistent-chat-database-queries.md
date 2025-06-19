@@ -16,7 +16,9 @@ description: "This section contains sample queries for the Persistent Chat datab
 ---
 
 # Sample Persistent Chat database queries
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 This section contains sample queries for the Persistent Chat database.
   
 Use the following example to get a list of your most active Persistent Chat rooms after a certain date.

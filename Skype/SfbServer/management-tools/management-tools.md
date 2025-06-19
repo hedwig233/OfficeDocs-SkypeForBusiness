@@ -17,6 +17,8 @@ description: "Summary: Learn about the service management tools in Skype for Bus
 ---
 
 # Skype for Business Server 2015 Management Tools
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 **Summary:** Learn about the service management tools in Skype for Business Server 2015.
   

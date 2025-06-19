@@ -19,6 +19,8 @@ description: "Client version configuration settings are used to turn client vers
 
 # Client Version Configuration: Create New or Edit Existing
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Client version configuration settings are used to turn client version control on or off. The Global client version configuration installs with Skype for Business Server and is used to enable or disable client version control for the entire server deployment. When the Global configuration is enabled, any client version policies you have in place will take effect when users attempt to log on. You can disable the Global client version configuration if you do not want any client version control to occur.
 
 You can also create site-specific client version configurations, allowing you to enable or disable client version control by site. Site-specific configurations take precedence over the Global configuration.

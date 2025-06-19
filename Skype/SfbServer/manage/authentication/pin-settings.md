@@ -17,12 +17,14 @@ description: "Summary: Manage PIN settings in Skype for Business Server."
 ---
 
 # Manage PIN settings in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Manage PIN settings in Skype for Business Server.
   
 Use the procedures in the following sections to manage PINs in Skype for Business Server.
   
-You can manage Skype for Business Server PIN polices from either Skype for Business Server Control Panel or Skype for Business Server Management Shell. Use the following procedures to configure PIN policies for your organization.
+You can manage Skype for Business Server PIN policies from either Skype for Business Server Control Panel or Skype for Business Server Management Shell. Use the following procedures to configure PIN policies for your organization.
   
 - [View PIN policy information in Skype for Business Server](view-pin-policy-information.md)
     

@@ -19,6 +19,8 @@ description: "Skype for Business Server includes several security features, incl
 
 # Key security features in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Skype for Business Server includes several security features, including server-to-server authentication, role-based access control, and centralized storage of configuration data. 
   
 This article provides a high level overview of Skype for Business Server security. 

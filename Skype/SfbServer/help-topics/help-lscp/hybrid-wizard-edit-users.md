@@ -19,6 +19,8 @@ description: "Use the Edit Users wizard to modify the user accounts in your depl
 
 # Hybrid Wizard: Edit Users
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Use the Edit Users wizard to modify the user accounts in your deployment. For more information, see [Use the Hybrid Manageability wizard](https://technet.microsoft.com/library/d777f79b-a740-4aba-a9e2-c91f0315b6f8.aspx).
 
 

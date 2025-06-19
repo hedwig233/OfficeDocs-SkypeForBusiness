@@ -17,6 +17,8 @@ description: "Summary: Learn how to manage Persistent Chat Server categories in 
 
 # Manage categories in Persistent Chat Server in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to manage Persistent Chat Server categories in Skype for Business Server.
   
 A category is a logical structure for organizing chat rooms. A category defines a default set of access control lists (ACLs) for controlling the users and user groups who can create or join the chat rooms. Chat room categories contain chat rooms, but not other categories. Each category describes its contents with metadata, such as Name and Description. The category has properties that can be set to control the behavior of the chat rooms belonging to it; for example, whether the chat rooms allow Invitations or File Uploads, or contain Chat History. 

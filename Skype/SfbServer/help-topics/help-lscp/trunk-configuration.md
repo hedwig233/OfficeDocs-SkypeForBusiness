@@ -19,6 +19,8 @@ description: "What do you want to do? Click the link to the task that you want t
 
 # Trunk Configuration
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 What do you want to do? Click the link to the task that you want to perform.
 
 - [Configure a trunk with media bypass in Skype for Business Server 2015](../../deploy/deploy-enterprise-voice/configure-trunk-with-media-bypass.md)

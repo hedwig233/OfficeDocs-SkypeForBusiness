@@ -18,6 +18,8 @@ description: "Summary: Review this topic while planning to integrate Skype for B
 
 # Plan for unified contact store in Skype for Business Server 2015
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Review this topic while planning to integrate Skype for Business Server with Exchange 2013 or 2016.
   
 Unified contact store provides a consistent contact experience across Microsoft Office products, and enables users to store all contact information in Exchange 2013 but allows the information to be available globally across Skype for Business, Exchange, Outlook, and Outlook Web Access.

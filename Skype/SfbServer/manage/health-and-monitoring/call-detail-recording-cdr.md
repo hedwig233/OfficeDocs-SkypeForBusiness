@@ -16,7 +16,9 @@ description: "Summary: Learn about the Call detail recording (CDR) records used 
 ---
 
 # Call detail recording (CDR) in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn about the Call detail recording (CDR) records used in Skype for Business Server.
   
 Call detail recording (CDR) records usage and diagnostic information about peer-to-peer activities, including instance messaging, Voice over Internet Protocol (VoIP) calls, application sharing, file transfer, and meetings. The usage data can be used to calculate return on investment (ROI) and the diagnostic data can be used to troubleshoot peer-to-peer activities and meetings. When you install Skype for Business Server, you will also install a predefined collection of global configuration settings for CDR. Use the topics in this section to configure CDR.

@@ -16,7 +16,9 @@ description: "The AppliedBandwidthSource table is a supporting table. Each recor
 ---
 
 # AppliedBandwidthSource table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The AppliedBandwidthSource table is a supporting table. Each record represents one source.
   
 |**Column**|**Data Type**|**Key/Index**|**Details**|

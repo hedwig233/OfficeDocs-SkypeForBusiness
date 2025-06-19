@@ -19,6 +19,8 @@ description: "What do you want to do? Click the link to the task that you want t
 
 # Access Edge Configuration: Edit
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 What do you want to do? Click the link to the task that you want to perform.
 
 - [Enable or Disable Remote User Access for Your Organization](/previous-versions/office/lync-server-2013/lync-server-2013-enable-or-disable-federation-and-public-im-connectivity)

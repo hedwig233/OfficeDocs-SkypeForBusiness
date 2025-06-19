@@ -17,7 +17,9 @@ description: "Summary: Deploy the Video Interop Server (VIS) role in Skype for B
 ---
 
 # Deploy the VIS server role in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Deploy the Video Interop Server (VIS) role in Skype for Business Server.
   
 To set up the VIS service on the server just created in Topology Builder, start the Skype for Business Server deployment wizard, press **Install or Update Skype for Business Server System** and follow these steps in the wizard:

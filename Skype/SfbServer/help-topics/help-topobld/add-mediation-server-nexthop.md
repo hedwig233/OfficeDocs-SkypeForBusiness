@@ -14,11 +14,13 @@ ms.custom:
 ms.service: skype-for-business-server
 ms.localizationpriority: medium
 ms.assetid: ede4123a-b863-4c53-916b-edf776948dd7
-description: "To define the next hop for a Mediation Server that you are defining, select from the Next hop pool drop-down list the Enterprise Edition server or Standard Edition server that will act as the next hop for the Mediation Server. Click Next to continue."
+description: "To define the next hop for a Mediation Server that you're defining, select from the Next hop pool drop-down list the Enterprise Edition server or Standard Edition server that will act as the next hop for the Mediation Server. Click Next to continue."
 ---
 
 # Add Mediation Server NextHop
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
-To define the next hop for a Mediation Server that you are defining, select from the **Next hop pool** drop-down list the Enterprise Edition server or Standard Edition server that will act as the next hop for the Mediation Server. Click **Next** to continue.
+To define the next hop for a Mediation Server that you're defining, select from the **Next hop pool** drop-down list the Enterprise Edition server or Standard Edition server that will act as the next hop for the Mediation Server. Click **Next** to continue.
   
 

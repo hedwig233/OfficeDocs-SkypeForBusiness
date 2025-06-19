@@ -16,7 +16,9 @@ description: "The MediaLine View stores information about each media line in the
 ---
 
 # MediaLine view
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The MediaLine View stores information about each media line in the database. One audio session typically contains one audio media line. One audio and video (A/V) session typically contains one audio media line and one video media line; however, the session might contain two video media lines if a conferencing device is used or if Gallery View is used. This view was introduced in Microsoft Lync Server 2013.
   
 |**Column**|**Data Type**|**details**|

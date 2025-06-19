@@ -16,7 +16,9 @@ description: "Summary: Learn about the service management tools in Skype for Bus
 ---
 
 # Skype for Business Server 2019 Management Tools
- 
+
+[!INCLUDE[appliesto-xxx-2019-sub.md](../SfBServer2019/includes/appliesto-xxx-2019-sub.md)]
+
 **Summary:** Learn about the service management tools in Skype for Business Server 2019.
   
 Skype for Business Server 2019 offers instant messaging (IM), presence, conferencing, and telephony solutions that support enterprise-level collaboration requirements. The tools to manage these services are both flexible and powerful.

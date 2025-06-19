@@ -16,6 +16,8 @@ description: "To successfully complete this procedure, you should be logged on t
 
 # Update DNS SRV records
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../includes/appliesto-xxx-2019-sub.md)]
+
 To successfully complete this procedure, you should be logged on to the server or domain as a member of the Domain Admins group or a member of the DnsAdmins group.
   
 This topic describes how to update the Domain Name System (DNS) records after migrating to Skype for Business Server 2019. After all users have been moved to Skype for Business Server 2019, but before the legacy pool or Director is decommissioned, you must update the DNS SRV records in your internal DNS for every SIP domain. This procedure assumes that your internal DNS has zones for your SIP user domains.

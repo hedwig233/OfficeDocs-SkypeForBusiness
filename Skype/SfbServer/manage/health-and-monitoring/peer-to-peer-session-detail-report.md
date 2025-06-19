@@ -16,7 +16,9 @@ description: "Summary: Learn about the Peer-to-Peer Session Detail Report in Sky
 ---
 
 # Peer-to-Peer Session Detail Report in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn about the Peer-to-Peer Session Detail Report in Skype for Business Server.
   
 The Peer-to-Peer Session Detail Report returns detailed information about a peer-to-peer session. For example, if you select an instant messaging session, the report will tell you the number of messages sent by each of the two users in the session.

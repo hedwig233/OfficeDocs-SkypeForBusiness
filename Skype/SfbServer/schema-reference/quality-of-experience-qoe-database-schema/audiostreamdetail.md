@@ -16,6 +16,8 @@ description: "The AudioStreamDetail View stores information about each audio str
 ---
 
 # AudioStreamDetail view
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The AudioStreamDetail View stores information about each audio stream in the database. This view was introduced in Microsoft Lync Server 2013.
   

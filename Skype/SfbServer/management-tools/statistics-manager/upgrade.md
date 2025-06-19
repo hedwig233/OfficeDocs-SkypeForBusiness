@@ -17,7 +17,9 @@ description: "Summary: Read this article to learn how to upgrade Statistics Mana
 ---
 
 # Upgrade Statistics Manager for Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Read this article to learn how to upgrade Statistics Manager for Skype for Business Server.
   
 This article describes how to upgrade an existing installation of Statistics Manager for Skype for Business Server—a powerful tool that allows you to view Skype for Business Server health and performance data in real time. You can poll performance data across hundreds of servers every few seconds, and view the results instantly on the Statistics Manager Website. 
@@ -44,7 +46,7 @@ Before you upgrade, be sure you have the following information:
 
 The script gathers your current certificate information and listener password, uninstall the old version of the product, and then install the new version of the product. The Redis instance installed on the server won't be touched, so any data stored in the cache will be retained through the upgrade process.
   
-1. Place the MSI files for the new version of the agent, listener and website along with the Update-StatsMan.ps1 script into a single folder on the Listener computer.
+1. Place the MSI files for the new version of the agent, listener, and website along with the Update-StatsMan.ps1 script into a single folder on the Listener computer.
     
 2. Open an administrative PowerShell window. Upgrade the Listener component:
     
@@ -53,7 +55,7 @@ The script gathers your current certificate information and listener password, u
    ```
 
 > [!NOTE]
-> The Statistics Manager service password will be displayed in clear text on the command line as it is passed to the installer. Be sure to shield your monitor as needed. 
+> The Statistics Manager service password is displayed in clear text on the command line as it is passed to the installer. Be sure to shield your monitor as needed. 
   
 1. On running the script, you should be prompted to uninstall the old version of the product. Answer Yes.
     
@@ -69,7 +71,7 @@ The script gathers your current certificate information and listener password, u
 
 5. On running the script, you should be prompted to uninstall the old version of the product. Answer Yes.
     
-6. If the Agent service is running, you are prompted to close the application before continuing. Allow the application to close (the StatsMan Agent service are stopped).
+6. If the Agent service is running, you're prompted to close the application before continuing. Allow the application to close (the StatsMan Agent service are stopped).
     
 7. Continue the install process. You should notice that the service password and certificate thumbprint are prepopulated. If not, add the values you saved before continuing.
     

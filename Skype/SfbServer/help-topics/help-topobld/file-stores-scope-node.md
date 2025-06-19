@@ -18,6 +18,8 @@ description: "The File Stores node lists the File Stores in your topology. You c
 ---
 
 # File Stores Scope Node
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The **File Stores** node lists the File Stores in your topology. You can perform the following action:
   

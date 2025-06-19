@@ -18,6 +18,8 @@ description: "The Specify Edge Setup page enables you to configure your legacy E
 ---
 
 # Legacy Merge Landing
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The **Specify Edge Setup** page enables you to configure your legacy Edge Server information. Click **Add** to specify the legacy Edge Server version of your Office Communications Server deployment. If you do not have any Edge Servers in your legacy environment, click **Next** to continue.
   

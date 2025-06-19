@@ -18,6 +18,8 @@ description: "If the public IP address of this Edge pool is translated by a netw
 ---
 
 # Add Edge Machine NAT IP
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 If the public IP address of this Edge pool is translated by a network address translation (NAT), you must specify the public IP address to be translated. This should be the external IP address of the A/V Edge service.
   

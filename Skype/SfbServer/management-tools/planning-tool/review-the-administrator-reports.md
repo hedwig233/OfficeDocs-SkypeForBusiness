@@ -18,6 +18,8 @@ description: "The Administrator Reports are detailed information for deployment 
 
 # Review the Administrator Reports in Skype for Business Server 2015
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 The Administrator Reports are detailed information for deployment and operations. The reports are generated based on the selections marked in **Design Sites**. The designer can further add value to the Administrator Reports by editing the network diagrams and defining the complete IP addresses and fully qualified domain names (FQDNs) for servers, pools, and load balancers.
 
 The Administrator reports feature allows you to:

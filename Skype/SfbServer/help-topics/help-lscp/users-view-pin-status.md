@@ -18,7 +18,9 @@ description: "What do you want to do? Click the link to the task that you want t
 ---
 
 # Users: View PIN Status
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 What do you want to do? Click the link to the task that you want to perform.
   
 - [Set a user's dial-in conferencing PIN in Skype for Business Server 2015](../../manage/authentication/set-a-user-s-dial-in-conferencing-pin.md)

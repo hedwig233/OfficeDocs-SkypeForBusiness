@@ -21,6 +21,8 @@ description: "Read this article to learn how to configure enhanced emergency ser
 
 # Create location policies in Skype for Business Server
 
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Read this article to learn how to configure enhanced emergency service (E9-1-1) location policies in Skype for Business Server Enterprise Voice. 
 
 Skype for Business Server uses a location policy to enable Skype for Business clients for E9-1-1 during client registration. A location policy contains the settings that define how E9-1-1 is implemented. For more information, see [Plan location policies for Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/location-policies.md).

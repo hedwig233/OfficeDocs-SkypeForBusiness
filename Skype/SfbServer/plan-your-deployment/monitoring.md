@@ -17,6 +17,8 @@ description: "Summary: Review this article while planning for the monitoring ser
 
 # Plan for monitoring in Skype for Business Server
 
+[!INCLUDE [appliesto-2015-2019-sub](../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Review this article while planning for the monitoring service in Skype for Business Server.
 
 The monitoring service in Skype for Business Server provides a way for administrators to collect usage and quality data for the communication sessions that take place in their organization, which allows them to identify trends and problems. Ongoing monitoring of your deployment allows you to catch problems early and keep your organization's users satisfied.

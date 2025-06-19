@@ -20,6 +20,8 @@ description: "Summary: Learn how to install the administrative tools required fo
 ---
 
 # Install administrative tools in Skype for Business Server
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 **Summary:** Learn how to install the administrative tools required for an installation of Skype for Business Server.
   

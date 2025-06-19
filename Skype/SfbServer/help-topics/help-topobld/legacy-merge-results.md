@@ -19,4 +19,6 @@ description: "To begin merging a legacy deployment with Skype for Business Serve
 
 # Legacy Merge Results
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 To begin merging a legacy deployment with Skype for Business Server, click **Next**. For details about running the Topology Builder merge wizard, see [Merge Using Topology Builder Merge Wizard](/previous-versions/office/lync-server-2013/merge-using-topology-builder-merge-wizard) in the Migration documentation.

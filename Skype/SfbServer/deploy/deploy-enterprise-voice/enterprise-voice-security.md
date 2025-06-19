@@ -20,6 +20,8 @@ description: "Summary: Learn about the security and configuration prerequisites 
 ---
 
 # Security and configuration prerequisites for Enterprise Voice in Skype for Business Server
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 **Summary:** Learn about the security and configuration prerequisites for Enterprise Voice in Skype for Business Server.
   

@@ -17,6 +17,8 @@ description: "Summary: Learn about the IP Phone Inventory Report in Skype for Bu
 
 # IP Phone Inventory Report in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn about the IP Phone Inventory Report in Skype for Business Server.
   
 The IP Phone Inventory Report reports information about the IP phones currently in use in your organization. The IP Inventory Report provides a detailed list of the IP phones that were used during the specified reporting period. Among other things, this report lets administrators know if there are any old, outdated phones still in use that should be replaced; it can also alert administrators to the fact that there are expensive phones in the organization that are rarely being used. That type of information can be invaluable when it comes time to purchase new phones or to redistribute existing phones. (For example, a user who rarely uses their expensive phone might be asked to swap phones with a user who uses phone much more frequently.)

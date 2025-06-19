@@ -18,7 +18,9 @@ description: "The Organization Information pane enables you to specify the name 
 ---
 
 # Certificate Request (Organization Information)
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The **Organization Information** pane enables you to specify the name of your organization and an organizational unit (OU) (usually the division or department) that requests the certificate. The information that you type in the **Organization** and the **Organizational Unit** text boxes appears on the certificate and is used to identify who requested the certificate, when the certificate is viewed by others.
   
 > [!NOTE]

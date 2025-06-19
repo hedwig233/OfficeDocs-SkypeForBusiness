@@ -21,6 +21,8 @@ description: "Planning for response groups in Skype for Business Server Enterpri
 
 # Plan for the Response Group application in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Planning for response groups in Skype for Business Server Enterprise Voice, which enables you to set up call routing to groups of users. Includes audio file requirements.
 
 If your organization has groups of people who answer and manage certain types of calls, such as for customer service, an internal help desk, or general telephone support for a department, you can deploy the Response Group application to manage these types of calls. The Response Group application routes and queues incoming calls to designated persons, who are known as agents. You can increase the use of telephone support services and reduce the overhead of running these services by using response groups.

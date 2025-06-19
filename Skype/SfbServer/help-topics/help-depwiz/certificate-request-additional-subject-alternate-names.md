@@ -18,10 +18,12 @@ description: "The Configure Additional Subject Alternate Names option provides t
 ---
 
 # Certificate Request (Additional Subject Alternate Names)
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The **Configure Additional Subject Alternate Names** option provides the opportunity to add any additional subject alternate names (SANs) to the certificate before finalizing and requesting the certificate. To add the SAN, type the fully qualified domain name (FQDN) of the SAN and then click **Add**. If you have added a SAN that you must delete, highlight the SAN entry and click **Remove**. To remove all SAN entries that you have added, click **Clear All**.
   
 > [!NOTE]
-> The **Remove** or **Clear All** buttons work only on SAN entries that are added on this page. The buttons will not affect SAN entries that are currently on the certificate.
+> The **Remove** or **Clear All** buttons work only on SAN entries that are added on this page. The buttons won't affect SAN entries that are currently on the certificate.
   
 

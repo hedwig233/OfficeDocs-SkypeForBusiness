@@ -16,6 +16,8 @@ description: "Before you begin, we recommend that you read this document and the
 
 # Before you begin the migration
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../includes/appliesto-xxx-2019-sub.md)]
+
 Before you begin, we recommend that you read the following articles to familiarize yourself with deploying the corresponding roles.
     
 ## In this section

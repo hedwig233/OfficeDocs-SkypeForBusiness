@@ -16,7 +16,9 @@ description: "Each record represents audio signal metrics for one endpoint. Usua
 ---
 
 # AudioSignal table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Each record represents audio signal metrics for one endpoint. Usually, each call has two records, one is for caller, and one is for callee. 
   
 |**Column**|**Data Type**|**Key/Index**|**Details**|

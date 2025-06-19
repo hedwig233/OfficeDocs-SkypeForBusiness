@@ -16,7 +16,9 @@ description: "The Gateways table is a supporting table. Each record stores infor
 ---
 
 # Gateways table in Skype for Business Server 2015
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The Gateways table is a supporting table. Each record stores information about one gateway that is involved in public switched telephone network (PSTN) calls that have records in the database.
   
 |**Column**|**Data Type**|**Key/Index**|**Details**|

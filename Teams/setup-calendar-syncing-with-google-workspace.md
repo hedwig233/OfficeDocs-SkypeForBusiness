@@ -26,11 +26,11 @@ ms.localizationpriority: medium
 If your business relies on Google Workspace for email and calendaring, you can enable bidirectional syncing with Microsoft Teams. Enabling sync reduces missed meetings and simplifies meeting management by ensuring events and meeting responses created in either platform are seamlessly reflected in both.
 
 > [!NOTE]
-> Currently, this set up is only available to small and medium business administrators with a Teams Essentials license and using Google Workspace with a custom domain for email and calendaring.
+> Currently, this set up is only available to administrators with a Microsoft Teams license who are using Google Workspace with a custom domain for email and calendaring. Personal Gmail accounts are not supported.  Up to 50,000 users can be synced per tenant.
 
 ## Prerequisites
 
-- Be assigned [Microsoft Global Admin role](/microsoft-365/admin/add-users/about-admin-roles) with a Teams Essentials license.
+- Be assigned [Microsoft Global Admin role](/microsoft-365/admin/add-users/about-admin-roles) with a Teams license.
 - Be sure all of your users added in the Microsoft directory for whom you want to enable calendar sync for have Teams licenses assigned.
 - Have the login credentials for your Google Workspace admin account ([admin.google.com](https://accounts.google.com)).
 - Have the login credentials for your custom business domain host website (for example, GoDaddy).

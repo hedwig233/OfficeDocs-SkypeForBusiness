@@ -16,7 +16,9 @@ description: "The AppSharingStream table contains Quality of Experience metrics 
 ---
 
 # AppSharingStream table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The AppSharingStream table contains Quality of Experience metrics for the network streams used for application sharing. This table was introduced in Microsoft Lync Server 2013.
   
 |**Column**|**Data Type**|**Key/Index**|**Details**|

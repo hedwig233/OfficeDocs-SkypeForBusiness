@@ -18,6 +18,8 @@ description: "To specify the credentials for the SQL Server Reporting Services (
 ---
 
 # SQL Server Reporting Services (Credentials)
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 To specify the credentials for the SQL Server Reporting Services (SSRS) to access the Monitoring database, do the following:
   

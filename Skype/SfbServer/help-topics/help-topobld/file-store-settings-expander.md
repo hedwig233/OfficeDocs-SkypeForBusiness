@@ -18,12 +18,14 @@ description: "To edit the properties of the defined file stores:"
 ---
 
 # File Store Settings Expander
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 To edit the properties of the defined file stores:
   
 For the File Share name, you can define the name of a new share. You must then create the share on the server that is named in the File Server fully qualified domain name (FQDN) property.
   
 > [!NOTE]
-> You cannot change the FQDN of the server that is specified in the File Server FQDN property. If you need to place the file store file share on a different server, you create a new file store entry. 
+> You can't change the FQDN of the server that is specified in the File Server FQDN property. If you need to place the file store file share on a different server, you create a new file store entry. 
   
 

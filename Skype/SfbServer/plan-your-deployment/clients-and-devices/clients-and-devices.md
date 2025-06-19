@@ -21,6 +21,8 @@ description: "Summary: Review of the supported clients and apps for Skype for Bu
 
 # Plan for clients and devices
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Review of the supported clients and apps for Skype for Business.
 
 Today's workforce is constantly on the move. Employees need to communicate and collaborate whether working from the corporate office, at regional locations, in home offices, or on the road. Skype for Business Server supports these needs through a collection of client interfaces that you can deploy to your organization's users. Thoughtful planning ensures that employees get what they need and that Skype for Business is available to them wherever they happen to be.

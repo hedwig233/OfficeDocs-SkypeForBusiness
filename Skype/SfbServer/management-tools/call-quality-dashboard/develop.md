@@ -17,6 +17,8 @@ description: "Summary: Learn how to develop solutions for Call Quality Dashboard
 ---
 
 # Develop Call Quality Dashboard for Skype for Business Server
+
+[!INCLUDE[appliesto-xxx-2019-sub.md](../../../SfBServer2019/includes/appliesto-xxx-2019-sub.md)]
  
 **Summary:** Learn how to develop solutions for Call Quality Dashboard. Call Quality Dashboard is a tool for Skype for Business Server.
   

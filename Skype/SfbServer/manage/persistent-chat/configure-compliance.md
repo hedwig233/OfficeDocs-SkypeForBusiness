@@ -17,6 +17,8 @@ description: "Summary: Learn how to configure the Persistent Chat Server Complia
 
 # Configure the Compliance service for Persistent Chat Server in Skype for Business Server
 
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to configure the Persistent Chat Server Compliance service in Skype for Business Server.
 
 Persistent Chat compliance lets administrators maintain an archive of Persistent Chat messages as well as activities. The Compliance service records and archives data related to each Persistent Chat Server conversation, including when a participant:

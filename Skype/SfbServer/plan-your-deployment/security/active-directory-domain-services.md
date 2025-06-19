@@ -18,6 +18,8 @@ description: "Active Directory Domain Services functions as the directory servic
 
 # Active Directory Domain Services for Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Active Directory Domain Services functions as the directory service for Windows Server 2003, Windows Server 2008, Windows Server 2012, and Windows Server 2012 R2 networks. Active Directory Domain Services also serves as the foundation on which the Skype for Business Server security infrastructure is built. The purpose of this section is to describe how Skype for Business Server uses Active Directory Domain Services to create a trustworthy environment for IM, Web conferencing, media, and voice. For details about preparing your environment for Active Directory Domain Services, see [Install Skype for Business Server](../../deploy/install/install.md) in the Deployment documentation. For details about the role of Active Directory Domain Services in Windows Server networks, see the documentation for the version of the operating system you are using.
   
 Skype for Business Server uses Active Directory Domain Services to store:
@@ -81,7 +83,7 @@ During activation, Skype for Business Server publishes server information to the
     
 ## Service Connection Points
 
-Each Skype for Business Server object in Active Directory Domain Services has an SCP called RTC Services, which in turn contains a number of attributes that identify each computer and specify the services that it provides. Among the more important SCP attributes are  *serviceDNSName*  , *serviceDNSNameType*  , *serviceClassname*  , and *serviceBindingInformation*  . Third-party asset management applications can retrieve server information across a deployment by querying against these and other SCP attributes.
+Each Skype for Business Server object in Active Directory Domain Services has an SCP called RTC Services, which in turn contains a number of attributes that identify each computer and specify the services that it provides. Among the more important SCP attributes are  *serviceDNSName*, *serviceDNSNameType*, *serviceClassname*, and *serviceBindingInformation*. Third-party asset management applications can retrieve server information across a deployment by querying against these and other SCP attributes.
   
 ## Active Directory Server Objects
 

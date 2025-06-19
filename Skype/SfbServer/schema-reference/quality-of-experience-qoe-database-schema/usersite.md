@@ -16,7 +16,9 @@ description: "The UserSite table is a supporting table. Each record represents o
 ---
 
 # UserSite table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The UserSite table is a supporting table. Each record represents one user site defined in network configuration setting.
   
 |**Column**|**Data Type**|**Key/Index**|**Details**|

@@ -18,10 +18,12 @@ description: "If you have Edge Servers deployed and must provide media services 
 ---
 
 # Associate Branch Office Appliance With Edge
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 If you have Edge Servers deployed and must provide media services for external use, choose the Edge Server or pool that will be associated with the Survivable Branch Appliance or Survivable Branch Server by selecting it in the drop-down list. Click **Next** to continue.
   
 > [!NOTE]
-> If you do not have an Edge Server or Edge Server pool defined in your topology, you can skip this step. You will be able to associate the Survivable Branch Appliance or Survivable Branch Server with an Edge Server or Edge Server pool when you define a new Edge Server or Edge Server pool, or when you edit the property pages of the Survivable Branch Appliance or Survivable Branch Server after an Edge Server or Edge Server pool is defined in the topology. 
+> If you don't have an Edge Server or Edge Server pool defined in your topology, you can skip this step. You'll be able to associate the Survivable Branch Appliance or Survivable Branch Server with an Edge Server or Edge Server pool when you define a new Edge Server or Edge Server pool, or when you edit the property pages of the Survivable Branch Appliance or Survivable Branch Server after an Edge Server or Edge Server pool is defined in the topology. 
   
 

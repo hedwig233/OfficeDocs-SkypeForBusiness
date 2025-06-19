@@ -20,7 +20,9 @@ description: "Summary: Explore these links to learn how to install and configure
 ---
 
 # Deploy Skype for Business Server 2015
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 **Summary:** Explore these links to learn how to install and configure Skype for Business Server 2015 and upgrade from earlier versions of Lync Server.
   
 Skype for Business Server offers instant messaging (IM), presence, conferencing, video, and telephony solutions that can support enterprise-level collaboration requirements. This topic provides links to information about how to deploy and configure Skype for Business Server. 

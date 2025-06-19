@@ -21,6 +21,8 @@ description: "Deploy E9-1-1 in Skype for Business Server Enterprise Voice. Inclu
 
 # Deploy emergency services in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Deploy E9-1-1 in Skype for Business Server Enterprise Voice. Includes prerequisites and deployment process checklist.
   
 Enhanced 9-1-1 (E9-1-1) is an emergency notification feature that associates the calling party's telephone number with a civic or a street address. Using this information, the Public Safety Answering Point (PSAP) can immediately dispatch emergency services to the caller in distress.

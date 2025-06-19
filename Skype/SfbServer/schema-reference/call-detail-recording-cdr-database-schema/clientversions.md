@@ -16,6 +16,8 @@ description: "The ClientVersions table is a supporting table that stores a list 
 ---
 
 # ClientVersions table in Skype for Business Server 2015
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The ClientVersions table is a supporting table that stores a list of the various client types and versions that have participated in sessions recorded in the database. Each record in the table represents one client version.
   

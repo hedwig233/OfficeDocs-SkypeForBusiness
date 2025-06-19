@@ -18,13 +18,15 @@ description: "Summary: Learn about how to use the Call Quality Dashboard. Call Q
 
 # Use Call Quality Dashboard for Skype for Business Server
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn about how to use the Call Quality Dashboard. Call Quality Dashboard is a tool for Skype for Business Server.
 
-Call Quality Dashboard (CQD) allows IT Pros to use aggregate data to identify problems creating media quality issues by  comparing statistics for groups of users to identify trends and patterns. CQD is not focused on solving individual call issues, but on identifying problems and solutions that apply to many users.
+Call Quality Dashboard (CQD) allows IT Pros to use aggregate data to identify problems creating media quality issues by  comparing statistics for groups of users to identify trends and patterns. CQD isn't focused on solving individual call issues, but on identifying problems and solutions that apply to many users.
 
 ## Call Quality Dashboard User Guide
 
-CQD is a web portal for quickly creating and organizing reports based on Quality of Experience (QoE) data. CQD deploys an SSAS cube to aggregate the data in the QoE Metrics database, and enables admins to create and modify reports or do investigations in real time. While it is possible to use Excel to connect directly to the cube, the portal is optimized for several workflows involving QoE data. The data includes:
+CQD is a web portal for quickly creating and organizing reports based on Quality of Experience (QoE) data. CQD deploys an SSAS cube to aggregate the data in the QoE Metrics database, and enables admins to create and modify reports or do investigations in real time. While it's possible to use Excel to connect directly to the cube, the portal is optimized for several workflows involving QoE data. The data includes:
 
 - Cached report data for fast access
 - Deep links to report pages for information sharing and publishing
@@ -80,7 +82,7 @@ The settings menu contains links to useful pages like the System Health and Abou
 
 ![Screenshot shows settings menu options.](../../media/0e9ae123-e231-4fea-94e1-5788e8f3e1d3.png)
 
-Whether to show descriptions and time stamps is up to individual users, and these settings only affect the individual's version of the dashboard, and do not modify the report set or what other users see. Clearing the cache causes all queries to reload their data from the cube, while restoring defaults deletes all of user-created or modified reports and recreates the system report set — what a user would see when they log in for the first time.
+Whether to show descriptions and time stamps is up to individual users, and these settings only affect the individual's version of the dashboard, and don't modify the report set or what other users see. Clearing the cache causes all queries to reload their data from the cube, while restoring defaults deletes all of user-created or modified reports and recreates the system report set — what a user would see when they log in for the first time.
 
 The Users Dashboard Link shows a page where users can view other users of CQD and browse their reports. To share a report set, copy the link in the URL bar and share it with another CQD user. This link is the same link other users would see in the Users Dashboard Link page under the user's username.
 
@@ -171,7 +173,7 @@ A CQD stream is considered good, poor, or unclassified. CQM 1.5 now uses the fol
 - When one stream in a call is poor, both streams of the call are flagged poor. In conferences, each participant is counted as a unique call and is reported on independently of all others.
 - Unclassified streams are streams without quality metrics (that is, Synthetic Transactions or short calls).
 - Valid Streams = non-mobile clients
-- Classifier cannot be modified
+- Classifier can't be modified
 
 **Poor call definition/classifier**
 
@@ -192,7 +194,7 @@ CQD doesn't use Caller/Callee fields, instead it uses "First" and "Second" becau
 
  **First** Will always be the Server endpoint (for example, AV MCU or Mediation Server) if a Server is involved in the stream.
 
- **Second** Will always be the Client endpoint, unless it is a Server-Server stream.
+ **Second** Will always be the Client endpoint, unless it's a Server-Server stream.
 
 **Example of First and Second classification**
 

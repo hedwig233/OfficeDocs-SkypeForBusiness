@@ -18,6 +18,8 @@ description: "Use this page to set the listening ports for this Mediation Server
 ---
 
 # Mediation Service Setting Expander
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 Use this page to set the listening ports for this Mediation Server, and set its associations with public switched telephone network (PSTN) gateways. 
   

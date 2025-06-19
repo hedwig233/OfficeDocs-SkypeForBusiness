@@ -16,7 +16,9 @@ description: "The ErrorReport table stores information about errors that have oc
 ---
 
 # ErrorReport table in Skype for Business Server 2015
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The ErrorReport table stores information about errors that have occurred. Each record is one error occurrence. The error is captured either by the CDR agent running on the front-end server or sent from the client.
   
 |**Column**|**Data Type**|**Key/Index**|**Details**|

@@ -18,6 +18,8 @@ description: "Summary: Configure Exchange Server Unified Messaging for Skype for
 
 # Configure Exchange Server Unified Messaging for Skype for Business Server voice mail
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Configure Exchange Server Unified Messaging for Skype for Business Server voice mail.
   
 Skype for Business Server enables you to have voicemail messages stored in Exchange Server 2016 or Exchange Server 2013; those voicemail messages will then appear as email messages in your users' Inboxes. 
@@ -104,11 +106,11 @@ Test-CsExUMVoiceMail -TargetFqdn "atl-cs-001.litwareinc.com" -ReceiverSipAddress
 > [!IMPORTANT]
 > If you want to use Exchange Unified Messaging (UM) to provide call answering, Outlook Voice Access, or auto-attendant services for Enterprise Voice users, read [Plan for Exchange Unified Messaging integration in Skype for Business](../../plan-your-deployment/integrate-with-exchange/unified-messaging.md), and then follow the instructions in this section. 
 
-To configure Exchange Unified Messaging (UM) to work with Enterprise Voice, you’ll need to perform the following tasks:
+To configure Exchange Unified Messaging (UM) to work with Enterprise Voice, you'll need to perform the following tasks:
 
 - Configure certificates on the server running Exchange Unified Messaging (UM) services
   > [!NOTE]
-  > Add all Client Access and Mailbox servers to all UM SIP URI dial plans. If not, outbound call routing won’t work as expected. 
+  > Add all Client Access and Mailbox servers to all UM SIP URI dial plans. If not, outbound call routing won't work as expected. 
 - Create one or more UM SIP URI dial plans, along with the subscriber access phone numbers, as needed, and then create corresponding L dial plans.
 
 - Use the exchucutil.ps1 script to:
@@ -140,21 +142,21 @@ The following tools must be available on each server running Exchange UM:
 
 ### Configure Unified Messaging on Microsoft Exchange with ExchUCUtil.ps1 
 
-When you’re integrating Microsoft Skype for Business Server with Exchange Unified Messaging (UM), you have to run the ExchUcUtil.ps1 script in the Shell. The ExchUcUtil.ps1 script does the following:
+When you're integrating Microsoft Skype for Business Server with Exchange Unified Messaging (UM), you have to run the ExchUcUtil.ps1 script in the Shell. The ExchUcUtil.ps1 script does the following:
 
 - Creates a UM IP gateway for each Skype for Business Server pool.
 
 > [!IMPORTANT]
 > The ExchUcUtil.ps1 script creates one or more UM IP gateways. You must disable outgoing calls on all UM IP gateways except one gateway that the script created. This includes disabling outgoing calls on UM IP gateways that were created before you ran the script. 
 
-- Creates a UM hunt group for each UM IP gateway. The pilot identifier of each hunt group specifies the UM SIP URI dial plan used by the Skype for Business Server Front End pool or Standard Edition server that’s associated with the UM IP gateway.
+- Creates a UM hunt group for each UM IP gateway. The pilot identifier of each hunt group specifies the UM SIP URI dial plan used by the Skype for Business Server Front End pool or Standard Edition server that's associated with the UM IP gateway.
 - Grants Skype for Business Server permission to read Active Directory UM container objects such as UM dial plans, auto attendants, UM IP gateways, and UM hunt groups.
   > [!IMPORTANT]
-  > Each UM forest must be configured to trust the forest in which Skype for Business Server is deployed, and the forest in which Skype for Business Server 2013 is deployed must be configured to trust each UM forest. If Exchange UM is installed in multiple forests, the Exchange Server integration steps must be performed for each UM forest or you’ll have to specify the Skype for Business Server domain. For example, ExchUcUtil.ps1 –Forest:\<lync-domain-controller-fqdn>. 
+  > Each UM forest must be configured to trust the forest in which Skype for Business Server is deployed, and the forest in which Skype for Business Server 2013 is deployed must be configured to trust each UM forest. If Exchange UM is installed in multiple forests, the Exchange Server integration steps must be performed for each UM forest or you'll have to specify the Skype for Business Server domain. For example, ExchUcUtil.ps1 –Forest:\<lync-domain-controller-fqdn>. 
 
 ### Use the Shell to run the ExchUcUtil.ps1 script
 
-Run the ExchUcUtil.ps1 script on any Exchange server in your organization that’s in the same topology as Skype for Business Server. You can run the script from a Mailbox server using the Shell or you can run the script using Remote Windows PowerShell on a Client Access server. If you run the script on a Client Access server in your organization, the Client Access server will proxy the Remote Windows PowerShell session to a Mailbox server in the organization.
+Run the ExchUcUtil.ps1 script on any Exchange server in your organization that's in the same topology as Skype for Business Server. You can run the script from a Mailbox server using the Shell or you can run the script using Remote Windows PowerShell on a Client Access server. If you run the script on a Client Access server in your organization, the Client Access server will proxy the Remote Windows PowerShell session to a Mailbox server in the organization.
 > [!IMPORTANT]
 > The ExchUcUtil.ps1 script creates one or more UM IP gateways. You must disable outgoing calls on all UM IP gateways except one gateway that the script created. This includes disabling outgoing calls on UM IP gateways that were created before you ran the script. To disable outgoing calls on a UM IP gateway, see Disable outgoing calls on UM IP gateways. 
 > [!IMPORTANT]
@@ -174,7 +176,7 @@ To verify that the ExchUcUtul.ps1 script completed successfully, do the followin
 If you have deployed Exchange Unified Messaging (UM), as described in Planning for Exchange Unified Messaging integration in Skype for Business Server in the Planning documentation, and you want to provide Exchange UM features to Enterprise Voice users in your organization, you can use the following procedures to configure the certificate on the server running Exchange UM.
 
 > [!IMPORTANT]
-> For internal certificates, both the servers running Skype for Business Server and the servers running Microsoft Exchange must have trusted root authority certificates that are mutually trusted. The certification authority (CA) can either be the same, or a different certification authority, as long as the servers have the certification authority’s root certificate registered in their trusted root authority certificate store. 
+> For internal certificates, both the servers running Skype for Business Server and the servers running Microsoft Exchange must have trusted root authority certificates that are mutually trusted. The certification authority (CA) can either be the same, or a different certification authority, as long as the servers have the certification authority's root certificate registered in their trusted root authority certificate store. 
 
 The Exchange Server must be configured with a server certificate in order to connect to Skype for Business Server:
 1. Download the CA certificate for the Exchange Server.

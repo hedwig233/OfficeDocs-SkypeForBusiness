@@ -17,6 +17,8 @@ description: "Summary: Review the Simple URL considerations in this article befo
 
 # DNS requirements for simple URLs in Skype for Business Server
 
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Review the Simple URL considerations in this article before implementing DNS records for Skype for Business Server.
 
 Simple URLs make joining meetings easier for your users, and make getting to Skype for Business Server administrative tools easier for administrators. Simple URLs use their own domain, which must not match any of the SIP domains you define. 

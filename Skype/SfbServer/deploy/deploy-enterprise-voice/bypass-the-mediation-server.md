@@ -21,6 +21,8 @@ description: "Enable the media bypass to always bypass the Mediation Server in S
 
 # Configure media bypass in Skype for Business Server to always bypass the Mediation Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Enable the media bypass to always bypass the Mediation Server in Skype for Business Server Enterprise Voice. 
   
  If you use the steps in this article to configure global settings for media bypass, the assumption is that you have good connectivity between Skype for Business endpoints and any peer for which you configured media bypass on the trunk connection.

@@ -16,7 +16,9 @@ description: "tblPrincipalType contains principal types to categorize what is in
 ---
 
 # tblPrincipalType
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 tblPrincipalType contains principal types to categorize what is in the tblPrincipal table.
   
 **Columns**

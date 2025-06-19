@@ -18,6 +18,8 @@ description: "You Define the Monitoring SQL Server store by configuring the foll
 ---
 
 # Add Front End Monitoring Store Page
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 You **Define the Monitoring SQL Server store** by configuring the following properties:
   

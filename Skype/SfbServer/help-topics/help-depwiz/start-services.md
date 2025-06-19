@@ -18,6 +18,8 @@ description: "To start the services on the deployed server role, click Run in St
 ---
 
 # Start Services
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 To start the services on the deployed server role, click **Run** in **Step 4: Start Services**. You must be logged on as a member of the local Administrators group or an equivalent. 
   

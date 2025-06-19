@@ -16,6 +16,8 @@ description: "A trusted application is an application based on Microsoft Unified
 
 # Manage trusted applications in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 A *trusted application* is an application based on Microsoft Unified Communications Managed API (UCMA) 3.0 Core SDK that is trusted by Skype for Business Server. For details about UCMA applications, see “Unified Communications Managed API 3.0 Core SDK Documentation” at https://go.microsoft.com/fwlink/p/?linkId=210320.
 
 To successfully publish, enable, or disable a topology when adding or removing a server role, you should be logged on as a user who is a member of the RTCUniversalServerAdmins and Domain Admins groups. 

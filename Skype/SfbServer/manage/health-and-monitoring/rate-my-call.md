@@ -17,13 +17,15 @@ description: "Summary: Learn about the Rate My Call feature in Skype for Busines
 
 # Rate my Call in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn about the Rate My Call feature in Skype for Business Server.
 
 Rate My Call was a new feature in Skype for Business 2015 and 2016 clients on Windows that provides enterprises a way to get feedback from their end-users.
 
 The Rate My Call window offers a "star" rating system and predefined tokens for audio and video calls. In addition, administrators can enable a custom field to provide feedback.
 
-Collected Rate My Call data is not currently included in any existing monitoring report, but it has a separate monitoring report. Data is collected in SQL tables that can be accessed by running SQL queries.
+Collected Rate My Call data isn't currently included in any existing monitoring report, but it has a separate monitoring report. Data is collected in SQL tables that can be accessed by running SQL queries.
 
 ## Rate my Call Prerequisites
 
@@ -47,7 +49,7 @@ The Rate My Call feature is enabled by default in the Client policy with the fol
 
 - Rate My Call Allow Custom User Feedback - disabled
 
-There is no action required to enable the base feature, however but if you want custom feedback you will need to enable it separately. The following Windows PowerShell cmdlet is an example of enabling custom end user feedback and changing the interval from 10% to 80%.
+There's no action required to enable the base feature, however but if you want custom feedback you need to enable it separately. The following Windows PowerShell cmdlet is an example of enabling custom end user feedback and changing the interval from 10% to 80%.
 
 ```PowerShell
 Set-CSClientPolicy -Identity <PolicyIdentity> -RateMyCallDisplayPercentage 80 -RateMyCallAllowCustomUserFeedback $true 
@@ -186,7 +188,7 @@ SELECT
 
 ## Updating Token Definitions
 
-The latest Skype for Business clients report new problem token IDs (\> 100) that may not be present in your [QoeMetrics].[dbo].[CallQualityFeedbackTokenDef] table. To update the database table with the latest token definitions, the below SQL command can be run on the monitoring database using Microsoft SQL Server Management Studio. This command will replace all entries in the [QoeMetrics].[dbo].[CallQualityFeedbackTokenDef] table.
+The latest Skype for Business clients report new problem token IDs (\> 100) that may not be present in your [QoeMetrics].[dbo].[CallQualityFeedbackTokenDef] table. To update the database table with the latest token definitions, the below SQL command can be run on the monitoring database using Microsoft SQL Server Management Studio. This command replaces all entries in the [QoeMetrics].[dbo].[CallQualityFeedbackTokenDef] table.
 
 ```SQL
 DELETE FROM [CallQualityFeedbackTokenDef];

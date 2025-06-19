@@ -19,6 +19,8 @@ description: "To edit the settings for an existing single or multiple server Edg
 
 # Edge Settings Expander
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 To edit the settings for an existing single or multiple server Edge pool, you're presented with the following sections:
 
 - General settings
@@ -49,7 +51,7 @@ To edit or specify settings for the **External Settings** for the Microsoft Edge
 
 If you intend to use separate IP addresses for each, select the check box **Enable separate FQDN and IP address for Web conferencing and A/V**. Each service must have a corresponding DNS host (A) record created for it.
 
-For each of the external-facing services, you specify a FQDN and an associated port. For example, the **SIP Access** would use sip.contoso.com with an associated port of 5061.
+For each of the external-facing services, you specify an FQDN and an associated port. For example, the **SIP Access** would use sip.contoso.com with an associated port of 5061.
 
 > [!IMPORTANT]
 > If you select separate FQDNs for each of the external-facing services, each service must have a unique port value associated with it. By default, the SIP is on port 5061/TLS, the web conferencing edge service is on port 444/TLS, and the A/V Conferencing Server is on port 443/TLS. If you make changes to any of these settings, including using separate FQDN and IP addresses or ports, you must update all the other services that will rely on the initially configured values.

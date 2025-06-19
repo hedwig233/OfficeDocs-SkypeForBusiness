@@ -19,6 +19,8 @@ description: "The View - Mobility Policy dialog displays the properties of the s
 
 # Users: View Mobility Policy
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The **View - Mobility Policy** dialog displays the properties of the selected mobility policy.
 
 For details about assigning mobility policies, see [Assign a Per-User Mobility Policy](/previous-versions/office/lync-server-2013/lync-server-2013-assign-a-per-user-mobility-policy) and [Configuring Mobility Policy](/previous-versions/office/lync-server-2013/lync-server-2013-configuring-mobility-policy).

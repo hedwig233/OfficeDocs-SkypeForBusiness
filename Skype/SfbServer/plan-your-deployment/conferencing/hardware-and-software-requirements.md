@@ -17,6 +17,8 @@ description: "Summary: Read this topic to learn about hardware and software requ
 
 # Hardware and software requirements for conferencing in Skype for Business Server
 
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Read this topic to learn about hardware and software requirements for conferencing in Skype for Business Server.
 
 This section describes the hardware and software requirements for web conferencing, audio and video (A/V) conferencing, dial-in conferencing, and instant messaging (IM) conferencing. All conferencing capabilities run on Front End Servers; there are additional requirements for different types of conferencing, as shown in the following diagram.

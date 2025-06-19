@@ -18,11 +18,13 @@ description: "Push Notification and the Push Notification Clearing House (PNCH) 
 ---
 
 # Mobile Client: Create or Edit Push Notification Configuration
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Push Notification and the Push Notification Clearing House (PNCH) are two key parts of the mobility feature. Push notification is the process where a message is sent to the PNCH. The message is held here until it can be delivered to the mobile client, or the timeout period expires. 
   
 > [!NOTE]
-> The time period is set at the Push Notification Clearing House and is not configurable by the user or the administrator of your deployment. 
+> The time period is set at the Push Notification Clearing House and isn't configurable by the user or the administrator of your deployment. 
   
 To enable Push Notification, you do the following:
   

@@ -18,17 +18,19 @@ description: "Summary: Configure the personal contact store used by legacy clien
 
 # Configure the personal contacts store on Lync 2010 client computers
   
-If you are integrating Skype for Business Server 2015 and Exchange Server 2016 or Exchange Server 2013, then you should configure the personal contact store used by the clients. In particular, you should configure Skype for Business to use Exchange as the personal contact store, and, at the same time, ensure that users are not able to override that decision. This can be done by creating and configuring a Registry value on each client computer.
+[!INCLUDE [appliesto-2015-xxx-xxx](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
+If you're integrating Skype for Business Server 2015 and Exchange Server 2016 or Exchange Server 2013, then you should configure the personal contact store used by the clients. In particular, you should configure Skype for Business to use Exchange as the personal contact store, and, at the same time, ensure that users aren't able to override that decision. This can be done by creating and configuring a Registry value on each client computer.
   
 > [!NOTE]
-> The following procedure is only necessary for clients using the Lync 2010 client or earlier. The Lync 2013 client and all Skype for Business clients will not have the option of overriding the contact store settings.
+> The following procedure is only necessary for clients using the Lync 2010 client or earlier. The Lync 2013 client and all Skype for Business clients won't have the option of overriding the contact store settings.
   
 To configure this value on a single computer, complete the following procedure:
   
-1. On the client computer, click **Start** and then click **Run**.
+1. On the client computer, select **Start** and then select **Run**.
 2. In the **Run** dialog box, type regedit and then press ENTER.
 3. In Registry Editor, expand **HKEY_LOCAL_MACHINE**, expand **Software**, expand **Policies**, expand **Microsoft**, and then expand **Communicator**.
-4. Right-click **Communicator**, point to **New**, and then click **DWORD (32-bit) Value**.
+4. Right-click **Communicator**, point to **New**, and then select **DWORD (32-bit) Value**.
 5. After the new value is created, type PersonalContactStoreOverride and then press ENTER to rename the value.
 6. Verify that the value of PersonalContactStoreOverride is set to 0 and then close Registry Editor.
 

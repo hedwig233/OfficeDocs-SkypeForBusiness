@@ -16,7 +16,9 @@ description: "The MSMQProcessing table is for internal use only. This table was 
 ---
 
 # MSMQProcessing table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The MSMQProcessing table is for internal use only. This table was introduced in Skype for Business Server 2015.
   
 

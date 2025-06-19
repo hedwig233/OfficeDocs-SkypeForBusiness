@@ -16,7 +16,9 @@ description: "These sections detail the columns in each of the Quality of Experi
 ---
 
 # QoE table details
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 These sections detail the columns in each of the Quality of Experience (QoE) database schema tables.
   
 - [AppliedBandwidthSource table](appliedbandwidthsource.md)

@@ -1,5 +1,5 @@
 ---
-title: Signals availability
+title: Health signals
 author: mstonysmith
 ms.author: tonysmit
 manager: pamgreen
@@ -11,11 +11,11 @@ ms.service: msteams
 ms.subservice: itpro-rooms
 audience: Admin
 ms.collection: 
-  - M365-collaboration
-  - teams-rooms-devices
-  - Tier1
+- M365-collaboration
+- teams-rooms-devices
+- Tier1
 appliesto: 
-  - Microsoft Teams
+- Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
 description: This article shows you the health signals that are available, not available, or not applicable for Teams Rooms on Windows, Teams Rooms on Android, Collab bar (Android), and Microsoft Device Ecosystem Platform (MDEP). 

@@ -173,4 +173,4 @@ A special case might occur when the registration is correct, but your applicatio
 
 ## Updates to Teams on VDI
 
-See [Install Teams on VDI](teams-for-vdi.md).
+See [Install Teams on VDI](vdi-2.md).

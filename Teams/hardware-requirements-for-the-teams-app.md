@@ -25,6 +25,9 @@ appliesto:
 
 # Hardware requirements for Microsoft Teams
 
+> [!IMPORTANT]
+> The classic Team client is no longer supported. This client is not receiving further updates, including security updates. The classic Teams client will not work after June 30, 2025. You must upgrade to the new Teams client before that time. See [The new Microsoft Teams](new-teams-desktop-admin.md) for more information.
+
 All of the requirements in the following sections apply to both the classic Microsoft Teams desktop app and the classic Teams Web app.
 
 ## Hardware requirements for Teams on a Windows PC
@@ -80,7 +83,7 @@ You can use Teams on these mobile platforms:
 
 ## Hardware requirements for Teams in a Virtual Desktop Infrastructure (VDI) environment
 
-See [Teams for Virtualized Desktop Infrastructure](vdi-2.md) for requirements for running Teams in a virtualized environment.
+See [Teams for Virtualized Desktop Infrastructure](teams-for-vdi.md) for requirements for running Teams in a virtualized environment.
 
 ### Related topics
 

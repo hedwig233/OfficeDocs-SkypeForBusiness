@@ -323,7 +323,7 @@ If you're an IT admin, educator, student, or guardian, these resources may help 
   - [Teams features by platform](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3).
   - [Download and distribute Teams clients](get-clients.md).
   - [Teams Troubleshooting](/MicrosoftTeams/troubleshoot/teams).
-  - [Teams for Virtualized Desktop Infrastructure](./teams-for-vdi.md).
+  - [Teams for Virtualized Desktop Infrastructure](vdi-2.md).
   - [Monitor and manage call quality](monitor-call-quality-qos.md).
   - [Verify service health for Teams](service-health.md).
   - [Optimize Microsoft 365 traffic for remote staff](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571).

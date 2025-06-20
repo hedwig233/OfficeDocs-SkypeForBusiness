@@ -437,7 +437,7 @@ If [your tenant is setup with Teams Retention Policy](/purview/create-retention-
 
 The new Copilot Activity Export API allows you to export Copilot interactions data which includes the user prompt to Copilot and the Copilot response back to the user. This API captures the user intent and Copilot accessed resources and the response back to the user across Microsoft 365 Copilot apps such as Teams, Word and Outlook. 
 
-Learn more about the[ Copilot Interactions Export API](/graph/api/aiinteractionhistory-getallenterpriseinteractions?view=graph-rest-1.0).
+Learn more about the [Copilot Interactions Export API](/graph/api/aiinteractionhistory-getallenterpriseinteractions?view=graph-rest-1.0&preserve-view=true).
 
 ## How to access Copilot Activity Export APIs
 

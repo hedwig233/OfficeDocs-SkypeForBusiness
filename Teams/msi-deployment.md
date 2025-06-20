@@ -87,7 +87,7 @@ Make sure the computers you install Teams on meeting the requirements listed in 
 
 ### VDI installation
 
-For complete guidance on how to deploy the Teams desktop app on VDI, see [Teams for Virtualized Desktop Infrastructure](vdi-2.md).
+For complete guidance on how to deploy the Teams desktop app on VDI, see [Teams for Virtualized Desktop Infrastructure](teams-for-vdi.md).
 
 ### Uninstallation
 

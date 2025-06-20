@@ -925,7 +925,7 @@ The following clients are supported for call agents in a Call queue:
 - iPad Skype for Business Client (version 6.16.0 and later)
 - Microsoft Teams Windows client (32-bit and 64-bit versions)
 - Microsoft Teams Mac client
-- Microsoft Teams on [Virtualized Desktop Infrastructure](vdi-2.md) (Windows Virtual Desktop, Citrix, and VMware)
+- Microsoft Teams on [Virtualized Desktop Infrastructure](teams-for-vdi.md) (Windows Virtual Desktop, Citrix, and VMware)
 - Microsoft Teams iPhone app
 - Microsoft Teams Android app
 

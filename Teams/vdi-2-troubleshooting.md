@@ -4,7 +4,7 @@ author: MicrosoftHeidi
 ms.author: heidip
 manager: jtremper
 ms.topic: article
-ms.date: 06/30/2025
+ms.date: 05/29/2025
 ms.service: msteams
 audience: admin
 ms.collection: 
@@ -33,13 +33,13 @@ When troubleshooting the new Slimcore-based optimization for Microsoft Teams, yo
     - Enable the bottom pane and switch to the DLL tab.
     - On Azure Virtual Desktop, look for the msrdc.exe process and ensure the MsTeamsPluginAvd.dll is loaded.
     - On Citrix, look for the wfica32.exe process and ensure the MsTeamsPluginCitrix.dll is loaded.
-  3. Restart the Teams app. It requires two restarts to transition from WebRTC to SlimCore, when the plugin is detected for the first time.
-  4. If the problem persists, check Event Viewer in the virtual machine (VM) for **Microsoft Teams VDI**-related errors (Teams 24123.X.X.X or higher).
+  3. Restart the new Teams app. It requires two restarts to transition from WebRTC to SlimCore, when the plugin is detected for the first time.
+  4. If the problem persists, check Event Viewer in the virtual machine (VM) for **Microsoft Teams VDI**-related errors (new Teams 24123.X.X.X or higher).
 
 - Not optimized with SlimCore and instead you see: "Azure Virtual Desktop SlimCore Media Not Connected" or "Citrix SlimCore Media Not Connected".
   - Check the [Troubleshooting SlimCoreVdi MSIX deployment errors](#troubleshooting-slimcorevdi-msix-deployment-errors) section. MSIX or AppX-related errors are the most likely reasons for this error.
 
-## Teams logs for VDI
+## New Teams logs for VDI
 
 Teams logs can be collected by selecting Ctrl+Alt+Shift+1 while running Teams on a VM. This action produces a ZIP folder in the Downloads folder. Inside the PROD-WebLogs-*.zip file, look for the Core folder.
 
@@ -108,7 +108,7 @@ The code logged here needs to be mapped using this table:
 
 ## Using Event Viewer on the VM for troubleshooting
 
-Every connect/disconnect event gets logged in the Event Viewer running on the Virtual Machine. The Event Viewer can also display client-side related errors. Filter by Source (Microsoft Teams VDI) and Event ID (0) under Windows Logs\Application. Error codes can be found in the [Teams logs for VDI](#new-teams-logs-for-vdi) section.
+Every connect/disconnect event gets logged in the Event Viewer running on the Virtual Machine. The Event Viewer can also display client-side related errors. Filter by Source (Microsoft Teams VDI) and Event ID (0) under Windows Logs\Application. Error codes can be found in the [New Teams logs for VDI](#new-teams-logs-for-vdi) section.
 
 > [!NOTE]
 > In order to be able to filter by Source, you need to run this command from an elevated PowerShell window:
@@ -124,7 +124,7 @@ Diagnostic information can be found in the detailed event logs on the user's dev
 |HKLM\SOFTWARE\WOW6432Node\Citrix\ICA Client\Engine\Configuration\Advanced\Modules\ICA 3.0 |String |VirtualDriverEx |MicrosoftTeamsVDI |
 |HKLM\SOFTWARE\WOW6432Node\Citrix\ICAClient\Engine\Configuration\Advanced\Modules\MicrosoftTeamsVDI |String |DriverNameWin32 |MsTeamsPluginCitrix.dll |
 
-To debug installations, you can enable installer logging, but then you must use msiexec manually, and pass correct flags. For example, if the plugin isn't currently installed, it can be installed with logs: msiexec.exe /i MsTeamsPluginCitrix.msi /l*vx installer.log.txt.
+To debug installations, you can enable installer logging, but then you must use msiexec manually, and pass correct flags. For example, if the plugin isn't currently installed, it can be installed with logs like this: msiexec.exe /i MsTeamsPluginCitrix.msi /l*vx installer.log.txt.
 
 ## Troubleshooting SlimCoreVdi MSIX deployment errors
 

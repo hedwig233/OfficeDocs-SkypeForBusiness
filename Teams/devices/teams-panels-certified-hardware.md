@@ -141,6 +141,7 @@ See [Microsoft Teams panels](../devices/overview-teams-panels.md) for features s
 #### <b> Neat </b>
 | Device model | Latest firmware version | Minimum firmware version | Included Microsoft applications | Release date |
 |:----------------|:-------------------|:----------------------------|:-------------------------------------------------------------------------|:-------------------------------------|
+| Neat Pad | `NFA1.20250402.2006 (AOSP)` | N/A| Teams client: `1449/1.0.97.2025086303` <br> Microsoft Intune: `25.02.1` <br> Authenticator: `6.2505.3166` <br> Admin Agent: `1.0.0.202505080136.product (784)`| June 19, 2025|
 | Neat Pad | `NFA1.20241113.0515` | N/A| Teams client: `1449/1.0.97.2024102301` <br> Company Portal: `5.0.6152.0` <br> Admin Agent: `1.0.0.202407050618.product`| January 9, 2025|
 | Neat Pad | `NFA1.20240924.0507` | N/A| Teams client: `1449/1.0.97.2024081207` <br> Company Portal: `5.0.6152.0` <br> Admin Agent: `1.0.0.202402202353.product`| November 11, 2024|
 | Neat Pad | `NFA1.20240620.1740` | N/A| Teams client: `1449/1.0.97.2024061108` <br> Company Portal: `5.0.5484.0` <br> Admin Agent: `1.0.0.202402202353.product`| August 26, 2024|

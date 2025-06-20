@@ -40,11 +40,11 @@ We have sample instructions to run the script in Intune at this location: [Sampl
 
 After running the script:
 
-- If run locally, the failures and suggested resolutions display in the command line for administrators to see. Administrators can fix the issues and run the Teams client installation again.
+- If run locally, the failures and suggested resolutions display in the command line for administrators to see. Administrators can fix the issues and run the new Teams client installation again.
 - If the script is run in Intune or other device management software:
   - Administrators can see issues and suggested resolutions for each device.
   - Administrators can download these results as a CSV file.
   - Administrators can filter the CSV file for each error to identify all devices requiring a specific fix.
-  - Administrators can fix one error at a time across all machines and rerun the Teams installation.
+  - Administrators can fix one error at a time across all machines and rerun the new Teams installation.
 
 A video demonstration of the script being run [is located here](https://learn.microsoft.com/_themes/docs.theme/master/en-us/_themes/global/video-embed-one-stream.html?id=3fb0b236-236f-4817-8bf0-e93262b859b1).

@@ -384,7 +384,7 @@ By default, the MsTeamsPlugin automatically downloads and installs the right Sli
 > [!IMPORTANT]
 > If you must choose this method, you must guarantee that:
 >
-> 1. [Teams auto-update is disabled](new-teams-vdi-requirements-deploy.md#disable-new-teams-autoupdate-in-non-persistent-vdi) in the virtual desktop.
+> 1. [Teams auto-update is disabled](new-teams-vdi-requirements-deploy.md#disable-teams-autoupdate-in-non-persistent-vdi) in the virtual desktop.
 > 2. The SlimCore packages are pre-provisioned to the endpoint's local storage or network share before you upgrade Teams in the virtual desktop. Any newer Teams version requests a matching new version of SlimCore and if the plugin can't find it, the user is in fallback mode (server-side rendering).
 >
 > This circumstance happens because Teams and SlimCore versions must match.

@@ -122,4 +122,4 @@ The following capabilities aren't yet available in GCC High and DoD Clouds.
 - [Monitor and manage call quality](monitor-call-quality-qos.md)
 - [Microsoft Teams add-on licensing](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
 - [Pricing for Teams Phone](https://products.office.com/microsoft-teams/voice-calling#requirements)
-- [Quality of services (QoS)](vdi-2.md#quality-of-services-qos)
+- [Teams for Virtualized Desktop Infrastructure with callings and meetings](teams-for-vdi.md#teams-on-vdi-with-calling-and-meetings)

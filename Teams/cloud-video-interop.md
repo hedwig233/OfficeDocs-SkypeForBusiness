@@ -176,6 +176,10 @@ CVI is a partner-provided service. If you're experiencing issues, the first step
 
 If Teams functions correctly on this segment, and you followed all the networking and configuration guidelines your partner provided, you should contact the partner for further troubleshooting.
 
+## CVI in town halls 
+
+Presenters can now join and present in Teams town halls using their own video conferencing (VTC) devices, even if they’re not Teams Rooms devices. Organizers see CVI join codes directly in the town hall’s share event dialog, making it easy to share with to presenters. Once a trusted CVI device uses the join code, it enters the event as an attendee and is then promoted to a presenter. These presenters can also collaborate in the green room before the event begins, ensuring a smooth and inclusive experience.
+
 ## PowerShell for CVI
 
 The following PowerShell cmdlets are available for you to (partially) automate the CVI deployment.

@@ -98,7 +98,7 @@ These are the signals that are available for video bar devices running Microsoft
 |Meeting app (heartbeat)|This ticket triggers when the MTR application isn't running, or when there are some issue with the App or Android. |OS, firmware, and apps|Critical|180|20|
 |Secondary display|This signal is triggered when there is a mismatch of the dual display mode setting and the number of displays connected. |Display|Warning|180|20|
 |Bluetooth disabled|This signal is triggered when the Bluetooth is disabled under Windows settings (OS level). When this setting is disabled, it will prevent a room from being discovered via proximity join or Teams casting (relying on Bluetooth Low Energy beacon).|Hardware and peripherals|Warning|180|20|
-|Pairing (Touch console)|This device does not appear to be paired with a touch console. An unpaired touch console makes it difficult for end users to start or join meetings. |Hardware and peripherals|Warning|180|60|
+|Pairing (Touch console)|This device does not appear to be paired by Teams with a touch console. An unpaired touch console makes it difficult for end users to start or join meetings. |Hardware and peripherals|Warning|180|60|
 |Network|The device may still have Internet connectivity, but the meeting app is unable to reach some critical endpoints that could affect Teams meetings.|Connectivity|Important|180|20|
 |Offline|This is triggered when the Admin agent running on the device ceases to report information. This condition would likely indicate that a device is completely powered off or is disconnected from the network so that the management service can be reached.|Connectivity|Critical|180|60|
 
@@ -113,7 +113,7 @@ These are the signals that are available for touch console devices running Micro
 |Meeting app (heartbeat)|This ticket triggers when the MTR application isn't running, or when there are some issue with the App or Android. |OS, firmware, and apps|Critical|180|20|
 |Secondary display|This signal is triggered when there is a mismatch of the dual display mode setting and the number of displays connected. |Display|Warning|180|20|
 |Bluetooth disabled|This signal is triggered when the Bluetooth is disabled under Windows settings (OS level). When this setting is disabled, it will prevent a room from being discovered via proximity join or Teams casting (relying on Bluetooth Low Energy beacon).|Hardware and peripherals|Warning|180|20|
-|Pairing (Video bar)|Collab bar and Touch console are successfully paired. There's also OEM pairing, that is, the device is paired with the default.|Hardware and peripherals|Warning|180|60|
+|Pairing (Video bar)|This device does not appear to be paired by Teams with a video bar. The touch console cannot control the unpaired video bar. The end user experience is likely to be degraded.|Hardware and peripherals|Warning|180|60|
 |Network|The device may still have Internet connectivity, but the meeting app is unable to reach some critical endpoints that could affect Teams meetings.|Connectivity|Important|180|20|
 |Offline|This is triggered when the Admin agent running on the device ceases to report information. This condition would likely indicate that a device is completely powered off or is disconnected from the network so that the management service can be reached.|Connectivity|Critical|180|60|
 

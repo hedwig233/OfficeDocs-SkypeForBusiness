@@ -93,7 +93,7 @@ When you turn on the organization-wide **Anonymous users can join a meeting** or
 
 You can require anonymous users to verify their identities to join meetings in your organization.
 
-When you set **Anonymous users can join a meeting after verifying** to **By email code** and the meeting organizer toggles the **Require unverified participants to verify their info before joining** setting to **On** in their **Meeting options**, unverified anonymous users are prompted to enter up a one-time passcode that gets sent to their email to join the meeting.
+When you turn on this per-organizer policy setting, meeting organizers with a Teams Premium license see the **Require unverified participants to verify their info before joining** setting in their **Meeting options**. When organizers turn this setting **On**, unverified anonymous users are required to enter a one-time passcode sent to their email in order to join the meeting.
 
 If you turn off the organization-wide **Anonymous users can join a meeting** setting and **Anonymous users can join a meeting after verifying** is set to **No**, anonymous users can't join meetings in your organization.
 
@@ -101,7 +101,13 @@ If you turn off the organization-wide **Anonymous users can join a meeting** set
 
 :::image type="content" source="media/prejoin-mobile-code-small.png" alt-text="Screenshot of an anonymous user entering a onet-time passcode on the prejoin screen to verify their identity to join a meeting" lightbox="media/prejoin-mobile-code-expand.png":::
 
-To manage whether unverified anonymous attendees can verify themselves with a one-time passcode to join meetings, follow these steps:
+### Prerequisites
+
+- To use this policy, you must first set **Anonymous users can join a meeting after verifying** to **By email code**.
+
+### Manage anonymous user verification for your users
+
+This is a per-organizer policy setting. To manage whether unverified anonymous attendees can verify themselves with a one-time passcode to join meetings, follow these steps:
 
 1. Go to the Teams admin center.
 1. Expand **Meetings** > **Meeting policies**.

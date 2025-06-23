@@ -41,7 +41,7 @@ When using teams with dynamic groups:
 
 - Rules can define who is a team member, but not who is a team owner.
 - Owners can't add or remove users as members of the team since dynamic group rules define members.
-- Teams clients don't allow member management for the team. Options to add members, edit member roles, send and approve join requests, and leave the team are all hidden.
+- Teams clients don't allow member management for the team. Options to add members, send and approve join requests, and leave the team are all hidden.
 
 To create a team that uses dynamic membership, start by [creating a dynamic Microsoft 365 group](/azure/active-directory/users-groups-roles/groups-create-rule) and then [create a team from that group](https://support.microsoft.com/office/create-a-team-from-an-existing-group-24ec428e-40d7-4a1a-ab87-29be7d145865).
 

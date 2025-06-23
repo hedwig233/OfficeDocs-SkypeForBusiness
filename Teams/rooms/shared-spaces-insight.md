@@ -97,7 +97,7 @@ For information on what each of these components denote, you can hover over the 
 - Building name
 
   > [!NOTE]
-  > Only after youy choose a value for the **Building name** attribute, the **Floor** and **Room** dropdown lists become selectable.
+  > Only after you choose a value for the **Building name** attribute, the **Floor** and **Room** dropdown lists become selectable.
 
 - Floor
 - Room
@@ -129,7 +129,7 @@ After setting the filters based on your preference for **Location Discovery** an
 
 Data tiles refer to the two tiles below the dropdown lists that display the utilization data for the groups you choose from the dropdown list on the top–left side of the **Shared Spaces Insights (Preview)** page (adjacent to the portal's name).
 
-The two data tiles displaythe following categories of information:
+The two data tiles display the following categories of information:
 
 - **Total number of rooms**: The current number of Teams Rooms available based on the locations selected.
 - **Total capacity**: The summed-up value of the capacity from the capacity property in the room resource account of all the latest Teams Rooms based on the locations selected. If the capacity information isn't available, it's excluded.

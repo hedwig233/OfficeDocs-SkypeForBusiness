@@ -180,11 +180,27 @@ To edit an existing configuration profile,
 
 1. A “Review configured settings” pop up appears. Compare and review the current and new values of the settings that were changed. Click on __Save changes.__
 
-1. The changes in the settings will be automatically applied to the devices that has the configuration profile assigned.
+1. The changes in the settings will be automatically applied to the devices that have the configuration profile assigned.
 
 #### Reassign an existing configuration profile
 
-To 
+To reassign a configuration profile to the existing assigned devices, without making any changes to settings
+
+1. In the left navigation, go to __Teams Devices__ > select the Teams device type > __Configuration profiles__. For example, select __Teams Devices__ > __Teams panels__ > __Configuration profiles__ to edit an existing configuration profile for Teams panels.
+
+1. Click on the configuration profile you want to reassign and scroll to the bottom to find the __Reassign config__ CTA.
+
+1. Click on the __Reassign config__ CTA, review the configured settings and __Save changes__.
+
+1. The configuration profile will be automatically applied to all the devices that have this profile already assigned.
+
+#### Frequently asked questions
+
+1. What is partial application of configuration profiles
+
+1. What if a device doesn't support partial application of configuration profiles?
+
+1. What happens to the existing configuration profiles created before the launch of Partial application of configuration profiles feature?
 
 #### Best practices for managing configuration profiles
 

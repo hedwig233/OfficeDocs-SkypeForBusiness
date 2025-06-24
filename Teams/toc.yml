@@ -475,10 +475,8 @@ items:
           href: meeting-transcription-captions.md
         - name: Manage RTMP-In
           href: meetings-rtmp-in.md
-    - name: Advanced Virtual Appointments
+    - name: Advanced Bookings and virtual appointments
       items:
-        - name: Manage the Virtual Appointments app for your organization in Microsoft Teams
-          href: manage-virtual-appointments-app.md
         - name: Microsoft Teams Virtual Appointments usage report
           href: /microsoft-365/frontline/virtual-appointments-usage-report
         - name: Microsoft Teams Advanced Virtual Appointments activity report

@@ -113,6 +113,7 @@ See [Microsoft Teams phones feature set](phones-for-teams.md) for information on
 #### <b> HP | Poly </b>
 | Device model | Latest firmware version | Minimum firmware version | Included Microsoft applications**   | Release date |
 |:----------------|:-------------------|:----------------------------|:----------------------------------------------------------------------------------|:--------------------------------------------|
+| CCX350 | `9.1.1.0324  (AOSP)` | `N/A`| Teams client: `1449/1.0.94.2025084203` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2410.7268` <br> Admin Agent: `1.0.0.202412110504.product (753)`| May 19, 2025|
 | CCX350/CCX400/CCX500/CCX505/CCX600/Trio C60 | `9.1.1.0258  (AOSP)` | `N/A`| Teams client: `1449/1.0.94.2025032003` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2410.7268` <br> Admin Agent: `1.0.0.202412110504.product (753)`| May 14, 2025|
 | CCX350/CCX400/CCX500/CCX505/CCX600/Trio C60 | `9.1.0.9161 (AOSP)` | `N/A`| Teams client: `1449/1.0.94.2024122303` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2410.7268` <br> Admin Agent: `1.0.0.202407050618.product (733)`| March 5, 2025|
 | CCX350/CCX400/CCX500/CCX505/CCX600/Trio C60 | `9.0.1.6562` | `N/A`| Teams client: `1449/1.0.94.2024080808` <br> Company Portal: `5.0.6152.0` <br> Admin Agent: `1.0.0.202402202353.product`| December 16, 2024|

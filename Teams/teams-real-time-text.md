@@ -38,8 +38,6 @@ Real-time text (RTT) in Microsoft Teams allows participants to instantly send an
 ## How it works
 
 RTT messages are transmitted over dedicated data channels, ensuring that each character typed is sent and received immediately. This real-time transmission is crucial for maintaining the fluidity of conversation. RTT utilizes specific data channels that are always active during a call or meeting. These channels are responsible for the continuous flow of text data. The user interface shows the RTT data to the meeting screen, manages the display list, and handles text input interactions based on message finalization. The data channel is paused when calls are on-hold and resume when the call continues. This process ensures that RTT messages are displayed prominently and in real-time to all meeting and call participants.
-
-To learn more about
   
 ## Manage whether your users can use RTT in Teams meetings and group calls
 

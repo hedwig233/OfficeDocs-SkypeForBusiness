@@ -57,6 +57,10 @@ Teams administrators and organizers have different policies and settings to cont
 
 For a complete list of meeting policies, see [Teams setting and policies reference](settings-policies-reference.md).
 
+## Teams for Virtualized Desktop Infrastructure (VDI)
+
+Users in your organization might use VDI. To learn which meeting capabilities are supported in VDI environments, see [New VDI solution for Teams](vdi-2.md#feature-list-with-the-new-optimization) and [Upgrade to new Teams for Virtualized Desktop Infrastructure (VDI)](new-teams-vdi-requirements-deploy.md#features-not-supported-in-vdi).
+
 ## Customization with Teams Premium
 
 With a Teams Premium license, you can extend your organization's visual identity and compliance requirements across the meeting experience by adding logos and backgrounds that can be displayed in the meeting's pre-join screen, lobby, and during the meeting experience. To learn more, see [Custom meetings overview](custom-meetings-overview.md).

@@ -178,7 +178,7 @@ If Teams functions correctly on this segment, and you followed all the networkin
 
 ## CVI in town halls 
 
-Presenters can now join and present in Teams town halls using their own video conferencing (VTC) devices, even if they’re not Teams Rooms devices. Organizers see CVI join codes directly in the town hall’s share event dialog, making it easy to share with to presenters. Once a trusted CVI device uses the join code, it enters the event as an attendee and is then promoted to a presenter. These presenters can also collaborate in the green room before the event begins, ensuring a smooth and inclusive experience.
+Presenters can join and present in Teams town halls using their own Video Teleconferencing (VTC) devices, even if they’re not Teams Rooms devices. Organizers see CVI join codes directly in the town hall’s share event dialog, making it easy to share with presenters. Once a trusted CVI device uses the join code, it enters the event as an attendee, gets promoted to a presenter, and then moves to the green room or live session. These presenters can also collaborate in the green room before the event begins, for a smooth and inclusive experience.
 
 ## PowerShell for CVI
 

@@ -5541,6 +5541,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "Teams/manage-virtual-appointments-app.md",
+      "redirect_url": "/microsoft-365/frontline/virtual-appointments",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "Teams/manage-apps-across-m365.md",
       "redirect_url": "/microsoftteams/manage-apps",
       "redirect_document_id": false

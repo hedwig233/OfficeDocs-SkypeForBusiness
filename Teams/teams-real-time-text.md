@@ -31,13 +31,15 @@ description: Learn how to manage real-time text (rtt) for your users’ meetings
 
 ## Overview
 
-Real-time text (RTT) in Microsoft Teams allows participants to instantly send and see written messages on the screen during calls and meetings. RTT displays each character while participants type, which is beneficial for participants with accessibility needs and in situations where voice communication isn’t practical. Unlike chat, RTT messages are sent and received immediately, without participants taking any extra action to send.
+Real-time text (RTT) in Microsoft Teams allows participants to instantly send and see written messages on the screen during calls and meetings. RTT displays each character while participants type, which is beneficial for participants with accessibility needs and in situations where voice communication isn’t practical. Unlike chat, RTT messages are sent and received immediately, without participants taking any extra action to send. To learn more about the RTT experience for your users, see [Real-Time Text (RTT) In Microsoft Teams](https://support.microsoft.com/office/real-time-text-rtt-in-microsoft-teams-bd56f3ce-1ed6-4521-94a1-7244304b67f6).
 
 :::image type="content" source="media/rtt-meetings-small.png" alt-text="Screenshot of a Teams meeting where participants are using RTT." lightbox="media/rtt-meetings-expand.png":::
 
 ## How it works
 
-RTT messages are transmitted over dedicated data channels, ensuring that each character typed is sent and received immediately. This real-time transmission is crucial for maintaining the fluidity of conversation. RTT utilizes specific data channels (for example, ID 24) that are always active during a call or meeting. These channels are responsible for the continuous flow of text data. The user interface shows the RTT data to the meeting screen, manages the display list, and handles text input interactions based on message finalization. The data channel is paused when calls are on-hold and resume when the call continues. This process ensures that RTT messages are displayed prominently and in real-time to all meeting and call participants.
+RTT messages are transmitted over dedicated data channels, ensuring that each character typed is sent and received immediately. This real-time transmission is crucial for maintaining the fluidity of conversation. RTT utilizes specific data channels that are always active during a call or meeting. These channels are responsible for the continuous flow of text data. The user interface shows the RTT data to the meeting screen, manages the display list, and handles text input interactions based on message finalization. The data channel is paused when calls are on-hold and resume when the call continues. This process ensures that RTT messages are displayed prominently and in real-time to all meeting and call participants.
+
+To learn more about
   
 ## Manage whether your users can use RTT in Teams meetings and group calls
 
@@ -59,7 +61,7 @@ To manage how users in your org use RTT in Teams meetings and group calls, use t
 To prevent users with this policy from using RTT in Teams meetings and group call, use the following script:
 
 ```PowerShell
-Set-CsTeamsMeetingPolicy -Identity <policy name> - RealTimeText Disabled
+Set-CsTeamsMeetingPolicy -Identity <policy name> -RealTimeText Disabled
 ```
 
 ## Manage whether your users can use RTT in Teams 1:1 VoIP calls
@@ -75,13 +77,13 @@ You can use the Teams admin center or PowerShell to manage whether your users ca
 1. Toggle the **Real-time-text (RTT)** setting **On**(default) or **Off** .
 1. Select **Save**
 
-### PowerShell
+### PowerShell for 1:1 VoIP calls
 
 To manage how users in your org use RTT in Teams meetings and group calls, use the **`- RealTimeText`** parameter within the PowerShell [**CsTeamsCallingPolicy**](/powershell/module/teams/set-csteamscallingpolicy) cmdlet.
 To prevent users with this policy from using RTT in Teams 1:1 VoIP calls, use the following script:
 
 ```PowerShell
-Set-CsTeamsCallingPolicy -Identity <policy name> - RealTimeText Disabled
+Set-CsTeamsCallingPolicy -Identity <policy name> -RealTimeText Disabled
 ```
 
 ## User experience
@@ -91,6 +93,8 @@ Set-CsTeamsCallingPolicy -Identity <policy name> - RealTimeText Disabled
 
 ## Feature support
 
+### Supported
+
 RTT is supported on the following platforms and types of meetings and calls:
 
 - Meetings
@@ -99,6 +103,9 @@ RTT is supported on the following platforms and types of meetings and calls:
 - Microsoft Teams Rooms meetings (Windows and Android)  
 - Mobile devices (iOS and Android)
 - Compliance recordings
+- Teams phone devices only in read-only mode.
+
+### Not supported
 
 RTT isn’t supported on the following platforms and types of meetings and calls:
 
@@ -106,7 +113,6 @@ RTT isn’t supported on the following platforms and types of meetings and calls
 - Emergency calling
 - Webinars
 - Town halls
-- Teams Phones
 - End to end encrypted meetings
 
 ## Data storage

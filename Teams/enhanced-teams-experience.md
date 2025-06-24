@@ -284,40 +284,36 @@ The following table describes platform support for Teams Premium webinar feature
 | Manually approve registrants |Yes|Yes|No|Yes|No|No|No|No|No|No|No|No|Yes|Yes|
 | RTMP-In |Yes|Yes|No|Yes|No|No|No|No|N/A|N/A|Yes|No|Yes|Yes|
 
-## Advanced Virtual Appointments
+## Advanced Bookings and virtual appointments
 
-[!INCLUDE [va-app-retirement](includes/va-app-retirement.md)]
+With any Microsoft 365 license, your end users can use basic Bookings and virtual appointments capabilities to schedule and join business-to-customer meetings. For example, users can schedule appointments in the Bookings calendar and external attendees can join through a browser without having to download Teams.
 
-With any Microsoft 365 license, your end users can use basic Virtual Appointments capabilities to schedule and join business-to-customer meetings. For example, users can schedule appointments in the Bookings calendar and external attendees can join through a browser without having to download Teams.
+To learn more about Bookings and virtual appointments, see [Virtual Appointments with Microsoft Teams](/microsoft-365/frontline/virtual-appointments) and [Microsoft Bookings](/microsoft-365/bookings/bookings-overview).
 
-To learn more about Virtual Appointments, see [Manage the Virtual Appointments app for your organization in Microsoft Teams](manage-virtual-appointments-app.md).
+Teams Premium provides advanced Bookings and virtual appointment capabilities, such as:
 
-Teams Premium provides advanced Virtual Appointment capabilities, such as:
-
-- Analytics at departmental and organizational levels
 - Consumption and usage analytics for admins in the Teams admin center
-- Custom lobby room with branding and logos​
-- Queue of scheduled and on-demand appointments
+- Custom lobby room with branding and logos​ with Meeting themes
+- Queue of appointments
 - Short Message Service (SMS) notifications
 
   | Feature/Task  | Can admins turn this feature on/off? | Documentation for admins |
   | -------------------- | ----------- | ----------- |
-  | Reporting | No, contact support for assistance.| [Virtual Appointments usage report](/microsoft-365/frontline/virtual-appointments-usage-report?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json)<br>[Advanced Virtual Appointments activity report](/microsoft-365/frontline/advanced-virtual-appointments-activity-report?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json) |
+  | Reporting | No, contact support for assistance.| [Bookings and virtual appointments usage report](/microsoft-365/frontline/virtual-appointments-usage-report?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json)<br>[Advanced Bookings and virtual appointments activity report](/microsoft-365/frontline/advanced-virtual-appointments-activity-report?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json) |
   | SMS notifications  | Yes| [SMS text notifications](bookings-app-admin.md#sms-text-notifications) |
+  | Meeting themes | Yes| [Themes for Teams meetings](meeting-themes.md) |
 
-### Platform support for Premium advanced Virtual Appointments features
+### Platform support for Premium advanced Bookings and virtual appointments features
 
-The following table describes platform support for Teams Premium Virtual Appointments features:
+The following table describes platform support for Teams Premium Bookings and virtual appointments features:
 
 |Feature|Windows|MAC|Mobile|Web|Microsoft Teams Rooms- Windows|Microsoft Teams Rooms- Android|Touch boards for Teams Rooms|Direct guest join|CVI|View-only mode|External communication with unmanaged Teams users|Anonymous users support|VDI WebRTC classic optimization|VDI SlimCore-based optimization|Exchange on-premises|
 | -------------------- | ----------- | ----------- | ------------ |------------ |------------ |------------ |------------ |------------ |------------ |------------ |------------ |------------ |------------ |------------ |------------ |
 | SMS|Yes|Yes|No|Yes|N/A|N/A|N/A|N/A|N/A|N/A|N/A|N/A|Yes|Yes|Partial|
 | SMS reminder in Queue|Yes|Yes|No|Yes|N/A|N/A|N/A|N/A|N/A|N/A|N/A|N/A|Yes|Yes|No|
 | Queue view|Yes|Yes|No|Yes|N/A|N/A|N/A|N/A|N/A|N/A|N/A|N/A|Yes|Yes|No|
-| OnDemand |Yes|Yes|No|Yes|N/A|N/A|N/A|N/A|N/A|N/A|N/A|N/A|Yes|Yes|No|
-| Analytics |Yes|Yes|No|Yes|N/A|N/A|N/A|N/A|N/A|N/A|N/A|N/A|Yes|Yes|N/A|
 
-## Custom 3D Immersive Mesh Experiences
+## Custom 3D immersive Mesh experiences
 
 With a Teams Premium license, users can explore immersive 3D experiences for the workplace. Host customized single or multi-room immersive events in the Mesh app for up to 200 attendees, available cross-platform on PC and Meta Quest VR devices.
 

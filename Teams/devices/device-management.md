@@ -196,12 +196,20 @@ To reassign a configuration profile to the existing assigned devices, without ma
 
 #### Frequently asked questions
 
-1. What is partial application of configuration profiles
+1. What is partial application of configuration profiles?  
+*Previously, when a configuration profile is assigned to a device, all settings in the profile—including those left unconfigured—are applied with their default values. This can lead to unintended changes, especially to critical settings like __language__ and __time zone__, which vary across regions.  
+__Partial Application of configuration profiles__ gives admins more control and transparency when applying settings to Android devices. With this update, you can now configure and apply only the necessary settings without unintentionally overriding other existing settings on the device.*
 
-1. What if a device doesn't support partial application of configuration profiles?
+1. What if a device doesn't support partial application of configuration profiles?  
+I*f a configuration profile is assigned to a device that doesn't support Partial application of configuration profiles, all the settings in the profile, including those left unconfigured, are applied with their default values.* 
 
-1. What happens to the existing configuration profiles created before the launch of Partial application of configuration profiles feature?
+1. What happens to the existing configuration profiles created before the launch of Partial application of configuration profiles feature?  
+*The existing profiles that were created before the launch of Partial application of configuration profiles, will also support the feature. Because the old configuration profiles had all the settings configured with the default values, the same will continue in the new design as well. In case, you don't want any setting to be configured, change their value to "Not configured" and click Save.*
 
+1. What is the meaning of "Not configured" value in the new design of configuration profiles?
+
+   *Any setting that is left in "Not configured" state will not be applied to the assigned devices and whatever value the setting had on the device will prevail.*
+   
 #### Best practices for managing configuration profiles
 
 When configuring Teams Android devices, especially in organizations with multiple locations and different device configurations, managing configuration profiles can become complex. Teams Android devices allow for a variety of settings (e.g., Language, Timezone, Touch controls, Dual display mode, and Whiteboard) which may require the creation of multiple profiles to meet the needs of different teams, rooms, or locations. Here are key considerations for effective management: 

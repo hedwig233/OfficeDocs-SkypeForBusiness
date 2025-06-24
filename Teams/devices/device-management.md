@@ -112,27 +112,79 @@ In addition to the health status of the device, the following issues are also su
 
 ### Use configuration profiles in Teams
 
-Use configuration profiles to manage settings and features for different Teams devices in your organization, including Teams Rooms on Android, Teams displays, Teams phone, and Teams panels. You can create or upload configuration profiles to include settings and features you want to enable or disable, and then assign a profile to a device or set of devices.
+Use configuration profiles to manage settings and features for different Teams Android devices in your organization, including Teams Rooms on Android, Teams displays, Teams phone, and Teams panels. You can create a configuration profile to include settings and features you want to enable or disable and then assign it to a device or set of devices. 
+
+> [!IMPORTANT]
+> We have made few changes in the current configuration profile design to support Partial application of configuration profiles. With this update, you can now configure and apply only the necessary settings without unintentionally overriding other existing settings on the device.
+
+Here are the different scenarios you can utilize configuration profiles for your Teams device settings management.
 
 #### Create a configuration profile
 
 To create a configuration profile for a Teams device type:
 
 1. In the left navigation, go to **Teams Devices** > select the Teams device type > **Configuration profiles**. For example, select **Teams Devices** > **Teams panels** > **Configuration profiles** to create a new configuration profile for Teams panels.
-2. Click **Add**.
-3. Enter a name for the profile and optionally add a friendly description.
-4. Specify the settings you want for the profile, and then click **Save**.
-   The newly created configuration profile is displayed in the list of profiles.
+1. Click **Add**.
+1. Enter a name for the profile and optionally add a friendly description.
+1. By default, all the settings in the profile will be in “Not configured” state
+
+1. Change the settings you want for the profile from “Not configured” to the required value, and then click __Review changes__.
+
+1. A “Review configured settings” pop up appears. Compare and review the current and new values of the settings that were changed. Click on __Save changes.__
+
+1. The newly created configuration profile is displayed in the list of profiles.  
+![User's image](media/device-management/image.png)
 
 #### Assign a configuration profile
 
 After creating a configuration profile for a Teams device type, assign it to one or more devices.
 
 1. In the left navigation, go to **Teams Devices** > select the Teams device type. For example, to assign a configuration profile to a Teams panels device, select **Teams Devices** > **Teams panels**.
-2. Select one or more devices, and then click **Assign configuration**.  
-3. In the **Assign a configuration** pane, search for configuration profile to assign to the selected devices.
-4. Click **Apply**.
-   For the devices to which you applied the configuration policy, the **Action** column displays **Config Update** and the **Configuration profile** column displays the configuration profile name.
+1. Select one or more devices, and then click **Assign configuration**.  
+1. In the **Assign a configuration** pane, search for configuration profile to assign to the selected devices.
+1. Click **Apply**.
+
+1. For the devices to which you applied the configuration profile, only the settings that were changed and reviewed by the admin will be configured.
+
+1. The status of the configuration profile assignment can be checked for the device, in the History tab. The __Action__ column displays __Config Update__ and the __Configuration profile__ column displays the configuration profile name.
+
+1. If the OEM of any of the selected devices do not support **Partial application of configuration profiles** feature yet, you will see a warning in the Assign a configuration pane as below  
+![User's image](media/device-management/image1.png)
+
+Please refer to the below table for more details on the OEM supporting this feature
+
+   |OEM|Device type|Minimum FW version|
+   | -------- | -------- | -------- |
+   |Audiocodes|Phones|AOSP Firmware: 2.3.497|
+   |Audiocodes|MTR-A, Panels|AOSP Firmware: 2.8.208|
+   |Cisco|MTR-A, Panels|AOSP Firmware: 11.24.1.8|
+   |DTEN|MTR-A|D7X 1.6.13 + Bar 1.3.13 + Mate 2.3.13_AOSP|
+   |Poly|Phones|9.1.0.9017|
+   |Yealink|Phones|122.15.0.166_CP|
+   
+#### Edit an existing configuration profile
+
+To edit an existing configuration profile,
+
+1. In the left navigation, go to __Teams Devices__ > select the Teams device type > __Configuration profiles__. For example, select __Teams Devices__ > __Teams panels__ > __Configuration profiles__ to edit an existing configuration profile for Teams panels.
+
+1. Click on the configuration profile you want to edit. Change the settings you want for the profile and click on __Review changes.__
+
+1. A “Review configured settings” pop up appears. Compare and review the current and new values of the settings that were changed. Click on __Save changes.__
+
+1. The changes in the settings will be automatically applied to the devices that has the configuration profile assigned.
+
+1. In the left navigation, go to __Teams Devices__ > select the Teams device type > __Configuration profiles__. For example, select __Teams Devices__ > __Teams panels__ > __Configuration profiles__ to edit an existing configuration profile for Teams panels.
+
+1. Click on the configuration profile you want to edit. Change the settings you want for the profile and click on __Review changes.__
+
+1. A “Review configured settings” pop up appears. Compare and review the current and new values of the settings that were changed. Click on __Save changes.__
+
+1. The changes in the settings will be automatically applied to the devices that has the configuration profile assigned.
+
+#### Reassign an existing configuration profile
+
+To 
 
 #### Best practices for managing configuration profiles
 

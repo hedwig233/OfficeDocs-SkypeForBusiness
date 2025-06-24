@@ -31,7 +31,7 @@ description: Learn how to manage real-time text (rtt) for your users’ meetings
 
 ## Overview
 
-Real-time text (RTT) in Microsoft Teams allows participants to instantly send and see written messages on the screen during calls and meetings. RTT displays each character while participants type, which is beneficial for participants with accessibility needs and in situations where voice communication isn’t practical. Unlike chat, RTT messages are sent and received immediately, without participants taking any extra action to send. To learn more about the RTT experience for your users, see [Real-Time Text (RTT) In Microsoft Teams](https://support.microsoft.com/office/real-time-text-rtt-in-microsoft-teams-bd56f3ce-1ed6-4521-94a1-7244304b67f6).
+Real-time text (RTT) in Microsoft Teams allows participants to instantly send and see written messages on the screen during calls and meetings. RTT displays each character while participants type, which is beneficial for participants with accessibility needs and in situations where voice communication isn’t practical. Unlike chat, RTT messages are sent and received immediately, without participants taking any extra action to send.
 
 :::image type="content" source="media/rtt-meetings-small.png" alt-text="Screenshot of a Teams meeting where participants are using RTT." lightbox="media/rtt-meetings-expand.png":::
 
@@ -90,6 +90,8 @@ Set-CsTeamsCallingPolicy -Identity <policy name> -RealTimeText Disabled
 
 - To see RTT in recordings, users must turn on captions.  
 - Users joining meetings from Microsoft Teams Rooms, can see, but can’t send RTT on the screen.
+
+To learn more about the RTT experience for your users, see [Real-Time Text (RTT) In Microsoft Teams](https://support.microsoft.com/office/real-time-text-rtt-in-microsoft-teams-bd56f3ce-1ed6-4521-94a1-7244304b67f6).
 
 ## Feature support
 

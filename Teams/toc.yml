@@ -20,7 +20,7 @@ items:
             - name: Use Network Planner for Teams
               href: network-planner.md
             - name: Network Planner walkthrough
-              href: tutorial-network-planner-example.yml
+              href: tutorial-network-planner-example.md
             - name: Proxy servers for Teams or Skype for Business Online
               href: proxy-servers-for-skype-for-business-online.md
             - name: Plan for lifecycle management in Teams
@@ -325,6 +325,8 @@ items:
           href: /microsoft-365/compliance/ediscovery-teams-investigation?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json
         - name: Export API for Teams content
           href: export-teams-content.md
+        - name: Export Teams content with Copilot
+          href: export-teams-content-copilot.md
         - name: Information barriers
           href: /microsoft-365/compliance/information-barriers-teams?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json
         - name: Information barriers and shared channels
@@ -413,6 +415,8 @@ items:
           href: alerts/alerts-in-progress-meeting-audio.md
         - name: Managing policy packages in Teams
           href: manage-policy-packages.md
+        - name: Detect sensitive content during screen sharing
+          href: detect-sensitive-content.md
         - name: Encrypt meetings
           href: end-to-end-encrypted-meetings.md
         - name: Restrict copying and forwarding
@@ -505,6 +509,10 @@ items:
           href: aa-cq-real-time-reports.md
         - name: Auto attendant and Call queue historical reports
           href: aa-cq-cqd-historical-reports.md
+    - name: Licensing
+      items:
+        - name: Teams Premium licensing
+          href: teams-add-on-licensing/licensing-enhance-teams.md
 
 - name: Manage and monitor Teams
   items: 
@@ -970,6 +978,8 @@ items:
               href: meeting-transcription-captions.md
             - name: Meeting recording and transcript storage and permissions
               href: tmr-meeting-recording-change.md
+            - name: Manage real-time text (RTT)
+              href: teams-real-time-text.md
         - name: Integration
           items:
             - name: eCDN
@@ -1240,8 +1250,6 @@ items:
       items:
         - name: Intelligent recap for teams calls
           href: intelligent-recap-calls-meetings.md#intelligent-call-recap
-        - name: Teams Premium licensing
-          href: teams-add-on-licensing/licensing-enhance-teams.md
     - name: PSTN connectivity options
       items:
         - name: Overview
@@ -1356,46 +1364,34 @@ items:
                       href: direct-routing-protocols-media.md
     - name: Phone numbers
       items: 
-        - name: Manage phone numbers for your organization
-          href: manage-phone-numbers-landing-page.md
-        - name: Search for phone numbers for users
-          href: search-for-phone-numbers-for-users.md
-        - name: Manage phone numbers for users
-          href: assign-change-or-remove-a-phone-number-for-a-user.md
-        - name: Manage the usage of a phone number
-          href: manage-the-usage-of-a-phone-number.md
-        - name: See a list of phone numbers in your organization
-          href: see-a-list-of-phone-numbers-in-your-organization.md
-        - name: Manage phone numbers for Calling Plan and services
-          items: 
+        - name: Get phone numbers into your tenant
+          items:
             - name: Overview
-              href: manage-phone-numbers.md
-            - name: Get phone numbers for your users
-              href: getting-phone-numbers-for-your-users.md
-            - name: Get service phone numbers
-              href: getting-service-phone-numbers.md
-            - name: How many phone numbers can you get?
-              href: how-many-phone-numbers-can-you-get.md
-            - name: Transfer phone numbers
-              items: 
-                - name: Port planning
-                  href: phone-number-calling-plans/port-order-overview.md
-                - name: Transfer phone numbers to Teams
+              href: manage-phone-numbers-landing-page.md
+            - name: Get Microsoft Teams Calling plan phone numbers
+              items:  
+                - name: Get new Calling Plan numbers
+                  href: getting-phone-numbers-for-your-users.md
+                - name: Port in existing numbers
                   href: phone-number-calling-plans/transfer-phone-numbers-to-teams.md
-                - name: Manually submit a port order
-                  href: phone-number-calling-plans/manually-submit-port-order.md
-                - name: What's the status of your port orders?
-                  href: phone-number-calling-plans/port-order-status.md
-            - name: Supported rate centers and coverage
-              href: phone-number-calling-plans/supported-rate-centers-coverage-matrix.md
-        - name: Manage phone numbers for Operator Connect
-          href: operator-connect-configure.md#set-up-phone-numbers
-        - name: Manage phone numbers for Teams Phone Mobile
-          href: operator-connect-mobile-configure.md#step-2-manage-phone-numbers-and-assign-licenses
-        - name: Manage phone numbers for Direct Routing
-          href: direct-routing-enable-users.md#configure-the-phone-number-and-enable-enterprise-voice
-        - name: Licensing and phone number management
-          href: phone-numbers-licensing-changes.md
+            - name: Get Operator Connect phone numbers
+              href: get-phone-numbers-with-operator-connect.md
+            - name: Get Teams Phone Mobile phone numbers
+              href: get-phone-numbers-with-teams-phone-mobile.md
+            - name: Get Direct Routing phone numbers
+              href: get-phone-numbers-with-direct-routing.md
+            - name: Porting overview
+              href: phone-number-calling-plans/port-order-overview.md
+        - name: Manage phone numbers in your tenant
+          items:
+            - name: See a list of phone numbers in your organization
+              href: see-a-list-of-phone-numbers-in-your-organization.md
+            - name: Manage phone numbers for users
+              href: assign-change-or-remove-a-phone-number-for-a-user.md
+            - name: Manage the usage of a phone number
+              href: manage-the-usage-of-a-phone-number.md
+            - name: Licensing and phone number management
+              href: phone-numbers-licensing-changes.md
     - name: SMS
       items:
         - name: Overview
@@ -1774,7 +1770,7 @@ items:
                       href: rooms/pro-portal-settings.md
                     - name: Signal settings
                       href: rooms/signal-settings.md  
-                    - name: Signals availability
+                    - name: Health signals
                       href: rooms/signals.md
                     - name: Configure ServiceNow
                       href: rooms/microsoft-teams-rooms-configure-servicenow.md
@@ -1935,7 +1931,7 @@ items:
           href: teams-custom-app-policies-and-settings.md
         - name: Publish custom apps submitted using API
           href: submit-approve-custom-apps.md
-        - name: Manage custom apps created using Power Platform
+        - name: Manage shared agents
           href: manage-power-platform-apps.md
 
     - name: Admin controls to govern apps

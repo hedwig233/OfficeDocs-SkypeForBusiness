@@ -18,6 +18,8 @@ description: "You edit the settings for Resiliency and configure the following p
 ---
 
 # Registrar Settings Expander for Lync Server for 2010
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 You edit the settings for **Resiliency** and configure the following properties:
   

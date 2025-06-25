@@ -55,7 +55,7 @@ We currently support the following sensitive content categories in English:
 This feature is supported on Teams desktop, web, mobile, and video-based screen sharing (VBSS).  
 
 > [!NOTE]
-> End-to-end encryption is turned off in meetings where sensitive content detection is turned on.
+> End-to-end encryption isn't available in meetings where sensitive content detection is turned on.
 
 To learn more about how your users use this feature, see [Sensitive content detection in Microsoft Teams meetings](https://support.microsoft.com/office/sensitive-content-detection-in-microsoft-teams-meetings-11f235f9-a170-4490-8bcb-703019d20a63).
 

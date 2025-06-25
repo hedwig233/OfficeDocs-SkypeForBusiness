@@ -211,6 +211,7 @@ If you have a 3PIP or SIP device, you must have the following:
 |          |405HDG<sup>1</sup>     |3.2.1      |2.2.16.681 |   |   |
 |          |420HD<sup>1</sup>      |3.2.1      |2.2.16.681 |   |   |
 |          |420HDG<sup>1</sup>     |3.2.1      |2.2.16.681 |   |   |
+|          |425HD<sup>1</sup>      |3.5.1.75   |3.5.1.75   |   |   |
 |          |430HD<sup>1</sup>      |3.2.1      |2.2.16.681 |   |   |
 |          |430HDG<sup>1</sup>     |3.2.1      |2.2.16.681 |   |   |
 |          |440HD<sup>1</sup>      |3.2.1      |2.2.16.681 |   |   |
@@ -231,6 +232,7 @@ If you have a 3PIP or SIP device, you must have the following:
 |          |MP502<sup>3</sup>                  |7.26A.356.075      |7.26A.356.773  |ATA   | All ports available  |
 |          |MP504<sup>3</sup>                  |7.26A.356.075      |7.26A.356.773  |ATA   | All ports available  |
 |          |MP508<sup>3</sup>                  |7.26A.356.075      |7.26A.356.773  |ATA   | All ports available  |
+|          |MP508-FXS-FXO<sup>3</sup>          |7.26A.356.075      |7.27A.356.178  |ATA   | All ports available  |
 |          |MP516<sup>3</sup>                  |7.26A.356.075      |7.26A.356.773  |ATA   | All ports available  |
 |          |MP524<sup>3</sup>                  |7.26A.356.075      |7.26A.356.773  |ATA   | All ports available  |
 |          |MP532<sup>3</sup>                  |7.26A.356.075      |7.26A.356.773  |ATA   | All ports available  |

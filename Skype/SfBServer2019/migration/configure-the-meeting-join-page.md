@@ -16,6 +16,8 @@ description: "When a user clicks a meeting link in a meeting request, the meetin
 
 # Configure the meeting join page
 
+[!INCLUDE [appliesto-xxx-2019-sub](../includes/appliesto-xxx-2019-sub.md)]
+
 When a user clicks a meeting link in a meeting request, the meeting join page detects which client is already installed on the user's computer. If a client is already installed, that client opens and joins the meeting. If a client is not installed, by default the Web App opens.
   
 You can modify the behavior of the meeting join page if you want to allow users to join meetings. These configuration options have been removed from the Control Panel, but you configure them by using the CsWebServiceConfiguration cmdlet.

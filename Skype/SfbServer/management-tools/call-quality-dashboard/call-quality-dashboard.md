@@ -17,6 +17,8 @@ description: "Summary: Learn about the Call Quality Dashboard, which is a report
 ---
 
 # Call Quality Dashboard for Skype for Business Server
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 **Summary:** Learn about the Call Quality Dashboard, which is a reporting tool for Skype for Business Server.
  

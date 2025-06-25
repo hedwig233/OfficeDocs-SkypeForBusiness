@@ -16,6 +16,8 @@ description: "You can move a single user or groups of users to your new Microsof
 
 # Phase 4: Move test users to the pilot pool
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../includes/appliesto-xxx-2019-sub.md)]
+
 You can move a single user or groups of users to your new Microsoft Skype for Business Server 2019 deployment using the following two methods: Skype for Business Server Control Panel and Skype for Business Server Management Shell. The topics in this section describe tasks you must complete during pilot deployment, as well as prior to moving your deployment of Skype for Business Server 2019 from a pilot deployment to a production-level deployment.
   
 ## In this section

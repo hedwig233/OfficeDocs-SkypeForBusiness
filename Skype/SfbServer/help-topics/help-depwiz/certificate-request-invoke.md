@@ -18,7 +18,9 @@ description: "The Executing Commands page displays a task status pane as the com
 ---
 
 # Certificate Request (Invoke)
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The **Executing Commands** page displays a task status pane as the commands run for the generation of the certificate request. After the tasks are completed, the drop-down list below the summary pane contains a list of log files. Use the drop-down list to select a log file to view, and then select **View Log**. Internet Explorer starts and displays the log file. If the request fails, you should review the log file(s) to determine the cause of the failure. You can rerun the certificate request to resolve the issue, correcting the problem indicated in the log file. Continue through the certificate request pages and request the certificate again.
   
 

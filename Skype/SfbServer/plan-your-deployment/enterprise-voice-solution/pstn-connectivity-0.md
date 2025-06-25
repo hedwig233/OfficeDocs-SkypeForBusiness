@@ -20,6 +20,8 @@ description: "Plan for PSTN connectivity in Enterprise Voice in Skype for Busine
 ---
 
 # Plan for PSTN connectivity in Skype for Business Server
+
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 Plan for PSTN connectivity in Enterprise Voice in Skype for Business Server.
   

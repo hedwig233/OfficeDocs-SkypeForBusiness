@@ -17,6 +17,8 @@ description: "Learn how to back up Response Group Service (RGS) data in Skype fo
 
 # Back up Response Group Service (RGS) data
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](includes/appliesto-xxx-2019-sub.md)]
+
 With the Skype for Business Server 2019 July cumulative update, we’ve included the ability to include RGS data as part of the standard backup.
 
 ## RGS data replication
@@ -53,7 +55,7 @@ To try RGS data replication functionality, follow the steps below:
 1. Update RGS Data on source pool and perform another failover to check that changes are reflected on backup pool. RGS should behave in same way as it was behaving before failover.
 
 > [!TIP]
-> It is recommended you perform these steps on a bulk of data and do frequent failover and failbacks. Any new RGS created after this CU update should also be replicated.
+> It's recommended you perform these steps on a bulk of data and do frequent failover and failbacks. Any new RGS created after this CU update should also be replicated.
 
 ## RGS cmdlets
 

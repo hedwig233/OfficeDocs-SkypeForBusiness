@@ -19,7 +19,9 @@ description: "Summary: Learn how to prepare your environment for an installation
 ---
 
 # Install Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to prepare your environment for an installation of Skype for Business Server.
   
 This article walks you through an example installation of Skype for Business Server. This article doesn't attempt to cover all of the procedures you need to perform a full Skype for Business Server installation. The goal is to provide example procedures in a narrowly defined topology that includes basic meet-and-share functionality.

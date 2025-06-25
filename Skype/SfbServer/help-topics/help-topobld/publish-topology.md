@@ -18,6 +18,8 @@ description: "The Publish the topology page is displayed when you begin the publ
 ---
 
 # Publish Topology
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The **Publish the topology** page is displayed when you begin the publish process. Read and confirm that the tasks listed are complete before you proceed. When you're ready to proceed, select **Next**. If you must close out of the publishing process, select **Cancel**.
   

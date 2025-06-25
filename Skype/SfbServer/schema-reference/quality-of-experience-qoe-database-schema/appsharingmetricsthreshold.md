@@ -16,7 +16,9 @@ description: "The AppSharingMetricsThreshold table contains optimal and acceptab
 ---
 
 # AppSharingMetricsThreshold table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)] 
+
 The AppSharingMetricsThreshold table contains optimal and acceptable values for the Quality of Experience metrics used with application sharing. These thresholds are used to determine if the application sharing experience should be classified as poor.
   
 This table was introduced in Microsoft Lync Server 2013.

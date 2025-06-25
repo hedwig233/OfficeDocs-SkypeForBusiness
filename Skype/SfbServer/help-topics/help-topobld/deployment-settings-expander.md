@@ -19,6 +19,8 @@ description: "You can edit the properties for an existing deployment with the fo
 
 # Deployment Settings Expander
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 You can edit the properties for an existing deployment with the following sections:
 
 - SIP domain
@@ -37,11 +39,11 @@ To update an existing additional SIP domain name, select the domain name and mak
 
 To remove a defined additional SIP domain name, select the domain name, and then click **Remove**.
 
-When you are finished with all changes on the Edit Properties page, click **OK** to save the changes. Click **Cancel** to discard changes.
+When you're finished with all changes on the Edit Properties page, click **OK** to save the changes. Click **Cancel** to discard changes.
 
 ## Simple URLs
 
-To modify or define the simple URLs, you decide which of the three simple URLs that you will edit or change. You can choose from the Phone access URL, the Meeting URL, and the Administrative access URL.
+To modify or define the simple URLs, you decide which of the three simple URLs that you'll edit or change. You can choose from the Phone access URL, the Meeting URL, and the Administrative access URL.
 
 To modify either the Phone access URL or the Meeting URL, select the URL that you need to change. Click **Edit URL**. You then edit the URL, and click **OK** to save the URL. Click **Cancel** to discard any changes.
 
@@ -55,18 +57,18 @@ To make a different URL the active URL (as noted by the green checkmark next to 
 If you need to remove a URL, select the URL and click **Remove**.
 
 > [!CAUTION]
-> Read the information on the simple URLs settings dialog page carefully. Removing a meeting URL can cause meetings that have been scheduled by users to be inaccessible. Consider leaving the former URL after you make the new meeting URL active. When you are sure that users are no longer using the old meeting URL, you can safely remove it.
+> Read the information on the simple URLs settings dialog page carefully. Removing a meeting URL can cause meetings that have been scheduled by users to be inaccessible. Consider leaving the former URL after you make the new meeting URL active. When you're sure that users are no longer using the old meeting URL, you can safely remove it.
 
 To edit or change the Administrative access URL, edit the entry.
 
-When you are finished with all changes on the Edit Properties page, click **OK** to save the changes. Click **Cancel** to discard changes.
+When you're finished with all changes on the Edit Properties page, click **OK** to save the changes. Click **Cancel** to discard changes.
 
 ## Central Management Server
 
 The Central Management Server can be changed from one defined Front End pool to another defined Front End pool. To change the location of the Central Management Server, select the Front End pool from the drop-down list under **Front End server to install Central Management Server on**. A Front End Server can be an Enterprise Edition Front End pool or a Standard Edition Front End Server.
 
 > [!IMPORTANT]
-> After you have defined, published, and deployed the Central Management store for the infrastructure, you cannot change the location of the Central Management store without relocating the Central Management store to another Front End by an external process.
+> After you have defined, published, and deployed the Central Management store for the infrastructure, you can't change the location of the Central Management store without relocating the Central Management store to another Front End by an external process.
 
 For details about moving the Central Management store, see [Move-CsManagementServer](/powershell/module/skype/move-csmanagementserver?view=skype-ps) in the Windows PowerShell cmdlet reference.
 

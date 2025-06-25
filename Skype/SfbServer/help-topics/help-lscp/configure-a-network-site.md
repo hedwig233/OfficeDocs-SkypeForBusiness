@@ -17,7 +17,9 @@ ms.assetid: 9d65238a-d255-4b13-abe8-e4301b44c21c
 description: "What do you want to do? Click the link to the task that you want to perform."
 ---
 
-# Configure a Network Site
+# Configure a Network Site.
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
 
 What do you want to do? Click the link to the task that you want to perform.
 

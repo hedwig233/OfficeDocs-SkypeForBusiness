@@ -19,6 +19,8 @@ description: "To set or modify the Next hop pool that the Edge Servers will use 
 
 # Edge Next Hop Settings Expander
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 To set or modify the **Next hop pool** that the Edge Servers will use to communicate to the internal infrastructure, select a Director, Director pool, Front End Server, or Front End Server pool, from the list. Only Directors or Front End Servers that have been configured in Topology Builder appear in the list.
 
 For details about defining and configuring the settings for Edge services, see [Define Your Edge Topology](/previous-versions/office/lync-server-2013/lync-server-2013-define-your-edge-topology).

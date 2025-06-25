@@ -16,6 +16,8 @@ description: "The following topics detail the columns in each of the Persistent 
 ---
 
 # Persistent Chat Server table details
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 The following topics detail the columns in each of the Persistent Chat database schema tables.
   

@@ -19,6 +19,8 @@ description: "What do you want to do? Click the link to the task that you want t
 
 # Configure a Network Region Route
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 What do you want to do? Click the link to the task that you want to perform.
 
 - [Configuring Network Region Routes](/previous-versions/office/lync-server-2013/lync-server-2013-creating-or-modifying-network-region-routes)

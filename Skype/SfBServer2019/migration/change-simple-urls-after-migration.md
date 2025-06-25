@@ -16,6 +16,8 @@ description: "Skype for Business Server supports simple URLs."
 
 # Change simple URLs after migration
 
+[!INCLUDE [appliesto-xxx-2019-sub](../includes/appliesto-xxx-2019-sub.md)]
+
 Skype for Business Server supports three simple URLs:
   
 - **Meet** is used as the base URL for all conferences in the site or organization. With the Meet simple URL, links to join meetings are easy to comprehend, and easy to communicate and distribute. 

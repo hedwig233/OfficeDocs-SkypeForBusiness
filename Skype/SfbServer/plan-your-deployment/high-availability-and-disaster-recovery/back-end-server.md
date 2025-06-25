@@ -18,6 +18,8 @@ description: "Learn about the Back End Server high availability options supporte
 
 # Back End Server high availability in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Learn about the Back End Server high availability options supported in Skype for Business Server, including AlwaysOn Availability Groups, AlwaysOn Failover Cluster Instances, database mirroring, and SQL failover clustering.
   
 To enhance high availability for your Back End Servers, you have four options:
@@ -130,6 +132,7 @@ Skype for Business Server supports AlwaysOn with the following database software
 > SQL Server 2022, 2019, 2017, and 2016 are the only versions supported by Skype for Business Server 2019.
 
 > [!NOTE]
+
 > Always On Availability Groups is **not** supported in SQL 2016, 2017, 2019, and 2022 Standard Editions but you can use Always On Failover Cluster Instances. See [Editions and supported features of SQL Server 2016](/sql/sql-server/editions-and-components-of-sql-server-2016?view=sql-server-2017&preserve-view=true) to learn more.
   
 > [!IMPORTANT]

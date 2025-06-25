@@ -17,20 +17,22 @@ description: "Understand how to plan and deploy Skype for Business Server so tha
 
 # Capacity Planning for Skype for Business Server 2019
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../includes/appliesto-2015-2019-sub.md)]
+
 This article provides guidance on how many servers you need at a site for the number of users at that site, according to the usage described in [User models in Skype for Business Server](../../SfbServer/plan-your-deployment/capacity/user-models.md)
 
 ## Tested Hardware Platform
 
-We've done our performance testing on the hardware described in the table below. All our recommendations and results are based on this hardware. If you decide to try using less powerful hardware than what you see listed here, please be aware that you may face functionality problems or poor performance.
+We've done our performance testing on the hardware described in the table below. All our recommendations and results are based on this hardware. If you decide to try using less powerful hardware than what you see listed here, be aware that you may face functionality problems or poor performance.
 
 **Hardware Used in Performance Testing**
 
 |Hardware component|Recommended|
 |:-----|:-----|
-|CPU   |Intel Xeon E5-2673 v3 dual processor, 6-core, 2.4 gigahertz (GHz) or higher.  <br/> Intel Itanium processors are not supported for Skype for Business Server 2019 roles.   |
+|CPU   |Intel Xeon E5-2673 v3 dual processor, 6-core, 2.4 gigahertz (GHz) or higher.  <br/> Intel Itanium processors aren't supported for Skype for Business Server 2019 roles.   |
 |Memory   |32 gigabytes (GB).   |
-|Disk   |EITHER:  <br/> • 8 or more 10000 RPM hard disk drives with at least 72 GB free disk space (two of the disks using RAID 1 and 6 using RAID 10).  <br/> OR  <br/> • Solid state drives (SSDs) able to provide the same free space and similar performance to 8 10000 RPM mechanical disk drives.   |
-|Network   |1 dual-port network adapter, 1 Gbps or higher (2 network adapters can be used, but they need to be teamed with a single MAC address and a single IP address).  <br/> Dual or multi-homed configurations are **not** supported for Front End Servers, Back End Servers, and Standard Edition servers. <br/> As long as they are not exposed to the operating system and are being used to monitor and manage server hardware, you can have out-of-band management systems, such as DRAC or ILO. This scenario doesn't constitute a multi-homed server, and it is supported.   |
+|Disk   |EITHER:  <br/> • 8 or more 10,000 RPM hard disk drives with at least 72-GB free disk space (two of the disks using RAID 1 and 6 using RAID 10).  <br/> OR  <br/> • Solid state drives (SSDs) able to provide the same free space and similar performance to 8 10000 RPM mechanical disk drives.   |
+|Network   |1 dual-port network adapter, 1 Gbps or higher (2 network adapters can be used, but they need to be teamed with a single MAC address and a single IP address).  <br/> Dual or multi-homed configurations are **not** supported for Front End Servers, Back End Servers, and Standard Edition servers. <br/> As long as they aren't exposed to the operating system and are being used to monitor and manage server hardware, you can have out-of-band management systems, such as DRAC or ILO. This scenario doesn't constitute a multi-homed server, and it's supported.   |
 
 ## Summary of Results
 
@@ -51,7 +53,7 @@ The following table summarizes our recommendations.
 > [!NOTE]
 > Stretched pools aren't supported for this server role.
 
-In a Front End pool, you should have one Front End Server for every 6,660 users homed in your pool, assuming that hyper-threading is enabled on all servers in the pool, that you are using SQL Server Express Edition, and that the server hardware meets the recommendations in [Server requirements for Skype for Business Server 2019](system-requirements.md). The maximum number of users in one Front End pool is 106,000, again assuming that hyper-threading is enabled and SQL Server Express Edition is used on all the servers in your pool. If you have more than 106,000 users at a site, you can deploy more than one Front End pool.
+In a Front End pool, you should have one Front End Server for every 6,660 users homed in your pool, assuming that hyper-threading is enabled on all servers in the pool, that you're using SQL Server Express Edition, and that the server hardware meets the recommendations in [Server requirements for Skype for Business Server 2019](system-requirements.md). The maximum number of users in one Front End pool is 106,000, again assuming that hyper-threading is enabled and SQL Server Express Edition is used on all the servers in your pool. If you have more than 106,000 users at a site, you can deploy more than one Front End pool.
 
 When you account for the number of users in a Front End pool, include any users homed on Survivable Branch Appliances and Survivable Branch Servers at branch offices that are associated with this Front End pool.
 
@@ -86,7 +88,7 @@ The maximum supported conference size hosted by a regular Skype for Business Ser
 
 Regardless of the number of users homed on the Front End pool or Standard Edition server, Skype for Business Server supports a minimum of 125 other users participating in smaller conferences on the same pool or server which is hosting a 250-user conference.
 
-To enable conferences that have between 250 and 1000 users, you can set up a separate Front End pool just to host those conferences. This Front End pool won't host any users. For details, please see [Plan for large meetings in Skype for Business Server](../../SfbServer/plan-your-deployment/conferencing/large-meetings.md).
+To enable conferences that have between 250 and 1000 users, you can set up a separate Front End pool just to host those conferences. This Front End pool won't host any users. For details, see [Plan for large meetings in Skype for Business Server](../../SfbServer/plan-your-deployment/conferencing/large-meetings.md).
 
 If your organization has a lot more mixed-mode conferences than are assumed in the user model, you might need to deploy more Front End Servers than we recommendation in this document (up to a limit of 16 Front End Servers). For details about the assumptions in the user model, see [User models in Skype for Business Server](../../SfbServer/plan-your-deployment/capacity/user-models.md).
 

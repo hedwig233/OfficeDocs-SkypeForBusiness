@@ -21,6 +21,8 @@ description: "Configure an SNMP application to work with E9-1-1 in Skype for Bus
 
 # Configure an SNMP application in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Configure an SNMP application to work with E9-1-1 in Skype for Business Server Enterprise Voice. 
   
 Skype for Business Server includes a standard web service interface that you can use to connect the Location Information service to Simple Network Management Protocol (SNMP) applications that match MAC addresses with port and switch information. 
@@ -42,4 +44,4 @@ If an SNMP application is installed and the Location Information service fails t
 
 ## See also
 
-[Set-CsWebServiceConfiguration](/powershell/module/skype/set-cswebserviceconfiguration?view=skype-ps)
+[Set-CsWebServiceConfiguration](/powershell/module/skype/set-cswebserviceconfiguration?view=skype-ps&preserve-view=true)

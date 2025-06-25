@@ -18,7 +18,9 @@ description: "On the Executing Commands page, review the summary information for
 ---
 
 # Import Certificate (Invoke)
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 On the **Executing Commands** page, review the summary information for the imported certificate. In the drop-down list, select the Import Certificate log file. Be sure that the Import Certificate log file is visible in the drop-down list. Click **View Log** to review the details of the certificate import. When you are finished reviewing the summary and the log file, click **Finish**.
   
 

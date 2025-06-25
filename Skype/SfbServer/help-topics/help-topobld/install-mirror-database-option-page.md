@@ -18,6 +18,8 @@ description: "You configure Mirror Database Settings by defining the following:"
 ---
 
 # Install Mirror Database Option Page
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 You configure **Mirror Database Settings** by defining the following:
   

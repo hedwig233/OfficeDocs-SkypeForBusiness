@@ -91,10 +91,10 @@ The following tables compare key features between Teams and Teams Premium. Becau
 | View attendance reports | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | In-progress meeting real time telemetry with 24 hour retention | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Customize meeting templates for your organization |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
-| Add organization branding to meeting lobbies |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
+| Users can decorate their backgrounds |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Customize meeting backgrounds for your organization |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Customize Together mode scenes for your organization |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
-| Add branding to meeting invites and meeting join launch pages |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
+| Use meeting themes to add branding to meeting invites, lobby, and pre-join screen |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Read live translated captions during meetings |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Read live translated transcripts during and after meetings |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Manage what attendees see |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
@@ -127,7 +127,7 @@ The following tables compare key features between Teams and Teams Premium. Becau
 | Set up a green room for webinar presenters and organizers| ![Image of a checkmark for yes](/office/media/icons/success-teams.png) | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Manage what attendees see |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Send custom and reminder emails to registrants |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
-| Create a webinar wait list |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
+| Create a webinar waitlist and manage the waitlist beyond capacity|  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Webinar organizers can view engagement reports |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Manually approve registrants |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | View engagement reports |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
@@ -138,6 +138,8 @@ The following tables compare key features between Teams and Teams Premium. Becau
 | Read live translated captions during webinars |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Read live translated transcripts during and after webinars |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | View the number of webinars each user attended that used a Teams Premium feature.| | ![Image of a checkmark for yes](/office/media/icons/success-teams.png)  |
+| Customize meeting backgrounds for your organization| | ![Image of a checkmark for yes](/office/media/icons/success-teams.png)  |
+| Use meeting themes to add branding to webinar invites, lobby, and pre-join screen |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 
 ### Town halls
 
@@ -173,6 +175,8 @@ The following tables compare key features between Teams and Teams Premium. Becau
 | Read live translated captions during town halls |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Read live translated transcripts during and after town halls |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Meeting chat for town hall attendees| | ![Image of a checkmark for yes](/office/media/icons/success-teams.png)   |
+| Use meeting themes to add branding to meeting invites, lobby, and pre-join screen |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
+| Customize meeting backgrounds for your organization| | ![Image of a checkmark for yes](/office/media/icons/success-teams.png)  |
 
 <sup>1</sup> If RTMP-In is enabled for a town hall, live translated captions aren't available to the attendees even if the organizer selects the languages before the town hall starts.
 <sup>2</sup> To take advantage of eCDN for all attendees, either a Teams Premium or standalone eCDN license is required. eCDN can be acquired as a standalone license, and more licenses can be purchased outside of Teams Premium, if needed. To learn about eCDN licensing, see [Microsoft eCDN](https://www.microsoft.com/en-us/microsoft-teams/ecdn).*
@@ -200,19 +204,27 @@ The following tables compare key features between Teams and Teams Premium. Becau
 | Control who can present | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Add watermarks to meetings |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | End-to-end encryption for meetings |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
-| Control who can record |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
+| Organizer can control who can record and transcribe|  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Organizer can restrict participants from copying or forwarding meeting chat messages, live captions, and transcripts |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Assign Microsoft Purview Information Protection sensitivity labels for meetings\* |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Custom user policy packages |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Prevent users from sharing content in external Teams meetings |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
+|Require unverified participants to verify their info before joining| | ![Image of a checkmark for yes](/office/media/icons/success-teams.png)  |
+|Detect sensitive content during screen sharing| | ![Image of a checkmark for yes](/office/media/icons/success-teams.png)  |
 
 \* *This feature is only available to Teams Premium users with a Microsoft 365 E5, E5 Compliance, F5 Compliance, or F5 Security + Compliance subscription. For more information on licensing requirements, see [What are the requirements to purchase Teams Premium?](#what-are-the-requirements-to-purchase-teams-premium)*
 
 ### Intelligent recap
 
+To learn more about intelligent meeting recap for meetings, webinars, town halls, and calls, see [Intelligent recap for Teams calls and meetings](../intelligent-recap-calls-meetings.md).
+
+
+> [!NOTE]
+> Intelligent recap features are also available as a part of the Microsoft 365 Copilot license.
+
 #### Intelligent meeting recap
 
-In the meeting recap, your users can find the most important parts of a meeting, captured and organized in one place. With a Teams Premium license, your users can get a more personalized rundown of their meetings with intelligent meeting recap. To learn more about intelligent meeting recap, see [Meeting recap in Microsoft Teams](https://support.microsoft.com/office/meeting-recap-in-microsoft-teams-c2e3a0fe-504f-4b2c-bf85-504938f110ef#bkmk_intelligent_meeting_recap).
+In the meeting recap, your users can find the most important parts of a meeting, webinar, or town hall captured and organized in one place. With a Teams Premium license, your users can get a more personalized rundown of their meetings with intelligent meeting recap.
 
 | Feature | Teams | Teams Premium |
 |---------|:-----:|:-------------:|
@@ -220,17 +232,30 @@ In the meeting recap, your users can find the most important parts of a meeting,
 | View meeting transcripts | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | View and use files added to meetings | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) | ![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 | View and use apps added to meetings | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
-| Navigate meeting recordings with autogenerated chapters (*coming soon*) |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
+| Navigate meeting recordings with autogenerated chapters|  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | View when a screen was shared in the meeting transcript |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | View time markers in meeting recordings when you joined or left a meeting |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Jump to different speakers with speaker timeline markers |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | View AI-generated notes and tasks from meetings |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | View when you were mentioned in a meeting\* |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
+| Multilingual meeting support |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 
 \* *Mentions of a user's name is pulled from the meeting transcript, not from an @mention tag in the meeting chat.*
 
-> [!NOTE]
-> Intelligent recap features will be available as a part of the Copilot for Microsoft 365 license.
+#### Intelligent call recap for PSTN calls
+
+| Feature | Teams | Teams Premium |
+|---------|:-----:|:-------------:|
+|AI generated notes and recommended tasks|  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
+
+#### Intelligent call recap for 1:1 peer-to-peer and group VoIP calls
+
+| Feature | Teams | Teams Premium |
+|---------|:-----:|:-------------:|
+|AI generated notes and recommended tasks|  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
+|View speaker timeline markers|  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
+|Navigate recordings with autogenerated chapters|  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
+|Users can see when they were mentioned|  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 
 ### Virtual Appointments
 
@@ -301,6 +326,7 @@ The Queues app is a Teams-native solution designed to empower organizations to m
 |Call queue and Auto attendant management directly within Teams|  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 |Real-time metrics for Call queues and Auto attendants within Queues app|  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 |Historical reporting for Call queues and Auto attendants within Queues app|  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
+|Authorized users can monitor customer calls, whisper to agents with private messages, even barge into or takeover the calls|  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 
 For a complete list of features available in the Queues app, see [Manage voice applications policies](/microsoftteams/manage-voice-applications-policies).
 
@@ -369,13 +395,14 @@ The following table shows which Teams Premium features provide primary value to 
 
 | Premium Value | Features Applied at Organizer Level | Features Applied at Attendee/User Level | Features Applied at the IT Admin Level |
 | ------------- | :---------------------------------- | :--------------------------------- | :------------------------------------- |
-| **More intelligence** | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Live translation for captions (40 languages) ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Live translation for transcripts|![Image of a checkmark for yes](/office/media/icons/success-teams.png) AI-generated chapters for intelligent meeting recap recordings</br>![Image of a checkmark for yes](/office/media/icons/success-teams.png) Personalized timeline markers in meeting recordings</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Speaker timeline markers</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Intelligent speaker search in the transcript</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) AI-generated notes and tasks | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Advanced collaboration analytics |
-| **More personalized** | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Meeting templates (configured by IT admin)</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Custom meeting branding </br>![Image of a checkmark for yes](/office/media/icons/success-teams.png)</br> Custom immersive spaces in Microsoft Mesh| ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Custom organization backgrounds</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Organization together mode scenes</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Custom user policy packages</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) View aggregated usage of Teams Premium features by users in your org|  |
-| **More protected** | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Watermarking</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Who can record</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) End-to-end encryption for online meetings (up to 200)</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) E5 customers: Microsoft Purview Information Protection sensitivity labels for Meetings | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Block incoming chats from people in the organization</br>![Image of a checkmark for yes](/office/media/icons/success-teams.png) Prevent users from sharing content in external Teams meetings</br>![Image of a checkmark for yes](/office/media/icons/success-teams.png) Audio quality alerts</br>![Image of a checkmark for yes](/office/media/icons/success-teams.png) Video quality alerts</br>![Image of a checkmark for yes](/office/media/icons/success-teams.png)Screen sharing quality alerts</br>![Image of a checkmark for yes](/office/media/icons/success-teams.png)Automatic real time telemetry with 7 day retention</br>![Image of a checkmark for yes](/office/media/icons/success-teams.png)Prevent users from sharing content when attending external Teams meetings |  |
+| **More intelligence** | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Live translation for captions (40 languages)</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Live translation for transcripts|![Image of a checkmark for yes](/office/media/icons/success-teams.png) AI-generated chapters for intelligent meeting, event, and call recap recordings</br>![Image of a checkmark for yes](/office/media/icons/success-teams.png) Personalized timeline markers in meeting recordings</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Speaker timeline markers</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Multilingual recap</br>![Image of a checkmark for yes](/office/media/icons/success-teams.png) Intelligent speaker search in the transcript</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) View live translated captions and transcripts during meetings</br>![Image of a checkmark for yes](/office/media/icons/success-teams.png) AI-generated notes and tasks | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Advanced collaboration analytics |
+| **More personalized** | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Meeting templates (configured by IT admin)</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Meeting themes for custom meeting branding </br>![Image of a checkmark for yes](/office/media/icons/success-teams.png)</br> Custom immersive spaces in Microsoft Mesh</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Meeting themes</br> | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Custom organization backgrounds</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Organization together mode scenes</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Decorate my background</br>![Image of a checkmark for yes](/office/media/icons/success-teams.png) Custom user policy packages| ![Image of a checkmark for yes](/office/media/icons/success-teams.png) View aggregated usage of Teams Premium features by users in your org |
+| **More protected** | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Watermarking</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Who can record and transcribe</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Detect sensitive content during screen sharing </br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) End-to-end encryption for online meetings (up to 200)</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) E5 customers: Microsoft Purview Information Protection sensitivity labels for Meetings | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Block incoming chats from people in the organization</br>![Image of a checkmark for yes](/office/media/icons/success-teams.png) Prevent users from sharing content in external Teams meetings</br>![Image of a checkmark for yes](/office/media/icons/success-teams.png) Audio quality alerts</br>![Image of a checkmark for yes](/office/media/icons/success-teams.png) Video quality alerts</br>![Image of a checkmark for yes](/office/media/icons/success-teams.png)Screen sharing quality alerts</br>![Image of a checkmark for yes](/office/media/icons/success-teams.png)Automatic real time telemetry with 7 day retention</br>![Image of a checkmark for yes](/office/media/icons/success-teams.png)Prevent users from sharing content when attending external Teams meetings </br>![Image of a checkmark for yes](/office/media/icons/success-teams.png)Require unverified participants to verify their info before joining |  |
 | **Advanced Virtual Appointments** | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Custom lobby room with branding, logos, and more</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) SMS notifications | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) On-demand and scheduled appointment functionality and queue views</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Analytics at departmental and organizational level</br> SMS notifications</br></br> *At the user level, these features apply to any user in the tenant who wants access to pre and post-appointment actions and data, like a meeting scheduler, supervisor, or admin.* |  |
-| **Advanced Webinars** | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Manage attendee view</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Reminder emails</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Wait lists and manual approval</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Limit registration date and time</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) RTMP-In |  |
-| **Advanced Town halls** | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Scale up to 50,000 attendees</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Concurrency limit of 50 meetings</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Email customization</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Microsoft eCDN support</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Real-time organizer analytics </br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Pre-select 10 languages for attendee captions</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Town hall attendee reactions </br>![Image of a checkmark for yes](/office/media/icons/success-teams.png) Meeting chat for town hall attendees|  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Real time monitoring of the attendee experience |
-| **Microsoft eCDN** |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Works with Teams view-only meetings, live events, and town halls</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Microsoft eCDN included as a part of the Teams Premium bundle |  |
+| **Advanced Webinars** | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Manage what attendees see</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Reminder emails</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Waitlist management beyond capacity and manual approval</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Limit registration date and time</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Use RTMP-In |![Image of a checkmark for yes](/office/media/icons/success-teams.png) View live translated captions and transcripts during webinars|  |
+| **Advanced town halls** | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Scale up to 50,000 attendees</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Concurrency limit of 50 meetings</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Email customization</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Microsoft eCDN support</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Town hall insights </br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Pre-select 10 languages for attendee captions</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Town hall attendee reactions </br>![Image of a checkmark for yes](/office/media/icons/success-teams.png) Meeting chat for town hall attendees| ![Image of a checkmark for yes](/office/media/icons/success-teams.png) View live translated captions and transcripts during town halls| ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Real time monitoring of the attendee experience |
+|**Microsoft eCDN** |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Works with Teams view-only meetings, live events, and town halls</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Microsoft eCDN included as a part of the Teams Premium bundle |  |
+|**Queues app** |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Call queue and Auto attendant management directly within Teams</br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Real-time metrics for Call queues and Auto attendants within Queues app </br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Historical reporting for Call queues and Auto attendants within Queues app </br> ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Authorized users can monitor customer calls, whisper to agents with private messages, even barge into or takeover the calls|  |
 
 ## How does Teams Premium differ from Teams Rooms Pro?
 
@@ -439,14 +466,15 @@ The following list indicates Teams Premium features that require admin configura
 - Adding watermarks to meetings.
 - Adding sensitivity labels.
 - Allowing organizers to restrict participants from copying or forwarding meeting chat messages, live captions, and transcripts
-- Using organization customized backgrounds.
+- Using organization customized backgrounds and meeting themes.
 - Using organization customized Together mode scenes.
   - Admin must create the custom Together mode scene.
 - Being assigned a custom policy package.
 - Using organization customized meeting templates.
-- Seeing organization customized branding.
+- Seeing organization customized branding, backgrounds, and themes.
 - Using eCDN for town halls, view-only meetings, and live events.
 - Using RTMP-In.
+- Requiring unverified participants to verify their info before joining meetings
 - Customizing Virtual Appointment lobby rooms with branding.
 - Hiding attendees names from meetings and webinars.
 - Using Priority account chat controls.

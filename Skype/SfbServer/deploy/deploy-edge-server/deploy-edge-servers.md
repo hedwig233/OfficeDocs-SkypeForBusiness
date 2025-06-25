@@ -19,7 +19,9 @@ description: "Summary: Learn how to deploy Edge Servers into your Skype for Busi
 ---
 
 # Deploy Edge Servers in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to deploy Edge Servers into your Skype for Business Server environment.
   
 The following sections contain steps that are meant to be followed after the Skype for Business Server [Plan for Edge Server deployments in Skype for Business Server](../../plan-your-deployment/edge-server-deployments/edge-server-deployments.md) documentation has been reviewed. The deployment steps are as follows:

@@ -17,6 +17,8 @@ description: "Summary: Read this topic to learn how to configure initial archivi
 
 # Configure archiving policies for Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Read this topic to learn how to configure initial archiving policies for Skype for Business Server users.
   
 In Skype for Business Server, you use policies to enable and disable archiving for internal communications and external communications for users who are homed on Skype for Business Server. This includes the following:

@@ -16,6 +16,8 @@ description: "tblServerIdentity contains the active chat servers in the Persiste
 ---
 
 # tblServerIdentity
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 tblServerIdentity contains the active chat servers in the Persistent Chat Server pool.
   

@@ -16,6 +16,8 @@ description: "You can view network interface information by using Windows PowerS
 
 # Viewing network interface information in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 You can view network interface information by using Windows PowerShell and the **Get-CsNetworkInterface** cmdlet. You can run this cmdlet from the Skype for Business Server Management Shell or from a remote session of Windows PowerShell.
 
 ## To view network interface information

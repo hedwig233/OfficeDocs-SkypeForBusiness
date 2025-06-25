@@ -17,6 +17,8 @@ description: "Summary: Learn about the virtualization support for Skype for Busi
 
 # Virtualization support for Skype for Business Server 2019
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../SfBServer2019/includes/appliesto-xxx-2019-sub.md)]
+
 Skype for Business Server 2019 is supported on virtualization.
 
 While virtualization is supported, there are some key points to remember:

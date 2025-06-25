@@ -17,7 +17,9 @@ description: "Summary: Manage Registrar configuration settings for Skype for Bus
 ---
 
 # Manage Registrar configuration settings in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Manage Registrar configuration settings for Skype for Business Server.
   
 You can use the Registrar to configure proxy server authentication methods. The authentication protocol you specify determines which type of challenges the servers in the pool issue to clients. The available protocols are:
@@ -126,5 +128,5 @@ You can delete the Registrar configuration settings by using Windows PowerShell 
   Get-CsProxyConfiguration | Where-Object {$_.UseNtlmForClientToProxyAuth -eq $True}| Remove-CsProxyConfiguration
   ```
 
-For details, see [Remove-CsProxyConfiguration](/powershell/module/skype/remove-csproxyconfiguration?view=skype-ps).
+For details, see [Remove-CsProxyConfiguration](/powershell/module/skype/remove-csproxyconfiguration?view=skype-ps&preserve-view=true).
 

@@ -19,6 +19,8 @@ description: "Agents are users who are designated to answer Response Group calls
 
 # Select Agents
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Agents are users who are designated to answer Response Group calls. Response groups must have an assigned agent group that identifies the agents who can receive calls for the response group. One way to create an agent group is to define a custom group by selecting eligible users. Eligible users are enabled for Skype for Business Server and Enterprise Voice.
 
 You use the **Select Agents** dialog box to select users to be added to an agent group.

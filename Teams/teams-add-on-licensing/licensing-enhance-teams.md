@@ -272,7 +272,7 @@ Microsoft Bookings makes scheduling and managing appointments a breeze. It helps
 | Allow users to join a virtual lobby waiting room | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |![Image of a checkmark for yes](/office/media/icons/success-teams.png)  |
 | Use meeting themes to customize the lobby waiting room with themes and logos |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Send SMS notifications\* |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
-| View and manage scheduled appointments in the queue |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
+| View and manage appointments in the queue |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 
 \* *SMS notifications for virtual appointments are currently available in the US, Canada, and UK.*
 
@@ -473,7 +473,7 @@ The following list indicates Teams Premium features that require admin configura
 - Using eCDN for town halls, view-only meetings, and live events.
 - Using RTMP-In.
 - Requiring unverified participants to verify their info before joining meetings
-- Customizing Virtual Appointment lobby rooms with branding.
+- Customizing Bookings and virtual appointment lobby rooms with branding.
 - Hiding attendees names from meetings and webinars.
 - Using Priority account chat controls.
 

@@ -178,8 +178,28 @@ If Teams functions correctly on this segment, and you followed all the networkin
 
 ## CVI in town halls 
 
-Presenters can join and present in Teams town halls using their own Video Teleconferencing (VTC) devices, even if they’re not Teams Rooms devices. Organizers see CVI join codes directly in the town hall’s share event dialog, making it easy to share with presenters. Once a trusted CVI device uses the join code, it enters the event as an attendee, gets promoted to a presenter, and then moves to the green room or live session. These presenters can also collaborate in the green room before the event begins, for a smooth and inclusive experience.
+Presenters can join and present in Teams town halls using their own Video Teleconferencing (VTC) devices, even if they’re not Teams Rooms devices. Organizers can share CVI join codes directly from the town hall’s share event dialog with presenters. Once a trusted CVI device uses the join code, it enters the event as an attendee, gets promoted to a presenter, and then moves to the green room or live session. These presenters can also collaborate in the green room before the event begins and use all supported features like private event chat.
 
+Organizers can access and share town hall CVI coordinates with these steps: 
+
+### New calendar 
+
+1. Select **Calendar** in Teams. 
+2. Select an upcoming town hall. 
+3. Select **Edit**. 
+4. Select **Share event**. 
+5. Under **Joining details for organizer, co-organizer and presenter**, select **Copy**. 
+6. Share the copied details with co-organizers and presenters separately through chat or email.  
+
+### Classic calendar 
+
+1. Select **Calendar** in Teams. 
+2. Right-click or open the context menu on an upcoming town hall. 
+3. Select **Manage event**.
+4. Select **Share event**. 
+5. Under **Joining details for organizer, co-organizer and presenter**, select **Copy**. 
+6. Share the copied details with required organizers, co-organizers, and presenters separately over chat or email. 
+ 
 ## PowerShell for CVI
 
 The following PowerShell cmdlets are available for you to (partially) automate the CVI deployment.

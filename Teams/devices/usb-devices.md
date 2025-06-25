@@ -82,6 +82,7 @@ If you're a manufacturer and want to join the certification program, see [How to
 |Logitech             |Brio 4k                                                    |3/25/2025       |Certified for Microsoft Teams                           |
 |Logitech             |Brio                                                       |3/25/2025       |Certified for Microsoft Teams                           |
 |Yealink              |UH48 Headset                                               |3/10/2025       |Certified for Microsoft Teams                           |
+|Dell                 |SB725 Pro Premium Soundbar                                 |3/10/2025       |Certified for Microsoft Teams                           |
 |Yealink              |WH63 E2 DECT Headset                                       |2/14/2025       |Certified for Microsoft Teams                           |
 |Lenovo               |FHD Webcam                                                 |2/13/2025       |Certified for Microsoft Teams                           |
 |EPOS                 |ADAPT E1 TWS Earbuds                                       |1/9/2025        |Certified for Microsoft Teams                           |

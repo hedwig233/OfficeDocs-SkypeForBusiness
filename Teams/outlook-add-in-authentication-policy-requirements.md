@@ -7,8 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: msteams
 ms.subservice: meetings
-ms.reviewer: jessica.wilczek,mfoland
-ms.date: 6/6/2025
+ms.reviewer: jessica.wilczek, mfoland
+ms.date: 6/25/2025
 ms.localizationpriority: medium
 search.appverid: MET150
 description: IT Admins - Learn about the requirements and policy settings for the Teams Meeting add-in in Outlook

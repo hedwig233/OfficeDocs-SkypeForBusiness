@@ -48,10 +48,11 @@ The following devices are certified under the Microsoft Teams phones Android Cer
 | Device model | Firmware version | Current certification end date | Android OS version |
 |:---------------------------------------|:-----------------------------------------|:-----------------------------|-----------------------------------|
 | AudioCodes C430HD    | `2.3.364`     | August 15, 2027 | 12 |
-| AudioCodes Exp Module supported on C455HD-DBW| 2.1.638| August 15, 2027 | N/A |
-| AudioCodes C470HD | `2.1.87`  |August 15, 2027  | 12 |
 | AudioCodes C435HD    | `2.1.673`     | August 15, 2027 | 12 |
+| AudioCodes C436HD    | `2.7.324`     | August 15, 2027 | 12 |
 | AudioCodes C455HD    | `2.1.638`    | August 15, 2027 | 12 |
+| AudioCodes C470HD | `2.1.87`  |August 15, 2027  | 12 |
+| AudioCodes Exp Module supported on C455HD-DBW| 2.1.638| August 15, 2027 | N/A |
 | Poly CCX350  | `9.0.0.10315`  | 	August 15, 2027 | 12 |
 | Poly CCX400  | `9.0.0.10315`  | 	August 15, 2027 | 12 |
 | Poly CCX500  | `9.0.0.10315` | 	August 15, 2027 | 12 |

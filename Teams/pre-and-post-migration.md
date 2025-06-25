@@ -105,7 +105,7 @@ PowerShell command output is as follows:
 The exported file appears as follows:
 :::image type="content" source="media/step3b-exported-file.png" alt-text="Exported file output.":::
 
-* To define the base path for exports: `$basePath = "C:\Users\patelsagar\Downloads"`
+* To define the base path for exports: `$basePath = "C:\Users\<user name>\Downloads"`
 * To ensure the base path exists:
 if (-not (Test-Path -Path $basePath)) { 
     New-Item -ItemType Directory -Path $basePath | Out-Null 

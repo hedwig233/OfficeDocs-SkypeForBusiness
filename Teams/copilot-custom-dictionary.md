@@ -1,5 +1,5 @@
 ---
-title: Admins- Manage custom dictionaries Microsoft Teams meetings and events
+title: Manage custom dictionaries for your organization's Microsoft Teams meetings and events
 ms.author: wlibebe
 author: wlibebe
 ms.reviewer: fei.zuo
@@ -17,7 +17,7 @@ ms.collection:
 description: Learn about how to upload and manage a Copilot custom dictionary.
 ---
 
-# Admins- Manage custom dictionaries Microsoft Teams meetings and events
+# Manage custom dictionaries for your organization's Microsoft Teams meetings and events
 
 ## Overview
 

@@ -160,11 +160,11 @@ You can use the **Preferred app for users to join Skype for Business meetings** 
 
 Learn more about [meetings and calling in Microsoft Teams](https://support.office.com/article/Meetings-and-calls-d92432d5-dd0f-4d17-8f69-06096b6b48a8).
 
-## Meeting options in the Meeting add-in for Outlook
+## Setup experience as a part of the Teams Meeting Add-In
 
 When scheduling meetings in Outlook, your users might see an option to set up meeting settings ahead of time. When they select **Set up**, side pane opens that displays customized meeting option suggestions for their meeting. Users can review and edit these settings before sending the meeting invite.
 
-To learn more about this experience, see [PLACEHOLDER FOR END USER DOC].
+To learn more about this experience, see [Meeting options in Microsoft Teams](https://support.microsoft.com/office/meeting-options-in-microsoft-teams-53261366-dbd5-45f9-aae9-a70e6354f88e).
 
 > [!NOTE]
 > No admin policies control whether users see this option when scheduling meetings.

@@ -19,6 +19,8 @@ description: Learn about how to upload and manage a Copilot custom dictionary fo
 
 # Manage custom dictionaries for Microsoft Teams meetings and events
 
+![Image of a checkmark for yes](/office/media/icons/success-teams.png) Meetings ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Webinars ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Town halls
+
 ## Overview
 
 > [!IMPORTANT]

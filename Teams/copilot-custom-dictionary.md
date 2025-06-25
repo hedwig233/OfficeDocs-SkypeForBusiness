@@ -56,9 +56,9 @@ Users in your organization must meet the following requirements to use custom di
 The custom dictionary captures organization-specific terminology to enhance the transcript and AI model's understanding of entities. It is configured at the tenant level and must be manually uploaded and managed by the admin. Group or user specific dictionaries are not included in this scope. The aim is to provide admins with an easy way to maintain a straightforward dictionary. All tenant meetings with a Copilot license will benefit from these terms when mentioned, without any adverse effects if they are not. 
 
 > [!NOTE]  
-> The custom dictionary will enhance transcription for meetings organized or initiated by users with a Microsoft 365 Copilot.
+> The custom dictionary will enhance transcription for meetings organized or initiated by users with a Microsoft 365 Copilot license.
 
-As an admin, you're the only one who can create and update the custom dictionary with new internal terms. Uploading a new dictionary replaces the existing one in the same language. Your users can't add terms to the dictionary; they need to ask you to upload an updated dictionary with new internal terms.
+As an admin, you're the only one who can create and update the custom dictionary with new internal terms. Uploading a new dictionary replaces the existing one in the same language. Your users can't add terms to the dictionary; they must ask you to upload an updated dictionary with new internal terms.
 
 ### Dictionary content
 

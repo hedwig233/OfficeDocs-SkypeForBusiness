@@ -14,7 +14,7 @@ ms.collection:
 - m365initiative-meetings
 - m365copilot
 - magic-ai-copilot
-description: Learn about how to upload and manage a Copilot custom dictionary.
+description: Learn about how to upload and manage a Copilot custom dictionary for Microsoft Teams meetings, webinars, and town halls to enhance the quality of transcripts.
 ---
 
 # Manage custom dictionaries for Microsoft Teams meetings and events

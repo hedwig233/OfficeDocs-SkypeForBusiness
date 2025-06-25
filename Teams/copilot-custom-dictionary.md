@@ -72,7 +72,7 @@ The dictionary is presented in a flat list format, with optional fields for reco
 |Definition and context |A column to provide more context or definition of the term. This field is optional.|
 
 > [!NOTE]  
-> At the current stage, the custom dictionary enhances only the meeting transcript. The 'Long form of the term' and 'Definition and context' will be applied in future AI enhancements for Intelligent Recap and Copilot responses.
+> Currently, the custom dictionary only enhances the meeting transcript. The 'Long form of the term' and 'Definition and context' will be applied in future AI enhancements for Intelligent Recap and Copilot responses.
 
 ### Dictionary sample
 

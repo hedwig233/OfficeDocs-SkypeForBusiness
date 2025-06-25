@@ -11,7 +11,7 @@ ms.collection:
 - privacy-teams
 - must-keep
 hideEdit: true
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.date: 06/25/2025
 appliesto: Microsoft Teams
 ---

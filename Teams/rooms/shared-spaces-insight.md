@@ -44,24 +44,24 @@ To use the Shared Spaces Insights feature, ensure that you meet the following pr
 
 ## Space Utilization Metric Definition
 
-The space utilization metric is a metric derived from the following two inputs: 
+The space utilization metric is a metric derived from the following inputs: 
 
 - [Calendar reservations](#calendar-reservations)
 - [Device signals as a proxy for room occupancy](#device-signals-as-a-proxy-for-room-occupancy)
 
-The following screenshot depicts the causes of a space utilization metric:
+The following screenshot depicts space utilization metric:
 
 :::image type="content" source="../media/space-utilization-metric-definition.png" alt-text="Screenshot that shows the space utilization metric definition page." lightbox="../media/space-utilization-metric-definition.png":::
-
-### Calendar reservations
-
-The "calendar reservations" input indicates which room, how many, and when were they occupied.
 
 A room is considered utilized when either of the following scenarios are fulfilled:
 
 - Reserved and occupied
 - Reserved and not occupied
 - Not Reserved and occupied
+
+### Calendar reservations
+
+The "calendar reservations" input reflects how frequently the room has been reserved or booked on the room's account calendar in Exchange.
 
 ### Device signals as a proxy for room occupancy
 

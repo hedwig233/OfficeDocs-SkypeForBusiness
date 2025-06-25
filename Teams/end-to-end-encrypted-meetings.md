@@ -52,6 +52,9 @@ Think of regular Teams meeting security like a long corridor that intersects oth
 
 All of these services require some level of data processing, which is all done in accordance with the Microsoft Privacy statement. With end-to-end encryption, you won't be able to use any of those meeting features.  If for example you were going to have an in-person meeting to discuss a major change in the company org chart, you might take extra security measures you don't usually take like pulling the blinds and covering the whiteboards and you might not let a caterer or janitor into that room because the damage from a leak could be catastrophic. Your normal in-person meeting experience might be secure enough due to other security measures like badges and cameras and security guards at the building entrance, but if you would consider hiring a security guard to sit at the meeting room entrance and restrict what goes in or out of the room, that kind of meeting online might be a candidate for end-to-end encryption.
 
+> [!NOTE]
+> End-to-end encryption isn't supported in meetings and calls with Real-Time-Text (RTT).
+
 End-to-end encrypted meetings can be made when participants use the latest versions of the following platforms and clients:
 
 - Teams desktop client for Windows or Mac

@@ -89,6 +89,10 @@ There are two types of real time monitoring for town halls.
 
    To learn more about real time monitoring of attendees, see [Microsoft eCDN Real Time analytics](/ecdn/technical-documentation/analytics).
 
+### Teams for Virtualized Desktop Infrastructure (VDI)
+
+Users in your organization might use VDI. To learn which town hall capabilities are supported in VDI environments, see [New VDI solution for Teams](vdi-2.md#feature-list-with-the-new-optimization) and [Upgrade to new Teams for Virtualized Desktop Infrastructure (VDI)](new-teams-vdi-requirements-deploy.md#features-not-supported-in-vdi).
+
 ### Call Quality Dashboard
 
 Leverage the Call Quality Dashboard (CQD) to monitor town hall quality at the org-wide level and optimize your network to drive performance quality.

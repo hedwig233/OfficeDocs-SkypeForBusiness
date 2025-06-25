@@ -57,6 +57,10 @@ Teams administrators and organizers have different policies and settings to cont
 
 For a complete list of meeting policies, see [Teams setting and policies reference](settings-policies-reference.md).
 
+## Teams for Virtualized Desktop Infrastructure (VDI)
+
+Users in your organization might use VDI. To learn which meeting capabilities are supported in VDI environments, see [New VDI solution for Teams](vdi-2.md#feature-list-with-the-new-optimization) and [Upgrade to new Teams for Virtualized Desktop Infrastructure (VDI)](new-teams-vdi-requirements-deploy.md#features-not-supported-in-vdi).
+
 ## Customization with Teams Premium
 
 With a Teams Premium license, you can extend your organization's visual identity and compliance requirements across the meeting experience by adding logos and backgrounds that can be displayed in the meeting's pre-join screen, lobby, and during the meeting experience. To learn more, see [Custom meetings overview](custom-meetings-overview.md).
@@ -168,6 +172,7 @@ Teams admins and organizers have different policies and settings to control the 
 |[Q&A](manage-qna-for-teams.md)|Can manage if organizers can use Q&A in meetings.|Can decide if Q&A is available for their meetings if allowed by admins.|
 |[Quality of service (QoS)](meetings-real-time-media-traffic.md)|Can prioritize real-time network traffic that's sensitive to network delays over traffic that's less sensitive.|No control|
 |[Reactions](manage-reactions-meetings.md)| Manage whether reactions can be used in meetings created by organizers with this policy. |Can control whether reactions can be used in their meetings. |
+|[Real-Time-Text (RTT)](teams-real-time-text.md)| Manage whether your users can use RTT in Teams meetings, group calls, and 1:1 VoIP calls. |Can control whether RTT is available in their meetings and group calls. |
 |[Recording storage and permissions](manage-reactions-meetings.md)| Manage recording storage and permissions. |Permissions depend on admin settings. |
 |[Real time telemetry](use-real-time-telemetry-to-troubleshoot-poor-meeting-quality.md)|Can look at your users’ scheduled meetings and see audio, video, content sharing, and network-related issues. You can use this telemetry to investigate these issues during meetings and troubleshoot in real time.|No control|
 |[Restrict who can record and transcribe (Teams Premium)](manage-meeting-recording-options.md#manage-who-can-record-and-transcribe-meetings-teams-premium)| Can restrict which users can record by using a meeting template or sensitivity label. |Can manage options if admin doesn't lock label or template settings. |

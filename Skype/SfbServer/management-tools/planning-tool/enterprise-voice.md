@@ -17,6 +17,8 @@ description: "With Enterprise Voice, Skype for Business Server 2015 delivers a s
 ---
 
 # Enterprise Voice planning tool
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 With Enterprise Voice, Skype for Business Server 2015 delivers a stand-alone Voice over Internet Protocol (VoIP) offering to enhance or replace traditional private branch exchange (PBX) systems. Enterprise Voice users can call colleagues on your organization's VoIP network or PBX, and they can call traditional phone numbers outside your organization. The Enterprise Voice solution includes common calling features such as answer, forward, transfer, hold, divert, release and park, and Enhanced 9-1-1 (E9-1-1) calling (E9-1-1 is available only in the United States.) Enterprise Voice also supports a broad range of current and older IP and USB devices.
   

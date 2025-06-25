@@ -21,6 +21,8 @@ description: "Summary: Learn about the system requirements for Edge Server in Sk
 
 # Edge Server system requirements in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn about the system requirements for Edge Server in Skype for Business Server.
   
 When it comes to your Skype for Business Server Edge Server deployment, these are the things you need to do for the server or servers that are in the environment itself, and planning for the environment structure. For more information on topology, DNS, certificates, and other infrastructure concerns, check out the environmental requirements documentation.

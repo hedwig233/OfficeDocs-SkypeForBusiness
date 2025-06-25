@@ -20,6 +20,8 @@ description: "Enable users for Call Park in Skype for Business Server Enterprise
 ---
 
 # Enable Call Park for users in Skype for Business
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 Enable users for Call Park in Skype for Business Server Enterprise Voice.
   

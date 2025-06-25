@@ -19,6 +19,8 @@ description: "On the Edit Mobility Policy dialog, you can edit the details of a 
 
 # Edit Client Mobility Policy
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 On the **Edit Mobility Policy** dialog, you can edit the details of a mobility policy.
 
 ## UI Reference

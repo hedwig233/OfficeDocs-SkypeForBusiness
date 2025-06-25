@@ -21,6 +21,8 @@ description: "Configure, populate, and publish the E9-1-1 location database in S
 
 # Configure the location database in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Configure, populate, and publish the E9-1-1 location database in Skype for Business Server Enterprise Voice. 
   
 To enable clients to automatically detect their location within a network, you first need to configure the location database. 

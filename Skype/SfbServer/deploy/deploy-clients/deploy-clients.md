@@ -17,6 +17,8 @@ description: "Summary: Overview of enterprise client installation methods for Sk
 
 # Deploy clients for Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Overview of enterprise client installation methods for Skype for Business.
   
 How you deploy Skype for Business to your users depends on whether you purchased Skype for Business as part of a Microsoft 365 or Office 365 plan or you purchased a volume licensed version of Skype for Business. 

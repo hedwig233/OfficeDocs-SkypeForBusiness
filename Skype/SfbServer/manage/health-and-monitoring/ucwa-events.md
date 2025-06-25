@@ -16,6 +16,8 @@ description: "Summary: Learn about the Unified Communications Web API (UCWA) in 
 ---
 
 # UCWA events in Skype for Business Server
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 **Summary:** Learn about the Unified Communications Web API (UCWA) in Skype for Business Server.
   
@@ -49,7 +51,7 @@ UCWA writes records of operational behavior as event types Informational, Warnin
 |20022  <br/> |Error  <br/> |Cannot join AV MCU  <br/> |Cannot join AV MCU  <br/> See whether AV MCU is running  <br/> |
 |20023  <br/> |Error  <br/> |Cannot join AS MCU  <br/> |Cannot join AS MCU  <br/> See whether AS MCU is running  <br/> |
 |20024  <br/> |Error  <br/> |Cannot join Data MCU  <br/> |Cannot join Data MCU  <br/> See whether Data MCU is running  <br/> |
-|20025  <br/> |Error  <br/> |Cannot access active directory for photo  <br/> |Connection to active directory is not available  <br/> Make sure the connection to active directory is available  <br/> |
+|20025  <br/> |Error  <br/> |Cannot access active directory for photo  <br/> |Connection to active directory isn't available  <br/> Make sure the connection to active directory is available  <br/> |
 |20026  <br/> |Informational  <br/> |Recovered from failing to access active directory for photo  <br/> |N/A  <br/> |
 |20027  <br/> |Warning  <br/> |Cannot deserialize  <br/> |Cannot deserialize  <br/> If the problem persists contact product support  <br/> |
    

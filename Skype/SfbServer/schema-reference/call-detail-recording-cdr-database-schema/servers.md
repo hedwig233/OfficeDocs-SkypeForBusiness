@@ -16,7 +16,9 @@ description: "The Servers table is a supporting table that stores information ab
 ---
 
 # Servers table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The Servers table is a supporting table that stores information about the various servers. Each record in the table represents one server.
   
 |**Column**|**Data Type**|**Key/Index**|**Details**|

@@ -16,6 +16,8 @@ description: "After you remove an Archiving Server, you can remove the SQL Serve
 
 # Remove the SQL Server database for an Archiving server
 
+[!INCLUDE [appliesto-xxx-2019-sub](../includes/appliesto-xxx-2019-sub.md)]
+
 After you remove an Archiving Server, you can remove the SQL Server databases that hosted the pool data. Use the following procedures to remove the definitions from Topology Builder, and then remove the database and log files from the database server.
   
 ## To remove the SQL Server database using Topology Builder

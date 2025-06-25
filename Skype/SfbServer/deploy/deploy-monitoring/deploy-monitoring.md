@@ -17,6 +17,8 @@ description: "Summary: Learn how to deploy monitoring in Skype for Business Serv
 
 # Deploy monitoring in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to deploy monitoring in Skype for Business Server.
 
 Before performing these tasks, review [Plan for monitoring in Skype for Business Server](../../plan-your-deployment/monitoring.md).

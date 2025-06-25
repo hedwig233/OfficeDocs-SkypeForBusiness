@@ -18,6 +18,8 @@ description: "To edit the properties for an A/V Conferencing Server pool that yo
 ---
 
 # AV MCU Settings Expander
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 To edit the properties for an A/V Conferencing Server pool that you have already defined, do the following:
   
@@ -30,7 +32,7 @@ To update the fully qualified domain name (FQDN) of the A/V Conferencing Server 
 To associate an A/V Conferencing Server pool, select the Front End pool or pools that you have to associate with the A/V Conferencing Server pool.
   
 > [!NOTE]
-> If no Front End pools are displayed in the **Select the Front End pools to associate with this A/V Conferencing pool** pane, you have either collocated the A/V Conferencing Server with the Front End pool, or did not select to add Conferencing in the **Features and functionality** section of the Front End pool properties.
+> If no Front End pools are displayed in the **Select the Front End pools to associate with this A/V Conferencing pool** pane, you have either collocated the A/V Conferencing Server with the Front End pool, or didn't select to add Conferencing in the **Features and functionality** section of the Front End pool properties.
   
 
 

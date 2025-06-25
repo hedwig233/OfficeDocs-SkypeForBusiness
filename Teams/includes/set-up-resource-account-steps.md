@@ -69,7 +69,7 @@ You can edit a resource account in the Teams admin center or with PowerShell.
 
 The User Administrator role is a built-in role in Microsoft 365 that grants permissions to create and manage user accounts. For more information, see [Assign admin roles in Microsoft 365](/microsoft-365/admin/add-users/assign-admin-roles).
 
-If a user has a Teams administrator role without the User Administrator role, you must either assign the User Administrator role to provide the necessary permissions to create user accounts.
+If a user has a Teams administrator role without the User Administrator role, you must assign the User Administrator role to provide the necessary permissions to create user accounts.
 
 A Global Administrator also has the necessary Teams and User permissions to create and manage resource accounts, but we recommend using roles with the fewest permissions.
 

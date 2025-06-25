@@ -13,12 +13,14 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: ea22beb9-c02e-47cb-836d-97a556969052
-description: "Summary: Review this topic for information about how to integrate Skype for Business Server with Exchange Server 2016 or Exchange Server 2013."
+description: "Summary: Review this article for information about how to integrate Skype for Business Server with Exchange Server 2016 or Exchange Server 2013."
 ---
 
 # Plan to integrate Skype for Business and Exchange
  
-**Summary:** Review this topic for information about how to integrate Skype for Business Server with Exchange Server 2016 or Exchange Server 2013.
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
+**Summary:** Review this article for information about how to integrate Skype for Business Server with Exchange Server 2016 or Exchange Server 2013.
   
 Before you can integrate Skype for Business Server and Exchange Server, you must ensure that both Exchange Server and Skype for Business Server are fully installed and up and running. 
   
@@ -26,17 +28,17 @@ For details about installing Exchange Server, see the Exchange Server Planning a
    
 After the servers are up and running, you must assign server-to-server authentication certificates to both Skype for Business Server and Exchange Server; these certificates allow Skype for Business Server and Exchange Server to exchange information and to communicate with one another. When you install Exchange Server, a self-signed certificate with the name Microsoft Exchange Server Auth Certificate is created for you. This certificate, which can be found in the local computer certificate store, should be used for server-to-server authentication on Exchange Server. For details about assigning certificates in Exchange Server, see [Configure Mail Flow and Client Access](/exchange/configure-mail-flow-and-client-access-exchange-2013-help).
   
-For Skype for Business Server you can use an existing Skype for Business Server certificate as your server-to-server authentication certificate; for example, your default certificate can also be used as the OAuthTokenIssuer certificate. Skype for Business Server allows you to use any Web server certificate as the certificate for server-to-server authentication provided that:
+For Skype for Business Server you can use an existing Skype for Business Server certificate as your server-to-server authentication certificate; for example, your default certificate can also be used as the OAuthTokenIssuer certificate. Skype for Business Server allows you to use any Web server certificate as the certificate for server-to-server authentication if:
   
 - The certificate includes the name of your SIP domain in the Subject field.
     
 - The same certificate is configured as the OAuthTokenIssuer certificate on all of your Front End Servers.
     
-- The certificate has a length of at least 2048 bits.
+- The certificate has a length of at least 2,048 bits.
     
 For details about server-to-server authentication certificates for Skype for Business Server, see [Assign a server-to-server authentication certificate to Skype for Business Server](../../manage/authentication/assign-a-server-to-server-certificate.md).
   
-After the certificates have been assigned, you must then configure the autodiscover service on Exchange Server. In Exchange Server, the autodiscover service configures user profiles and provides access to Exchange services when users log on to the system. Users present the autodiscover service with their email address and password; in turn, the services provide the user with information such as:
+After the certificates are assigned, you must then configure the autodiscover service on Exchange Server. In Exchange Server, the autodiscover service configures user profiles and provides access to Exchange services when users sign in the system. Users present the autodiscover service with their email address and password; in turn, the services provide the user with information such as:
   
 - Connection information for both internal and external connectivity to Exchange Server.
     
@@ -46,13 +48,13 @@ After the certificates have been assigned, you must then configure the autodisco
     
 - Outlook Anywhere server settings.
     
-The autodiscover service must be configured before you can integrate Skype for Business Server and Exchange Server. You can verify whether or not the autodiscover service has been configured by running the following command from the Exchange Server Management Shell and checking the value of the AutoDiscoverServiceInternalUri property:
+The autodiscover service must be configured before you can integrate Skype for Business Server and Exchange Server. You can verify whether or not the autodiscover service is configured by running the following command from the Exchange Server Management Shell and checking the value of the AutoDiscoverServiceInternalUri property:
   
 ```PowerShell
 Get-ClientAccessServer | Select-Object Name, AutoDiscoverServiceInternalUri | Format-List
 ```
 
-If this value is blank, you must assign a URI to the autodiscover service. Typically this URI will look similar to this: https://autodiscover.litwareinc.com/autodiscover/autodiscover.xml
+If this value is blank, you must assign a URI to the autodiscover service. Typically this URI looks similar to this: https://autodiscover.litwareinc.com/autodiscover/autodiscover.xml
   
 You can assign the autodiscover URI by running a command similar to this:
   
@@ -69,17 +71,17 @@ Set-CsOAuthConfiguration -Identity global -ExchangeAutodiscoverUrl "https://auto
 ```
 
 > [!NOTE]
-> The Identity parameter in the preceding command is optional; that's because Skype for Business Server only allows you to have a single, global collection of OAuth configuration settings. Among other things, that means that you can configure the autodiscover URL by using this slightly-simpler command: 
+> The Identity parameter in the preceding command is optional; that's because Skype for Business Server only allows you to have a single, global collection of OAuth configuration settings. Among other things that means that you can configure the autodiscover URL by using this slightly simpler command: 
 > 
 > [!NOTE]
 > Set-CsOAuthConfiguration-ExchangeAutodiscoverUrl "<https://autodiscover.litwareinc.com/autodiscover/autodiscover.svc>" 
 > 
 > [!NOTE]
-> If you are unfamiliar with the technology, OAuth is a standard authorization protocol used by a number of major websites. With OAuth, user credentials and passwords are not passed from one computer to another. Instead, authentication and authorization is based on the exchange of security tokens; these tokens grant access to a specific set of resources for a specific amount of time. 
+> If you're unfamiliar with the technology, OAuth is a standard authorization protocol used by many major websites. With OAuth, user credentials and passwords aren't passed from one computer to another. Instead, authentication and authorization are based on the exchange of security tokens; these tokens grant access to a specific set of resources for a specific amount of time. 
   
-In addition to configuring the autodiscover service, you must also create a DNS record for the service that points to your Exchange Server. For example, if your autodiscover service is located at autodiscover.litwareinc.com you will need to create a DNS record for autodiscover.litwareinc.com that resolves to the fully qualified domain name of your Exchange Server (for example, atl-exchange-001.litwareinc.com).
+In addition to configuring the autodiscover service, you must also create a DNS record for the service that points to your Exchange Server. For example, if your autodiscover service is located at autodiscover.litwareinc.com you'll need to create a DNS record for autodiscover.litwareinc.com that resolves to the fully qualified domain name of your Exchange Server (for example, atl-exchange-001.litwareinc.com).
   
-If you are integrating Skype for Business Server with Exchange Online, your next steps are in [Configure integration between on-premises Skype for Business Server and Outlook Web App](../../deploy/integrate-with-exchange-server/outlook-web-app.md), otherwise see [Integrate Skype for Business Server with Exchange Server](../../deploy/integrate-with-exchange-server/integrate-with-exchange-server.md).
+If you're integrating Skype for Business Server with Exchange Online, your next steps are in [Configure integration between on-premises Skype for Business Server and Outlook Web App](../../deploy/integrate-with-exchange-server/outlook-web-app.md), otherwise see [Integrate Skype for Business Server with Exchange Server](../../deploy/integrate-with-exchange-server/integrate-with-exchange-server.md).
   
 ## Feature support
 <a name="feature_support"> </a>
@@ -92,10 +94,10 @@ The following table details the features supported under various combinations of
 |&nbsp;|Exchange 2016/2013/2010 (on premises) + Skype for Business Server (on premises)|Exchange Online + Skype for Business Server (on premises)**|**Exchange 2010 (on premises) + Skype for Business Online|Exchange 2016/2013(on premises) + Skype for Business Online**|**Exchange Online + Skype for Business Online|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |Presence in Outlook   |Y   |Y   |Y   |Y   |Y   |
-|Respond via IM, PSTN Call, Skype Call or Video Call from an Outlook email   |Y   |Y   |Y   |Y   |Y   |
+|Respond via IM, PSTN Call, Skype Call, or Video Call from an Outlook email   |Y   |Y   |Y   |Y   |Y   |
 |Schedule and join online meetings through Outlook   |Y   |Y   |Y   |Y   |Y   |
 |Presence in Outlook Web App   |Y   |Y   |N   |N   |Y   |
-|Respond via IM, PSTN Call, Skype Call or Video Call from an OWA email   |Y   |Y   |N   |N   |Y   |
+|Respond via IM, PSTN Call, Skype Call, or Video Call from an OWA email   |Y   |Y   |N   |N   |Y   |
 |Schedule and join online meetings through Outlook Web App   |Y   |Y   |N   |N   |Y   |
 |IM/Presence in Mobile Clients   |Y   |Y   |Y   |Y   |Y   |
 |Join online meetings in Mobile clients   |Y   |Y   |Y   |Y   |Y   |
@@ -110,7 +112,7 @@ The following table details the features supported under various combinations of
 |Server Side Conversation History   |Y   |Y   |N   |Y   |Y   |
 
 > [!NOTE]
-> There is a Cloud Voicemail service which is supported for Skype for Business Online, Skype for Business Server 2019, Skype for Business Server 2015, and Lync Server 2013.
+> There's a Cloud Voicemail service which is supported for Skype for Business Online, Skype for Business Server 2019, Skype for Business Server 2015, and Lync Server 2013.
 > 
 
 ## See also

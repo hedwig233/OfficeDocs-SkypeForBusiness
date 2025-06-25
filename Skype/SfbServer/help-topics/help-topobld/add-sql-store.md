@@ -19,6 +19,8 @@ description: "To define a new SQL Store, which means that you're specifying a SQ
 
 # Add SQL Store
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 To define a new SQL Store, which means that you're specifying a SQL Server-based database and an instance of SQL Server—either a default instance or a named instance—you specify the following.
 
 Specify the fully qualified domain name (FQDN) of the SQL Server that hosts the database instance that you're defining.

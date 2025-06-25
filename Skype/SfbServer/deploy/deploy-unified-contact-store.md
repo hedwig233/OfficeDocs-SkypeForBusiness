@@ -16,10 +16,12 @@ description: "Summary: Enable the unified contact store in Skype for Business Se
 ---
 
 # Deploy unified contact store in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Enable the unified contact store in Skype for Business Server.
   
-Enabling unified contact store in Skype for Business Server does not require any topology settings. To enable unified contact store for users:
+Enabling unified contact store in Skype for Business Server doesn't require any topology settings. To enable unified contact store for users:
   
 - Unified contact store policy is enabled (default is enabled).
     
@@ -28,11 +30,11 @@ Enabling unified contact store in Skype for Business Server does not require any
 After a user's contacts have been migrated, which happens automatically when a user logs in with Skype for Business, the user can access and manage their Skype for Business contacts from Skype for Business, Outlook 2013, or Outlook Web Access. The user does not have to be logged in to Skype for Business to manage their contacts from Outlook or Outlook Web Access.
   
 > [!IMPORTANT]
-> If a user logs in from Skype for Business after migration, contacts and groups are available and up-to-date, but the user cannot manage (that is, add, delete, move, tag, untag, or modify) those contacts. 
+> If a user logs in from Skype for Business after migration, contacts and groups are available and up-to-date, but the user can't manage (that is, add, delete, move, tag, untag, or modify) those contacts. 
   
 ## Enable users for unified contact store
 
-When you deploy Skype for Business Server and publish the topology, unified contact store is enabled for all users by default. You do not need to take any additional action to enable unified contact store after you deploy Skype for Business Server. However, you can use the **Set-CsUserServicesPolicy** cmdlet to customize which users have unified contact store available. You can enable this feature globally, by site, by tenant, or by individuals or groups of individuals.
+When you deploy Skype for Business Server and publish the topology, unified contact store is enabled for all users by default. You don't need to take any additional action to enable unified contact store after you deploy Skype for Business Server. However, you can use the **Set-CsUserServicesPolicy** cmdlet to customize which users have unified contact store available. You can enable this feature globally, by site, by tenant, or by individuals or groups of individuals.
   
 ### To enable users for unified contact store
 
@@ -100,7 +102,7 @@ A user's contacts are automatically migrated to the Exchange 2013 server when th
     
 - Logs in by using a Skype for Business rich client.
     
-If the user logs in with a Lync or earlier client, or if the user is not connected to an Exchange 2013 server, the user services policy is ignored and the user's contacts remain in Skype for Business Server.
+If the user logs in with a Lync or earlier client, or if the user isn't connected to an Exchange 2013 server, the user services policy is ignored and the user's contacts remain in Skype for Business Server.
   
 You can determine whether a user's contacts have been migrated by using either of the following methods: 
   
@@ -120,7 +122,7 @@ You can determine whether a user's contacts have been migrated by using either o
     
 ## Roll Back Migrated Users
 
-If you need to roll back the unified contact store feature, roll back the contacts only if you move the user back to Exchange 2010 or Lync Server 2010. To roll back, disable the policy for the user, and then run the **Invoke-CsUcsRollback** cmdlet. Just running **Invoke-CsUcsRollback** alone is not enough to ensure permanent rollback, because unified contact store migration will be initiated again if the policy is not disabled. For example, if a user is rolled back because Exchange 2013 is rolled back to Exchange 2010, and then the user's mailbox is moved to Exchange 2013, the unified contact store migration will be initiated again seven days after the rollback, as long as unified contact store is still enabled for the user in the user services policy.
+If you need to roll back the unified contact store feature, roll back the contacts only if you move the user back to Exchange 2010 or Lync Server 2010. To roll back, disable the policy for the user, and then run the **Invoke-CsUcsRollback** cmdlet. Just running **Invoke-CsUcsRollback** alone isn't enough to ensure permanent rollback, because unified contact store migration will be initiated again if the policy isn't disabled. For example, if a user is rolled back because Exchange 2013 is rolled back to Exchange 2010, and then the user's mailbox is moved to Exchange 2013, the unified contact store migration will be initiated again seven days after the rollback, as long as unified contact store is still enabled for the user in the user services policy.
   
 The **Move-CsUser** cmdlet automatically rolls back the user's contact store from Exchange 2013 to Skype for Business Server in the following situations:
   
@@ -137,7 +139,7 @@ Importing unified contact store data from a backup database can cause unified co
 > [!IMPORTANT]
 > Before you move an Exchange mailbox from Exchange 2013 to Exchange 2010, the Exchange administrator must make sure that the Skype for Business Server administrator has first rolled back the Skype for Business Server user contacts from Exchange 2013 to Skype for Business Server. To roll back unified contact store contacts to Skype for Business Server, see procedure "To roll back unified contact store contacts from Exchange 2013 to Skype for Business Server," later in this section. 
   
- **How to roll back user contacts:** If you use the **Move-CsUser** cmdlet to move users between Skype for Business Server 2015 and Lync Server 2010, you can skip these steps because the **Move-CsUser** cmdlet automatically rolls back unified contact store when it moves users from Skype for Business Server 2015 to Lync Server 2010. **Move-CsUser** does not disable unified contact store policy, so the migration to unified contact store will recur if the user is moved back to Skype for Business Server 2015.
+ **How to roll back user contacts:** If you use the **Move-CsUser** cmdlet to move users between Skype for Business Server 2015 and Lync Server 2010, you can skip these steps because the **Move-CsUser** cmdlet automatically rolls back unified contact store when it moves users from Skype for Business Server 2015 to Lync Server 2010. **Move-CsUser** doesn't disable unified contact store policy, so the migration to unified contact store will recur if the user is moved back to Skype for Business Server 2015.
   
 
 

@@ -19,8 +19,10 @@ ms.assetid: 3b25f14d-884b-42dd-a866-460d276d3e43
 description: "Summary: Learn how to delete a collection of trunk configuration settings by using the Skype for Business Server Control Panel."
 ---
 
-# Skype for Business Server: Delete an existing collection of SIP trunk configuration settings 
- 
+# Skype for Business Server: Delete an existing collection of SIP trunk configuration settings
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to delete a collection of trunk configuration settings by using the Skype for Business Server Control Panel.
   
 SIP trunk configuration settings define the relationship and capabilities between a Mediation Server and the Public Switched Telephone Network (PSTN) gateway, an IP-Public Branch eXchange (PBX), or a Session Border Controller (SBC) at the service provider. These settings do such things as specify:

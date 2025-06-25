@@ -17,7 +17,9 @@ description: "Summary: Learn about the deployment process for Call Quality Dashb
 ---
 
 # Deploy Call Quality Dashboard for Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn about the deployment process for Call Quality Dashboard. Call Quality Dashboard is a tool for Skype for Business Server.
   
 ## Deployment Overview
@@ -41,7 +43,7 @@ Portal install creates a Repository database that stores the mapping of CQD user
 
 |**Phase**|**Steps**|**Roles and group membership**|**Documentation**|
 |:-----|:-----|:-----|:-----|
-|Install prerequisite hardware and software.  <br/> |Decide on the CQD configuration, and choose a SQL Server from which to perform the install.  <br/> |Domain user who is a member of the local administrator's group.  <br/> |"Pre-install Requirements" section in the deployment documentation.  <br/> |
+|Install prerequisite hardware and software.  <br/> |Decide on the CQD configuration, and choose a SQL Server from which to perform the install.  <br/> |Domain user who is a member of the local administrator's group.  <br/> |"Preinstall Requirements" section in the deployment documentation.  <br/> |
 |Install CQD.  <br/> |Run the MSI following the deployment document.  <br/> |To perform the setup, the installing account must be a domain user who is a member of the local administrator's group and read access to QoE Metrics database on the Monitoring Server.  <br/> |"Accounts and Deployment Steps" sections in the deployment documentation.  <br/> |
 |Grant user access.  <br/> |For managing user authorization to the Portal, we recommend using URL Authorization, which was introduced in IIS 7.0. For more information, see [Understanding IIS 7.0 URL Authorization](https://www.iis.net/learn/manage/configuring-security/understanding-iis-url-authorization).  <br/> |Domain user who is a member of the local administrator's group.  <br/> |Managing User Access for the Portal section in the deployment documentation.  <br/> |
 |Optional: Provide subnet mapping information.  <br/> |Populate network and building mapping tables in QoE Archive database.  <br/> |An account with write access to the QoE Archive database.  <br/> |"Supplying Subnet Information" section in the user documentation.  <br/> |
@@ -77,7 +79,7 @@ Deployment of Call Quality Dashboard involves setting up the infrastructure and 
    - **Use Multiple Partitions:** The default is set to "Multiple partitions", which requires Business Intelligence edition or Enterprise edition of SQL Server. For Standard edition, select "Single Partition" option. The cube processing performance might be impacted if Single Partition is used.
     
      > [!NOTE]
-     > The selection for Use Multiple Partitions option cannot be changed once Setup completes. In order to change it, the Cube feature needs to be first uninstalled and then reinstalled using "Change" option in Control Panel. 
+     > The selection for Use Multiple Partitions option can't be changed once Setup completes. In order to change it, the Cube feature needs to be first uninstalled and then reinstalled using "Change" option in Control Panel. 
   
    - **Partition File Directory:** Path to where the partitions for the QoE Archive database should be placed. This should be on a drive (HDD3 in the recommended hardware configuration) separate from the OS drive and SQL database log files drive. Since the file names are fixed in the install, to avoid any potential conflict, it's recommended that a blank directory with no files be used.
     
@@ -86,16 +88,16 @@ Deployment of Call Quality Dashboard involves setting up the infrastructure and 
      > [!NOTE]
      > The account that the SQL Server instance is running under, such as NT SERVICE\MSSQLSERVER, must have access/permission to the directories given above for the installation to succeed. For details, see [Configure File System Permissions for Database Engine Access](/previous-versions/sql/sql-server-2012/jj219062(v=sql.110))
   
-7. When you click next, the installer performs prerequisite checks and report if any issues are encountered. When all pre-requisite checks pass, the installer goes to the Cube Configuration page. 
+7. When you click next, the installer performs prerequisite checks and report if any issues are encountered. When all prerequisite checks pass, the installer goes to the Cube Configuration page. 
     
     > [!NOTE]
-    > If the installer shows a warning message that the SQL Server Agent service for the QoE Archive SQL Server instance is currently not running, installation can proceed, but post installation please make sure that SQL Agent service is running and set the Startup type to Automatic so that the scheduled Job runs. 
+    > If the installer shows a warning message that the SQL Server Agent service for the QoE Archive SQL Server instance is currently not running, installation can proceed, but post installation, make sure that SQL Agent service is running and set the Startup type to Automatic so that the scheduled Job runs. 
   
 8. At Cube Configuration page, provide the following information:
     
    - **QoE Archive SQL Server Name:** This is read-only field and fixed to the fully qualified domain name of the local machine. Cube can be installed only from the machine that has QoE Archive database (Note. Cube itself might be installed on a remote machine. See below)
     
-   - **QoE Archive SQL Server Instance:** SQL Server instance name for where the QoE Archive DB is located. To specify a default SQL Server instance, leave this field blank. To specify a named SQL Server instance, enter the instance name (for example, the name after the "\"). If QoE Archive component was selected for the install, this field is pre-populated with the value provided on the QoE Archive Configuration page.
+   - **QoE Archive SQL Server Instance:** SQL Server instance name for where the QoE Archive DB is located. To specify a default SQL Server instance, leave this field blank. To specify a named SQL Server instance, enter the instance name (for example, the name after the "\"). If QoE Archive component was selected for the install, this field is prepopulated with the value provided on the QoE Archive Configuration page.
     
    - **Cube Analysis Server:** SQL Server Analysis Service instance name for where the cube is to be created. This can be a different machine but the installing user has to be a member of Server administrators of the target SQL Server Analysis Service instance.
     
@@ -225,7 +227,7 @@ In rare cases, the installer fails to create the correct settings in IIS. Manual
   
 5. Repeat the above steps for each of the "CQD", "QoEDataService", and "QoERepositoryService" entries below "Default Web Site".
     
-For HTTP, and HTTPS port bindings the installer creates port bindings on the default port numbers (port 80 for HTTP and port 443 for HTTPS). If there's another website on the machine that uses these bindings, there is a conflict and the IIS behavior can't be predicted. The best way to avoid this problem is to make sure that no other websites are mapped to ports 80 and 443 before installing CQD. 
+For HTTP, and HTTPS port bindings the installer creates port bindings on the default port numbers (port 80 for HTTP and port 443 for HTTPS). If there's another website on the machine that uses these bindings, there's a conflict and the IIS behavior can't be predicted. The best way to avoid this problem is to make sure that no other websites are mapped to ports 80 and 443 before installing CQD. 
   
 To enable SSL/TLS in IIS and force users to connect via secure HTTPS instead of HTTP:
   

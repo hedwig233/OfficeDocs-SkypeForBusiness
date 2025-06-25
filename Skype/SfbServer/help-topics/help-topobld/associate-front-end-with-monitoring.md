@@ -18,9 +18,11 @@ description: "Each Front End pool and Survivable Branch Appliance can have only 
 ---
 
 # Associate Front End With Monitoring
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 Each Front End pool and Survivable Branch Appliance can have only one Monitoring Server associated with it. When monitoring is enabled for the site, Monitoring Server provides call detail recording (CDR) and Quality of Experience (QoE) data collection and reporting.
   
-All pools at a site and the pools of multiple central sites can use the same Monitoring Server, if usage does not exceed the capacity of the Monitoring Server. 
+All pools at a site and the pools of multiple central sites can use the same Monitoring Server, if usage doesn't exceed the capacity of the Monitoring Server. 
   
 

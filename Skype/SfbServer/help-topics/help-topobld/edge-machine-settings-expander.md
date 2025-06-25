@@ -18,6 +18,8 @@ description: "To edit the properties for a server in a pool of Edge Servers, do 
 ---
 
 # Edge Machine Settings Expander
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 To edit the properties for a server in a pool of Edge Servers, do the following:
   

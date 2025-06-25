@@ -18,6 +18,8 @@ description: "In Lync Server 2013 Topology Builder, you can perform tasks relate
 ---
 
 # Monitoring Scope Node
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 In Lync Server 2013 Topology Builder, you can perform tasks related to an individual server running Monitoring by either right-clicking the server running Monitoring in the console tree, clicking **Action** in the toolbar, or clicking a task in the Actions pane, and then clicking one of the following options for the server running Monitoring:
   

@@ -16,7 +16,9 @@ description: "tblLastInviteId contains the last invite ID that was generated (an
 ---
 
 # tblLastInviteId
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 tblLastInviteId contains the last invite ID that was generated (and used in the tblPrincipalInvites table) for each user.
   
 **Columns**

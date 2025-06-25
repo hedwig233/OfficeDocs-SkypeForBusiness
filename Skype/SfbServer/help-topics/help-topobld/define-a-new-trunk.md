@@ -19,6 +19,8 @@ description: "You define a new session initiation protocol (SIP) trunk by provid
 
 # Define a New Trunk
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 You define a new session initiation protocol (SIP) trunk by providing the following information:
 
 - **Trunk name**: unique name in your topology that will identify this trunk

@@ -16,6 +16,8 @@ description: "This documents the schema of the call detail recording (CDR) datab
 ---
 
 # Call detail recording (CDR) database schema in Skype for Business Server 2015
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 This documents the schema of the call detail recording (CDR) database in Skype for Business Server 2015.
   

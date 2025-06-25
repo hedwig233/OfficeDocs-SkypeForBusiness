@@ -17,7 +17,9 @@ description: "Archiving in Skype for Business Server enables you to archive comm
 ---
 
 # Archiving planning tool
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Archiving in Skype for Business Server provides a way for you to archive communications that are sent through Skype for Business Server.
   
 For details about preparing your environment for Archiving Server, see [Plan for archiving in Skype for Business Server 2015](../../plan-your-deployment/archiving/archiving.md).

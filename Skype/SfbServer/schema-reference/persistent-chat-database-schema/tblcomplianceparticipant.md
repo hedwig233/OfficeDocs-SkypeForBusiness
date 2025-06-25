@@ -16,6 +16,8 @@ description: "tblComplianceParticipant contains the current participants per cha
 ---
 
 # tblComplianceParticipant
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 tblComplianceParticipant contains the current participants per channel and per server.
   

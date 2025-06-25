@@ -18,6 +18,8 @@ description: "Normalization rules use .NET Framework regular expressions to tran
 ---
 
 # Select Normalization Rules
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 Normalization rules use .NET Framework regular expressions to translate dialed phone numbers to E.164 format. Each dial plan must be assigned one or more normalization rules.
   

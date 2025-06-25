@@ -16,6 +16,8 @@ ms.assetid: 52d44a51-f79b-4d27-9541-21737b798027
 ---
 
 # Planning Tool UI Reference
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 ## In this section
 

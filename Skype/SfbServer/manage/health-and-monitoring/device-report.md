@@ -16,7 +16,9 @@ description: "Summary: Learn about the Device Report in Skype for Business Serve
 ---
 
 # Device Report in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn about the Device Report in Skype for Business Server.
   
 The Device Report might be better titled the Microphone and Speakers Report; that's because the Device Report retrieves call-related metrics (such as poor call percentage, echo, and voice switch time) grouped by the microphones and speakers used in the call. If you're interested in IP phones (also commonly referred to as "devices"), use the [IP Phone Inventory Report in Skype for Business Server](ip-phone-inventory-report.md) instead.
@@ -151,10 +153,10 @@ The following table lists the information provided in the Device Report.
 |**Poor call percentage** <br/> |Yes  <br/> |Percentage of calls that were classified as "poor." A poor call is any call which at least one of the measured metrics exceeded the allowed value (for example, a call that experienced excessive jitter).  <br/> |
 |**Unique users** <br/> |Yes  <br/> |Unique users who used the device. If a user used the device 13 times he or she would count as one unique user, the same as a user who only used the device a single time.  <br/> |
 |**Ratio of voice switch time** <br/> |Yes  <br/> |Percentage of the call that had to be conducted in half duplex mode in order to prevent echo. In half duplex mode, communication can travel in only one direction at a time, similar to the way users take turns when communicating with a walkie-talkie.  <br/> |
-|**Ratio of microphone not functioning** <br/> |Yes  <br/> |Percentage of the call in which the capture device was not functioning at an acceptable level. A high values suggests that quality issues with the call were primarily due to the capture device not working as expected.  <br/> |
-|**Ratio of speaker not functioning** <br/> |Yes  <br/> |Percentage of the call in which the render device was not functioning at an acceptable level. A high values suggests that quality issues with the call were primarily due to the render device not working as expected.  <br/> |
-|**Calls with voice switch (%)** <br/> |Yes  <br/> |Percentage of the total calls which had to be placed into half duplex mode. In half duplex mode, communication can travel in only one direction at a time, similar to the way users take turns when communicating with a walkie-talkie.  <br/> |
-|**Echo microphone in (%)** <br/> |Yes  <br/> |Percentage of time when echo was detected in the microphone capture stream. Typically, values are low for headsets or handsets, and higher for speaker phones or stand-alone speakers. For devices that support on-board acoustic echo cancellation, high values indicate echo leak. For other devices, this metric should not be used to evaluate device quality.  <br/> |
+|**Ratio of microphone not functioning** <br/> |Yes  <br/> |Percentage of the call in which the capture device wasn't functioning at an acceptable level. A high value suggests that quality issues with the call were primarily due to the capture device not working as expected.  <br/> |
+|**Ratio of speaker not functioning** <br/> |Yes  <br/> |Percentage of the call in which the render device wasn't functioning at an acceptable level. A high values suggests that quality issues with the call were primarily due to the render device not working as expected.  <br/> |
+|**Calls with voice switch (%)** <br/> |Yes  <br/> |Percentage of the total calls, which had to be placed into half duplex mode. In half duplex mode, communication can travel in only one direction at a time, similar to the way users take turns when communicating with a walkie-talkie.  <br/> |
+|**Echo microphone in (%)** <br/> |Yes  <br/> |Percentage of time when echo was detected in the microphone capture stream. Typically, values are low for headsets or handsets, and higher for speaker phones or stand-alone speakers. For devices that support on-board acoustic echo cancellation, high values indicate echo leak. For other devices, this metric shouldn't be used to evaluate device quality.  <br/> |
 |**Echo send (%)** <br/> |Yes  <br/> |Percentage of echo transmitted to other users.  <br/> |
 |**Calls with echo (%)** <br/> |Yes  <br/> |Percentage of the total calls that had echo exceeding the acceptable level.  <br/> |
    

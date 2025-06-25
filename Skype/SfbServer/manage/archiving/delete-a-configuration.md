@@ -17,6 +17,8 @@ description: "Summary: Learn how to delete an archiving configuration in Skype f
 
 # Delete an archiving configuration in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to delete an archiving configuration in Skype for Business Server.
   
 You can delete a site configuration or pool configuration, but you cannot delete the global configuration. If you delete the global configuration, it is automatically reset to the default values.

@@ -16,7 +16,9 @@ description: "tblADCookie contains the current Lightweight Directory Access Prot
 ---
 
 # tblADCookie
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 tblADCookie contains the current Lightweight Directory Access Protocol (LDAP) Sync cookies.
   
 **Columns**

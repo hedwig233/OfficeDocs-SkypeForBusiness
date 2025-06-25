@@ -18,6 +18,8 @@ description: "To edit the properties for this computer, you do the following:"
 ---
 
 # Server Settings Expander for Lync Server 2010
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 To edit the properties for this computer, you do the following:
   

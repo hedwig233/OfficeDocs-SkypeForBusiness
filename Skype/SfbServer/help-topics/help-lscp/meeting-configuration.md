@@ -19,6 +19,8 @@ description: "Meeting configuration settings define the type of conferences (als
 
 # Meeting Configuration
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Meeting configuration settings define the type of conferences (also called "meetings") that users can create, and control how (or whether) anonymous users and dial-in conferencing users can join these conferences. These settings only apply to scheduled meetings. They do not apply to ad-hoc meetings created by clicking the Meet Now option in the client.
 
 Meeting configurations apply on the global, site, or pool level:

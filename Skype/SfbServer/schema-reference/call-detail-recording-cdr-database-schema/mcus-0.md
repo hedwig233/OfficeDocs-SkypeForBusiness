@@ -16,7 +16,9 @@ description: "The Mcus view stores information about the MCUs that are participa
 ---
 
 # Mcus view
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The Mcus view stores information about the MCUs that are participating in conference sessions. This view was introduced in Microsoft Lync Server 2013.
   
 |**Column**|**Data Type**|**Details**|

@@ -18,6 +18,8 @@ description: "The Edge pools node lists the Edge pools in your topology. You can
 ---
 
 # Edge Servers Scope Node
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The **Edge pools** node lists the Edge pools in your topology. You can perform the following action:
   

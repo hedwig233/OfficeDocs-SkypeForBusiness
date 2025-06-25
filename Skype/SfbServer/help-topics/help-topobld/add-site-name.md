@@ -18,6 +18,8 @@ description: "To define the first site in your deployment, specify the name of t
 ---
 
 # Add Site Name
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 To define the first site in your deployment, specify the name of the first site. Optionally, you can specify a description for the first site.
   

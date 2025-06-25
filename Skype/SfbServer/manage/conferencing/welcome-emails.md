@@ -17,6 +17,8 @@ description: "Summary: Learn how to welcome users to dial in conferencing in Sky
 
 # Send welcome email to dial-in users in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to welcome users to dial in conferencing in Skype for Business Server.
   
 After you configure dial-in conferencing and test to verify that it's functioning properly, you should set initial personal identification numbers (PINs) for users and notify users about the availability of the feature. You can include introductory instructions such as the initial PIN and the link to the Dial-in Conferencing Settings web page. 

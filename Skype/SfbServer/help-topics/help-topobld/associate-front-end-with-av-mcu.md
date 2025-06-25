@@ -18,6 +18,8 @@ description: "A/V Conferencing enables real-time audio and video communications 
 ---
 
 # Associate Front End With AV MCU
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 A/V Conferencing enables real-time audio and video communications between your users (that is, if they have appropriate client devices, such as headsets for audio conferences, and webcams for video conferences). If your deployment supports conferencing and you enable both web conferencing and A/V Conferencing, you can collocate the A/V Conferencing Server with the Front End Server), or you can deploy one or more stand-alone A/V Conferencing Servers (A/V Conferencing pool). If you choose the option to deploy a stand-alone A/V Conferencing Server, you must define it in Topology Builder.
   

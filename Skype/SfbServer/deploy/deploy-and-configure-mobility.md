@@ -12,12 +12,14 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 8ec6197a-3d1e-4b42-9465-564044cdab1a
-description: "This article will walk you through the steps to configure an existing Skype for Business Server installation to use the Mobility service, allowing your mobile devices to be able to take advantage of Skype for Business Server Mobility features."
+description: "This article walks you through the steps to configure an existing Skype for Business Server installation to use the Mobility service, allowing your mobile devices to be able to take advantage of Skype for Business Server Mobility features."
 ---
 
 # Deploy and Configure Mobility for Skype for Business Server  
  
-This article will walk you through the steps to configure an existing Skype for Business Server installation to use the Mobility service, allowing your mobile devices to be able to take advantage of Skype for Business Server Mobility features.
+[!INCLUDE [appliesto-2015-2019-sub](../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
+This article walks you through the steps to configure an existing Skype for Business Server installation to use the Mobility service, allowing your mobile devices to be able to take advantage of Skype for Business Server Mobility features.
   
 Having reviewed the [Plan for Mobility for Skype for Business Server](../plan-your-deployment/mobility.md) article, you should be ready to proceed with the steps below to deploy Mobility into your Skype for Business Server environment. The steps are as follows (and we're including in this table a permissions list):
   
@@ -34,16 +36,16 @@ Having reviewed the [Plan for Mobility for Skype for Business Server](../plan-yo
 All the following sections contain steps that assume you've read the Planning topic. If anything's confusing you, feel free to check out the information there.
 
 > [!NOTE]
-> MCX (Mobility Service) support for legacy mobile clients is no longer available in Skype for Business Server 2019. All current Skype for Business mobile clients already use Unified Communications Web API (UCWA) to support instant messaging (IM), presence, and contacts. Users with legacy clients using MCX will need to upgrade to a current client.
+> MCX (Mobility Service) support for legacy mobile clients is no longer available in Skype for Business Server 2019. All current Skype for Business mobile clients already use Unified Communications Web API (UCWA) to support instant messaging (IM), presence, and contacts. Users with legacy clients using MCX need to upgrade to a current client.
   
 ## Create DNS records
 <a name="CreateDNSRec"> </a>
 
-You may already have these as part of your Skype for Business Server environment, but you do need to create the following records for Autodiscovery to work:
+You might already have these as part of your Skype for Business Server environment, but you do need to create the following records for Autodiscovery to work:
   
-- An internal DNS record to support mobile users who're connecting from within your organization's network.
+- An internal DNS record to support mobile users who are connecting from within your organization's network.
     
-- An external (or public) DNS record to support mobile users who're connecting from outside your organization's network.
+- An external (or public) DNS record to support mobile users who are connecting from outside your organization's network.
     
 These records can be either A (host) names or CNAME records (you don't have to make both, we're just including the steps for everything here).
   
@@ -51,27 +53,27 @@ These records can be either A (host) names or CNAME records (you don't have to m
 
 1. Log into a DNS server in your network that's either a member of the **Domain Admins** group or the **DnsAdmins** group.
     
-2. Click **Start**, Choose **Administrative Tools** (you may need to **Search** for it if it's not an option off the Start menu), and then click **DNS** to open the DNS administrative snap-in.
+2. Select **Start**, Choose **Administrative Tools** (you might need to **Search** for it if it's not an option off the Start menu), and then select **DNS** to open the DNS administrative snap-in.
     
-3. In the left-hand pane of the console window, you'll need to go to the domain that's home to your Skype for Business Server's Front End Servers, and expand the **Forward Lookup Zones** there.
+3. In the left-hand pane of the console window, you need to go to the domain that's home to your Skype for Business Server's Front End Servers, and expand the **Forward Lookup Zones** there.
     
 4. Take a moment to see which of the following you have:
     
    - Any host A or AAAA records for your Front End Server (Standard or Enterprise) or Front End pool(s).
     
-   - Any host A or AAAA records for a Director or Director pool (an optional configuration you may have in your deployment).
+   - Any host A or AAAA records for a Director or Director pool (an optional configuration you might have in your deployment).
     
-5. Once you've noted this, right-click your SIP domain name, and then choose **New Alias (CNAME)** from the menu.
+5. Once you note this, right-click your SIP domain name, and then choose **New Alias (CNAME)** from the menu.
     
 6. In the **Alias name** textbox, type lyncdiscoverinternal for your host name, for the internal Autodiscover service URL.
     
-7. In the **Fully qualified domain name (FQDN for target host**, you'll need to type or browse to the internal Web Services FQDN for your Front End pool (or single Front End Server, or Director pool or Director), identified in step 4 above. Click OK when this is entered.
+7. In the **Fully qualified domain name (FQDN for target host**, you need to type or browse to the internal Web Services FQDN for your Front End pool (or single Front End Server, or Director pool or Director), identified in step 4 above. Select OK when this is entered.
     
-8. You'll need to create a new Autodiscover CNAME record in the forward lookup zone for each SIP domain supported in your Skype for Business Server environment.
+8. You need to create a new Autodiscover CNAME record in the forward lookup zone for each SIP domain supported in your Skype for Business Server environment.
     
 ### Create an external DNS CNAME record
 
-1. These steps are generic, because we can't tell what public DNS provider you might be using, but we still want to help you out. Please log into your public DNS provider with an account that will be able to make new DNS records there.
+1. These steps are generic, because we can't tell what public DNS provider you might be using, but we still want to help you out. Log into your public DNS provider with an account that can make new DNS records there.
     
 2. At this point in time, a SIP domain should already exist there for Skype for Business Server. Expand the **Forward Lookup Zone** for this SIP domain, or otherwise open it up.
     
@@ -79,29 +81,29 @@ These records can be either A (host) names or CNAME records (you don't have to m
     
    - Any host A or AAAA records for your Front End Server (Standard or Enterprise) or Front End pool(s).
     
-   - Any host A or AAAA records for a Director or Director pool (an optional configuration you may have in your deployment).
+   - Any host A or AAAA records for a Director or Director pool (an optional configuration you might have in your deployment).
     
 4. Once you have that information, you should be able to select an option for creating a **New Alias (CNAME)**.
     
-5. Now you should be able to enter an **Alias Name**, you need to enter lyncdiscover here for the external Autodiscover service URL.
+5. Now you should be able to enter an **Alias Name**. You need to enter lyncdiscover here for the external Autodiscover service URL.
     
-6. Next there should be an area to enter in a **FQDN for target host**, this will need to be the FQDN for your Front End pool (or single Front End Server, or Director pool or Director), identified in step 3 above.
+6. Next there should be an area to enter in a **FQDN for target host**, this needs to be the FQDN for your Front End pool (or single Front End Server, or Director pool or Director), identified in step 3 above.
     
-7. You may need to save here, or if you need to create additional CNAME records in the forward lookup zone of each SIP domain in your Skype for Business Server environment, you should do that, but once you're ready, save your work.
+7. You might need to save here, or if you need to create additional CNAME records in the forward lookup zone of each SIP domain in your Skype for Business Server environment, you should do that, but once you're ready, save your work.
     
 ### Create an internal DNS A record
 
 1. Log into a DNS server in your network that's either a member of the **Domain Admins** group or the **DnsAdmins** group.
     
-2. Click **Start**, Choose **Administrative Tools** (you may need to **Search** for it if it's not an option off the Start menu), and then click **DNS** to open the DNS administrative snap-in.
+2. Select **Start**, Choose **Administrative Tools** (you might need to **Search** for it if it's not an option off the Start menu), and then select **DNS** to open the DNS administrative snap-in.
     
-3. In the left-hand pane of the console window, you'll need to go to the domain that's home to your Skype for Business Server's Front End Servers, and expand the **Forward Lookup Zones** there.
+3. In the left-hand pane of the console window, you need to go to the domain that's home to your Skype for Business Server's Front End Servers, and expand the **Forward Lookup Zones** there.
     
 4. Take a moment to see which of the following you have:
     
    - Any host A or AAAA records for your Front End Server (Standard or Enterprise) or Front End pool(s).
     
-   - Any host A or AAAA records for a Director or Director pool (an optional configuration you may have in your deployment).
+   - Any host A or AAAA records for a Director or Director pool (an optional configuration you might have in your deployment).
     
 5. Once you've noted this, right-click your SIP domain name, and then choose **New Host (A or AAAA)** from the menu.
     
@@ -109,15 +111,15 @@ These records can be either A (host) names or CNAME records (you don't have to m
     
 7. In the **IP Address** textbox, type the internal Web Services IP address for your Front End pool (or single Front End Server, or Director pool or Director), identified in step 4 above.
     
-8. When this is done, click **Add Host**, and then click **OK**.
+8. When this is done, select **Add Host**, and then select **OK**.
     
-9. You'll need to create a new Autodiscover A or AAAA records in the forward lookup zone for each SIP domain supported in your Skype for Business Server environment. To do this, repeat steps 6-8 as many times as needed.
+9. You need to create a new Autodiscover A or AAAA records in the forward lookup zone for each SIP domain supported in your Skype for Business Server environment. To do this, repeat steps 6-8 as many times as needed.
     
-10. When you're done, click **Done**.
+10. When you're done, select **Done**.
     
 ### Create an external DNS A record
 
-1. These steps are generic, because we can't tell what public DNS provider you might be using, but we still want to help you out. Please log into your public DNS provider with an account that will be able to make new DNS records there.
+1. These steps are generic, because we can't tell what public DNS provider you might be using, but we still want to help you out. Log into your public DNS provider with an account that will be able to make new DNS records there.
     
 2. At this point in time, a SIP domain should already exist there for Skype for Business Server. Expand the **Forward Lookup Zone** for this SIP domain, or otherwise open it up.
     
@@ -125,15 +127,15 @@ These records can be either A (host) names or CNAME records (you don't have to m
     
    - Any host A or AAAA records for your Front End Server (Standard or Enterprise) or Front End pool(s).
     
-   - Any host A or AAAA records for a Director or Director pool (an optional configuration you may have in your deployment).
+   - Any host A or AAAA records for a Director or Director pool (an optional configuration you might have in your deployment).
     
 4. Once you have that information, you should be able to select an option for creating a **New Host A or AAAA**.
     
-5. Now you should be able to enter a **Name**, you need to enter lyncdiscover here for the external Autodiscover service URL.
+5. Now you should be able to enter a **Name**. You need to enter lyncdiscover here for the external Autodiscover service URL.
     
-6. Next there should be an area to enter in a **IP Addresss**, this will need to be the IP for your Front End pool (or single Front End Server, or Director pool or Director), identified in step 3 above.
+6. Next there should be an area to enter in a **IP Address**, this needs to be the IP for your Front End pool (or single Front End Server, or Director pool or Director), identified in step 3 above.
     
-7. You may need to save here, or if you need to create additional A or AAAA records in the forward lookup zone of each SIP domain for your Skype for Business Server environment, you should do that, but once you're ready, save your work.
+7. You might need to save here, or if you need to create additional A or AAAA records in the forward lookup zone of each SIP domain for your Skype for Business Server environment, you should do that, but once you're ready, save your work.
     
 ## Modify certificates
 <a name="ModCerts"> </a>
@@ -150,19 +152,19 @@ If you have questions about Planning around certificates, we've documented that 
     
 ### Do I need new certificates?
 
-1. First, you may need to check and see what certificates are in-place, and whether or not they have the entries you need. To do that, you'll need to log into your Skype for Business Server with an account that's a local Administrator. This account may also need to have rights to the issuing Certificate Authority (CA), for some of these steps.
+1. First, you might need to check and see what certificates are in-place, and whether or not they have the entries you need. To do that, you need to log into your Skype for Business Server with an account that's a local Administrator. This account might also need to have rights to the issuing Certificate Authority (CA), for some of these steps.
     
 2. Open the Skype for Business Server Management Shell (you can use Search to find it if you don't have it pinned to your Start menu or task bar).
     
-3. It's going to be essential for you to know what certificates have been assigned before you try adding an updated certificate. So at the command, type:
+3. It's going to be essential for you to know what certificates are assigned before you try adding an updated certificate. So at the command, type:
     
    ```powershell
    Get-CsCertificate
    ```
 
-4. The information from Step 3 will be unique to you. You need to look it over to determine if you have a single certificate that's been assigned for multiple things, or whether you have a different certificate assigned for the different components that need them. The **Use** parameter will tell you how a certificate's being used, and the **Thumbprint** parameter will tell you if it's all the same certificate, or multiple certs.
+4. The information from Step 3 will be unique to you. You need to look it over to determine if you have a single certificate that is assigned for multiple things, or whether you have a different certificate assigned for the different components that need them. The **Use** parameter tells you how a certificate's being used, and the **Thumbprint** parameter tells you if it's all the same certificate, or multiple certs.
     
-5. If you have the SAN entries recommended in our Planning section, you're good. If not, you'll need to request a new certificate, or multiple certificates (depending on your configuration) from your Certificate Authority.
+5. If you have the SAN entries recommended in our Planning section, you're good. If not, you need to request a new certificate, or multiple certificates (depending on your configuration) from your Certificate Authority.
     
 ### Request a new certificate, or certificates, from your Certificate Authority (CA)
 
@@ -174,7 +176,7 @@ If you have questions about Planning around certificates, we've documented that 
    Request-CsCertificate -New -Type Default,WebServicesInternal,WebServicesExternal -Ca dc\myca -AllSipDomain -verbose
    ```
 
-   - Now, if you have multiple SIP domains, you can't use the AllSipDomain parameter as in the example above. You'll need to use the DomainName parameter instead. And when you use the DomainName parameter, you've got to define the FQDN for the lyncdiscoverinternal and lyncdiscover records. An example would be (replacing the -Ca parameter with your own Certificate Authority path):
+   - Now, if you have multiple SIP domains, you can't use the AllSipDomain parameter as in the example above. You need to use the DomainName parameter instead. And when you use the DomainName parameter, you've got to define the FQDN for the lyncdiscoverinternal and lyncdiscover records. An example would be (replacing the -Ca parameter with your own Certificate Authority path):
     
    ```powershell
    Request-CsCertificate -New -Type Default,WebServicesInternal,WebServicesExternal -Ca dc\myca -DomainName "LyncdiscoverInternal.contoso.com, LyncdiscoverInternal.contoso.net" -verbose
@@ -188,7 +190,7 @@ If you have questions about Planning around certificates, we've documented that 
    Request-CsCertificate -New -Type WebServicesInternal -Ca dc\myca -AllSipDomain -verbose
    ```
 
-   - Now, if you have multiple SIP domains, you can't use the AllSipDomain parameter as in the example above. You'll need to use the DomainName parameter instead. And when you use the DomainName parameter, you've got to define the FQDN for the lyncdiscoverinternal and lyncdiscover records. Examples would be (replacing the -Ca parameter with your own Certificate Authority path):
+   - Now, if you have multiple SIP domains, you can't use the AllSipDomain parameter as in the example above. You need to use the DomainName parameter instead. And when you use the DomainName parameter, you've got to define the FQDN for the lyncdiscoverinternal and lyncdiscover records. Examples would be (replacing the -Ca parameter with your own Certificate Authority path):
     
    ```powershell
    Request-CsCertificate -New -Type WebServicesInternal -Ca dc\myca -DomainName "LyncdiscoverInternal.contoso.com, LyncdiscoverInternal.contoso.net" -verbose
@@ -198,7 +200,7 @@ If you have questions about Planning around certificates, we've documented that 
    Request-CsCertificate -New -Type WebServicesExternal -Ca dc\myca -DomainName "Lyncdiscover.contoso.com, Lyncdiscover.contoso.net" -verbose
    ```
 
-   - Once the new certificates have been generated by the CA, you're going to need to assign them.
+   - Once the new certificates are generated by the CA, you're going to need to assign them.
     
 ### Assign certificates using Skype for Business Server Management Shell
 
@@ -220,22 +222,22 @@ If you have questions about Planning around certificates, we've documented that 
 
 ### Viewing certificates in the Microsoft Management Console (MMC)
 
-1. You have an option to look at your certificates using the Certificates snap-in for the MMC. Simply type MMC into search and it should pop up as an application option,.
+1. You have an option to look at your certificates using the Certificates snap-in for the MMC. Type MMC into search and it should pop up as an application option,.
     
-2. To add the Certificates snap-in, you'll need to click **File**, and then **Add/Remove Snap-In...** (or keyboard shortcut **Ctrl+M** would also work). **Certificates** will be an option in the left-hand pane, select it and then **Computer Account** in the pop-up window, then **Next**.
+2. To add the Certificates snap-in, you need to select **File**, and then **Add/Remove Snap-In...** (or keyboard shortcut **Ctrl+M** would also work). **Certificates** will be an option in the left-hand pane, select it and then **Computer Account** in the pop-up window, then **Next**.
     
-3. Still in the pop-up window, in all likelihood you're doing this on the computer that's home to the certificates you need to look at, so leave the selection on **Local Computer** if that's so. If you're working on a remote machine, change the radio button to **Another Computer** and then either enter that computer's FQDN or use the **Browse** button to search for that computer through AD. After selecting the computer, you'll need to click **Finish** when ready, and then **OK** to add the snap-in to the MMC.
+3. Still in the pop-up window, in all likelihood you're doing this on the computer that's home to the certificates you need to look at, so leave the selection on **Local Computer** if that's so. If you're working on a remote machine, change the radio button to **Another Computer** and then either enter that computer's FQDN or use the **Browse** button to search for that computer through AD. After selecting the computer, you'll need to select **Finish** when ready, and then **OK** to add the snap-in to the MMC.
     
 4. Expand the **Certificates** section in the MMC's left-hand pane. Expand the **Personal** folder as well, and then select **Certificates**. This lets you see the certificates in this store.
     
 5. You need to locate the certificate you want to view, right-click on it, and choose **Open**.
     
     > [!NOTE]
-    > How do you know what certificate this is? It should be either the single certificate assigned to everything for your farm, or you may have multiple certificates for different things, like Default, Internal Web Services, etc., in which case you may need to look at multiple certificates. Multiple certificates will have the same thumbprint. 
+    > How do you know what certificate this is? It should be either the single certificate assigned to everything for your farm, or you might have multiple certificates for different things, like Default, Internal Web Services, etc., in which case you might need to look at multiple certificates. Multiple certificates have the same thumbprint. 
   
-6. Once you've gotten to the **Certificate** view, choose **Details**. This will let you see the certificate subject name when you select **Subject**, and the assigned subject name and associated properties are shown.
+6. Once you are at the **Certificate** view, choose **Details**. This lets you see the certificate subject name when you select **Subject**, and the assigned subject name and associated properties are shown.
     
-7. You'll also need to check the **Subject Alternate Name** entries. You'll find one or more of the following:
+7. You also need to check the **Subject Alternate Name** entries. You'll find one or more of the following:
     
    - The pool name for this pool, or the single server name if this isn't a pool.
     
@@ -247,16 +249,16 @@ If you have questions about Planning around certificates, we've documented that 
     
    - If already assigned, the lyncdiscover.\<sipdomain\> and lyncdiscoverinternal.\<sipdomain\> records.
     
-     You'll need to check multiple certificates if you have more than one assigned (check the Note above).
+     You need to check multiple certificates if you have more than one assigned (check the Note above).
     
 8. So, if you find lyncdiscover.\<sipdomain\> and lyncdiscoverinternal.\<sipdomain\> records, you've got this configured already. You can close the MMC.
     
-9. If they aren't assigned, you'll either need to make a new certificate request (outlined above) or you need to install them post-request (we recommend the following the PowerShell above for that).
+9. If they aren't assigned, you either need to make a new certificate request (outlined above) or you need to install them post-request (we recommend the following the PowerShell above for that).
     
 ## Configure the reverse proxy
 <a name="ConfigRP"> </a>
 
-The steps below are not meant to be followed exactly. That's because in previous versions of the product, we'd have walked you through, for example, configuring Threat Management Gateway (TMG) and if you weren't using that, you'd need to work out your own version from there.
+The steps below aren't meant to be followed exactly. That's because in previous versions of the product, we'd have walked you through, for example, configuring Threat Management Gateway (TMG) and if you weren't using that, you'd need to work out your own version from there.
   
 TMG is no longer being offered by Microsoft as a product, and if you still need to configure it, you can look at the [Lync Server 2013 steps](/previous-versions/office/lync-server-2013/lync-server-2013-configuring-the-reverse-proxy-for-mobility). But the following information's intended to be more generally helpful, even if there's no way we can provide specific walkthrough steps for every Reverse proxy out there.
   
@@ -271,31 +273,31 @@ We have two main things to consider:
 - If you're doing your initial Autodiscover request over HTTP, then you'll need to create or modify that rule as well.
     
 > [!NOTE]
-> **Important** A Proxy time-out value is a number that will vary from deployment to deployment. You should monitor your deployment and modify the value for the best experience for clients. You may be able to set the value as low as 200. If you are supporting Lync mobile clients in your environment, you should set the value to 960 to allow for push notification time-outs from Office 365, which have a time-out value of 900. It is very likely that you will have to increase the time-out value to avoid client disconnects when the value is too low, or decrease the number if connections through the proxy do not disconnect but clear long after the client has disconnected. Monitoring and baselining what is usual for your environment is the only accurate way to determine the appropriate setting for this value.
+> **Important** A Proxy time-out value is a number that varies from deployment to deployment. You should monitor your deployment and modify the value for the best experience for clients. You might be able to set the value as low as 200. If you're supporting Lync mobile clients in your environment, you should set the value to 960 to allow for push notification time-outs from Office 365, which have a time-out value of 900. It's likely that you'll have to increase the time-out value to avoid client disconnects when the value is too low, or decrease the number if connections through the proxy don't disconnect but clear long after the client disconnects. Monitoring and baselining what is usual for your environment is the only accurate way to determine the appropriate setting for this value.
   
 ### Modify the existing web publishing rule for your external Autodiscover SAN and URL
 
 1. Open your Reverse proxy interface.
     
-2. You'll need to locate your web publishing rule, and choose the Edit option (it may be on a menu or tab, depending on your Reverse proxy configuration).
+2. You need to locate your web publishing rule, and choose the Edit option (it might be on a menu or tab, depending on your Reverse proxy configuration).
     
 3. There should be an area that states what this web publishing rule is applied to. You need to modify this rule for incoming sites or requests for sites. You're going to **add** a new entry.
     
-4. Type the name of your Autodiscover site (the example we'll use is lyncdiscover.contoso.com), and click **OK** or **Save**, depending on your Reverse proxy's format.
+4. Type the name of your Autodiscover site (the example we use is lyncdiscover.contoso.com), and select **OK** or **Save**, depending on your Reverse proxy's format.
     
-5. You may have a new certificate that has the Autodiscover SAN entry in it. That needs to be installed as well and configured for use according to your Reverse proxy's settings. Be sure to save everything when the configuration is completed.
+5. You might have a new certificate that has the Autodiscover SAN entry in it. That needs to be installed as well and configured for use according to your Reverse proxy's settings. Be sure to save everything when the configuration is completed.
     
-6. If your Reverse proxy has a **Test** functionality, then please make use of it, to ensure everything's working properly.
+6. If your Reverse proxy has a **Test** functionality, then make use of it, to ensure everything's working properly.
     
-7. Now, you may need to repeat these steps if you have a Director or Director pool in your environment (this would mean you have a second rule).
+7. Now, you might need to repeat these steps if you have a Director or Director pool in your environment (this would mean you have a second rule).
     
 ### Create a web publishing rule for the external Autodiscover URL
 
 1. Open your Reverse proxy interface.
     
-2. You'll need to locate where in the interface you create your web publishing rules, and choose the **New** or **Create** option (it may be on a menu or tab, depending on your Reverse proxy configuration). You are looking for the option to create a new web publishing rule.
+2. You need to locate where in the interface you create your web publishing rules, and choose the **New** or **Create** option (it might be on a menu or tab, depending on your Reverse proxy configuration). You're looking for the option to create a new web publishing rule.
     
-3. Typically, you will need to enter the following information:
+3. Typically, you'll need to enter the following information:
     
    - **Name**: the name for your rule
     
@@ -309,7 +311,7 @@ We have two main things to consider:
     
    - You should type **/\\*** as the path to be published, but you also need to **forward the original host header**.
     
-   - There will be an option for **public or external name** details or information. This is the place where you'll be able to enter:
+   - There will be an option for **public or external name** details or information. This is the place where you are able to enter:
     
    - **Accept requests**, but it should be for the domain name.
     

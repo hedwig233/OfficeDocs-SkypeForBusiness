@@ -18,6 +18,8 @@ description: "Use the Select a time-out queue dialog box to select a queue where
 ---
 
 # Select Time-out Queue
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 Use the **Select a time-out queue** dialog box to select a queue where calls are forwarded when they time out.
   

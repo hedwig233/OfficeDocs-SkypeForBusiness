@@ -18,4 +18,6 @@ description: "For information about branch-site resiliency, see Planning for Bra
 
 # Branch Sites planning tool
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 For details about branch-site resiliency, see [Planning for Branch-Site Voice Resiliency](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-branch-site-voice-resiliency).

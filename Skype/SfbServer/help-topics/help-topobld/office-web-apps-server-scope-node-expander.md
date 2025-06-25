@@ -19,6 +19,8 @@ description: "You right click on Office Web Apps Servers in Topology Builder to 
 
 # Office Web Apps Server Scope Node Expander
  
+[!INCLUDE [appliesto-2015-xxx-xxx](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 You right click on **Office Web Apps Servers** in Topology Builder to perform the following:
   
 - **New Office Web Apps Server**: Starts the **Define New Office Web Apps Server** wizard used to define a new Office Web Apps Server.

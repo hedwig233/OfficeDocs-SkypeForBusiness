@@ -18,7 +18,9 @@ description: "The Executing Commands page displays the actions taken by the task
 ---
 
 # Certificate Assignment (Invoke)
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The **Executing Commands** page displays the actions taken by the tasks to assign the certificate to the server. When the tasks are complete, you can view the log that details the certificate assignment process. To view the log file, click **View Log**.
   
 

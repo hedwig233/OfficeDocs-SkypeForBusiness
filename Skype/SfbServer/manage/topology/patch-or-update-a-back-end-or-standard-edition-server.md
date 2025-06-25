@@ -17,19 +17,21 @@ description: "Summary: Learn how to install an update or patch on a Back End Ser
 
 # Patch or update a Back End Server or Standard Edition server in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to install an update or patch on a Back End Server in Skype for Business Server.
   
-This topic explains how to install an update on an Enterprise Edition Back End Server or a Standard Edition server.
+This article explains how to install an update on an Enterprise Edition Back End Server or a Standard Edition server.
   
-If a Back End Server is down for at least 30 minutes while you are upgrading it, users may then go into resiliency mode. When the upgrade is finished and the Back End Servers has again connected with the Front End Servers in the pool, users are returned to full functionality. If the upgrade takes less than 30 minutes, users will not be affected.
+If a Back End Server is down for at least 30 minutes while you're upgrading it, users might then go into resiliency mode. When the upgrade is finished and the Back End Servers again connects with the Front End Servers in the pool, users are returned to full functionality. If the upgrade takes less than 30 minutes, users won't be affected.
   
 ### To update a back end server or Standard Edition server
 
-1. Log on to the server you are upgrading as a member of the CsAdministrator role.
+1. Sign in the server you're upgrading as a member of the CsAdministrator role.
     
 2. Download the update and extract it to the local hard disk.
     
-3. Start the Skype for Business Server Management Shell: Click **Start**, click **All Programs**, click **Skype for Business**, and then click **Skype for Business Server Management Shell**..
+3. Start the Skype for Business Server Management Shell: Select **Start**, select **All Programs**, select **Skype for Business**, and then select **Skype for Business Server Management Shell**.
     
 4. Stop Skype for Business Server services. At the command line, type:
     
@@ -47,7 +49,7 @@ If a Back End Server is down for at least 30 minutes while you are upgrading it,
     
 7. Install the update.
     
-8. Start the Skype for Business Server Management Shell: Click **Start**, click **All Programs**, click **Skype for Business**, and then click **Skype for Business Server Management Shell**.
+8. Start the Skype for Business Server Management Shell: Select **Start**, select **All Programs**, select **Skype for Business**, and then select **Skype for Business Server Management Shell**.
     
 9. Stop Skype for Business Server services again to catch Global Assembly Cache (GAC) -d assemblies. At the command line, type:
     
@@ -75,7 +77,7 @@ If a Back End Server is down for at least 30 minutes while you are upgrading it,
     Install-CsDatabase -Update -ConfiguredDatabases -SqlServerFqdn <SQL Server FQDN>  -ExcludeCollocatedStores
     ```
 
-    - If this is an Standard Edition server, type the following at a command line:
+    - If this is a Standard Edition server, type the following at a command line:
     
     ```PowerShell
     Install-CsDatabase -Update -LocalDatabases

@@ -354,6 +354,14 @@ This policy now has an additional argument as the only configuration point to co
 |Share system audio                |Yes                                                             |Yes                           |
 |Secondary ringer                  |Yes                                                             |Yes                           |
 |Background blurring               |Yes                                                             |Yes                           |
+|Organizers can schedule meetings, webinars, and town halls             |Yes                                                             |Yes                           |
+|Organizers, presenters, and attendees can join meetings and webinars             |Yes                                                             |Yes                           |
+|Organizers and presenters can join town halls            |Yes                                                             |No                           |
+|Attendees can join town halls             |Yes                                                             |Yes                           |
+|Meeting and webinar organizers and presenters are optimized           |Yes                                                             |Yes                           |
+|Town hall organizers and presenters are optimized           |Yes                                                             |No                           |
+|Meeting and webinar attendees are optimized           |Yes                                                             |No                           |
+|Town hall attendees are optimized           |No                                                             |No                           |
 |Annotations                       |Only as presenter. <sup>4</sup>                                 |No                            |
 
 <sup>1</sup> Operator Connect in India with mobile numbers requires latitude and longitude access from the endpoint's OS and local internet breakout. Operator Connect with wireline numbers can use IP or subnet to map to a location. For more details, check [Wireline and Wireless number types in India](operator-connect-india-plan.md#wireline-and-wireless-number-types-in-india).

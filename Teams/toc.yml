@@ -978,6 +978,8 @@ items:
               href: meeting-transcription-captions.md
             - name: Meeting recording and transcript storage and permissions
               href: tmr-meeting-recording-change.md
+            - name: Manage real-time text (RTT)
+              href: teams-real-time-text.md
         - name: Integration
           items:
             - name: eCDN

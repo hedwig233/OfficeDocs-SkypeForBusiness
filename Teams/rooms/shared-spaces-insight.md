@@ -165,7 +165,7 @@ The following screenshot depicts the example of a data tile:
 The data tiles (in the preceding screenshot) display the following categories of information:
 
 - **Total number of rooms**: This tile displays the Latest number of Teams Rooms booked/utilized based on the locations selected.
-- **Total capacity**: This tile displays the summed-up capacity (from the [capacity property in the room resource account](/graph/api/resources/room?view=graph-rest-1.0)) of all the latest Teams Rooms based on the locations selected. If the capacity information isn't available, it's excluded from the data tiles.
+- **Total capacity**: This tile displays the summed-up capacity (from the [capacity property in the room resource account](/graph/api/resources/room?view=graph-rest-1.0&preserve-view=true)) of all the latest Teams Rooms based on the locations selected. If the capacity information isn't available, it's excluded from the data tiles.
 - **Busiest day**: This tile identifies the specific day of the week that witnessed the highest utilization based on the selected period of time and location filters.
 - **Peak utilization time slot**: This tile highlights the peak utilization time slot based on the selected period of time.
 

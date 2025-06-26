@@ -97,11 +97,12 @@ To navigate to the **Shared Spaces Insights (Preview)** page in the Pro Manageme
    |Room     |Location         |
    |Days of week     |Business days         |
    |Business hours     |Business hours         |
+   |Last 30 days (default value)     |Date (on which rooms were chosen)         |
+
+   :::image type="content" source="../media/attributes-insights.png" alt-text="Screenshot that shows the dropdown lists on the Shared Spaces Insights (Preview) page." lightbox="../media/attributes-insights.png":::
 
    > [!NOTE]
    > The **Floor** and **Room** dropdown lists become selectable only after you choose a value for the **Building name** attribute.
-
-   :::image type="content" source="../media/date-dropdown.png" alt-text="Screenshot that shows the Shared Spaces insights page." lightbox="../media/date-dropdown.png":::
 
 1. Select **Apply**.
    The insights on the utilization of shared spaces are displayed for the [components of the **Shared Spaces Insights (Preview)** page](#page-components).

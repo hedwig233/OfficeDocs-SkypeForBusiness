@@ -91,7 +91,7 @@ Get-PartnerApplication | Where-Object { $_.ApplicationIdentifier -eq "00000004-0
 Create a new partner application using the account you previously created in [Step 2](#step-2-create-a-new-mail-user-account-used-by-microsoft-teams-calendar-scheduler-service). Run the following command in the Exchange Management Shell (EMS) within your on-premises Exchange organization:
 
 ```powershell
-New-PartnerApplication -Name "TeamsScheduler" -ApplicationIdentifier 7557eb47-c689-4224-abcf-aef9bd7573df -Enabled $true -LinkedAccount $user.Identity
+New-PartnerApplication -Name "TeamsScheduler" -ApplicationIdentifier "7557eb47-c689-4224-abcf-aef9bd7573df" -Enabled $true -LinkedAccount $user.Identity
 ```
 
 ### Step 5: Create and enable a Partner Application for Cloud Voicemail integration
@@ -99,7 +99,7 @@ New-PartnerApplication -Name "TeamsScheduler" -ApplicationIdentifier 7557eb47-c6
 Create a new partner application to enable Cloud Voicemail integration. Run the following command in the Exchange Management Shell (EMS) on your on-premises Exchange server:
 
 ```powershell
-New-PartnerApplication -Name "CloudVoicemail" -ApplicationIdentifier db7de2b5-2149-435e-8043-e080dd50afae -Enabled $true
+New-PartnerApplication -Name "CloudVoicemail" -ApplicationIdentifier "db7de2b5-2149-435e-8043-e080dd50afae" -Enabled $true
 ```
 
 ### Step 6: Export the Exchange Server auth certificate

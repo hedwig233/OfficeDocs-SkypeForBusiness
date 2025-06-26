@@ -35,7 +35,7 @@ The new Shared Spaces insights page in the Pro Management portal provides IT adm
 To use the Shared Spaces Insights feature, ensure that you meet the following prerequisites:
 
 - **Licensing**: To access the Shared Spaces Insights feature, you need at least one Teams Rooms Pro license, Teams Rooms Premium license, or Teams Shared Device (TSD) license.
-- **Teams Rooms on Android Admin Agent**: Update Teams Rooms on Android devices to [Admin Agent version 1.0.0.202412110504](../devices/certified-device-apps.md) or newer versions to ensure that these devices are visible in the **Shared Spaces Insights (Preview)** page.
+- **Teams Rooms on Android Admin Agent**: Update Teams Rooms on Android devices to [Admin Agent version 1.0.0.202412110504](/MicrosoftTeams/devices/certified-device-apps?branch=pr-en-us-17575&tabs=Agent) or newer versions to ensure that these devices are visible in the **Shared Spaces Insights (Preview)** page.
     - Devices updated to the required Admin Agent version on or before May 6, 2025, will begin reporting utilization metrics starting May 6, 2025.
     - Devices updated after May 6, 2025 will begin reporting utilization metrics only going forward after the Admin Agent version is upgraded to 1.0.0.202412110504 or a newer version.
       > [!IMPORTANT]
@@ -101,6 +101,8 @@ To navigate to the **Shared Spaces Insights (Preview)** page in the Pro Manageme
    > [!NOTE]
    > The **Floor** and **Room** dropdown lists become selectable only after you choose a value for the **Building name** attribute.
 
+   :::image type="content" source="../media/date-dropdown.png" alt-text="Screenshot that shows the Shared Spaces insights page." lightbox="../media/date-dropdown.png":::
+
 1. Select **Apply**.
    The insights on the utilization of shared spaces are displayed for the [components of the **Shared Spaces Insights (Preview)** page](#page-components).
 
@@ -161,8 +163,8 @@ The following screenshot depicts the example of a data tile:
 
 The data tiles (in the preceding screenshot) display the following categories of information:
 
-- **Total number of rooms**: This tile displays the total count of Teams Rooms available based on the locations selected.
-- **Total capacity**: This tile displays summed-up value of the capacity ([capacity property in the room resource account](/graph/api/resources/room?view=graph-rest-1.0&preserve-view=true)) of all the Teams Rooms based on the locations selected. If the capacity information isn't available, it's excluded.
+- **Total number of rooms**: This tile displays the Latest number of Teams Rooms booked/utilized based on the locations selected.
+- **Total capacity**: This tile displays the summed-up capacity (from the [capacity property in the room resource account](/graph/api/resources/room?view=graph-rest-1.0)) of all the latest Teams Rooms based on the locations selected. If the capacity information isn't available, it's excluded from the data tiles.
 - **Busiest day**: This tile identifies the specific day of the week that witnessed the highest utilization based on the selected period of time and location filters.
 - **Peak utilization time slot**: This tile highlights the peak utilization time slot based on the selected period of time.
 
@@ -208,7 +210,7 @@ This column chart illustrates the overall utilization of the spaces in the chose
 
 :::image type="content" source="../media/most-least-utilized-rooms.png" alt-text="Screenshot that shows the chart depicting the rooms that most utilized and least utilized." lightbox="../media/most-least-utilized-rooms.png":::
 
-The most and least utilized rooms' tables provide insights into the utilization of your shared spaces based on the selected period and location. The first table lists the most-used rooms, and the second table lists the least-used rooms sorted by the utilization rate for the top 200 rooms. The utilization rate, average reservation rate, and average occupancy rate columns are defined in the metrics definitions above.
+The most and least utilized rooms' tables provide insights into the utilization of your shared spaces based on the selected period and location. The first table lists the most-used rooms, and the second table lists the least-used rooms sorted by the utilization rate for the top 200 rooms. The utilization rate, average reservation rate, and average occupancy rate columns are defined in the [Space Utilization Metric Definition](#space-utilization-metric-definition) section.
 
 ### Role-Based Access Control (RBAC)
 

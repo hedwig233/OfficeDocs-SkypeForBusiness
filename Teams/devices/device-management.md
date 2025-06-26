@@ -151,16 +151,16 @@ After creating a configuration profile for a Teams device type, assign it to one
 1. If the OEM of any of the selected devices don't support **Partial application of configuration profiles** feature yet, you'll see a warning in the Assign a configuration pane as below  
 ![User's image](media/device-management/image1.png)
 
-Below is the list of the OEMS and their minimum firmware versions that have the support of Partial application of configuration profiles feature.
+    Below is the list of the OEMS and their minimum firmware versions that have the support of Partial application of configuration profiles feature.
 
-   |OEM|Device type|Minimum FW version|
-   | -------- | -------- | -------- |
-   |Audiocodes|Phones|AOSP Firmware: 2.3.497|
-   |Audiocodes|MTR-A, Panels|AOSP Firmware: 2.8.208|
-   |Cisco|MTR-A, Panels|AOSP Firmware: 11.24.1.8|
-   |DTEN|MTR-A|D7X 1.6.13 + Bar 1.3.13 + Mate 2.3.13_AOSP|
-   |Poly|Phones|9.1.0.9017|
-   |Yealink|Phones|122.15.0.166_CP|
+     |OEM|Device type|Minimum FW version|
+     | -------- | -------- | -------- |
+     |Audiocodes|Phones|AOSP Firmware: 2.3.497|
+     |Audiocodes|MTR-A, Panels|AOSP Firmware: 2.8.208|
+     |Cisco|MTR-A, Panels|AOSP Firmware: 11.24.1.8|
+     |DTEN|MTR-A|D7X 1.6.13 + Bar 1.3.13 + Mate 2.3.13_AOSP|
+     |Poly|Phones|9.1.0.9017|
+     |Yealink|Phones|122.15.0.166_CP|
    
 #### Edit an existing configuration profile
 

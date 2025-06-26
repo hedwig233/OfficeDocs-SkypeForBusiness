@@ -88,10 +88,7 @@ Get-PartnerApplication | Where-Object { $_.ApplicationIdentifier -eq "00000004-0
 
 ### Step 4: Create and enable a Partner Application for Teams Calendar Scheduler Service integration
 
-> [!IMPORTANT]
-> The legacy first-party `Skype for Business Online` application, which has the application ID `00000004-0000-0ff1-ce00-000000000000`, will be deprecated in near future and should no longer be used. As part of this effort, a dedicated first-party application was introduced.
-
-Create a new partner application using the account you previously created in [Step 2](#step-2-create-a-new-mail-user-account-used-by-microsoft-teams-calendar-scheduler). Run the following command in the Exchange Management Shell (EMS) within your on-premises Exchange organization:
+Create a new partner application using the account you previously created in [Step 2](#step-2-create-a-new-mail-user-account-used-by-microsoft-teams-calendar-scheduler-service). Run the following command in the Exchange Management Shell (EMS) within your on-premises Exchange organization:
 
 ```powershell
 New-PartnerApplication -Name "TeamsScheduler" -ApplicationIdentifier 7557eb47-c689-4224-abcf-aef9bd7573df -Enabled $true -LinkedAccount $user.Identity
@@ -220,7 +217,7 @@ Install-Module -Name Microsoft.Graph.Applications
 1. In the PowerShell connected to Microsoft Graph session, run the following
 
    ```powershell
-   (Get-MgServicePrincipal -Filter "AppId eq '00000004-0000-0ff1-ce00-000000000000'" -Select "keyCredentials").KeyCredentials | Format-List *
+   (Get-MgServicePrincipal -Filter "AppId eq '7557eb47-c689-4224-abcf-aef9bd7573df'" -Select "keyCredentials").KeyCredentials | Format-List *
    (Get-MgServicePrincipal -Filter "AppId eq 'db7de2b5-2149-435e-8043-e080dd50afae'" -Select "keyCredentials").KeyCredentials | Format-List *
    ```
 

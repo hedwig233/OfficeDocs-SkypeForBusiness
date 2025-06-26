@@ -151,7 +151,7 @@ After creating a configuration profile for a Teams device type, assign it to one
 1. If the OEM of any of the selected devices do not support **Partial application of configuration profiles** feature yet, you will see a warning in the Assign a configuration pane as below  
 ![User's image](media/device-management/image1.png)
 
-Please refer to the below table for more details on the OEM supporting this feature
+Below are the list of the OEMS and their minimum firmware versions that have the support of Partial application of configuration profiles feature.
 
    |OEM|Device type|Minimum FW version|
    | -------- | -------- | -------- |

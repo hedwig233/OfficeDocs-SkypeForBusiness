@@ -76,7 +76,7 @@ Assign the `TeamsSchedulerRole` role to the new account:
 New-ManagementRoleAssignment -Role "TeamsSchedulerRole" -User $user.Identity -DomainController <DomainControllerFQDN>
 ```
 
-### Step 3: Delete the legacy Skype for Business Online application
+### Step 3: Delete the legacy Skype for Business Online Partner Application
 
 The legacy first-party `Skype for Business Online` application, which has the application ID `00000004-0000-0ff1-ce00-000000000000`, will be deprecated in near future and should no longer be used. As part of this effort, dedicated first-party application for `Teams Calendar Scheduler Service` and `Cloud Voicemail` were introduced.
 

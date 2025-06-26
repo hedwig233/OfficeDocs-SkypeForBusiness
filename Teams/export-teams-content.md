@@ -428,7 +428,6 @@ If [your tenant is setup with Teams Retention Policy](/purview/create-retention-
 - **Message is soft deleted by a user in a chat or a channel** If the user is on hold, then beyond the 21 days of deletion period, the message can be exported through the API.
 - **Message is soft deleted by a user in a chat or a channel** If there's a valid retention policy set, then beyond the 21 days of deletion period, the message can be exported through the API.
 - **Message is edited by a user in a chat or a channel** If there's a valid retention policy set, the previous edited versions of the message can be exported.
-<<<<<<< docs-editor/export-teams-content-1750447125
 
 > [!NOTE]
 > The /getAllRetainedMessages API enables the retrieval of deleted channel messages for a maximum of 30 days from the day of deletion. After 30 days, the teams and channels are hard deleted, and messages can't be retrieved.
@@ -438,6 +437,3 @@ If [your tenant is setup with Teams Retention Policy](/purview/create-retention-
 The new Copilot Activity Export API allows you to export Copilot interactions data which includes the user prompt to Copilot and the Copilot response back to the user. This API captures the user intent and Copilot accessed resources and the response back to the user across Microsoft 365 Copilot apps such as Teams, Word and Outlook. 
 
 Learn more about the [aiInteractionHistory: getAllEnterpriseInteractions](/graph/api/aiinteractionhistory-getallenterpriseinteractions?view=graph-rest-1.0&preserve-view=true) that enables [exporting copilot interactions](/microsoftteams/export-teams-content-copilot).
-
-=======
->>>>>>> main

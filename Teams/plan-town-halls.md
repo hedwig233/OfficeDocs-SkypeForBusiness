@@ -46,19 +46,22 @@ There are five steps you must follow to ensure your network is set up to support
 1. **Ensure your teams environment is set up to connect to our services**</br>
    Ensure that your network connectivity to Microsoft 365 follows our network connectivity principles outlined in [Microsoft 365 network connectivity principles](/microsoft-365/enterprise/microsoft-365-network-connectivity-principles). The network connectivity principles are standard principles to follow for all Microsoft 365 services, and not just specific to Teams town hall.
 2. **Ensure your devices are optimized to connect to our services**</br>
-   As part of the network connectivity principles, ensure that the Microsoft 365 endpoints are reachable as defined in [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges).
+   As part of the network connectivity principles, ensure that the Microsoft 365 endpoints are reachable as defined in [Microsoft 365 endpoints](/microsoft-365/enterprise/microsoft-365-endpoints).
 3. **Understand special considerations for events in VPN environments**</br>
    If your organization is using VPN connectivity for remote participants, review the guidance published in [Special considerations for Stream and Teams events in VPN environments](/microsoft-365/enterprise/microsoft-365-vpn-stream-and-live-events). This article details how to optimize the attendee traffic for direct connectivity (also known as split tunneling) to the service.
 4. **Plan for bandwidth considerations for town halls**</br>
-   Follow the bandwidth requirements documented in [Prepare your organization's network for Teams](/MicrosoftTeams/prepare-network#bandwidth-requirements) for your organizers, co-organizers, presenters.
-   Each attendee stream consumes approximately 1.5 Mbps of bandwidth; attendee connectivity  utilizes HTTPS. Physical locations that have a large/densely populated attendee profile should explore using an eCDN to optimize bandwidth usage.
+   Follow the bandwidth requirements documented in [Prepare your organization's network for Teams](/MicrosoftTeams/prepare-network#bandwidth-requirements) for your organizers, co-organizers, and presenters. Without Enterprise Content Delivery Network (eCDN), bandwidth requirements can be approximated at 2 Mbps per viewer at each location. (Update to 3 Mbps for 1080p). For physical locations with a high number of attendees or dense network environments, we recommend implementing an eCDN solution to optimize bandwidth usage and ensure a smooth streaming experience. 
 5. **Optimize your Internal network via eCDN**</br>
-   An Enterprise Content Delivery Network (eCDN) takes the video content from the internet and distributes the content throughout your enterprise without impacting network performance.<br><br> Town hall organizers with a Teams Premium license have Microsoft eCDN enabled by default, but you can select a different eCDN solution for these organizers. Keep in mind that some future Teams Premium town hall features might require the Microsoft eCDN. <br>For town hall organizers with all other Teams subscriptions, you can enable them to use the Microsoft eCDN solution or, alternatively, one of the following certified eCDN partner solutions to optimize your network for town halls held within your organization:
+   An eCDN takes the video content from the internet and distributes the content throughout your enterprise without impacting network performance.<br><br> Town hall organizers with a Teams Premium license have Microsoft eCDN enabled by default, but you can select a different eCDN solution for these organizers. Keep in mind that some future Teams Premium town hall features might require the Microsoft eCDN. <br>For town hall organizers with all other Teams subscriptions, you can enable them to use the Microsoft eCDN solution or, alternatively, one of the following certified eCDN partner solutions to optimize your network for town halls held within your organization:
    - [Hive](https://www.hivestreaming.com/partners/integration-partners/microsoft/)
    - [Kollective](https://kollective.com/ecdn-solutions/microsoft-live-events/)
    - [Ramp](https://rampecdn.com/)
 
    To turn off the Microsoft eCDN for town hall organizers with a Premium license and learn more about our partner solutions, see  [Enterprise content delivery networks for streaming Microsoft Teams events](streaming-ecdn-enterprise-content-delivery-network.md). For more information about Microsoft eCDN, see [Introduction to Microsoft eCDN](/ecdn/intro).
+6. **Perform a silent test**</br>
+Before large-scale events, we recommend performing a silent test to evaluate network performance and identify potential bottlenecks. If you’re using Microsoft eCDN, refer to [How to perform a silent test](/ecdn/how-to/perform-silent-test) for steps on validating network readiness. If you're using an eCDN partner solution, work directly with your provider to schedule and execute a silent test in advance of your event.
+7. **Plan for a dry run**</br>
+Always schedule a dry run ahead of your event to ensure readiness. This includes conducting an eCDN silent test (if applicable) to validate network performance and proactively surface any gaps before going live. 
 
 ## Understand your policies
 

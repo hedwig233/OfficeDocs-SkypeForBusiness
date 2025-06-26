@@ -1,5 +1,5 @@
 ---
-title: Admins- Manage custom dictionaries Microsoft Teams meetings and events
+title: Manage custom dictionaries for Microsoft Teams meetings and events
 ms.author: wlibebe
 author: wlibebe
 ms.reviewer: fei.zuo
@@ -14,10 +14,12 @@ ms.collection:
 - m365initiative-meetings
 - m365copilot
 - magic-ai-copilot
-description: Learn about how to upload and manage a Copilot custom dictionary.
+description: Learn about how to upload and manage a Copilot custom dictionary for Microsoft Teams meetings, webinars, and town halls to enhance the quality of transcripts.
 ---
 
-# Admins- Manage custom dictionaries Microsoft Teams meetings and events
+# Manage custom dictionaries for Microsoft Teams meetings and events
+
+![Image of a checkmark for yes](/office/media/icons/success-teams.png) Meetings ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Webinars ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Town halls
 
 ## Overview
 
@@ -53,7 +55,12 @@ Users in your organization must meet the following requirements to use custom di
 
 ## Understand custom dictionaries
 
-The custom dictionary captures organization-specific terminology to enhance the transcript and AI model's understanding of entities. As an admin, you're the only one who can create and update the custom dictionary with new internal terms. Uploading a new dictionary replaces the existing one in the same language. Your users can't add terms to the dictionary; they need to ask you to upload an updated dictionary with new internal terms.
+The custom dictionary captures organization-specific terminology to improve transcript accuracy and help the AI model better recognize and understand key entities. Admins upload and manage custom dictionaries manually at the tenant level. This feature doesn't currently support group or user specific dictionaries. Its purpose is to give admins a centralized way to maintain terminology. All meetings and events created by your users in your organization with a Microsoft 365 Copilot license automatically benefit from these terms when used, without any negative impact if they aren't.
+
+> [!IMPORTANT]  
+> The custom dictionary enhances transcription for meetings organized or initiated by users with a Microsoft 365 Copilot license.
+
+As an admin, you're the only one who can create and update the custom dictionary with new internal terms. Uploading a new dictionary replaces the existing one in the same language. Your users can't add terms to the dictionary; they must ask you to upload an updated dictionary with new internal terms.
 
 ### Dictionary content
 
@@ -65,6 +72,9 @@ The dictionary is presented in a flat list format, with optional fields for reco
 |Sounds like|A column to record how the word was pronounced in a meeting. This field is optional.|
 |Long form of the term *(for acronyms)*| A column to clarify potential acronyms or abbreviations. This field is optional. |
 |Definition and context |A column to provide more context or definition of the term. This field is optional.|
+
+> [!NOTE]  
+> Currently, the custom dictionary only enhances the meeting transcript. The 'Long form of the term' and 'Definition and context' will be applied in future AI enhancements for Intelligent Recap and Copilot responses.
 
 ### Dictionary sample
 
@@ -132,7 +142,7 @@ You should compile the dictionary in a CSV plain-text format with UTF-8 encoding
 
 To optimize your custom dictionary, follow these best practices:
 
-- Include frequently mentioned terminology, acronyms, and entity names related to your key products and teams in your meetings.
+- Include frequently mentioned terminology, acronyms, product names, project codes, team names, and industry-specific language relevant to your meetings.
 - Allowed symbols in term- Don't include punctuation in the **Term** column and use fewer symbols. Symbols allowed in the middle of terms are: **-'/&·ㆍ**.
 - Localize dictionaries- To create dictionaries in the corresponding languages, you should collect custom terms from each local group. For example, in the Japanese dictionary, some terms might remain in their English Latin form, while others might have local variants. Include all these terms in the Japanese custom dictionary to benefit meetings where Japanese is the primary language.
 - Break down multi-word names- For names with multiple words, consider splitting them into individual parts. For example, instead of "Copilot in Power Platform and Dynamics 365," create separate entries for "Copilot," "Power Platform," and "Dynamics 365."

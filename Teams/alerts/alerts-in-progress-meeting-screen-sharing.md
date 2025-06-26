@@ -47,7 +47,7 @@ To be monitored, meeting attendees must have a Teams Premium or Teams Rooms Pro 
    |**Application sharing (VBSS) conditions**|Choose the screen sharing issues that you want to monitor for.|
    |**Monitoring settings**|Choose the **Notification threshold** and **Monitoring window** to specify how long the condition should exist before an alert is sent.<br>Choose the **Notification waiting period** to specify how often an alert is sent.|
    |**Scope**|Choose the users whose meeting audio quality you want to monitor.|
-   |**Subnet notifications**|Select which networks you want to get alerts for.|
+   |**Subnet notifications**|Select which networks you want to get alerts for. You can select either 'Internal subnets' or 'Internal and external subnets'. If 'Internal subnets' is selected, some [common](../quality-of-experience-review-guide.md#common-subnets) external subnets for homes, hotels, and similar areas are excluded.|
    |**Actions**|Choose if you want to send alerts to a specific channel or to a web hook URL.|
    |**Status**|Choose if the rule is active and alerts should be sent.|
 

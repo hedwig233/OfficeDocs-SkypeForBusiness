@@ -34,12 +34,11 @@ Here are some examples on how you can use these export APIs:
 
 - **Example 4**: If you want to programmatically export the links to Teams meeting transcripts for a given meeting organizer and then download the actual transcripts.
 
-## What is supported by the Teams Export APIs?
+## What's supported by the Teams Export APIs?
 
-- **Bulk Export of Teams Message:** Please refer to [Teams Export APIs throttling limits](/graph/throttling-limits). With these limits you should be able to bulk export Teams messages. 
-
-- **Top Limit for Teams Meesage:** The TOP filter limit for Teams Message APIs is recommended to be set at 250 as the maximum limit beyond which the performance would be limited.
-- **Application Context**: To call Microsoft Graph, your app must acquire an access token from the Microsoft identity platform. The access token contains information about your app and the permissions it has for the resources and APIs available through Microsoft Graph. To get an access token, your app must be registered with the Microsoft identity platform and be authorized by either a user or an administrator for access to the Microsoft Graph resources it needs.
+- **Bulk Export of Teams Message:** Refer to [Teams Export APIs throttling limits](/graph/throttling-limits). With these limits, you should be able to bulk export Teams messages. 
+- **Top Limit for Teams Message:** The TOP filter limit for Teams Message APIs is recommended to be set at 250 as the maximum limit beyond which the performance would be limited.
+- **Application Context**: To call Microsoft Graph, your app must acquire an access token from the Microsoft identity platform. The access token contains information about your app and the permissions it has for the resources and APIs available through Microsoft Graph. To get an access token, your app must be registered with the Microsoft identity platform. Either a user or an administrator must authorize it for access to the Microsoft Graph resources it needs.
     If you're already familiar with integrating an app with the Microsoft identity platform to get tokens, see the [Next Steps](/graph/auth/auth-concepts#next-steps) section for information and samples specific to Microsoft Graph.
 - **Hybrid Environment:** Export APIs support messages sent by users who are provisioned on Hybrid Environment (on-premises Exchange and Teams). Any messages sent by users who are configured for hybrid environment are accessible using Export APIs.
 - **User Deleted Messages:** Messages deleted by users from the Teams client can be accessed using export APIs up to 21 days from the time of deletion.
@@ -55,7 +54,7 @@ Here are some examples on how you can use these export APIs:
 - **Deleted Users**: Export API supports capturing messages for deleted users up to 30 days from the time the user was deleted. To find the list of deleted users, see [Deleted Items](/graph/api/directory-deleteditems-list).
 - **Inactive Users**: Export API supports capturing messages for inactive users up to 30 days from the time the user becomes inactive. To find the list of inactive mailboxes, see [Inactive mailboxes](/purview/create-and-manage-inactive-mailboxes#view-a-list-of-inactive-mailboxes).
 - **Chat Message Properties:** Refer to the [complete list of properties that Teams Export APIs support](/graph/api/resources/chatmessage#properties).
-- **Control Messages:** Export API supports capturing control messages in addition to the user generated messages. Control Messages are system generated messages that appear on the Teams client and carry important information such as "User A added User B to the chat and shared all chat history" along with the timestamp. System messages enable the caller to have insights about events that happened in a team, a channel, or a chat. Refer to [the list of control messages](/graph/system-messages#supported-system-message-events) that Export API currently supports.
+- **Control Messages:** Export API supports capturing control messages in addition to the user generated messages. Control Messages are system generated messages that appear on the Teams client. They carry important information such as "User A added User B to the chat and shared all chat history" along with the timestamp. System messages enable the caller to have insights about events that happened in a team, a channel, or a chat. Refer to [the list of control messages](/graph/system-messages#supported-system-message-events) that Export API currently supports.
 
 Learn more about exporting messages in [chat](/graph/api/chats-getallmessages?view=graph-rest-1.0&preserve-view=true) and [channel](/graph/api/channel-getallmessages?view=graph-rest-1.0&preserve-view=true).
 
@@ -118,7 +117,7 @@ Learn more about [exporting meeting recordings](/graph/api/onlinemeeting-getallr
   ```
 
 > [!NOTE]
-> The API returns response with next page link in case of multiple results. For getting next set of results, simply call GET on the url from @odata.nextlink. If @odata.nextlink isn't present or null, then all messages are retrieved.
+> The API returns response with next page link if there are multiple results. For getting next set of results, call GET on the url from @odata.nextlink. If @odata.nextlink isn't present or null, then all messages are retrieved.
 
 > [!NOTE]
 > The order of messages in the response isn't guaranteed to be sorted by any datetime, such as createdDateTime or lastModifiedDateTime.
@@ -127,7 +126,7 @@ Learn more about [exporting meeting recordings](/graph/api/onlinemeeting-getallr
 
 - Microsoft Teams APIs in Microsoft Graph that access sensitive data are considered protected APIs. You can call these APIs as long as the requirements for [accessing without a user](/graph/auth-v2-service) are met.
 
-- Application permissions are used by apps that run without a signed-in user present; application permissions can only be approved by an administrator. The following permissions are needed:
+- Application permissions are used by apps that run without a signed-in user present. Only an administrator can approve application permissions. The following permissions are needed:
   
   - *Chat.Read.All*: enables access to all 1:1, Group chat, and meeting chat messages.
   
@@ -147,7 +146,7 @@ For Beta APIs, there are currently no Model A or Model B licensing or usage enfo
 
 ### S+C/Model A scenarios
 
-Restricted to applications performing security and/or compliance functions, users must have specific E5 licenses to use this functionality and receive seeded capacity. Seeded capacity is per user and is calculated per month and is aggregated at the tenant level. For usage beyond the seeded capacity, app owners are billed for API consumption. Model A can only access messages from users with an assigned E5 license.
+These scenarios are restricted to applications performing security and/or compliance functions. Users must have specific E5 licenses to use this functionality and receive seeded capacity. Seeded capacity is per user and is calculated per month and is aggregated at the tenant level. For usage beyond the seeded capacity, app owners are billed for API consumption. Model A can only access messages from users with an assigned E5 license.
 
 |Partner Name|Partner Solution|
 |---|---|
@@ -264,9 +263,9 @@ No model declaration enables access to APIs with limited usage per each requesti
 
    - Results aren't guaranteed to be sorted by `createdDateTime`. However, when multiple recordings are present for a single meeting, they share the same `meetingId` value. Additionally, the entries for the multiple recordings are correctly sequenced for the meeting in question.
 
-   - Results are guaranteed to be present only after the associated meeting recordings are available. In other words, the caller requires no additional polling for availability.
+   - Results are guaranteed to be present only after the associated meeting recordings are available. In other words, the caller requires no other polling for availability.
 
-   - Paginating through the results is supported as per current patterns in the Teams Export API. Pagination is supported via the presence of the `@oData.nextLink` property in the response. The nextLink property contains a `skipToken` value, as indicated below. If no `skipToken` is present, it means that there are no more results to retrieve in the current batch:
+   - Paginating through the results is supported as per current patterns in the Teams Export API. Pagination is supported via the presence of the `@oData.nextLink` property in the response. The nextLink property contains a `skipToken` value, as indicated in the following table. If no `skipToken` is present, it means that there are no more results to retrieve in the current batch:
 
      |Request                               |Response      |@nextLink        |Comments                                      |
      |--------------------------------------|--------------|-----------------|----------------------------------------------|
@@ -278,7 +277,7 @@ No model declaration enables access to APIs with limited usage per each requesti
 
    - `DeltaToken` to enable change tracking and syncing scenarios is supported. For an overview and examples of existing delta queries, see [Use delta query to track changes in Microsoft Graph data.](/graph/delta-query-overview)
 
-   - The following API can be used to get the actual recording content of the selected `userId`, `meetingId` and `recordingId` that was obtained in the response of the GET `getAllRecordings` API. It returns the content of the recording:
+   - The following API can be used to get the actual recording content of the selected `userId`, `meetingId`, and `recordingId` obtained in the response of the GET `getAllRecordings` API. It returns the content of the recording:
 
    ```http
    GET users('{userId}')/onlineMeetings('{meetingId}')/recordings('{recordingId}')/content 
@@ -330,11 +329,11 @@ No model declaration enables access to APIs with limited usage per each requesti
 
    - The average size of the transcript content itself in JSON/VTT format is about 300 KB, based on averages we're seeing for meetings that are in range of 30 mins – 60 mins.
 
-   - Results aren't guaranteed to be sorted by `createdDateTime`. However, when multiple recordings are present for a single meeting, they share the same `meetingId` value. Additionally, the entries for the multiple recordings is correctly sequenced for the meeting in question.
+   - Results aren't guaranteed to be sorted by `createdDateTime`. However, when multiple recordings are present for a single meeting, they share the same `meetingId` value. Additionally, the entries for the multiple recordings are correctly sequenced for the meeting in question.
 
-   - Results are guaranteed to be present only after the associated meeting recordings are available. In other words, the caller requires no additional polling for availability.
+   - Results are guaranteed to be present only after the associated meeting recordings are available. In other words, the caller requires no other polling for availability.
 
-   - Paginating through the results are supported as per current patterns in the Teams Export API. Pagination is supported via the presence of `@oData.nextLink` property in the response. The `nextLink` property contains a `skipToken` value, as indicated below. If no `skipToken` is present, it means that there are no more results to retrieve in the current batch:
+   - Paginating through the results are supported as per current patterns in the Teams Export API. Pagination is supported via the presence of `@oData.nextLink` property in the response. The `nextLink` property contains a `skipToken` value, as indicated in the following table. If no `skipToken` is present, it means that there are no more results to retrieve in the current batch:
    
      |Request                               |Response      |@nextLink        |Comments                                      |
      |--------------------------------------|--------------|-----------------|----------------------------------------------|
@@ -346,7 +345,7 @@ No model declaration enables access to APIs with limited usage per each requesti
 
    - `DeltaToken` to enable change tracking and syncing scenarios is supported. For an overview and examples of existing delta queries, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
    
-   - The following API can be used to get the actual transcript content of the selected userId, meetingId and transcriptId that was obtained in the response of the GET getAllTranscripts API. It returns the content of the recording.
+   - The following API can be used to get the actual transcript content of the selected userId, meetingId, and transcriptId that was obtained in the response of the GET getAllTranscripts API. It returns the content of the recording.
 
    ```http
    GET users('{userId}')/onlineMeetings('{meetingId}')/transcripts('{transcriptId}')/content
@@ -356,17 +355,17 @@ For more information, see [Use Graph APIs to fetch transcript](/microsoftteams/p
 
 ## Export API filters
 
-Export API hosted on the Teams Graph Service gets all user messages from the Substrate user mailbox using `users/{userId}/chats/getAllMessages`. Export API retrieves both sent and received messages for a user which leads to export of duplicate messages when calling the API for all users in the chat thread.
+Export API hosted on the Teams Graph Service gets all user messages from the Substrate user mailbox using `users/{userId}/chats/getAllMessages`. Export API retrieves both sent and received messages for a user, which leads to export of duplicate messages when calling the API for all users in the chat thread.
 
-Export API has filter parameters that help optimize the messages returned for a chat thread. The [API GET](https://graph.microsoft.com/v1.0/users/{id}/chats/getAllMessages) supports new filter parameters that allow a way to extract messages based on the sent user, bot, application and system event messages. The filter parameter supports messages sent by the following:
+Export API has filter parameters that help optimize the messages returned for a chat thread. The [API GET](https://graph.microsoft.com/v1.0/users/{id}/chats/getAllMessages) supports new filter parameters that allow a way to extract messages based on the sent user, bot, and application and system event messages. The filter parameter supports messages sent by:
 
 - users (multiple user Ids supported in the same request).
 
- - applications (bots, connectors, and so on).
+- applications (bots, connectors, and so on).
 
- - All [userIdentityTypes](/graph/api/resources/teamworkuseridentity) except emailUser and unknownFutureValue.
+- All [userIdentityTypes](/graph/api/resources/teamworkuseridentity) except emailUser and unknownFutureValue.
    
- - system event messages (control messages).
+- system event messages (control messages).
    
 These parameters are part of the request’s `$filter`. If none of these parameters are present in the request, the messages from all the users present in the specified user chats is returned.
 
@@ -406,7 +405,7 @@ $filter=from/application/applicationIdentityType eq '<appType>' or from/user/id 
    
  - the query returns messages sent by the system if `messageType eq 'systemEventMessage'` is present.
 
-These parameters can be combined between them using the OR operators as well as by combining with the `lastModifiedDateTime` `$filter` parameter.
+These parameters can be combined between them using the OR operators or by combining with the `lastModifiedDateTime` `$filter` parameter.
 
 ## Teams Export APIs for Retained Messages
 If [your tenant is setup with Teams Retention Policy](/purview/create-retention-policies?tabs=teams-retention), Export API supports capturing messages' from holds folder for [individual & group chat](/graph/api/chat-getallretainedmessages), and [posts, comments in Public & Shared channels](/graph/api/channel-getallretainedmessages).
@@ -424,11 +423,12 @@ If [your tenant is setup with Teams Retention Policy](/purview/create-retention-
   GET https://graph.microsoft.com/v1.0/teams/8b081ef6-4792-4def-b2c9-c363a1bf41d5/channels/getAllRetainedMessages
   ```
 
-## What is supported by the getAllRetainedMessages API
+## What's supported by the getAllRetainedMessages API
 
 - **Message is soft deleted by a user in a chat or a channel** If the user is on hold, then beyond the 21 days of deletion period, the message can be exported through the API.
 - **Message is soft deleted by a user in a chat or a channel** If there's a valid retention policy set, then beyond the 21 days of deletion period, the message can be exported through the API.
 - **Message is edited by a user in a chat or a channel** If there's a valid retention policy set, the previous edited versions of the message can be exported.
+<<<<<<< docs-editor/export-teams-content-1750447125
 
 > [!NOTE]
 > The /getAllRetainedMessages API enables the retrieval of deleted channel messages for a maximum of 30 days from the day of deletion. After 30 days, the teams and channels are hard deleted, and messages can't be retrieved.
@@ -439,3 +439,5 @@ The new Copilot Activity Export API allows you to export Copilot interactions da
 
 Learn more about the [aiInteractionHistory: getAllEnterpriseInteractions](/graph/api/aiinteractionhistory-getallenterpriseinteractions?view=graph-rest-1.0&preserve-view=true) that enables [exporting copilot interactions](/microsoftteams/export-teams-content-copilot).
 
+=======
+>>>>>>> main

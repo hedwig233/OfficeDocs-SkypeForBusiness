@@ -46,6 +46,10 @@ If you'd like to get familiar with how policies work for Teams meetings and even
 
 For a full list of admin policies and organizer settings for webinars, see the [Webinar control comparison](#webinar-control-comparison) section in this article.
 
+## Teams for Virtualized Desktop Infrastructure (VDI)
+
+Users in your organization might use VDI. To learn which webinar capabilities are supported in VDI environments, see [New VDI solution for Teams](vdi-2.md#feature-list-with-the-new-optimization) and [Upgrade to new Teams for Virtualized Desktop Infrastructure (VDI)](new-teams-vdi-requirements-deploy.md#features-not-supported-in-vdi).
+
 ## Decide the types of webinars that organizers can create
 
 There are a few key differences between in-org and public webinars. When managing the event access type for webinars to decide whether organizers can schedule public webinars, consider the information in the following table:

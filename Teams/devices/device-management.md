@@ -115,7 +115,7 @@ In addition to the health status of the device, the following issues are also su
 Use configuration profiles to manage settings and features for different Teams Android devices in your organization, including Teams Rooms on Android, Teams displays, Teams phone, and Teams panels. You can create a configuration profile to include settings and features you want to enable or disable and then assign it to a device or set of devices. 
 
 > [!IMPORTANT]
-> We have made few changes in the current configuration profile design to support Partial application of configuration profiles. With this update, you can now configure and apply only the necessary settings without unintentionally overriding other existing settings on the device.
+> We have made few changes in the current configuration profile design to support Partial application of configuration profiles. With this update, you can now configure and apply only the necessary settings without unintentionally overriding other existing settings on the device. Read on to know more.
 
 Here are the different scenarios you can utilize configuration profiles for your Teams device settings management.
 
@@ -133,7 +133,7 @@ To create a configuration profile for a Teams device type:
 1. A “Review configured settings” pop up appears. Compare and review the current and new values of the settings that were changed. Click on __Save changes.__
 
 1. The newly created configuration profile is displayed in the list of profiles.  
-![User's image](media/device-management/image.png)
+![Create Config.](media/device-management/image.png)
 
 #### Assign a configuration profile
 
@@ -151,7 +151,7 @@ After creating a configuration profile for a Teams device type, assign it to one
 1. If the OEM of any of the selected devices do not support **Partial application of configuration profiles** feature yet, you will see a warning in the Assign a configuration pane as below  
 ![User's image](media/device-management/image1.png)
 
-Below are the list of the OEMS and their minimum firmware versions that have the support of Partial application of configuration profiles feature.
+Below is the list of the OEMS and their minimum firmware versions that have the support of Partial application of configuration profiles feature.
 
    |OEM|Device type|Minimum FW version|
    | -------- | -------- | -------- |

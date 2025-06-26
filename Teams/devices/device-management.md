@@ -126,11 +126,11 @@ To create a configuration profile for a Teams device type:
 1. In the left navigation, go to **Teams Devices** > select the Teams device type > **Configuration profiles**. For example, select **Teams Devices** > **Teams panels** > **Configuration profiles** to create a new configuration profile for Teams panels.
 1. Click **Add**.
 1. Enter a name for the profile and optionally add a friendly description.
-1. By default, all the settings in the profile will be in “Not configured” state
+1. By default, all the settings in the profile will be in "Not configured" state.
 
 1. Change the settings you want for the profile from “Not configured” to the required value, and then click __Review changes__.
 
-1. A “Review configured settings” pop up appears. Compare and review the current and new values of the settings that were changed. Click on __Save changes.__
+1. A "Review configured settings" pop up appears. Compare and review the current and new values of the settings that were changed. Click on __Save changes.__
 
 1. The newly created configuration profile is displayed in the list of profiles.  
 ![Create Config.](media/device-management/image.png)
@@ -148,7 +148,7 @@ After creating a configuration profile for a Teams device type, assign it to one
 
 1. The status of the configuration profile assignment can be checked for the device, in the History tab. The __Action__ column displays __Config Update__ and the __Configuration profile__ column displays the configuration profile name.
 
-1. If the OEM of any of the selected devices do not support **Partial application of configuration profiles** feature yet, you will see a warning in the Assign a configuration pane as below  
+1. If the OEM of any of the selected devices don't support **Partial application of configuration profiles** feature yet, you'll see a warning in the Assign a configuration pane as below  
 ![User's image](media/device-management/image1.png)
 
 Below is the list of the OEMS and their minimum firmware versions that have the support of Partial application of configuration profiles feature.
@@ -170,7 +170,7 @@ To edit an existing configuration profile,
 
 1. Click on the configuration profile you want to edit. Change the settings you want for the profile and click on __Review changes.__
 
-1. A “Review configured settings” pop up appears. Compare and review the current and new values of the settings that were changed. Click on __Save changes.__
+1. A "Review configured settings" pop up appears. Compare and review the current and new values of the settings that were changed. Click on __Save changes.__
 
 1. The changes in the settings will be automatically applied to the devices that has the configuration profile assigned.
 
@@ -178,7 +178,7 @@ To edit an existing configuration profile,
 
 1. Click on the configuration profile you want to edit. Change the settings you want for the profile and click on __Review changes.__
 
-1. A “Review configured settings” pop up appears. Compare and review the current and new values of the settings that were changed. Click on __Save changes.__
+1. A "Review configured settings" pop up appears. Compare and review the current and new values of the settings that were changed. Click on __Save changes.__
 
 1. The changes in the settings will be automatically applied to the devices that have the configuration profile assigned.
 
@@ -195,7 +195,7 @@ To reassign a configuration profile to the existing assigned devices, without ma
 1. The configuration profile will be automatically applied to all the devices that have this profile already assigned.
 
 > [!NOTE]
-> As part of the new Partial Application design for configuration profiles, the **"Set device lock"** setting has been removed from MTR-A and Teams Panels profiles. This setting is not applicable to shared devices and does not function as expected in those scenarios, so it has been excluded to avoid confusion.
+> As part of the new Partial Application design for configuration profiles, the **"Set device lock"** setting has been removed from MTR-A and Teams Panels profiles. This setting isn't applicable to shared devices and doesn't function as expected in those scenarios, so it has been excluded to avoid confusion.
 
 #### Frequently asked questions
 
@@ -205,12 +205,12 @@ To reassign a configuration profile to the existing assigned devices, without ma
    *With **Partial Application of Configuration Profiles**, admins now have greater **control and visibility**. Only the settings that are **explicitly configured** in the profile will be applied—ensuring that existing device settings remain unchanged unless intentionally modified. This helps prevent disruptions and simplifies large-scale device management.*
    
 1. What if a device doesn't support partial application of configuration profiles?  
-I*f a configuration profile is assigned to a device that doesn't support Partial application of configuration profiles, then all the settings in the profile, including those left unconfigured, will be applied with their default values (which is basically the behavior of the previous implementation of configuration profiles).*
+*If a configuration profile is assigned to a device that doesn't support Partial application of configuration profiles, then all the settings in the profile, including those left unconfigured, will be applied with their default values (which is basically the behavior of the previous implementation of configuration profiles).*
 
 1. What happens to the existing configuration profiles created before the launch of Partial application of configuration profiles feature?  
 *All existing configuration profiles created prior to the launch will **automatically support** the Partial Application feature. Since these profiles had all settings explicitly configured with default values, they will continue to be shown with the same values in the new design.*
 
-   *If you want to stop applying certain settings, simply change their value to **"Not configured"** and click **Save**. Only the configured settings will then be applied moving forward.*
+   *If you want to stop applying certain settings, change their value to **"Not configured"** and click **Save**. Only the configured settings will then be applied moving forward.*
    
 1. What does **"Not configured"** mean in the new configuration profile design?   
 *In the new design, any setting marked as **"Not configured"** will **not** be applied to the assigned devices. Instead, the existing value already present on the device will remain unchanged. This allows admins to update only the necessary settings without affecting others.*
@@ -219,7 +219,7 @@ I*f a configuration profile is assigned to a device that doesn't support Partial
 
 When configuring Teams Android devices, especially in organizations with multiple locations and different device configurations, managing configuration profiles can become complex. Teams Android devices allow for a variety of settings (e.g., Language, Timezone, Touch controls, Dual display mode, and Whiteboard) which may require the creation of multiple profiles to meet the needs of different teams, rooms, or locations. Here are key considerations for effective management: 
 
-1. **Create one profile per configuration set** - You’ll need a separate profile for each combination of settings. For example, if you manage rooms in different time zones, you’ll need a distinct configuration profile for each time zone. Settings like **Touch controls** or **Dual display mode** require additional profiles to account for variations in devices. For example, for rooms in Berlin with the same timezone, you would need at least three configuration profiles:
+1. **Create one profile per configuration set** - You'll need a separate profile for each combination of settings. For example, if you manage rooms in different time zones, you'll need a distinct configuration profile for each time zone. Settings like **Touch controls** or **Dual display mode** require additional profiles to account for variations in devices. For example, for rooms in Berlin with the same timezone, you would need at least three configuration profiles:
 
    1. Touch controls set to OFF, Dual display mode set to OFF (for single display devices with console)
       
@@ -227,7 +227,7 @@ When configuring Teams Android devices, especially in organizations with multipl
       
    1. Touch controls set to ON, Dual display mode set to OFF (for touch board devices)
 
-1. **Adopt a systemic naming convention** - As new features and settings are added, existing profiles may need duplication. While this increases the number of profiles, it is necessary to ensure that each room or device type receives the appropriate configuration. Use a systemic naming convention that clearly indicates the variable settings included in each profile to stay organized (e.g., Berlin-Timezone-Touch-NoDualDisplay). This will help ensure that profiles are easily identifiable and prevent confusion when applying them to different rooms. 
+1. **Adopt a systemic naming convention** - As new features and settings are added, existing profiles may need duplication. While this increases the number of profiles, it's necessary to ensure that each room or device type receives the appropriate configuration. Use a systemic naming convention that clearly indicates the variable settings included in each profile to stay organized (e.g., Berlin-Timezone-Touch-NoDualDisplay). This will help ensure that profiles are easily identifiable and prevent confusion when applying them to different rooms. 
 
 1. **Group devices by shared configuration needs** - As your deployment grows, group devices with shared configurations to minimize the number of profiles. As Teams Android devices features evolve, keep an eye on new settings that may require additional profiles. Always ensure that each device receives the precise configuration it requires. 
 

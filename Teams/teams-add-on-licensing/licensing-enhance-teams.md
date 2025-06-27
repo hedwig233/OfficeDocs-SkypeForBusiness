@@ -262,7 +262,7 @@ Microsoft Bookings makes scheduling and managing appointments a breeze. It helps
 
 | Feature | Teams | Teams Premium |
 |---------|:-----:|:-------------:|
-| Access virtual appointments with the Bookings app for scheduling, appointment management, and email notifications | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |  ![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
+| Access Bookings for scheduling, appointment management, and email notifications | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |  ![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 | Send email reminders and follow-ups| ![Image of a checkmark for yes](/office/media/icons/success-teams.png) | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Integrate virtual appointments using APIs | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |  ![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 | Manage staff availability | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |

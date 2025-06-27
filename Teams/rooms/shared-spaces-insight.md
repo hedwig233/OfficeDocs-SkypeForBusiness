@@ -28,7 +28,7 @@ f1keywords:
 
 ## Overview
 
-The new Shared Spaces insights page in the Pro Management portal provides IT administrators with customized utilization insights, including time-series data visualizations, for shared spaces beginning with Teams Rooms. This feature uses calendar data and occupancy signals from Teams Rooms to track usage with filters for location, business hours, days of the week, and date ranges.
+The new **Shared Spaces Insights** page in the Pro Management portal provides IT administrators with customized utilization insights, including time-series data visualizations, for shared spaces beginning with Teams Rooms. This feature uses calendar data and occupancy signals from Teams Rooms to track usage with filters for location, business hours, days of the week, and date ranges.
 
 ## Prerequisites for IT admins
 
@@ -105,7 +105,7 @@ To navigate to the **Shared Spaces Insights** page in the Pro Management Portal,
    > The **Floor** and **Room** dropdown lists become available only after you choose a value for the **Building name** attribute.
 
 1. Select **Apply**.
-   The Shared space utilization insights are shown for each component on the Shared Spaces Insights page.
+   The Shared space utilization insights are shown for each component on the **Shared Spaces Insights** page.
 
    > [!NOTE]
    > The IT admin can view the utilization metrics of only those shared spaces that they're authorized to view, based on the roles assigned to you. For more information about the roles assigned to you and the shared spaces for which you're authorized to view the utilization metrics, see [Role-Based Access Control (RBAC)](#role-based-access-control-rbac). 
@@ -149,7 +149,7 @@ The data can also be filtered by the group filter at the top of the Pro Manageme
 
 :::image type="content" source="../media/group-level-filtering.png" alt-text="Screenshot that shows the page on which group-level filtering can be applied." lightbox="../media/group-level-filtering.png":::
 
-## Data Visualizations
+## Data visualizations
 
 The **Shared Spaces Insights** page contains the following data visualizations:
 
@@ -167,7 +167,7 @@ For information on each data visualization, you can hover over the “i” as sh
 > [!NOTE]
 > All components—except **Global page filters**—will have the "i" icon on the top-right of their respective panes.
 
-### Data Tiles
+### Data tiles
 
 Data tiles are the tiles below the dropdown lists. These tiles display the utilization data for the groups you choose from the dropdown list on the top–left side of the **Shared Spaces Insights** page (next to the portal's name).
 
@@ -208,19 +208,19 @@ The "peak utilization chart" shows the peak utilization of your spaces throughou
 
 You can use this chart to identify the peak space usage timeslot on a given day, when the spaces are most and least used.
 
-### Utilization by Days of Week
+### Utilization by days of week
 
 This column chart provides a breakdown of space utilization across different days of the week, helping you identify trends and patterns in usage. This column chart is depicted in the following screenshot:
 
 :::image type="content" source="../media/utilization-by-days-of-week.png" alt-text="Screenshot that shows the shared spaces' utlilization data for different days of the week.' utilization was at its peak." lightbox="../media/utilization-by-days-of-week.png":::
 
-### Overall Shared Spaces Utilization
+### Overall shared spaces utilization
 
 This column chart illustrates the overall utilization of the spaces in the chosen timeframe. The x-axis represents the selected period while the y-axis shows the percentage of shared spaces' utilization.
 
 :::image type="content" source="../media/overall-shared-spaces-utilization.png" alt-text="Screenshot that shows the chart depicting the overall utilization percentage of the shared spaces." lightbox="../media/overall-shared-spaces-utilization.png":::
 
-### Most and Least Utilized Rooms
+### Most and least utilized rooms
 
 :::image type="content" source="../media/most-least-utilized-rooms.png" alt-text="Screenshot that shows the chart depicting the rooms that most utilized and least utilized." lightbox="../media/most-least-utilized-rooms.png":::
 

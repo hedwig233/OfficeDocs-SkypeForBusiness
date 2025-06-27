@@ -288,7 +288,7 @@ The following table describes platform support for Teams Premium webinar feature
 
 With any Microsoft 365 license, your end users can use basic Bookings and virtual appointments capabilities to schedule and join business-to-customer meetings. For example, users can schedule appointments in the Bookings calendar and external attendees can join through a browser without having to download Teams.
 
-To learn more about Bookings and virtual appointments, see [Virtual Appointments with Microsoft Teams](/microsoft-365/frontline/virtual-appointments) and [Microsoft Bookings](/microsoft-365/bookings/bookings-overview).
+To learn more about Bookings and virtual appointments, see [Appointments with Microsoft Teams](/microsoft-365/frontline/virtual-appointments) and [Microsoft Bookings](/microsoft-365/bookings/bookings-overview).
 
 Teams Premium provides advanced Bookings and virtual appointment capabilities, such as:
 

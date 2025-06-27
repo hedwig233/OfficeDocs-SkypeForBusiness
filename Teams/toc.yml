@@ -1244,6 +1244,8 @@ items:
           href: call-queue-auto-attendant-cmdlets.md
         - name: Dial and voice reference
           href: dial-voice-reference.md
+    - name: Manage Copilot in Teams calls
+      href: copilot-teams-calling-transcription.md
     - name: Teams Calling with Teams Premium
       items:
         - name: Intelligent recap for teams calls

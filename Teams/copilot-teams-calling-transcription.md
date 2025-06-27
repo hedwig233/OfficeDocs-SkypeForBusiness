@@ -152,3 +152,5 @@ Set-CsTeamsCallingPolicy -Identity <policy name> -Copilot EnabledWithTranscript 
 [Use end-to-end encryption for one-to-one Microsoft Teams calls](teams-end-to-end-encryption.md)
 
 [Overview - Recording and transcription for Teams meetings, events, and calls](recording-transcription-overview.md)
+
+[Get started with Copilot in Microsoft Teams Phone](https://support.microsoft.com/office/97c55ffb-1499-4b0a-8caa-980ebb4b697b)

@@ -105,7 +105,7 @@ Optional features are available to enhance your organization's Teams Phone exper
   - Greater administrative insights to reporting, with alerting
   - Enhanced supervisory capabilities and insights into Call Queues with the Microsoft [Queues app](manage-queues-app.md).
 
-**[Microsoft 365 Copilot in Teams calls](copilot-teams-calling.md)**
+**[Microsoft 365 Copilot in Teams calls](copilot-teams-calling-transcription.md)**
 
 - Microsoft 365 Copilot in Teams calls is an artificial intelligence (AI) tool that captures important conversation points. Each call participant with a Microsoft 365 Copilot license can ask prompts that are only visible to them. Microsoft 365 Copilot in Teams can also recommend follow-up tasks, all in real time during a call. As an admin, you can manage how users in your org use Copilot for Teams calls.
 

@@ -108,7 +108,7 @@ Microsoft 365 Copilot in Teams is your users’ personal Copilot, helping them i
 | ------- | -------------- | ----------------- |
 | Copilot in Teams chats and channels | None | [Use Copilot in Microsoft Teams chat and channels](https://support.microsoft.com/office/use-copilot-in-microsoft-teams-chat-and-channels-cccccca2-9dc8-49a9-ab76-b1a8ee21486c) |
 | Copilot in Teams meetings and events | [Manage Microsoft 365 Copilot in Teams meetings and events](copilot-teams-transcription.md) | [Use Copilot in Microsoft Teams meetings](https://support.microsoft.com/office/use-copilot-in-microsoft-teams-meetings-0bf9dd3c-96f7-44e2-8bb8-790bedf066b1) |
-| Copilot in Teams Phone | [Manage Microsoft 365 Copilot in Teams calls](copilot-teams-calling.md) | [Get started with Copilot in Microsoft Teams Phone](https://support.microsoft.com/office/get-started-with-copilot-in-microsoft-teams-phone-97c55ffb-1499-4b0a-8caa-980ebb4b697b) |
+| Copilot in Teams Phone | [Manage Microsoft 365 Copilot in Teams calls](copilot-teams-calling-transcription.md) | [Get started with Copilot in Microsoft Teams Phone](https://support.microsoft.com/office/get-started-with-copilot-in-microsoft-teams-phone-97c55ffb-1499-4b0a-8caa-980ebb4b697b) |
 | Copilot in Teams Rooms | [Teams Rooms and Copilot overview](rooms/copilot-admin-mtr.md) | None |
 | Copilot in Teams for multitenant organizations | [Manage Copilot access for B2B members within multitenant organizations (MTO) in Teams](copilot-mto.md) | None |
 

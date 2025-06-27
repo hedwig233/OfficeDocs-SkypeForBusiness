@@ -389,7 +389,7 @@ items:
         - name: Manage Copilot in Teams meetings and events
           href: copilot-teams-transcription.md
         - name: Manage Copilot in Teams calls
-          href: copilot-teams-calling.md
+          href: copilot-teams-calling-transcription.md
         - name: Teams Rooms and Copilot overview
           href: rooms/copilot-admin-mtr.md
     - name: Agents for Teams

@@ -27,4 +27,4 @@ Skype for Business Server Subscription Edition (SE) Release to Manufacturing (RT
 - The product name changed from Microsoft Skype for Business Server 2019 to Microsoft Skype for Business Server Subscription Edition
 - The build number
 
-New changes  will be introduced starting with the Skype for Business Server SE updates after the initial SE release
+New changes  will be introduced starting with the Skype for Business Server SE updates after the initial SE release.

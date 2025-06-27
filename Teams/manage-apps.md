@@ -126,6 +126,9 @@ To make any apps or Copilot agents available in your organization, ensure the fo
 
 For more information, see [manage apps that work across Teams, Outlook, and Microsoft 365 App](manage-apps-across-m365.md).
 
+> [!NOTE]
+> Until your tenant is migrated to unified app management, ensure that the settings in both admin centers, such as blocked apps or org-wide app settings, remain synchronized. This measure prevents unexpected disruptions or issues with app functionality. 
+
 ## Manage org-wide app settings
 
 Use org-wide app settings to control whether users with an [F license](https://www.microsoft.com/microsoft-365/enterprise/frontline) get the tailored frontline app experience, whether users can install third-party apps, and whether users can upload custom apps in your organization.

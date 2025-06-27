@@ -3,6 +3,8 @@
   items: 
     - name: What's new
       href: ../whats-new.md
+    - name: Release notes for Skype for Business Server SE
+      href: ../release-notes-for-skype-for-business-server-se.md
     - name: What's deprecated
       href: ../deprecated.md
     - name: Virtualization guidance

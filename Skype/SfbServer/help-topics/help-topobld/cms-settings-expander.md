@@ -18,10 +18,12 @@ description: "The Central Management Server can be changed from one defined Fron
 ---
 
 # CMS Settings Expander
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The Central Management Server can be changed from one defined Front End pool to another defined Front End pool. To change the location of the Central Management Server, select the Front End pool from the drop-down list under **Front End server to install Central Management Server on**. A Front End Server can be an Enterprise Edition Front End pool or a Standard Edition Front End Server.
   
 > [!IMPORTANT]
-> If you have defined, published, and deployed the Central Management store for the infrastructure, you cannot change the location of the Central Management store without relocating the Central Management store to another Front End by an external process. 
+> If you have defined, published, and deployed the Central Management store for the infrastructure, you can't change the location of the Central Management store without relocating the Central Management store to another Front End by an external process. 
   
 For details about moving the Central Management Server store, see [Move-CsManagementServer](/powershell/module/skype/move-csmanagementserver?view=skype-ps) in the Windows PowerShell cmdlet reference.

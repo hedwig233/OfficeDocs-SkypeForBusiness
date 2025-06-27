@@ -19,6 +19,8 @@ description: "On the Move Users dialog, you can select the source and destinatio
 
 # Move All Users
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 On the **Move Users** dialog, you can select the source and destination pools for moving user accounts from one pool to another in your deployment.
 
 For more information about moving users, see [Move Users to Another Pool](/previous-versions/office/lync-server-2013/lync-server-2013-move-users-to-another-pool).

@@ -17,7 +17,9 @@ description: "Verify your Response Group deployment success, in Skype for Busine
 ---
 
 # (Optional) Verify Response Group deployment in Skype for Business
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Verify your Response Group deployment success, in Skype for Business Server Enterprise Voice.
   
 After you configure Response Group, you need to verify the configuration to make sure your response groups work as expected. At minimum, verify the following scenarios by using the following types of users:
@@ -39,7 +41,7 @@ After you configure Response Group, you need to verify the configuration to make
 - A user calls the response group while the agent is on another call and goes to the queue.
 
     > [!NOTE]
-    > If the response group does not work as expected please check next link:
+    > If the response group doesn't work as expected check next link:
     > https://support.office.com/article/troubleshooting-for-response-groups-ca72d8f8-4054-4974-b832-4f173611bd89
     
 

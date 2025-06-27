@@ -21,6 +21,8 @@ description: "Summary: Explore these links to learn how to develop conceptual, l
 ---
 
 # Plan for your Skype for Business Server 2015 deployment
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 **Summary:** Explore these links to learn how to develop conceptual, logical, and physical designs for configuring Skype for Business Server 2015 features, servers, and topologies.
   

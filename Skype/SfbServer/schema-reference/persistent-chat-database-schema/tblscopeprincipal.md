@@ -16,6 +16,8 @@ description: "tblScopePrincipal contains scopes assigned to nodes."
 ---
 
 # tblScopePrincipal
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 tblScopePrincipal contains scopes assigned to nodes.
   

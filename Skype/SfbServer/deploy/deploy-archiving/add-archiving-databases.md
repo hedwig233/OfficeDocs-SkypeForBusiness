@@ -17,6 +17,8 @@ description: "Summary: Read this topic to learn how to add archiving databases t
 
 # Add archiving databases to an existing deployment in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Read this topic to learn how to add archiving databases to your Skype for Business Server deployment.
   
 You must incorporate archiving into your topology before you can configure your deployment to support archiving. The information in this topic explains how to use Topology Builder to:

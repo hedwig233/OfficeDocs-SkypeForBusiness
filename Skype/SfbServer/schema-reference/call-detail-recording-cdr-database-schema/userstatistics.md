@@ -16,7 +16,9 @@ description: "The UserStatistics table is a supporting table. Each record in the
 ---
 
 # UserStatistics table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The UserStatistics table is a supporting table. Each record in the table stores information about an individual user's usage of the system. This table was introduced in Microsoft Lync Server 2013.
   
 |**Column**|**Data Type**|**Key/Index**|**Details**|

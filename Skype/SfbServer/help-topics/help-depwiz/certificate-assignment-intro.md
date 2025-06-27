@@ -18,7 +18,9 @@ description: "To begin assigning a certificate for use in Skype for Business Ser
 ---
 
 # Certificate Assignment (Intro)
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 To begin assigning a certificate for use in Skype for Business Server, click **Next**.
   
 

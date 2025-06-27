@@ -19,4 +19,6 @@ description: "You can add support for external user access when you deploy your 
 
 # Add Edge Server Support
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 You can add support for external user access when you deploy your initial topology, or at a later time. For details about adding Edge Servers to an existing topology, see [Define Your Edge Topology](/previous-versions/office/lync-server-2013/lync-server-2013-define-your-edge-topology) in the Edge Server Deployment documentation.

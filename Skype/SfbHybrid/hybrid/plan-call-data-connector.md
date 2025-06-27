@@ -17,6 +17,8 @@ description: "Overview of using Skype for Business Online telemetry tools to mon
 
 # Plan Call Data Connector
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../../SfBServer2019/includes/appliesto-xxx-2019-sub.md)]
+
 ## Overview
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]

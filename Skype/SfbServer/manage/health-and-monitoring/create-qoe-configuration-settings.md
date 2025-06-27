@@ -16,6 +16,8 @@ description: "Summary: Learn about Quality of Experience (QoE) settings in Skype
 ---
 
 # Create Quality of Experience configuration settings in Skype for Business Server
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 **Summary:** Learn about Quality of Experience (QoE) settings in Skype for Business Server.
   
@@ -23,7 +25,7 @@ Quality of Experience (QoE) metrics track the quality of audio and video calls m
   
 When you install Skype for Business Server, a single, global collection of QoE configuration settings is created for you. Administrators also have the option of creating custom settings at the site scope. Whenever these site-scoped settings are used, they take precedence over the global settings. For example, if you create site-scoped settings for the Redmond site then those settings (rather than the global settings) will be used to manage QoE in Redmond.
   
-QoE configuration settings can be created by using either Skype for Business Server Control Panel or the [New-CsQoEConfiguration](/powershell/module/skype/new-csqoeconfiguration?view=skype-ps) cmdlet. If you are using Skype for Business Server Control Panel to create new settings the following options will be available to you:
+QoE configuration settings can be created by using either Skype for Business Server Control Panel or the [New-CsQoEConfiguration](/powershell/module/skype/new-csqoeconfiguration?view=skype-ps&preserve-view=true) cmdlet. If you are using Skype for Business Server Control Panel to create new settings the following options will be available to you:
   
 |**UI setting**|**PowerShell parameter**|**Description**|
 |:-----|:-----|:-----|
@@ -33,7 +35,7 @@ QoE configuration settings can be created by using either Skype for Business Ser
 |Keep QoE data for maximum duration (days)  <br/> |KeepQoEDataForDays  <br/> |Number of days QoE data will be stored before being purged from the database. This value is ignored if purging is disabled.  <br/> |
    
 > [!NOTE]
-> The New-CsQoEConfiguration cmdlet includes additional options not available in Skype for Business Server Control Panel. For more information, see the [New-CsQoEConfiguration](/powershell/module/skype/new-csqoeconfiguration?view=skype-ps) help topic.
+> The New-CsQoEConfiguration cmdlet includes additional options not available in Skype for Business Server Control Panel. For more information, see the [New-CsQoEConfiguration](/powershell/module/skype/new-csqoeconfiguration?view=skype-ps&preserve-view=true) help topic.
   
 ### To create QoE configuration settings by using Skype for Business Server Control Panel
 
@@ -85,5 +87,5 @@ You can create QoE configuration settings by using Windows PowerShell and the Ne
   New-CsQoEConfiguration -Identity "site:Redmond" -KeepQoEDataForDays 30 -PurgeHourOfDay 3
   ```
 
-For more information, see the help topic for the [New-CsQoEConfiguration](/powershell/module/skype/new-csqoeconfiguration?view=skype-ps) cmdlet.
+For more information, see the help topic for the [New-CsQoEConfiguration](/powershell/module/skype/new-csqoeconfiguration?view=skype-ps&preserve-view=true) cmdlet.
 

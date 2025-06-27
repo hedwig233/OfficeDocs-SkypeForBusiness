@@ -16,7 +16,9 @@ description: "tblPrincipalMemberDifference contains group membership changes (bo
 ---
 
 # tblPrincipalMemberDifference
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 tblPrincipalMemberDifference contains group membership changes (both added and removed members) that haven't yet been processed by the later Active Directory Domain Services Sync steps.
   
 **Columns**

@@ -18,6 +18,8 @@ description: "Summary: Configure two-factor authentication in Skype for Business
 
 # Configure two-factor authentication in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Configure two-factor authentication in Skype for Business Server.
 
 The following sections describe the steps necessary to configure two-factor authentication for your deployment. For more information about Two-factor authentication, see [Enabling Office 365 multi-factor authentication for online administrators - Grid User Post](https://go.microsoft.com/fwlink/p/?LinkId=313332).
@@ -83,7 +85,7 @@ For computers equipped with a Trusted Platform Module (TPM) chip that meets spec
 6. From the TPM management console, verify that your TPM specification version is at least 1.2
 
     > [!NOTE]
-    > If you receive a dialog stating that a Compatible Trust Platform Module (TPM) cannot be found, verify that the computer has a compatible TPM module and that it is enabled in the system BIOS.
+    > If you receive a dialog stating that a Compatible Trust Platform Module (TPM) can't be found, verify that the computer has a compatible TPM module and that it's enabled in the system BIOS.
 
 7. Close the TPM management console
 
@@ -123,7 +125,7 @@ For more information on enrolling on behalf of users as an enrollment agent, see
 3. Browse to the **Certificate Authority Web Enrollment** page (e.g. https://MyCA.contoso.com/certsrv).
 
     > [!NOTE]
-    > If you are using Internet Explorer 10, you may need to view this website in Compatibility Mode.
+    > If you're using Internet Explorer 10, you may need to view this website in Compatibility Mode.
 
 4. On the **Welcome** Page, select **Request a certificate**.
 
@@ -155,7 +157,7 @@ For more information on enrolling on behalf of users as an enrollment agent, see
 
     - For **Friendly Name** enterSmardcard Certificate.
 
-8. If you are using a physical smartcard reader, insert the smart card into the device.
+8. If you're using a physical smartcard reader, insert the smart card into the device.
 
 9. Click **Submit** to submit the certificate request.
 
@@ -167,7 +169,7 @@ For more information on enrolling on behalf of users as an enrollment agent, see
 11. Once the certificate has been issued, click **Install this certificate** to complete the enrollment process.
 
     > [!NOTE]
-    >  If your certificate request fails with the error "This Web browser does not support the generation of certificate requests," there are three possible ways to resolve the issue:
+    >  If your certificate request fails with the error "This Web browser doesn't support the generation of certificate requests," there are three possible ways to resolve the issue:
     >- Enable Compatibility View in Internet Explorer.
     >- Enable the Turn on Intranet settings option in Internet Explorer.
     >- Select the Reset all zones to default level setting under the Security tab in the Internet Explorer options menu.
@@ -177,7 +179,7 @@ For more information on enrolling on behalf of users as an enrollment agent, see
 The following section describes how to configure Active Directory Federation Services (AD FS 2.0) to support multi-factor authentication. For information on how to install AD FS 2.0, see [AD FS 2.0 Step-by-Step and How To Guides](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd727938(v=ws.10)).
 
 > [!NOTE]
-> When installing AD FS 2.0, do not use the Windows Server Manager to add the Active Directory Federation Services role. Instead, download and install the [Active Directory Federation Services](/troubleshoot/windows-server/identity/availability-description-afds).
+> When installing AD FS 2.0, don't use the Windows Server Manager to add the Active Directory Federation Services role. Instead, download and install the [Active Directory Federation Services](/troubleshoot/windows-server/identity/availability-description-afds).
 
 ### To configure AD FS for two-factor Authentication
 
@@ -256,7 +258,7 @@ Using forms-based authentication, you can develop a web page that allows users t
 
 7. Search for \<localAuthenticationTypes\>.
 
-    Note that there are four authentication types listed, one per line.
+    There are four authentication types listed, one per line.
 
 8. Move the line containing the TLSClient authentication type to the top of the list in the section.
 
@@ -275,7 +277,7 @@ Using forms-based authentication, you can develop a web page that allows users t
 The following section describes how to configure Skype for Business Server to support passive authentication. Once enabled, users who are enabled for two-factor authentication will be required to use a physical or virtual smart card and a valid PIN to sign in using the Skype for Business client.
 
 > [!NOTE]
-> It is strongly recommended that customers enable passive authentication for Registrar and Web Services at the service level. If passive authentication is enabled for Registrar and Web Services at the global level, it will likely result in organization-wide authentication failures for users who are not signing in with the supported desktop client.
+> It's strongly recommended that customers enable passive authentication for Registrar and Web Services at the service level. If passive authentication is enabled for Registrar and Web Services at the global level, it will likely result in organization-wide authentication failures for users who aren't signing in with the supported desktop client.
 
 ### Web Service Configuration
 

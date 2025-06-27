@@ -16,7 +16,9 @@ description: "The ErrorDef table stores information about each type of error tha
 ---
 
 # ErrorDef table in Skype for Business Server 2015
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The ErrorDef table stores information about each type of error that may occur. Each record is one type of error.
   
 |**Column**|**Data Type**|**Key/Index**|**Details**|

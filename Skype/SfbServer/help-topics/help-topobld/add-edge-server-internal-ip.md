@@ -19,6 +19,8 @@ description: "The internal IP address is the IP address of the internal interfac
 
 # Add Edge Server Internal IP
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The internal IP address is the IP address of the internal interface of the Edge Server.
 
 You can add support for external user access when you deploy your initial topology or afterward. For details about adding Edge Servers to an existing topology, see [Define Your Edge Topology](/previous-versions/office/lync-server-2013/lync-server-2013-define-your-edge-topology) in the Edge Server Deployment documentation.

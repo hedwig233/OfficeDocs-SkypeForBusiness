@@ -23,6 +23,12 @@ ms.collection:
 
 This article describes what's new in Direct Routing. Check back often for updates.
 
+## Important, please upgrade to the latest SBA version immediately
+
+Microsoft is enhancing security for its services, and in latest SBA release we introduced changes incompatible with older SBA installations. Existing SBA versions released before February, 2025 (pre SBA v.2025.2.5.1) will continue to operate with older versions of telemetry and configuration endpoints only for grace period (till September 1st, 2025). However, these endpoints will either be phased out or the older SBA versions will lack the necessary functionality to utilize them. Consequently, SBA versions released before February, 2025 (pre SBA v.2025.2.5.1) will cease to function after September 1st , 2025.
+
+Please reach out to your SBC vendor to get latest SBA installation package immediately.
+
 ## New Call Troubleshooting via SIP Call Flow is available
 
 The new Session Initiation Protocol (SIP) call flow diagram in Teams Admin Center is available starting March 19, 2025. This tool will enable admins to troubleshoot their Direct Routing calls in a self-serve way. This feature is accessible via the Usage reports page under Teams Admin center. It allows admins to view the SIP requests, responses and associated Session Description Protocol (SDP) data between Microsoft Teams SIP proxy and the Session Border Controller (SBC) through which the call was routed. This data will be available for all calls made more than 30 minutes and less than 30 days ago. 

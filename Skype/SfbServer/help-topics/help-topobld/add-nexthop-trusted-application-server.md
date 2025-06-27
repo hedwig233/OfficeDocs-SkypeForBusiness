@@ -18,6 +18,8 @@ description: "To set the next hop for the Trusted Applications Server or pool, d
 ---
 
 # Add NextHop Trusted Application Server
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 To set the next hop for the Trusted Applications Server or pool, do the following:
   

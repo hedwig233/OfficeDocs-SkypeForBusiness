@@ -16,7 +16,9 @@ description: "This documents the schema of the Quality of Experience (QoE) datab
 ---
 
 # Quality of Experience (QoE) database schema
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 This documents the schema of the Quality of Experience (QoE) database in Skype for Business Server 2015.
   
 ## In This Section

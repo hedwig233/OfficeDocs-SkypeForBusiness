@@ -17,7 +17,9 @@ description: "Tasks you'll need to do to configure Skype for Business Server 201
 ---
 
 # Performance Scenarios for the Skype for Business Server 2015 Stress and Performance Tool
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Tasks you'll need to do to configure Skype for Business Server 2015 to do performance and load-testing, using the Stress and Performance Tool.
   
 To run the Skype for Business Server 2015 Stress and Performance Tool (LyncPerfTool), the Skype for Business Server 2015 topology must first be configured for scenarios relevant to you. If Skype for Business Server 2015 isn't configured, or is configured incorrectly, your load simulation is very likely to fail. With the Skype for Business Server 2015 Stress and Performance Tool, we're providing example Skype for Business Server Management Shell scripts and basic resource files as part of the tool download. These can be used as a starting point for configuring your Skype for Business Server deployment. This article describes the Windows PowerShell examples provided.

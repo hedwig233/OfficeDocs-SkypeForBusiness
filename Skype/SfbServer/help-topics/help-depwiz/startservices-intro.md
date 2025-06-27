@@ -18,6 +18,8 @@ description: "To start services on the Skype for Business Server 2015 role serve
 ---
 
 # StartServices (Intro)
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 To start services on the Skype for Business Server 2015 role server that you're deploying, review the introduction screen. Notice that the commands issued to start the Skype for Business Server don't wait for the service to start. This is a best effort to start the services, and you should monitor the actual status of the services by using the Windows Services Microsoft Management Console (MMC). Select **Next** to begin the **Start Services** task.
   

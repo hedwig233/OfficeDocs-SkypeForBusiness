@@ -18,6 +18,8 @@ description: "Use the Select Exchange UM Auto Attendant dialog box to select an 
 ---
 
 # Select Exchange UM Auto Attendant
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 Use the **Select Exchange UM Auto Attendant** dialog box to select an Exchange UM Auto Attendant that will handle incoming calls to a range of unassigned numbers.
   

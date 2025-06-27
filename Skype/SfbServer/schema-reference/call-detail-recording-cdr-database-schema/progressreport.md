@@ -16,7 +16,9 @@ description: "Progress reports are based on data uploaded by the client to the d
 ---
 
 # ProgressReport table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Progress reports are based on data uploaded by the client to the database after a call or session is completed. Progress reports are written only for calls and sessions that Skype for Business Server 2015 determines might be useful for diagnostic purposes.
   
 The ErrorTime, ErrorReportSeq and ProgressReportSeq fields don't necessarily refer to errors but to messages that indicate the status of calls or messages.

@@ -14,18 +14,20 @@ ms.custom:
 ms.service: skype-for-business-server
 ms.localizationpriority: medium
 ms.assetid: c9b81f20-ce8c-40f1-8bed-50775cc35e58
-description: "Device Update Web service automatically creates log files that record device update activity. As part of your organization's data management strategy, you may want to set thresholds on log data cache size, log file size, or the length of time a log file is kept before it is purged. You can change these settings according to your organization's requirements. If you do not want Device Update Web service to purge log files automatically, you can purge them manually, as needed. Log settings can be changed globally or per site."
+description: "Device Update Web service automatically creates log files that record device update activity. As part of your organization's data management strategy, you may want to set thresholds on log data cache size, log file size, or the length of time a log file is kept before it's purged. You can change these settings according to your organization's requirements. If you don't want Device Update Web service to purge log files automatically, you can purge them manually, as needed. Log settings can be changed globally or per site."
 ---
 
 # Device Log Configuration
 
-Device Update Web service automatically creates log files that record device update activity. As part of your organization's data management strategy, you may want to set thresholds on log data cache size, log file size, or the length of time a log file is kept before it is purged. You can change these settings according to your organization's requirements. If you do not want Device Update Web service to purge log files automatically, you can purge them manually, as needed. Log settings can be changed globally or per site.
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
+Device Update Web service automatically creates log files that record device update activity. As part of your organization's data management strategy, you may want to set thresholds on log data cache size, log file size, or the length of time a log file is kept before it's purged. You can change these settings according to your organization's requirements. If you don't want Device Update Web service to purge log files automatically, you can purge them manually, as needed. Log settings can be changed globally or per site.
 
 > [!NOTE]
-> You can also configure a time of day when you want Device Update Web service to automatically delete log files that are older than the number of days you configured the service to keep log files (by default, that is log files that are more than 10 days old). This setting cannot be modified using Skype for Business Server Control Panel. Instead, you must use Skype for Business Server Management Shell. To specify the time of day to delete expired log files, use the **New-CsDeviceUpdateConfiguration** cmdlet with the -LogCleanUpTimeOfDay parameter. For details, see [New-CsDeviceUpdateConfiguration](/powershell/module/skype/new-csdeviceupdateconfiguration?view=skype-ps).
+> You can also configure a time of day when you want Device Update Web service to automatically delete log files that are older than the number of days you configured the service to keep log files (by default, that is log files that are more than 10 days old). This setting can't be modified using Skype for Business Server Control Panel. Instead, you must use Skype for Business Server Management Shell. To specify the time of day to delete expired log files, use the **New-CsDeviceUpdateConfiguration** cmdlet with the -LogCleanUpTimeOfDay parameter. For details, see [New-CsDeviceUpdateConfiguration](/powershell/module/skype/new-csdeviceupdateconfiguration?view=skype-ps).
 
 > [!CAUTION]
-> Purging files permanently removes them from the file system. After you purge a file, it cannot be recovered.
+> Purging files permanently removes them from the file system. After you purge a file, it can't be recovered.
 
 ## Tasks you can perform
 

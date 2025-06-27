@@ -21,6 +21,8 @@ description: "Deploy advanced Enterprise Voice features in Skype for Business Se
 
 # Deploy advanced Enterprise Voice features in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Deploy advanced Enterprise Voice features in Skype for Business Server.
   
 After you have configured basic Enterprise Voice functionality for your organization, you can optionally deploy one or more advanced Enterprise Voice features by following the procedures in this section. 

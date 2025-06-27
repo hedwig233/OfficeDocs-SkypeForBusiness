@@ -19,6 +19,8 @@ description: "You right click Office Web Apps Servers and select New Office Web 
 
 # Office Web Apps Servers Scope Node
 
+[!INCLUDE [appliesto-2015-xxx-xxx](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 You right click **Office Web Apps Servers** and select **New Office Web Apps Server** to open the wizard.
 
 ![OfficeWebApps Servers Scope Node.](../../media/OfficeWebApps_Servers_Scope_Node.jpg)

@@ -135,6 +135,11 @@ For Microsoft Teams Rooms Pro Management Portal, you also need to make sure that
 - mmrprodgcciot.azure-devices.net
 - mmrprodgccstor.blob.core.windows.net
 
+**GCC-High customers will also need to enable the following URLs:**
+
+- mmrgcchiot.azure-devices.us
+- mmrgcchstor.blob.core.usgovcloudapi.net
+
 Teams Rooms is configured to automatically keep itself patched with the latest Windows updates, including security updates. Teams Rooms installs any pending updates every day beginning between 2:00 - 3:00 am local device time using a preset local policy. There's no need to use other tools to deploy and apply Windows Updates. Using other tools to deploy and apply updates can delay the installation of Windows patches and thus lead to a less secure deployment. The Teams Rooms app is deployed using the Microsoft Store.
 
 Teams Rooms devices work with most 802.1X or other network-based security protocols. However, we're not able to test Teams Rooms against all possible network security configurations. Therefore, if performance issues arise that can be traced to network performance issues, you may need to disable these protocols. For more information, see [Implementing 802.1x authentication](802-1x-authentication.md)

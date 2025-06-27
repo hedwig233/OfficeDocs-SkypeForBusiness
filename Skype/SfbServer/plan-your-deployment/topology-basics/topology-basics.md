@@ -21,6 +21,8 @@ description: "Summary: Choose your topology for Skype for Business Server. Learn
 
 # Topology Basics for Skype for Business Server
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Choose your topology for Skype for Business Server. Learn about server collocation for Skype for Business Server.
 
 Before preparing anything else, you'll want to know you're planning for the right topology for your deployment of Skype for Business Server. The first thing you need to decide is if you're going to have an on-premises deployment of Skype for Business Server, or if you're going to combine this with a Skype for Business Server Online deployment in a Hybrid deployment. Either way, you're going to want to read further, as we'll detail the on-premises topologies here, but the Hybrid details are documented in their own section.

@@ -16,7 +16,9 @@ description: "The VideoStreamDetail View stores information about each video str
 ---
 
 # VideoStreamDetail view
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The VideoStreamDetail View stores information about each video stream in the database. This view was introduced in Microsoft Lync Server 2013.
   
 |**Column**|**Data Type**|**Description**|

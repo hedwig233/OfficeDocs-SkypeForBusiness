@@ -16,7 +16,9 @@ description: "The CodecDescription table maps unique codec identifiers to their 
 ---
 
 # CodecDescription table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The CodecDescription table maps unique codec identifiers to their corresponding codec. Codecs are used to encode digital signals for transmission and broadcast, and then to decode those signals for playback. This table was introduced in Microsoft Lync Server 2013
   
 |**Column**|**Data Type**|**Key/Index**|**Details**|

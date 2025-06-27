@@ -18,7 +18,9 @@ description: "The Certificate Assignment page starts the process of assigning a 
 ---
 
 # Certificate Assignment (From Request)
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The **Certificate Assignment** page starts the process of assigning a certificate to the requested usages on the role server. Select the **View Certificate Details** to view the certificate. You can select the **General** tab, the **Details** tab, or the **Certification Path** tab. The **General** tab displays basic information about the certificate, such as the issuing certification authority and the status of a private key. The Details tab displays certificate information such as the subject name, subject alternative names, and other details. The **Certification Path** tab displays the certificate "chain of trust" from the certificate through any issuing or intermediate certification authorities (if they're present) to the root certification authority.
   
 Select **Next** to continue.

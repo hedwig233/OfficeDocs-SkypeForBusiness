@@ -16,7 +16,9 @@ description: "Summary: Learn how to manage meeting configuration settings in Sky
 ---
 
 # Manage meeting configuration settings in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to manage meeting configuration settings in Skype for Business Server.
   
 This topic describes how to manage meeting configuration settings. For more information about how to plan and deploy conferencing, see [Plan for conferencing in Skype for Business Server](../../plan-your-deployment/conferencing/conferencing.md) and [Deploy conferencing in Skype for Business Server](../../deploy/deploy-conferencing/deploy-conferencing.md).

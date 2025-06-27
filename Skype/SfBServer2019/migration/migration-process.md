@@ -16,6 +16,8 @@ description: "The recommended and supported migration procedure for Skype for Bu
 
 # Migration process
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../includes/appliesto-xxx-2019-sub.md)]
+
 The recommended and supported migration procedure for Skype for Business Server 2019 is side-by-side migration. This article describes why you should use side-by-side migration and also includes information about coexistence testing.
   
 ## Side-By-Side Migration

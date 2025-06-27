@@ -19,6 +19,8 @@ description: "This node shows the fully qualified domain name (FQDN), associated
 
 # PSTN Gateway Scope Node
  
+[!INCLUDE [appliesto-2015-xxx-xxx](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 This node shows the fully qualified domain name (FQDN), associated Mediation Server, and other basic information about this public switched telephone network (PSTN) gateway. You can perform the following actions:
   
 - **Edit Properties**. Opens the **Edit Properties** page for this gateway, where you can change its FQDN (if the topology is not already published), listening port, transport protocol, and alternate media IP address.

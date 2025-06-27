@@ -18,6 +18,8 @@ description: "You can Define the Monitoring SQL Server store by configuring the 
 ---
 
 # Add Director Monitoring
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 You can **Define the Monitoring SQL Server store** by configuring the following properties:
   

@@ -16,7 +16,9 @@ description: "tblPrincipalMeta contains the principals that have to be refreshed
 ---
 
 # tblPrincipalMeta
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 tblPrincipalMeta contains the principals that have to be refreshed from Active Directory Domain Services.
   
 **Columns**

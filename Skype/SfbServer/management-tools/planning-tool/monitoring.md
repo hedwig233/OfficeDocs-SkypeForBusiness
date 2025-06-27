@@ -18,6 +18,8 @@ description: "In Skype for Business Server 2015, monitoring collects usage infor
 
 # Monitoring planning tool
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 In Skype for Business Server 2015, monitoring is used to collect usage information and Quality of Experience (QoE) data about the communication sessions that your users are involved in.
 
 For more details about planning for Monitoring Server, see [Planning for Monitoring](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-monitoring).

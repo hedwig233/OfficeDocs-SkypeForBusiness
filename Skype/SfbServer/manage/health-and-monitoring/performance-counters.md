@@ -16,7 +16,9 @@ description: "Summary: Learn about the performance counters that you can use to 
 ---
 
 # Mobility performance counters in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn about the performance counters that you can use to monitor servers running the Unified Communications Web API (UCWA) and the Skype for Business Server Mcx Mobility Service.
   
 The following tables list the names and descriptions of performance counters that you can use to monitor servers running the Unified Communications Web API (UCWA) and the Skype for Business Server Mcx Mobility Service. 

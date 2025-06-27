@@ -5453,8 +5453,43 @@
     {
       "source_path": "Teams/phone-number-calling-plans/more-information-about-porting.md",
       "redirect_url": "/MicrosoftTeams/phone-number-calling-plans/port-order-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Teams/phone-number-calling-plans/manually-submit-port-order.md",
+      "redirect_url": "/MicrosoftTeams/phone-number-calling-plans/port-order-overview",
+      "redirect_document_id": true
+    },    
+    {
+      "source_path": "Teams/getting-service-phone-numbers.md",
+      "redirect_url": "/microsoftteams/getting-phone-numbers-for-your-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Teams/phone-number-calling-plans/supported-rate-centers-coverage-matrix.md",
+      "redirect_url": "/microsoftteams/manage-phone-numbers-landing-page",
       "redirect_document_id": true
     },
+    {
+      "source_path": "Teams/manage-phone-numbers.md",
+      "redirect_url": "/microsoftteams/getting-phone-numbers-for-your-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Teams/how-many-phone-numbers-can-you-get.md",
+      "redirect_url": "/microsoftteams/getting-phone-numbers-for-your-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Teams/search-for-phone-numbers-for-users.md",
+      "redirect_url": "/microsoftteams/getting-phone-numbers-for-your-users",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "Teams/phone-number-calling-plans/port-order-status.md",
+      "redirect_url": "/MicrosoftTeams/phone-number-calling-plans/transfer-phone-numbers-to-teams",
+      "redirect_document_id": true
+    },    
     {
       "source_path": "Teams/sip-tester-powershell-script.md",
       "redirect_url": "/MicrosoftTeams/direct-routing-monitor-and-troubleshoot",
@@ -5504,6 +5539,11 @@
       "source_path": "Teams/new-teams-known-issues.md",
       "redirect_url": "/microsoftteams/teams-client-update",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "Teams/manage-apps-across-m365.md",
+      "redirect_url": "/microsoftteams/manage-apps",
+      "redirect_document_id": false
     }
   ]
 }

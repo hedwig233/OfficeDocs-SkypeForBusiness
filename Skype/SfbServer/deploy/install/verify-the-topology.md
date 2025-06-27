@@ -20,10 +20,12 @@ description: "Summary: Learn how to verify the Skype for Business Server topolog
 ---
 
 # Verify the topology in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to verify the Skype for Business Server topology and Active Directory servers are working as expected.
   
-After you have the topology published and the Skype for Business Server system components installed on each of the servers in the topology, you are ready to verify that the topology is working as expected. This includes verifying that the configuration has propagated out to all of the Active Directory servers so that the entire domain knows Skype for Business is available in the domain. You can do steps 1 through 5 in any order. However, you must do steps 6, 7, and 8 in order, and after steps 1 through 5, as outlined in the diagram. Verifying the topology is step 8 of 8.
+After you have the topology published and the Skype for Business Server system components installed on each of the servers in the topology, you're ready to verify that the topology is working as expected. This includes verifying that the configuration has propagated out to all of the Active Directory servers so that the entire domain knows Skype for Business is available in the domain. You can do steps 1 through 5 in any order. However, you must do steps 6, 7, and 8 in order, and after steps 1 through 5, as outlined in the diagram. Verifying the topology is step 8 of 8.
   
 ![Overview diagram.](../../media/c8698b53-1282-4978-a9a6-ca3f7a778f60.png)
   
@@ -36,12 +38,12 @@ The final step is to test the Front End pool and confirm that Skype for Business
 1. Use Active Directory Computers and Users to add the Active Directory user object of the administrator role for the Skype for Business Server deployment (on which Skype for Business Server Control Panel is installed) to the **CSAdministrator** group.
     
     > [!IMPORTANT]
-    > If you do not add the appropriate users and groups to the CsAdministors group, you will receive an error when you open Skype for Business Server Control Panel which reads, "Unauthorized: Access is denied due to a role-based access control (RBAC) authorization failure." 
+    > If you don't add the appropriate users and groups to the CsAdministors group, you'll receive an error when you open Skype for Business Server Control Panel which reads, "Unauthorized: Access is denied due to a role-based access control (RBAC) authorization failure." 
   
 2. If the user object is currently logged on, log off and then log on again to register the new group assignment.
     
     > [!NOTE]
-    > The user account cannot be the local administrator of any server running Skype for Business Server. 
+    > The user account can't be the local administrator of any server running Skype for Business Server. 
   
 3. Use the administrative account to log on to the computer where Skype for Business Server Control Panel is installed.
     

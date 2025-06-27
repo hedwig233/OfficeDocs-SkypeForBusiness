@@ -17,6 +17,9 @@ description: "Summary: Assign a server-to-server authentication certificate for 
 ---
 
 # Assign a server-to-server authentication certificate to Skype for Business Server
+
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Assign a server-to-server authentication certificate for Skype for Business Server.
   
 To determine whether or not a server-to-server authentication certificate is assigned to Skype for Business Server, run the following command from the Skype for Business Server Management Shell:

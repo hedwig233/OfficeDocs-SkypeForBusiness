@@ -17,6 +17,8 @@ description: "tblPreference contains the users' client preferences. This is gene
 
 # tblPreference
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 tblPreference contains the users' client preferences. This is generally used by clients previous to Lync 2013.
 
 **Columns**

@@ -20,6 +20,8 @@ description: "This article describes how to configure port ranges and a Quality 
 
 # Configuring port ranges and a Quality of Service policy for your Conferencing, Application, and Mediation servers
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 This article describes how to configure port ranges and a Quality of Service policy for your Conferencing, Application, and Mediation servers.
 
 ## Configure port ranges

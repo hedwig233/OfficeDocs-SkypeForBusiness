@@ -2,9 +2,9 @@
 title: Manage Microsoft 365 Copilot in Teams calls
 author: mkbond007
 ms.author: mabond
-manager: pamgreen
+manager: dansimp
 ms.reviewer: nijait
-ms.date: 05/29/2025
+ms.date: 06/27/2025
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -24,49 +24,49 @@ ms.collection:
   - Tier1
   - teams-copilot
   - magic-ai-copilot
-description: Learn how to manage Microsoft 365 Copilot in Teams calling admin policies in the Teams admin center. Learn how to manage transcripts and transcription for Copilot Microsoft Teams calls.
+description: Learn how to manage Microsoft 365 Copilot in Teams for calls with calling policies in the Teams admin center. Learn how to manage transcripts and transcription for Copilot in Microsoft Teams for calls.
 ---
 
 # Manage Microsoft 365 Copilot in Teams calls
 
-**APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png) 1:1 Teams calls ![Image of a checkmark for yes](/office/media/icons/success-teams.png) PSTN calls
+**APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png) 1:1 Teams calls ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Public Switched Telephone Network (PSTN) calls
 
 > [!NOTE]
 > Microsoft 365 Copilot in Teams is available for public and GCC. It isn’t currently available for GCC High and DoD.
 
 ## Overview
 
-Microsoft 365 Copilot in Teams calls is an artificial intelligence (AI) tool that captures important conversation points. Each call participant with a Microsoft 365 Copilot license can ask prompts that are only visible to them. Call participants can learn things like who said what and where people agree or disagree. Microsoft 365 Copilot in Teams can also recommend follow-up tasks, all in real time during a call. As an admin, you can manage how users in your org use Copilot for Teams calls.
+Microsoft 365 Copilot is a secure AI assistant that can be used in Teams to generate real-time insights and recaps for Teams calls. Each call participant with a Microsoft 365 Copilot license can ask prompts that are only visible to them. Call participants can learn things like who said what and where people agree or disagree. Microsoft 365 Copilot in Teams can also recommend follow-up tasks, all in real time during a call. As an admin, you can manage how users in your org use Copilot for Teams calls.
 
-There are two ways for users in your organization to use Copilot in calls:
+There are two modes for users in your organization to use Copilot in calls:
 
 - [During and after the call](#during-and-after-the-call)
 - [Only during the call](#only-during-the-call)
 
-The following table describes the differences between these two settings and how they work with call recording and transcription:
+The following table describes the differences between these two modes and how they work with call recording and transcription:
 
-| Copilot setting in Calling Policy | Transcription enabled during call  | Copilot available during call | Transcription available after call| Copilot available after call |
+| Copilot setting in Calling Policy | User started transcription during call  | Copilot available during call | Transcription available after call|
 | --- | --- | --- | --- |
-| Enabled | Yes | Yes | Yes | Yes |
-| Enabled | No | Yes | No | No |
-| EnabledWithTranscript | Yes | Yes | Yes| Yes|
-| EnabledWithTranscript | No | No | No | No |
-| Disabled | Yes | No | Yes | No |
-| Disabled | No | No | No | No |
+| Enabled | Yes | Yes | Yes |
+| Enabled | No | Yes | No |
+| EnabledWithTranscript | Yes | Yes | Yes|
+| EnabledWithTranscript | No | No | No |
+| Disabled | Yes | No | Yes |
+| Disabled | No | No | No |
 
 ### During and after the call
 
-If you enable transcription and Copilot for Teams calls, once a licensed user starts transcription (or recording) during a call, licensed users can select the Copilot button for use during and after the call.
+As an admin, if you enable both transcription and Copilot for Teams for your users via calling policy, once a licensed user starts transcription (or recording) during a call, licensed users can select the Copilot button for use during and after the call.
+
+After the calls ends, licensed users can access the Copilot insights, summaries, and recap that were generated during the call. Depending on your organization's retention settings, users can return to access the transcript or recording. After the call, users can view the information exchanged with Microsoft 365 during the call and can ask Microsoft 365 Copilot to generate new insights or summaries.
 
 To learn more about how your users can use Copilot during and after the call, see [Get started with Copilot in Microsoft Teams Phone](https://support.microsoft.com/office/97c55ffb-1499-4b0a-8caa-980ebb4b697b).
 
 ### Only during the call
 
-You can allow licensed users to use Copilot only during a call, so that AI-generated content isn't available after the call ends. This option occurs when the **Copilot** setting is set to **On** and transcription isn't enabled by the transcription calling policy.
+You can limit licensed users to use Copilot only during a call. In this mode, after a call ends, transcription or Copilot content generated during a call isn't retained. To enable this mode, you must use the Teams calling policy to turn on Copilot and turn off transcription for calls. Some organizations may prefer to only have Microsoft 365 Copilot available during the call due to compliance and eDiscovery considerations.
 
-By turning Copilot on and transcription off, once someone with a Microsoft 365 Copilot license selects the Copilot button during the call, Copilot runs for all licensed users. This option relies on speech-to-text audio processing data that isn't saved after the call ends. Users can't access Copilot in Teams and its history after the call.
-
-With Copilot for Teams calls, you can turn off Copilot for calls for users in your organization. All call artifacts are removed immediately after the call ends. This is useful if you want to limit the use of Copilot in Teams calls for compliance or regulatory reasons. For example, if your organization is in a regulated industry such as finance or healthcare, you may want to turn off Copilot for Teams calls for users in your organization because of transcript retention and eDiscovery implications. You can also turn off the ability for users to record or transcribe calls, but still allow them to use Copilot for other purposes.
+By turning Copilot on and calling transcription off, once a user with a Microsoft 365 Copilot license selects the Copilot button during a call, Copilot runs for all licensed users. This option relies on speech-to-text audio processing data that isn’t saved after the call ends. The information exchanged between the user and Microsoft 365 Copilot during the call isn't saved after the call ends, either. As shown later in this article, you can [configure Copilot for Teams calls](#configure-copilot-for-teams-calls) in the Teams admin center and via PowerShell.
 
 This policy is only available for Teams *calls*. It’s not available for Teams meetings or events. For more information about Copilot in Teams meetings and events, see [Manage Microsoft 365 Copilot in Teams meetings and events](copilot-teams-transcription.md).
 
@@ -103,8 +103,8 @@ The following table shows the behaviors of the settings for the `-Copilot` param
 
 |Teams admins center policy value |PowerShell setting value |Behavior|
 |---------|---------|---------------|
-|On|Enabled|Call participants can use Copilot with or without transcription during calls. If a user enables transcription during the call, users can't access a transcript after the call ends and a transcription isn't saved.|
-|On with saved transcript required|EnabledWithTranscript| **This is the default value**. Users assigned this policy can only use Copilot when transcription is enabled during calls. If transcription isn't enabled, then users can't see the Copilot option for the call. |
+|On|Enabled|Call participants can use Copilot with or without transcription during calls. If a licensed user doesn't start transcription during the call, users can't access a transcript after the call ends and a transcription isn't saved.|
+|On with saved transcript required|EnabledWithTranscript| **This is the default value**. Users assigned this policy can only use Copilot when a licensed user starts transcription during a call. If transcription isn't enabled, then users can't see the Copilot option for the call and there is no transcript available after the call ends.|
 |Off|Disabled|Copilot is off for calls.|
 
 ### Using the Teams admin center
@@ -119,13 +119,13 @@ To configure Copilot in Teams calls for your users from the Teams admin center, 
     - **On**: Call participants can use Copilot with or without transcription during calls.
     - **On with saved transcript required**: Users assigned this policy can only use Copilot when transcription is enabled during calls. If transcription isn't enabled, then users can't see the Copilot option for the call.
     - **Off**: Copilot is off for calls.
-6. Select **Save**
+6. Select **Save**.
 
 ### Using PowerShell
 
 To manage how users in your org use Copilot in Teams calls with PowerShell, use the `-Copilot` parameter within the  [**SetCsTeamsCallingPolicy**](/powershell/module/teams/set-csteamscallingpolicy) PowerShell cmdlet.
 
-To allow users to use Copilot during calls without requiring transcription, use the following command:
+To allow licensed users to use Copilot during calls without requiring transcription, use the following command:
 
 ```PowerShell
 Set-CsTeamsCallingPolicy -Identity <policy name> -Copilot Enabled
@@ -137,15 +137,18 @@ To turn off Copilot for calls, use the following command:
 Set-CsTeamsCallingPolicy -Identity <policy name> -Copilot Disabled
 ```
 
-To require transcription for Copilot in calls, use the following command:
+To require transcription for Copilot in calls and turn on calling transcription, use the following command:
 
 ```PowerShell
-Set-CsTeamsCallingPolicy -Identity <policy name> -Copilot EnabledWithTranscript
+Set-CsTeamsCallingPolicy -Identity <policy name> -Copilot EnabledWithTranscript -AllowTranscriptionForCalling $true
 ```
 
 ## Related articles
 
-- [Microsoft 365 Copilot documentation](/microsoft-365-copilot)
-- [Configure call recording, transcription, and captions in Teams calls](call-recording-transcription-captions.md)
-- [Use end-to-end encryption for one-to-one Microsoft Teams calls](teams-end-to-end-encryption.md)
-- [Overview - Recording and transcription for Teams meetings, events, and calls](recording-transcription-overview.md)
+[Microsoft 365 Copilot documentation](/microsoft-365-copilot)
+
+[Configure call recording, transcription, and captions in Teams calls](call-recording-transcription-captions.md)
+
+[Use end-to-end encryption for one-to-one Microsoft Teams calls](teams-end-to-end-encryption.md)
+
+[Overview - Recording and transcription for Teams meetings, events, and calls](recording-transcription-overview.md)

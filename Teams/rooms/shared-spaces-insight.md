@@ -73,7 +73,7 @@ The details of the device signals from Teams Rooms that contribute to the room o
 |Making a VOIP call      |Yes         |Yes         |
 |Making a PSTN call      |Yes         |No         |
 |Local HDMI ingest outside of a meeting      |Yes         |No         |
-|[Direct Guest Join (DGJ)](third-party-join.md)      |Yes (Cisco WebEx and Zoom)         |No         |
+|[Direct Guest Join (DGJ)](third-party-join.md)      |Yes         |No         |
 
 ## Where is this in Pro Portal?
 

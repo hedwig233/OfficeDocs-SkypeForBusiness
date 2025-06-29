@@ -314,6 +314,10 @@ This table describes how Teams uses bandwidth. Teams is always conservative on b
 
 <sup>\*</sup>Expect up to 1080p quality but depending on your network conditions, video resolution, and quality will be optimized accordingly.
 
+**Town Hall bandwidth considerations**
+
+When hosting a town hall event with live streaming, it’s important to plan for sufficient network bandwidth at each viewing location. Without an Enterprise Content Delivery Network (eCDN), bandwidth requirements can be approximated at 2 Mbps per viewer at each location. (Update to 3 Mbps for 1080p). For physical locations with a high number of attendees or dense network environments, we recommend implementing an eCDN solution to optimize bandwidth usage and ensure a smooth streaming experience. For more details, see [Plan for Teams town halls](/microsoftteams/plan-town-halls#get-your-network-ready-for-town-halls). 
+
 ## Related articles
 
 [Microsoft 365 and Office 365 Network Connectivity Principles](/microsoft-365/enterprise/microsoft-365-network-connectivity-principles)

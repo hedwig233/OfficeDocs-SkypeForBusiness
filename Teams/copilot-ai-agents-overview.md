@@ -96,6 +96,8 @@ Microsoft 365 Copilot in Teams is your users’ personal Copilot, helping them i
 
 - **Copilot in Teams chats and channels**: Copilot in your users’ chats and channels helps them catch up on conversations quickly and help contribute intelligently.
 
+- **Copilot custom dictionaries for Teams meetings and events**: You can upload a custom dictionary in the Microsoft 365 admin center to improve the quality of transcription. Once uploaded, the dictionary enhances entity recognition throughout Teams meetings and events, improving transcript accuracy and AI performance for Copilot and Recap.
+
 - **Copilot in Teams meetings and events**: Copilot in meetings and events uses recording, transcription, and meeting chat data to ensure participants get the most out of meetings.
 
 - **Copilot in Teams Phone**: Copilot in Teams Phone empowers your users to have more productive calls or catch up on ones they missed.
@@ -106,6 +108,7 @@ Microsoft 365 Copilot in Teams is your users’ personal Copilot, helping them i
 
 | Feature | Admin articles | End-user articles |
 | ------- | -------------- | ----------------- |
+| Copilot custom dictionaries for Teams meetings and events | [Manage custom dictionaries for Microsoft Teams meetings and events](copilot-custom-dictionary.md) | None |
 | Copilot in Teams chats and channels | None | [Use Copilot in Microsoft Teams chat and channels](https://support.microsoft.com/office/use-copilot-in-microsoft-teams-chat-and-channels-cccccca2-9dc8-49a9-ab76-b1a8ee21486c) |
 | Copilot in Teams meetings and events | [Manage Microsoft 365 Copilot in Teams meetings and events](copilot-teams-transcription.md) | [Use Copilot in Microsoft Teams meetings](https://support.microsoft.com/office/use-copilot-in-microsoft-teams-meetings-0bf9dd3c-96f7-44e2-8bb8-790bedf066b1) |
 | Copilot in Teams Phone | None | [Get started with Copilot in Microsoft Teams Phone](https://support.microsoft.com/office/get-started-with-copilot-in-microsoft-teams-phone-97c55ffb-1499-4b0a-8caa-980ebb4b697b) |

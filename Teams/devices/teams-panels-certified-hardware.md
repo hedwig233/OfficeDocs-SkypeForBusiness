@@ -119,8 +119,8 @@ See [Microsoft Teams panels](../devices/overview-teams-panels.md) for features s
 #### <b> Logitech </b>
 | Device model | Latest firmware version | Minimum firmware version | Included Microsoft applications | Release date |
 |:----------------|:-------------------|:----------------------------|:--------------------------------------------------------------------|:--------------------------------|
-| TAP Scheduler (VR0028) | `1.14.373 (AOSP)`| N/A| Teams client: `1449/1.0.97.2025031901` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2503.2060` <br> Admin Agent: `1.0.0.202407050618.product (733)`| June 30, 2025|
-| DockFlex (VR0035) | `1.14.361 (AOSP)`| N/A| Teams client: `1449/1.0.97.2025031901` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2503.2060` <br> Admin Agent: `1.0.0.202407050618.product (733)`| June 30, 2025|
+| TAP Scheduler (VR0028) | `1.14.373 (AOSP)`| `1.14.181`| Teams client: `1449/1.0.97.2025031901` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2503.2060` <br> Admin Agent: `1.0.0.202407050618.product (733)`| June 30, 2025|
+| DockFlex (VR0035) | `1.14.361 (AOSP)`| `1.14.147` | Teams client: `1449/1.0.97.2025031901` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2503.2060` <br> Admin Agent: `1.0.0.202407050618.product (733)`| June 30, 2025|
 | TAP Scheduler (VR0028) | `1.14.181`| N/A| Teams client: `1449/1.0.97.2024122401` <br> Company Portal: `5.0.6152.0` <br> Admin Agent: `1.0.0.202407050618.product (733)`| March 5, 2025|
 | DockFlex (VR0035) | `1.14.147`| N/A| Teams client: `1449/1.0.97.2024122401` <br> Company Portal: `5.0.6152.0` <br> Admin Agent: `1.0.0.202407050618.product (733)`| March 6, 2025|
 | DockFlex (VR0035) | `1.13.136`| N/A| Teams client: `1449/1.0.97.2024081207` <br> Company Portal: `5.0.6152.0` <br> Admin Agent: `1.0.0.202402202353.product`| December 20, 2024|

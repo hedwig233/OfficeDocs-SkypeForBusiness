@@ -7,6 +7,7 @@ ms.date: 11/11/2024
 audience: Admin
 ms.topic: concept-article
 ms.service: msteams
+ms.subservice: meetings
 ms.reviewer: ritikag
 ms.localizationpriority: medium
 search.appverid: MET150

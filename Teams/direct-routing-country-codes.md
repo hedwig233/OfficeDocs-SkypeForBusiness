@@ -8,6 +8,7 @@ ms.reviewer:
 ms.date: 06/28/2019
 ms.topic: reference
 ms.service: msteams
+ms.subservice: teams-calling
 ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection: 

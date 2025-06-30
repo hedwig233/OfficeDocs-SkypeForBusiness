@@ -8,6 +8,7 @@ ms.date: 09/04/2020
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
+ms.subservice: teams-calling
 audience: Admin
 ms.collection: 
   - M365-collaboration

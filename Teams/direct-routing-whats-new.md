@@ -8,6 +8,7 @@ manager: pamgreen
 ms.topic: whats-new
 audience: admin
 ms.service: msteams
+ms.subservice: teams-calling
 search.appverid: MET150
 description: This article describes what's new in Direct Routing. Check back often for updates.
 ms.localizationpriority: medium

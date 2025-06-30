@@ -654,6 +654,8 @@ items:
           href: teams-client-health.md
         - name: Update monitoring
           href: teams-client-health-update-monitoring.md
+        - name: Teams client diagnostic logging
+          href: teams-client-diagnostic-logging.md
 
     - name: Teams alerting and monitoring
       href: alerts/teams-admin-alerts.md 

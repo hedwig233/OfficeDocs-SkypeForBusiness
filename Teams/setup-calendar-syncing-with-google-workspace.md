@@ -32,7 +32,7 @@ If your business relies on Google Workspace for email and calendaring, you can e
 
 - Be assigned [Microsoft Global Admin role](/microsoft-365/admin/add-users/about-admin-roles) with a Teams license.
 - Be sure all of your users added in the Microsoft directory for whom you want to enable calendar sync for have Teams licenses assigned.
-- Have the login credentials for your Google Workspace admin account ([admin.google.com](https://accounts.google.com)).
+- Have the login credentials for your Google Workspace super admin account ([admin.google.com](https://accounts.google.com)).
 - Have the login credentials for your custom business domain host website (for example, GoDaddy).
 
 ## Choose the appropriate Setup Wizard
@@ -40,7 +40,7 @@ If your business relies on Google Workspace for email and calendaring, you can e
 1. Sign into [Teams](https://teams.microsoft.com) using your Global Admin account.
 1. Go to the [Admin app in Teams](https://teams.microsoft.com/l/app/b47c7387-2807-440c-9fc2-7c8f46147a20?source=share-app-dialog).
 1. If your custom business domain isn't already connected with Microsoft 365, select the **Use your existing email and custom domain with Teams** option on the Admin app home page and proceed to "[Use your existing email and custom domain with Teams](#use-your-existing-email-and-custom-domain-with-teams)."
-1. If your domain is already connected, select the **Set up calendar synchronization** option on the Admin app home page and proceed to "[Set up calendar synchronization](#set-up-calendar-synchronization)."
+1. If your domain is already connected, select the **Set up calendar synchronization** option on the Admin app home page and proceed to "[Set up calendar synchronization](#set-up-google-calendar-synchronization)."
 
 ## Use your existing email and custom domain with Teams
 
@@ -65,9 +65,12 @@ If your business relies on Google Workspace for email and calendaring, you can e
     Your work remains intact and your Microsoft 365 password stays the same. If you encounter issues, allow time for the process to complete and try again.
 
 1. After you sign back into Teams using your business email, return to the Admin app in Teams, and to the custom domain setup task. Now you can update email addresses for other users.
-1. Next, move to the calendar synchronization process. Follow the steps outlined in "[Set up calendar synchronization](#set-up-calendar-synchronization)."
+1. Next, move to the calendar synchronization process. Follow the steps outlined in "[Set up calendar synchronization](#set-up-google-calendar-synchronization)."
 
-## Set up calendar synchronization
+## Set up Google calendar synchronization
+
+> [!NOTE]
+> Completing this setup will not disrupt how you access your email and calendar.  Permissions granted in this setup are used solely for calendar synchronization.  Email migration will not be initiated. To enable email migration, you will need to complete a separate setup.  Learn more about email migration setup in [Simplified Gmail Migration](https://aka.ms/BYODEMigrationPointer)
 
 1. Review the Calendar sync **Overview** page and select **Get Started**.
 1. Before moving forward in the Setup Wizard in Microsoft Teams, you must install an application in Google Marketplace. This application authorizes Microsoft to access your Google user directory and manage their calendars. To do this installation, select the **Go to Google Workspace Marketplace** button to go to the Google Workspace Marketplace, choose **Install**, and follow the steps to authorize access. These permissions are used solely for calendar synchronization.
@@ -90,6 +93,22 @@ If your business relies on Google Workspace for email and calendaring, you can e
 - When new users are added to Google Workspace or Microsoft 365, you must set up their syncing from the Admin app home page by using the Setup Calendar Synchronization Wizard.
 - Be sure newly added users have a Teams license assigned to them.  
 - To turn off calendar syncing for a specific user, go into the overflow menu in the **Users** view of the Admin app for that user and select **Turn off Google sync**.
+
+- To avoid errors during sync, be sure to continue to grant permission and consent to all of the scopes that the **Microsoft 365 Mail Migration and Calendar Sync** application requires. You can verify that all of the required permissions are granted using your [Google Admin console](https://admin.google.com/ac/apps/gmail/marketplace/appdetails/679814639522).
+
+## Troubleshooting
+
+**I installed the Microsoft 365 Mail Migration and Calendar Sync application, but am receiving an error that it is not installed later in the setup**
+
+Verify the the following steps have been followed:
+
+- You have used your Google super admin account to install the **Microsoft 365 Mail Migration and Calendar Sync** application. You can verify this using your [Google Admin console](https://admin.google.com/ac/owl/list?tab=services).
+
+- You have granted permission to all of the scopes that the application requested. You can verify this using your [Google Admin console](https://admin.google.com/ac/apps/gmail/marketplace/appdetails/679814639522).
+
+- The **Microsoft 365 Mail Migration and Calendar Sync** application has unrestricted access to your Google services. You can verify this using your [Google Admin console](https://admin.google.com/ac/owl/list?tab=services).
+
+It may take over 24 hours for app and permission updates in Google Workspace to take effect. If you have verified the above and are still facing errors, wait and try to proceed with setup again later.  If issues continue to arise, contact support using the information below. 
 
 ## Frequently asked questions
 

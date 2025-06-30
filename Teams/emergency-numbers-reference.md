@@ -8,6 +8,7 @@ ms.reviewer: pavellatif
 ms.topic: reference
 ms.tgt.pltfrm: cloud
 ms.service: msteams
+ms.subservice: teams-calling
 search.appverid: MET150
 ms.collection: 
   - M365-voice

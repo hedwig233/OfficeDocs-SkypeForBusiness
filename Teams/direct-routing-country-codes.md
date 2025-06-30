@@ -25,22 +25,26 @@ ms.custom: seo-marvel-apr2020
 
 # Direct Routing media path country codes
 
-When choosing a routing path for media, Direct Routing, by default, always assigns a datacenter based on the public IP address of the Session Border Controller (SBC), and always selects the path closest to the SBC datacenter.
+When you choose a routing path for media, Direct Routing, by default, always assigns a datacenter based on the public IP address of the Session Border Controller (SBC), and always selects the path closest to the SBC datacenter.
 
-However, in some cases the default media path might not be the optimal media path; for example, a public IP from a United States range might be assigned to an SBC located in Europe. 
+However, in some cases the default media path might not be the optimal media path; for example, a public IP from a United States range might be assigned to an SBC located in Europe.
 
-By using the -MediaRelayRoutingLocationOverride parameter with the New-CsOnlinePSTNGateway and Set-CsOnlinePSTNGateway cmdlets, you can specify the preferred region for media traffic. For example, the following command specifies that the preferred region is Germany:
+By using the `-MediaRelayRoutingLocationOverride` parameter with the [New-CsOnlinePSTNGateway](/powershell/module/teams/new-csonlinepstngateway) and [Set-CsOnlinePSTNGateway](/powershell/module/teams/set-csonlinepstngateway) cmdlets, you can specify the preferred region for media traffic.
 
-Set-CSOnlinePSTNGateway -Identity sbc1.contoso.com –MediaRelayRoutingLocationOverride DE 
+For example, the following command specifies that the preferred region is Germany:
 
-Microsoft only recommends setting this parameter if the call logs clearly indicate that the default assignment of the datacenter for the media path doesn't use the path closest to the SBC datacenter. 
- 
+```powershell
+Set-CSOnlinePSTNGateway -Identity sbc1.contoso.com –MediaRelayRoutingLocationOverride DE
+```
+
+Microsoft only recommends setting this parameter if the call logs clearly indicate that the default assignment of the datacenter for the media path doesn't use the path closest to the SBC datacenter.
+
 ## Country code reference table
 
-The following table shows the country code values for the -MediaRelayRoutingLocationOverride parameter:
+The following table shows the country code values for the `-MediaRelayRoutingLocationOverride` parameter:
 
-| Country         | Code 
-|-----------------|--------------------|
+| Country         | Code |
+|-----------------|------|
 | Afghanistan     | AF |
 | Aland Islands   | AX |
 | Albania         | AL |
@@ -49,7 +53,7 @@ The following table shows the country code values for the -MediaRelayRoutingLoca
 | Andorra         | AD |
 | Angola          | AO |
 | Anguilla        | AI |
-| Antarctica      | AQ | 
+| Antarctica      | AQ |
 | Antigua and Barbuda | AG |
 | Argentina       | AR |
 | Armenia         | AM |
@@ -242,7 +246,7 @@ The following table shows the country code values for the -MediaRelayRoutingLoca
 | Senegal         | SN |
 | Serbia          | RS |
 | Seychelles      | SC |
-| Sierra Leone    | SL | 
+| Sierra Leone    | SL |
 | Singapore       | SG |
 | Sint Eustatius  | XE |
 | Sint Maarten    | SX |

@@ -15,4 +15,4 @@ ms.subservice: teams-premium
 >
 > - For advanced scheduling features in Microsoft Bookings, like SMS notifications and the queue for scheduled appointments, users also need a [Teams Premium license](/microsoftteams/enhanced-teams-experience).
 >
-> [Learn more about Microsoft Bookings](/microsoft-365/bookings/bookings-overview) and the [advanced experience in Bookings with Teams Premium](https://techcommunity.microsoft.com/blog/microsoftteamsblog/teams-premium-enhances-scheduling-in-microsoft-bookings/4292193). To learn more about appointments, see [Appointments with Microsoft Teams](virtual-appointments.md).
+> [Learn more about Microsoft Bookings](/microsoft-365/bookings/bookings-overview) and the [advanced experience in Bookings with Teams Premium](https://techcommunity.microsoft.com/blog/microsoftteamsblog/teams-premium-enhances-scheduling-in-microsoft-bookings/4292193). To learn more about appointments, see [Appointments with Microsoft Teams](/microsoft-365/frontline/virtual-appointments.md).

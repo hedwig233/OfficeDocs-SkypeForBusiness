@@ -40,7 +40,7 @@ We recommend you follow these steps before and after the manual migration to che
 
 Navigate to **Manage Apps** page and export the full list of apps in the catalog as a CSV file, including each app’s allowed or blocked app status. The allowed or blocked status determines whether the app is available to everyone or no one, respectively. This status is used in the following steps to filter your users. For more details, see [export app catalog as CSV](manage-apps.md#export-app-catalog-as-csv).
 
-:::image type="content" source="media/step1–export-app-catalog.png" alt-text="Screenshot showing  export App catalog and note your allowed apps.":::
+:::image type="content" source="media/step1–export-app-catalog.png" alt-text="Screenshot showing  export App catalog and note your allowed apps." lightbox="media/step1–export-app-catalog.png":::
 
 ### Step 2: Review permission policies and note allowed or blocked apps
 
@@ -54,7 +54,8 @@ Steps to get the permission policies list using PowerShell commands:
 1. Run the PowerShell command: `Get-CsTeamsAppPermissionPolicy`.
 
     The following result is displayed:
-    :::image type="content" source="media/step2–interpret-results.png" alt-text="Image showing interpreting results.":::
+   
+    :::image type="content" source="media/step2–interpret-results.png" alt-text="Screenshot showing interpreting results." lightbox="media/step2–interpret-results.png":::
 
 #### Retrieve allowed apps in each permission policy
 
@@ -81,29 +82,36 @@ You can identify users permitted for each app in the following ways:
 
 1. Go to [Teams admin center](https://admin.teams.microsoft.com/).
 1. Go to **Users** > **Manage users**.
-    :::image type="content" source="media/step3-manage-users-page.png" alt-text="Screenshot showing manage users page.":::
+   
+    :::image type="content" source="media/step3-manage-users-page.png" alt-text="Screenshot showing manage users page." lightbox="media/step3-manage-users-page.png":::
 
 1. Select the filter located at the top right of the Manage users table.
-    :::image type="content" source="media/step3-manage-users-page-filter.png" alt-text="Screenshot showing manage users page filter.":::
+
+     :::image type="content" source="media/step3-manage-users-page-filter.png" alt-text="Screenshot showing manage users page filter." lightbox="media/step3-manage-users-page-filter.png":::
 
 1. Select the policy name for which you need the user assignments and click **Apply**.
-    :::image type="content" source="media/step3-manage-users-page-filter-applied.png" alt-text="Screenshot showing manage users page applied page.":::
 
-All the users assigned to the policy filtered are displayed.
- :::image type="content" source="media/step3-manage-users-page-filter-result.png" alt-text="Screenshot showing manage users page filter results.":::
+   :::image type="content" source="media/step3-manage-users-page-filter-applied.png" alt-text="Screenshot showing manage users page applied page." lightbox="media/step3-manage-users-page-filter-applied.png":::
 
-You can also export the users list to CSV.
- :::image type="content" source="media/step3-manage-users-page-export-csv.png" alt-text="Screenshot showing export manage users page csv.":::
+    All the users assigned to the policy filtered are displayed.
+ 
+   :::image type="content" source="media/step3-manage-users-page-filter-result.png" alt-text="Screenshot showing manage users page filter results." lightbox="media/step3-manage-users-page-filter-result.png":::
+
+    You can also export the users list to CSV.
+ 
+   :::image type="content" source="media/step3-manage-users-page-export-csv.png" alt-text="Screenshot showing export manage users page csv." lightbox="media/step3-manage-users-page-export-csv.png":::
 
 #### Identify users allowed for each app in PowerShell
 
 You can also use the following PowerShell command to export user assignments for each custom policy. This script generates an Excel file if the given policy has user assignments; otherwise, a message is shown indicating that no user assignments exist.
 
 PowerShell command output is as follows:
-:::image type="content" source="media/step3b-pscommand-output.png" alt-text="PowerShell command output.":::
+
+:::image type="content" source="media/step3b-pscommand-output.png" alt-text="PowerShell command output." lightbox="media/step3b-pscommand-output.png":::
 
 The exported file appears as follows:
-:::image type="content" source="media/step3b-exported-file.png" alt-text="Exported file output.":::
+
+:::image type="content" source="media/step3b-exported-file.png" alt-text="Exported file output." lightbox="media/step3b-exported-file.png":::
 
 * To define the base path for exports: `$basePath = "C:\Users\<user name>\Downloads"`
 * To ensure the base path exists:

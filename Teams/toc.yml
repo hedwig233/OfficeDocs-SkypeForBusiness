@@ -1952,6 +1952,8 @@ items:
             href: teams-app-setup-policies.md
         - name: Use app centric management
           href: app-centric-management.md
+        - name: Best practices during ACM migration
+          href: pre-and-post-migration.md
         - name: Preinstall apps for users
           href: install-teams-apps.md
         - name: Tailor Teams apps for your frontline workers

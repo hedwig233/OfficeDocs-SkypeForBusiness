@@ -125,6 +125,8 @@ After migration, any admin consent to app permissions that was previously grante
 
 Auto-migration maintains the same access defined in app permission policies when there is no conflict between a user’s assigned policies. If a user is assigned to a custom app permission policy that blocks an app, while the Global permission policy allows the same app, Microsoft auto-migrates the app as allowed for that user. During the auto migration, one security group is created for each custom app permission policy. All users currently assigned to an app permission policy are then added to the corresponding security group for that policy. These groups are assigned to each app they are allowed in their respective policy, maintaining their app access. Administrators manage these groups like any others to customize the app centric management assignments, such as adding and removing users or removing the group and replacing it with another group.
 
+For more information on best practices before and after migration, please refer to [best migration practices for app centric management](pre-and-post-migration.md).
+
 ## Add or modify app availability for users
 
 To allow users to add and use an app or a Copilot agent, you must assign users or groups to an app. To make any app or Copilot agent available in your organization, ensure the following:
@@ -167,6 +169,10 @@ The Org-wide app settings apply to:
 * All the existing apps that you didn't actively manage, that is, you didn't change the availability of.
 
 :::image type="content" source="media/acm-org-wide-app-settings.png" alt-text="Screenshot showing the org-wide app settings in an organization that uses app centric management feature.":::
+
+Pre app centric management, org-wide settings included two separate controls for third-party apps; one for managing availability of new apps in bulk, and another for existing apps.
+
+Post app centric management migration, these have been unified into a single control that governs bulk availability for both new and existing third-party apps. When you toggle ON, all apps are enabled and when you toggle OFF, all apps are disabled. This control does not override app-level configurations.
 
 The Org-wide app settings don’t apply to:
 

@@ -8,6 +8,7 @@ ms.date: 10/22/2024
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
+ms.subservice: teams-calling
 ms.collection: 
   - M365-voice
   - m365initiative-voice

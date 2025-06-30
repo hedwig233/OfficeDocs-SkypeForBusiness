@@ -338,11 +338,12 @@ If you're a manufacturer and want to join the certification program, see [How to
 
 ## [Certified Native BlueTooth devices](#tab/bluetooth)
 
-*Table Updated January 2025*
+*Table Updated June 2025*
 
 > [!NOTE]
 > The date format is MM/DD/YYYY.
 
 | **Manufacturer**      | **Model**                                                    | **Qualified**       | **Certified Program**                                           |
 |:--------------------|:----------------------------------------------------------|:---------------|:-------------------------------------------------------|
+|Logitech|Zone 305                                                           |4/4/2025         |Certified for Microsoft Teams                             | 
 |Logitech|Zone Wireless 2 Headset                                            |01/13/2025       |Certified for Microsoft Teams                             |

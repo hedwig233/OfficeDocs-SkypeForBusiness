@@ -224,6 +224,12 @@ To add a mobile system OS scanner:
 
 ## [Teams phones](#tab/phones)
 
+## June 30, 2025
+
+**Applies to:** *Teams app version: 1449/1.0.94.2025168802* (Poly, Yealink and Audiocodes)
+
+- Back-end bug fixes to address unintended sign-outs.
+
 ## May 27, 2025
 
 **Applies to:** *Teams app version: 1449/1.0.94.2025042103 (Yealink MP52, Crestron UC-Px, UX-Px-I, UC-2 and Audiocodes C488HD, C450HD)*

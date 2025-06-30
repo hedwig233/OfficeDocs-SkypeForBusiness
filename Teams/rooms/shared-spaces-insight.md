@@ -160,7 +160,7 @@ The **Shared Spaces Insights** page contains the following data visualizations:
 - [Overall Shared Spaces Utilization](#overall-shared-spaces-utilization)
 - [Most and Least Utilized Rooms](#most-and-least-utilized-rooms)
 
-For information on each data visualization, you can hover over the “i” as shown in the following example:
+For information on each data visualization, you can hover over the "i" as shown in the following example:
 
 :::image type="content" source="../media/data-visualization.png" alt-text="Screenshot that shows the page on which you can view the description of Data Visualization." lightbox="../media/data-visualization.png":::
 
@@ -212,7 +212,7 @@ You can use this chart to identify the peak space usage timeslot on a given day,
 
 This column chart provides a breakdown of space utilization across different days of the week, helping you identify trends and patterns in usage. This column chart is depicted in the following screenshot:
 
-:::image type="content" source="../media/utilization-by-days-of-week.png" alt-text="Screenshot that shows the shared spaces' utlilization data for different days of the week.' utilization was at its peak." lightbox="../media/utilization-by-days-of-week.png":::
+:::image type="content" source="../media/utilization-by-days-of-week.png" alt-text="Screenshot that shows the shared spaces' utilization data for different days of the week.' utilization was at its peak." lightbox="../media/utilization-by-days-of-week.png":::
 
 ### Overall shared spaces utilization
 

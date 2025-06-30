@@ -7,6 +7,7 @@ ms.topic: concept-article
 ms.reviewer: roykuntz
 ms.date: 10/10/2024
 ms.service: msteams
+ms.subservice: teams-calling
 audience: admin
 search.appverid: MET150
 description: Learn about the network settings that you must configure for Location-Based Routing for Direct Routing and enhanced emergency services.

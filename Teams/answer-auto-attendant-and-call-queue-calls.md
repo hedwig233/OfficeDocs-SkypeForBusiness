@@ -8,6 +8,7 @@ audience: ITPro
 ms.date: 10/31/2024
 ms.topic: how-to
 ms.service: msteams
+ms.subservice: teams-calling
 description: Describes Cloud Auto attendants and Call queues, and explains how you can answer these calls in Microsoft Teams.
 f1.keywords:
 - NOCSH

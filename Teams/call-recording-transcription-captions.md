@@ -5,6 +5,7 @@ ms.author: mabond
 manager: pamgreen
 ms.topic: how-to
 ms.service: msteams
+ms.subservice: teams-calling
 ms.reviewer: roykuntz
 ms.date: 02/28/2025
 audience: admin

@@ -6,6 +6,7 @@ manager: pamgreen
 audience: Admin
 ms.topic: article
 ms.service: msteams
+ms.subservice: teams-calling
 ms.reviewer: 
 ms.date: 10/08/2019
 f1.keywords: 

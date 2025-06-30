@@ -40,7 +40,7 @@ We recommend you follow these steps before and after the manual migration to che
 
 Navigate to **Manage Apps** page and export the full list of apps in the catalog as a CSV file, including each app’s allowed or blocked app status. The allowed or blocked status determines whether the app is available to everyone or no one, respectively. This status is used in the following steps to filter your users. For more details, see [export app catalog as CSV](manage-apps.md#export-app-catalog-as-csv).
 
-:::image type="content" source="media/step1–export-app-catalog.png" alt-text="Screenshot showing  export App catalog and note your allowed apps." lightbox="media/step1–export-app-catalog.png":::
+:::image type="content" source="media/step1-export-app-catalog.png" alt-text="Screenshot showing  export App catalog and note your allowed apps." lightbox="media/step1-export-app-catalog.png":::
 
 ### Step 2: Review permission policies and note allowed or blocked apps
 
@@ -55,7 +55,7 @@ Steps to get the permission policies list using PowerShell commands:
 
     The following result is displayed:
    
-    :::image type="content" source="media/step2–interpret-results.png" alt-text="Screenshot showing interpreting results." lightbox="media/step2–interpret-results.png":::
+    :::image type="content" source="media/step2-interpret-results.png" alt-text="Screenshot showing interpreting results." lightbox="media/step2-interpret-results.png":::
 
 #### Retrieve allowed apps in each permission policy
 

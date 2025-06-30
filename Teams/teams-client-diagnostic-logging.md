@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 # Diagnostic logs for Teams Client
 
 > [!IMPORTANT]
-> This article describes a Microsoft Teams feature that isn't released. It's announced, and it's coming soon. If you're an admin, you can find out when this feature is released in the Message Center (in the [Microsoft 365 admin center](https://portal.office.com/adminportal/home)). For more information, see: [Remote log collection](https://www.microsoft.com/microsoft-365/roadmap?msockid=37b3f69009a468232e49e575081e694c&searchterms=Remote+log+collection). This article provides an overview of the new tool for Teams admins to collect diagnostic logs for Teams clients from the Microsoft Teams admin center.
+> This article describes a Microsoft Teams feature that isn't released, but is announced and coming soon. If you're an admin, you can find out when this feature is released in the Message Center (in the [Microsoft 365 admin center](https://portal.office.com/adminportal/home)). For more information, see: [Remote log collection](https://www.microsoft.com/microsoft-365/roadmap?msockid=37b3f69009a468232e49e575081e694c&searchterms=Remote+log+collection). This article provides an overview of the new tool for Teams admins to collect diagnostic logs for Teams clients from the Microsoft Teams admin center.
 > 
 > This feature is currently supported for Windows (non-VDI) and Mac Applications only.
 

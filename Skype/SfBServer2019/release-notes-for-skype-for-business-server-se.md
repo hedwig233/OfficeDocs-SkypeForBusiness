@@ -17,7 +17,7 @@ description: "Summary: This topic contains important information to successfully
 
 # Release notes for Skype for Business Server SE
 
-[!INCLUDE[appliesto-xxx-2019-sub.md](../SfBServer2019/includes/appliesto-xxx-2019-sub.md)]
+[!INCLUDE[appliesto-xxx-xxx-sub.md](../SfBServer2019/includes/appliesto-xxx-xxx-sub.md)]
 
 Welcome to Microsoft Skype for Business Server Subscription Edition (SE). This topic contains important information that you need to know to successfully deploy Skype for Business Server SE. Read this topic completely before beginning your deployment.
 
@@ -28,3 +28,7 @@ Skype for Business Server Subscription Edition (SE) Release to Manufacturing (RT
 - The build number
 
 New changes  will be introduced starting with the Skype for Business Server SE updates after the initial SE release.
+
+## Known issues
+
+The current Skype for Business Server SE installer displays **Pre-release** in the dialog headers on multiple screens during the installation process. This issue is scheduled to be resolved in the August Hotfix.

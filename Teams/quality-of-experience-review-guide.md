@@ -5,6 +5,7 @@ ms.author: scottfrancis
 manager: pamgreen
 ms.topic: how-to
 ms.service: msteams
+ms.subservice: teams-calling
 ms.reviewer: siunies, gageames
 ms.date: 05/06/2024
 audience: admin

@@ -8,6 +8,7 @@ ms.date: 04/25/2025
 ms.topic: install-set-up-deploy
 ms.tgt.pltfrm: cloud
 ms.service: msteams
+ms.subservice: teams-calling
 search.appverid: MET150
 ms.collection:
   - M365-voice

@@ -129,7 +129,7 @@ The following screenshot depicts the "location" attributes's filters with a valu
 :::image type="content" source="../media/location-discovery.png" alt-text="Screenshot that shows the page on which can apply filters to the location-related attributes." lightbox="../media/location-discovery.png":::
 
 > [!NOTE]
-> The location data is pulled from the Places API for the room accounts. If the address information in your room account isn't complete, it won't appear in the location filters. For example, if the room account only has the building information filled out and not information about country, state/province, or city, then this room appears when the building is selected but not when the country, state/province, or city is selected. For more information, see [Set-Place](/powershell/module/exchange/set-place?view=exchange-ps).
+> The location data is pulled from the Places API for the room accounts. If the address information in your room account isn't complete, it won't appear in the location filters. For example, if the room account only has the building information filled out and not information about country, state/province, or city, then this room appears when the building is selected but not when the country, state/province, or city is selected. For more information, see [Set-Place](/powershell/module/exchange/set-place?view=exchange-ps&preserve-view=true).
 
 ### Days of the week and business hours filters
 

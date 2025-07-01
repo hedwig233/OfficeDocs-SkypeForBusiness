@@ -71,7 +71,7 @@ To create a custom meeting template
 |End-to-end encryption|Specifies if the meeting uses end-to-end encryption. Recording and transcription don't work if this is on.|
 |Enable watermark for screenshare|Specifies if a watermark is overlaid on content that is shared on screen in the meeting.|
 |Enable watermark for video|Specifies if a watermark is overlaid on attendees' video feeds in the meeting.|
-|Require verification checks from|Controls whether anonymous users must complete a verification check to join meetings and webinars in your org.|
+|Detect sensitive content during screen sharing|Specifies whether meetings can detect sensitive content during screen sharing.|
 |Organizer can restrict participants from copying or forwarding meeting chat messages, live captions, and transcripts|Prevent participants from copying messages, links, live captions, transcripts, and AI-generated insights in the meeting recaps. This setting also prevents forwarding and sharing messages to Outlook.|
 
 ### Audio & video

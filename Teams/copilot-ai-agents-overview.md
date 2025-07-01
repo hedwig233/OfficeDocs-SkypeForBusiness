@@ -103,6 +103,8 @@ Microsoft 365 Copilot in Teams is your users’ personal Copilot, helping them i
 - **Copilot in Teams Rooms**: Copilot enhances Teams Rooms experiences with features like responding to open-ended questions, recapping what was discussed in the room, and providing meeting insights.
 
 - **Copilot in Teams for multitenant organizations** - B2B members who are licensed with Microsoft 365 Copilot can access Copilot in Teams across their multitenant organization.
+  
+- **Custom dictionaries for Teams meetings and events**: You can upload a custom dictionary in the Microsoft 365 admin center to improve the quality of transcription for Teams meetings and events.
 
 | Feature | Admin articles | End-user articles |
 | ------- | -------------- | ----------------- |
@@ -111,6 +113,7 @@ Microsoft 365 Copilot in Teams is your users’ personal Copilot, helping them i
 | Copilot in Teams Phone | [Manage Microsoft 365 Copilot in Teams calls](copilot-teams-calling-transcription.md) | [Get started with Copilot in Microsoft Teams Phone](https://support.microsoft.com/office/get-started-with-copilot-in-microsoft-teams-phone-97c55ffb-1499-4b0a-8caa-980ebb4b697b) |
 | Copilot in Teams Rooms | [Teams Rooms and Copilot overview](rooms/copilot-admin-mtr.md) | None |
 | Copilot in Teams for multitenant organizations | [Manage Copilot access for B2B members within multitenant organizations (MTO) in Teams](copilot-mto.md) | None |
+| Custom dictionaries for Teams meetings and events | [Manage custom dictionaries for Microsoft Teams meetings and events](copilot-custom-dictionary.md) | None |
 
 ### Microsoft 365 agents in Teams
 

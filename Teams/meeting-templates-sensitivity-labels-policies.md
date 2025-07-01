@@ -73,6 +73,7 @@ As you plan for your meeting templates and sensitivity labels, ensure that the s
 Some settings are only available in sensitivity labels and some are only available in templates. The following are available in both:
 
 - Chat
+- Detect sensitive content during screen sharing
 - End-to-end encryption
 - Lobby settings
 - Meeting recording

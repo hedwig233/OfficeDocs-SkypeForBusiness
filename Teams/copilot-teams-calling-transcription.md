@@ -47,12 +47,12 @@ The following table describes the differences between these two modes and how th
 
 | Copilot setting in Calling Policy | Transcription started during call  | Copilot available during call | Transcription available after call|
 | --- | --- | --- | --- |
-| Enabled | Yes | Yes | Yes |
-| Enabled | No | Yes | No |
-| EnabledWithTranscript | Yes | Yes | Yes|
-| EnabledWithTranscript | No | No | No |
-| Disabled | Yes | No | Yes |
-| Disabled | No | No | No |
+| Enabled | Yes | Available | Available |
+| Enabled | No | Available | Not available |
+| EnabledWithTranscript | Yes | Available | Available|
+| EnabledWithTranscript | No | Not available | Not available |
+| Disabled | Yes | Not available | Available |
+| Disabled | No | Not available | Not available |
 
 ### During and after the call
 

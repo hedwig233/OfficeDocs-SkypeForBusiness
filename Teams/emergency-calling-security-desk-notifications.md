@@ -7,6 +7,7 @@ ms.reviewer: roykuntz
 ms.date: 05/03/2024
 ms.topic: how-to
 ms.service: msteams
+ms.subservice: teams-calling
 search.appverid: MET150
 ms.collection:
   - M365-voice

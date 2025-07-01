@@ -6,6 +6,7 @@ manager: pamgreen
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
+ms.subservice: teams-calling
 ms.collection:
   - M365-voice
   - m365initiative-voice

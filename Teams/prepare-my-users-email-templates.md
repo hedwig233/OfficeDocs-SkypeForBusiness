@@ -6,6 +6,7 @@ manager: pamgreen
 ms.date: 03/31/2018
 ms.topic: how-to
 ms.service: msteams
+ms.subservice: teams-calling
 ms.reviewer: rowille
 audience: admin
 description: Use templates to send emails to users as you implement cloud voice capabilities in Teams or Skype for Business.

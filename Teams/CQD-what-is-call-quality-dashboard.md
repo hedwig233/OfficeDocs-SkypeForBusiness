@@ -9,6 +9,7 @@ ms.topic: concept-article
 ms.assetid: 553fa13c-92d2-4d5c-a3d5-41a073cb047c
 ms.tgt.pltfrm: cloud
 ms.service: msteams
+ms.subservice: teams-calling
 ms.collection: 
   - M365-voice
   - m365initiative-voice

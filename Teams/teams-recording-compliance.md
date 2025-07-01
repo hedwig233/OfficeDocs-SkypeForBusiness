@@ -7,6 +7,7 @@ ms.date: 11/11/2024
 audience: Admin
 ms.topic: article
 ms.service: msteams
+ms.subservice: teams-calling
 ms.reviewer: kkodali
 ms.localizationpriority: medium
 search.appverid: MET150

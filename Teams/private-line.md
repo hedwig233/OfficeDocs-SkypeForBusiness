@@ -3,9 +3,10 @@ title: 'Configure private lines in Microsoft Teams'
 author: mkbond007
 ms.author: mabond
 manager: pamgreen
+ms.reviewer: roykuntz
 ms.topic: how-to
 ms.service: msteams
-ms.reviewer: roykuntz
+ms.subservice: teams-calling
 ms.date: 09/27/2024
 audience: admin
 search.appverid: MET150

@@ -8,6 +8,7 @@ manager: pamgreen
 audience: ITPro
 ms.topic: how-to
 ms.service: msteams
+ms.subservice: teams-calling
 ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection: 

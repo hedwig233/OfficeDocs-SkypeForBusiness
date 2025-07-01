@@ -7,6 +7,7 @@ manager: pamgreen
 ms.date: 05/29/2020
 ms.topic: troubleshooting
 ms.service: msteams
+ms.subservice: teams-calling
 audience: admin
 ms.collection: 
   - M365-collaboration

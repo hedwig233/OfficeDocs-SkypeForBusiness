@@ -16,6 +16,8 @@ description: "The articles in this section describe tasks that you need to perfo
 
 # Phase 7: Complete post-migration tasks
 
+[!INCLUDE [appliesto-xxx-2019-sub](../includes/appliesto-xxx-2019-sub.md)]
+
 The articles in this section describe tasks that you need to perform after you complete your migration to Skype for Business Server 2019.
   
 ## In this section

@@ -7,6 +7,7 @@ ms.date: 11/11/2024
 audience: Admin
 ms.topic: article
 ms.service: msteams
+ms.subservice: teams-calling
 ms.reviewer: kkodali
 ms.localizationpriority: medium
 search.appverid: MET150
@@ -176,8 +177,8 @@ The following list includes partners certified to deliver a compliance recording
 |Imagicle |[https://www.imagicle.com/en/products/call-recording/](https://www.imagicle.com/en/products/call-recording/) |
 |Insightful Technology |[https://insightfultechnology.com/teams/](https://insightfultechnology.com/market-place/) |
 |Luware |[https://luware.com/en/solution/microsoft-teams-recording/](https://luware.com/en/solution/microsoft-teams-recording/) |
-|Mida Solutions |[https://www.midasolutions.com/recorder-for-teams/](https://www.midasolutions.com/recorder-for-teams/) |
-|NICE Engage |[https://www.nice.com/products/workforce-engagement/call-recording/air-and-engage](https://www.nice.com/products/workforce-engagement/call-recording/air-and-engage) |
+|NUSO |[https://nuso.cloud/nuso-connect-recorder/](https://nuso.cloud/nuso-connect-recorder/) |
+|NICE Engage |[https://www.nice.com/products/recording/engage](https://www.nice.com/products/recording/engage) |
 |NICE NTR-X |[https://www.niceactimize.com/compliance/ms-teams-recording.html](https://www.niceactimize.com/compliance/ms-teams-recording.html) |
 |Numonix |[https://numonix.cloud](https://numonix.cloud)    |
 |Oak Innovation |[https://www.oakinnovate.com/clarify](https://www.oakinnovate.com/clarify) |

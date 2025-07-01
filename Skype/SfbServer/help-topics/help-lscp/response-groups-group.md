@@ -19,6 +19,8 @@ description: "Response groups consist of agent groups, queues, and workflows. An
 
 # Response Groups: Group
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Response groups consist of agent groups, queues, and workflows. An agent group is a group of people who are designated to answer Response Group calls.
 
 The **Response Groups** - **Group** page displays a list of all the agent groups that are defined for your organization.

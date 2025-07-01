@@ -20,7 +20,9 @@ description: "Learn about SIP trunking and PSTN gateways for Enterprise Voice in
 ---
 
 # PSTN connectivity components in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Learn about SIP trunking and PSTN gateways for Enterprise Voice in Skype for Business Server.
   
 An enterprise-grade VoIP solution must provide for calls to and from the public switched telephone network (PSTN) without any decline in Quality of Service (QoS). In addition, users should not be aware of the underlying technology when they place and receive calls. From the user's perspective, a call between the Enterprise Voice infrastructure and the PSTN should seem like just another SIP session.

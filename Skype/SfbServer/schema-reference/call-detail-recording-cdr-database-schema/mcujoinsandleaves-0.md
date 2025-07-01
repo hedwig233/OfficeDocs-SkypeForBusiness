@@ -16,6 +16,8 @@ description: "The McuJoinsAndLeaves view stores information about users joins an
 ---
 
 # McuJoinsAndLeaves view
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The McuJoinsAndLeaves view stores information about users joins and leave information for one conference server. Each record in this view contains call details about one combination of a user join or leave and conferencing server. This view was introduced in Microsoft Lync Server 2013.
   

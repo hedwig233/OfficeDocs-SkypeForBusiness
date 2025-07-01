@@ -21,6 +21,8 @@ description: "Deployment process and steps for Response Group in Skype for Busin
 
 # Deployment process for Response Group in Skype for Business
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Deployment process and steps for Response Group in Skype for Business Server Enterprise Voice.
 
 Response Group is an Enterprise Voice feature that routes and queues incoming calls to groups of people, called agents, such as a help desk or a customer service desk.

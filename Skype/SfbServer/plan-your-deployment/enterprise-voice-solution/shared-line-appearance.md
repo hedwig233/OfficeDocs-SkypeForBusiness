@@ -20,6 +20,8 @@ description: "Read this topic to learn how to plan for Shared Line Appearance (S
 ---
 
 # Plan for Shared Line Appearance in Skype for Business Server 2015
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 Read this topic to learn how to plan for Shared Line Appearance (SLA) in Skype for Business Server 2015, November 2015 Cumulative Update. 
   

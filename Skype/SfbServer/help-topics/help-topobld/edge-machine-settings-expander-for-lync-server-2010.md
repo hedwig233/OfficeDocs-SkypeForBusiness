@@ -14,12 +14,14 @@ ms.custom:
 ms.service: skype-for-business-server
 ms.localizationpriority: medium
 ms.assetid: fb72a5b5-70f4-44af-8dfd-c5d32e563882
-description: "To edit the properties for Edge Server computers as an single Edge Server or as member computers in an Edge pool, you configure Server name and IP address configuration settings:"
+description: "To edit the properties for Edge Server computers as a single Edge Server or as member computers in an Edge pool, you configure Server name and IP address configuration settings:"
 ---
 
 # Edge Machine Settings Expander for Lync Server 2010
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
-To edit the properties for Edge Server computers as an single Edge Server or as member computers in an Edge pool, you configure **Server name and IP address configuration** settings:
+To edit the properties for Edge Server computers as a single Edge Server or as member computers in an Edge pool, you configure **Server name and IP address configuration** settings:
   
 - **Internal name or FQDN**: Type the name of the computer as it is referenced in the domain name system (DNS). 
     
@@ -28,7 +30,7 @@ To edit the properties for Edge Server computers as an single Edge Server or as 
 - You configure the **Access Edge service** **External IPv4 address** associated with this computer
     
     > [!IMPORTANT]
-    > If you selected to use a single IP address for the Edge Server configuration, you will only be able to edit the external IPv4 address for the Access Edge service. The other Edge services will share the same IPv4 address as the Access Edge service. 
+    > If you selected to use a single IP address for the Edge Server configuration, you'll only be able to edit the external IPv4 address for the Access Edge service. The other Edge services will share the same IPv4 address as the Access Edge service. 
   
 - If available to edit, you configure the **Web Conferencing service** **External IPv4 address** associated with this computer
     

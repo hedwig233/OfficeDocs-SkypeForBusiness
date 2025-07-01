@@ -19,6 +19,8 @@ description: "You can use the New Trunk Configuration: New Calling Number Transl
 
 # New Calling Number Translation Rule
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 You can use the **New Trunk Configuration**: **New Calling Number Translation Rule** to create a new translation rule. For details about translation rules, see the following topics:
 
 1. [Create or modify a translation rule for called ID presentation in Skype for Business Server 2015](../../deploy/deploy-enterprise-voice/called-id-presentation-rules.md)

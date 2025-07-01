@@ -20,6 +20,8 @@ description: "Read about how to install and configure Busy Options in Skype for 
 
 # Install and configure Busy Options for Skype for Business Server
 
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Read about how to install and configure Busy Options in Skype for Business Server.
 
 Busy Options is a new voice policy introduced in the July 2016 Cumulative Update that allows you to configure how incoming calls are handled when a user is already in a call or conference or has a call placed on hold. New or incoming calls can be rejected with a busy signal or forwarded to voice mail.

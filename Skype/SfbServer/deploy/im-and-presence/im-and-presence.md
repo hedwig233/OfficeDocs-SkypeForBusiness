@@ -17,6 +17,8 @@ description: "Summary: Learn about deployment steps for instant messaging and pr
 
 # Deploy instant messaging and presence in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn about deployment steps for instant messaging and presence in Skype for Business Server.
   
 ## Deployment steps for instant messaging and presence

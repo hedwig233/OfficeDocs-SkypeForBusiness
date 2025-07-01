@@ -19,6 +19,8 @@ description: "You can use the results of a search query to configure users for S
 
 # Control Panel - updated: User Search
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 You can use the results of a search query to configure users for Skype for Business Server. You can search for users by display name, first name, last name, Security Accounts Manager (SAM) account name, SIP address, or line Uniform Resource Identifier (URI). You can also search for users by using the Lync Server Control Panel or the Active Directory Users and Computers snap-in.
 
 ## Tasks you can perform

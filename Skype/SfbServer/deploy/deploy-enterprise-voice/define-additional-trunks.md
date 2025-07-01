@@ -20,7 +20,9 @@ description: "Summary: Learn how to define an additional trunk between a Mediati
 ---
 
 # Define additional trunks in Topology Builder in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to define an additional trunk between a Mediation Server and a gateway peer in Topology Builder in Skype for Business Server.
   
 Follow these steps to define an additional trunk to which you can associate a peer with a Mediation Server. A peer provides users enabled for Enterprise Voice with connectivity to the Public Switched Telephone Network (PSTN). A peer can be a PSTN gateway, an IP-PBX, or a Session Border Controller (SBC) for an Internet Telephony Service Provider (ITSP).
@@ -35,7 +37,7 @@ A trunk is a logical connection between a Mediation Server and a gateway.
 1. Start Topology Builder: Click **Start**, click **All Programs**, click **Skype for Business Server 2015**, and then click **Skype for Business Server 2015Topology Builder**.
     
 2. Under Skype for Business Server, your site name, **Shared Components**, right-click the **Trunks** node, and then click **New Trunk**.
-   1. In **Define New Trunk**, specify a friendly name to uniquely identify the trunk. You cannot have two trunks with the same name.
+   1. In **Define New Trunk**, specify a friendly name to uniquely identify the trunk. You can't have two trunks with the same name.
     
       > [!NOTE]
       > If you specify Transport Layer Security (TLS) as the transport type, you must specify the FQDN instead of the IP address of the peer of the Mediation Server. 
@@ -53,7 +55,7 @@ A trunk is a logical connection between a Mediation Server and a gateway.
 6. Under **Associated Mediation Server port**, type the listening port that the Mediation Server will receive SIP messages from the peer.
     
     > [!NOTE]
-    > With multiple trunk support in Skype for Business Server, two trunks with different trunk names cannot be configured with the same **Associated Mediation Server port** and **Listening Port for IP/PSTN gateway**
+    > With multiple trunk support in Skype for Business Server, two trunks with different trunk names can't be configured with the same **Associated Mediation Server port** and **Listening Port for IP/PSTN gateway**
   
     > [!NOTE]
     > With multiple trunk support in Skype for Business Server, multiple SIP signaling ports can be defined on the Mediation Server for communication with multiple peers. When defining a trunk, the **Associated Mediation Server port** number must be within the range of the listening ports for the respective protocol allowed by the Mediation Server. This port range is defined under Skype for Business Server and Mediation Server pools. Right-click the relevant Mediation Server pool, and select **Edit Properties**. Specify the port range in the **Listening ports** field.

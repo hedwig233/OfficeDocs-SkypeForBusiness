@@ -18,6 +18,8 @@ description: "The Mediation pools node lists the Mediation pools in your topolog
 ---
 
 # Mediation Servers Scope Node
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The **Mediation pools** node lists the Mediation pools in your topology. You can perform the following action:
   

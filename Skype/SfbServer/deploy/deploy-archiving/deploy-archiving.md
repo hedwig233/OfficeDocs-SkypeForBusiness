@@ -17,6 +17,8 @@ description: "Summary: Read this topic to learn how to deploy archiving for Skyp
 
 # Deploy archiving for Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Read this topic to learn how to deploy archiving for Skype for Business Server.
   
 Archiving is automatically installed on each Front End Server in your Skype for Business Server deployment, but you still need to perform initial setup and configuration steps before you can use it. Before you begin, be sure you are familiar with the concepts in [Plan for archiving in Skype for Business Server](../../plan-your-deployment/archiving/archiving.md).

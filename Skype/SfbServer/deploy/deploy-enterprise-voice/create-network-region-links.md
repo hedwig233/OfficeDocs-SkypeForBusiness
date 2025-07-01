@@ -21,6 +21,8 @@ description: "Create or modify network region links, which are used by Enterpris
 
 # Create network region links in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Create or modify network region links, which are used by Enterprise Voice call admission control in Skype for Business Server. 
   
 Regions within a network are linked through physical WAN connectivity. A network region link creates a link between two regions configured for Call Admission Control (CAC) and sets the bandwidth limitations on audio and video traffic between these regions.
@@ -68,10 +70,10 @@ The example topology has a link between the North America and APAC regions, and 
     
 ## See also
 
-[New-CsNetworkRegionLink](/powershell/module/skype/new-csnetworkregionlink?view=skype-ps)
+[New-CsNetworkRegionLink](/powershell/module/skype/new-csnetworkregionlink?view=skype-ps&preserve-view=true)
   
-[Get-CsNetworkRegionLink](/powershell/module/skype/get-csnetworkregionlink?view=skype-ps)
+[Get-CsNetworkRegionLink](/powershell/module/skype/get-csnetworkregionlink?view=skype-ps&preserve-view=true)
   
-[Set-CsNetworkRegionLink](/powershell/module/skype/set-csnetworkregionlink?view=skype-ps)
+[Set-CsNetworkRegionLink](/powershell/module/skype/set-csnetworkregionlink?view=skype-ps&preserve-view=true)
   
-[Remove-CsNetworkRegionLink](/powershell/module/skype/remove-csnetworkregionlink?view=skype-ps)
+[Remove-CsNetworkRegionLink](/powershell/module/skype/remove-csnetworkregionlink?view=skype-ps&preserve-view=true)

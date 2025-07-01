@@ -18,6 +18,8 @@ description: "In Topology Builder, you can edit the properties for an individual
 ---
 
 # Monitoring Server General Settings Expander
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 In Topology Builder, you can edit the properties for an individual Monitoring Server either by right-clicking the Monitoring Server in the console tree and then clicking **Action** in the toolbar, or by clicking a task in the Actions pane and then clicking **Edit Properties**, and changing any of the following options:
   

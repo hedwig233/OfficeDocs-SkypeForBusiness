@@ -16,11 +16,13 @@ description: "The Media view stores information about one media types used in a 
 ---
 
 # Media view
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The Media view stores information about one media types used in a peer-to-peer session. One session is represented by multiple records in the table, if more than one media type is used. This view was introduced in Microsoft Lync Server 2013.
   
 > [!NOTE]
-> The Media view should not be used to calculate the media duration for a session. This view contains the signaling details of media exchange in a session. Media exchange is done by the INVITE request, and StartTime indicates the time that the INVITE was sent out. The invite time does not necessarily mean the media start time, because media starts only after the session is accepted. 
+> The Media view shouldn't be used to calculate the media duration for a session. This view contains the signaling details of media exchange in a session. Media exchange is done by the INVITE request, and StartTime indicates the time that the INVITE was sent out. The invite time doesn't necessarily mean the media start time, because media starts only after the session is accepted. 
   
 The Media view contains all of the columns in the [SessionDetails view](sessiondetails-0.md) in addition the ones listed below.
   

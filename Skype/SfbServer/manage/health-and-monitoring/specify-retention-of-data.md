@@ -16,6 +16,8 @@ description: "Summary: Learn how to manage call detail recording (CDR) data for 
 ---
 
 # Specify retention of CDR data in Skype for Business Server
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 **Summary:** Learn how to manage call detail recording (CDR) data for Skype for Business Server.
   
@@ -64,7 +66,7 @@ You can create CDR retention settings by using Windows PowerShell and the Set-Cs
   Get-CsCdrConfiguration | Set-CsCdrConfiguration-EnablePurging -KeepCallDetailForDays 20 -KeepErrorReportForDays 20
   ```
 
-For more information, see the help topic for the [Set-CsCdrConfiguration](/powershell/module/skype/set-cscdrconfiguration?view=skype-ps) cmdlet.
+For more information, see the help topic for the [Set-CsCdrConfiguration](/powershell/module/skype/set-cscdrconfiguration?view=skype-ps&preserve-view=true) cmdlet.
   
 ## See also
 

@@ -46,6 +46,10 @@ If you'd like to get familiar with how policies work for Teams meetings and even
 
 For a full list of admin policies and organizer settings for webinars, see the [Webinar control comparison](#webinar-control-comparison) section in this article.
 
+## Teams for Virtualized Desktop Infrastructure (VDI)
+
+Users in your organization might use VDI. To learn which webinar capabilities are supported in VDI environments, see [New VDI solution for Teams](vdi-2.md#feature-list-with-the-new-optimization) and [Upgrade to new Teams for Virtualized Desktop Infrastructure (VDI)](new-teams-vdi-requirements-deploy.md#features-not-supported-in-vdi).
+
 ## Decide the types of webinars that organizers can create
 
 There are a few key differences between in-org and public webinars. When managing the event access type for webinars to decide whether organizers can schedule public webinars, consider the information in the following table:
@@ -98,10 +102,10 @@ A Teams Premium subscription includes the following features for webinars:
 |Manually approve registrants                       |                       |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                          |
 |Send reminder emails to registrants                |                       |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                          |
 |Use RTMP-In for webinars                           |                       |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                         |
-|Hide attendee names                          |                       |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                         |
 |Manage what attendees see                          |                       |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                         |
 |Custom meeting templates                         |                       |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                         |
 |Admin created custom meeting backgrounds                         |                       |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                         |
+|Use admin created meeting themes                         |                       |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                         |
 
 <sup>1</sup> - Every four hours, a new recording starts. For example, a webinar that lasts 8 hours has two recordings.
 
@@ -126,11 +130,11 @@ Teams admins and organizers have different policies and settings to control the 
 |[Copilot custom dictionary for Teams (Microsoft 365 Copilot)](copilot-custom-dictionary.md)|can upload a custom dictionary in the Microsoft 365 admin center to improve the quality of transcription. Once uploaded, the dictionary enhances entity recognition throughout Teams meetings and events, improving transcript accuracy and AI performance for Copilot and Recap.|No control|
 |[Custom backgrounds (Teams Premium)](custom-meeting-backgrounds.md)|Can upload images for your users to display in the background of their video feed during meetings.|Can use the backgrounds you upload.|
 |[Decorate my background (Teams Premium)](https://support.microsoft.com/office/change-your-background-in-microsoft-teams-meetings-f77a2381-443a-499d-825e-509a140f4780)|No control|Teams Premium licensed organizers, co-organizers, presenters, and participants can use AI to decorate their backgrounds.|
+|[Detect sensitive content during screen sharing (Teams Premium)](detect-sensitive-content.md)|Manage whether webinars in your organization can detect sensitive content during screen sharing.|Control whether sensitive content detection is available during their webinars.|
 |[Download transcripts](https://support.microsoft.com/office/manage-webinar-recordings-in-microsoft-teams-8cf1ba61-c9d8-4628-8b5d-0dcdb8503144)|No control.|Can download transcripts from their webinars.|
 |[Email communications (Teams Premium)](manage-email-communications.md)|Can control if event organizers and co-organizers can edit email templates for their webinars.|Can edit email templates  before they're sent out.|
 |[External presenters](https://support.microsoft.com/office/schedule-a-webinar-in-microsoft-teams-0719a9bd-07a0-47fd-8415-6c576860f36a)|No control.|Can invite presenters from outside  of your organization. External presenters have a unique join link to join the webinar without waiting in the lobby.|
 |[Green room](https://support.microsoft.com/office/green-room-for-teams-meetings-5b744652-789f-42da-ad56-78a68e8460d5)|No control.|Can choose if green room is used for a webinar. Can use the **End meeting** button to end the event for attendees while allowing organizers and presenters to stay in the green room until they're ready to leave.|
-|[Hide attendee names (Teams Premium)](hide-attendee-names.md) |Can control whether organizers with a Premium license can hide the names and photos of attendees from other attendees in the stage, roster, and chat. | Can hide attendee names during webinars to protect identities and privacy. |
 |[Intelligent recap (Teams Premium and Microsoft 365 Copilot)](intelligent-recap-calls-meetings.md) |Assigned licenses and transcription policies control this feature.|No control. Organizers, co-organizers, and presenters can access intelligent recap after the webinar ends. Attendees don't have access to intelligent recap.|
 |[Join verification check](join-verification-check.md) | Can require human verification checks for anonymous users to join webinars in your org.|No control|
 |[Language interpretation](https://support.microsoft.com/office/use-language-interpretation-in-microsoft-teams-meetings-b9fdde0f-1896-48ba-8540-efc99f5f4b2e) |No control |Can turn on language interpretation settings for a webinar, add interpreters before the webinar, and designate interpreters during the webinar.|
@@ -141,6 +145,7 @@ Teams admins and organizers have different policies and settings to control the 
 |[Lobby](who-can-bypass-meeting-lobby.md)|Can set the defaults for new webinars.|Can choose lobby settings for each webinar.|
 |[Manage what attendees see (Teams Premium)](https://support.microsoft.com/office/manage-what-attendees-see-in-teams-meetings-19bfd690-8122-49f4-bc04-c2c5f69b4e16)|No control|Can decide whose avatars or video feeds to spotlight during a Teams meeting. Others are hidden from view.|
 |[Manage who can schedule webinars](set-up-webinars.md)|Can disable webinars for users and groups, control which organizers can schedule webinars,  and decide whether organizers can schedule public webinars.|Can schedule webinars if allowed by admin.|
+|[Meeting themes (Teams Premium)](meeting-themes.md)|Can define meeting themes, including colors, images, and logo.|Can turn the admin-defined theme on or off.|
 |[Microphones](meeting-policies-audio-and-video.md)|Can use the **IP Mode for Audio** policy to control both outgoing and incoming audio for the webinars users organize or attend.|Can use the **Allow mic for attendees** setting when creating the webinar to manage whether attendees can turn on their microphones.|
 |[Microsoft 365 Copilot in Teams meetings and events](copilot-teams-transcription.md)|Can control the default values and enforce specific values for Microsoft 365 Copilot in Teams meetings and events in organizers’ meeting options.|Can control whether Microsoft 365 Copilot in Teams meetings and events is used **Only during the meeting**, **During and after the meeting**, or **Off** during their webinars. Attendees can use Copilot if they have a Copilot Microsoft 365 Copilot license.|
 |[Microsoft Teams Rooms (Windows) can join as a presenter](https://support.microsoft.com/office/microsoft-teams-rooms-windows-e667f40e-5aab-40c1-bd68-611fe0002ba2)|No control.| Can add Microsoft Teams Rooms on Windows with a Pro license as a presenter. Microsoft Teams Rooms see, but can't send chat messages. Organizers must add Microsoft Teams Rooms from external organizations as external presenters.|

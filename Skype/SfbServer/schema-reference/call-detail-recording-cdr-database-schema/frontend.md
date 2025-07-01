@@ -16,7 +16,9 @@ description: "The FrontEnd table is for internal use only. This table was introd
 ---
 
 # FrontEnd table in Skype for Business Server 2015
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The FrontEnd table is for internal use only. This table was introduced in Microsoft Lync Server 2013.
   
 

@@ -17,7 +17,9 @@ description: "Summary: Learn about the Server Performance Report in Skype for Bu
 ---
 
 # Server Performance Report in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn about the Server Performance Report in Skype for Business Server.
   
 The Server Performance Report provides a list of Skype for Business Server servers that have experienced the highest percentage of poor calls. The report breaks down servers by server type, reporting separate statistics for the following types:

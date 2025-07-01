@@ -21,6 +21,8 @@ description: "Summary: Review the Windows client support requirements while plan
 ---
 
 # Windows client requirements and software support
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 **Summary:** Review the Windows client support requirements while planning Skype for Business Server.
   

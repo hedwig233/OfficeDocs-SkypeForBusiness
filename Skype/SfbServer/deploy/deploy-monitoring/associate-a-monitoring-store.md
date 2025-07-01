@@ -16,6 +16,9 @@ description: "Summary: Learn how to associate Front End pools with a monitoring 
 ---
 
 # Associate a monitoring store with a Front End pool in Skype for Business Server 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to associate Front End pools with a monitoring store used by Skype for Business Server.
   
 In Skype for Business Server, monitoring data can only be collected on Front End pools that have been associated with a monitoring store, a task typically carried out when you define a Front End pool in Topology Builder.

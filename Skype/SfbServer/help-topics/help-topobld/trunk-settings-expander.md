@@ -14,12 +14,14 @@ ms.custom:
 ms.service: skype-for-business-server
 ms.localizationpriority: medium
 ms.assetid: 3d00e8f4-e599-4094-a4a1-34fd6e8a5580
-description: "To edit or modify the settings for a SIP trunk, you do the following:"
+description: "To edit or modify the settings for a SIP trunk, you do the following steps:"
 ---
 
 # Trunk Settings Expander
 
-To edit or modify the settings for a SIP trunk, you do the following:
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
+To edit or modify the settings for a SIP trunk, you do the following steps:
 
  **Trunk name** is a required entry and uniquely identifies the SIP trunk in the deployment.
 
@@ -27,7 +29,7 @@ To edit or modify the settings for a SIP trunk, you do the following:
 
  **Listening port for IP/PSTN gateway**: Indicates what TCP/IP port the gateway will be listening for requests on. The required value may differ, based on the vendor of the gateway, but the default is port 5067.
 
- **SIP Transport Protocol**: The protocol used is either TCP or TLS. TLS is the default. Refer to the gateway vendor documentation for what you gateway supports. The default is TLS, and should be considered the more secure selection, if the gateway supports TLS.
+ **SIP Transport Protocol**: The protocol used is either TCP or TLS. TLS is the default. Refer to the gateway vendor documentation for what your gateway supports. The default is TLS, and should be considered the more secure selection, if the gateway supports TLS.
 
  **Associated Mediation Server**: Select an existing Mediation Server from the deployment to associate with the SIP trunk.
 

@@ -19,8 +19,10 @@ ms.assetid: 7d68b09c-9ea0-43bd-997c-df887869d607
 description: "Summary: Learn how to modify SIP trunk configuration settings by using the Skype for Business Server Control Panel."
 ---
 
-# Skype for Business Server: Modify SIP trunk configuration settings 
- 
+# Skype for Business Server: Modify SIP trunk configuration settings
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to modify SIP trunk configuration settings by using the Skype for Business Server Control Panel.
   
 SIP trunk configuration settings define the relationship and capabilities between a Mediation Server and the public switched telephone network (PSTN) gateway, an IP-Public Branch eXchange (PBX), or a Session Border Controller (SBC) at the service provider. These settings do such things as specify:

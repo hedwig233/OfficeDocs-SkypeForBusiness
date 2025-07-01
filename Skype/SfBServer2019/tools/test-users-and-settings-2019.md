@@ -16,7 +16,9 @@ description: "Configure test user accounts and watcher node settings for Skype f
 ---
 
 # Skype for Business Server: Configure watcher node test users and settings
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Configure test user accounts and watcher node settings for Skype for Business Server synthetic transactions.
   
 After configuring the computer that acts as a watcher node, you must:

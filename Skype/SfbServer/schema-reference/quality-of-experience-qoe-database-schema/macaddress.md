@@ -16,6 +16,8 @@ description: "The MacAddress table is a supporting table. Each record represents
 ---
 
 # MacAddress table
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The MacAddress table is a supporting table. Each record represents one source.
   

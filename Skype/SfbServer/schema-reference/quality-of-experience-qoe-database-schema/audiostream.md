@@ -16,7 +16,9 @@ description: "Each record represents one audio stream. One audio media line usua
 ---
 
 # AudioStream table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Each record represents one audio stream. One audio media line usually contains two audio streams.
   
 |Column|Data Type|Key/Index|Details|

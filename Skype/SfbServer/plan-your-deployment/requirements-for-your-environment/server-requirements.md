@@ -20,6 +20,8 @@ description: "Summary: Prepare your Skype for Business Server 2015 servers with 
 ---
 
 # Server requirements for Skype for Business Server 2015
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 **Summary:** Prepare your Skype for Business Server 2015 servers with this article. Hardware, OS, databases, software, all the system requirements and recommendations are here to help ensure a successful install and deployment of your server farm.
 

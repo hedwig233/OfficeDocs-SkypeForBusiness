@@ -16,7 +16,9 @@ description: "Summary: Learn about the Server Media Quality Trend Report in Skyp
 ---
 
 # Server Media Quality Trend Report in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn about the Server Media Quality Trend Report in Skype for Business Server.
   
 The Server Media Quality Trend Report provides a way for you to graphically compare up to five servers on Quality of Experience metrics such as call volume, poor call percentage, packet loss, and jitter. This makes it easier to do such things as identify servers that are performing poorly, identify servers that are underutilized, or identify servers that are being overused.

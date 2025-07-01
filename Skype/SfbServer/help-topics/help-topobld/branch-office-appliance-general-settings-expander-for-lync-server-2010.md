@@ -18,6 +18,8 @@ description: "To edit properties for Survivable Branch Appliance or Survivable B
 ---
 
 # Branch Office Appliance General Settings Expander for Lync Server 2010
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 To edit properties for Survivable Branch Appliance or Survivable Branch Server, under **General**, you configure:
   

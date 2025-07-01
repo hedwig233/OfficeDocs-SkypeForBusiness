@@ -17,6 +17,8 @@ description: "You can configure links between two network regions as part of cal
 
 # Linking network regions in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 You can configure links between two network regions as part of call admission control (CAC). Use the sections in this article to view newtwork region link information or configure or delete netwrok region links. 
 
 ## View network region link information 

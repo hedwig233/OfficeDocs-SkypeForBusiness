@@ -16,7 +16,9 @@ description: "Each record represents one peer-to-peer session, which could be a 
 ---
 
 # SessionDetails table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Each record represents one peer-to-peer session, which could be a VoIP-VoIP phone call, two-party IM session, or other type of session. You can perform a table join with the [Media table](media.md) to find the details of each media involved in this session.
   
 The IsUser1IntegratedWithDeskPhone and the IsUser2IntegratedWithDeskPhone fields is dropped from the SessionDetails table used in Skype for Business Server 2015.

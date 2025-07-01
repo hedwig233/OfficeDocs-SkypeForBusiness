@@ -21,13 +21,15 @@ description: "Learn about call admission control, which can prevent calls from t
 
 # Plan for call admission control in Skype for Business Server
 
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Learn about call admission control, which can prevent calls from taking place if they would have poor media quality, in Skype for Business Server Enterprise Voice.
 
-For IP-based applications such as telephony, video, and application sharing, the available bandwidth of enterprise networks is not generally considered to be a limiting factor within LAN environments. However, on WAN links that interconnect sites, network bandwidth can be limited.
+For IP-based applications such as telephony, video, and application sharing, the available bandwidth of enterprise networks isn't considered to be a limiting factor within LAN environments. However, on WAN links that interconnect sites, network bandwidth can be limited.
 
-When network traffic oversubscribes a WAN link, current mechanisms such as queuing, buffering, and packet dropping are used to resolve the congestion. The extra traffic is typically delayed until the network congestion eases or, if necessary, the traffic is dropped. For conventional data traffic in such situations, the receiving client can recover. However, for real-time traffic such as unified communications, network congestion cannot be resolved in this manner, because the unified communications traffic is sensitive to both latency and packet loss. Congestion on the WAN can result in a poor Quality of Experience (QoE) for users. For real-time traffic in congested conditions, it is actually better to deny calls than to provide connections with poor quality.
+When network traffic oversubscribes a WAN link, current mechanisms such as queuing, buffering, and packet dropping are used to resolve the congestion. The extra traffic is typically delayed until the network congestion eases or, if necessary, the traffic is dropped. For conventional data traffic in such situations, the receiving client can recover. However, for real-time traffic such as unified communications, network congestion can't be resolved in this manner, because the unified communications traffic is sensitive to both latency and packet loss. Congestion on the WAN can result in a poor Quality of Experience (QoE) for users. For real-time traffic in congested conditions, it's better to deny calls than to provide connections with poor quality.
 
-Call admission control (CAC) determines whether there is sufficient network bandwidth to establish a real-time session of acceptable quality. In Skype for Business Server, CAC controls real-time traffic only for audio and video, but it does not affect data traffic. If the default WAN path does not have the required bandwidth, CAC can attempt to route the call through an Internet path or the public switched telephone network (PSTN).
+Call admission control (CAC) determines whether there's sufficient network bandwidth to establish a real-time session of acceptable quality. In Skype for Business Server, CAC controls real-time traffic only for audio and video, but it doesn't affect data traffic. If the default WAN path doesn't have the required bandwidth, CAC can attempt to route the call through an Internet path or the public switched telephone network (PSTN).
 
 This section describes the call admission control functionality and explains how to plan for CAC.
 
@@ -36,7 +38,7 @@ This section describes the call admission control functionality and explains how
 
 The CAC design in Skype for Business Server offers four main attributes:
 
-- It is simple to deploy and manage without requiring additional equipment, such as specially configured routers.
+- It's simple to deploy and manage without requiring additional equipment, such as specially configured routers.
 
 - It addresses critical unified communications use cases, such as roaming users and multiple points of presence. CAC policies are enforced according to where the endpoint is located, not where the user is homed.
 
@@ -46,7 +48,7 @@ The CAC design in Skype for Business Server offers four main attributes:
 
 If a new voice or video session exceeds the bandwidth limits that you have set on a WAN link, the session is either blocked or (for phone calls only) rerouted to the PSTN.
 
-CAC controls real-time traffic for voice and video only. It does not control data traffic.
+CAC controls real-time traffic for voice and video only. It doesn't control data traffic.
 
 Administrators define CAC policies, which are enforced by the Bandwidth Policy Service that is installed with every Front End pool. CAC settings are automatically propagated to all Skype for Business Server Front End Servers in your network.
 
@@ -58,22 +60,22 @@ For calls that fail because of CAC policies, the order of precedence for rerouti
 
 3. Voice mail
 
-Call detail recording (CDR) captures information about calls that are rerouted to the PSTN or to voice mail. CDR does not capture information about calls that are rerouted to the Internet, because the Internet is treated as an alternate path rather than a secondary option.
+Call detail recording (CDR) captures information about calls that are rerouted to the PSTN or to voice mail. CDR doesn't capture information about calls that are rerouted to the Internet, because the Internet is treated as an alternate path rather than a secondary option.
 
 > [!NOTE]
-> Voice mail deposits will not be denied because of bandwidth constraints.
+> Voice mail deposits won't be denied because of bandwidth constraints.
 
 The Bandwidth Policy Service generates two types of log files in comma separated values (CSV) format. The **check failures** log file captures information when bandwidth requests are denied. The **link utilization** log file captures a snapshot of the network topology and the WAN link bandwidth utilization. Both of these log files can assist you in fine-tuning your CAC policies based on utilization.
 
 ## Call Admission Control Considerations
 
-The administrator selects to install the Bandwidth Policy Service on the first pool configured in the central site. Since there is a single central site per network region, there is only one Bandwidth Policy Service per network region, which manages bandwidth policy for that region, its associated sites and the links to those sites. The Bandwidth Policy Service runs as part of the Front End Servers, and therefore high availability is built-in within that pool. The Bandwidth Policy Service running on each Front End Server synchronizes every 15 seconds. If the Front End pool fails, CAC policies are no longer enforced for that site until the Front End pool and consequently the Bandwidth Policy Service becomes operational again. This implies that all calls will go through for the duration the Bandwidth Policy Service is out of service. Therefore there is the possibility of bandwidth oversubscription of your links during this period
+The administrator selects to install the Bandwidth Policy Service on the first pool configured in the central site. Since there's a single central site per network region, there's only one Bandwidth Policy Service per network region, which manages bandwidth policy for that region, its associated sites and the links to those sites. The Bandwidth Policy Service runs as part of the Front End Servers, and therefore high availability is built-in within that pool. The Bandwidth Policy Service running on each Front End Server synchronizes every 15 seconds. If the Front End pool fails, CAC policies are no longer enforced for that site until the Front End pool and so the Bandwidth Policy Service becomes operational again. This implies that all calls will go through for the duration the Bandwidth Policy Service is out of service. Therefore there's the possibility of bandwidth oversubscription of your links during this period
 
-The Bandwidth Policy Service provides high availability within a Front End pool; however, it does not provide redundancy across Front End pools. The Bandwidth Policy Service cannot failover from one Front End pool to another. Once service to the Front End pool is restored, the Bandwidth Policy Service is resumed and can enforce bandwidth policy checks again.
+The Bandwidth Policy Service provides high availability within a Front End pool; however, it doesn't provide redundancy across Front End pools. The Bandwidth Policy Service can't failover from one Front End pool to another. Once service to the Front End pool is restored, the Bandwidth Policy Service is resumed and can enforce bandwidth policy checks again.
 
 ### Network Considerations
 
-Although bandwidth restriction for audio and video is enforced by the Bandwidth Policy Service in Skype for Business Server, this restriction is not enforced at the network router (layer 2 and 3). CAC cannot prevent a data application, for example, from consuming the entire network bandwidth on a WAN link, including the bandwidth that is reserved for audio and video by your CAC policy. To protect the necessary bandwidth on your network, you can deploy a Quality of Service (QoS) protocol such as Differentiated Services (DiffServ). Therefore, a best practice is to coordinate the CAC bandwidth policies you define with any QoS settings that you might deploy.
+Although bandwidth restriction for audio and video is enforced by the Bandwidth Policy Service in Skype for Business Server, this restriction isn't enforced at the network router (layer 2 and 3). CAC can't prevent a data application, for example, from consuming the entire network bandwidth on a WAN link, including the bandwidth that is reserved for audio and video by your CAC policy. To protect the necessary bandwidth on your network, you can deploy a Quality of Service (QoS) protocol such as Differentiated Services (DiffServ). Therefore, a best practice is to coordinate the CAC bandwidth policies you define with any QoS settings that you might deploy.
 
 ### Media and Signaling Paths over VPN
 
@@ -81,13 +83,13 @@ If your enterprise supports media through VPN, ensure that either both the media
 
 ### Call Admission Control of Outside Users
 
-Call admission control is not enforced beyond the limits of the Skype for Business Server organization. CAC cannot be applied to the media traffic traversing the Internet, which is not managed by Skype for Business Server. CAC checks will be performed on the portion of the call that flows through the enterprise network if the called endpoint belongs to the organization, and the Edge Server has been added to the network configuration, as described in [Call admission control deployment: final checklist for Skype for Business Server](../../deploy/deploy-enterprise-voice/final-checklist.md). If the called endpoint doesn't belong to the organization, such as a federated or PIC user, no bandwidth policy checks are performed and the outgoing call will ignore any CAC restrictions.
+Call admission control isn't enforced beyond the limits of the Skype for Business Server organization. CAC can't be applied to the media traffic traversing the Internet, which isn't managed by Skype for Business Server. CAC checks are performed on the portion of the call that flows through the enterprise network if the called endpoint belongs to the organization, and the Edge Server is added to the network configuration, as described in [Call admission control deployment: final checklist for Skype for Business Server](../../deploy/deploy-enterprise-voice/final-checklist.md). If the called endpoint doesn't belong to the organization, such as a federated or PIC user, no bandwidth policy checks are performed and the outgoing call will ignore any CAC restrictions.
 
 ### Call Admission Control of PSTN Connections
 
-Call admission control is enforceable on the Mediation Server regardless of whether it is connected to an IP/PBX, a PSTN gateway, or a SIP trunk. Because the Mediation Server is a back-to-back user agent (B2BUA), it terminates media. It has two connection sides: a side that is connected to Skype for Business Server and a gateway side, which is connected to PSTN gateways, IP/PBXs, or SIP trunks. For details about PSTN connections, see [Plan for PSTN connectivity in Skype for Business Server](pstn-connectivity-0.md).
+Call admission control is enforceable on the Mediation Server regardless of whether it's connected to an IP/PBX, a PSTN gateway, or a SIP trunk. Because the Mediation Server is a back-to-back user agent (B2BUA), it terminates media. It has two connection sides: a side that is connected to Skype for Business Server and a gateway side, which is connected to PSTN gateways, IP/PBXs, or SIP trunks. For details about PSTN connections, see [Plan for PSTN connectivity in Skype for Business Server](pstn-connectivity-0.md).
 
-CAC can be enforced on both sides of the Mediation Server unless media bypass is enabled. If media bypass is enabled, the media traffic doesn't traverse the Mediation Server but instead flows directly between the Skype for Business client and the gateway. In this case, CAC is not needed. For details, see [Plan for media bypass in Skype for Business](media-bypass.md).
+CAC can be enforced on both sides of the Mediation Server unless media bypass is enabled. If media bypass is enabled, the media traffic doesn't traverse the Mediation Server but instead flows directly between the Skype for Business client and the gateway. In this case, CAC isn't needed. For details, see [Plan for media bypass in Skype for Business](media-bypass.md).
 
 The following figure illustrates how CAC is enforced on PSTN connections with and without media bypass enabled.
 
@@ -119,7 +121,7 @@ To explain these concepts, we'll use the example network topology shown in the f
 ![Litware Inc. Network Topology Example.](../../media/Plan_CS_VoiceCAC_Litwarenetworktopo.jpg)
 
 > [!NOTE]
-> All network sites are associated with a network region. For example, Portland, Reno, and Albuquerque are included in the North America region. In this figure, only WAN links that have CAC policies applied are shown, with bandwidth limits. The network sites of Chicago, New York, and Detroit are shown inside the North America region oval because they are not bandwidth-constrained, and therefore do not require CAC policies.
+> All network sites are associated with a network region. For example, Portland, Reno, and Albuquerque are included in the North America region. In this figure, only WAN links that have CAC policies applied are shown, with bandwidth limits. The network sites of Chicago, New York, and Detroit are shown inside the North America region oval because they aren't bandwidth-constrained, and therefore don't require CAC policies.
 
 The components of this example topology are explained in the following sections. For details about how this topology was planned, including the bandwidth limits, see [Example: Gathering requirements for call admission control in Skype for Business Server](example-gathering-requirements.md).
 
@@ -129,14 +131,14 @@ A network region represents a network backbone or a network hub.
 
 A network backbone or hub is a part of computer network infrastructure that interconnects different parts of the network, providing a path for the exchange of information between different LANs or subnets. A backbone can tie together diverse networks from a small location to a wide geographic area. The backbone's capacity is typically greater than that of the networks that connect to it.
 
-Our example topology has three network regions: North America, EMEA, and APAC. A network region contains a collection of network sites (see the definition of network sites later in this topic). Work with your network operations team to identify your network regions.
+Our example topology has three network regions: North America, EMEA, and APAC. A network region contains a collection of network sites (see the definition of network sites later in this article). Work with your network operations team to identify your network regions.
 
 ### Associating a Central Site with each Network Region
 
 CAC requires that a Skype for Business Server central site is defined for each network region. The central site is selected with the best network connectivity and highest bandwidth to all the other sites within that network region. The preceding example of network topology shows three network regions, each with a central site that manages CAC decisions. From the preceding example, the appropriate association is shown in the following table.
 
 > [!NOTE]
-> Central sites do not necessarily correspond to network sites. In the examples in this documentation, some central sites—Chicago, London, and Beijing—share the same name as the network sites. However, even if a central site and network site share the same name, the central site is an element of the Skype for Business Server topology, whereas the network site is a part of the overall network in which the Skype for Business Server topology resides.
+> Central sites don't necessarily correspond to network sites. In the examples in this documentation, some central sites—Chicago, London, and Beijing—share the same name as the network sites. However, even if a central site and network site share the same name, the central site is an element of the Skype for Business Server topology, whereas the network site is a part of the overall network in which the Skype for Business Server topology resides.
 
 **Network regions, central sites, and network sites**
 
@@ -150,7 +152,7 @@ CAC requires that a Skype for Business Server central site is defined for each n
 
 A network site represents a location where your organization has a physical venue—for example, offices, a set of buildings, or a campus. A physical venue with a LAN and has WAN connectivity to other sites is considered a network site. Start by inventorying all of your organization's offices. In our example topology, the North America network region consists of the following network sites: New York, Chicago, Detroit, Portland, Reno, and Albuquerque.
 
-You must associate every network site with a network region. Depending on whether the network site has a constrained WAN link, a bandwidth policy is associated with the network site. For details about CAC policies and the bandwidth that you allocate by using them, see "Define Bandwidth Policies" later in this topic. To configure CAC, you associate network sites with network regions, and then you create bandwidth-allocating policies to apply to the bandwidth-constrained connections between a given site or region and the WAN connections between the sites and regions.
+You must associate every network site with a network region. Depending on whether the network site has a constrained WAN link, a bandwidth policy is associated with the network site. For details about CAC policies and the bandwidth that you allocate by using them, see "Define Bandwidth Policies" later in this article. To configure CAC, you associate network sites with network regions, and then you create bandwidth-allocating policies to apply to the bandwidth-constrained connections between a given site or region and the WAN connections between the sites and regions.
 
 ### Identify Network Links
 
@@ -164,7 +166,7 @@ The site links are indicated by the lines connecting Portland, Reno, and Albuque
 
 Work with your network operations team to determine how much WAN bandwidth is available for real-time audio and video traffic across the WAN links in your organization. Bandwidth policies are typically applied to WAN links if the bandwidth usage is constrained; that is, if it expected to be more than the bandwidth that can be allocated for audio and video modalities.
 
-CAC bandwidth policies define the maximum bandwidth that can be reserved for real-time audio and video modalities. Since CAC does not limit the bandwidth of other traffic, it cannot prevent other data traffic such as a large file transfer, music streaming, from using up all of the network bandwidth.
+CAC bandwidth policies define the maximum bandwidth that can be reserved for real-time audio and video modalities. Since CAC doesn't limit the bandwidth of other traffic, it can't prevent other data traffic such as a large file transfer, music streaming, from using up all of the network bandwidth.
 
 CAC bandwidth policies can define any or all of the following:
 
@@ -184,11 +186,11 @@ CAC bandwidth policies can define any or all of the following:
 
 To optimize bandwidth utilization on a per-session basis, consider the type of audio and video codecs that will be used. In particular, avoid allocating insufficient bandwidth for a codec that you expect to be used frequently. Conversely, if you want to prevent media from using a codec that requires more bandwidth, you should set the maximum bandwidth per session low enough to discourage such use. For audio, not every codec is available for every scenario. For example:
 
-- Peer-to-peer audio calls between Skype for Business endpoints will use either RTAudio (8kHz) or RTAudio (16kHz) when you factor in the bandwidth and prioritization of codecs.
+- Peer-to-peer audio calls between Skype for Business endpoints use either RTAudio (8kHz) or RTAudio (16kHz) when you factor in the bandwidth and prioritization of codecs.
 
 - Conference calls between Skype for Business endpoints and the A/V Conferencing service will use either G.722 or Siren.
 
-- Calls to the public switched telephone network (PSTN) either to or from Skype for Business endpoints will use either G.711 or RTAudio (8kHz).
+- Calls to the public switched telephone network (PSTN) either to or from Skype for Business endpoints use either G.711 or RTAudio (8kHz).
 
 Use the following table to help optimize the maximum per-session bandwidth settings.
 
@@ -209,13 +211,13 @@ Use the following table to help optimize the maximum per-session bandwidth setti
 
 The G.722.1 and Siren codecs are similar, but they offer different bit rates.
 
-G.722, the default codec for Skype for Business Server conferencing, is completely different from the G.722.1 and Siren codecs.
+G.722, the default codec for Skype for Business Server conferencing, is different from the G.722.1 and Siren codecs.
 
 The Siren codec is used in Skype for Business Server in the following situations:
 
 - If the bandwidth policy is set too low for G.722 to be used.
 
-- If a Communications Server 2007 or Communications Server 2007 R2 client connects to a Skype for Business Server conferencing service (because those clients do not support the G.722 codec).
+- If a Communications Server 2007 or Communications Server 2007 R2 client connects to a Skype for Business Server conferencing service (because those clients don't support the G.722 codec).
 
 **Bandwidth utilization by scenario**
 
@@ -230,12 +232,12 @@ The Siren codec is used in Skype for Business Server in the following situations
 
 ### Identify IP Subnets
 
-For each network site, you will need to work with your network administrator to determine what IP subnets are assigned to each network site. If your network administrator has already organized the IP subnets into network regions and network sites, then your work is significantly simplified.
+For each network site, you'll need to work with your network administrator to determine what IP subnets are assigned to each network site. If your network administrator has already organized the IP subnets into network regions and network sites, then your work is significantly simplified.
 
 In our example, the New York site in the North America region is assigned the following IP subnets: 172.29.80.0/23, 157.57.216.0/25, 172.29.91.0/23, 172.29.81.0/24. Suppose Bob, who typically works in Detroit, travels to the New York office for training. When he turns on his computer and connects to the network, his computer will get an IP address in one of the four ranges reserved for New York, for example 172.29.80.103.
 
 > [!CAUTION]
-> The IP subnets specified during network configuration on the server must match the format provided by client computers in order to be properly used for media bypass. A Skype for Business client takes its local IP address and masks the IP address with the associated subnet mask. When determining the bypass ID associated with each client, the Registrar will compare the list of IP subnets associated with each network site against the subnet provided by the client for an exact match. For this reason, it is important that subnets entered during network configuration on the server are actual subnets instead of virtual subnets. (If you deploy call admission control, but not media bypass, call admission control will function properly even if you configure virtual subnets.) For example, if a client signs in on a computer with an IP address of 172.29.81.57 with an IP subnet mask of 255.255.255.0, Skype for Business will request the bypass ID associated with subnet 172.29.81.0. If the subnet is defined as 172.29.0.0/16, although the client belongs to the virtual subnet, the Registrar will not consider this a match because the Registrar is specifically looking for subnet 172.29.81.0. Therefore, it is important that the administrator enters subnets exactly as provided by Skype for Business clients (which are provisioned with subnets during network configuration either statically or by DHCP.)
+> The IP subnets specified during network configuration on the server must match the format provided by client computers in order to be properly used for media bypass. A Skype for Business client takes its local IP address and masks the IP address with the associated subnet mask. When determining the bypass ID associated with each client, the Registrar will compare the list of IP subnets associated with each network site against the subnet provided by the client for an exact match. For this reason, it's important that subnets entered during network configuration on the server are actual subnets instead of virtual subnets. (If you deploy call admission control, but not media bypass, call admission control will function properly even if you configure virtual subnets.) For example, if a client signs in on a computer with an IP address of 172.29.81.57 with an IP subnet mask of 255.255.255.0, Skype for Business will request the bypass ID associated with subnet 172.29.81.0. If the subnet is defined as 172.29.0.0/16, although the client belongs to the virtual subnet, the Registrar won't consider this a match because the Registrar is specifically looking for subnet 172.29.81.0. Therefore, it's important that the administrator enters subnets exactly as provided by Skype for Business clients (which are provisioned with subnets during network configuration either statically or by DHCP.)
 
 ## Best practices for call admission control
 

@@ -17,6 +17,8 @@ description: "Use the procedures in this article to view, create, modify, or del
 
 # Managing network bandwidth policy profiles in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Use the procedures in this article to view, create, modify, or delete network bandwidth policy profiles.
 
 ## View network bandwidth policy profile information

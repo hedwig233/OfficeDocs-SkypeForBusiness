@@ -384,6 +384,8 @@ items:
         href: privacy/intelligent-recap.md
       - name: Set up AI recommendations for educators
         href: institution-settings.md
+      - name: Custom dictionary for Teams meetings and events
+        href: copilot-custom-dictionary.md
     - name: Copilot in Teams
       items:
         - name: Manage Copilot for multitenant organizations

@@ -24,13 +24,13 @@ description: Learn about how to upload and manage a Copilot custom dictionary fo
 ## Overview
 
 > [!IMPORTANT]
-> This feature is currently in Teams Public preview.
+> This feature is currently in Teams Public Preview.
 >
 > Features in preview might not be complete and could undergo changes before becoming available in the public release. They're provided for evaluation and exploration purposes only.
 
 Organizations often use their own special terms, acronyms, and jargon, like product names, department-specific language, and industry-specific terms. The AI models powering Teams transcription are trained using general datasets that might not recognize these specialized terms. When you import a custom dictionary, the model dynamically adapts during meetings and performs post-correction once the meeting ends, ensuring accurate transcription of these specialized terms.
 
-As an admin, you can upload a custom dictionary in the Microsoft 365 admin center to improve the quality of transcription. Once uploaded, the dictionary enhances entity recognition throughout Teams meetings and events, improving transcript accuracy and AI performance for Copilot and Recap.
+As an admin, you can upload a custom dictionary in the Microsoft 365 admin center to enhance entity recognition and improve transcription accuracy across Teams meetings and events.
 
 ## Prerequisites
 

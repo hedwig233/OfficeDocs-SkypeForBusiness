@@ -24,7 +24,7 @@ f1keywords:
 # Shared Spaces Insights
 
 > [!IMPORTANT]
-> Currently, the Shared Spaces Insights feature is in Public Preview in the "Public" and "GCC" environments. This feature is currently not yet enabled in the "GCC-H" and "Sovereign cloud" environments.
+> Currently, the Shared Spaces Insights feature is in Public Preview in the "Public" and "GCC" environments. This feature is currently not yet enabled in the "GCC High" environment.
 
 ## Overview
 
@@ -34,13 +34,14 @@ The new **Shared Spaces Insights** page in the Pro Management portal provides IT
 
 To use the Shared Spaces Insights feature, ensure that you meet the following prerequisites:
 
-- **Licensing**: To access the Shared Spaces Insights feature, you need at least one Teams Rooms Pro license, Teams Rooms Premium license, or Teams Shared Device license.
-- **Teams Rooms on Android Admin Agent**: Update Teams Rooms on Android devices to [Admin Agent version 1.0.0.202412110504](../devices/certified-device-apps.md#100202412110504) or newer versions to ensure that these devices are visible in the **Shared Spaces Insights** page.
-    - Devices updated to the required Admin Agent version on or before May 6, 2025, will begin reporting utilization metrics starting May 6, 2025.
-    - Devices updated after May 6, 2025 will begin reporting utilization metrics only going forward after the Admin Agent version is upgraded to 1.0.0.202412110504 or a newer version.
+- **Licensing**: To access the Shared Spaces Insights feature, you need at least one Teams Rooms Pro license, Teams Rooms Premium license, or Teams Shared Device license. Only Teams rooms with an assigned Teams Room Pro or Premium license will appear under the **Shared Spaces Insights** page.
+- **Teams Rooms on Android Admin Agent**: Teams Rooms on Android devices require [Admin Agent version 1.0.0.202412110504](../devices/certified-device-apps.md#100202412110504) or newer versions to support the "Shared Spaces Insights" feature.
+    - Teams Rooms on Android devices running this required Admin Agent version before May 6, 2025, began reporting their utilization from May 6, 2025.
+    - Any Teams Rooms on Android devices not running atleast [Admin Agent version 1.0.0.202412110504](../devices/certified-device-apps.md#100202412110504) (if not a newer version) on after May 6, 2025, begin reporting their utilization metrics once updated to [Admin Agent version 1.0.0.202412110504](../devices/certified-device-apps.md#100202412110504) or newer versions.
+
       > [!IMPORTANT]
       > Allow 24 to 48 hours for the utilization metrics to populate.
-    - Devices running older versions of the Admin Agent won't appear in the **Shared Spaces Insights** dashboard until they're updated.
+      > Teams Rooms on Android devices running older versions of the Admin Agent won't appear in the **Shared Spaces Insights** dashboard until they're updated.
 
 ## Space Utilization Metric Definition
 
@@ -53,7 +54,7 @@ The following screenshot depicts space utilization metric:
 
 :::image type="content" source="../media/space-utilization-metric-definition.png" alt-text="Screenshot that shows the space utilization metric definition page." lightbox="../media/space-utilization-metric-definition.png":::
 
-A room is considered utilized when either of the following scenarios are fulfilled:
+A room is considered utilized when any of the following scenarios are fulfilled:
 
 - Reserved and occupied
 - Reserved and not occupied
@@ -75,7 +76,7 @@ The details of the device signals from Teams Rooms that contribute to the room o
 |Local HDMI ingest outside of a meeting      |Yes         |No         |
 |[Direct Guest Join (DGJ)](third-party-join.md)      |Yes         |No         |
 
-## Where is this in Pro Portal?
+## Where is this in Pro Management Portal?
 
 To navigate to the **Shared Spaces Insights** page in the Pro Management Portal, perform the following steps:
 
@@ -104,36 +105,37 @@ To navigate to the **Shared Spaces Insights** page in the Pro Management Portal,
    > [!NOTE]
    > The **Floor** and **Room** dropdown lists become available only after you choose a value for the **Building name** attribute.
 
-1. Select **Apply**.
-   The Shared space utilization insights are shown for each component on the **Shared Spaces Insights** page.
+1. Select **Apply**. The Shared space utilization insights are shown for each component on the **Shared Spaces Insights** page, based on Role-Based Access Control (RBAC) setting for the user. (For more information on RBAC, see [Role-Based Access Control (RBAC)](#role-based-access-control-rbac)).
 
-   > [!NOTE]
-   > The IT admin can view the utilization metrics of only those shared spaces that they're authorized to view, based on the roles assigned to you. For more information about the roles assigned to you and the shared spaces for which you're authorized to view the utilization metrics, see [Role-Based Access Control (RBAC)](#role-based-access-control-rbac). 
+### Role-Based Access Control (RBAC)
+
+Shared Spaces Insights adheres to [role-based access controls](rooms-pro-rbac.md) in the Pro Management portal, displaying utilization metrics only for spaces the user is authorized to view.
 
 ## Global page filters
 
 The global page filters refer to the dropdown lists on the **Shared Spaces Insights** page. These filters are categorized into:
 
-- [Location discovery](#location-discovery)
+- [Location filters](#location-filters)
 - [Days of the week and business hours filters](#days-of-the-week-and-business-hours-filters)
 - [Date range selector](#date-range-selector)
 - [Group filter](#group-filter)
 
-### Location discovery
+### Location filters
 
 This filter's pane is located on the top of the page from which it lets you filter the data for your preferred location.
 
-The following screenshot depicts the location discovery-related attributes with a value to be chosen for each attribute to determine the location:
+The following screenshot depicts the "location" attributes's filters with a value to be chosen for each filter to determine the location:
 
 :::image type="content" source="../media/location-discovery.png" alt-text="Screenshot that shows the page on which can apply filters to the location-related attributes." lightbox="../media/location-discovery.png":::
 
-The location data is pulled from the Places API for the room accounts. If the address information in your room account isn't complete, it won't appear in the location filters. For example, if the room account only has the building information filled out and not information about country, state/province, or city, then this room appears when the building is selected but not when the country, state/province, or city is selected.
+> [!NOTE]
+> The location data is pulled from the Places API for the room accounts. If the address information in your room account isn't complete, it won't appear in the location filters. For example, if the room account only has the building information filled out and not information about country, state/province, or city, then this room appears when the building is selected but not when the country, state/province, or city is selected. For more information, see [Set-Place](/powershell/module/exchange/set-place?view=exchange-ps).
 
 ### Days of the week and business hours filters
 
 "Days" and "business hours" are the other attributes for which you can choose values to customize the insights to your organization's schedule.
 
-Ensure that the filters for **Location Discovery** and **Days of the week and business hours filter** have been set (based on your preference) because only then you can select **Apply** to generate the data.
+Ensure that the filters for **Location** and **Days of the week and business hours** have been set (based on your preference) because only then you can select **Apply** to generate the data.
 
 ### Date range selector
 
@@ -225,7 +227,3 @@ This column chart illustrates the overall utilization of the spaces in the chose
 :::image type="content" source="../media/most-least-utilized-rooms.png" alt-text="Screenshot that shows the chart depicting the rooms that most utilized and least utilized." lightbox="../media/most-least-utilized-rooms.png":::
 
 The most and least utilized rooms' tables provide insights into the utilization of your shared spaces based on the selected period and location. The first table lists the most-used rooms, and the second table lists the least-used rooms sorted by the utilization rate for the top 200 rooms. The utilization rate, average reservation rate, and average occupancy rate columns are defined in the [Space Utilization Metric Definition](#space-utilization-metric-definition) section.
-
-### Role-Based Access Control (RBAC)
-
-Shared Spaces Insights adheres to [role-based access controls](rooms-pro-rbac.md) in the Pro Management portal, displaying utilization metrics only for spaces the user is authorized to view.

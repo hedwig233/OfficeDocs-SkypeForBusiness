@@ -4,7 +4,7 @@ author: mkbond007
 ms.author: mabond
 manager: dansimp
 ms.reviewer: nijait
-ms.date: 06/27/2025
+ms.date: 07/01/2025
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -31,12 +31,12 @@ description: Learn how to manage Microsoft 365 Copilot in Teams for calls with c
 
 **APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png) 1:1 Teams calls ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Public Switched Telephone Network (PSTN) calls
 
-> [!NOTE]
-> Microsoft 365 Copilot in Teams is available for public and GCC. It isn’t currently available for GCC High and DoD.
-
 ## Overview
 
-Microsoft 365 Copilot is a secure AI assistant that can be used in Teams to generate real-time insights and recaps for Teams calls. Each call participant with a Microsoft 365 Copilot license can ask prompts that are only visible to them. Call participants can learn things like who said what and where people agree or disagree. Microsoft 365 Copilot in Teams can also recommend follow-up tasks, all in real time during a call. As an admin, you can manage how users in your org use Copilot for Teams calls.
+Microsoft 365 Copilot is a secure, AI-powered assistant that can help users stay productive by providing real-time insights and summaries for Teams calls. Each call participant with a Microsoft 365 Copilot license can privately engage with Copilot using natural language prompts. Copilot identifies who said what, highlights shared perspectives with differing viewpoints, and suggests follow-up tasks&mdash;all during the call. As an admin, you can configure how users in your organization access and use Copilot in Teams calls.
+
+> [!NOTE]
+> Microsoft 365 Copilot in Teams is available for public and GCC. It isn’t currently available for GCC High and DoD.
 
 There are two modes for users in your organization to use Copilot in calls:
 
@@ -45,7 +45,7 @@ There are two modes for users in your organization to use Copilot in calls:
 
 The following table describes the differences between these two modes and how they work with call recording and transcription:
 
-| Copilot setting in Calling Policy | User started transcription during call  | Copilot available during call | Transcription available after call|
+| Copilot setting in Calling Policy | Transcription started during call  | Copilot available during call | Transcription available after call|
 | --- | --- | --- | --- |
 | Enabled | Yes | Yes | Yes |
 | Enabled | No | Yes | No |
@@ -103,8 +103,8 @@ The following table shows the behaviors of the settings for the `-Copilot` param
 
 |Teams admins center policy value |PowerShell setting value |Behavior|
 |---------|---------|---------------|
-|On|Enabled|Call participants can use Copilot with or without transcription during calls. If a licensed user doesn't start transcription during the call, users can't access a transcript after the call ends and a transcription isn't saved.|
-|On with saved transcript required|EnabledWithTranscript| **This is the default value**. Users assigned this policy can only use Copilot when a licensed user starts transcription during a call. If transcription isn't enabled, then users can't see the Copilot option for the call and there is no transcript available after the call ends.|
+|On|Enabled| **This is the default value**. Call participants can use Copilot with or without transcription during calls. If a licensed user doesn't start transcription during the call, users can't access a transcript after the call ends and a transcription isn't saved.|
+|On with saved transcript required|EnabledWithTranscript| Users assigned this policy can only use Copilot when a licensed user starts transcription during a call. If transcription isn't enabled, then users can't see the Copilot option for the call and there is no transcript available after the call ends.|
 |Off|Disabled|Copilot is off for calls.|
 
 ### Using the Teams admin center

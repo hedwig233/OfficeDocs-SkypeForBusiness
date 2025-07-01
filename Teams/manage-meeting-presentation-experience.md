@@ -126,7 +126,9 @@ Teams offers several presentation tools that allow for interactive participation
 |Shared notes|Yes|No|No|No|
 |Detect sensitive content during screen sharing|Yes|Yes|Yes|Yes|
 
-Each of these features can be managed through admin policies, but not through templates or sensitivity labels, nor by the meeting organizer. As such, they can be applied to users or groups, but not to specific meetings. For more information, see [Meeting policy settings - Content sharing](meeting-policies-content-sharing.md) and [Manage whether meetings in your organization can detect sensitive content during screen sharing](detect-sensitive-content.md).
+PowerPoint Live, Whiteboard, and Shared notes can be managed through admin policies, but not through templates or sensitivity labels, nor by the meeting organizer. As such, you can only apply them to users or groups, but not to specific meetings. For more information, see [Meeting policy settings - Content sharing](meeting-policies-content-sharing.md). 
+
+Sensitive content detection can be managed through admin policies, sensitivity labels, meeting templates, and the organizer's meeting options. To learn more, see [Manage whether meetings in your organization can detect sensitive content during screen sharing](detect-sensitive-content.md).
 
 You might want to turn off Whiteboard and shared notes to avoid having sensitive information added to specific meetings.
 

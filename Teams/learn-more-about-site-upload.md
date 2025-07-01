@@ -6,6 +6,7 @@ manager: pamgreen
 audience: Admin
 ms.topic: how-to
 ms.service: msteams
+ms.subservice: teams-calling
 ms.reviewer: mamcgrath
 ms.date: 09/05/2024
 ms.localizationpriority: medium

@@ -357,6 +357,8 @@ items:
           href: privacy/policy-control-diagnostic-data-mobile.md
         - name: Desktop client diagnostic data
           href: privacy/policy-control-diagnostic-data-desktop.md
+        - name: Diagnostic event namespaces
+          href: privacy/diagnostic-event-namespaces.md
         - name: Optional connected experiences
           href: privacy/teams-privacy-oce-overview.md
         - name: Operator Connect data transfer
@@ -382,6 +384,8 @@ items:
         href: privacy/intelligent-recap.md
       - name: Set up AI recommendations for educators
         href: institution-settings.md
+      - name: Custom dictionary for Teams meetings and events
+        href: copilot-custom-dictionary.md
     - name: Copilot in Teams
       items:
         - name: Manage Copilot for multitenant organizations
@@ -652,6 +656,8 @@ items:
           href: teams-client-health.md
         - name: Update monitoring
           href: teams-client-health-update-monitoring.md
+        - name: Teams client diagnostic logging
+          href: teams-client-diagnostic-logging.md
 
     - name: Teams alerting and monitoring
       href: alerts/teams-admin-alerts.md 
@@ -1948,6 +1954,8 @@ items:
             href: teams-app-setup-policies.md
         - name: Use app centric management
           href: app-centric-management.md
+        - name: Best practices during ACM migration
+          href: pre-and-post-migration.md
         - name: Preinstall apps for users
           href: install-teams-apps.md
         - name: Tailor Teams apps for your frontline workers

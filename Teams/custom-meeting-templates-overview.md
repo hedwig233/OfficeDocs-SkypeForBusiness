@@ -74,6 +74,7 @@ Templates have the option of specifying a sensitivity label. Labels can also be 
 
 - Apply a watermark to everyone's video feed
 - Apply a watermark to shared content
+- Detect sensitive content during screen sharing
 - End-to-end encryption
 - Meeting chat
 - Prevent copying chat content to clipboard

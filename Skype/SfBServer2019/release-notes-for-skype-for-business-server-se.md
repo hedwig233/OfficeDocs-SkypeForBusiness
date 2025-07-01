@@ -1,9 +1,9 @@
 ---
-ms.date: 06/27/2025
+ms.date: 07/01/2025
 title: "Release notes for Skype for Business Server SE"
 ms.reviewer: 
-ms.author: serdars
-author: SerdarSoysal
+ms.author: jtremper
+author: jacktremper
 manager: serdars
 audience: ITPro
 ms.topic: overview

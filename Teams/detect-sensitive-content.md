@@ -4,7 +4,7 @@ ms.author: wlibebe
 author: wlibebe
 manager: pamgreen
 ms.reviewer: freda.li
-ms.date: 4/30/2025
+ms.date: 7/1/2025
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -30,9 +30,6 @@ description: Learn how to manage manage whether meetings in your organization ca
 
 [!INCLUDE[Teams Premium](includes/teams-premium-ecm.md)]
 
-> [!NOTE]
-> This feature is currently in Public Preview.
-
 ## Overview
 
 As an admin, you can manage whether meetings in your organization can detect sensitive content during screen sharing. When you turn on the **Detect sensitive content during screen sharing** policy setting for organizers with a Teams Premium license, sensitive information like credit card and account numbers in shared screen content is identified during their meetings. When sensitive content is detected, both the presenter and the meeting organizer receive notifications to stop sharing and the presenter sees a **Stop sharing** button. This added layer of protection helps safeguard sensitive data and minimizes accidental disclosure. Organizers with a Teams Premium license can use their **Meeting options** to choose which meetings have this feature.
@@ -53,6 +50,14 @@ We currently support the following sensitive content categories in English:
 - EU Tax Social Security Numbers
 
 This feature is supported on Teams desktop, web, mobile, and video-based screen sharing (VBSS).  
+
+The following table shows where sensitive content detection is configured:
+
+|Setting|Admin policy|Sensitivity label|Template|Meeting organizer|
+|:------|:----------:|:---------------:|:------:|:---------------:|
+|Detect sensitive content during screen sharing|Yes|Yes|Yes|Yes|
+
+To learn more about meeting templates, see [IT admins - Create a custom meeting template in Microsoft Teams](create-custom-meeting-template.md). To learn more about sensitivity labels, see [Use sensitivity labels to protect calendar items, Teams meetings, and chat](/purview/sensitivity-labels-meetings).
 
 > [!NOTE]
 > End-to-end encryption isn't available in meetings where sensitive content detection is turned on.

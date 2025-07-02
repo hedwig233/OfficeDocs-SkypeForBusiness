@@ -85,7 +85,7 @@ The following are supported versions of the Intune app:
 
 |**Release date**|**App version**|**Related devices**|
 |:-----|:-----|:-----|
-|January, 2025|[25.02.1](#25021)|All certified Teams device models|
+|June, 2025|[25.02.1](#25021)|All certified Teams device models|
 
 ### 25.02.1
 

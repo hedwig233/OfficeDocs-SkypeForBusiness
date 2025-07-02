@@ -937,6 +937,7 @@ Calling policies are used to control what calling features are available to peop
 |Spam filtering|On|This setting allows you to control the type of Spam filtering available on incoming calls.|
 |SIP devices can be used for calls|Off|This setting enables users to use a SIP device to make and receive calls.|
 |Open apps in browser for incoming PSTN calls|Off|This setting controls whether apps are automatically opened in the browser for incoming PSTN calls to your users. This setting can be used to pass the phone of an inbound caller to an app to find the associated customer record while the call is taking place.|
+|Copilot|On with saved transcript required|Users assigned this setting in this policy can only use Copilot when a licensed user starts transcription during a call. If transcription isn't enabled, then users can't see the Copilot option for the call and there is no transcript available after the call ends. Other values for this setting can also turn on Copilot in Teams calls for use during and after a call, without requiring a transcript. Read more [Manage Microsoft 365 Copilot in Teams calls](copilot-teams-calling-transcription.md)|
 
 **PowerShell-only calling policies**
 
@@ -950,6 +951,7 @@ Calling policies are used to control what calling features are available to peop
 - [Plan your Teams voice solution](cloud-voice-landing-page.md)
 - [Configure calling policies in Microsoft Teams](teams-calling-policy.md)
 - [Set-CsTeamsCallingPolicy](/powershell/module/teams/set-csteamscallingpolicy)
+- [Manage Microsoft 365 Copilot in Teams calls](copilot-teams-calling-transcription.md)
 
 ### Call hold policies
 

@@ -107,6 +107,7 @@ The following table shows which features are available in meetings, webinars, an
 |[Watermarks](watermark-meeting-content-video.md)|Premium|Premium|![Image of a x for no](/office/media/icons/cancel-teams.png)|
 |[Whiteboard](meeting-policies-content-sharing.md)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
 |[Who can record and transcribe](manage-meeting-recording-options.md#manage-who-can-record-and-transcribe-meetings-teams-premium)|Premium|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
+|[Who has control of production tools](https://support.microsoft.com/office/control-town-hall-production-tools-in-microsoft-teams-8a19026b-43d1-45e3-b306-35610d83e5f1)|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 
 <sup>1</sup> Your users can use breakout rooms if a webinar has fewer than 300 attendees. However, if the number of attendees increases to above 300, breakout rooms aren't supported.
 

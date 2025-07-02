@@ -821,7 +821,7 @@ Features with :::image type="icon" source="../media/mtr-pro-icon.png"::: are onl
 Resolved Issues:
 
 - Resolved an issue where the Microsoft Teams Rooms application doesn't start automatically after a reboot.
--	Resolved an issue where two parallel sign-ins were cancelled by each other.
+-	Resolved an issue where two parallel sign-ins were canceled by each other.
 - Resolved an issue where device enrollment was taking longer than expected.
 -	Resolved an issue which was causing home screen UI performance to be sluggish.
 

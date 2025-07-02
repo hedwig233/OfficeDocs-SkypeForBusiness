@@ -777,6 +777,7 @@ Introduced in this update:
 
 |Release  |Release date  |
 |---------|---------|
+|[1449/1.0.96.2025061705](#144910962025061705-july-2025) | July 2025 |
 |[1449/1.0.96.2025203502](#144910962025203502-june-2025) | June 2025 |
 |[1449/1.0.96.2025126202](#144910962025126202-may-2025) | May 2025 |
 |[1449/1.0.96.2025031102](#144910962025031102-march-2025) | March 2025 |
@@ -814,6 +815,15 @@ Introduced in this update:
 > There can be a delay between when features are released by Microsoft and when they become available on a device make and model. If an update isn't available on your device, check with your device manufacturer for information on when it might become available.
 
 Features with :::image type="icon" source="../media/mtr-pro-icon.png"::: are only available with Teams Rooms Pro license.
+
+### 1449/1.0.96.2025061705 (July 2025)
+
+Resolved Issues:
+
+- Resolved an issue where the Microsoft Teams Rooms application doesn't start automatically after a reboot.
+-	Resolved an issue where two parallel sign-ins were cancelled by each other.
+- Resolved an issue where device enrollment was taking longer than expected.
+-	Resolved an issue which was causing home screen UI performance to be sluggish.
 
 ### 1449/1.0.96.2025203502 (June 2025)
 

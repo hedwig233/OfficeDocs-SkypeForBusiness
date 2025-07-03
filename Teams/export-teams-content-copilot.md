@@ -148,5 +148,5 @@ It has been observed that for some interactions in Teams Meeting Copilot, the `c
 > - For optimal performance, the recommended $top value is 100. 
 > - This API can be used to retrieve the supported Copilot Interactions for deleted users. 
 > - Deleted copilot interactions for the supported app classes can be retrieved using this API. 
-> - If a user prompt is edited, it is considered as new interaction and can be retreived using this API. 
+> - If a user prompt is edited, it is considered as new interaction and can be retrieved using this API. 
 > 

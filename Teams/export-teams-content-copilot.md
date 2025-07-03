@@ -57,7 +57,7 @@ The following appClass filters are supported:
 
 These filters allow you to specify the type of Copilot interactions you want to retrieve based on the app class. Rest of the interactions are not supported.
 
-Known issue:
+#### Known issue:
 
 It has been observed that for some interactions in Teams Meeting Copilot, the `contexts[]` may be missing in the `aiResponse` interactions. The corresponding user prompt, however, always includes the `contexts[]` to ensure accurate context retrieval. The development team is aware of this problem and is working on a resolution.  Below example shows a userprompt, aiResponse pair that has valid contexts[] in the userprompt and missing contexts[] in the corresponding aiResponse. 
 

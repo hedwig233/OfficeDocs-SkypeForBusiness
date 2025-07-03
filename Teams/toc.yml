@@ -840,6 +840,9 @@ items:
     
     - name: Meetings, webinars, and town halls
       items:
+        - name: Immersive events
+          href: immersive-events.md
+          displayName: Microsoft Teams, Town Halls, Webinars
         - name: Overview
           href: overview-meetings-webinars-town-halls.md
         - name: Meetings

@@ -34,10 +34,8 @@ The new **Shared Spaces Insights** page in the Pro Management portal provides IT
 
 To use the Shared Spaces Insights feature, ensure that you meet the following prerequisites:
 
-- **Licensing**: To access the Shared Spaces Insights feature, you need at least one Teams Rooms Pro license, Teams Rooms Premium license, or Teams Shared Device license. Only Teams rooms with an assigned Teams Room Pro or Premium license will appear under the **Shared Spaces Insights** page.
-- **Teams Rooms on Android Admin Agent**: Teams Rooms on Android devices require [Admin Agent version 1.0.0.202412110504](../devices/certified-device-apps.md#100202412110504) or newer versions to support the "Shared Spaces Insights" feature.
-    - Teams Rooms on Android devices running this required Admin Agent version before May 6, 2025, began reporting their utilization from May 6, 2025.
-    - Any Teams Rooms on Android devices not running atleast [Admin Agent version 1.0.0.202412110504](../devices/certified-device-apps.md#100202412110504) (if not a newer version) on after May 6, 2025, begin reporting their utilization metrics once updated to [Admin Agent version 1.0.0.202412110504](../devices/certified-device-apps.md#100202412110504) or newer versions.
+- **Licensing**: Only Teams rooms with an assigned Teams Room Pro or Premium license will appear on the **Shared Spaces Insights** page.
+- **Teams Rooms on Android Admin Agent**: Teams Rooms on Android devices require admin agent [1.0.0.202412110504](../devices/certified-device-apps.md#100202412110504) or newer versions to support the "Shared Space Insights" feature. Teams Rooms on Android devices running this admin agent before May 6, 2025, began reporting their utilization from May 6. Any devices not running at least that admin agent version as on May 6, 2025, begin reporting once updated to [1.0.0.202412110504](../devices/certified-device-apps.md#100202412110504) or newer versions.
 
       > [!IMPORTANT]
       > Allow 24 to 48 hours for the utilization metrics to populate.

@@ -38,7 +38,7 @@ To use the Shared Spaces Insights feature, ensure that you meet the following pr
 - **Teams Rooms on Android Admin Agent**: Teams Rooms on Android devices require admin agent [1.0.0.202412110504](../devices/certified-device-apps.md#100202412110504) or newer versions to support the "Shared Space Insights" feature. Teams Rooms on Android devices running this admin agent before May 6, 2025, began reporting their utilization from May 6. Any devices not running at least that admin agent version as on May 6, 2025, begin reporting once updated to [1.0.0.202412110504](../devices/certified-device-apps.md#100202412110504) or newer versions.
 
   > [!IMPORTANT]
-  > Allow 24 to 48 hours for the utilization metrics to populate.
+  > Allow 24 to 48 hours for the utilization metrics to populate.<br>
   > Teams Rooms on Android devices running older versions of the Admin Agent won't appear in the **Shared Spaces Insights** dashboard until they're updated.
 
 ## Space Utilization Metric Definition

@@ -217,7 +217,7 @@ Install-Module -Name Microsoft.Graph.Applications
 ### Step 8: Delete the legacy Skype for Business Online Partner Application
 
 > [!CAUTION]
-> Don't delete the legacy Skype for Business Online Partner Application yet. Removing this first-party application will disrupt the functionality of out-of-office voicemail greetings, which still depend on the legacy system.
+> Don't delete the legacy Skype for Business Online Partner Application yet. Removing this first-party application will disrupt the functionality of Out of Office voicemail greetings, which still depend on the legacy first-party application.
 > Microsoft will inform you once it's safe to remove this application.
 
 The legacy first-party `Skype for Business Online` application, which has the application ID `00000004-0000-0ff1-ce00-000000000000`, will be deprecated in near future.

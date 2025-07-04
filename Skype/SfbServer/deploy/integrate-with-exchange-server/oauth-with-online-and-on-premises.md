@@ -76,17 +76,7 @@ Assign the `TeamsSchedulerRole` role to the new account:
 New-ManagementRoleAssignment -Role "TeamsSchedulerRole" -User $user.Identity -DomainController <DomainControllerFQDN>
 ```
 
-### Step 3: Delete the legacy Skype for Business Online Partner Application
-
-The legacy first-party `Skype for Business Online` application, which has the application ID `00000004-0000-0ff1-ce00-000000000000`, will be deprecated in near future and should no longer be used. As part of this effort, dedicated first-party application for `Teams Calendar Scheduler Service` and `Cloud Voicemail` were introduced.
-
-Follow the steps in this section to delete any partner application that uses legacy first-party `Skype for Business Online` application:
-
-```powershell
-Get-PartnerApplication | Where-Object { $_.ApplicationIdentifier -eq "00000004-0000-0ff1-ce00-000000000000" -and $_.Enabled -eq $true } | Remove-PartnerApplication
-```
-
-### Step 4: Create and enable a Partner Application for Teams Calendar Scheduler Service integration
+### Step 3: Create and enable a Partner Application for Teams Calendar Scheduler Service integration
 
 Create a new partner application using the account you previously created in [Step 2](#step-2-create-a-new-mail-user-account-used-by-microsoft-teams-calendar-scheduler-service). Run the following command in the Exchange Management Shell (EMS) within your on-premises Exchange organization:
 
@@ -94,7 +84,7 @@ Create a new partner application using the account you previously created in [St
 New-PartnerApplication -Name "TeamsScheduler" -ApplicationIdentifier "7557eb47-c689-4224-abcf-aef9bd7573df" -Enabled $true -LinkedAccount $user.Identity
 ```
 
-### Step 5: Create and enable a Partner Application for Cloud Voicemail integration
+### Step 4: Create and enable a Partner Application for Cloud Voicemail integration
 
 Create a new partner application to enable Cloud Voicemail integration. Run the following command in the Exchange Management Shell (EMS) on your on-premises Exchange server:
 
@@ -102,7 +92,7 @@ Create a new partner application to enable Cloud Voicemail integration. Run the 
 New-PartnerApplication -Name "CloudVoicemail" -ApplicationIdentifier "db7de2b5-2149-435e-8043-e080dd50afae" -Enabled $true
 ```
 
-### Step 6: Export the Exchange Server auth certificate
+### Step 5: Export the Exchange Server auth certificate
 
 Run a PowerShell script to export the public key of the Exchange Server auth certificate, which you will import to your Microsoft Teams organization in the next step.
 
@@ -124,7 +114,7 @@ $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
 
 In Exchange Management Shell in your on-premises Exchange organization, run the PowerShell script that you created. For example: `.\ExportAuthCert.ps1`
 
-### Step 7: Upload the Exchange Server auth certificate to Microsoft Entra ACS
+### Step 6: Upload the Exchange Server auth certificate to Microsoft Entra ACS
 
 Next, use the Microsoft Graph PowerShell module to upload the on-premises auth certificate that you exported in the previous step to Microsoft Entra Access Control Services (ACS). If you don't have the module installed, open a Windows PowerShell window as an administrator and run the following command:
 
@@ -145,7 +135,7 @@ Install-Module -Name Microsoft.Graph.Applications
    $cer = [System.Security.Cryptography.X509Certificates.X509Certificate2]::new($CertFile)
    $binCert = $cer.GetRawCertData()
    $credValue = [System.Convert]::ToBase64String($binCert)
-   $serviceNames = @("db7de2b5-2149-435e-8043-e080dd50afae", "7557eb47-c689-4224-abcf-aef9bd7573df")
+   $serviceNames = @("db7de2b5-2149-435e-8043-e080dd50afae", "7557eb47-c689-4224-abcf-aef9bd7573df", "00000004-0000-0ff1-ce00-000000000000")
    foreach ($serviceName in $serviceNames) {
       Write-Host "[+] Trying to query the service principals for service: $serviceName" -ForegroundColor Cyan
       $p = Get-MgServicePrincipal -Filter "AppId eq '$serviceName'"
@@ -156,42 +146,42 @@ Install-Module -Name Microsoft.Graph.Applications
       if ($keyCredentialsLength -gt 0) {
          Write-Host "[+] $keyCredentialsLength existing key(s) found - we keep them if they have not expired" -ForegroundColor Cyan
 
-      $newCertAlreadyExists = $false
+         $newCertAlreadyExists = $false
          $servicePrincipalObj = New-Object -TypeName Microsoft.Graph.PowerShell.Models.MicrosoftGraphServicePrincipal
          $keyCredentialsArray = @()
 
-      foreach ($cred in $servicePrincipalKeyInformation.KeyCredentials) {
+         foreach ($cred in $servicePrincipalKeyInformation.KeyCredentials) {
             $thumbprint = [System.Convert]::ToBase64String($cred.CustomKeyIdentifier)
 
-      Write-Host "[+] Processing existing key: $($cred.DisplayName) thumbprint: $thumbprint" -ForegroundColor Cyan
+            Write-Host "[+] Processing existing key: $($cred.DisplayName) thumbprint: $thumbprint" -ForegroundColor Cyan
 
-      if ($newCertAlreadyExists -ne $true) {
+            if ($newCertAlreadyExists -ne $true) {
                $newCertAlreadyExists = ($cer.Thumbprint).Equals($thumbprint, [System.StringComparison]::OrdinalIgnoreCase)
             }
 
-      if ($cred.EndDateTime -lt (Get-Date)) {
+            if ($cred.EndDateTime -lt (Get-Date)) {
                Write-Host "[+] This key has expired on $($cred.EndDateTime) and will not be retained" -ForegroundColor Yellow
                continue
             }
 
-      $keyCredential = New-Object -TypeName Microsoft.Graph.PowerShell.Models.MicrosoftGraphKeyCredential
+            $keyCredential = New-Object -TypeName Microsoft.Graph.PowerShell.Models.MicrosoftGraphKeyCredential
             $keyCredential.Type = "AsymmetricX509Cert"
             $keyCredential.Usage = "Verify"
             $keyCredential.Key = $cred.Key
 
-      $keyCredentialsArray += $keyCredential
+            $keyCredentialsArray += $keyCredential
          }
 
-      if ($newCertAlreadyExists -eq $false) {
+         if ($newCertAlreadyExists -eq $false) {
             Write-Host "[+] New key: $($cer.Subject) thumbprint: $($cer.Thumbprint) will be added" -ForegroundColor Cyan
             $keyCredential = New-Object -TypeName Microsoft.Graph.PowerShell.Models.MicrosoftGraphKeyCredential
             $keyCredential.Type = "AsymmetricX509Cert"
             $keyCredential.Usage = "Verify"
             $keyCredential.Key = [System.Text.Encoding]::ASCII.GetBytes($credValue)
 
-      $keyCredentialsArray += $keyCredential
+            $keyCredentialsArray += $keyCredential
 
-      $servicePrincipalObj.KeyCredentials = $keyCredentialsArray
+            $servicePrincipalObj.KeyCredentials = $keyCredentialsArray
             Update-MgServicePrincipal -ServicePrincipalId $p.Id -BodyParameter $servicePrincipalObj
          } else {
             Write-Host "[+] New key: $($cer.Subject) thumbprint: $($cer.Thumbprint) already exists and will not be uploaded again" -ForegroundColor Yellow
@@ -203,7 +193,7 @@ Install-Module -Name Microsoft.Graph.Applications
             key = [System.Text.Encoding]::ASCII.GetBytes($credValue)
          }
 
-      Write-Host "[+] This is the first key which will be added to this service principal" -ForegroundColor Cyan
+         Write-Host "[+] This is the first key which will be added to this service principal" -ForegroundColor Cyan
          Update-MgServicePrincipal -ServicePrincipalId $p.Id -KeyCredentials $params
       }
    }
@@ -213,15 +203,31 @@ Install-Module -Name Microsoft.Graph.Applications
 
 4. After you start the script, a credentials dialog box is displayed. Enter the credentials for the tenant administrator account in your Microsoft Online Microsoft Entra organization. After running the script, leave the Windows PowerShell connected to Microsoft Graph session open. You will use the session to run a PowerShell script in the next step.
 
-### Step 8: Verify that the certificate was uploaded to the first-party Service Principals
+### Step 7: Verify that the certificate was uploaded to the first-party Service Principals
 1. In the PowerShell connected to Microsoft Graph session, run the following
 
    ```powershell
    (Get-MgServicePrincipal -Filter "AppId eq '7557eb47-c689-4224-abcf-aef9bd7573df'" -Select "keyCredentials").KeyCredentials | Format-List *
    (Get-MgServicePrincipal -Filter "AppId eq 'db7de2b5-2149-435e-8043-e080dd50afae'" -Select "keyCredentials").KeyCredentials | Format-List *
+   (Get-MgServicePrincipal -Filter "AppId eq '00000004-0000-0ff1-ce00-000000000000'" -Select "keyCredentials").KeyCredentials | Format-List *
    ```
 
 2. Confirm you see a key listed with start date and end data that matches your Exchange OAuth certificate start and end dates
+
+### Step 8: Delete the legacy Skype for Business Online Partner Application
+
+> [!CAUTION]
+> Don't delete the legacy Skype for Business Online Partner Application yet. Removing this first-party application will disrupt the functionality of out-of-office voicemail greetings, which still depend on the legacy system.
+> Microsoft will notify you once it is safe to remove this application.
+
+The legacy first-party `Skype for Business Online` application, which has the application ID `00000004-0000-0ff1-ce00-000000000000`, will be deprecated in near future.
+As part of this effort, dedicated first-party application for `Teams Calendar Scheduler Service` and `Cloud Voicemail` were introduced.
+
+Follow the steps in this section to delete any partner application that uses legacy first-party `Skype for Business Online` application:
+
+```powershell
+Get-PartnerApplication | Where-Object { $_.ApplicationIdentifier -eq "00000004-0000-0ff1-ce00-000000000000" -and $_.Enabled -eq $true } | Remove-PartnerApplication
+```
 
 ### Verify your success
 

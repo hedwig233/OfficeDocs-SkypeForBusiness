@@ -218,7 +218,7 @@ Install-Module -Name Microsoft.Graph.Applications
 
 > [!CAUTION]
 > Don't delete the legacy Skype for Business Online Partner Application yet. Removing this first-party application will disrupt the functionality of out-of-office voicemail greetings, which still depend on the legacy system.
-> Microsoft will notify you once it is safe to remove this application.
+> Microsoft will inform you once it's safe to remove this application.
 
 The legacy first-party `Skype for Business Online` application, which has the application ID `00000004-0000-0ff1-ce00-000000000000`, will be deprecated in near future.
 As part of this effort, dedicated first-party application for `Teams Calendar Scheduler Service` and `Cloud Voicemail` were introduced.
@@ -233,13 +233,24 @@ Get-PartnerApplication | Where-Object { $_.ApplicationIdentifier -eq "00000004-0
 
 Verify that the configuration is correct by verifying some of the features are working successfully. 
 
-1. Confirm that Skype for Business users with Cloud Voicemail service, in an organization with a Hybrid Exchange Server configuration, can successfully change their voicemail greetings.
+1. Confirm Cloud Voicemail functionality in an Exchange Hybrid configuration
+- Make a Teams call to a user who has an active `Out of Office` voicemail greeting.
+- Leave a voicemail message.
+- Listen to the greeting during the call:
+  - If the [CloudVoicemail Partner Application](#step-4-create-and-enable-a-partner-application-for-cloud-voicemail-integration) is working, you will hear the `Out of Office` greeting.
+  - If it is not working, the regular greeting will play instead.
+- After the call, check whether your voicemail message was successfully delivered to the user's mailbox.
 
-2. Confirm conversation history for mobile clients is visible in the Outlook Conversation History folder.
+2. Confirm conversation history for mobile clients is visible in the Outlook `Conversation History` folder.
 
-3. Confirm that archived chat messages are deposited in the user's on-premises mailbox in the Purges folder using [EWSEditor](https://github.com/dseph/EwsEditor/releases).
+3. Confirm that archived chat messages are deposited in the user's on-premises mailbox in the `Purges` folder using [EWSEditor](https://github.com/dseph/EwsEditor/releases).
 
-Alternately, look at your traffic. The traffic in an OAuth handshake is distinctive (and doesn't look like basic authentication), particularly around realms, where you begin to see issuer traffic that looks like this: `00000004-0000-0ff1-ce00-000000000000@` (sometimes with a `/` before the `@` sign), in the tokens that are being passed. There isn't a username or password, which is the point of OAuth. But you will see  the `Office` issuer - in this case `4` is `Skype for Business - and the realm of your subscription`.
+Alternatively, inspect the traffic during the OAuth handshake. OAuth traffic is distinct and does not resemble basic authentication. A key indicator is the presence of issuer identifiers in the token exchange, such as:
+- `7557eb47-c689-4224-abcf-aef9bd7573df@<realm>`
+- `db7de2b5-2149-435e-8043-e080dd50afae@<realm>`
+- `00000004-0000-0ff1-ce00-000000000000@<realm>` (in legacy first-party app usage scenario)
+
+These identifiers may also appear with a leading slash, for example: `/7557eb47-c689-4224-abcf-aef9bd7573df@<realm>`. These tokens do not include a username or password, which highlights a core principle of OAuth: authentication without credential exchange.
 
 If you want to be sure you're successfully using OAuth, make certain you know what to expect and know what the traffic should look like. So [here's what to expect](https://tools.ietf.org/html/draft-ietf-oauth-v2-23#page-34).
 

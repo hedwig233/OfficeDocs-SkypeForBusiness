@@ -128,6 +128,7 @@ Alternatively, if using PowerShell Module 7.1.0, the event policy "ImmersiveEven
 
 ## Related topics
 
+- [Get started with immersive events in Microsoft Teams](https://support.microsoft.com/topic/a69189df-39c7-478f-a335-0aef7c4e5781)
 - [Plan meetings](plan-meetings.md)
 - [Plan webinars](plan-webinars.md)
 - [Plan town halls](plan-town-halls.md)

@@ -76,7 +76,18 @@ Assign the `TeamsSchedulerRole` role to the new account:
 New-ManagementRoleAssignment -Role "TeamsSchedulerRole" -User $user.Identity -DomainController <DomainControllerFQDN>
 ```
 
-### Step 3: Create and enable a Partner Application for Teams Calendar Scheduler Service integration
+### Step 3: Create and enable the legacy Skype for Business Online integration
+
+> [!IMPORTANT]
+> Microsoft will deprecate the legacy Skype for Business Online first-party application in the near future. Currently, there is a dependency on this application, so it must remain configured. Failure to configure this partner application will disrupt the functionality of Out of Office voicemail greetings. Microsoft will inform you when it's safe to remove the application.
+
+Create a new partner application using the account you previously created in [Step 2](#step-2-create-a-new-mail-user-account-used-by-microsoft-teams-calendar-scheduler-service). Run the following command in the Exchange Management Shell (EMS) within your on-premises Exchange organization:
+
+```powershell
+New-PartnerApplication -Name "SfBOnline" -ApplicationIdentifier "00000004-0000-0ff1-ce00-000000000000" -Enabled $true -LinkedAccount $user.Identity
+```
+
+### Step 4: Create and enable a Partner Application for Teams Calendar Scheduler Service integration
 
 Create a new partner application using the account you previously created in [Step 2](#step-2-create-a-new-mail-user-account-used-by-microsoft-teams-calendar-scheduler-service). Run the following command in the Exchange Management Shell (EMS) within your on-premises Exchange organization:
 
@@ -84,7 +95,7 @@ Create a new partner application using the account you previously created in [St
 New-PartnerApplication -Name "TeamsScheduler" -ApplicationIdentifier "7557eb47-c689-4224-abcf-aef9bd7573df" -Enabled $true -LinkedAccount $user.Identity
 ```
 
-### Step 4: Create and enable a Partner Application for Cloud Voicemail integration
+### Step 5: Create and enable a Partner Application for Cloud Voicemail integration
 
 Create a new partner application to enable Cloud Voicemail integration. Run the following command in the Exchange Management Shell (EMS) on your on-premises Exchange server:
 
@@ -92,7 +103,7 @@ Create a new partner application to enable Cloud Voicemail integration. Run the 
 New-PartnerApplication -Name "CloudVoicemail" -ApplicationIdentifier "db7de2b5-2149-435e-8043-e080dd50afae" -Enabled $true
 ```
 
-### Step 5: Export the Exchange Server auth certificate
+### Step 6: Export the Exchange Server auth certificate
 
 Run a PowerShell script to export the public key of the Exchange Server auth certificate, which you will import to your Microsoft Teams organization in the next step.
 
@@ -114,7 +125,7 @@ $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
 
 In Exchange Management Shell in your on-premises Exchange organization, run the PowerShell script that you created. For example: `.\ExportAuthCert.ps1`
 
-### Step 6: Upload the Exchange Server auth certificate to Microsoft Entra ACS
+### Step 7: Upload the Exchange Server auth certificate to Microsoft Entra ACS
 
 Next, use the Microsoft Graph PowerShell module to upload the on-premises auth certificate that you exported in the previous step to Microsoft Entra Access Control Services (ACS). If you don't have the module installed, open a Windows PowerShell window as an administrator and run the following command:
 
@@ -203,7 +214,7 @@ Install-Module -Name Microsoft.Graph.Applications
 
 4. After you start the script, a credentials dialog box is displayed. Enter the credentials for the tenant administrator account in your Microsoft Online Microsoft Entra organization. After running the script, leave the Windows PowerShell connected to Microsoft Graph session open. You will use the session to run a PowerShell script in the next step.
 
-### Step 7: Verify that the certificate was uploaded to the first-party Service Principals
+### Step 8: Verify that the certificate was uploaded to the first-party Service Principals
 1. In the PowerShell connected to Microsoft Graph session, run the following
 
    ```powershell
@@ -213,21 +224,6 @@ Install-Module -Name Microsoft.Graph.Applications
    ```
 
 2. Confirm you see a key listed with start date and end data that matches your Exchange OAuth certificate start and end dates
-
-### Step 8: Delete the legacy Skype for Business Online Partner Application
-
-> [!CAUTION]
-> Don't delete the legacy Skype for Business Online Partner Application yet. Removing this first-party application will disrupt the functionality of Out of Office voicemail greetings, which still depend on the legacy first-party application.
-> Microsoft will inform you once it's safe to remove this application.
-
-The legacy first-party `Skype for Business Online` application, which has the application ID `00000004-0000-0ff1-ce00-000000000000`, will be deprecated in near future.
-As part of this effort, dedicated first-party application for `Teams Calendar Scheduler Service` and `Cloud Voicemail` were introduced.
-
-Follow the steps in this section to delete any partner application that uses legacy first-party `Skype for Business Online` application:
-
-```powershell
-Get-PartnerApplication | Where-Object { $_.ApplicationIdentifier -eq "00000004-0000-0ff1-ce00-000000000000" -and $_.Enabled -eq $true } | Remove-PartnerApplication
-```
 
 ### Verify your success
 
@@ -255,6 +251,20 @@ These identifiers may also appear with a leading slash, for example: `/7557eb47-
 If you want to be sure you're successfully using OAuth, make certain you know what to expect and know what the traffic should look like. So [here's what to expect](https://tools.ietf.org/html/draft-ietf-oauth-v2-23#page-34).
 
 Here's an [example of setting one up](/archive/blogs/kaevans/updated-fiddler-oauth-inspector), but you can use any network tracing tool you like to undertake this process.
+
+## How to remove the legacy Skype for Business Online integration
+
+> [!CAUTION]
+> Don't delete the legacy Skype for Business Online Partner Application yet. Removing this first-party application will disrupt the functionality of Out of Office voicemail greetings, which still depend on the legacy first-party application.
+> Microsoft will inform you once it's safe to remove this application.
+
+The legacy first-party `Skype for Business Online` application, which has the application ID `00000004-0000-0ff1-ce00-000000000000`, will be deprecated in near future. As part of this effort, dedicated first-party application for [Teams Calendar Scheduler Service](#step-4-create-and-enable-a-partner-application-for-teams-calendar-scheduler-service-integration) and [Cloud Voicemail](#step-5-create-and-enable-a-partner-application-for-cloud-voicemail-integration) were introduced.
+
+Follow the steps in this section to delete any partner application that uses legacy first-party `Skype for Business Online` application:
+
+```powershell
+Get-PartnerApplication | Where-Object { $_.ApplicationIdentifier -eq "00000004-0000-0ff1-ce00-000000000000" -and $_.Enabled -eq $true } | Remove-PartnerApplication
+```
 
 ## Related topics
 

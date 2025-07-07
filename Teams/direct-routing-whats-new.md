@@ -8,6 +8,7 @@ manager: pamgreen
 ms.topic: whats-new
 audience: admin
 ms.service: msteams
+ms.subservice: teams-calling
 search.appverid: MET150
 description: This article describes what's new in Direct Routing. Check back often for updates.
 ms.localizationpriority: medium
@@ -31,7 +32,7 @@ Please reach out to your SBC vendor to get latest SBA installation package immed
 
 ## New Call Troubleshooting via SIP Call Flow is available
 
-The new Session Initiation Protocol (SIP) call flow diagram in Teams Admin Center is available starting March 19, 2025. This tool will enable admins to troubleshoot their Direct Routing calls in a self-serve way. This feature is accessible via the Usage reports page under Teams Admin center. It allows admins to view the SIP requests, responses and associated Session Description Protocol (SDP) data between Microsoft Teams SIP proxy and the Session Border Controller (SBC) through which the call was routed. This data will be available for all calls made more than 30 minutes and less than 30 days ago. 
+The new Session Initiation Protocol (SIP) call flow diagram in Teams Admin Center is available starting March 19, 2025. This tool will enable admins to troubleshoot their Direct Routing calls in a self-serve way. This feature is accessible via the Usage reports page under Teams Admin center. It allows admins to view the SIP requests, responses and associated Session Description Protocol (SDP) data between Microsoft Teams SIP proxy and the Session Border Controller (SBC) through which the call was routed. This data will be available for all calls made more than 30 minutes and less than 30 days ago.
 For more information, see [SIP call flow for Direct Routing in Teams Admin Center](/microsoftteams/direct-routing-monitor-sip-ladder).
 
 ## Network Effectiveness Ratio (NER) metric update
@@ -74,14 +75,14 @@ Today, the TLS certificates used by Microsoft SIP interfaces chain up to the fol
 
 Common Name of the CA: DigiCert Global Root CA
 Thumbprint (SHA1): a8985d3a65e5e5c4b2d7d66d40c6dd2fb19c5436
-The old CA certificate can be downloaded directly from DigiCert: http://cacerts.digicert.com/DigiCertGlobalRootCA.crt
+The old CA certificate can be downloaded directly from DigiCert: [http://cacerts.digicert.com/DigiCertGlobalRootCA.crt](http://cacerts.digicert.com/DigiCertGlobalRootCA.crt)
 
 New TLS certificates used by Microsoft SIP interfaces will now chain up to the following Root CA:
 Common Name of the CA: DigiCert Global Root G2
 Thumbprint (SHA1): df3c24f9bfd666761b268073fe06d1cc8d4f82a4
-The new CA certificate can be downloaded directly from DigiCert: https://cacerts.digicert.com/DigiCertGlobalRootG2.crt
+The new CA certificate can be downloaded directly from DigiCert: [https://cacerts.digicert.com/DigiCertGlobalRootG2.crt](https://cacerts.digicert.com/DigiCertGlobalRootG2.crt)
 
-For more details, refer to the technical guidance at [Azure Certificate Authority details](/microsoft-365/compliance/encryption-office-365-tls-certificates-changes?view=o365-worldwide).
+For more details, refer to the technical guidance at [Azure Certificate Authority details](/microsoft-365/compliance/encryption-office-365-tls-certificates-changes).
 To test and confirm your SBCs certificate configuration prior to the change, Microsoft has prepared a testing endpoint that can be used to verify that SBC appliances trust certificates issued from the new root CA (DigiCert Global Root G2). If your SBC can establish a TLS connection to this endpoint, then your connectivity to Teams services shouldn't be affected by the change. These endpoints should be used only for SIP OPTIONS ping messages and not for voice traffic. They aren't production endpoints and aren't backed by redundant configuration. This means they'll experience downtime that lasts for several hours—expect about 95% availability.
 
 Test endpoint FQDN for GCCH: x.sip.pstnhub.infra.gov.teams.microsoft.us
@@ -90,10 +91,9 @@ Port: 5061
 Test endpoint FQDN for DoD: x.sip.pstnhub.infra.dod.teams.microsoft.us
 Port: 5061
 
-
 ## SIP certificate final switch to new MSPKI Certificate Authority
 
-Following two tests on September 5 and 19, Microsoft will perform the final switch to the new Certificate Authority (CA) on October 3, starting at 10 AM UTC. All Microsoft SIP endpoints are gradually switched over to use certificates where the certificate chain rolls up to “DigiCert Global Root G2” Certificate Authority (CA). 
+Following two tests on September 5 and 19, Microsoft will perform the final switch to the new Certificate Authority (CA) on October 3, starting at 10 AM UTC. All Microsoft SIP endpoints are gradually switched over to use certificates where the certificate chain rolls up to “DigiCert Global Root G2” Certificate Authority (CA).
 
 If your Session Border Controllers (SBCs) aren't properly configured with the new Certificate Authority (CA), your Direct Routing incoming and outgoing calls will fail after the switch. Work with your SBC vendor directly for further guidance on SBC configuration.
 
@@ -125,7 +125,7 @@ Microsoft 365 is updating services powering messaging, meetings, telephony, voic
 
 The new Root CA "DigiCert Global Root G2" is widely trusted by operating systems including Windows, macOS, Android, and iOS and by browsers such as Microsoft Edge, Chrome, Safari, and Firefox. However, it's likely that your SBC has a certificate root store that is manually configured, and it needs to be updated. SBCs that don't have the new Root CA in their list of acceptable CAs receive certificate validation errors, which may impact the availability or function of the service. Refer to your SBC vendor documentation on how to update the accepted certificate list on your SBC.
 
-Today, the TLS certificates used by Microsoft SIP interfaces chain up to the following Root CA: 
+Today, the TLS certificates used by Microsoft SIP interfaces chain up to the following Root CA:
 
 Common Name of the CA: Baltimore CyberTrust Root
 Thumbprint (SHA1): d4de20d05e66fc53fe1a50882c78db2852cae474
@@ -138,7 +138,8 @@ Thumbprint (SHA1): df3c24f9bfd666761b268073fe06d1cc8d4f82a4
 The new CA certificate can be downloaded directly from DigiCert: DigiCert Global Root G2.
 
 For more information, see [Office TLS Certificate Changes](/purview/encryption-office-365-tls-certificates-changes)
-## New Direct Routing SIP endpoints 
+
+## New Direct Routing SIP endpoints
 
 Microsoft introduces new signaling IPs to Teams Direct Routing SIP endpoints. To ensure this change doesn’t affect your service availability, make sure your Session Border Controller and Firewall are configured to use the recommended subnets 52.112.0.0/14 and 52.122.0.0/15 for classification and ACL rules. For more information, see [Microsoft 365, Office 365, and Office 365 GCC environments](direct-routing-plan.md#microsoft-365-office-365-and-office-365-gcc-environments).  
 
@@ -147,10 +148,10 @@ Microsoft introduces new signaling IPs to Teams Direct Routing SIP endpoints. To
 A new feature based on SIP Options is introduced for trunk health. When enabled in the gateway configuration (see Set-CsOnlinePSTNGateway cmdlet and SendSipOptions parameter), the routing logic for outbound calls demotes trunks that don't send SIP Options periodically (expected period is one SIP Option sent by the SBC per minute) to the Microsoft backend. These demoted trunks are put to the end of trunks list available for the outbound call and are tried last, which potentially decreases the call setup time.
 
 Any trunk enabled for that feature that doesn't send at least one SIP Option within five minutes to any of the Microsoft regional (NOAM, EMEA, APAC, OCEA) SIP Proxies is considered demoted. If a trunk sends SIP Options to only a subset of Microsoft regional SIP Proxies, then these routes are tried first and the rest are demoted.
-> [!NOTE] 
+
+> [!NOTE]
 >
 > Any SBC (configured under the customer or carrier tenant with **SendSipOptions** set to *true*) not sending SIP OPTIONS will be demoted. Customers who don't want that behavior should set **SendSipOptions** to *false* in their SBC configuration. The same applies to carrier trunks where the SBC configuration is either under the carrier or customer tenant. In these cases, when **SendSipOptions** is set to *true*, the SBC sends SIP OPTIONS.
-
 
 ## SIP support
 
@@ -182,7 +183,7 @@ Beginning February 1, 2022, the Direct Routing SIP interface will only trust cer
 
 For more information about the Microsoft Trusted Root Certificate Program, see [Program Requirements - Microsoft Trusted Root Program](/security/trusted-root/program-requirements).
 
-For a Trusted CA list, see [Microsoft Included CA Certificate List](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT).
+For a Trusted CA list, see [Microsoft Included CA Certificate List](/security/trusted-root/participants-list).
 
 ## Replace headers
 

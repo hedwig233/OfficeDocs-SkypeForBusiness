@@ -3,7 +3,7 @@ title: IT Admins - Manage lobby options in Microsoft Teams
 ms.author: wlibebe
 author: wlibebe
 ms.reviewer: vivek.mohan
-ms.date: 6/6/2024
+ms.date: 6/30/2025
 manager: pamgreen
 ms.topic: article
 ms.service: msteams

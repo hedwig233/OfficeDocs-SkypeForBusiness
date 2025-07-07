@@ -29,6 +29,7 @@ As an admin, with Teams admin policies, sensitivity labels, and templates, you c
 - Who can present and who can give or request control
 - How content is shared and what collaboration tools are available
 - Attendee video, audio, and reactions
+- Detect sensitive content during screen sharing **(Teams Premium)**
 
 Meeting organizers can specify some of theses settings when they create a meeting. However, you can enforce specific options for different users and groups in your organization by using admin policies. You can also use sensitivity labels and templates to enforce these options for different types or meetings. These options can help you with meetings in your organization where sensitive information is being shared.
 
@@ -123,14 +124,21 @@ Teams offers several presentation tools that allow for interactive participation
 |PowerPoint Live|Yes|No|No|No|
 |Whiteboard|Yes|No|No|No|
 |Shared notes|Yes|No|No|No|
+|Detect sensitive content during screen sharing|Yes|Yes|Yes|Yes|
 
-Each of these features can be managed through admin policies, but not through templates or sensitivity labels, nor by the meeting organizer. As such, they can be applied to users or groups, but not to specific meetings. For more information, see [Meeting policy settings - Content sharing](meeting-policies-content-sharing.md).
+PowerPoint Live, Whiteboard, and Shared notes can be managed through admin policies, but not through templates or sensitivity labels, nor by the meeting organizer. As such, you can only apply them to users or groups, but not to specific meetings. For more information, see [Meeting policy settings - Content sharing](meeting-policies-content-sharing.md). 
+
+Sensitive content detection can be managed through admin policies, sensitivity labels, meeting templates, and the organizer's meeting options. To learn more, see [Manage whether meetings in your organization can detect sensitive content during screen sharing](detect-sensitive-content.md).
 
 You might want to turn off Whiteboard and shared notes to avoid having sensitive information added to specific meetings.
 
 PowerPoint Live allows attendees to navigate forward and back in a PowerPoint presentation being shared on screen. However, attendees might see sensitive information before the organizer presents it.
 
+When you turn on the **Detect sensitive content during screen sharing** policy setting for organizers with a Teams Premium license, sensitive information like credit card and account numbers in shared screen content is identified during their meetings. When sensitive content is detected, both the presenter and the meeting organizer receive notifications to stop sharing and the presenter sees a **Stop sharing** button.
+
 Consider if there are users or groups in your organization who shouldn't use these features to avoid sharing sensitive information.
+
+
 
 ## Manage how meeting attendees interact
 

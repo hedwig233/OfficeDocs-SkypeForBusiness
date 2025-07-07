@@ -8,14 +8,13 @@ ms.date: 06/28/2024
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
+ms.subservice: teams-calling
 audience: Admin
 appliesto: 
   - Microsoft Teams
 ms.localizationpriority: High
 search.appverid: MET150
- 
 ms.custom: 
-
 ms.collection: 
   - M365-collaboration
   - m365initiative-meetings

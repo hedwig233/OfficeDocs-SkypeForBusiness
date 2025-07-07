@@ -6,6 +6,7 @@ manager: pamgreen
 ms.date: 07/08/2024
 ms.topic: article
 ms.service: msteams
+ms.subservice: teams-calling
 audience: admin
 ms.collection: 
   - M365-voice
@@ -14,7 +15,6 @@ ms.collection:
   - Tier1
 ms.reviewer: scottfrancis
 search.appverid: MET150
-
 description: Learn more about Teams Phone Mobile, such as requirements and planning for deployment.
 ms.custom: 
  - seo-marvel-apr2020

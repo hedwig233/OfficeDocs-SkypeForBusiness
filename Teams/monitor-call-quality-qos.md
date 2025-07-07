@@ -5,6 +5,7 @@ ms.author: scottfrancis
 manager: pamgreen
 ms.topic: article
 ms.service: msteams
+ms.subservice: meetings
 audience: admin
 ms.reviewer: siunies
 ms.date: 06/17/2024

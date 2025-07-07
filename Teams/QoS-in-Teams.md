@@ -5,6 +5,7 @@ author: sfrancis206
 manager: pamgreen
 ms.topic: how-to
 ms.service: msteams
+ms.subservice: meetings
 ms.reviewer: siunies
 ms.date: 04/12/2024
 audience: admin

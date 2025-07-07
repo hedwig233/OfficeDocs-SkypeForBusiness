@@ -55,11 +55,11 @@ The following appClass filters are supported:
 
 - `IPM.SkypeTeams.Message.Copilot.WebChat`
 
-These filters allow you to specify the type of Copilot interactions you want to retrieve based on the app class. Rest of the interactions are not supported.
+These filters allow you to specify the type of Copilot interactions you want to retrieve based on the app class. Rest of the interactions aren't supported.
 
 #### Known issue:
 
-It has been observed that for some interactions in Teams Meeting Copilot, the `contexts[]` may be missing in the `aiResponse` interactions. The corresponding user prompt, however, always includes the `contexts[]` to ensure accurate context retrieval. The development team is aware of this problem and is working on a resolution.  Below example shows a userprompt, aiResponse pair that has valid contexts[] in the userprompt and missing contexts[] in the corresponding aiResponse. 
+For some interactions in Teams Meeting Copilot, the `contexts[]` might be missing in the `aiResponse` interactions. The corresponding user prompt, however, always includes the `contexts[]` to ensure accurate context retrieval. The development team is aware of this problem and is working on a resolution.  The following example shows a userprompt, aiResponse pair that has valid contexts[] in the userprompt and missing contexts[] in the corresponding aiResponse. 
 
 ```json
 [
@@ -143,7 +143,7 @@ It has been observed that for some interactions in Teams Meeting Copilot, the `c
 ```
 
 > [!NOTE]
-> - Refer to [Teams Export APIs throttling limits](/graph/throttling-limits) to understand Throttling limits for the Copilot Interactions Export API.
+> - To understand Throttling limits for the Copilot Interactions Export API, refer to [Teams Export APIs throttling limits](/graph/throttling-limits).
 > - Delta function call isn't supported. 
 > - For optimal performance, the recommended $top value is 100. 
 > - This API can be used to retrieve the supported Copilot Interactions for deleted users. 

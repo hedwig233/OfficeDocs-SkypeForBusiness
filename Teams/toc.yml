@@ -848,8 +848,6 @@ items:
           href: plan-webinars.md
         - name: Town halls
           href: plan-town-halls.md
-        - name: Immersive events
-          href: immersive-events.md
           displayName: Microsoft Teams, Town Halls, Webinars
         - name: Policies overview
           href: meeting-policies-overview.md

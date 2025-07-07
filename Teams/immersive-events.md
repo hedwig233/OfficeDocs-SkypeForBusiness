@@ -36,9 +36,9 @@ This page covers the required tasks and suggests functional roles that may need 
 
 1. Work with stakeholders to communicate change
 
-1. (Optional) Enable guests to join immersive events 
+1. (optional) Enable guests to join immersive events 
 
-1. (Optional) Assign event policies to turn off Immersive events for users and groups
+1. (optional) Assign event policies to turn off Immersive events for users and groups
 
 ### Prepare your organization
 
@@ -122,6 +122,4 @@ Teams Immersive is on by default, meaning anyone with a Teams Premium or Mesh Tr
 For admins seeking to limit specific users or groups from creating immersive events, navigate to Teams Admin Center and set Event Policies to turn off Immersive events policy.
 
 Alternatively, if using PowerShell Module 7.1.0, the event policy "ImmersiveEvents" should be set to "Enabled". Syntax is New-CsTeamsEventsPolicy.
-
-![User's image](media/immersive-events/image.png)
 

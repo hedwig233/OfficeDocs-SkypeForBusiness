@@ -18,7 +18,9 @@ description: "To Request, Assign, Remove, or View certificates, you use the Cert
 ---
 
 # Certificate Wizard
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 To **Request**, **Assign**, **Remove**, or **View** certificates, you use the Certificate Wizard. You must be logged in as a member of the RTCUniversalServerAdmins group. To request a certificate from a public certification authority (CA), you don't need any other group memberships. To request a certificate from your organization's public key infrastructure (PKI), you need to confirm what additional—if any—group memberships you need. During the Request task, you can enter alternate credentials that are used to request the certificate from your PKI's issuing CA.
   
 To request a new certificate, select **Request**.
@@ -28,16 +30,16 @@ To assign a certificate that isn't assigned yet, select **Assign**.
 To remove a certificate that you previously assigned, select **Remove**.
   
 > [!NOTE]
-> The **Remove** button will be available only if a certificate has been previously assigned. If the **Remove** button is unavailable (dimmed), there is no certificate assigned.
+> The **Remove** button will be available only if a certificate has been previously assigned. If the **Remove** button is unavailable (dimmed), there's no certificate assigned.
   
 To view an assigned certificate, select **View**.
   
 > [!NOTE]
-> The **View** button will be available only if a certificate has been previously assigned. If the **View** button is greyed out, there is no certificate assigned.
+> The **View** button will be available only if a certificate has been previously assigned. If the **View** button is greyed out, there's no certificate assigned.
   
 To refresh the current certificate assignment screen, click **Refresh**.
   
-To import a certificate that is not present in the certificate store, click **Import Certificate**.
+To import a certificate that isn't present in the certificate store, click **Import Certificate**.
   
 > [!NOTE]
 > **Import Certificate** is typically used to process a certificate that is received through a process other than a request from the Certificate Wizard. For example, your PKI administrator creates a certificate and makes it available to you. Use **Import Certificate** to import the certificate into the computer's certificate store and make it available to Skype for Business Server to assign.

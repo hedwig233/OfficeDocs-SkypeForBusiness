@@ -19,6 +19,8 @@ description: "The next hop for the Edge pool is a Front End pool (which can be e
 
 # Add Edge Server Next Hop
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The next hop for the Edge pool is a Front End pool (which can be either an Enterprise pool or a Standard Edition server), or, if your deployment includes a Director, the next hop is the Director.
 
 You can add support for external user access when you deploy your initial topology or afterward. For details about adding Edge Servers to an existing topology, see [Define Your Edge Topology](/previous-versions/office/lync-server-2013/lync-server-2013-define-your-edge-topology) in the Edge Server Deployment documentation.

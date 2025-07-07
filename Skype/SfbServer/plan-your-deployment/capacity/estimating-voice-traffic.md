@@ -17,6 +17,8 @@ description: "You can use the following metric to estimate user traffic at each 
 ---
 
 # Estimating voice usage and traffic for Skype for Business Server
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 You can use the following metric to estimate user traffic at each site and the number of ports that are required to support that traffic.
   

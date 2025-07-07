@@ -16,7 +16,9 @@ description: "tblComplianceState contains pool-wide compliance state information
 ---
 
 # tblComplianceState
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 tblComplianceState contains pool-wide compliance state information.
   
 **Columns**

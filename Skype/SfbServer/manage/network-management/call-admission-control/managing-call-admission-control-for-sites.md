@@ -16,6 +16,8 @@ description: "Network sites are the offices or locations within each network reg
 
 # Managing call admission control for sites in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Network sites are the offices or locations within each network region of call admission control (CAC), E9-1-1, and media bypass deployments. Use the procedures in this article to configure call admission control for network sites.
 
 ## Configure network site links

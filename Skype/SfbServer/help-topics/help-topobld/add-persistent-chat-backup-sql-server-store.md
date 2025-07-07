@@ -18,7 +18,9 @@ description: "You configure the Backup SQL Server stores that will provide backu
 ---
 
 # Add Persistent Chat Backup SQL Server Store
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 You configure the Backup SQL Server stores that will provide backup databases for the Persistent Chat Server or Persistent Chat Server pool.
   
  **SQL Server store**: Select an existing SQL Server and optionally an instance for Persistent Chat.

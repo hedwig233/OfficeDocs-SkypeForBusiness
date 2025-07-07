@@ -16,7 +16,9 @@ description: "The Persistent Chat database schema consists of the following tabl
 ---
 
 # List of Persistent Chat Server tables
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 The Persistent Chat database schema consists of the following tables.
   
 ## Active Directory Sync

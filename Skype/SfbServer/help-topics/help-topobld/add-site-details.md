@@ -18,6 +18,8 @@ description: "You can specify location details for your site, including a city, 
 ---
 
 # Add Site Details
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 You can specify location details for your site, including a city, state/province, or country/region code. All of these location details are optional.
   

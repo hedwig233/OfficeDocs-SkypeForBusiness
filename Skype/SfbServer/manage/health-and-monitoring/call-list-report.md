@@ -12,10 +12,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 ms.assetid: a2d3e08b-511b-4507-abba-8ff71aa27c8e
-description: "Summary: Learn about the Response Group application in Skype for Business Server."
+description: "Summary: Learn about the Response Group call list report in Skype for Business Server."
 ---
 
 # Response Group Call List Report in Skype for Business Server
+
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
 
 **Summary:** Learn about the Response Group application in Skype for Business Server.
 

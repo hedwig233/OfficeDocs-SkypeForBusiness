@@ -21,12 +21,14 @@ description: "Enable users for Group Call Pickup in Skype for Business Server En
 
 # Enable Group Call Pickup for users and assign a group number in Skype for Business
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Enable users for Group Call Pickup in Skype for Business Server Enterprise Voice, and assign a group number.
 
 After you add call pickup group numbers to the call park orbit table, you use the SEFAUtil tool to assign the group numbers to users and enable Group Call Pickup for them.
 
 > [!NOTE]
-> In a hybrid deployment, do not assign a Group Call Pickup group to users who are homed online. Users who are homed online cannot participate in Group Call Pickup. That is, their calls cannot be answered by other users, and they cannot answer calls to other users.
+> In a hybrid deployment, don't assign a Group Call Pickup group to users who are homed online. Users who are homed online can't participate in Group Call Pickup. That is, their calls can't be answered by other users, and they can't answer calls to other users.
 
 ### To assign a group number and enable Group Call Pickup for a user
 

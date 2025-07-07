@@ -19,6 +19,8 @@ description: "Use the Select a Site dialog box to find sites available in your e
 
 # Select a Site
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Use the **Select a Site** dialog box to find sites available in your environment. To use an existing site, click a site in the list and then click **OK**.
 
 > [!NOTE]

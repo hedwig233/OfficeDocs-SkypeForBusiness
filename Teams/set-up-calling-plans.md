@@ -9,6 +9,7 @@ ms.topic: install-set-up-deploy
 ms.assetid: 57893158-1acd-44ac-acaf-19f58264a9e0
 ms.tgt.pltfrm: cloud
 ms.service: msteams
+ms.subservice: teams-calling
 search.appverid: MET150
 ms.collection: 
   - M365-voice

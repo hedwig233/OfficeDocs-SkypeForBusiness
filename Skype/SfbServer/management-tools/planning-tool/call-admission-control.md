@@ -17,6 +17,8 @@ description: "Call admission control (CAC) determines whether to allow real-time
 ---
 
 # Call Admission Control planning tool
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 Call admission control (CAC) determines, based on available network bandwidth, whether to allow real-time communications sessions such as voice or video calls to be established.
   

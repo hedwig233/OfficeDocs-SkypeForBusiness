@@ -14,10 +14,12 @@ ms.custom:
 ms.service: skype-for-business-server
 ms.localizationpriority: medium
 ms.assetid: ec5088ec-71b5-42cb-9f04-242716877178
-description: "This is preliminary documentation and is subject to change. Blank topics are included as placeholders."
+description: "This is preliminary documentation and is subject to change. Blank topics are included as placeholders. This is for Office Communications Server Scope Node."
 ---
 
 # Office Communications Server Scope Node
+
+[!INCLUDE [appliesto-2015-xxx-xxx](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
 
 This is preliminary documentation and is subject to change. Blank topics are included as placeholders.
 

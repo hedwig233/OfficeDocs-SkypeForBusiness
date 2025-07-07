@@ -20,6 +20,8 @@ description: "Deployment process and steps for Announcement application in Skype
 ---
 
 # Deployment process for the Announcement application in Skype for Business Server
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 Deployment process and steps for Announcement application in Skype for Business Server Enterprise Voice.
   

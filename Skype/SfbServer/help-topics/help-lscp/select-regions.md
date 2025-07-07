@@ -18,7 +18,9 @@ description: "Use the Select Regions dialog box to find regions available in you
 ---
 
 # Select Regions
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Use the **Select Regions** dialog box to find regions available in your environment. To use an existing region, click a region in the list and then click **OK**.
   
 > [!NOTE]

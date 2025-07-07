@@ -16,6 +16,8 @@ description: "This section covers planning topics for migrating to Skype for Bus
 
 # Phase 1: Plan your migration
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../includes/appliesto-xxx-2019-sub.md)]
+
 This section covers planning topics for migrating to Skype for Business Server 2019. 
   
 ## In this section

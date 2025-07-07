@@ -17,6 +17,8 @@ description: "Summary: Learn about the Conference Activity Report used in Skype 
 
 # Conference Activity Report in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn about the Conference Activity Report used in Skype for Business Server.
   
 The Conference Activity Report makes it easy for you to answer questions like these: how many conferences are being held each day, and when are those conferences being held? Information like this is useful not only in its own right, but also as a troubleshooting tool. For example, suppose users are complaining that the network seems particularly slow in the middle of the day. A quick glance at the Conference Activity reports might suggest one possible reason: far more conferences are being scheduled between the hours of 10:00 AM and 2:00 PM then at any other time.

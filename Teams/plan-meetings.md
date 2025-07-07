@@ -57,6 +57,10 @@ Teams administrators and organizers have different policies and settings to cont
 
 For a complete list of meeting policies, see [Teams setting and policies reference](settings-policies-reference.md).
 
+## Teams for Virtualized Desktop Infrastructure (VDI)
+
+Users in your organization might use VDI. To learn which meeting capabilities are supported in VDI environments, see [New VDI solution for Teams](vdi-2.md#feature-list-with-the-new-optimization) and [Upgrade to new Teams for Virtualized Desktop Infrastructure (VDI)](new-teams-vdi-requirements-deploy.md#features-not-supported-in-vdi).
+
 ## Customization with Teams Premium
 
 With a Teams Premium license, you can extend your organization's visual identity and compliance requirements across the meeting experience by adding logos and backgrounds that can be displayed in the meeting's pre-join screen, lobby, and during the meeting experience. To learn more, see [Custom meetings overview](custom-meetings-overview.md).
@@ -140,8 +144,10 @@ Teams admins and organizers have different policies and settings to control the 
 |[Compliance recording](teams-recording-policy.md)|Can implement an admin policy for automatic recording.|No control|
 |[Content sharing](meeting-who-present-request-control.md)|Can control sharing mode and who can request control and can set a default for who can present.|Can control who can present.|
 |[Convenience recording](meeting-recording.md)|Can allow or prevent meeting recording and set recording expiration time.|If the admin allows recording, organizers can manage who can record (Teams Premium) and automatic recording.|
+|[Custom dictionary for Teams (Microsoft 365 Copilot)](copilot-custom-dictionary.md)|Can upload a custom dictionary in the Microsoft 365 admin center to improve the quality of transcription for Teams meetings and events.|No control|
 |[Custom backgrounds (Teams Premium)](custom-meeting-backgrounds.md)|Can upload images for your users to display in the background of their video feed during meetings.|Can use the backgrounds you upload.|
 |[Decorate my background (Teams Premium)](https://support.microsoft.com/office/change-your-background-in-microsoft-teams-meetings-f77a2381-443a-499d-825e-509a140f4780)|No control|Organizers and participants can use AI to decorate their backgrounds.|
+|[Detect sensitive content during screen sharing (Teams Premium)](detect-sensitive-content.md)|Manage whether meetings in your organization can detect sensitive content during screen sharing.|Control whether sensitive content detection is available during their meetings.|
 |[eCDN for view-only meetings](streaming-ecdn-enterprise-content-delivery-network.md)|Can manage and configure the availability of eCDN for organizers. Admins can also turn off the Microsoft eCDN for view-only meeting organizers with a Premium license and switch to a partner eCDN provider.| No control|
 |[End-to-end encryption (Teams Premium)](end-to-end-encrypted-meetings.md) |Can allow or prevent end-to-end encryption.|Can enforce end-to-end encryption if allowed by the admin.|
 |[Feedback surveys for anonymous participants](meeting-surveys-anonymous-participants.md)| Manage whether anonymous participants who join meetings hosted in your org can rate their meeting experience through surveys.  |No control|
@@ -167,6 +173,7 @@ Teams admins and organizers have different policies and settings to control the 
 |[Q&A](manage-qna-for-teams.md)|Can manage if organizers can use Q&A in meetings.|Can decide if Q&A is available for their meetings if allowed by admins.|
 |[Quality of service (QoS)](meetings-real-time-media-traffic.md)|Can prioritize real-time network traffic that's sensitive to network delays over traffic that's less sensitive.|No control|
 |[Reactions](manage-reactions-meetings.md)| Manage whether reactions can be used in meetings created by organizers with this policy. |Can control whether reactions can be used in their meetings. |
+|[Real-Time-Text (RTT)](teams-real-time-text.md)| Manage whether your users can use RTT in Teams meetings, group calls, and 1:1 VoIP calls. |Can control whether RTT is available in their meetings and group calls. |
 |[Recording storage and permissions](manage-reactions-meetings.md)| Manage recording storage and permissions. |Permissions depend on admin settings. |
 |[Real time telemetry](use-real-time-telemetry-to-troubleshoot-poor-meeting-quality.md)|Can look at your users’ scheduled meetings and see audio, video, content sharing, and network-related issues. You can use this telemetry to investigate these issues during meetings and troubleshoot in real time.|No control|
 |[Restrict who can record and transcribe (Teams Premium)](manage-meeting-recording-options.md#manage-who-can-record-and-transcribe-meetings-teams-premium)| Can restrict which users can record by using a meeting template or sensitivity label. |Can manage options if admin doesn't lock label or template settings. |

@@ -16,8 +16,10 @@ description: "The User view stores information about users who have been involve
 ---
 
 # User view
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
-The User view stores information about users who have been involved in calls or sessions that have records in the database. This view was introduced in Microsoft Lync Server 2013.
+The User view stores information about users involved in calls or sessions that have records in the database. This view was introduced in Microsoft Lync Server 2013.
   
 |**Column**|**Data Type**|**Details**|
 |:-----|:-----|:-----|

@@ -17,7 +17,9 @@ description: "Summary: Deploy the VIS server role in Skype for Business Server."
 ---
 
 # Deploy Video Interop Server in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Deploy the VIS server role in Skype for Business Server.
   
 Skype for Business Server can now integrate directly with Cisco teleconferencing systems (VTCs) such as the Cisco C60 or Cisco MX300. This requires the introduction of a new server role called the Video Interop Server (VIS), and correct configuration of both the VIS and the equipment it will interoperate with. A VTC registers with existing Cisco infrastructure such as Cisco Unified Communication Manager (CUCM), and a video SIP trunk is used between CUCM and the VIS pool.

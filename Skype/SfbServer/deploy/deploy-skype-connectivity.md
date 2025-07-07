@@ -18,6 +18,8 @@ description: "Summary: Learn how to connect Skype for Business Server with Skype
 
 # Deploy Skype Connectivity in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to connect Skype for Business Server with Skype consumer. Also known as Skype connectivity.
   
 This article walks through deployment for Skype Connectivity.
@@ -38,7 +40,7 @@ Skype Directory Search functionality provides Skype for Business users with the 
     
 - **Search by phone number, example "123-123-1234"** - This should return one result in most cases; the one that matches the specified phone exactly. Phone number must include the country code (that is 1-xxx-yyy-zzzz). If the same phone number is associated with more than one account, multiple results may be returned.
     
-- **Search by Skype Name, example "JohnDoe1456"** - If exact match is found, it is returned as the first result. Other possible "name" matches might be returned.
+- **Search by Skype Name, example "JohnDoe1456"** - If exact match is found, it's returned as the first result. Other possible "name" matches might be returned.
     
     > [!NOTE]
     > Skype Directory Search must be able to communicate with the following IP addresses on port 443: 104.40.75.246, 23.101.135.34, and 40.113.86.19. 
@@ -190,7 +192,7 @@ Configuring Skype Connectivity can also be done using only PowerShell. To config
    ```
 
     > [!NOTE]
-    > If you do not already have a PIC provider in your environment and are creating a new PIC provider then you do not need to run the Remove-CsPublicProvider cmdlet. 
+    > If you don't already have a PIC provider in your environment and are creating a new PIC provider then you don't need to run the Remove-CsPublicProvider cmdlet. 
   
    ```powershell
    New-CsPublicProvider -Identity Skype -ProxyFqdn federation.messenger.msn.com -IconUrl https://images.edge.messenger.live.com/Messenger_16x16.png -NameDecorationRoutingDomain msn.com -NameDecorationExcludedDomainList "msn.com,outlook.com,live.com,hotmail.com" -Enabled $true -EnableSkypeIdRouting $true -EnableSkypeDirectorySearch $true
@@ -208,7 +210,7 @@ Configuring Skype Connectivity can also be done using only PowerShell. To config
      > Public Provider must be removed and added new if changes are made. No in-place changes are allowed. 
   
      > [!NOTE]
-     > Added in Lync Server 2013 CU5 &amp; Lync desktop client in Office 2013 SP1, the NameDecorationRoutingDomain and NameDecorationExcludedDomainList improve the situation where Lync users adding Skype contacts needed to "decorate" non-Microsoft domains to identify and route them to Skype (the format of: user(contoso.com)@msn.com). These new settings will allow automatic formatting of the address user's enter in the "Add Skype contact" dialog box with the NameDecorationRoutingDomain (which should be set to msn.com) if it does not contain the domains in the NameDecorationExcludedDomainList (we currently can support msn.com, live.com, Hotmail.com, outlook.com). 
+     > Added in Lync Server 2013 CU5 &amp; Lync desktop client in Office 2013 SP1, the NameDecorationRoutingDomain and NameDecorationExcludedDomainList improve the situation where Lync users adding Skype contacts needed to "decorate" non-Microsoft domains to identify and route them to Skype (the format of: user(contoso.com)@msn.com). These new settings will allow automatic formatting of the address user's enter in the "Add Skype contact" dialog box with the NameDecorationRoutingDomain (which should be set to msn.com) if it doesn't contain the domains in the NameDecorationExcludedDomainList (we currently can support msn.com, live.com, Hotmail.com, outlook.com). 
   
 3. From a Skype for Business client users can now search for and add a Skype user.
     

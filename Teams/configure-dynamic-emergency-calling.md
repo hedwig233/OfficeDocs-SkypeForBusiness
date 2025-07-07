@@ -5,6 +5,7 @@ ms.author: scottfrancis
 manager: pamgreen
 ms.topic: how-to
 ms.service: msteams
+ms.subservice: teams-calling
 audience: admin
 ms.collection:  
   - M365-voice

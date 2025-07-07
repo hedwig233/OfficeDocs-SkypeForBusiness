@@ -16,7 +16,9 @@ description: "The Roles table is a static table that stores the list of possible
 ---
 
 # Roles table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The Roles table is a static table that stores the list of possible conference roles, such as attendee and presenter.
   
 |**Column**|**Data Type**|**Key/Index**|**Details**|

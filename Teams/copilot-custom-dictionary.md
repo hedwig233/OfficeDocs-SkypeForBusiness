@@ -4,7 +4,7 @@ ms.author: wlibebe
 author: wlibebe
 ms.reviewer: fei.zuo
 manager: pamgreen
-ms.date: 5/19/2025
+ms.date: 6/30/2025
 audience: Admin
 ms.topic: how-to
 ms.subservice: meetings
@@ -24,19 +24,19 @@ description: Learn about how to upload and manage a Copilot custom dictionary fo
 ## Overview
 
 > [!IMPORTANT]
-> This feature is currently in Teams Public preview.
+> This feature is currently in Teams Public Preview.
 >
 > Features in preview might not be complete and could undergo changes before becoming available in the public release. They're provided for evaluation and exploration purposes only.
 
 Organizations often use their own special terms, acronyms, and jargon, like product names, department-specific language, and industry-specific terms. The AI models powering Teams transcription are trained using general datasets that might not recognize these specialized terms. When you import a custom dictionary, the model dynamically adapts during meetings and performs post-correction once the meeting ends, ensuring accurate transcription of these specialized terms.
 
-As an admin, you can upload a custom dictionary in the Microsoft 365 admin center to improve the quality of transcription. Once you upload a dictionary, it enhances the recognition of all entities throughout the meeting. This improvement enhances the meeting transcript and benefits the AI quality for Copilot and Recap.
+As an admin, you can upload a custom dictionary in the Microsoft 365 admin center to enhance entity recognition and improve transcription accuracy across Teams meetings and events.
 
 ## Prerequisites
 
 ### Admin
 
-As an admin, you must meet the following requirements to upload custom dictionaries:
+You must meet the following requirements to upload and manage custom dictionaries:
 
 - You must have the AI administrator role. To learn more about admin roles, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 
@@ -55,16 +55,18 @@ Users in your organization must meet the following requirements to use custom di
 
 ## Understand custom dictionaries
 
-The custom dictionary captures organization-specific terminology to improve transcript accuracy and help the AI model better recognize and understand key entities. Admins upload and manage custom dictionaries manually at the tenant level. This feature doesn't currently support group or user specific dictionaries. Its purpose is to give admins a centralized way to maintain terminology. All meetings and events created by your users in your organization with a Microsoft 365 Copilot license automatically benefit from these terms when used, without any negative impact if they aren't.
+The custom dictionary captures organization-specific terminology to improve transcript accuracy and help the AI model better recognize and understand key entities. You upload and manage custom dictionaries manually at the tenant level. This feature doesn't currently support group or user specific dictionaries. Its purpose is to give you a centralized way to maintain terminology for your organization. All meetings and events created by your users in your organization with a Microsoft 365 Copilot license automatically benefit from these terms when used, without any negative impact if they aren't.
 
 > [!IMPORTANT]  
 > The custom dictionary enhances transcription for meetings organized or initiated by users with a Microsoft 365 Copilot license.
 
-As an admin, you're the only one who can create and update the custom dictionary with new internal terms. Uploading a new dictionary replaces the existing one in the same language. Your users can't add terms to the dictionary; they must ask you to upload an updated dictionary with new internal terms.
+### Who can update custom dictionaries?
+
+As an admin, you're the only one who can create and update the custom dictionary with new terms from your organization. Uploading a new dictionary replaces the existing one in the same language. Your users can't add terms to the dictionary; they must ask you to upload an updated dictionary with new terms.
 
 ### Dictionary content
 
-The dictionary is presented in a flat list format, with optional fields for recording the "Sounds like" and "Long form of the term," and a comments section to provide more context. This assists IT administrators in managing and collecting entries from internal systems or product groups effectively. Each custom dictionary includes the following columns:
+The dictionary is presented in a flat list format, with optional fields for recording the "Sounds like" and "Long form of the term," and a comments section to provide more context. This helps you manage and collect entries from systems or product groups in your organization. Each custom dictionary includes the following columns:
 
 |Column | Definition |
 |:-----|:-----|
@@ -91,7 +93,7 @@ The following are examples of dictionary entries. The first column, **Term**, is
 
 ### Dictionary file format and language
 
-You should compile the dictionary in a CSV plain-text format with UTF-8 encoding and comma-delimited format. We recommend the Excel output format option "CSV UTF-8 (comma delimited)." Each dictionary can contain up to 500 terms/entries. You can upload one dictionary per language, which is applied to the target Teams transcription language(region) setting as described in the following table.
+You should create the dictionary in a CSV plain-text format with UTF-8 encoding and comma-delimited format. We recommend the Excel output format option "CSV UTF-8 (comma delimited)." Each dictionary can contain up to 500 terms/entries. You can upload one dictionary per language, which is applied to the target Teams transcription language(region) setting as described in the following table.
 
 | Custom dictionary Language | Teams transcription Language |
 |:-----|:-----|
@@ -115,9 +117,9 @@ You should compile the dictionary in a CSV plain-text format with UTF-8 encoding
 ### Navigate through the Microsoft 365 admin center
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
-2. From the left navigation panel, select **Copilot**, and go to the **Settings**.
-3. Select **Copilot custom dictionary** and select on it to see the flyout view from the right for custom dictionary management.
-4. Select **Upload Dictionary** to go to the uploading sub view.
+2. From the navigation pane, select **Copilot**, and go to **Settings**.
+3. Under the **Name** column, select **Copilot Custom Dictionary** to open the custom dictionary management pane.
+4. Select **Upload Dictionary**.
 
 ### Create the custom dictionary with a CSV file
 

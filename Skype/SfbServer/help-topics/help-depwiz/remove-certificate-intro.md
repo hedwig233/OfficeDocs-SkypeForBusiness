@@ -18,7 +18,9 @@ description: "On the Remove Certificate introduction page, read the information 
 ---
 
 # Remove Certificate (Intro)
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 On the **Remove Certificate** introduction page, read the information carefully about the implications of removing a certificate. After you read this information, select **Next** to continue.
   
 

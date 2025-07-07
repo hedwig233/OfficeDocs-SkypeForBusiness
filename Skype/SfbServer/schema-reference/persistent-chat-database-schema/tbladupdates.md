@@ -16,7 +16,9 @@ description: "tblADUpdates contains Active Directory Domain Services changes tha
 ---
 
 # tblADUpdates
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 tblADUpdates contains Active Directory Domain Services changes that aren't processed by the later Active Directory Sync steps.
   
 **Columns**

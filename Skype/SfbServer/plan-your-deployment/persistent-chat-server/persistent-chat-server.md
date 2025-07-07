@@ -17,6 +17,8 @@ description: "Summary: Read this topic to learn how to plan for Persistent Chat 
 
 # Plan for Persistent Chat Server in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Read this topic to learn how to plan for Persistent Chat Server in Skype for Business Server.
   
 Persistent Chat Server is an optional role that lets multiple users in your organization participate in chat room conversations that persist over time. Although users can communicate in real time during a chat session, the content of each session--including text, links, and files--is persistent, which means users can view and search all content of the session at any time.

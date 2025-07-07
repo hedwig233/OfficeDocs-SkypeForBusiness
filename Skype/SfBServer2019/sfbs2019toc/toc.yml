@@ -1,8 +1,10 @@
-- name: Skype for Business Server 2019
+- name: Skype for Business Server 2019 and Subscription Edition
   href: ../skype-for-business-server-2019.yml
   items: 
     - name: What's new
       href: ../whats-new.md
+    - name: Release notes for Skype for Business Server SE
+      href: ../release-notes-for-skype-for-business-server-se.md
     - name: What's deprecated
       href: ../deprecated.md
     - name: Virtualization guidance

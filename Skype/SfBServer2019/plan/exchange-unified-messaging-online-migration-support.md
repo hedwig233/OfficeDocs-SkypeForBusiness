@@ -16,6 +16,8 @@ description: "Microsoft is retiring the Exchange Unified Messaging Online (ExchU
 
 # Exchange Unified Messaging Online migration support
 
+[!INCLUDE [appliesto-xxx-2019-sub](../includes/appliesto-xxx-2019-sub.md)]
+
 > [!IMPORTANT]
 > **The Unified Messaging service in Exchange Online is out of support as of February 28, 2020, 5 PM Pacific Time. All voicemail accounts have been migrated to Cloud Voicemail service by Microsoft. Any remaining auto attendant traffic won't be monitored and might be disrupted at any time.**
 
@@ -23,7 +25,7 @@ In reference to the [announcement](https://blogs.technet.microsoft.com/exchange/
 
 ExchUMO is deployed by customers for voicemail, auto attendant, Call Queue, and fax integration services. Microsoft plans to help customers migrate to Phone System services that already support thousands of customers on Skype for Business Online and Microsoft Teams.
 
-Voicemail is primarily a Microsoft-driven migration; admin involvement and/or investment might be required for a subset of customers. Auto attendant is an admin-driven migration; you need to re-create the existing ExchUMO auto attendant trees in the Cloud Auto Attendant cloud service. Customers who consume any of the ExchUMO features with a third-party PBX won't be migrated to Skype cloud services because they don't support partner PBX systems. A retirement plan for partner support was announced in [this blog](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/New-date-for-discontinuation-of-support-for-Session-Border/ba-p/607853), and customers in this deployment model can migrate their users to one of Microsoft’s Unified Communications platforms/services or acquire a third-party voicemail and/or auto attendant solution for these users. Fax integration isn't supported in the cloud-based services; customers need to migrate to a partner solution.
+Voicemail is primarily a Microsoft-driven migration; admin involvement and/or investment might be required for a subset of customers. Auto attendant is an admin-driven migration; you need to re-create the existing ExchUMO auto attendant trees in the Cloud Auto Attendant cloud service. Customers who consume any of the ExchUMO features with a third-party PBX won't be migrated to Skype cloud services because they don't support partner PBX systems. A retirement plan for partner support was announced in [this blog](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/New-date-for-discontinuation-of-support-for-Session-Border/ba-p/607853), and customers in this deployment model can migrate their users to one of Microsoft's Unified Communications platforms/services or acquire a third-party voicemail and/or auto attendant solution for these users. Fax integration isn't supported in the cloud-based services; customers need to migrate to a partner solution.
 
 ## Who is affected?
 
@@ -45,7 +47,7 @@ Microsoft identifies various customer deployments that are consuming features fr
 
 |Customer group |Timeline  |Details  |
 |---------|---------|---------|
-|Customers who are ready to migrate<br><br>Features to migrate:<br><ul><li>Voicemail</ul>   |   March—May 2019  |Examples:<ul><li>	Customers with simple voicemail deployment and usage<li>Customers that have all requirements established for Microsoft to execute the migration<ul>|
+|Customers who are ready to migrate<br><br>Features to migrate:<br><ul><li>Voicemail</ul>   |   March—May 2019  |Examples:<ul><li>    Customers with simple voicemail deployment and usage<li>Customers that have all requirements established for Microsoft to execute the migration<ul>|
 |Customers with prerequisites<br><br>Features to migrate:<br><ul><li>Voicemail<li>Auto attendant<li>Call Queue</ul> |  May—December 2019 |Examples: <br><ul><li>Hybrid configuration isn't  complete<li>Hybrid PSTN numbers aren't set up</ul>|
 |Customers who require admin involvement & customer investment<br><br>Features to migrate:<ul><li>voicemail<li>Auto attendant<li>Call Queues<li>Fax integration</ul>| By February 2020  | Examples: <br><ul><li>ExchUMO service consumes third party PBX<li>Customers with PSTN Subscriber Access requirements<li>Customers on SFB 2010 (not-supported)<li>Fax integration</ul> |
 
@@ -70,7 +72,7 @@ Microsoft continues to deliver additional auto attendant capabilities that custo
 
 ### Plan for your voicemail post-migration validation and testing
 
-Voicemail migration is Microsoft driven. Admins are not required to do anything, given that the pre-requisite hybrid topology is established. Microsoft performs the required validation and testing to make sure users’ voicemail migration is not disrupted. Admins are encouraged to perform testing and validation on their side. See [Suggested test plan and post-migration validation for admins](#suggested-test-plan-and-post-migration-validation-for-admins) for a recommended test plan.
+Voicemail migration is Microsoft driven. Admins are not required to do anything, given that the pre-requisite hybrid topology is established. Microsoft performs the required validation and testing to make sure users' voicemail migration is not disrupted. Admins are encouraged to perform testing and validation on their side. See [Suggested test plan and post-migration validation for admins](#suggested-test-plan-and-post-migration-validation-for-admins) for a recommended test plan.
 
 > [!Note]
 > Lync Server 2010 is not supported. If you are in a 2010 server deployment, you should plan a server upgrade or consider migrating your users to Microsoft Teams.  
@@ -80,7 +82,7 @@ Voicemail migration is Microsoft driven. Admins are not required to do anything,
 Watch for a notice in the Admin Notification Center with further details and a timeline regarding your users' migration. Notifications are sent at least 30 days before your migration period.
 
 > [!Note]
-> If you received a notification with your users’ migration timeline and would like to postpone your migration for a business-critical reason, you can do so by contacting Microsoft Support. You cannot postpone your migration beyond the retirement date of February 28, 2020. For customers who might have more questions, please contact your account team or Microsoft Support. Customers already using Microsoft 365 or Office 365 can submit a support case through the Microsoft 365 admin center.
+> If you received a notification with your users' migration timeline and would like to postpone your migration for a business-critical reason, you can do so by contacting Microsoft Support. You cannot postpone your migration beyond the retirement date of February 28, 2020. For customers who might have more questions, please contact your account team or Microsoft Support. Customers already using Microsoft 365 or Office 365 can submit a support case through the Microsoft 365 admin center.
 
 ### Consider opting in for a planned migration
 

@@ -16,7 +16,9 @@ description: "The Dialog table is a supporting table; each record represents one
 ---
 
 # Dialog table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The Dialog table is a supporting table; each record represents one Session Initiation Protocol (SIP) dialog.
   
 |**Column**|**Data Type**|**Key/Index**|**Details**|

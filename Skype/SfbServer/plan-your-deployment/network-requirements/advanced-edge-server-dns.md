@@ -21,6 +21,8 @@ description: "View scenarios for Skype for Business Server deployment options. W
 
 # Advanced Edge Server DNS planning for Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Review scenarios for Skype for Business Server deployment options. Whether you want a single server or prefer a server pool with DNS or HLB, this topic should help.
   
 When it comes to Domain Name System (DNS) planning for Skype for Business Server, many factors may play into your decision. If your organization's domain structure's already in place, this may be a matter of reviewing how you're going to proceed. We'll begin with the topics found below:

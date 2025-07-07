@@ -20,10 +20,12 @@ description: "Summary: Learn how to define and deploy a Mediation Server in Topo
 ---
 
 # Deploy a Mediation Server in Topology Builder in Skype for Business Server
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 **Summary:** Learn how to define and deploy a Mediation Server in Topology Builder in Skype for Business Server.
   
-The Enterprise Voice workload, dial-in conferencing, and advanced Enterprise Voice applications (Response Group application, Call Park application, call admission control (CAC), and so on), are available in Front End pools. The functionality of the Mediation Server is built into the Front End Server. A separate stand-alone Mediation Server is not necessary. 
+The Enterprise Voice workload, dial-in conferencing, and advanced Enterprise Voice applications (Response Group application, Call Park application, call admission control (CAC), and so on), are available in Front End pools. The functionality of the Mediation Server is built into the Front End Server. A separate stand-alone Mediation Server isn't necessary. 
   
 The only exception is if you configure a SIP trunk to connect to a Session Border Controller for an Internet Telephony Service Provider. To connect your Enterprise Voice infrastructure to your SIP trunk provider, a separate Mediation Server must be deployed.
   
@@ -56,10 +58,10 @@ You can add Mediation Server as a collocated role on a Front End pool, or define
   
 6. Click **Make Default** to use this Front End pool to route calls to the PSTN.
     
-7. Click **Finish** when you are finished associating one or more peers to the Front End pool.
+7. Click **Finish** when you're finished associating one or more peers to the Front End pool.
     
     > [!NOTE]
-    > Before you proceed to the next step in the Enterprise Voice deployment process, make sure that the Mediation Server pool (i.e. Front End pool with the Mediation Server component collocated) is using the FQDNs that you specified. 
+    > Before you proceed to the next step in the Enterprise Voice deployment process, make sure that the Mediation Server pool (that is, Front End pool with the Mediation Server component collocated) is using the FQDNs that you specified. 
   
 8. Right-click the **Skype for Business Server 2015** node, and then click **Publish Topology**.
     
@@ -80,7 +82,7 @@ You can add Mediation Server as a collocated role on a Front End pool, or define
      > [!NOTE]
      > You must [deploy](../../plan-your-deployment/network-requirements/load-balancing.md#BKMK_DNSLoadBalancing) to support Mediation Server pools that have multiple Mediation Servers.
   
-   - If you want to deploy only one Mediation Server in the pool because you do not require high availability, then select **Single computer pool**. Skip the following step.
+   - If you want to deploy only one Mediation Server in the pool because you don't require high availability, then select **Single computer pool**. Skip the following step.
     
 6. If you selected **Multiple computer pool** in the previous step, on the **Define the computers in this pool** item, click **Computer FQDN**, type the FQDN of each server in the pool, and then click **Add**. Repeat this step for all other Mediation Servers that you want to add to the pool. When you have defined all the computers in the pool, click **Next**.
     
@@ -90,7 +92,7 @@ You can add Mediation Server as a collocated role on a Front End pool, or define
     
    - If you want to provide PSTN connectivity to external users enabled for Enterprise Voice, under **Select Edge Pool used by this Mediation Server**, click the FQDN of the Edge Server pool that will use this Mediation Server pool to provide PSTN connectivity to those external users, and then click **Next**.
     
-   - If you do not plan to enable external users for Enterprise Voice, or if you do not want to provide PSTN connectivity to users when they are outside the internal network, click **Next**.
+   - If you don't plan to enable external users for Enterprise Voice, or if you don't want to provide PSTN connectivity to users when they are outside the internal network, click **Next**.
     
 9. Right-click the **Skype for Business Server 2015** node, and then click **Publish Topology**.
     
@@ -104,11 +106,11 @@ Follow the steps in this topic to use Topology Builder to define the listening p
     
 2. In Topology Builder, in the console tree, expand the **Mediation pools** node, and right-click the Mediation Server previously created.
     
-3. By default, the SIP listening ports on the Mediation Server are 5070 for TLS traffic from Skype for Business Server, and 5067 for TLS traffic from peers (such as gateways, PBXes, or SBCs). TCP port is disabled by default. You must enable TCP port if you have gateways that do not support TLS.
+3. By default, the SIP listening ports on the Mediation Server are 5070 for TLS traffic from Skype for Business Server, and 5067 for TLS traffic from peers (such as gateways, PBXes, or SBCs). TCP port is disabled by default. You must enable TCP port if you have gateways that don't support TLS.
     
 4. Specify the desired TLS or TCP listening port range the Mediation Server will accept incoming connections from PSTN gateways.
     
     > [!NOTE]
-    > Entering a TCP port range is not required if **Enable TCP port** is not checked. This setting is optional.
+    > Entering a TCP port range isn't required if **Enable TCP port** isn't checked. This setting is optional.
   
 

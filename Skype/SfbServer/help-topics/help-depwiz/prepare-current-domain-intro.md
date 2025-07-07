@@ -18,6 +18,8 @@ description: "The Prepare Domain page begins the process of preparing the domain
 ---
 
 # Prepare Current Domain (Intro)
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The **Prepare Domain** page begins the process of preparing the domain for Skype for Business Server 2015. Click **Next** to begin preparing the domain.
   

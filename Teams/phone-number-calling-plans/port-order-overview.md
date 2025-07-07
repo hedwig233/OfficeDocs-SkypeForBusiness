@@ -8,6 +8,7 @@ ms.date: 01/22/2025
 ms.topic: concept-article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
+ms.subservice: teams-calling
 search.appverid: MET150
 audience: Admin
 appliesto: 

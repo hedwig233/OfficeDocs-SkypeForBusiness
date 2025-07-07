@@ -21,6 +21,8 @@ description: "Summary: Skype for Business Server 2019 or Skype for Business Onli
 
 # Desktop client feature comparison for Skype for Business Server 2019
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Skype for Business Server 2019 or Skype for Business Online administrators can use these tables to understand what features are supported on which clients.
 
  Before you deploy or upgrade to Skype for Business Server, check which clients are already in use in your organization. Use the following tables to understand the feature support impact on those clients. This information can help you communicate changes to users, pace the roll-out process, and fully understand the benefits of upgrading to the latest client.

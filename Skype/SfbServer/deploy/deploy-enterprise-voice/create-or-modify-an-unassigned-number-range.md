@@ -21,6 +21,8 @@ description: "Create, modify or delete unassigned number ranges for Announcement
 
 # Create or modify an unassigned number range in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Create, modify or delete unassigned number ranges for Announcement application in Skype for Business Server Enterprise Voice. This affects how calls to unassigned numbers are handled.
   
 Skype for Business Server enables you to say what happens to incoming calls to phone numbers that are valid for your organization, but are not assigned to a user or a phone. To handle such calls, you set up an unassigned number table. You can use the table to route the calls to an Announcement application or to an Exchange UM server.
@@ -163,12 +165,12 @@ Use one of the following procedures to configure unassigned number ranges for th
    ```
 
     > [!NOTE]
-    > For details about more options, see [Remove-CsCallParkOrbit](/powershell/module/skype/remove-cscallparkorbit?view=skype-ps). 
+    > For details about more options, see [Remove-CsCallParkOrbit](/powershell/module/skype/remove-cscallparkorbit?view=skype-ps&preserve-view=true). 
   
 ## See also
 
-[New-CsUnassignedNumber](/powershell/module/skype/new-csunassignednumber?view=skype-ps)
+[New-CsUnassignedNumber](/powershell/module/skype/new-csunassignednumber?view=skype-ps&preserve-view=true)
   
-[Set-CsUnassignedNumber](/powershell/module/skype/set-csunassignednumber?view=skype-ps)
+[Set-CsUnassignedNumber](/powershell/module/skype/set-csunassignednumber?view=skype-ps&preserve-view=true)
   
-[Get-CsUnassignedNumber](/powershell/module/skype/get-csunassignednumber?view=skype-ps)
+[Get-CsUnassignedNumber](/powershell/module/skype/get-csunassignednumber?view=skype-ps&preserve-view=true)

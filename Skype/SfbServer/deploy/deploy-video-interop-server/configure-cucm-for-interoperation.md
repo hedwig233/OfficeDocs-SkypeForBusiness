@@ -17,7 +17,9 @@ description: "Summary: Configure CUCM to work with Skype for Business Server."
 ---
 
 # Configure CUCM for Interoperation with Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Configure CUCM to work with Skype for Business Server.
   
 > [!CAUTION]

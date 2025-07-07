@@ -16,6 +16,8 @@ description: "Summary: Learn about the per-user Call Diagnostic Reports used in 
 ---
 
 # Call Diagnostic Reports (per user) in Skype for Business Server
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
   
 The Call Diagnostic Reports provide per-user information about failed peer-to-peer and conferencing sessions. At this time, there's only one report, the **User Activity Report**.
 
@@ -43,10 +45,10 @@ The User Activity Report is accessed from the Monitoring Reports home page. You 
 
 ## Making the best use of the user activity report
 
-Although there are many good information in the User Activity Report, that information can sometimes be difficult to locate. For example, all the user activity that takes place in your organization during a specified period is included in the User Activity Report; that means that, buried, within the report is information about which users used Skype for Business Server in some way.
+Although there are much good information in the User Activity Report, that information can sometimes be difficult to locate. For example, all the user activity that takes place in your organization during a specified period is included in the User Activity Report; that means that, buried, within the report is information about which users used Skype for Business Server in some way.
 
 > [!NOTE]
-> Technically, it's possible that some user activity might go unrecorded: while Skype for Business Server strives to keep information about all phone calls it's possible that a call could have been made without the information about that call being written to the database. Skype for Business Server is designed to give an extremely accurate but not necessarily perfect look at how Skype for Business Server is being used. (The fact that there is no guarantee that 100% of all calls are recorded explains why Skype for Business Server monitoring should not be used as a billing system.) Second, a Monitoring Report can only display, at most, 1,000 records. Depending on the amount of user activity you have, and depending on the time period you are working with, that means your query might not return all the data actually stored in the database. 
+> Technically, it's possible that some user activity might go unrecorded: while Skype for Business Server strives to keep information about all phone calls it's possible that a call could have been made without the information about that call being written to the database. Skype for Business Server is designed to give an extremely accurate but not necessarily perfect look at how Skype for Business Server is being used. (The fact that there's no guarantee that 100% of all calls are recorded explains why Skype for Business Server monitoring shouldn't be used as a billing system.) Second, a Monitoring Report can only display, at most, 1,000 records. Depending on the amount of user activity you have, and depending on the time period you're working with, that means your query might not return all the data stored in the database. 
 
 - Which users actually used the system during this time period?
 
@@ -54,7 +56,7 @@ Although there are many good information in the User Activity Report, that infor
 
 - Are the users who make the most phone calls also the users who participate in the most instant messaging sessions?
 
-If you need to answer questions like this, you can export the data retrieved by the Monitoring Reports to an Excel spreadsheet. You then use that spreadsheet and/or a comma-separated values file to analyze the data in ways that the User Activity Report. For example, suppose you are exporting the report data to Excel and then to a comma-separated values file. At that point, you can import the data from the .CSV file to Windows PowerShell by using a command similar to this:
+If you need to answer questions like this, you can export the data retrieved by the Monitoring Reports to an Excel spreadsheet. You then use that spreadsheet and/or a comma-separated values file to analyze the data in ways that the User Activity Report. For example, suppose you're exporting the report data to Excel and then to a comma-separated values file. At that point, you can import the data from the .CSV file to Windows PowerShell by using a command similar to this:
 
 ```PowerShell
 $x = Import-Csv -Path "C:\Data\User_Activity_Report.csv"
@@ -120,7 +122,7 @@ The following table lists the filters that you can use with the User Activity Re
 | **Activity type** <br/>    | Type of activity. Select one of the following: <br/>  [All] <br/>  Peer-to-peer <br/>  Conference <br/>      |
 | **Modality** <br/>         | The Modality available to you varies depending on the select Activity Type. If the Activity Type is Peer-to-Peer, you can select IM; File Transfer; Application Sharing; Voice; or Video as the modality.  <br/> If the Activity Type is Conference, you can select IM Phone conference; Web conference; Application Sharing; Voice/Video conference; or Telephony conference.  <br/>         |
 | **Session category** <br/> | Indicates whether the activity in question succeeded or failed. Select one of the following: <br/>  [All] <br/>  Success <br/>  Expected failure <br/>  Unexpected failure <br/>  An "expected failure" is a failure that is expected to happen; for example, if a user sets their status to Do Not Disturb you would expect any call to that user to fail. An "unexpected failure" is a failure that occurs in what would appear to be an otherwise healthy system. For example, a call shouldn't be terminated if the caller is placed on hold. If that occurs, that would be flagged as an unexpected failure. <br/> |
-| **User URI prefix** <br/>  | SIP address for the user. To view records only for the user Ken Myer,you need to enter Ken Myer's SIP address. For example:  <br/> sip:kenmyer@litwareinc.com  <br/>
+| **User URI prefix** <br/>  | SIP address for the user. To view records only for the user Ken Myer, you need to enter Ken Myer's SIP address. For example:  <br/> sip:kenmyer@litwareinc.com  <br/>
 
 ## Metrics for peer-to-peer sessions
 
@@ -166,6 +168,6 @@ The following table lists the information provided in the User Activity Report p
 |**Connectivity** <br/> |No  <br/> |Network connection type. For example "From Internal" for internal connection or "From PSTN" for dial-in users.  <br/> |
 |**Join time** <br/> |No  <br/> |Date and time that the user joined the conference.  <br/> |
 |**Leave time** <br/> |No  <br/> |Date and time that the user left the conference.  <br/> |
-|**Diagnostic ID** <br/> |No  <br/> |Unique identifier (in the form of an ms-diagnostics header) attached to a SIP message that often provides information useful in troubleshooting errors. Diagnostics headers are optional (it is possible to have SIP sessions that do not include these headers), and diagnostic IDs are reported only for sessions that experienced problems of some kind.  <br/> |
+|**Diagnostic ID** <br/> |No  <br/> |Unique identifier (in the form of an ms-diagnostics header) attached to a SIP message that often provides information useful in troubleshooting errors. Diagnostics headers are optional (it's possible to have SIP sessions that don't include these headers), and diagnostic IDs are reported only for sessions that experienced problems of some kind.  <br/> |
 
 

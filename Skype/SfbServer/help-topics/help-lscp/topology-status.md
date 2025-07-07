@@ -19,6 +19,8 @@ description: "The Topology: Status page displays the status of the servers in yo
 
 # Topology: Status
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The **Topology**: **Status** page displays the status of the servers in your Skype for Business topology.
 
 ## Tasks you can perform

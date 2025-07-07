@@ -17,9 +17,11 @@ description: "Find and manage updates for Skype for Business Server or Lync 2013
 
 # Skype for Business downloads and updates
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 The _Skype for Business downloads and updates_ web page that was previously on Technet is now retired. The content was reorganized into client and server pages. Follow these links to the content that you need:
 
-- [Updates for Skype for Business clients](sfb-client-updates.md) which contains the sections:
+- [Updates for Skype for Business clients](sfb-client-updates.md), which contains the sections:
     - [Skype for Business 2016 client updates](sfb-client-updates.md#skype-for-business-2016-client-updates)
     - [Skype for Business 2015 client updates](sfb-client-updates.md#skype-for-business-2015-client-updates)
     - [Skype for Business on Mac client updates](sfb-client-updates.md)
@@ -32,12 +34,12 @@ The _Skype for Business downloads and updates_ web page that was previously on T
         - [Lync 2010 Attendant updates](sfb-client-updates.md#lync-2010-attendant-updates)
         - [Lync 2010 Attendee updates](sfb-client-updates.md#lync-2010-attendee-updates)
 
-- [Skype for Business Server updates](sfb-server-updates.md) which  contains the sections:
+- [Skype for Business Server updates](sfb-server-updates.md), which  contains the sections:
     - [Skype for Business Server 2019 update history](sfb-server-updates.md#skype-for-business-server-2019-update-history)
     - [Skype for Business Server 2015 update history](sfb-server-updates.md#skype-for-business-server-2015-update-history)
     - [Lync Server 2013 update history](sfb-server-updates.md#lync-server-2013-update-history)
         - [Lync Server 2013 Dev tools](sfb-server-updates.md#lync-server-2013-dev-tools)
-        - [Pre-configured VHDs](sfb-server-updates.md#pre-configured-vhds)
+        - [Preconfigured VHDs](sfb-server-updates.md#pre-configured-vhds)
         - [Lync 2013 Tools](sfb-server-updates.md#lync-2013-tools)
         - [Lync 2013 downloadable documentation](sfb-server-updates.md#lync-2013-downloadable-documentation)
     - [Lync Server 2010 update history](sfb-server-updates.md#lync-server-2010-update-history)

@@ -29,6 +29,8 @@ description: "Learn about Teams calling with Microsoft cloud voice services in M
 
 # Teams calling overview
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../Skype/SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 This article is for IT administrators and IT professionals who are researching and planning the calling workloads in Microsoft Teams.
 
 ## Native Teams calling

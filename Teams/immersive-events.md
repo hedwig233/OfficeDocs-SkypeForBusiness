@@ -12,7 +12,7 @@ ms.service:  # Add the ms.service or ms.prod value
 ms.topic:    # Add the ms.topic value
 ms.date:     07/03/2025
 ---
-## Plan for Teams immersive events
+# Plan for Teams immersive events
 
 Teams Immersive lets you create, customize, and host immersive 3D events in Microsoft Teams.
 

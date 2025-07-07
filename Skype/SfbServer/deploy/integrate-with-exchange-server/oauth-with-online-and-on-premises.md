@@ -258,7 +258,7 @@ Here's an [example of setting one up](/archive/blogs/kaevans/updated-fiddler-oau
 > Don't delete the legacy Skype for Business Online Partner Application yet. Removing this first-party application will disrupt the functionality of Out of Office voicemail greetings, which still depend on the legacy first-party application.
 > Microsoft will inform you once it's safe to remove this application.
 
-The legacy first-party `Skype for Business Online` application, which has the application ID `00000004-0000-0ff1-ce00-000000000000`, will be deprecated in near future. As part of this effort, dedicated first-party application for [Teams Calendar Scheduler Service](#step-4-create-and-enable-a-partner-application-for-teams-calendar-scheduler-service-integration) and [Cloud Voicemail](#step-5-create-and-enable-a-partner-application-for-cloud-voicemail-integration) were introduced.
+The legacy first-party [Skype for Business Online](#step-3-create-and-enable-the-legacy-skype-for-business-online-integration) application, which has the application ID `00000004-0000-0ff1-ce00-000000000000`, will be deprecated in near future. As part of this effort, dedicated first-party application for [Teams Calendar Scheduler Service](#step-4-create-and-enable-a-partner-application-for-teams-calendar-scheduler-service-integration) and [Cloud Voicemail](#step-5-create-and-enable-a-partner-application-for-cloud-voicemail-integration) were introduced.
 
 Follow the steps in this section to delete any partner application that uses legacy first-party `Skype for Business Online` application:
 

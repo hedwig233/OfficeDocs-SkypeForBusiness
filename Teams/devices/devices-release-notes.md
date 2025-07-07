@@ -157,7 +157,7 @@ To add a mobile system OS scanner:
 
 ### April 2023
 
-#**Applies to:** *Teams app Version: 1449/1.0.97.2023041403*
+**Applies to:** *Teams app Version: 1449/1.0.97.2023041403*
 
 - IT admins can use Teams panels with their Government Community Cloud High (GCC-H) accounts.
 - Fix for settings syncing with the Teams Admin Center and reset issues.

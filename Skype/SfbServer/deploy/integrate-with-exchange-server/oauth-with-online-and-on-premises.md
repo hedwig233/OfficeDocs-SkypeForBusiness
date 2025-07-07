@@ -79,7 +79,7 @@ New-ManagementRoleAssignment -Role "TeamsSchedulerRole" -User $user.Identity -Do
 ### Step 3: Create and enable the legacy Skype for Business Online integration
 
 > [!IMPORTANT]
-> Microsoft will deprecate the legacy Skype for Business Online first-party application in the near future. Currently, there is a dependency on this application, so it must remain configured. Failure to configure this partner application will disrupt the functionality of Out of Office voicemail greetings. Microsoft will inform you when it's safe to remove the application.
+> Microsoft will deprecate the legacy Skype for Business Online first-party application in the near future. Currently, there is a dependency on this application, so it must remain configured. Failure to configure this partner application will disrupt some features (for example, the functionality of Out of Office voicemail greetings). Microsoft will inform you when it's safe to remove the application.
 
 Create a new partner application using the account you previously created in [Step 2](#step-2-create-a-new-mail-user-account-used-by-microsoft-teams-calendar-scheduler-service). Run the following command in the Exchange Management Shell (EMS) within your on-premises Exchange organization:
 

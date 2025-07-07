@@ -293,7 +293,6 @@ To learn more about Bookings and virtual appointments, see [Appointments with Mi
 Teams Premium provides advanced Bookings and virtual appointment capabilities, such as:
 
 - Consumption and usage analytics for admins in the Teams admin center
-- Custom lobby room with branding and logos​ with Meeting themes
 - Queue of appointments
 - Short Message Service (SMS) notifications
 

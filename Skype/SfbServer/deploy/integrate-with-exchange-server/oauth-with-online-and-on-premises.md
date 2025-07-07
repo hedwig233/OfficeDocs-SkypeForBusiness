@@ -252,7 +252,7 @@ If you want to be sure you're successfully using OAuth, make certain you know wh
 
 Here's an [example of setting one up](/archive/blogs/kaevans/updated-fiddler-oauth-inspector), but you can use any network tracing tool you like to undertake this process.
 
-## How to remove the legacy Skype for Business Online integration
+## How to disable the legacy Skype for Business Online integration
 
 > [!CAUTION]
 > Don't delete the legacy Skype for Business Online Partner Application yet. Removing this first-party application will disrupt the functionality of Out of Office voicemail greetings, which still depend on the legacy first-party application.

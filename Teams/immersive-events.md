@@ -7,6 +7,7 @@ title: Plan for immersive events
 description: Immersive events in Teams
 author:      Sean-Kerawala # GitHub alias
 ms.author:   sekerawa # Microsoft alias
+manager: tyadams
 ms.service: msteams
 ms.topic: concept-article
 ms.date:     07/03/2025

@@ -15,6 +15,9 @@ ms.subservice: meetings
 ---
 # Plan for Teams immersive events
 
+> [!NOTE]
+> This feature is currently in Public Preview.
+
 Teams Immersive lets you create, customize, and host immersive 3D events in Microsoft Teams.
 
 - Schedule Teams Immersive events from Teams calendar

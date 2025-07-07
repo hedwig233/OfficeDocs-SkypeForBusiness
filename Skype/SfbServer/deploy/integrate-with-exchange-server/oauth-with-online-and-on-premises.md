@@ -89,7 +89,8 @@ New-PartnerApplication -Name "SfBOnline" -ApplicationIdentifier "00000004-0000-0
 
 ### Step 4: Create and enable a Partner Application for Teams Calendar Scheduler Service integration
 
-To enable [Calendar delegation for users in your Exchange Server (on-premises environment)](/microsoftteams/exchange-teams-interact) you must configure a dedicated Partner Application for the `Teams Calendar Scheduler Service`.
+To enable [Calendar delegation for users in your Exchange Server (on-premises environment)](../../../../Teams/Exchange-Teams-interact.md) you must configure a dedicated Partner Application for the `Teams Calendar Scheduler Service`.
+
 To do this, create a new partner application that facilitates Teams Calendar Scheduler Service integration by running the following command in the Exchange Management Shell (EMS) on your on-premises Exchange server.
 This application makes use of the account you previously created in [Step 2](#step-2-create-a-new-mail-user-account-used-by-microsoft-teams-calendar-scheduler-service):
 
@@ -100,6 +101,7 @@ New-PartnerApplication -Name "TeamsScheduler" -ApplicationIdentifier "7557eb47-c
 ### Step 5: Create and enable a Partner Application for Cloud Voicemail integration
 
 To enable [Cloud Voicemail for users in your on-premises environment](../../../SfbHybrid/hybrid/plan-cloud-voicemail.md) you must configure a dedicated Partner Application for `Cloud Voicemail`.
+
 To do this, create a new partner application that facilitates Cloud Voicemail integration by running the following command in the Exchange Management Shell (EMS) on your on-premises Exchange server:
 
 ```powershell

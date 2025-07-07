@@ -26,7 +26,7 @@ ms.localizationpriority: medium
 If your business relies on Google Workspace for email and calendaring, you can enable bidirectional syncing with Microsoft Teams. Enabling sync reduces missed meetings and simplifies meeting management by ensuring events and meeting responses created in either platform are seamlessly reflected in both.
 
 > [!NOTE]
-> Currently, this set up is only available to administrators with a Microsoft Teams license who are using Google Workspace with a custom domain for email and calendaring. Personal Gmail accounts are not supported.  Up to 50,000 users can be synced per tenant.
+> Currently, this setup is only available to administrators with a Microsoft Teams license who are using Google Workspace with a custom domain for email and calendaring. Personal Gmail accounts are not supported.  Up to 50,000 users can be synced per tenant.
 
 ## Prerequisites
 
@@ -100,7 +100,7 @@ If your business relies on Google Workspace for email and calendaring, you can e
 
 **I installed the Microsoft 365 Mail Migration and Calendar Sync application, but am receiving an error that it is not installed later in the setup**
 
-Verify the the following steps have been followed:
+Verify the following steps have been followed:
 
 - You have used your Google super admin account to install the **Microsoft 365 Mail Migration and Calendar Sync** application. You can verify this using your [Google Admin console](https://admin.google.com/ac/owl/list?tab=services).
 

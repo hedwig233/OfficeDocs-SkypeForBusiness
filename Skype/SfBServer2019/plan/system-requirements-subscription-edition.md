@@ -23,25 +23,24 @@ description: "Summary: Prepare your Skype for Business Server Subscription Editi
   
 As you might expect, there are some preparations to make before you begin to deploy Skype for Business Server Subscription Edition (SE). This article walks you through planning for:
   
-- [Hardware](system-requirements.md#Hardware)
+- [Hardware](#hardware-for-skype-for-business-server-se)
   
-- [Operating systems](system-requirements.md#OS)
+- [Operating systems](#operating-systems-for-skype-for-business-server-se)
   
-- [Software](system-requirements.md#Software)
+- [Software](#software-that-should-be-installed-before-a-skype-for-business-server-se-deployment)
 
-- [Back end SQL databases](system-requirements.md#DBs)
+- [Back end SQL databases](#back-end-databases-that-work-with-skype-for-business-server-se)
   
-- [Active Directory](system-requirements.md#AD)
+- [Active Directory](#active-directory)
   
-- [Domain Name System (DNS)](system-requirements.md#DNS)
+- [Domain Name System (DNS)](#domain-name-system-dns)
   
-- [Certificates](system-requirements.md#Certs)
+- [Certificates](#certificates)
   
-- [File Share](system-requirements.md#Fileshare)
+- [File Share](#file-share)
 
-  
+
 ## Hardware for Skype for Business Server SE
-<a name="Hardware"> </a>
 
 After you have your topology established (and if you don't, you can check out the [Topology Basics for Skype for Business Server SE](../../SfbServer/plan-your-deployment/topology-basics/topology-basics.md) article), it's time to think about servers. Skype for Business Server SE server requires 64-bit hardware. Our recommendations for hardware are listed in the following tables. These aren't requirements, but they reflect the requirements necessary for optimal performance. We have capacity planning documentation that helps you determine whether you need more than these requirements, depending on your circumstances.
   
@@ -79,7 +78,6 @@ After you have your topology established (and if you don't, you can check out th
 > - The RSS queue setting should be set to 8 queue.
 
 ## Operating systems for Skype for Business Server SE
-<a name="OS"> </a>
 
 After you have the hardware set, you have to install the operating system (OS) that enables you to install and successfully use Skype for Business Server SE:
 
@@ -94,12 +92,11 @@ Anything other than the operating systems that are listed here won't work correc
 > 
 > - An in-place upgrade of the OS isn't supported. You must deploy a separate pool that's running a different OS, and then migrate users to the new pool. All servers within a pool must have the same OS version.
 > 
-> - If you're installing Windows Admin Center 2019 on your Windows Server 2019 computer, the program prompts you for a port to listen on. There's a likelihood that you might choose port 443. However, if that computer has Skype for Business Server SE installed, or will have Skype for Business Server SE installed, then you must choose a different port number.
+> - If you're installing Windows Admin Center 2019 on your Windows Server 2019 computer, the program prompts you for a port to listen on. There's a likelihood that you might choose port 443. However, if that computer has Skype for Business Server 2019 installed, or will have Skype for Business Server SE installed, then you must choose a different port number.
 > 
 >   Why? If Windows Admin Center 2019 is running on port 443, you can't connect to the server by using the Skype for Business Control Panel, nor will you be able to connect to any internal web service that's running on the server (Address Book Web Service, Autodiscover Service, WebTicket Service, and so on). In fact, you can't connect to any Internal Web Service URL. When you might need or want to put Windows Admin Center 2019 on a server that has Skype for Business Server SE, choose a different port.
 
-## Software that should be installed before a Skype for Business Server SE deployment
-<a name="Software"> </a>
+## Software that should be installed before a Skype for Business Server SE deployment 
 
 > [!NOTE]
 > As a prerequisite to installing the Skype for Business Server SE, while using Windows Server 2022, you must run the [compatibility script for Windows Server 2022](#installation-of-compatibility-script-for-windows-server-2022).
@@ -113,8 +110,6 @@ There are some things that you must install or configure for any server that's r
 >
 > - The system requirements for the Visual C++ redistributable package for Visual Studio 2012 and Visual C++ redistributable package for Visual Studio 2013 don't mention support for Windows Server 2016, Windows Server 2019, or Windows Server 2022, but the redistributable package is safe to install on these versions of Windows.
 
-
-  
  **All servers**
   
 |Software/role|Details|
@@ -236,7 +231,6 @@ Write-Host "Script ran successfully. Key container $keyContainerName created. Pr
 ```
 
 ## Back-end databases that work with Skype for Business Server SE
-<a name="DBs"></a>
 
 When you install Skype for Business Server SE Standard Edition, SQL Server 2016 Express (64-bit edition) is also installed. Starting with Skype for Business 2019 CU8, Standard Edition also supports SQL Server 2022 Express (64-bit edition). This is achieved by running an in place upgrade of SQL Express on existing installation of Skype for Business 2019 CU8 (or later) Standard Edition.
 
@@ -281,7 +275,6 @@ SQL Always On is supported, and you can read more about it in [Back End Server h
 Don't install any Microsoft Internet Security and Acceleration (ISA) Server client software, or any other Winsock Layered Service Providers (LSP) software (any third-party firewalls or anti-virus network inspection software would be included here) on any of your front end servers or standalone mediation servers. Poor media traffic performance has been seen when that software is installed.
   
 ## Active Directory
-<a name="AD"> </a>
 
 Although much of the configuration data for servers and services is stored in the Skype for Business Server SE Central Management store, some things are still stored in Active Directory.
   
@@ -374,7 +367,6 @@ How does this work? A directory synchronization product (such as Forefront Ident
 Clearly, if your AD infrastructure is in place, moving to this topology might not be easy, but if you're already there, or still planning out your forest infrastructure, this can be a good choice. You can centralize your Skype for Business Server SE deployment within a single forest, while users can search, communicate, and view the presence of other users in any forest. All user contact updates are handled automatically with synchronization software.
   
 #### Multiple forests in a Skype for Business resource forest topology
-<a name="BKMK_multipleforestopology"> </a>
 
 ![Multiple forests in a resource forest topology diagram.](../../SfbServer/media/41efa3b6-d9e6-47df-992b-fefcfc39a80d.png)
 
@@ -385,16 +377,13 @@ Exchange Server can be deployed in the same resource forest as Skype for Busines
 To deploy Skype for Business Server SE in this type of topology, you would create one user who has disabilities object in the resource forest for each user account in the user forests (if Microsoft Exchange Server is already in the environment, this action might be done for you). Then you need a directory synchronization tool (like Forefront Identity Manager, or FIM) to manage user accounts through their life cycle.
   
 #### Multiple forests in a Skype for Business resource forest topology with Exchange Online
-<a name="BKMK_multipleforestopology"> </a>
 
-This topology is similar to the topology described in [Multiple forests in a Skype for Business resource forest topology](system-requirements.md#BKMK_multipleforestopology).
+This topology is similar to the topology described in [Multiple forests in a Skype for Business resource forest topology](#multiple-forests-in-a-skype-for-business-resource-forest-topology).
   
 In this topology, there are one or more user forests, and Skype for Business Server is deployed in a dedicated resource forest. Exchange Server can be deployed on-premises in the same resource forest or a different forest and configured for hybrid with Exchange Online, or email services may be provided exclusively by Exchange Online for the on-premises accounts. There is no diagram available for this topology.
   
-<a name='multiple-forests-in-a-resource-forest-topology-with-skype-for-business-online-and-azure-active-directory-connect'></a>
 
 #### Multiple forests in a resource forest topology with Skype for Business Online and Microsoft Entra Connect
-<a name="BKMK_multipleforestopology"> </a>
 
 ![Shows two AD forests, one user forest and one resource forest. The two forests have a trust relationship. They are synchronized with Microsoft 365 using Microsoft Entra Connect. All users are enabled for Skype for Business via Microsoft 365.](../../SfbServer/media/6d54558d-8786-4ebf-90f6-55ae3fdb5ae7.jpg)
 
@@ -407,14 +396,12 @@ Single sign-on authentication is provided by an Active Directory Federation Serv
 In this scenario, it is supported to deploy Exchange on-premises, Exchange Online, a hybrid Exchange solution, or to not have Exchange deployed at all. (The diagram shows only Exchange on-premises, but the other Exchange solutions are also fully supported.)
   
 #### Multiple forests in a resource forest topology with hybrid Skype for Business
-<a name="BKMK_multipleforestopology"> </a>
 
 In this scenario, there are one or more on-premises user forests, and Skype for Business is deployed in a dedicated resource forest and is configured for hybrid mode with Skype for Business Online. Exchange Server can be deployed on-premises in the same resource forest or a different forest and may be configured for hybrid with Exchange Online. Alternatively, email services may be provided exclusively by Exchange Online for the on-premises accounts.
   
 For more information, see [Configure a multi-forest environment for hybrid Skype for Business](../../SfbHybrid/hybrid/configure-a-multi-forest-environment-for-hybrid.md?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json).
   
 ## Domain Name System (DNS)
-<a name="DNS"> </a>
 
 Skype for Business Server SE requires DNS for the following reasons:
   

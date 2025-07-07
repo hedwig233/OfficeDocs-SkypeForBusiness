@@ -236,7 +236,7 @@ Verify that the configuration is correct by verifying some of the features are w
 - Make a Teams call to a user who has an active `Out of Office` voicemail greeting.
 - Leave a voicemail message.
 - Listen to the greeting during the call:
-  - If the [CloudVoicemail Partner Application](#step-4-create-and-enable-a-partner-application-for-cloud-voicemail-integration) is working, you will hear the `Out of Office` greeting.
+  - If the [CloudVoicemail Partner Application](#step-5-create-and-enable-a-partner-application-for-cloud-voicemail-integration) is working, you will hear the `Out of Office` greeting.
   - If it is not working, the regular greeting will play instead.
 - After the call, check whether your voicemail message was successfully delivered to the user's mailbox.
 

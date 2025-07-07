@@ -89,7 +89,9 @@ New-PartnerApplication -Name "SfBOnline" -ApplicationIdentifier "00000004-0000-0
 
 ### Step 4: Create and enable a Partner Application for Teams Calendar Scheduler Service integration
 
-Create a new partner application using the account you previously created in [Step 2](#step-2-create-a-new-mail-user-account-used-by-microsoft-teams-calendar-scheduler-service). Run the following command in the Exchange Management Shell (EMS) within your on-premises Exchange organization:
+To enable [Calendar delegation for users in your Exchange Server (on-premises environment)](microsoftteams/exchange-teams-interact) you must configure a dedicated Partner Application for the `Teams Calendar Scheduler Service`.
+To do this, create a new partner application that facilitates Teams Calendar Scheduler Service integration by running the following command in the Exchange Management Shell (EMS) on your on-premises Exchange server.
+This application makes use of the account you previously created in [Step 2](#step-2-create-a-new-mail-user-account-used-by-microsoft-teams-calendar-scheduler-service):
 
 ```powershell
 New-PartnerApplication -Name "TeamsScheduler" -ApplicationIdentifier "7557eb47-c689-4224-abcf-aef9bd7573df" -Enabled $true -LinkedAccount $user.Identity
@@ -97,13 +99,14 @@ New-PartnerApplication -Name "TeamsScheduler" -ApplicationIdentifier "7557eb47-c
 
 ### Step 5: Create and enable a Partner Application for Cloud Voicemail integration
 
-Create a new partner application to enable Cloud Voicemail integration. Run the following command in the Exchange Management Shell (EMS) on your on-premises Exchange server:
+To enable [Cloud Voicemail for users in your on-premises environment](../../../SfbHybrid/hybrid/plan-cloud-voicemail.md) you must configure a dedicated Partner Application for `Cloud Voicemail`.
+To do this, create a new partner application that facilitates Cloud Voicemail integration by running the following command in the Exchange Management Shell (EMS) on your on-premises Exchange server:
 
 ```powershell
 New-PartnerApplication -Name "CloudVoicemail" -ApplicationIdentifier "db7de2b5-2149-435e-8043-e080dd50afae" -Enabled $true
 ```
 
-### Step 6: Export the Exchange Server auth certificate
+### Step 6: Export the Exchange Server Auth Certificate
 
 Run a PowerShell script to export the public key of the Exchange Server auth certificate, which you will import to your Microsoft Teams organization in the next step.
 
@@ -125,7 +128,7 @@ $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
 
 In Exchange Management Shell in your on-premises Exchange organization, run the PowerShell script that you created. For example: `.\ExportAuthCert.ps1`
 
-### Step 7: Upload the Exchange Server auth certificate to Microsoft Entra ACS
+### Step 7: Upload the Exchange Server Auth Certificate
 
 Next, use the Microsoft Graph PowerShell module to upload the on-premises auth certificate that you exported in the previous step to Microsoft Entra Access Control Services (ACS). If you don't have the module installed, open a Windows PowerShell window as an administrator and run the following command:
 

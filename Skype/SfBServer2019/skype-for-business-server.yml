@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Skype for Business Server documentation # < 60 chars
-summary: Learn how to implement Skype for Business Server 2019 and Subscription Edition. # < 160 chars
+summary: This guide helps IT professionals in planning, deploying, and managing Skype for business Server Subscription Edition (SE and 2019). # < 160 chars
 
 metadata:
   title: Skype for Business Server documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: This guide helps IT Pros plan, deploy, and manage Skype for business Server Subscription Edition (SE and 2019). # Required; article description that is displayed in search results. < 160 chars.
+  description: This guide helps IT professionals in planning, deploying, and managing Skype for business Server Subscription Edition (SE and 2019). # Required; article description that is displayed in search results. < 160 chars.
   ms.service: skype-for-business-online #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
   audience: ITPro

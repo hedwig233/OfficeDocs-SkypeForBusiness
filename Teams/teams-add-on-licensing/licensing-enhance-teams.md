@@ -269,8 +269,6 @@ Microsoft Bookings makes scheduling and managing appointments a breeze. It helps
 | Join appointments from a browser | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Notify staff members when a booking is assigned to them | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Join appointments in Teams | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
-| Allow users to join a virtual lobby waiting room | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |![Image of a checkmark for yes](/office/media/icons/success-teams.png)  |
-| Use meeting themes to customize the lobby waiting room with themes and logos |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Send SMS notifications\* |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | View and manage appointments in the queue |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 

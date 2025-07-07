@@ -12,14 +12,14 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 ms.collection: 
-description: "Summary: Prepare your Skype for Business Server SE servers and domain infrastructure with the help of this article. Hardware, OS, databases, software, all the system requirements and recommendations, together with certificate DNS, file share, and Active Directory information are here to help ensure a successful installation and deployment of your server farm."
+description: "Summary: Prepare your Skype for Business Server Subscription Edition servers and domain infrastructure with the help of this article. Hardware, OS, databases, software, all the system requirements and recommendations, together with certificate DNS, file share, and Active Directory information are here to help ensure a successful installation and deployment of your server farm."
 ---
 
 # System requirements for Skype for Business Server Subscription Edition
 
-[!INCLUDE[appliesto-xxx-xxx-sub.md](../includes/appliesto-xxx-xxx-sub.md)]
+[!INCLUDE[appliesto-xxx-2019-sub.md](../includes/appliesto-xxx-2019-sub.md)]
 
-**Summary:** Prepare your Skype for Business Server SE servers and domain infrastructure with the help of this article. Hardware, OS, databases, software, all the system requirements and recommendations, together with certificate DNS, file share, and Active Directory information are here to help ensure a successful installation and deployment of your server farm.
+**Summary:** Prepare your Skype for Business Server Subscription Edition (SE) servers and domain infrastructure with the help of this article. Hardware, OS, databases, software, all the system requirements and recommendations, together with certificate DNS, file share, and Active Directory information are here to help ensure a successful installation and deployment of your server farm.
   
 As you might expect, there are some preparations to make before you begin to deploy Skype for Business Server Subscription Edition (SE). This article walks you through planning for:
   

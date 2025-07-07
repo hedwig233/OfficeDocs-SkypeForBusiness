@@ -32,7 +32,7 @@ This page covers the required tasks and suggests functional roles that may need 
 
 1. Assign Teams Premium or Mesh Trial licenses to organizers
 
-1. Attendees do not require licenses
+1. Attendees don't require licenses
 
 1. Configure endpoints and Firewalls
 
@@ -40,7 +40,7 @@ This page covers the required tasks and suggests functional roles that may need 
 
 1. Work with stakeholders to communicate change
 
-1. (Optional) Enable Guests join immersive events 
+1. (Optional) Enable Guests to join immersive events 
 
 1. (Optional) Assign event policies to turn off Immersive events for users and groups
 
@@ -48,7 +48,7 @@ This page covers the required tasks and suggests functional roles that may need 
 
 Executive-level sponsorship is highly advisable to help with any cross-team blocking issues.
 
-You will need access to a few administration tools:
+You need access to a few administration tools:
 
 - Microsoft Admin Center is needed to manage and assign Teams Premium and/or Mesh Trial Licenses
 
@@ -56,22 +56,20 @@ You will need access to a few administration tools:
 
 - (optional) Purview Admin Center to create Sensitivity Labels
 
-In addition, ensure all organizers and attendees of immersive events have access to Sharepoint and OneDrive. Event customizations often reference files such as images, videos, audio, or 3D models which are stored in Microsoft 365. Creating a Microsoft 365 Group can be a helpful way to enable secure content sharing.
+In addition, ensure all organizers and attendees of immersive events have access to Sharepoint and OneDrive. Event customizations often reference files such as images, videos, audio, or 3D models that are stored in Microsoft 365. Creating a Microsoft 365 Group can be a helpful way to enable secure content sharing.
 
 ### Hardware requirements
 
-PC and Mac minimum hardware requirements are 4-core CPU & 8 GB RAM.
+PC and Mac minimum hardware requirements are 4-core CPU & 8-GB RAM.
 
 ### License requirements
 
-For Teams Immersive, you will need the following:
+For Teams Immersive, you'll need:
 
-- __Teams Premium license in a tenant for Commercial use__ (currently only available in Teams Premium Introductory Pricing or Teams Premium for Departments). Learn more about [Microsoft Teams Premium licensing](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams). Optionally, the Microsoft Mesh Trial is available in Microsoft Admin Center, which enables organizing Teams immersive events via Teams and Outlook Calendars. For organizations without Teams Premium, this trial enables rapidly onboarding to using Immersive events. Important! All users with the Teams Premium or Microsoft Mesh Trial license will be able to schedule immersive events. Co-organizers and attendees only require a Pre-requisite license (Microsoft E3 or E5 license). 
+- __Teams Premium license in a tenant for Commercial use__ (currently only available in Teams Premium Introductory Pricing or Teams Premium for Departments). Learn more about [Microsoft Teams Premium licensing](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams). Optionally, the Microsoft Mesh Trial is available in Microsoft Admin Center, which enables organizing Teams immersive events via Teams and Outlook Calendars. For organizations without Teams Premium, this trial enables rapidly onboarding to using Immersive events. Important! All users with the Teams Premium or Microsoft Mesh Trial license will be able to schedule immersive events. Co-organizers and attendees only require a prerequisite license (Microsoft E3 or E5 license). 
 
-    > [!NOTE]
-  > Immersive events are not supported for tenants with worldwide public sector, EDU, or GCC licenses.
-  
-- __Pre-requisite license for Teams Premium__. Your users must have a commercial Teams license: Microsoft Teams Enterprise, Teams Essentials, or one of the following M365, O365, or Business SKUs with Teams included: Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, Microsoft 365 E3/E5, and Office 365 E1/E3/E5. Learn more about __[Teams for enterprise](https://www.microsoft.com/microsoft-teams/enterprise#pricing)__ and __[Teams Premium trial license](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams)__.
+      > [!NOTE]
+- __Prerequisite license for Teams Premium__. Your users must have a commercial Teams license: Microsoft Teams Enterprise, Teams Essentials, or one of the following M365, O365, or Business SKUs with Teams included: Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, Microsoft 365 E3/E5, and Office 365 E1/E3/E5. Learn more about __[Teams for enterprise](https://www.microsoft.com/microsoft-teams/enterprise#pricing)__ and __[Teams Premium trial license](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams)__.
 
 ### Endpoint and firewall requirements
 
@@ -79,17 +77,17 @@ This section outsides the specific endpoints and firewall requirements for immer
 
 In general, the standard set of Microsoft 365 requirements outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true) applies to all Teams Immersive event features. Configure your enterprise firewall settings to align with the standard set of Microsoft 365 requirements for __Microsoft Teams__, and __Microsoft 365 Common__ outlined in [Microsoft M365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true).
 
-As part of this, ensure that you have configured your firewall to enable traffic to *.cloud.microsoft.com, *.office.com, *.graph.microsoft.com, *.substrate.office.com, and *.microsoft.com over TCP 443, 80.
+As part of these requirements, ensure that you configure your firewall to enable traffic to *.cloud.microsoft.com, *.office.com, *.graph.microsoft.com, *.substrate.office.com, and *.microsoft.com over TCP 443, 80.
 
-Teams Immersive also requires the IP addresses and port ranges detailed in [Firewall configuration for Azure Communication Services](/azure/communication-services/concepts/voice-video-calling/network-requirements) for media capabilities such as audio and screenshare. Without access to these, Teams Immersive may not work properly for users in your organization.
+Teams Immersive also requires the IP addresses and port ranges detailed in [Firewall configuration for Azure Communication Services](/azure/communication-services/concepts/voice-video-calling/network-requirements) for media capabilities such as audio and screen sharing. Without access to these endpoints, Teams Immersive may not work properly for users in your organization.
 
 ### Bandwidth requirements
 
-The following network bandwidth requirements are designed to help users in your organization have the best possible experience with Mesh immersive experiences.
+The following network bandwidth requirements are designed to help users in your organization have the best possible experience with Teams immersive events.
 
-While we are constantly working on improving how Mesh works even in poor network conditions, you may want to further optimize your network if users in your organization report poor audio quality, audio cutting out, or delayed or jerky avatar movement.
+While we're constantly working on improving how immersive events works even in poor network conditions, you may want to optimize your network if users in your organization report poor audio quality, audio cutting out, or delayed or jerky avatar movement.
 
-Mesh immersive experiences build on top of [Microsoft Teams network bandwidth requirements](/microsoftteams/prepare-network) for capabilities such as video and screenshare, with additional bandwidth needed for immersive capabilities such as avatar movement and spatial audio.
+Teams immersive experiences build on top of [Microsoft Teams network bandwidth requirements](/microsoftteams/prepare-network) for capabilities (such as video and screenshare), with extra bandwidth needed for immersive capabilities (such as avatar movement and spatial audio).
 
 __Immersive participants__
 
@@ -99,10 +97,11 @@ __Immersive participants__
 
 - Best performance (kbps): 100/850
 
-As an example, an immersive event with a participant sharing their screen will require a minimum of 440 kbps downstream, and 830 kbps upstream, and a maximum of 8,176 kbps downstream and 8,926 kbps upstream.
+As an example, an immersive event with a participant sharing their screen requires a minimum of 440-kbps downstream, and 830-kbps upstream, and a maximum of 8,176-kbps downstream and 8,926-kbps upstream.
+
 ### Work with stakeholders that communicate change
 
-The stakeholders listed above all have active steps that will impact the setup of your Teams Immersive roll out, but there may be other parts of your org that will be impacted by the deployment or might have policies or guidelines that need to be considered early in your planning process. Here are some areas of your organization you might need to reach out to before you deploy.
+The stakeholders listed above all have active steps which impact the setup of your Teams Immersive roll out, but there may be other parts of your org that will be impacted by the deployment or might have policies or guidelines that need to be considered early in your planning process. Here are some areas of your organization you might need to reach out to before you deploy.
 
 - Change Communications: If you have a standard process for contacting users about pending changes, make sure Teams Immersive is part of those communications.
 
@@ -121,7 +120,7 @@ Some organizations may have trusted individuals they want to invite to their imm
 To add a guest, follow this [step-by-step guidance](https://support.microsoft.com/en-us/office/add-guests-to-a-team-in-microsoft-teams-fccb4fa6-f864-4508-bdde-256e7384a14f) for adding trusted guest users to your tenant via Microsoft Admin Center. 
 
 > [!NOTE]
-> Guests can be invited as attendees. Guests cannot be organizers or co-organizers of Immersive events. External (cross-tenant) and anonymous users are not currently supported.
+> Guests can be invited as attendees. Guests can't be organizers or co-organizers of Immersive events. External (cross-tenant) and anonymous users aren't currently supported.
 
 ### Turn immersive events on or off
 

@@ -68,11 +68,7 @@ For Teams Immersive, your organization needs:
 
 - __Teams Premium license in a tenant for Commercial use__ (currently only available in Teams Premium Introductory Pricing or Teams Premium for Departments). Learn more about [Microsoft Teams Premium licensing](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams). Optionally, the Microsoft Mesh Trial is available in Microsoft Admin Center, which enables organizing Teams immersive events via Teams and Outlook Calendars. For organizations without Teams Premium, this trial enables rapidly onboarding to using Immersive events. Important! All users with the Teams Premium or Microsoft Mesh Trial license will be able to schedule immersive events. Co-organizers and attendees only require a prerequisite license (Microsoft E3 or E5 license). 
 
-  ```
-  > [!NOTE]
-  ```- __Prerequisite license for Teams Premium__. Your users must have a commercial Teams license: Microsoft Teams Enterprise, Teams Essentials, or one of the following M365, O365, or Business SKUs with Teams included: Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, Microsoft 365 E3/E5, and Office 365 E1/E3/E5. Learn more about __[Teams for enterprise](https://www.microsoft.com/microsoft-teams/enterprise#pricing)__ and __[Teams Premium trial license](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams)__.
-
-### Endpoint and firewall requirements
+- __Pre-requisite license for Teams Premium__. Your users must have a commercial Teams license: Microsoft Teams Enterprise, Teams Essentials, or one of the following M365, O365, or Business SKUs with Teams included: Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, Microsoft 365 E3/E5, and Office 365 E1/E3/E5.
 
 This section outlines the specific endpoints and firewall requirements for immersive events in Teams.
 

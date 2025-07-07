@@ -26,21 +26,17 @@ This page covers the required tasks and suggests functional roles that may need 
 
 1. Prepare your organization
 
-1. Review Minimum Hardware requirements
+1. Review minimum hardware requirements
 
-1. Assign Licenses to event organizers (only organizers require license)
+1. Assign licenses to event organizers (only organizers require license)
 
-1. Assign Teams Premium or Mesh Trial licenses to organizers
-
-1. Attendees don't require licenses
-
-1. Configure endpoints and Firewalls
+1. Configure endpoints and firewalls
 
 1. Check your bandwidth requirements
 
 1. Work with stakeholders to communicate change
 
-1. (Optional) Enable Guests to join immersive events 
+1. (Optional) Enable guests to join immersive events 
 
 1. (Optional) Assign event policies to turn off Immersive events for users and groups
 
@@ -66,7 +62,7 @@ PC and Mac minimum hardware requirements are 4-core CPU & 8-GB RAM.
 
 For Teams Immersive, your organization needs:
 
-- __Teams Premium license in a tenant for Commercial use__ (currently only available in Teams Premium Introductory Pricing or Teams Premium for Departments). Learn more about [Microsoft Teams Premium licensing](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams). Optionally, the Microsoft Mesh Trial is available in Microsoft Admin Center, which enables organizing Teams immersive events via Teams and Outlook Calendars. For organizations without Teams Premium, this trial enables rapidly onboarding to using Immersive events. Important! All users with the Teams Premium or Microsoft Mesh Trial license will be able to schedule immersive events. Co-organizers and attendees only require a prerequisite license (Microsoft E3 or E5 license). 
+- __Teams Premium license in a tenant for Commercial use__ (currently only available in Teams Premium Introductory Pricing or Teams Premium for Departments). Learn more about [Microsoft Teams Premium licensing](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams). Optionally, the Microsoft Mesh Trial is available in Microsoft Admin Center, which enables organizing Teams immersive events via Teams and Outlook Calendars. For organizations without Teams Premium, this trial enables rapidly onboarding to using Immersive events. Important! All users with the Teams Premium or Microsoft Mesh Trial license will be able to schedule immersive events. Co-organizers and attendees only require a prerequisite license (Microsoft E3 or E5 license).
 
 - __Pre-requisite license for Teams Premium__. Your users must have a commercial Teams license: Microsoft Teams Enterprise, Teams Essentials, or one of the following M365, O365, or Business SKUs with Teams included: Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, Microsoft 365 E3/E5, and Office 365 E1/E3/E5.
 

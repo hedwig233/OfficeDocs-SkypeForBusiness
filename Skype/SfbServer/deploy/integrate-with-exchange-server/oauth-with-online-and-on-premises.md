@@ -235,27 +235,27 @@ Install-Module -Name Microsoft.Graph.Applications
 Verify that the configuration is correct by verifying some of the features are working successfully. 
 
 1. Confirm Cloud Voicemail functionality in an Exchange Hybrid configuration
-- Make a Teams call to a user who has an active `Out of Office` voicemail greeting.
-- Leave a voicemail message.
-- Listen to the greeting during the call:
-  - If the [CloudVoicemail Partner Application](#step-5-create-and-enable-a-partner-application-for-cloud-voicemail-integration) is working, you will hear the `Out of Office` greeting.
-  - If it is not working, the regular greeting will play instead.
-- After the call, check whether your voicemail message was successfully delivered to the user's mailbox.
+    - Make a Teams call to a user who has an active `Out of Office` voicemail greeting.
+    - Leave a voicemail message.
+    - Listen to the greeting during the call:
+      - If the [CloudVoicemail Partner Application](#step-5-create-and-enable-a-partner-application-for-cloud-voicemail-integration) is working, you will hear the `Out of Office` greeting.
+      - If it's not working, the regular greeting will play instead.
+    - After the call, check whether your voicemail message was successfully delivered to the user's mailbox.
 
 2. Confirm conversation history for mobile clients is visible in the Outlook `Conversation History` folder.
 
 3. Confirm that archived chat messages are deposited in the user's on-premises mailbox in the `Purges` folder using [EWSEditor](https://github.com/dseph/EwsEditor/releases).
 
-Alternatively, inspect the traffic during the OAuth handshake. OAuth traffic is distinct and does not resemble basic authentication. A key indicator is the presence of issuer identifiers in the token exchange, such as:
-- `7557eb47-c689-4224-abcf-aef9bd7573df@<realm>`
-- `db7de2b5-2149-435e-8043-e080dd50afae@<realm>`
-- `00000004-0000-0ff1-ce00-000000000000@<realm>` (in legacy first-party app usage scenario)
+   Alternatively, inspect the traffic during the OAuth handshake. OAuth traffic is distinct and doesn't resemble basic authentication. A key indicator is the presence of issuer identifiers in the token exchange, such as:
+    - `7557eb47-c689-4224-abcf-aef9bd7573df@<realm>`
+    - `db7de2b5-2149-435e-8043-e080dd50afae@<realm>`
+    - `00000004-0000-0ff1-ce00-000000000000@<realm>` (in legacy first-party app usage scenario)
 
-These identifiers may also appear with a leading slash, for example: `/7557eb47-c689-4224-abcf-aef9bd7573df@<realm>`. These tokens do not include a username or password, which highlights a core principle of OAuth: authentication without credential exchange.
-
-If you want to be sure you're successfully using OAuth, make certain you know what to expect and know what the traffic should look like. So [here's what to expect](https://tools.ietf.org/html/draft-ietf-oauth-v2-23#page-34).
-
-Here's an [example of setting one up](/archive/blogs/kaevans/updated-fiddler-oauth-inspector), but you can use any network tracing tool you like to undertake this process.
+    These identifiers may also appear with a leading slash, for example: `/7557eb47-c689-4224-abcf-aef9bd7573df@<realm>`. These tokens do not include a username or password, which highlights a core principle of OAuth: authentication without credential exchange.
+    
+    If you want to be sure you're successfully using OAuth, make certain you know what to expect and know what the traffic should look like. So [here's what to expect](https://tools.ietf.org/html/draft-ietf-oauth-v2-23#page-34).
+  
+    Here's an [example of setting one up](/archive/blogs/kaevans/updated-fiddler-oauth-inspector), but you can use any network tracing tool you like to undertake this process.
 
 ## How to disable the legacy Skype for Business Online integration
 

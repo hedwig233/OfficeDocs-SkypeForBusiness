@@ -26,7 +26,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: System requirements
-            url: ./plan/system-requirements-subscription-edition.md
+            url: ./plan/system-requirements.md
           - text: Network requirements
             url: ../SfbServer/plan-your-deployment/network-requirements/network-requirements.md
 

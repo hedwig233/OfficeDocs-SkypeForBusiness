@@ -30,7 +30,7 @@
         - name: Requirements
           items: 
             - name: System requirements
-              href: ../plan/system-requirements-subscription-edition.md?toc=/SkypeForBusiness/sfbs2019toc/toc.json
+              href: ../plan/system-requirements-subscription-edition.md
             - name: Load balancing requirements
               href: ../../SfbServer/plan-your-deployment/network-requirements/load-balancing.md?toc=/SkypeForBusiness/sfbs2019toc/toc.json&bc=/SkypeForBusiness/breadcrumb/toc.json
             - name: Network requirements

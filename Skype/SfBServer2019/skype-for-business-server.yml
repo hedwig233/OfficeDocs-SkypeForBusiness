@@ -1,17 +1,17 @@
 ### YamlMime:Landing
 
-title: Skype for Business Server 2019 and Subscription Edition documentation # < 60 chars
-summary: Learn how to implement Skype for Business Server 2019 and Subscription Edition. # < 160 chars
+title: Skype for Business Server documentation # < 60 chars
+summary: This guide helps IT professionals in planning, deploying, and managing Skype for business Server Subscription Edition (SE) and 2019. # < 160 chars
 
 metadata:
-  title: Skype for Business Server 2019 and Subscription Edition documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn how to implement Skype for Business Server 2019 and Subscription Edition. # Required; article description that is displayed in search results. < 160 chars.
+  title: Skype for Business Server documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: This guide helps IT professionals in planning, deploying, and managing Skype for business Server Subscription Edition (SE) and 2019. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: skype-for-business-online #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
   audience: ITPro
   author: LanaChin #Required; your GitHub user alias, with correct capitalization.
   ms.author: serdars #Required; microsoft alias of author; optional team alias.
-  ms.date: 07/01/2025 #Required; mm/dd/yyyy format.
+  ms.date: 07/07/2025 #Required; mm/dd/yyyy format.
   ms.collection:
   - essentials-navigation
 
@@ -21,12 +21,8 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: About Skype for Business Server 2019 and Subscription Edition
+  - title: About Skype for Business Server Subscription Edition
     linkLists:
-      - linkListType: whats-new
-        links:
-          - text: What's new
-            url: ./whats-new.md
       - linkListType: overview
         links:
           - text: System requirements
@@ -51,10 +47,8 @@ landingContent:
     linkLists:
       - linkListType: deploy
         links:
-          - text: Install Skype for Business Server and Subscription Edition
+          - text: Install Skype for Business Server Subscription Edition
             url: ../SfbServer/deploy/install/install.md
-          - text: Migrate to Skype for Business 2019 and Subscription Edition
-            url: ./migration/migration-to-skype-for-business-server-2019.md
           - text: Deploy Enterprise Voice
             url: ../SfbServer/deploy/deploy-enterprise-voice/deploy-enterprise-voice.md
       - linkListType: how-to-guide

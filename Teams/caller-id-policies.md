@@ -8,6 +8,7 @@ ms.date: 03/27/2025
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
+ms.subservice: teams-calling
 audience: Admin
 ms.collection: 
   - M365-voice

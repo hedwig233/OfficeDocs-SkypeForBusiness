@@ -136,7 +136,10 @@ See [Microsoft Teams phones feature set](phones-for-teams.md) for information on
 #### <b> Yealink </b>
 | Device model | Latest firmware version | Minimum firmware version | Included Microsoft applications**   | Release date |
 |:----------------|:-------------------|:----------------------------|:----------------------------------------------------------------------------------------------|:--------------------------------------------|
-|MP54/MP56/MP58| `122.15.0.231 (AOSP)`| `143.15.0.74` | Teams client: `1449/1.0.94.2025084203` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2407.4386` <br> Admin Agent: `1.0.0.202412110504.product (753)`| April 21, 2025|
+|MP54/MP56/MP58| `122.15.0.231 (AOSP)`| `143.15.0.74` | Teams client: `1449/1.0.94.2025084203` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2410.7268` <br> Admin Agent: `1.0.0.202412110504.product (753)`| June 30, 2025|
+|CP965| `143.15.0.138 (AOSP)`| `122.15.0.166` | Teams client: `1449/1.0.94.2025084203` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2410.7268` <br> Admin Agent: `1.0.0.202412110504.product (753)`| June 30, 2025|
+|MP52 E2/MP54 E2/MP56 E2/MP58 E2| `176.15.0.164 (MDEP)`| `176.15.0.19` | Teams client: `1449/1.0.94.2025084203` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2410.7268` <br> Admin Agent: `1.0.0.202412110504.product (753)`| June 30, 2025|
+|MP54/MP56/MP58| `122.15.0.234 (AOSP)`| `143.15.0.74` | Teams client: `1449/1.0.94.2025084203` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2407.4386` <br> Admin Agent: `1.0.0.202412110504.product (753)`| April 21, 2025|
 |CP965| `143.15.0.135 (AOSP)`| `122.15.0.166` | Teams client: `1449/1.0.94.2025084203` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2407.4386` <br> Admin Agent: `1.0.0.202412110504.product (753)`| April 21, 2025|
 |MP52 E2/MP54 E2/MP56 E2/MP58 E2| `176.15.0.160 (MDEP)`| `176.15.0.19` | Teams client: `1449/1.0.94.2025084203` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2407.4386` <br> Admin Agent: `1.0.0.202412110504.product (753)`| April 21, 2025|
 |MP54/MP56/MP58| `122.15.0.166`| `N/A` | Teams client: `1449/1.0.94.2024101709` <br> Company Portal: `5.0.6152.0` <br> Admin Agent: `1.0.0.202407050618.product (733)`| February 10, 2025|

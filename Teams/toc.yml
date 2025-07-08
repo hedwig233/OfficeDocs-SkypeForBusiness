@@ -384,12 +384,16 @@ items:
         href: privacy/intelligent-recap.md
       - name: Set up AI recommendations for educators
         href: institution-settings.md
+      - name: Custom dictionary for Teams meetings and events
+        href: copilot-custom-dictionary.md
     - name: Copilot in Teams
       items:
         - name: Manage Copilot for multitenant organizations
           href: copilot-mto.md
         - name: Manage Copilot in Teams meetings and events
           href: copilot-teams-transcription.md
+        - name: Manage Copilot in Teams calls
+          href: copilot-teams-calling-transcription.md
         - name: Teams Rooms and Copilot overview
           href: rooms/copilot-admin-mtr.md
     - name: Agents for Teams
@@ -477,10 +481,8 @@ items:
           href: meeting-transcription-captions.md
         - name: Manage RTMP-In
           href: meetings-rtmp-in.md
-    - name: Advanced Virtual Appointments
+    - name: Advanced Bookings and virtual appointments
       items:
-        - name: Manage the Virtual Appointments app for your organization in Microsoft Teams
-          href: manage-virtual-appointments-app.md
         - name: Microsoft Teams Virtual Appointments usage report
           href: /microsoft-365/frontline/virtual-appointments-usage-report
         - name: Microsoft Teams Advanced Virtual Appointments activity report
@@ -556,8 +558,6 @@ items:
           items: 
             - name: Configure external meetings & chat
               href: trusted-organizations-external-meetings-chat.md
-            - name: Set up a bilateral chat policy
-              href: bilateral-chat-enforcement.md
             - name: Cross-cloud meetings
               href: cross-cloud-meetings.md
             - name: Native Teams chats
@@ -654,6 +654,8 @@ items:
           href: teams-client-health.md
         - name: Update monitoring
           href: teams-client-health-update-monitoring.md
+        - name: Teams client diagnostic logging
+          href: teams-client-diagnostic-logging.md
 
     - name: Teams alerting and monitoring
       href: alerts/teams-admin-alerts.md 
@@ -838,12 +840,13 @@ items:
       items:
         - name: Overview
           href: overview-meetings-webinars-town-halls.md
-        - name: Plan for meetings
+        - name: Meetings
           href: plan-meetings.md
-        - name: Plan for webinars
+        - name: Webinars
           href: plan-webinars.md
-        - name: Plan for town halls
+        - name: Town halls
           href: plan-town-halls.md
+          displayName: Microsoft Teams, Town Halls, Webinars
         - name: Policies overview
           href: meeting-policies-overview.md
         - name: Feature comparison
@@ -936,8 +939,6 @@ items:
               href: manage-meeting-presentation-experience.md
             - name: Manage chat
               href: manage-chat-sensitive-meetings.md
-            - name: Detect sensitive content during screen sharing
-              href: detect-sensitive-content.md
             - name: Encrypt meetings
               href: end-to-end-encrypted-meetings.md
             - name: Watermark meetings
@@ -966,7 +967,7 @@ items:
               href: cloud-video-interop.md
             - name: Configure Quality of Service (QoS)
               href: meetings-real-time-media-traffic.md
-            - name: Live stream with RTMP-Out
+            - name: Stream Teams meetings
               href: stream-teams-meetings.md
             - name: Streaming encoders
               href: teams-encoder-setup.md
@@ -1248,6 +1249,8 @@ items:
           href: call-queue-auto-attendant-cmdlets.md
         - name: Dial and voice reference
           href: dial-voice-reference.md
+    - name: Manage Copilot in Teams calls
+      href: copilot-teams-calling-transcription.md
     - name: Teams Calling with Teams Premium
       items:
         - name: Intelligent recap for teams calls
@@ -1356,6 +1359,8 @@ items:
                   href: direct-routing-trunk-failover-on-outbound-call.md
                 - name: Media path country codes
                   href: direct-routing-country-codes.md
+                - name: PowerShell script to test Session Border Controller connections
+                  href: sip-tester-powershell-script.md
                 - name: Protocols
                   items: 
                     - name: Definitions and RFC standards
@@ -1458,6 +1463,22 @@ items:
           href: manage-your-network-topology.md
         - name: Manage video and media settings
           href: network-roaming-policy.md
+    - name: Contoso voice migration case study
+      items: 
+        - name: Overview
+          href: voice-case-study-overview.md
+        - name: Teams upgrade plan
+          href: voice-case-study-migration-plan.md
+        - name: Teams Phone
+          href: voice-case-study-phone-system.md
+        - name: Location-Based-Routing
+          href: voice-case-study-location-based-routing.md
+        - name: Emergency calling
+          href: voice-case-study-emergency-calling.md
+        - name: Audio Conferencing
+          href: voice-case-study-audio-conferencing.md
+        - name: Auto attendants and Call queues
+          href: voice-case-study-call-queues.md
   
     - name: Reference
       items: 
@@ -1950,6 +1971,8 @@ items:
             href: teams-app-setup-policies.md
         - name: Use app centric management
           href: app-centric-management.md
+        - name: Best practices during ACM migration
+          href: pre-and-post-migration.md
         - name: Preinstall apps for users
           href: install-teams-apps.md
         - name: Tailor Teams apps for your frontline workers

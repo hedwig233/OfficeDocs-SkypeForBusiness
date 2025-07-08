@@ -7,6 +7,7 @@ ms.reviewer: colongma
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
+ms.subservice: teams-calling
 audience: admin
 ms.date: 10/22/2024
 ms.collection: 

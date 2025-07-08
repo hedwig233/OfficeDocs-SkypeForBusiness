@@ -42,6 +42,7 @@ The following meeting options can be controlled by using a meeting template:
 |End-to-end encryption|Specifies if the meeting is encrypted.|
 |Enable watermark for screenshare|Specifies if watermarks are used for content that is shared on screen in the meeting.|
 |Enable watermark for video|Specifies if watermarks are used for camera feeds in the meeting.|
+|Detect sensitive content during screen sharing|Specifies whether meetings can detect sensitive content during screen sharing.|
 |Restrict participants from copying or forwarding meeting chat messages|Prevents participants from copying or forwarding content in the meeting chat.|
 |**Audio & video**||
 |Allow mic and camera for attendees|Specifies if attendees can unmute and use their camera.|
@@ -73,6 +74,7 @@ Templates have the option of specifying a sensitivity label. Labels can also be 
 
 - Apply a watermark to everyone's video feed
 - Apply a watermark to shared content
+- Detect sensitive content during screen sharing
 - End-to-end encryption
 - Meeting chat
 - Prevent copying chat content to clipboard
@@ -108,8 +110,6 @@ To view the list of platforms that support this feature, see [Microsoft Teams Pr
 
 ## Related topics
 
-[Configure Teams meetings with three tiers of protection](configure-meetings-three-tiers-protection.md)
-
-[Use Teams meeting templates, sensitivity labels, and admin policies together](meeting-templates-sensitivity-labels-policies.md)
-
-[Meetings, webinars, and live events](quick-start-meetings-live-events.md)
+- [Configure Teams meetings with three tiers of protection](configure-meetings-three-tiers-protection.md)
+- [Use Teams meeting templates, sensitivity labels, and admin policies together](meeting-templates-sensitivity-labels-policies.md)
+- [Meetings, webinars, and live events](quick-start-meetings-live-events.md)

@@ -5549,6 +5549,11 @@
       "source_path": "Teams/manage-apps-across-m365.md",
       "redirect_url": "/microsoftteams/manage-apps",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "Skype/SfBServer2019/skype-for-business-server-2019.yml",
+      "redirect_url": "/SkypeForBusiness/skype-for-business-server",
+      "redirect_document_id": false
     }
   ]
 }

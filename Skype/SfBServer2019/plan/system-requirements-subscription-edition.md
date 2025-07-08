@@ -22,7 +22,7 @@ description: "Summary: Prepare your Skype for Business Server Subscription Editi
 **Summary:** Prepare your Skype for Business Server Subscription Edition (SE) servers and domain infrastructure with the help of this article. Hardware, OS, databases, software, all the system requirements and recommendations, together with certificate DNS, file share, and Active Directory information are here to help ensure a successful installation and deployment of your server farm.
 
 > [!NOTE]
-> There are no changes to the system requirements for Skype for Business Server Subscription Edition. It adheres to the same prerequisites as Skype for Business Server 2019.  
+> The system requirements mentioned in this topic apply to both Skype for Business Server Subscription Edition and Skype for Business Server 2019.
 
 As you might expect, there are some preparations to make before you begin to deploy Skype for Business Server Subscription Edition (SE). This article walks you through planning for:
   
@@ -41,7 +41,6 @@ As you might expect, there are some preparations to make before you begin to dep
 - [Certificates](#certificates)
   
 - [File Share](#file-share)
-
 
 ## Hardware for Skype for Business Server SE
 

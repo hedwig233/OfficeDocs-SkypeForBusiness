@@ -4,7 +4,7 @@ author: mstonysmith
 ms.author: tonysmit
 manager: pamgreen
 ms.reviewer: dimehta
-ms.date: 10/21/2024
+ms.date: 7/10/2025
 ms.topic: best-practice
 audience: Admin
 ms.service: msteams
@@ -40,7 +40,9 @@ When using Conditional Access to secure Teams Rooms, consider the following best
 - Include all Microsoft 365 room resources accounts associated with Teams Rooms in one Microsoft Entra ID user group.
 - Use a naming standard for all Teams Rooms resource accounts. For example, the account names 'mtr-room1@contoso.com' and 'mtr-room2@contoso.com' both start with the prefix 'mtr-'. When account names are standardized, you can use dynamic groups in Microsoft Entra ID to automatically apply Conditional Access policies to all of these accounts at once. For more information on dynamic groups, see [Rules for dynamically populated groups membership](/azure/active-directory/enterprise-users/groups-dynamic-membership).
 - Exclude your Teams Rooms resource accounts from all existing Conditional Access policies and create a new policy specific to the resource accounts.
-- Do not require user interactive multifactor authentication (MFA). User interactive MFA isn't supported for Teams Rooms resource accounts since the resource accounts don't have a second device to approve the MFA request.
+- Do not require user interactive multifactor authentication (MFA). User interactive MFA isn't supported for Teams Rooms resource accounts since the resource accounts don't have a second device to approve the MFA request. Alternative method to achieve multifactor authentication for userless devices should be used which satisfy at least two of these: something you are, something you know, and something you have.
+- Teams device resource accounts should be excluded from any policies requiring action to be taken during the sign in flow such as user interactive MFA or adding authentication methods with self-service password reset, the prompt for registration is not supported on Teams devices and will block sign in.
+- For end-user personal accounts signing into a Teams device, ensure that the additional authenication methods are configured on a workstation or mobile device prior to attempting sign in on a Teams device.
 
 For a list of supported Conditional Access assignments for Teams Rooms, see [Supported Conditional Access policies](supported-ca-and-compliance-policies.md#supported-conditional-access-policies).
 

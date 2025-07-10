@@ -29,7 +29,7 @@ This article provides requirements and best practices for Conditional Access and
 ## Requirements
 
 - Teams Rooms resource accounts created, for more information, see [Create resource accounts for rooms and shared Teams devices](create-resource-account.md).
-- A Microsoft Entra ID P1 Service Plan is required to use Conditional Access. It's included in the Microsoft Teams Rooms license or Shared Device license.
+- A Microsoft Entra ID P1 Service Plan is required to use Conditional Access which is included in the Microsoft Teams Rooms Pro and Shared Device licenses.
 
 ## Teams Rooms Conditional Access best practices
 
@@ -40,9 +40,9 @@ When using Conditional Access to secure Teams Rooms, consider the following best
 - Include all Microsoft 365 room resources accounts associated with Teams Rooms in one Microsoft Entra ID user group.
 - Use a naming standard for all Teams Rooms resource accounts. For example, the account names 'mtr-room1@contoso.com' and 'mtr-room2@contoso.com' both start with the prefix 'mtr-'. When account names are standardized, you can use dynamic groups in Microsoft Entra ID to automatically apply Conditional Access policies to all of these accounts at once. For more information on dynamic groups, see [Rules for dynamically populated groups membership](/azure/active-directory/enterprise-users/groups-dynamic-membership).
 - Exclude your Teams Rooms resource accounts from all existing Conditional Access policies and create a new policy specific to the resource accounts.
-- Do not require user interactive multifactor authentication (MFA). User interactive MFA isn't supported for Teams Rooms resource accounts since the resource accounts don't have a second device to approve the MFA request. Alternative method to achieve multifactor authentication for userless devices should be used which satisfy at least two of these: something you are, something you know, and something you have.
-- Teams device resource accounts should be excluded from any policies requiring action to be taken during the sign in flow such as user interactive MFA or adding authentication methods with self-service password reset, the prompt for registration is not supported on Teams devices and will block sign in.
-- For end-user personal accounts signing into a Teams device, ensure that the additional authenication methods are configured on a workstation or mobile device prior to attempting sign in on a Teams device.
+- Don't require user interactive multifactor authentication (MFA). User interactive MFA isn't supported for Teams Rooms resource accounts since the resource accounts don't have a second device to approve the MFA request. Alternative methods to achieve multifactor authentication for userless devices should be used which satisfy at least two of these factors: something you are, something you know, and something you have.
+- Teams device resource accounts should be excluded from any policies requiring action to be taken during the sign in flow such as user interactive MFA or adding authentication methods with self-service password reset, the prompt for registration isn't supported on Teams devices and will block sign in.
+- For end-user personal accounts signing into a Teams device, ensure that the other authentication methods are configured on a workstation or mobile device prior to attempting sign in on a Teams device.
 
 For a list of supported Conditional Access assignments for Teams Rooms, see [Supported Conditional Access policies](supported-ca-and-compliance-policies.md#supported-conditional-access-policies).
 
@@ -71,7 +71,7 @@ For a list of supported Intune compliance policies for Teams Rooms, see [Support
 2. Require a minimum operating system version.
 3. Require that Microsoft Defender is running on Teams Rooms.
 
-This compliance policy should be assigned to the Teams Rooms devices and the Teams Rooms resource accounts. If the device doesn't meet these requirements, it won't be marked as compliant.
+This compliance policy should be assigned to the Teams Rooms devices and the Teams Rooms resource accounts. If the device doesn't meet these requirements, it will be marked non-compliant.
 
 ### Example Intune compliance policy for Teams Rooms on Android and Teams panels
 
@@ -79,4 +79,4 @@ This compliance policy should be assigned to the Teams Rooms devices and the Tea
 2. Block rooted devices.
 3. Require encryption of data storage on device
 
-This compliance policy should be assigned to the Teams Rooms devices and the Teams Rooms resource accounts.  If the device doesn't meet these requirements, it won't be marked as compliant.
+This compliance policy should be assigned to the Teams Rooms devices and the Teams Rooms resource accounts.  If the device doesn't meet these requirements, it will be marked non-compliant.

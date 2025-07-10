@@ -76,6 +76,8 @@ This section outlines the specific endpoints and firewall requirements for immer
 
 In general, the standard set of Microsoft 365 requirements outlined in [Microsoft Microsoft 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true) applies to all Teams Immersive event features. Configure your enterprise firewall settings to align with the standard set of Microsoft 365 requirements for __Microsoft Teams__, and __Microsoft 365 Common__ outlined in [Microsoft Microsoft 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true).
 
+## Endpoints and firewall
+
 As part of these requirements, ensure that you configure your firewall to enable traffic to *.cloud.microsoft.com, *.office.com, *.graph.microsoft.com, *.substrate.office.com, and *.microsoft.com over TCP 443, 80.
 
 Teams Immersive also requires the IP addresses and port ranges detailed in [Firewall configuration for Azure Communication Services](/azure/communication-services/concepts/voice-video-calling/network-requirements) for media capabilities such as audio and screen sharing. Without access to these endpoints, Teams Immersive might not work properly for users in your organization.

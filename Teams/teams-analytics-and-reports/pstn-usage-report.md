@@ -122,7 +122,6 @@ Per-country regulatory requirements specify data retention of detailed call reco
 | FI – Finland | 365 | 365 |
 | FR – France | 365 | 365 |
 | IT – Italy | 730 | 730 |
-| KR – South Korea | 365 | 365 |
 | MX – Mexico | 720 | 730 |
 | NL – Netherlands | 180 | 180 |
 | NO – Norway | 150 | 150 |

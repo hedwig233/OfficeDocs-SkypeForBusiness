@@ -3,7 +3,7 @@ title: Policy control overview for Microsoft Teams
 ms.author: danbrown
 author: DHB-MSFT
 manager: dansimp
-ms.topic: reference
+ms.topic: concept-article
 ms.service: msteams
 audience: admin
 ms.reviewer: majaisin

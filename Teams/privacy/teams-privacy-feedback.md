@@ -3,7 +3,7 @@ title: Microsoft Teams feedback and privacy
 ms.author: danbrown
 author: DHB-MSFT
 manager: dansimp
-ms.topic: reference
+ms.topic: concept-article
 ms.service: msteams
 audience: admin
 ms.reviewer: stbyer

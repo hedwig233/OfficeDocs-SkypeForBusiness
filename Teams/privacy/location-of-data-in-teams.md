@@ -3,7 +3,7 @@ title: Location of data in Microsoft Teams
 ms.author: danbrown
 author: DHB-MSFT
 manager: dansimp
-ms.topic: reference
+ms.topic: concept-article
 audience: admin
 ms.service: msteams
 ms.reviewer: kehardy

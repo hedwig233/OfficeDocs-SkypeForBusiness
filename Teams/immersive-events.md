@@ -131,6 +131,26 @@ For admins seeking to limit specific users or groups from creating immersive eve
 
 Alternatively, if using PowerShell Module 7.1.0, the event policy "ImmersiveEvents" should be set to "Enabled." Syntax is New-CsTeamsEventsPolicy.
 
+## Turn on Teams Public Preview to use Immersive events
+ 
+To use Immersive Events in Microsoft Teams, both organizers and attendees must be on the Public Preview build. Without turning on Public Preview, users can only access Generally Available features and can't receive early access to new features.
+ 
+### Steps for your users to join Public Preview
+
+1. Your users can send you a request to join the Public Preview program. To allow them to join, you must first set up a **Teams Update policy**. To learn more about managing the Update policy, see [Public preview in Microsoft Teams](public-preview-doc-updates.md#set-the-update-policy).
+2. Once the update policy is set, users can open the Teams app and select **Settings and more (...)** next to their user profile.
+3. Select **Settings** > **About Teams**.
+4. Under **Early access**, select the **Public preview** checkbox.
+5. They should confirm that they have either a Teams Premium or Mesh Trial license.
+6. On their PC or Mac, select **Calendar**, toggle **New Calendar** to **Off**.
+7. Now, they can join or customize an event via Teams desktop on PC or Mac. 
+
+## Platform and feature support
+
+- Immersive events in Teams is available only on PC and MAC, not on web.
+- Users can still schedule on web, but to join the immersive event, they must use a PC/MAC.
+- Quest is not yet supported for Immersive events
+
 ## Related topics
 
 - [Get started with immersive events in Microsoft Teams](https://support.microsoft.com/topic/a69189df-39c7-478f-a335-0aef7c4e5781)

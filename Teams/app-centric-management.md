@@ -167,9 +167,10 @@ The Org-wide app settings apply to:
 
 * All the new apps made available in Teams app store.
 * All the existing apps that you didn't actively manage, that is, you didn't change the availability of.
-
-:::image type="content" source="media/acm-org-wide-app-settings.png" alt-text="Screenshot showing the org-wide app settings in an organization that uses app centric management feature.":::
-
+> [!NOTE]
+> The legacy setting for third-party apps isn't the same as the previous setting—confirm the version before proceeding.
+:::image type="content" source="media/pre-acm-third-party-app.jpg" alt-text="Screenshot showing the pre acm third-party org-wide app settings in an organization.":::
+:::image type="content" source="media/with-acm-third-party-app.jpg" alt-text="Screenshot showing the with acm third-party org-wide app settings in an organization.":::
 Pre app centric management, org-wide settings included two separate controls for third-party apps; one for managing availability of new apps in bulk, and another for existing apps.
 
 Post app centric management migration, these have been unified into a single control that governs bulk availability for both new and existing third-party apps. When you toggle ON, all apps are enabled and when you toggle OFF, all apps are disabled. This control does not override app-level configurations.

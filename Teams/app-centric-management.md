@@ -169,9 +169,12 @@ The Org-wide app settings apply to:
 * All the existing apps that you didn't actively manage, that is, you didn't change the availability of.
 > [!NOTE]
 > The legacy setting for third-party apps isn't the same as the previous setting—confirm the version before proceeding.
-
+ 
+**Pre-ACM**
 :::image type="content" source="media/pre-acm-third-party-app.jpg" alt-text="Screenshot showing the pre acm third-party org-wide app settings in an organization.":::
+**With-ACM**
 :::image type="content" source="media/with-acm-third-party-app.jpg" alt-text="Screenshot showing the with acm third-party org-wide app settings in an organization.":::
+
 Pre app centric management, org-wide settings included two separate controls for third-party apps; one for managing availability of new apps in bulk, and another for existing apps.
 
 Post app centric management migration, these have been unified into a single control that governs bulk availability for both new and existing third-party apps. When you toggle ON, all apps are enabled and when you toggle OFF, all apps are disabled. This control does not override app-level configurations.

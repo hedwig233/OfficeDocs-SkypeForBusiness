@@ -33,6 +33,12 @@ To view feature updates for Microsoft Teams Rooms, go to:
 
 ## [Teams panels](#tab/panels)
 
+## July 2025
+
+**Applies to:** *Teams app version: 1449/1.0.97.2025102203*
+
+- Fixes for authentication. 
+
 ## April 24, 2025
 
 **Applies to:** *Teams app version: 1449/1.0.97.2025086303*

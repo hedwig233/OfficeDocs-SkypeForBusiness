@@ -54,9 +54,9 @@ This page for admins covers the required tasks and suggests functional roles tha
 
 1. [Work with stakeholders to communicate change](#work-with-stakeholders-that-communicate-change)
 
-1. [(optional) Allow guests to join immersive events](#allow-guests-to-join-immersive-events)
+1. (optional) [Allow guests to join immersive events](#allow-guests-to-join-immersive-events)
 
-1. [(optional) Assign event policies to turn off Immersive events for users and groups](#turn-immersive-events-on-or-off)
+1. (optional) [Assign event policies to turn off Immersive events for users and groups](#manage-who-can-schedule-immersive-events-through-powershell)
 
 For details on the Teams Immersive events experience for your users, see [Get started with immersive events in Microsoft Teams](https://support.microsoft.com/topic/a69189df-39c7-478f-a335-0aef7c4e5781).
 

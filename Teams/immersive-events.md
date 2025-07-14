@@ -18,7 +18,7 @@ ms.subservice: meetings
 > [!NOTE]
 > This feature is currently in Public Preview.
 
-Teams Immersive lets you create, customize, and host immersive 3D events in Microsoft Teams.
+Teams Immersive lets your users create, customize, and host immersive 3D events in Microsoft Teams. With Teams Immersive, users can:
 
 - Schedule Teams Immersive events from Teams calendar
 
@@ -26,23 +26,37 @@ Teams Immersive lets you create, customize, and host immersive 3D events in Micr
 
 - Design 3D spaces and schedule immersive events for PC or Mac – no code or technical expertise required.
 
-This page for admins covers the required tasks and suggests functional roles that you might need to know about the rollout. You should follow your organization's standard rollout process, including change and configuration management.
+## Turn on Teams Public Preview to use Immersive events
 
-1. Prepare your organization
+To use Immersive Events in Microsoft Teams, both organizers and attendees must be on the Public Preview build. Without Public Preview, users can only access Generally Available features and can't receive early access to new features.
 
-1. Review minimum hardware requirements
+### Steps for your users to join Public Preview
 
-1. Assign licenses to event organizers (only organizers require license)
+1. Your users can send you a request to join the Public Preview program. To allow them to join, you must first set up a __Teams Update policy__. To learn more about managing the Update policy, see [Public preview in Microsoft Teams](public-preview-doc-updates.md#set-the-update-policy).
+2. Once you set the __Teams Update policy__, users can open the Teams app and select __Settings and more (...)__ next to their user profile.
+3. Select __Settings__ > __About Teams__.
+4. Under __Early access__, select the __Public preview__ checkbox.
+5. They should confirm that they have either a Teams Premium or Mesh Trial license.
+6. On their PC or Mac, select __Calendar__, toggle __New Calendar__ to __Off__.
+7. Now, they can join or customize an event via Teams desktop on PC or Mac.
 
-1. Configure endpoints and firewalls
+This page for admins covers the required tasks and suggests functional roles that you might need to know about the rollout. You should follow your organization's standard rollout process, including change and configuration management. The following steps are outlined in this article:
 
-1. Check your bandwidth requirements
+1. [Prepare your organization](#prepare-your-organization)
 
-1. Work with stakeholders to communicate change
+1. [Review minimum hardware requirements](#hardware-requirements)
 
-1. (optional) Allow guests to join immersive events
+1. [Assign licenses to event organizers (only organizers require a license)](#license-requirements)
 
-1. (optional) Assign event policies to turn off Immersive events for users and groups
+1. [Configure endpoints and firewalls](#endpoints-and-firewall)
+
+1. [Check your bandwidth requirements](#bandwidth-requirements)
+
+1. [Work with stakeholders to communicate change](#work-with-stakeholders-that-communicate-change)
+
+1. [(optional) Allow guests to join immersive events](#allow-guests-to-join-immersive-events)
+
+1. [(optional) Assign event policies to turn off Immersive events for users and groups](#turn-immersive-events-on-or-off)
 
 For details on the Teams Immersive events experience for your users, see [Get started with immersive events in Microsoft Teams](https://support.microsoft.com/topic/a69189df-39c7-478f-a335-0aef7c4e5781).
 
@@ -123,33 +137,57 @@ To add a guest, follow the [step-by-step guidance](https://support.microsoft.com
 > [!NOTE]
 > Guests can be invited as attendees. Guests can't be organizers or co-organizers of Immersive events. External (cross-tenant) and anonymous users aren't currently supported.
 
-## Turn immersive events on or off
+## Manage who can schedule immersive events through PowerShell
 
-Teams Immersive is on by default, meaning anyone with a Teams Premium or Mesh Trial license can schedule an immersive event.
+You can use PowerShell to manage who can schedule immersive events in your organization.
 
-For admins seeking to limit specific users or groups from creating immersive events, navigate to Teams Admin Center and set Event Policies to turn off Immersive events policy.
+To manage who can schedule immersive events, use the __`-ImmersiveEvents`__ parameter within the PowerShell [__CsTeamsEventsPolicy__](/powershell/module/teams/set-csteamseventspolicy) cmdlet.
 
-Alternatively, if using PowerShell Module 7.1.0, the event policy "ImmersiveEvents" should be set to "Enabled." Syntax is New-CsTeamsEventsPolicy.
+### Turn off immersive events
 
-## Turn on Teams Public Preview to use Immersive events
- 
-To use Immersive Events in Microsoft Teams, both organizers and attendees must be on the Public Preview build. Without turning on Public Preview, users can only access Generally Available features and can't receive early access to new features.
- 
-### Steps for your users to join Public Preview
+To prevent organizers with this policy from creating immersive, use the following script:
 
-1. Your users can send you a request to join the Public Preview program. To allow them to join, you must first set up a **Teams Update policy**. To learn more about managing the Update policy, see [Public preview in Microsoft Teams](public-preview-doc-updates.md#set-the-update-policy).
-2. Once the update policy is set, users can open the Teams app and select **Settings and more (...)** next to their user profile.
-3. Select **Settings** > **About Teams**.
-4. Under **Early access**, select the **Public preview** checkbox.
-5. They should confirm that they have either a Teams Premium or Mesh Trial license.
-6. On their PC or Mac, select **Calendar**, toggle **New Calendar** to **Off**.
-7. Now, they can join or customize an event via Teams desktop on PC or Mac. 
+```powershell
+Set-CsTeamsEventsPolicy -Identity <policy name> -ImmersiveEvents Disabled
+```
 
-## Platform and feature support
+### Turn on immersive events
+
+To allow organizers with this policy to create immersive events, use the following script:
+
+```powershell
+Set-CsTeamsEventsPolicy -Identity <policy name> -ImmersiveEvents Enabled
+```
+
+Tp learn more about __`-ImmersiveEvents`__  policies in PowerShell, see  [Set-CsTeamsEventsPolicy](/powershell/module/teams/set-csteamseventspolicy).
+
+## Platform support
 
 - Immersive events in Teams is available only on PC and MAC, not on web.
 - Users can still schedule on web, but to join the immersive event, they must use a PC/MAC.
 - Quest is not yet supported for Immersive events
+
+## Endpoint availability
+
+- Supported: Teams app on PC and Mac (*app on Meta Quest headset coming soon)
+
+- Not supported: Teams on Web, Teams on Mobile, VDI (Virtual Machine) support, Microsoft Teams Rooms, Dial-In
+
+## User type support
+
+- Supported: Users in your organization (same tenant) and guest users
+
+- Not supported: Cross-tenant (external) and anonymous users
+
+## Known limitations
+
+- Immersive events aren't currently available on Meta Quest headset (Quest app coming soon).
+
+- In an immersive customization session, there is no way to play a video or audio for preview. Video and audio objects can only be played during the live event.
+
+- The user doing a screen share doesn't see the screenshare content on the screen share object in the event. However, the content appears for everyone else in the event.
+
+- Screen share doesn't include content audio. As a workaround, to play video during presentations, use a video object.
 
 ## Related topics
 

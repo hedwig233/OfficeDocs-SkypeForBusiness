@@ -59,10 +59,30 @@ Auto attendants can redirect calls, based on callers' input, to one of the follo
 - May 20
   - [Call priorities](aa-cq-call-priorities.md) can be set when transferring calls to resource accounts assigned to call queues or directly to call queues.
 
-- December 11
-  - [Nested Auto attendants and Call queues](./plan-auto-attendant-call-queue.md#nested-auto-attendants-and-call-queues) that no longer require a resource account and associated licensing are now supported in Teams admin center.
-
 ## Steps to create an Auto attendant
+
+To set up an Auto attendant, in the [Teams admin center](https://admin.teams.microsoft.com/), expand **Voice**, select **Auto attendants**, and then select **Add**.
+
+### Express Setup
+
+Organizations with simpler call routing needs may not require the full range of configurations offered by the classic setup. Express Setup provides a fast and effective way to create basic Auto attendants without navigating complex options.
+
+If you need more advanced configuration, click “Classic Setup” to switch to the full Auto attendant creation wizard.
+
+#### Step 1: General info for Auto attendant
+
+1. Type a name for the Auto attendant.
+1. Select the time zone that will be used to determine the after hours schedule.
+1. Select the language for system prompts and text to speech greetings. 
+1. Select how the Auto attendant will receive calls. 
+
+#### Step 2: Select call routing options
+
+1. Choose a destination to redirect the call to or the menu option to play to the caller.
+
+Once you select your call routing options, select the **Submit** button at the bottom of the **Set up Auto attendant** wizard page.
+
+### Classic Setup
 
 The steps to add an Auto attendant are:
 
@@ -79,8 +99,6 @@ The steps outlined in the article create Auto attendants using the Teams admin c
 ## [Step 1: General info](#tab/general-info)
 
 ## Step 1: Set the Auto attendant's general information
-
-To set up an Auto attendant, in the [Teams admin center](https://admin.teams.microsoft.com/), expand **Voice**, select **Auto attendants**, and then select **Add**.
 
 1. Type a name for the Auto attendant in the box at the top.
 

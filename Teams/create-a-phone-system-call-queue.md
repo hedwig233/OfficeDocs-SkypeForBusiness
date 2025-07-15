@@ -57,14 +57,10 @@ Organizations with simpler call routing needs may not require the full range of 
 
 If you need more advanced configuration, click “Classic Setup” to switch to the full Call queue creation wizard.
 
-#### [Step 1: General info](#tab/general-info-wizard)
-
 #### Step 1: General info for Call queue
 
 1. Type a name for the Call queue and select the language for system prompts and text to speech greetings.
 1. Select how the Call queue will receive calls. 
-
-#### [Step 2: Call answering](#tab/call-answering-wizard)
 
 #### Step 2: Select who can answer the incoming calls
 

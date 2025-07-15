@@ -171,7 +171,6 @@ The Org-wide app settings apply to:
 
 > [!NOTE]
 >* Before app-centric management migration, org-wide settings had two separate controls for third-party apps—one for bulk-managing new apps and another for existing ones
-
 >* After migrating to app-centric management, a single control now manages bulk availability for both new and existing third-party apps. Toggle on to enable all new and existing third-party apps across the tenant; toggle off to disable all. App-level settings stay intact.
  
 **Pre-ACM**

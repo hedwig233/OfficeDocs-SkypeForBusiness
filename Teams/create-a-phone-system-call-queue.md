@@ -62,6 +62,8 @@ If you need more advanced configuration, click “Classic Setup” to switch to 
 1. Type a name for the Call queue and select the language for system prompts and text to speech greetings.
 1. Select how the Call queue will receive calls. 
 
+Once you've set your Call queue's general info, select Next.
+
 #### Step 2: Select who can answer the incoming calls
 
 1. Select the team and channel or the users and groups that will answer the incoming calls.

@@ -67,7 +67,7 @@ New-ManagementRole -Name "TeamsSchedulerRole" -Parent "UserApplication" -DomainC
 Remove all cmdlets from the new role except [GetDelegate](/exchange/client-developer/web-service-reference/getdelegate), as this is the only command required by the scheduling (delegation) service:
 
 ```powershell
-Get-ManagementRoleEntry "TeamsSchedulerRole\*" -DomainController <DomainControllerFQDN> | Where-Object { $_.Name -ne "GetDelegate" } | Remove-ManagementRoleEntry -DomainController <DomainControllerFQDN>
+Get-ManagementRoleEntry "TeamsSchedulerRole\*" -DomainController <DomainControllerFQDN> | Where-Object { $_.Name -ne "GetDelegate" } | ForEach-Object { Remove-ManagementRoleEntry -Identity "TeamsSchedulerRole\$($_.Name)" -DomainController <DomainControllerFQDN> -Confirm:$false }
 ```
  
 Assign the `TeamsSchedulerRole` role to the new account:

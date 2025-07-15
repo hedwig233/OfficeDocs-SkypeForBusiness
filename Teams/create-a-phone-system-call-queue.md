@@ -166,7 +166,7 @@ After you select a language, select the **Next** button at the bottom of the **A
 
 ###### PowerShell Examples
 
-####### Example 1
+###### Example 1
 
 In the following example, this script assigns a calling line ID and sets a 45-second service level threshold:
 
@@ -175,7 +175,7 @@ New-CsCallQueue -Name "Call Queue Name" -OboResourceAccountIds @("Resource Accou
 ````
 *Note: This example doesn't contain the minimum number of parameters required to create a new call queue.*
 
-####### Example 2
+###### Example 2
 
 In the following example, this script modifies an existing call queue and uses the Set-CsCallQueue cmdlet:
 
@@ -225,7 +225,7 @@ After you select a greeting and on-hold music, select the **Next** button at the
 
 ###### PowerShell Examples
 
-####### Example 1
+###### Example 1
 
 In the following example, this script uses a text to speech greeting and uses the default music on hold file:
 
@@ -240,7 +240,7 @@ To modify an existing call queue, use the Set-CsCallQueue cmdlet, as shown in th
 Set-CsCallQueue -Identity <Call Queue GUID> -WelcomeTextToSpeechPrompt "Welcome to the call queue " -UseDefaultMusicOnHold $true
 ````
 
-####### Example 2
+###### Example 2
 
 In the following example, this script uses an audio file greeting and uses an audio file for music on hold:
 
@@ -355,7 +355,7 @@ Keep the following conditions in mind:
 
 ###### PowerShell Examples
 
-####### Example 1
+###### Example 1
 
 To assign individual users to a call queue, use the default music on hold, and disable conference mode, see the following example:
 
@@ -370,7 +370,7 @@ To modify an existing call queue, use the Set-CsCallQueue cmdlet, as shown in th
 Set-CsCallQueue -Identity <Call Queue GUID> -User @("User 01 GUID", "User 02 GUID") -UseDefaultMusicOnHold $true -ConferenceMode $false
 ````
 
-####### Example 2
+###### Example 2
 
 To assign distribution lists to a call queue, use an audio file for music on hold, and enable conference mode, see the following example:
 
@@ -386,7 +386,7 @@ Set-CsCallQueue -Identity <Call Queue GUID> -DistributionLists @("Distribution L
 ````
 See [Import-CsOnlineAudioFile](/powershell/module/teams/import-csonlineaudiofile) to get the `<FILE ID>` information.
 
-####### Example 3
+###### Example 3
 
 To assign a Teams channel to a call queue, use the default music on hold, and enable conference mode, see the following example:
 
@@ -480,7 +480,7 @@ Once you select your agent call routing options, select the **Next** button at t
 
 ###### PowerShell Examples
 
-####### Example 1
+###### Example 1
 
 To use Attendant Routing, disable Presence Based Routing, don't allow agents to opt-out, and set the agent alert time to 20 seconds, see the following example:
 
@@ -495,7 +495,7 @@ To modify an existing call queue, use the Set-CsCallQueue cmdlet, as shown in th
 Set-CsCallQueue -Identity <Call Queue GUID> -RoutingMethod Attendant -PresenceBasedRouting $false -AllowOptOut $false -AgentAlertTime 20
 ````
 
-####### Example 2
+###### Example 2
 
 To use Round Robin, enable Presence Based Routing, allow agents to opt-out, and set the agent alert time to 60 seconds, use the New-CsCallQueue cmdlet, as shown in the following example:
 
@@ -588,7 +588,7 @@ Once you select your callback options, select the **Next** button at the bottom 
 
 ###### Callback PowerShell Examples
 
-####### Example 1
+###### Example 1
 
 To make calls become eligible after waiting 60 seconds, see the following example:
 
@@ -602,7 +602,7 @@ To modify an existing call queue, use the Set-CsCallQueue cmdlet, as shown in th
 Set-CsCallQueue -Identity <Call Queue GUID> -IsCallbackEnabled $true -CallbackRequestDtmf "Tone1" -WaitTimeBeforeOfferingCallbackInSecond 60 -CallbackOfferTextToSpeechPrompt "If you would like to have a callback when an agent becomes available, press 1" -CallbackEmailNotificationTarget <Team or DL GUID>
 ````
 
-####### Example 2
+###### Example 2
 
 To make calls become eligible for callback when there are more than 50 calls in queue, see the following example:
 
@@ -617,7 +617,7 @@ Set-CsCallQueue -Identity <Call Queue GUID> -IsCallbackEnabled $true -CallbackRe
  "Tone1" -NumberOfCallsInQueueBeforeOfferingCallback 50 -CallbackOfferTextToSpeechPrompt "If you would like to have a callback when an agent becomes available, press 1" -CallbackEmailNotificationTarget <Team or DL GUID>
 ````
 
-####### Example 3
+###### Example 3
 
 To make calls become eligible for callback when there are two times more calls than agents, see the following example:
 
@@ -632,7 +632,7 @@ Set-CsCallQueue -Identity <Call Queue GUID> -IsCallbackEnabled $true -CallbackRe
  "Tone1" -CallToAgentRatioThresholdBeforeOfferingCallback 2 -CallbackOfferTextToSpeechPrompt "If you would like to have a callback when an agent becomes available, press 1" -CallbackEmailNotificationTarget <Team or DL GUID>
 ````
 
-####### Example 4
+###### Example 4
 
 To make calls become eligible for callback after waiting 60 seconds or when there are more than 50 calls in queue, see the following example:
 
@@ -731,7 +731,7 @@ Once you select your call overflow, call timeout, and no agents handling options
 
 ###### PowerShell Examples
 
-####### Example 1
+###### Example 1
 
 While creating a new call queue, configure the Overflow to an Auto attendant or Call queue directly, as shown in the following example:
 
@@ -746,7 +746,7 @@ To modify an existing call queue, use the Set-CsCallQueue cmdlet, as shown in th
 Set-CsCallQueue -Identity <CallQueue GUID> -OverflowAction Forward -OverflowActionTarget <Auto Attendant or Call Queue GUID>
 ````
 
-####### Example 2
+###### Example 2
 
 While creating a new call queue, configure Timeout to an Auto attendant or Call queue via a Resource account, as shown in the following example:
 
@@ -761,7 +761,7 @@ To modify an existing call queue, use the Set-CsCallQueue cmdlet, as shown in th
 Set-CsCallQueue -Identity <CallQueue GUID> -TimeoutAction Forward -TimeoutActionTarget <Resource Account GUID>
 ````
 
-####### Example 3
+###### Example 3
 
 While creating a new call queue, set No agents logged in to an external phone number, as shown in the following example:
 
@@ -840,7 +840,7 @@ Once you select your authorized users, select the **Submit** button at the botto
 
 ###### PowerShell Examples
 
-####### Example 1
+###### Example 1
 
 To add an authorized user to an existing call queue, see the following example:
 
@@ -859,7 +859,7 @@ Hidden authorized users aren't visible to Queues app users.
 |:---------------------------------------|:------------------------------------------|
 | [-HideAuthorizedUsers](/powershell/module/teams/new-cscallqueue#-hideauthorizedusers) | [-HideAuthorizedUsers](/powershell/module/teams/set-cscallqueue#-hideauthorizedusers) |
 
-####### Example 1
+###### Example 1
 
 To hide an authorized user in a call queue, see the following example:
 

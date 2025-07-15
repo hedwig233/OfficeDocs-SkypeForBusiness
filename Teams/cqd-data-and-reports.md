@@ -38,9 +38,9 @@ You can access call quality data by several different avenues. Pick the one that
 
 |&nbsp;|&nbsp;|
 |---|---|
+|CQD in Power BI|Use direct queries to view your CQD data in Power BI using [customizable Power BI templates](CQD-Power-BI-query-templates.md) and the CQD Quality of Experience Report (QER). The CQD Power BI templates are regularly updated to support new Teams features, calling scenarios, and the latest telemetry we have available in CQD.|
 |Teams admin center [(https://admin.teams.microsoft.com)](https://admin.teams.microsoft.com)|Call quality data is included on the **Users** page in the Teams admin center, showing the most common data you need in an easy-to-read format. You can't customize the data that you find under **Users**.|
 |CQD portal [(https://cqd.teams.microsoft.com)](https://cqd.teams.microsoft.com)|Robust summary and detailed reports that meet most needs, with drill-through filtering. You can also customize reports in the CQD portal. <br><br>Get two [CQD report templates](#import-the-cqd-report-templates) to help you analyze data in the CQD portal.|
-|Power BI|Use direct queries to view your CQD data in Power BI using [customizable Power BI templates](CQD-Power-BI-query-templates.md). The CQD Power BI templates are regularly updated to support new Teams features, calling scenarios, and the latest telemetry we have available in CQD.|
 |Graph API|Access raw call quality data yourself using the [Graph API](/graph/api/resources/callrecords-api-overview). Using Graph API is the most complex method, but it gives you the most control and flexibility in analyzing your call quality data. For example, if you need to join it with other data for your organization, you can use the Graph API to create a data model and incorporate call quality data. CallRecords Graph API might not contain all of the fields that are available in CQD and naming conventions might differ between the two products. |
 
 ## Import the CQD report templates

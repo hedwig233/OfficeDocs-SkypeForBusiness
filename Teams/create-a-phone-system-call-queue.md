@@ -68,7 +68,7 @@ If you need more advanced configuration, click “Classic Setup” to switch to 
    
    Review the [prerequisites for adding agents to a Call queue](plan-auto-attendant-call-queue.md#prerequisites).
 
-Once you select who can answer the incomfing calls, **Submit** button at the bottom of the **Set up Call Queue** wizard page.
+Once you select who can answer the incomfing calls, select **Submit** button at the bottom of the **Set up Call Queue** wizard page.
 
 ### Classic Setup
 

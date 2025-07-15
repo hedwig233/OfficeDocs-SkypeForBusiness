@@ -96,11 +96,9 @@ The steps to add an Auto attendant are:
 
 The steps outlined in the article create Auto attendants using the Teams admin center. For instructions on creating Auto attendants using PowerShell, see [Creating Auto attendants with PowerShell cmdlets](create-a-phone-system-auto-attendant-via-cmdlets.md).
 
-## Follow these steps to set up your Auto attendant
+#### [Step 1: General info](#tab/general-info)
 
-## [Step 1: General info](#tab/general-info)
-
-## Step 1: Set the Auto attendant's general information
+#### Step 1: Set the Auto attendant's general information
 
 1. Type a name for the Auto attendant in the box at the top.
 
@@ -117,25 +115,25 @@ The steps outlined in the article create Auto attendants using the Teams admin c
 
 Once you've set your Auto attendant's general info, select **Next**.
 
-## [Step 2: Call flows](#tab/call-flow)
+#### [Step 2: Call flows](#tab/call-flow)
 
-## Step 2: Call flows
+#### Step 2: Call flows
 
-## Step 2.1: Set up the basic call flow
+##### Step 2.1: Set up the basic call flow
 
-### Set a greeting
+###### Set a greeting
 
 - If you select **Play an audio file** you can use the **Upload file** button to upload a recorded greeting message saved as audio in .WAV, .MP3, or .WMA format. The recording can be no larger than 5 MB.
 
 - If you select **Type a greeting message**, the system reads the text that you enter (up to 1,000 characters) when the Auto attendant answers a call.
 
-### Route the call
+###### Route the call
 
 - If you select **Disconnect**, the Auto attendant hangs up the call.
 - If you select **Redirect call**, you can choose one of the call routing destinations.
 - If you select **Play menu options**, you can choose to **Play an audio file** or **Type in a greeting message** and then choose between menu options and directory search.
 
-#### Play menu options
+###### Play menu options
 
 For dialing options, assign the 0-9, \* (asterisk) and \# (pound) keys on the telephone keypad to one of the call routing destinations.
 
@@ -151,7 +149,7 @@ For each menu option, specify the following settings:
 
 - **Redirect to** - the call routing destination used when callers choose this option. When redirecting to an Auto attendant or Call queue, you can choose to redirect to the Auto attendant or Call queue directly or to the resource account associated with the Auto attendant or Call queue. For more information, see [Nested Auto attendants and Call queues](./plan-auto-attendant-call-queue.md#nested-auto-attendants-and-call-queues).
 
-### Directory search
+###### Directory search
 
 If you assign dial keys to destinations, we recommend that you choose **None** for **Directory search**. Dial keys are matched before directory searches are performed. If a caller starts to enter a name or extension using dial keys that are assigned to specific destinations, they're routed to that destination before they finish entering the name or extension. We recommend that you create a separate Auto attendant for directory search and have your main Auto attendant link to it with a dial key.
 
@@ -167,7 +165,7 @@ For more information, see the [Dial and voice reference](dial-voice-reference.md
 
 Once you've set your basic call flow options, select **Next**.
 
-## Step 2.2: Set up call flow for after hours (optional)
+##### Step 2.2: Set up call flow for after hours (optional)
 
 Business hours can be set for each Auto attendant.
 
@@ -185,7 +183,7 @@ If you want separate call routing for after-hours callers, then specify your bus
 
 Once you've added your after hours call flow, select **Next**.
 
-## Step 2.3: Set up call flows for holidays (optional)
+##### Step 2.3: Set up call flows for holidays (optional)
 
 Your Auto attendant can have a call flow for each [Holiday you've set up](set-up-holidays-in-teams.md). You can add up to 20 holiday sets to each Auto attendant. Each holiday set can contain up to 50 unique date ranges. Holiday dates must be unique across all holiday sets being added to the Auto attendant.
 
@@ -208,9 +206,9 @@ Repeat the procedure as needed for each additional holiday.
 
 Once you've added all your holiday hours, select **Next**.
 
-## [Step 3: Dial scope](#tab/dial-scope)
+#### [Step 3: Dial scope](#tab/dial-scope)
 
-## Step 3: Set up dial scope (optional)
+#### Step 3: Set up dial scope (optional)
 
 The *dial scope* defines which users are available in the directory when a caller uses dial-by-name or dial-by-extension. The default of **All online users** includes all users in your organization that are Online users or hosted on-premises using Skype for Business Server.
 
@@ -223,9 +221,9 @@ If a user is in both lists or if they're hidden from the Exchange GAL, they're e
 
 Once you've selected your **Dial scope** options, select **Next**.
 
-## [Step 4: Resource accounts](#tab/resource-accounts)
+#### [Step 4: Resource accounts](#tab/resource-accounts)
 
-## Step 4: Assign resource accounts
+#### Step 4: Assign resource accounts
 
 Before you can create and manage resource accounts, you must do the following:
 
@@ -241,9 +239,9 @@ For details on how to create resource accounts and ready them for use with auto 
 
 Once you've added resource accounts, select **Next**.
 
-## [Step 5: Authorized users](#tab/authorized-users)
+#### [Step 5: Authorized users](#tab/authorized-users)
 
-## Step 5: Authorized users
+#### Step 5: Authorized users
 
 **Authorized users** specifies the users who are authorized to make changes to this Auto attendant. The capabilities that the users have are determined based on the [Teams voice applications policy](./manage-voice-applications-policies.md) that is assigned to the user.
 

@@ -76,6 +76,8 @@ If you need more advanced configuration, click “Classic Setup” to switch to 
 1. Select the language for system prompts and text to speech greetings. 
 1. Select how the Auto attendant will receive calls. 
 
+Once you've set your Auto attendant's general info, select Next.
+
 #### Step 2: Select call routing options
 
 1. Choose a destination to redirect the call to or the menu option to play to the caller.

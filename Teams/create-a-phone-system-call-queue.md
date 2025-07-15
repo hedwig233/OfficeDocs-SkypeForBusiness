@@ -47,10 +47,34 @@ Before following the procedures in this article, make sure you read [Plan for Te
 - May 20
   - [Call priorities](aa-cq-call-priorities.md) for call queues allows you to prioritize one type of call over others, controlling which call type gets presented to agents first.
     
-- December 11
-  - [Nested Auto attendants and Call queues](./plan-auto-attendant-call-queue.md#nested-auto-attendants-and-call-queues) no longer require a resource account and associated licensing are now supported in the Teams admin center.
-
 ## Steps to create a Call queue
+
+To set up a Call queue, in the [Teams admin center](https://go.microsoft.com/fwlink/p/?linkid=2066851), expand **Voice**, select **Call queues**, and then select **Add**.
+
+### Express Setup
+
+Organizations with simpler call routing needs may not require the full range of configurations offered by the classic setup. Express Setup provides a fast and effective way to create basic Call queues without navigating complex options.
+
+If you need more advanced configuration, click “Classic Setup” to switch to the full Call queue creation wizard.
+
+#### [Step 1: General info](#tab/general-info-wizard)
+
+#### Step 1: General info for Call queue
+
+1. Type a name for the Call queue and select the language for system prompts and text to speech greetings.
+1. Select how the Call queue will receive calls. 
+
+#### [Step 2: Call answering](#tab/call-answering-wizard)
+
+#### Step 2: Select who can answer the incoming calls
+
+1. Select the team and channel or the users and groups that will answer the incoming calls.
+   
+   Review the [prerequisites for adding agents to a Call queue](plan-auto-attendant-call-queue.md#prerequisites).
+
+Once you select who can answer the incomfing calls, **Submit** button at the bottom of the **Set up Call Queue** wizard page.
+
+### Classic Setup
 
 The steps to set up a Call queue includes:
 
@@ -64,17 +88,15 @@ The steps to set up a Call queue includes:
 
 The steps outlined in the article create Call queues using the Teams admin center. For instructions to create Call queues using PowerShell, see [Creating Call queues with PowerShell cmdlets](create-a-phone-system-call-queue-via-cmdlets.md).
 
-## Follow these steps to set up your Call queue
+#### [Step 1: General info](#tab/general-info)
 
-## [Step 1: General info](#tab/general-info)
-
-## Step 1: Set up general information
+#### Step 1: Set up general information
 
 To set up a Call queue, in the [Teams admin center](https://go.microsoft.com/fwlink/p/?linkid=2066851), expand **Voice**, select **Call queues**, and then select **Add**.
 
 Type a name for the Call queue in the box at the top.
 
-### Add an existing resource account
+##### Add an existing resource account
 
 Before you can create and manage resource accounts, you must do the following actions:
 
@@ -90,7 +112,7 @@ For details on how to create resource accounts and ready them for use with auto 
 
 Agents see the resource account name or call queue name when they receive an incoming call.
 
-### Assign a calling ID (optional)
+##### Assign a calling ID (optional)
 
 Assign outbound caller ID numbers for the agents by specifying one or more resource accounts with a phone number. Agents can select which outbound caller ID number to use with each outbound call they make. Within the Calls App, agents can use their Call Queue (CQ) / Auto Attendant (AA) number or their own personal Direct InWard Dial (DID).
 
@@ -114,7 +136,7 @@ After you create this new resource account for calling ID, you still need to:
 - Assign a Microsoft Calling Plan license, assign an Operator Connect phone number, or assign an online voice routing policy for Direct Routing.
 - Assign the [phone number to the resource account](manage-resource-accounts.md#assign-a-phone-number), if you're using Microsoft Calling Plan.
 
-### Set the Service level threshold
+##### Set the Service level threshold
 
 Service level measures the efficiency and responsiveness to incoming customer requests within a specific Service level threshold.
 
@@ -125,7 +147,7 @@ You can set the threshold target to any value from 0 to 40 minutes (2,400 second
 >
 > Changing the service level threshold during business hours causes inaccurate service level calculations for the whole day because previous calls won't be reassessed with the new target.
 
-### Set the Call queue language
+##### Set the Call queue language
 
 Choose a [supported language](create-a-phone-system-call-queue-languages.md).
 
@@ -133,7 +155,7 @@ This language is used for system-generated voice prompts and voicemail transcrip
 
 After you select a language, select the **Next** button at the bottom of the **Add a Call queue** page.
 
-### General via PowerShell
+##### General via PowerShell
 
 <!-- markdownlint-disable MD020 -->
 <details>
@@ -146,9 +168,9 @@ After you select a language, select the **Next** button at the bottom of the **A
 | [-ServiceLevelThresholdResponseTimeInSecond](/powershell/module/teams/new-cscallqueue#-ServiceLevelThresholdResponseTimeInSecond) | [-ServiceLevelThresholdResponseTimeInSecond](/powershell/module/teams/set-cscallqueue#-ServiceLevelThresholdResponseTimeInSecond) |
 | [-LanguageId](/powershell/module/teams/new-cscallqueue#-LanguageId) | [-LanguageId](/powershell/module/teams/set-cscallqueue#-LanguageId) |
 
-#### PowerShell Examples
+###### PowerShell Examples
 
-##### Example 1
+####### Example 1
 
 In the following example, this script assigns a calling line ID and sets a 45-second service level threshold:
 
@@ -157,7 +179,7 @@ New-CsCallQueue -Name "Call Queue Name" -OboResourceAccountIds @("Resource Accou
 ````
 *Note: This example doesn't contain the minimum number of parameters required to create a new call queue.*
 
-##### Example 2
+####### Example 2
 
 In the following example, this script modifies an existing call queue and uses the Set-CsCallQueue cmdlet:
 

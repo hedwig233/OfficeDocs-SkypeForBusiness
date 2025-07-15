@@ -105,7 +105,7 @@ To navigate to the **Shared Spaces Insights** page in the Pro Management Portal,
 
 1. Select **Apply**. The Shared space utilization insights are shown for each component on the **Shared Spaces Insights** page, based on Role-Based Access Control (RBAC) setting for the user. (For more information on RBAC, see [Role-Based Access Control (RBAC)](#role-based-access-control-rbac)).
 
-### Role-Based Access Control (RBAC)
+## Role-Based Access Control (RBAC)
 
 Shared Spaces Insights adheres to [role-based access controls](rooms-pro-rbac.md) in the Pro Management portal, displaying utilization metrics only for spaces the user is authorized to view.
 

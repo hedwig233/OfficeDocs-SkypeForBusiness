@@ -37,7 +37,7 @@ The scope of the monitoring is:
   - Basic history and details for every device.
 
 > [!Important]
-> Review [**Assign users to the Pro Manager Administrator role**](enrolling-mtrp-managed-service.md#assign-users-to-the-teams-rooms-pro-manager-role) and make sure that access to the portal is restricted based on your organizational needs.
+> Review [**Assign users to the Pro Manager Administrator role**](enrolling-mtrp-managed-service.md) and make sure that access to the portal is restricted based on your organizational needs.
 
 >[!Note]
 > Generating incidents is available with a Teams Rooms Pro or Teams Shared Device license.

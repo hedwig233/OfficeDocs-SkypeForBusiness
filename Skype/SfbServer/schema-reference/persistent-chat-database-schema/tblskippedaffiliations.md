@@ -16,7 +16,9 @@ description: "tblSkippedAffiliations contain the affiliations that couldn't be r
 ---
 
 # tblSkippedAffiliations
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 tblSkippedAffiliations contain the affiliations that couldn't be read (due to Active Directory Domain Services access errors).
   
 **Columns**

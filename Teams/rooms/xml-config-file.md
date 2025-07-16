@@ -4,7 +4,7 @@ author: mstonysmith
 ms.author: tonysmit
 manager: pamgreen
 ms.reviewer: henrikalim
-ms.date: 08/22/2024
+ms.date: 06/24/2025
 ms.topic: how-to
 audience: Admin
 ms.service: msteams
@@ -86,6 +86,8 @@ Any text editor can be used to create a settings file. The **XML Elements** tabl
   <DefaultFoRExperience>0</DefaultFoRExperience>
   <ShowMeetingChat>true</ShowMeetingChat>
   <OpenMeetingChatByDefault>true</OpenMeetingChatByDefault>
+  <PrioritizeVideoParticipantsGallery>true</PrioritizeVideoParticipantsGallery>
+  <HideMeForAllLayouts>false</HideMeForAllLayouts>
   <EnablePublicPreview>false</EnablePublicPreview>
   <NoiseSuppressionDefault>1</NoiseSuppressionDefault>
   <RoomLanguageSwitchEnabled>true</RoomLanguageSwitchEnabled>
@@ -109,7 +111,6 @@ Any text editor can be used to create a settings file. The **XML Elements** tabl
        <CustomBackgroundConsole>file name</CustomBackgroundConsole>
        <CustomThemeImageUrl>file name</CustomThemeImageUrl>
   </Theming>
-  <TeamsRoomsNewExperience>true</TeamsRoomsNewExperience>
   <RemoveFoRCalendar>false</RemoveFoRCalendar>
   <CoordinatedMeetings enabled="true">
     <TrustedAccounts>username1@microsoft.com,username2@contoso.com</TrustedAccounts>
@@ -182,6 +183,8 @@ If a variable value is of the wrong type, elements are out of order, elements ar
 | `<SingleFoRDefaultContentLayout>` | String |  | In single display mode, you can set the default layout between Content+people and Content only:<br><ul><li><b>0</b> Content only</li><li><b>1</b> Content+people (default)</li></ul><br> For more information, see [Remotely configure layout, scale, and resolution on Teams Rooms displays](manage-front-room-scale-res.md).|
 | `<ShowMeetingChat>` | Boolean &#x2777; | First &#x2776; |Enabled by default. If disabled, meeting chat functionality (including chat bubbles and chat selection) isn't available in any meeting layout on the Teams Rooms device. |
 |`<OpenMeetingChatByDefault>`| Boolean ❷ | First ❶ |Enabled by default. If disabled, chat panel will not show by default in meetings using Gallery view.|
+|`<PrioritizeVideoParticipantsGallery>`| Boolean ❷ | First ❶ |Enabled by default. Video participants appear on the main stage with audio participants on the side or bottom rail. If disabled, audio and video participants are mixed together.|
+|`<HideMeForAllLayouts>`| Boolean ❷ | First ❶ |Disabled by default. If enabled, preview video will be hidden for all layouts.|
 | `<EnablePublicPreview>` | Boolean &#x2777; | First &#x2776; | Disabled by default. If true, public preview is enabled and end-users can access features in public preview on enabled Teams Rooms. See [Public preview for Microsoft Teams Rooms on Windows](../public-preview-doc-updates.md#public-preview-for-microsoft-teams-rooms-on-windows) for more information. |
 | `<NoiseSuppressionDefault>` | String | First &#x2776; | Controls noise suppression levels in Teams.<br><ul><li><b>0</b> Off. Use OEM-provided noise suppression only.</li><li><b>1</b> High. Suppresses all background noises (stationary and non-stationary) that aren't speech.</li></ul> |
 | `<SendLogs>` | Container | First &#x2776; |  |
@@ -201,7 +204,6 @@ If a variable value is of the wrong type, elements are out of order, elements ar
 | `<CustomBackgroundExtendedFoRDisplay>` | String  &#x2778; |  | Used to specify the filename of the extended/left custom background image on Teams Rooms version 4.17 with a Microsoft Teams Rooms Pro license. <br/><br> Required if `<ThemeName>` is set to `Custom` **and** `<DualScreenMode>` is set to `true`.<br/><br> For more information, see [Set up and manage Teams Rooms on Windows enhanced custom backgrounds](/microsoftteams/rooms/custom-backgrounds?tabs=Enhanced).|
 | `<CustomBackgroundConsole>` | String  &#x2778; |  | Used to specify the filename of the touch console custom background image on Teams Rooms version 4.17 and later  with a Microsoft Teams Rooms Pro license. <br/><br> Optional.<br/><br> For more information, see [Set up and manage Teams Rooms on Windows enhanced custom backgrounds](/microsoftteams/rooms/custom-backgrounds?tabs=Enhanced).|
 | `<CustomThemeImageUrl>` | String  &#x2778; |  | Used to specify a custom theme image file name on Teams Rooms version 4.16 and earlier or on devices with a Teams Rooms Basic license. Input the file name only.   For more information on custom themes, see [Set up and manage Teams Rooms on Windows standard custom backgrounds](/microsoftteams/rooms/custom-backgrounds?tabs=Standard). <br><br>On Teams Rooms version 4.17 and later, we recommend you use the `<CustomBackgroundMainFoRDisplay>`, `<CustomBackgroundExtendedFoRDisplay>`, and `<CustomBackgroundConsole>` elements.  |
-| `<TeamsRoomsNewExperience>`| Boolean &#x2777; |   | Enable or disable the refreshed home screen design on front-of-room displays and the console. Starting with version 4.17, the refreshed home screen design is enabled by default. For more information, see [Microsoft Teams Rooms home screen design refresh](mtr-home-refresh.md).  |
 | `<RemoveFoRCalendar>`| Boolean &#x2777; |   | Remove the calendar on front-of-room displays. Disabled by default. For more information, see [Microsoft Teams Rooms home screen design refresh](mtr-home-refresh.md).  |
 | `<CoordinatedMeetings>` | Boolean &#x2777; | First &#x2776; | Container for the configuration elements for Coordinated Meetings. This element has one attribute:<ul><li><b>enabled</b> Determines whether Teams is configured to participate in Coordinated Meetings with other devices.</li></ul> |
 | `<TrustedAccounts>` | String |  | This is a comma-separated list of UPNs for each Teams Rooms device or Surface Hub that the device should accept meeting join requests from, or to which meeting join requests should be sent. |
@@ -218,65 +220,7 @@ If a variable value is of the wrong type, elements are out of order, elements ar
 &#x2777; A boolean flag can be: true, false, 0, or 1. Leaving boolean or numeric values empty can render the XML malformed and prevent changes to the settings.
   
 &#x2778; If a string parameter is present and empty, and empty is a valid value, the parameter is cleared on the device.
-  
 
-## Supported Meeting modes App version 4.9
-
-**Skype for Business (default) and Microsoft Teams**
-
-| XML Notation                | XML Value      |
-|----------------------------|---------------|
-| `<TeamsMeetingsEnabled>`     |   True         |
-| `<SfbMeetingEnabled>`        |   True         |
-| `<IsTeamsDefaultClient>`     |   False        |
-
-**Skype for Business and Microsoft Teams (default)**
-
-| XML Notation                | XML Value      |
-|----------------------------|---------------|
-| `<TeamsMeetingsEnabled>`    |   True         |
-| `<SfbMeetingEnabled>`        |   True         |
-| `<IsTeamsDefaultClient>`     |   True        |
-
-**Skype for Business only**
-
-| XML Notation                | XML Value      |
-|----------------------------|---------------|
-| `<TeamsMeetingsEnabled>`    |   False         |
-| `<SfbMeetingEnabled>`        |   True         |
-| `<IsTeamsDefaultClient>`     |   False        |
-
-**Microsoft Teams only**
-
-| XML Notation                | XML Value      |
-|----------------------------|---------------|
-| `<TeamsMeetingsEnabled>`    |   True         |
-| `<SfbMeetingEnabled>`        |   False         |
-| `<IsTeamsDefaultClient>`     |   True        |
-
-
-## Supported Meeting modes App version 4.8 or lower
-
-**Skype for Business (default) and Microsoft Teams**
-
-| XML Notation                | XML Value      |
-|----------------------------|---------------|
-|  `<TeamsMeetingsEnabled>`     |   True         |
-|  `<IsTeamsDefaultClient>`     |   False        |
-
-**Skype for Business and Microsoft Teams (default)**
-
-| XML Notation                | XML Value      |
-|----------------------------|---------------|
-|  `<TeamsMeetingsEnabled>`     |   True         |
-|  `<IsTeamsDefaultClient>`     |   True         |
-
-**Skype for Business only**
-
-| XML Notation                | XML Value      |
-|----------------------------|---------------|
-|  `<TeamsMeetingsEnabled>`     |   False         |
-|  `<IsTeamsDefaultClient>`     |   False         |
 
 ## Locate the Content camera USB instance path
 

@@ -19,6 +19,8 @@ description: "To begin the installation of a new Skype for Business Server 2015 
 
 # Install Local Configuration Store
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 To begin the installation of a new Skype for Business Server 2015 role server, you must first install the local SQL Server that hosts the local configuration store. The local configuration store acts as a read-only replica of the Skype for Business Server Central Management store (CMS). You must be logged on to the server that you're running the **Install Local Configuration Store** step as the local administrator on the computer, and have membership in the RTCUniversalServerAdmins or the RTCUniversalGlobalReadOnlyGroup group. If you're performing the setup on an Microsoft Edge Server, you don't have to be a member of the RTCUniversalServerAdmins or the RTCUniversalGlobalReadOnlyGroup group. The Topology Builder definition document will be read from the exported definition document instead of from the Central Management store. To export the Topology Builder definition document and make it available to the Microsoft Edge Servers, see the article [Export Your Topology and Copy It to External Media for Edge Installation](/previous-versions/office/lync-server-2013/lync-server-2013-export-your-topology-and-copy-it-to-external-media-for-edge-installation).
 
 To begin the installation:

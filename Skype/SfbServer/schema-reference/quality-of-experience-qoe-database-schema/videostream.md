@@ -16,7 +16,9 @@ description: "Each record represents one video stream. One video media line usua
 ---
 
 # VideoStream table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Each record represents one video stream. One video media line usually contains two video streams.
   
 |**Column**|**Data Type**|**Key/Index**|**Details**|

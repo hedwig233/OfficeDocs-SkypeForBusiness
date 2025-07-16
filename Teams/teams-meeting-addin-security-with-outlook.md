@@ -2,6 +2,7 @@
 title: Teams meeting add-in security in Outlook.
 author: MSFTTracyP
 ms.author: tracyp
+ms.date: 03/12/2025
 manager: dansimp
 ms.topic: how-to
 ms.service: msteams

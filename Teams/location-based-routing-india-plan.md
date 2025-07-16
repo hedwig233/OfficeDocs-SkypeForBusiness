@@ -5,6 +5,7 @@ ms.author: scottfrancis
 manager: pamgreen
 ms.topic: concept-article
 ms.service: msteams
+ms.subservice: teams-calling
 audience: admin
 ms.reviewer: roykuntz
 ms.date: 09/01/2023

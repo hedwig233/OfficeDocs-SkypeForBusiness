@@ -1,7 +1,7 @@
 ---
 title: Manage feedback surveys for anonymous participants in Teams meetings
-author: lana-chin
-ms.author: v-chinlana
+author: MicrosoftHeidi
+ms.author: heidip
 manager: jtremper
 ms.topic: how-to
 ms.service: msteams

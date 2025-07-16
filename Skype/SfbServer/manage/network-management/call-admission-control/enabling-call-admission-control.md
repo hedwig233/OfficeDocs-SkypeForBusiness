@@ -16,6 +16,8 @@ description: " After you configure the call admission control (CAC) network, you
 
 # Enabling call admission control in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Call admission control (CAC) is a network of regions, sites, and subnets that enable you to place restrictions on audio and video transmissions based on available bandwidth. After you configure the CAC network, you must enable CAC to enforce the bandwidth limitations. You can use the Skype for Business Server Control Panel to do this.
 
 
@@ -30,15 +32,15 @@ Call admission control (CAC) is a network of regions, sites, and subnets that en
 4.  On the **Global** page, click the **Global** configuration.
    
     > [!NOTE]  
-    > Only one network can be configured for any Skype for Business Server deployment, so there will never be more than one network configuration in the list. You cannot rename the Global configuration.
+    > Only one network can be configured for any Skype for Business Server deployment, so there will never be more than one network configuration in the list. You can't rename the Global configuration.
 
 5.  On the **Edit** menu, click **Show details**.
 
 6.  On the **Edit Global Setting** page, select the **Enable call admission control** check box, and then click **Commit**.
 
-When you click **Commit**, you run a test of the configuration. The **Edit Global Settings** dialog box closes, returning you to the **Global** page. You will receive a warning if any errors or inconsistencies are discovered in your network configuration that will prevent it from working correctly (for example, if every region is not connected to every other region through an interregion route).
+When you click **Commit**, you run a test of the configuration. The **Edit Global Settings** dialog box closes, returning you to the **Global** page. You'll receive a warning if any errors or inconsistencies are discovered in your network configuration that will prevent it from working correctly (for example, if every region isn't connected to every other region through an interregion route).
 
-If you make changes to your network configuration, you can run the validation check again by opening the Global configuration and clicking **Commit**. You do not need to disable CAC first: leave the check box checked and click **Commit**. You can do this at any time without making any configuration changes.
+If you make changes to your network configuration, you can run the validation check again by opening the Global configuration and clicking **Commit**. You don't need to disable CAC first: leave the check box checked and click **Commit**. You can do this at any time without making any configuration changes.
 
 ## See Also
 

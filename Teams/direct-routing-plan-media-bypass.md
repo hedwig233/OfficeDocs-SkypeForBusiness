@@ -1,13 +1,14 @@
 ---
 title: "Plan for media bypass with Direct Routing"
-ms.author: scottfrancis
-author: sfrancis206
+author: mkbond007
+ms.author: mabond
 manager: pamgreen
 audience: ITPro
-ms.reviewer: 
-ms.date: 03/06/2019
+ms.reviewer: filippse
+ms.date: 04/09/2025
 ms.topic: article
 ms.service: msteams
+ms.subservice: teams-calling
 ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection: 
@@ -28,16 +29,16 @@ ms.custom: seo-marvel-apr2020
 
 Media bypass enables you to shorten the path of media traffic and reduce the number of hops in transit for better performance. With media bypass, media is kept between the Session Border Controller (SBC) and the client instead of sending it via the Microsoft Teams Phone. To configure media bypass, the SBC and the client must be in the same location or network.
 
-You can control media bypass for each SBC by using the **Set-CSOnlinePSTNGateway** command with the **-MediaBypass** parameter set to true or false. If you enable media bypass, it doesn't mean that all media traffic will stay within the corporate network. This article describes the call flow in different scenarios.
+You can control media bypass for each SBC by using the **Set-CSOnlinePSTNGateway** command with the **-MediaBypass** parameter set to true or false. If you enable media bypass, it doesn't mean that all media traffic stays within the corporate network. This article describes the call flow in different scenarios.
 
-The diagrams below illustrate the difference in call flow with and without media bypass.
+The following diagrams illustrate the difference in call flows with and without media bypass.
 
-Without media bypass, when a client makes or receives a call, both signaling and media flow between the SBC, the Microsoft Teams Phone System, and the Teams client, as shown in the following diagram:
+Without media bypass, when a client makes or receives a call, both signaling and media flowing between the SBC, the Teams Phone, and the Teams client, as shown in the following diagram:
 
 > [!div class="mx-imgBorder"]
 > ![Shows signaling and media flow without media bypass.](media/direct-routing-media-bypass-1.png)
 
-But let's assume that a user is in the same building or network as the SBC. For example, assume a user who is in a building in Frankfurt makes a call to a PSTN user:
+But let's assume that a user is in the same building or network as the SBC. For example, assume a user who is in a building in Frankfurt makes a call to a Public Switched Telephone Network (PSTN) user:
 
 - **Without media bypass**, media flows via either Amsterdam or Dublin (where Microsoft datacenters are deployed) and back to the SBC in Frankfurt.
 
@@ -48,7 +49,7 @@ But let's assume that a user is in the same building or network as the SBC. For 
   > [!div class="mx-imgBorder"]
   > ![Shows signaling and media flow with media bypass.](media/direct-routing-media-bypass-2.png)
 
-Media bypass uses protocols called Interactive Connectivity Establishment (ICE) on the Teams client and ICE lite on the SBC. These protocols enable Direct Routing to use the most direct media path for optimal quality. ICE and ICE Lite are WebRTC standards. For detailed information about these protocols, see RFC 5245.
+Media bypass uses protocols called Interactive Connectivity Establishment (ICE) on the Teams client and ICE Lite on the SBC. These protocols enable Direct Routing to use the most direct media path for optimal quality. ICE and ICE Lite are WebRTC standards. For detailed information about these protocols, see RFC 5245.
 
 ## Call flow and firewall planning
 
@@ -64,7 +65,7 @@ If the user has direct access to the public IP address of the SBC, the call flow
 
 - Signaling always flows via the Microsoft cloud.
 
-The following diagram shows call flow when media bypass is enabled, the client is internal, and the client can reach the public IP address of the SBC (direct media):
+The following diagram shows a call flow when media bypass is enabled, the client is internal, and the client can reach the public IP address of the SBC (direct media):
 
 - The arrows and numeric values of the paths are in accordance with [Microsoft Teams call flows](./microsoft-teams-online-call-flows.md).
 
@@ -77,13 +78,13 @@ The following diagram shows call flow when media bypass is enabled, the client i
 
 The following scenario describes call flow if the user doesn't have access to the public IP address of the SBC.
 
-For example, assume the user is external, and the tenant administrator decided not to open the public IP address of the SBC to everyone in the Internet, but only to the Microsoft Cloud. The internal components of traffic can flow via the Teams Transport Relays. Consider the following:
+For example, assume the user is external, and the tenant administrator decides not to open the public IP address of the SBC to everyone in the Internet, but only to the Microsoft Cloud. The internal components of traffic can flow via the Teams Transport Relays. Consider the following information:
 
 - Teams Transport Relays are used.
 
 - For media bypass, Microsoft uses a version of Transport Relays that requires opening ports 50 000 to 59 999 between the Teams Transport Relays and the SBC (in the future we plan to move to the version that requires 3478-3481 ports).
 
-The following diagram shows call flow when media bypass is enabled, the client is external, and the client can't reach the public IP address of the Session Border Controller (media is relayed by Teams Transport Relay).
+The following diagram shows a call flow when media bypass is enabled, the client is external, and the client can't reach the public IP address of the Session Border Controller (media is relayed by Teams Transport Relay).
 
 - The arrows and numeric values of the paths are in accordance with [Microsoft Teams call flows](./microsoft-teams-online-call-flows.md).
 
@@ -95,9 +96,9 @@ The following diagram shows call flow when media bypass is enabled, the client i
 ### Call flow if a user is outside the network and has access to the public IP of the SBC
 
 > [!NOTE]
-> This is not a recommended configuration because it does not take advantage of Teams Transport Relays. Instead, you should consider the previous scenario where the user does not have access to the public IP address of the SBC.
+> This configuration isn't recommended because it doesn't take advantage of Teams Transport Relays. Instead, you should consider the previous scenario where the user doesn't have access to the public IP address of the SBC.
 
-The following diagram shows call flow when media bypass is enabled, the client is external, and the client can reach the public IP address of the SBC (direct media).
+The following diagram shows a call flow when media bypass is enabled, the client is external, and the client can reach the public IP address of the SBC (direct media).
 
 - The arrows and numeric values of the paths are in accordance with the [Microsoft Teams call flows](./microsoft-teams-online-call-flows.md) article.
 
@@ -110,11 +111,11 @@ The following diagram shows call flow when media bypass is enabled, the client i
 
 There are two components in the Microsoft Cloud that can be in the path of media traffic: Media Processors and Transport Relays.
 
-- The Media Processor is a public facing component that handles media in non-bypass cases and handles media for voice applications.
+- The **Media Processor** is a public facing component that handles media in non-bypass cases and handles media for voice applications.
 
    Media Processors are always in the path for end user non-bypassed calls, but never in the path for bypassed calls. Media Processors are always in the path for all voice applications such as Call Park, Organizational Auto Attendant, and Call Queues.
 
-- The Transport Relay is used to connect to the closest Transport Service to send real time traffic.
+- The **Transport Relay** is used to connect to the closest Transport Service to send real time traffic.
 
    Transport Relays might or might not be in the path for bypassed calls--originating from or destined to end users--depending on where the user is and how the network is configured.
 
@@ -145,7 +146,7 @@ The IP ranges are:
 - 52.120.0.0/14 (IP addresses from 52.120.0.0 to 52.123.255.255)
 
 > [!NOTE]
-> IP ranges presented in this document are specific to Direct Routing and may differ from the ones advised for Teams client.
+> IP ranges presented in this document are specific to Direct Routing and might differ from the ones advised for Teams client.
 
 \* Transcoding explanation:
 
@@ -161,7 +162,7 @@ Teams Media Processors are always inserted in the media path in the following sc
 - Call is going to a federated Teams user
 - Call is forwarded or transferred to a Skype for Business user
 
-Ensure your SBC has access to the Media Processors and Transport Relays ranges as described below.
+Ensure your SBC has access to the Media Processors and Transport Relays ranges as described in the following sections.
 
 ## SIP Signaling: FQDNs
 
@@ -192,7 +193,7 @@ You must place these three FQDNs in order to:
 
 - Provide failover when a connection from an SBC is established to a datacenter that is experiencing a temporary issue. For more information, see Failover mechanism below.
 
-The FQDNs **sip.pstnhub.microsoft.com**, **sip2.pstnhub.microsoft.com**, and **sip3.pstnhub.microsoft.com** will be resolved to IP addresses from the following subnets:
+The FQDNs **sip.pstnhub.microsoft.com**, **sip2.pstnhub.microsoft.com**, and **sip3.pstnhub.microsoft.com** resolve to IP addresses from the following subnets:
 
 - 52.112.0.0/14
 - 52.120.0.0/14
@@ -205,7 +206,7 @@ The connection point for Direct Routing is the following FQDN:
 
 **sip.pstnhub.dod.teams.microsoft.us** – Global FQDN. As the Office 365 DoD environment exists only in the US data centers, there are no secondary and tertiary FQDNs.
 
-The FQDN sip.pstnhub.dod.teams.microsoft.us will be resolved to an IP address from the following subnet:
+The FQDN sip.pstnhub.dod.teams.microsoft.us resolves to an IP address from the following subnet:
 
 - 52.127.64.0/21
 
@@ -217,7 +218,7 @@ The connection point for Direct Routing is the following FQDN:
 
 **sip.pstnhub.gov.teams.microsoft.us** – Global FQDN. As the GCC High environment exists only in the US data centers, there are no secondary and tertiary FQDNs.
 
-The FQDN sip.pstnhub.gov.teams.microsoft.us will be resolved to an IP address from the following subnet:
+The FQDN sip.pstnhub.gov.teams.microsoft.us resolves to an IP address from the following subnet:
 
 - 52.127.88.0/21
 
@@ -256,7 +257,7 @@ The client must have access to the specified ports (see table) on the public IP 
 | UDP/SRTP | SBC | Client | Defined on the SBC | 50000-50019  |
 
 > [!NOTE]
-> If you have a network device that translates the client's source ports, please make sure that translated ports are opened between the network equipment and the SBC.
+> If you have a network device that translates the client's source ports, make sure that translated ports are opened between the network equipment and the SBC.
 
 ### Requirements for using Transport Relays
 
@@ -336,7 +337,7 @@ The following example illustrates this logic.
 | Users with non-media bypass trunk | 980 | sbc1.contoso.com:5061 | false |
 | Users with media bypass trunk | 20 | sbc2.contoso.com:5060 | true |
 
-Both trunks can point to the same SBC with the same public IP address. The TLS signaling ports on the SBC must be different, as shown in the following diagram. Note you'll need to make sure that your certificate supports both trunks. In SAN, you need to have two names (**sbc1.contoso.com** and **sbc2.contoso.com**) or have a wildcard certificate.
+Both trunks can point to the same SBC with the same public IP address. The TLS signaling ports on the SBC must be different, as shown in the following diagram. You must make sure that your certificate supports both trunks. In SAN, you need to have two names (**sbc1.contoso.com** and **sbc2.contoso.com**) or have a wildcard certificate.
 
 > [!div class="mx-imgBorder"]
 > ![Shows both trunks can point to the same SBC with the same public IP.](media/direct-routing-media-bypass-7.png)
@@ -352,7 +353,7 @@ For information about how to configure two trunks on the same SBC, see the docum
 
 Media bypass is supported with all standalone Teams Desktop clients, Android and iOS clients, and Teams Phone Devices.
 
-For all other endpoints that don't support media bypass, we'll convert the call to non-bypass even if it started as a bypass call. This conversion happens automatically and doesn't require any actions from the administrator. This includes Skype for Business 3PIP Phones, and Teams Web Clients that support Direct Routing calling (WebRTC based clients running on Microsoft Edge, Google Chrome, Mozilla Firefox).
+For all other endpoints that don't support media bypass, we convert the call to non-bypass even if it started as a bypass call. This conversion happens automatically and doesn't require any actions from the administrator. This includes Skype for Business 3PIP Phones and Teams Web Clients that support Direct Routing calling (WebRTC based clients running on Microsoft Edge, Google Chrome, Mozilla Firefox).
 
 ## See also
 

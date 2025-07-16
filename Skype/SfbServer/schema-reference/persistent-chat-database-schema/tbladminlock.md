@@ -16,7 +16,9 @@ description: "tblAdminLock contains the administrator lock that is needed to run
 ---
 
 # tblAdminLock
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 tblAdminLock contains the administrator lock that is needed to run some administrator commands.
   
 **Columns**

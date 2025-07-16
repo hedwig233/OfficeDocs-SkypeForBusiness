@@ -2,8 +2,8 @@
 title: Policy control overview for Microsoft Teams
 ms.author: danbrown
 author: DHB-MSFT
-manager: laurawi
-ms.topic: reference
+manager: dansimp
+ms.topic: concept-article
 ms.service: msteams
 audience: admin
 ms.reviewer: majaisin
@@ -16,6 +16,7 @@ f1.keywords:
 ms.collection: 
   - M365-collaboration
   - privacy-teams
+  - must-keep
 appliesto: 
   - Microsoft Teams
 ---

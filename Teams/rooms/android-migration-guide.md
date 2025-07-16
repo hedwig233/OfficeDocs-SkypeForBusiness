@@ -3,7 +3,7 @@ title: Migration guide Android AOSP management for Microsoft Teams Android devic
 author: mstonysmith
 ms.author: tonysmit
 ms.reviewer: tjaved
-ms.date: 3/28/2025
+ms.date: 5/09/2025
 manager: pamgreen
 audience: Admin
 ms.topic: upgrade-and-migration-article
@@ -66,6 +66,7 @@ In order for Teams Android Devices to enroll in AOSP Device Management successfu
    ![Screenshot of AOSP enrollment profile.](media/android-migration-guide/aosp-enrollment-profile.png)
 
 > [!NOTE]
+> There is a limit of one enrollment profile per tenant which can have the **For Microsoft Teams devices** toggle set as **Enabled**.
 > An expired enrollment token prevents devices from completing a successful sign-in and blocks new devices from enrolling.
 
 6. Select **Next**.
@@ -109,7 +110,7 @@ If your organization uses [Conditional Access](/intune/intune-service/protect/co
 As supporting firmware is released, IT admins can install the firmware on their devices via Teams admin center. This firmware update completes the migration.
 
 > [!IMPORTANT]
-> Devices must be running the latest non-AOSP DM firmware before AOSP DM capable firmware shows in the Teams admin center as an update. If a AOSP DM capable firmware has been released but you see a different firmware update available in the Teams admin center, you must complete that firmware update(s) before the AOSP DM firmware update are available to install.
+> Devices must be running the latest non-AOSP DM firmware and Teams application before AOSP DM capable firmware shows in the Teams admin center as an update. If a AOSP DM capable firmware has been released but you see a different firmware or app update available in the Teams admin center, you must complete the update(s) before the AOSP DM firmware update are available to install.
 
 ### How to update a device
 

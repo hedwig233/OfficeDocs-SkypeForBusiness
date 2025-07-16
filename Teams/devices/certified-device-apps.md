@@ -48,7 +48,8 @@ The following are supported versions of Teams admin agent app:
 |**Release date**|**App version**|**Related devices**|
 |:-----|:-----|:-----|
 |October 1, 2024|[1.0.0.202407050618.product](#100202407050618)|All certified Teams device models |
-|February 10, 2025|[1.0.0.202412110504.product](#100202012110504)|All certified Teams device models|
+|February 10, 2025|[1.0.0.202412110504.product](#100202412110504)|All certified Teams device models|
+|May 19, 2025|[1.0.0.202505080136.product](#100202505080136) (Hotfix)|All certified Teams device models (except Logitech devices)|
 
 ### 1.0.0.202407050618
 
@@ -60,7 +61,7 @@ The following are supported versions of Teams admin agent app:
 
 - Bug fixes to improve admin agent overall update reliability.
 
-### 1.0.0.202012110504
+### 1.0.0.202412110504
 
 **This release is currently available for all Teams certified devices and contains following updates:**
 
@@ -72,13 +73,27 @@ The following are supported versions of Teams admin agent app:
 
 - Bug fixes to improve admin agent for better management of android devices.
 
+### 1.0.0.202505080136
+
+**This release (hotfix) is currently available for all Teams certified devices (except Logitech devices) and contains following updates:**
+
+- Bug fixes for critical security issue.
+
 ## [Intune](#tab/Intune)
 
 The following are supported versions of the Intune app:
 
 |**Release date**|**App version**|**Related devices**|
 |:-----|:-----|:-----|
-|Coming soon|Coming soon|Coming soon|
+|June, 2025|[25.02.1](#25021)|All certified Teams device models|
+
+### 25.02.1
+
+**This release is currently available for all Teams certified devices and contains following updates:** 
+
+- Telemetry improvements for more efficient investigations
+
+- Customers using Conditional Access policies should first deploy the updated AOSP Agent to a small group of devices and confirm Conditional Access continues to work as expected, before deploying the updated AOSP Agent to your entire device fleet.
 
 ## [Microsoft Authenticator](#tab/Authenticator)
 
@@ -86,7 +101,21 @@ The following are supported versions of the Microsoft Authenticator app:
 
 |**Release date**|**App version**|**Related devices**|
 |:-----|:-----|:-----|
-|Coming soon|Coming soon|Coming soon|
+|June, 2025|[6.2505.3166](#625053166)|All certified Teams device models|
+
+### 6.2505.3166
+
+**This release is currently available for all Teams certified devices and contains following updates.**
+
+_Note: This version is a hotfix release targeted specifically at resolving ANR (App Not Responding) issues observed in a limited set of environments using the May 2024 GA candidate._ 
+
+- Fixed __App Not Responding (ANR)__ issues during sign-in and device provisioning flows.
+
+- Improved __Multi-Factor Authentication (MFA)__ upgrade prompt experience.
+
+- Built on stable baseline: __GA candidate version 6.2410.__ 
+
+- This version includes a __validated and stable broker version: 13.3.2__ and __common library: 17.3.1__.
 
 ## Related articles
 - [Microsoft Teams certified Android devices](/microsoftteams/devices/teams-ip-phones)

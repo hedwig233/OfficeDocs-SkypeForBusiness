@@ -1,7 +1,7 @@
 ---
 title: Manage the Lists app for your organization
-author: lana-chin
-ms.author: v-chinlana
+author: MicrosoftHeidi
+ms.author: heidip
 manager: jtremper
 ms.reviewer: mmulpuru
 ms.date: 07/04/2024
@@ -110,11 +110,11 @@ To allow or block specific users in your organization from using Lists, make sur
 
 ## Search the audit log for list events
 
-Lists are enabled with enterprise level auditing. You can search for lists and list item events in the audit log in the Microsoft Purview portal or the Microsoft Purview compliance portal. To learn more, see [Search the audit log](/purview/audit-search).
+Lists are enabled with enterprise level auditing. You can search for lists and list item events in the audit log in the Microsoft Purview portal or the Microsoft Purview portal. To learn more, see [Search the audit log](/purview/audit-search).
 
 For a list of audit events that are relevant to the Lists app in Teams, see [SharePoint list activities](/purview/audit-log-activities#sharepoint-list-activities).
 
-Before you can search the audit log, you have to first turn on auditing in the Microsoft Purview portal or the Microsoft Purview compliance portal. Keep in mind that audit data is only available from the point at which you turned on auditing.
+Before you can search the audit log, you have to first turn on auditing in the Microsoft Purview portal or the Microsoft Purview portal. Keep in mind that audit data is only available from the point at which you turned on auditing.
 
 ## Power Automate, Power Apps, and Graph API
 

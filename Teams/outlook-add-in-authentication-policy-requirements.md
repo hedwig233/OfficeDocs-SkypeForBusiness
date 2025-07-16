@@ -1,5 +1,5 @@
 ---
-title: Admin - authentication requirements and functionality of the Teams Meeting add-in in Outlook
+title: Admin - Authentication requirements and functionality of the Teams Meeting add-in in Outlook
 ms.author: wlibebe
 author: wlibebe
 manager: pamgreen
@@ -7,8 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: msteams
 ms.subservice: meetings
-ms.reviewer: mfoland
-ms.date: 10/31/2024
+ms.reviewer: jessica.wilczek, mfoland
+ms.date: 6/25/2025
 ms.localizationpriority: medium
 search.appverid: MET150
 description: IT Admins - Learn about the requirements and policy settings for the Teams Meeting add-in in Outlook
@@ -24,15 +24,15 @@ appliesto:
   - Microsoft Teams
 ---
 
-# Admin - authentication requirements and functionality of the Teams Meeting add-in in Outlook
+# Admin - Authentication requirements and functionality of the Teams Meeting add-in in Outlook
 
 The Teams Meeting add-in lets users schedule a Teams meeting from Outlook. This add-in is available for Outlook on Windows, Mac, web, and mobile. The add-in is for scheduled meetings with specific participants, not for meetings in a channel. Your users must schedule channel meetings within Teams.
 
-This article details authentication requirements and functionality of the Teams Meeting add-in in Outlook for your users. Additionally, it provides guidance on enabling private meetings and managing policy settings for users in Island Mode.
+This article details authentication requirements and functionality of the Teams Meeting add-in in Outlook. Additionally, it provides guidance on enabling private meetings and managing policy settings for users in Island Mode.
 
-If you're having issues with the add-in, see [Resolve issues that affect the Teams Meeting add-in for classic Outlook](/MicrosoftTeams/troubleshoot/meetings/resolve-teams-meeting-add-in-issues).
+If your users are having issues with the add-in, see [Resolve issues that affect the Teams Meeting add-in for classic Outlook](/MicrosoftTeams/troubleshoot/meetings/resolve-teams-meeting-add-in-issues).
 
-For details on how your users can schedule meetings in Outlook, see [Schedule a Microsoft Teams meeting from Outlook](https://support.microsoft.com/office/schedule-a-microsoft-teams-meeting-from-outlook-883cc15c-580f-441a-92ea-0992c00a9b0f). To understand the differences between new and classic Outlook, see [Feature comparison between new Outlook and classic Outlook](https://support.microsoft.com/office/feature-comparison-between-new-outlook-and-classic-outlook-de453583-1e76-48bf-975a-2e9cd2ee16dd).
+For details on how your users can schedule meetings in Outlook, see [Schedule a Microsoft Teams meeting from Outlook](https://support.microsoft.com/office/schedule-a-microsoft-teams-meeting-from-outlook-883cc15c-580f-441a-92ea-0992c00a9b0f). To understand the differences between new and Classic Outlook, see [Feature comparison between new Outlook and classic Outlook](https://support.microsoft.com/office/feature-comparison-between-new-outlook-and-classic-outlook-de453583-1e76-48bf-975a-2e9cd2ee16dd).
 
 ## Prerequisites
 
@@ -54,10 +54,8 @@ Use the following steps to turn on these settings:
 3. Under **Meetings**, select **Meeting Policies**.
 4. Either select an existing policy or create a new one.
 5. Navigate to the **Meeting scheduling** section
-6. Toggle **Allow the Outlook Add-in** and **Allow scheduling for private meetings** to **On**.
-7. Select **Save**
-
-:::image type="content" source="media/meeting-schedule-small.png" alt-text="Screenshot of Teams meeting scheduling policies in the Teams admin center." lightbox="media/meeting-schedule-expand.png":::
+6. Toggle the **Private meeting scheduling** and **Outlook add-in** settings to **On**.
+7. Select **Save**.
 
 The Teams client installs the correct add-in by determining if users need the 32-bit or 64-bit version.
 
@@ -152,15 +150,24 @@ Outlook mobile can only support creating Skype for Business **or** Teams meeting
 
 To learn more, see [Choose your upgrade journey from Skype for Business to Teams](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md).
 
-### Manage Outlook meeting add-in availability for users on Islands mode
+### Manage Outlook Meeting add-in availability for users on Islands mode
 
-As an admin, you can configure a Teams meeting policy setting to control which Outlook meeting add-in is used for *users who are in Islands mode*. You can specify whether users can only use the Teams Meeting add-in or both the Teams Meeting and Skype for Business Meeting add-ins to schedule meetings in Outlook. You can only apply this policy to users who are in Islands mode and have the **AllowOutlookAddIn** parameter set to **True** in their Teams meeting policy. For steps on how to set this policy, see [Meeting policy settings - General](meeting-policies-in-teams-general.md#meeting-provider-for-islands-mode).
+As an admin, you can configure a Teams meeting policy setting to control which Outlook Meeting add-in is used for *users who are in Islands mode*. You can specify whether users can only use the Teams Meeting add-in or both the Teams Meeting and Skype for Business Meeting add-ins to schedule meetings in Outlook. You can only apply this policy to users who are in Islands mode and have the **AllowOutlookAddIn** parameter set to **True** in their Teams meeting policy. For steps on how to set this policy, see [Meeting policy settings - General](meeting-policies-in-teams-general.md#meeting-provider-for-islands-mode).
 
-Determines the Outlook meeting add-in availability to users on Islands mode. With the default value of TeamsAndSfb, users see both the Skype for Business and Teams add-ins. If you set this value to Teams, the Skype for Business add-in is removed and only the Teams add-in is shown.
+Determines the Outlook Meeting add-in availability to users on Islands mode. With the default value of TeamsAndSfb, users see both the Skype for Business and Teams add-ins. If you set this value to Teams, the Skype for Business add-in is removed and only the Teams add-in is shown.
 
-You can use the **Preferred app for users to join Skype for Business meetings** to control the Outlook meeting add-in availability for users on Islands mode. To learn more, see [Configure the Skype Meetings App to work with Teams](configure-skype-meetings-app-to-work-with-teams.md). For details on managing this setting through PowerShell, see [Teams settings and policies reference](settings-policies-reference.md#audio--video).
+You can use the **Preferred app for users to join Skype for Business meetings** to control the Outlook Meeting add-in availability for users on Islands mode. To learn more, see [Configure the Skype Meetings App to work with Teams](configure-skype-meetings-app-to-work-with-teams.md). For details on managing this setting through PowerShell, see [Teams settings and policies reference](settings-policies-reference.md#audio--video).
 
 Learn more about [meetings and calling in Microsoft Teams](https://support.office.com/article/Meetings-and-calls-d92432d5-dd0f-4d17-8f69-06096b6b48a8).
+
+## Setup experience as a part of the Teams Meeting Add-In
+
+When scheduling meetings in Outlook, your users might see an option to set up meeting settings ahead of time. When they select **Set up**, side pane opens that displays customized meeting option suggestions for their meeting. Users can review and edit these settings before sending the meeting invite.
+
+To learn more about this experience, see [Meeting options in Microsoft Teams](https://support.microsoft.com/office/meeting-options-in-microsoft-teams-53261366-dbd5-45f9-aae9-a70e6354f88e).
+
+> [!NOTE]
+> No admin policies control whether users see this option when scheduling meetings.
 
 ## Related topics
 

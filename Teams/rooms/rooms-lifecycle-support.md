@@ -67,7 +67,7 @@ The following table shows recommended and supported versions of Windows that are
 
 When you use a supported version of Windows, you will always get the latest application updates for the Microsoft Teams Rooms app.  
 
-## Support ending for Windows 10
+## Support ending for Teams Rooms devices running Windows 10
 
 Support ends for Windows 10 on October 14, 2025, and devices will no longer receive security and feature updates. Upgrade your Teams Rooms on Windows devices now to Windows 11 for a smooth transition and to continue to receive the latest productivity, security, and management features.
 
@@ -82,9 +82,11 @@ Most Teams Rooms devices running Windows 10 were automatically upgraded to Windo
 
 Find additional details on the Teams Rooms app OS support. Also, see [Microsoft product lifecycle notices for Windows 10 Enterprise](/lifecycle/products/windows-10-enterprise-and-education) and [Windows10 IoT Enterprise](/lifecycle/products/windows-10-iot-enterprise).
 
-## Microsoft Teams App End of Availability on Surface Hub v1 and 2S Running Windows 10 Team Edition 
+## Microsoft Teams App End of Availability on Surface Hub v1 and Surface Hub 2S Running Windows 10 Team Edition
 
-Effective October 14, 2025, the Microsoft Teams app will no longer be accessible on Surface Hub v1 and Surface Hub 2S devices running Windows 10 Team edition. This change aligns with the previously announced [retirement of the Teams classic client](/microsoftteams/teams-classic-client-end-of-availability) and the [end of support for Windows 10](/lifecycle/products/windows-10-team-surface-hub). After this date, users will not be able to use the Teams app on these devices.   
+Effective July 1, 2025, the Microsoft Teams Rooms app based on classic Teams will no longer be accessible on Teams Rooms on Windows running app version 5.0 or older, as well as version 5.1 in fallback mode. After this date, users will not be able to use the Teams app on these devices. Update your device to the latest Microsoft Teams Rooms app.
+
+Effective October 14, 2025, the Microsoft Teams Rooms app based on classic Teams will no longer be accessible on Surface Hub v1 and Surface Hub 2S devices running Windows 10 Team edition. This change aligns with the previously announced [retirement of the Teams classic client](/microsoftteams/teams-classic-client-end-of-availability) and the [end of support for Windows 10](/lifecycle/products/windows-10-team-surface-hub). After this date, users will not be able to use the Teams app on these devices.   
 
 Surface Hub 2S devices should transition to a supported Windows 11-based platform to continue using Teams and receive the latest updates. They can transition to the Teams Rooms on Windows platform by hardware-upgrading with the installation of a [new Surface Hub 3 Compute Cartridge](https://www.microsoft.com/en-us/d/surface-hub-3-compute-cartridge-for-business/8mf5qhhn1t4g). This is the easiest transition path as the Cartridge comes pre-loaded with the Windows 11 based Teams Rooms on Windows platform (and it provides the best experience of Teams Rooms on Surface Hub due to unique hardware capabilities of Surface Hub 3, as detailed at the end of [this blog post](https://techcommunity.microsoft.com/blog/surfaceitpro/now-available-surface-hub-2s-migration-to-microsoft-teams-rooms-on-windows/4064081)). Surface Hub 2S devices can also be software-migrated to the Teams Rooms platform ([Learn more](/surface-hub/surface-hub-2s-migrate-to-mtr-w)). They can also transition to Windows 11 Pro/Enterprise ([Learn more](/surface-hub/surface-hub-2s-migrate-os)). Surface Hub v1 will reach end of support ([Learn more](/surface-hub/surface-hub-v1-plan-eos)), requiring a hardware refresh. 
 

@@ -19,6 +19,8 @@ description: "Monitoring Server requires a supported 64-bit edition of SQL Serve
 
 # Add Monitoring Server SQL Server Store
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Monitoring Server requires a supported 64-bit edition of SQL Server database software to store the monitoring data. You can either select a previously defined SQL Server database to be used for monitoring, or define a new SQL Server database by specifying a fully qualified domain name (FQDN) of the server on which the SQL Server database will reside, in addition to the instance of SQL Server that you want to use for the new SQL Server database (which can be the default instance, or a named instance that you specify).
 
 For details about SQL Server support, see [Database Software and Clustering Support](/previous-versions/office/lync-server-2013/lync-server-2013-database-software-support) in the Supportability documentation. For details about the monitoring database, including collocation of the monitoring database, see [Supported Server Location](/previous-versions/office/lync-server-2013/lync-server-2013-supported-server-collocation) in the Supportability documentation,[Planning for Monitoring](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-monitoring) in the Planning documentation and [SQL Server Data and Log File Placement](/previous-versions/office/lync-server-2013/lync-server-2013-sql-server-data-and-log-file-placement) in the Deployment documentation.

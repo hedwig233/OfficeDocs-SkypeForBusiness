@@ -19,6 +19,8 @@ description: "The ClientsMobility Policy page displays the mobility policies ava
 
 # Clients: Mobility Policy
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The **Clients** **Mobility Policy** page displays the mobility policies available in your deployment.
 
 ## Tasks you can perform

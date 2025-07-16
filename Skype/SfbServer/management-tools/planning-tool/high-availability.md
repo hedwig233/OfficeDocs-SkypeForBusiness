@@ -17,7 +17,9 @@ description: "The main high availability scheme for most server roles in Skype f
 ---
 
 # High availability planning tool
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The main high availability scheme for most server roles in Skype for Business Server 2015 is based on server redundancy via pooling. If a server running a certain server role fails, the other servers in the pool running the same role take the load of that server.
   
 Skype for Business Server 2015 requires at least two Front End Servers to enable high availability. The Planning Tool uses the following criteria to determine if it will add extra servers to support high availability:

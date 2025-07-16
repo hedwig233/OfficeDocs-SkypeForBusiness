@@ -20,6 +20,7 @@ description: "This article describes benefits, planning considerations, and requ
 ## Overview
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
+[!INCLUDE[appliesto-xxx-2019-sub.md](../../SfBServer2019/includes/appliesto-xxx-2019-sub.md)]
 
 This article describes benefits, planning considerations, and requirements for implementing the Microsoft Cloud Voicemail service for your on-premises users. For information on configuring Cloud Voicemail, see [Configure Cloud Voicemail service](configure-cloud-voicemail.md).
 

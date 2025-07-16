@@ -36,7 +36,8 @@ The custom name will be displayed on the Teams panel home screen, so we recommen
 To set up and manage custom names for your Teams panels:
 
 1. Sign in to the **Teams Rooms Pro Management Portal**.
-2. Go to **Inventory** > **Planning** > select the account where you’d like to apply a custom name.
+1. Go to __Planning__ > **Inventory** > **Rooms** > select the room where you’d like to apply a custom name.
+
 1. In the **Custom name** field, add the name for the Teams panel. By default, this field is automatically filled with the name that is shown in the Global Address Book (GAL). 
 
 4. Select **Save**.

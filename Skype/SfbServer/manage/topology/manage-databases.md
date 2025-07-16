@@ -17,6 +17,8 @@ description: "Summary: Learn how to add more Skype for Business Server databases
 
 # Manage databases with an AlwaysOn Availability Group in Skype for Business Server
 
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Use the steps in this article to add more Skype for Business Server databases to an existing AlwaysOn Availability Group in Skype for Business Server, and find out about the necessary additional steps after you patch or upgrade a Back End Server that is part of a AlwaysOn Availability Group in Skype for Business Server.
 
 ## Add databases to an AlwaysOn Availability Group 

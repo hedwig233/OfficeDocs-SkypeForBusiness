@@ -1,7 +1,7 @@
 ---
 title: Shifts data FAQ
-author: lana-chin
-ms.author: v-chinlana
+author: MicrosoftHeidi
+ms.author: heidip
 manager: jtremper
 ms.topic: faq
 ms.reviewer: harrywong

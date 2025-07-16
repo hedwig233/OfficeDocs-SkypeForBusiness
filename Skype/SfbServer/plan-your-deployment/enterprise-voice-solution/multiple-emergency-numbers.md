@@ -20,6 +20,8 @@ description: "Read this topic to learn how to plan for multiple emergency number
 ---
 
 # Plan for multiple emergency numbers in Skype for Business Server
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 Read this topic to learn how to plan for multiple emergency numbers in Skype for Business Server.
   
@@ -38,20 +40,20 @@ When planning for multiple emergency numbers, keep the following in mind:
 - With the June 2016 Cumulative Update, you can define up to 5 emergency numbers for a given location policy. With the November 2016 Cumulative Update, this number increases to 100.
     
     > [!NOTE]
-    > If you have not yet upgraded to the November 2016 Cumulative Update, see [Updates to Skype for Business Server 2015](https://support.microsoft.com/help/3061064/updates-for-skype-for-business-server-2015). 
+    > If you haven't yet upgraded to the November 2016 Cumulative Update, see [Updates to Skype for Business Server 2015](https://support.microsoft.com/help/3061064/updates-for-skype-for-business-server-2015). 
   
 - For each emergency number, you can specify zero or more emergency dial masks, which are unique to a given location policy.
     
-    A dial mask is a number that you want to translate into the value of the emergency dial number value when it is dialed. For example, assume you enter a value of 212 in this field and the emergency dial number field has a value of 911. When a user dials 212, the number will be translated to 911. This allows for alternate emergency numbers to be dialed and still have the call reach emergency services (for example, if someone from a country or region with a different emergency number attempts to dial that country or region's number rather than the number for the country or region they are currently in). You can define multiple emergency dial masks by separating the values with semicolons. For example, 212;414. The string limit for a dial mask is 100 characters. Each character must be a digit 0 through 9.
+    A dial mask is a number that you want to translate into the value of the emergency dial number value when it's dialed. For example, assume you enter a value of 212 in this field and the emergency dial number field has a value of 911. When a user dials 212, the number is translated to 911. This allows for alternate emergency numbers to be dialed and still have the call reach emergency services (for example, if someone from a country or region with a different emergency number attempts to dial that country or region's number rather than the number for the country or region they're currently in). You can define multiple emergency dial masks by separating the values with semicolons. For example, 212;414. The string limit for a dial mask is 100 characters. Each character must be a digit 0 through 9.
     
 - Each location policy has a single public switched telephone network (PSTN) usage that is used to determine which voice route is used to route emergency calls from clients using this policy. The usage can have a unique route per emergency number.
     
-- If a location policy has both the EmergencyNumbers and DialString parameters defined, and the client supports multiple emergency numbers, then the emergency number takes precedence. If the client does not support multiple emergency numbers, then the emergency dial string is used.
+- If a location policy has both the EmergencyNumbers and DialString parameters defined, and the client supports multiple emergency numbers, then the emergency number takes precedence. If the client doesn't support multiple emergency numbers, then the emergency dial string is used.
     
 - For information about which Skype for Business and Lync clients support receiving multiple emergency numbers, dial masks, and public switched telephone network (PSTN) usages, see [Client support](multiple-emergency-numbers.md#BKMK_Clients).
     
 > [!NOTE]
-> You cannot configure multiple emergency numbers by using the Skype for Business Control Panel. You must use PowerShell to configure multiple emergency numbers. 
+> You can't configure multiple emergency numbers by using the Skype for Business Control Panel. You must use PowerShell to configure multiple emergency numbers. 
   
 Before you configure multiple emergency numbers, keep the following in mind:
   
@@ -59,9 +61,9 @@ Before you configure multiple emergency numbers, keep the following in mind:
     
 - If you have existing numbers defined using the Set-CsLocationPolicy or New-CsLocationPolicy cmdlet with the EmergencyDialString and EmergencyDialMask parameters, the values specified with the EmergencyNumbers parameter will take precedence over the old values. That is, the values for the EmergencyDialString and EmergencyDialMask parameters will be ignored.
     
-- If you have existing numbers defined using the Set-CsLocationPolicy or New-CsLocationPolicy cmdlet with the EmergencyDialString and EmergencyDialMask parameters,  *and you do not configure new emergency numbers*  , the existing numbers will continue to be used.
+- If you have existing numbers defined using the Set-CsLocationPolicy or New-CsLocationPolicy cmdlet with the EmergencyDialString and EmergencyDialMask parameters,  *and you don't configure new emergency numbers*, the existing numbers will continue to be used.
     
-- For the multiple emergency numbers feature to work, the client versions you are running must be able to support the new feature. Older clients will continue to use the old values specified by the Set-CsLocationPolicy or New-CsLocationPolicy cmdlets with the EmergencyDialString and EmergencyDialMask parameters. 
+- For the multiple emergency numbers feature to work, the client versions you're running must be able to support the new feature. Older clients will continue to use the old values specified by the Set-CsLocationPolicy or New-CsLocationPolicy cmdlets with the EmergencyDialString and EmergencyDialMask parameters. 
     
 - If the users will be dialing a number that matches the dial string, then no dial mask is required. For example, if the number a user dials is 911, then the dial string is 911 and no mask is required. 
     
@@ -77,18 +79,18 @@ The following table shows example location policies (for purposes of the example
 |London  <br/> |Yes  <br/> |999  <br/> |144  <br/> |999-144  <br/> 112-911;117;118  <br/> |GBEmergency  <br/> |No  <br/> |
 |India  <br/> |Yes  <br/> |||100-911  <br/> 101  <br/> 102  <br/> |IndiaEmergency  <br/> |No  <br/> |
    
- **United States** —There is no requirement for multiple emergency numbers. In the United States, you use the old Emergency Dial String and Dial Mask configurations.
+ **United States**—There's no requirement for multiple emergency numbers. In the United States, you use the old Emergency Dial String and Dial Mask configurations.
   
- **US-Hospital** —There is a requirement not to mask "450". For clients that do not yet support multiple emergency numbers, you can use the old Emergency Dial String and Dial Mask configurations. For clients that support multiple emergency numbers, you can define an emergency number for both "911" and "450" instead of masking 450.
+ **US-Hospital**—There's a requirement not to mask "450". For clients that don't yet support multiple emergency numbers, you can use the old Emergency Dial String and Dial Mask configurations. For clients that support multiple emergency numbers, you can define an emergency number for both "911" and "450" instead of masking 450.
   
- **London** —For clients that do not yet support multiple emergency numbers, you can use the old Emergency Dial String and Dial Mask configurations. For clients that support multiple emergency numbers, you can define an emergency number for both "999" and "112" with masks for each.
+ **London**—For clients that don't yet support multiple emergency numbers, you can use the old Emergency Dial String and Dial Mask configurations. For clients that support multiple emergency numbers, you can define an emergency number for both "999" and "112" with masks for each.
   
- **India** —All deployed clients support multiple emergency numbers. In India, you only need to configure multiple emergency numbers.
+ **India**—All deployed clients support multiple emergency numbers. In India, you only need to configure multiple emergency numbers.
   
 ## Client support
 <a name="BKMK_Clients"> </a>
 
-The following table shows client support for multiple emergency numbers. Microsoft will continue to test and release support for additional clients. Please check back often.
+The following table shows client support for multiple emergency numbers. Microsoft will continue to test and release support for additional clients. Check back often.
 
 |**Windows**|**Version**|
 |:-----|:-----|

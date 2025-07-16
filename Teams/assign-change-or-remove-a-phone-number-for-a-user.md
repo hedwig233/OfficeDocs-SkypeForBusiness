@@ -4,12 +4,13 @@ author: sfrancis206
 ms.author: scottfrancis
 manager: pamgreen
 ms.reviewer: julienp, roykuntz, jastark
-ms.date: 02/27/2024
+ms.date: 02/27/2025
 ms.topic: article
 ms.assetid: 91089761-cb87-4119-885b-3713840dd9f7
 ms.tgt.pltfrm: cloud
 audience: admin
 ms.service: msteams
+ms.subservice: teams-calling
 search.appverid: MET150
 ms.collection: 
 - M365-voice

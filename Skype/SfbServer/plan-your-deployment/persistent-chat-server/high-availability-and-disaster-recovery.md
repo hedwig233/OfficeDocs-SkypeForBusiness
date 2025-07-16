@@ -12,17 +12,19 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 ms.assetid: d9aa622a-95a3-4d8e-8d49-cbfe183f25bf
-description: "Summary: Read this topic to learn how to plan for high availability and disaster recovery for Persistent Chat Server in Skype for Business Server."
+description: "Summary: Read this article to learn how to plan for high availability and disaster recovery for Persistent Chat Server in Skype for Business Server."
 ---
 
 # Plan for high availability and disaster recovery for Persistent Chat Server in Skype for Business Server
  
-**Summary:** Read this topic to learn how to plan for high availability and disaster recovery for Persistent Chat Server in Skype for Business Server.
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
+**Summary:** Read this article to learn how to plan for high availability and disaster recovery for Persistent Chat Server in Skype for Business Server.
   
 High availability and disaster recovery for Persistent Chat Server require additional resources beyond what is typically needed for full operation. 
   
 > [!NOTE]
-> Using SQL AlwaysOn Availability Groups is not supported with Persistent Chat Server databases. 
+> Using SQL AlwaysOn Availability Groups isn't supported with Persistent Chat Server databases. 
 
 ## Resource requirements
 
@@ -34,9 +36,9 @@ Before configuring Persistent Chat Server for high availability and disaster rec
     
 - One dedicated database instance to serve as the SQL Server mirror for the secondary database. Optionally, designate an additional SQL Server to server as the mirroring witness. Both of these must be located in the same physical data center as the secondary database.
     
-- If Persistent Chat Server compliance is enabled, an additional three dedicated database instances are required. Their distribution is the same as those previously outlined for the Persistent Chat database. While it is possible for the compliance database to share the same SQL Server instance as the Persistent Chat database, standalone instances for high availability and disaster recovery are recommended.
+- If Persistent Chat Server compliance is enabled, an additional three dedicated database instances are required. Their distribution is the same as those previously outlined for the Persistent Chat database. While it's possible for the compliance database to share the same SQL Server instance as the Persistent Chat database, standalone instances for high availability and disaster recovery are recommended.
     
-- A file share must be created and designated for the SQL Server Log Shipping transaction logs. All SQL Servers in both data centers that run Persistent Chat databases must have read/write access to this file share. This share is not defined as part of a FileStore role.
+- A file share must be created and designated for the SQL Server Log Shipping transaction logs. All SQL Servers in both data centers that run Persistent Chat databases must have read/write access to this file share. This share isn't defined as part of a FileStore role.
     
 - A file share on the secondary database server to serve as the destination folder for the SQL Server transaction logs that are copied from the primary server file share.
     
@@ -44,7 +46,7 @@ Before configuring Persistent Chat Server for high availability and disaster rec
 
 Skype for Business Server supports multiple modes of high availability for your Back End Servers, including database mirroring. For more information, see [Plan for high availability and disaster recovery in Skype for Business Server](../../plan-your-deployment/high-availability-and-disaster-recovery/high-availability-and-disaster-recovery.md). 
   
-The disaster recovery solution for Persistent Chat Server described in this topic is built on a stretched Persistent Chat Server pool. There is no requirement for a stretched virtual local area network (VLAN). By stretching a Persistent Chat Server pool, you configure one pool in the topology logically, but you physically place the servers in the pool in two different data centers. You configure SQL Server mirroring for the database in the same way, and deploy the database and the mirror in the same data center. You need to configure a backup database in the secondary data center (with an optional mirror to provide high availability during disaster recovery). This is the backup database used for failover during disaster recovery. 
+The disaster recovery solution for Persistent Chat Server described in this article is built on a stretched Persistent Chat Server pool. There's no requirement for a stretched virtual local area network (VLAN). By stretching a Persistent Chat Server pool, you configure one pool in the topology logically, but you physically place the servers in the pool in two different data centers. You configure SQL Server mirroring for the database in the same way, and deploy the database and the mirror in the same data center. You need to configure a backup database in the secondary data center (with an optional mirror to provide high availability during disaster recovery). This is the backup database used for failover during disaster recovery. 
   
 For details about how to configure high availability and disaster recovery for Persistent Chat Server, see [Configure high availability and disaster recovery for Persistent Chat Server in Skype for Business Server](../../deploy/deploy-persistent-chat-server/configure-hadr-for-persistent-chat.md). 
   

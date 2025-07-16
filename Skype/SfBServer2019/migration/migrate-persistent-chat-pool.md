@@ -16,6 +16,8 @@ description: "Migrate Persistent Chat pool from Skype for Business Server 2015 t
 
 # Migrate Persistent Chat pool
 
+[!INCLUDE [appliesto-xxx-2019-sub](../includes/appliesto-xxx-2019-sub.md)]
+
 If you are migrating from Skype for Business Server 2015 (with Persistent Chat enabled) to Skype for Business Server 2019 and you want to migrate your Persistent Chat data, follow these steps:  
 
 Ensure that admin has the `RTCUniversalServerAdmins` permission assigned.

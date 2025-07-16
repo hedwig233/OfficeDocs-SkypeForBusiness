@@ -16,6 +16,8 @@ description: "Summary: Learn about the Mobility Service (Mcx) and the Unified Co
 ---
 
 # Monitor mobility for performance in Skype for Business Server
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 **Summary:** Learn about the Mobility Service (Mcx) and the Unified Communications Web API (UCWA) in Skype for Business Server.
   
@@ -34,7 +36,7 @@ Several limits influence mobility performance:
     
 - IIS queue length
     
-Other limits on servers that can influence mobility performance are a maximum of 12 concurrent sign-ins, authentications, session renewals, and terminations. These maximums do not need to be modified for most deployments.
+Other limits on servers that can influence mobility performance are a maximum of 12 concurrent sign-ins, authentications, session renewals, and terminations. These maximums don't need to be modified for most deployments.
   
 ## In this section
 

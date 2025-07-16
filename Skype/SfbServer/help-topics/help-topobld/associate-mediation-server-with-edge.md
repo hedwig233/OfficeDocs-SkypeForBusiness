@@ -18,6 +18,8 @@ description: "To define a Mediation Server, specify settings that associate the 
 ---
 
 # Associate Mediation Server With Edge
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 To define a Mediation Server, specify settings that associate the Mediation Server with a Front End Server and with an Edge Server or pool. To associate the Mediation Server or pool with an Edge Server or Edge Server pool, do the following:
   
@@ -26,8 +28,8 @@ To define a Mediation Server, specify settings that associate the Mediation Serv
 2. Click **Next** to continue.
     
 > [!NOTE]
-> If you have not yet defined an Edge Server or Edge Server pool in your deployment, the drop-down list will not contain entries. You can click **Next** to continue and edit the settings for the Mediation Server after you have added an Edge Server or pool to your deployment.
+> If you haven't yet defined an Edge Server or Edge Server pool in your deployment, the drop-down list won't contain entries. You can click **Next** to continue and edit the settings for the Mediation Server after you added an Edge Server or pool to your deployment.
   
-For additional details, see [Deploy a Mediation Server in Topology Builder in Skype for Business Server 2015](../../deploy/deploy-enterprise-voice/deploy-a-mediation-server.md).
+For more information, see [Deploy a Mediation Server in Topology Builder in Skype for Business Server 2015](../../deploy/deploy-enterprise-voice/deploy-a-mediation-server.md).
   
 

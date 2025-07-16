@@ -18,6 +18,8 @@ description: "The Trusted application servers node lists the Trusted application
 ---
 
 # External Applications Scope Node
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The **Trusted application servers** node lists the Trusted application pools at this site. Trusted application pools contain servers that run trusted Microsoft Unified Communications applications, but do not run Skype for Business Server roles. You can perform the following action:
   

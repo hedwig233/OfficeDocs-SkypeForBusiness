@@ -1,7 +1,7 @@
 ---
 title: Manage the Planner app for your organization in Microsoft Teams
-author: lana-chin
-ms.author: v-chinlana
+author: MicrosoftHeidi
+ms.author: heidip
 manager: jtremper
 ms.topic: how-to
 ms.service: msteams

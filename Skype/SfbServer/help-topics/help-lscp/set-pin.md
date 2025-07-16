@@ -19,6 +19,8 @@ description: "To generate the user's PIN, select Automatically generate a valid 
 
 # Set PIN
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 To generate the user's PIN, select **Automatically generate a valid PIN**.
 
 To create your own PIN, select **Manually enter a specific PIN**, and then type a PIN in the text box that meets the PIN requirements specified in your PIN policy settings.

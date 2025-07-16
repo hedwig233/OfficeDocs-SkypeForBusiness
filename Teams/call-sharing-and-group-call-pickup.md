@@ -8,6 +8,7 @@ ms.reviewer: jastark
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
+ms.subservice: teams-calling
 search.appverid: MET150
 ms.collection: 
   - M365-voice
@@ -48,6 +49,8 @@ Users must be assigned a Microsoft Teams Phone license to set up and use call sh
 - If you add more than five members to a call group, the ring order automatically switches to "Everyone at once."
 
 Mobile devices are only notified if they're set for "banner" and "ring."
+
+SIP Devices only support the "ring" and "mute" notification modes for group call pickup. For "banner" the notification is suppressed because SIP Gateway doesn't support alerting without ringing.
 
 ## Enable the use of group call pickup
 

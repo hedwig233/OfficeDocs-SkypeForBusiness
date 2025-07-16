@@ -57,7 +57,8 @@ Call routing is made up of the following elements:
 If a user has a Calling Plan license, that user’s outgoing calls are automatically routed through the Microsoft Calling Plan PSTN infrastructure. If you configure and assign an online voice routing policy to a Calling Plan user, that user’s outgoing calls are checked to determine whether the dialed number matches a number pattern defined in the online voice routing policy. If there’s a match, the call is routed through the Direct Routing trunk. If there’s no match, the call is routed through the Calling Plan PSTN infrastructure.
 
 > [!CAUTION]
-> If you configure and apply the global (Org-wide default) online voice routing policy, all voice-enabled users in your organization will inherit that policy, which might result in PSTN calls from Calling Plan and Operator Connect users being inadvertently routed to a Direct Routing trunk. If you don't want all users to use the global online voice routing policy, configure a custom online voice routing policy and assign it to individual voice-enabled users.
+> 1. If you configure and apply the global (Org-wide default) online voice routing policy, all voice-enabled users in your organization will inherit that policy, which might result in PSTN calls from Calling Plan and Operator Connect users being inadvertently routed to a Direct Routing trunk. If you don't want all users to use the global online voice routing policy, configure a custom online voice routing policy and assign it to individual voice-enabled users.
+> 2. If the called number contains an extension, the called number pattern is applied only to the number without the extension. For example, if a user calls +1425XXXXXXX;ext=YYY, the called number pattern is applied only to +1425XXXXXXX.
 
 ## Example 1: Voice routing with one PSTN usage
 
@@ -329,7 +330,7 @@ The following table summarizes routing policy "No Restrictions" usage designatio
 
   > [!NOTE]
   > - The order of PSTN usages in voice routing policies is critical. The usages are applied in order, and if a match is found in the first usage, then other usages are never evaluated. The "International" PSTN usage must be placed after the  "US and Canada" PSTN usage. To change the order of the PSTN usages, run the `Set-CSOnlineVoiceRoutingPolicy` command. <br/>For example, to change the order from "US and Canada" first and "International" second to the reverse order run:<br/> `Set-CsOnlineVoiceRoutingPolicy -id tag:"no Restrictions" -OnlinePstnUsages @{Replace="International", "US and Canada"}`
- > - The priority for "Other +1" and "International" voice routes are assigned automatically. They don't matter as long as they have lower priorities than "Redmond 1" and "Redmond 2."
+> - The priority for "Other +1" and "International" voice routes are assigned automatically. They don't matter as long as they have lower priorities than "Redmond 1" and "Redmond 2."
 
 ## Example 2: Configuration steps
 
@@ -426,12 +427,12 @@ Note the order of PSTN usages:
 
   - If a call is made to number "+1 425 XXX XX XX" with the usages configured as in the following example, the call follows the route set in "US and Canada" usage and the special routing logic is applied. That is, the call is routed using sbc1.contoso.com and sbc2.contoso.com first, and then sbc3.contoso.com and sbc4.contoso.com as the backup routes.
 
-  - If "International" PSTN usage is before "US and Canada," calls to +1 425 XXX XX XX are routed to sbc2.contoso.com and sbc5.contoso.com as part of the routing logic. Enter the command:
+- If "International" PSTN usage is before "US and Canada," calls to +1 425 XXX XX XX are routed to sbc2.contoso.com and sbc5.contoso.com as part of the routing logic. Enter the command:
 
   ```PowerShell
   New-CsOnlineVoiceRoutingPolicy "No Restrictions" -OnlinePstnUsages "US and Canada", "International"
   ```
-
+  
 Which returns:
 
 ```console

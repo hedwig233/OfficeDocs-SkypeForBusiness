@@ -17,6 +17,8 @@ description: "Summary: Read this topic to learn how to configure initial archivi
 
 # Configure archiving options for Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Read this topic to learn how to configure initial archiving options for Skype for Business Server. You initially set up archiving configurations when you deploy archiving, but you can change, add, and delete configurations after deployment.
   
 To configure initial archiving configurations, you use Skype for Business Server Control Panel to specify the following:

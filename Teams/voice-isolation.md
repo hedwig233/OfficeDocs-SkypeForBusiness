@@ -40,17 +40,17 @@ To learn more about voice isolation troubleshooting, setup, and the experience f
 
 ## Manage whether your users can use voice isolation
 
-You must use both the **`-VoiceIsolation`** and **`-EnrollUserOverride`** parameters within the PowerShell [**CsTeamsMeetingPolicy**](/powershell/module/teams/set-csteamsmeetingpolicy) cmdlet to manage whether your users can use voice isolation.
+You must set both the **`-VoiceIsolation`** parameter within the PowerShell [**CsTeamsMeetingPolicy**](/powershell/module/teams/set-csteamsmeetingpolicy) and **`-EnrollVoice`** parameter within the [CsTeamsAIPolicy](/powershell/module/teams/set-csteamsaipolicy) cmdlet to manage whether your users can use voice isolation.
 
-| **`-VoiceIsolation`** parameter value in PowerShell| Behavior|
+| **`-VoiceIsolation`** CsTeamsMeetingPolicy parameter value in PowerShell| Behavior|
 |---------|---------------|
 |Enabled| **This is the default value.** Users with this policy can use voice isolation in Teams calls and meetings. |
 |Disabled| Users with this policy can't use voice isolation in Teams calls and meetings.|
 
-| **`-EnrollUserOverride`** parameter value in PowerShell| Behavior|
+| **`-EnrollVoice`** CsTeamsAIPolicy parameter value in PowerShell| Behavior|
 |---------|---------------|
-|Enabled| Users with this policy can set the voice profile capture and enrollment through the **Recognition** tab in their Teams client settings.  |
-|Disabled| **This is the default value.** Users with this policy can't use or access the voice profile capture or enrollment.|
+|Enabled| **This is the default value.** Users with this policy can set the voice profile capture and enrollment through the **Recognition** tab in their Teams client settings.  |
+|Disabled| Users with this policy can't use or access the voice profile capture or enrollment.|
 
 Before you can run these cmdlets, you must be connected to Microsoft Teams PowerShell. For more information, see [Manage Teams with Microsoft Teams PowerShell](/microsoftteams/teams-powershell-managing-teams).
 
@@ -61,7 +61,7 @@ For more information on PowerShell cmdlets for Teams meetings, see the [Related 
 To allow users with this policy to use voice isolation, use both of the following scripts:
 
 ```powershell
-Set-CsTeamsMeetingPolicy -Identity <policy name> -EnrollUserOverride Enabled
+Set-CsTeamsAIPolicy -Identity <policy name> -EnrollVoice Enabled
 ```
 
 ```powershell
@@ -84,3 +84,4 @@ Set-CsTeamsMeetingPolicy -Identity <policy name> -VoiceIsolation Disabled
 - [Meetings, webinars, and live events overview](quick-start-meetings-live-events.md)
 - [Feature comparison](meeting-webinar-town-hall-feature-comparison.md)
 - [Set-CsTeamsMeetingPolicy](/powershell/module/teams/set-csteamsmeetingpolicy)
+

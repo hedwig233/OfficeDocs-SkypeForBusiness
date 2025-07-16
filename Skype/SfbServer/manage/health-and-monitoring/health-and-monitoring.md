@@ -17,6 +17,8 @@ description: "Summary: Learn about monitoring and health configuration tasks in 
 
 # Manage health and monitoring in Skype for Business Server
 
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn about monitoring and health configuration tasks in Skype for Business Server.
 
 Topics in this section provide step-by-step procedures for monitoring and health configuration tasks you can perform in Skype for Business Server Control Panel and Skype for Business Server Management Shell.

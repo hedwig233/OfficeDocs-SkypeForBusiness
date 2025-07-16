@@ -18,6 +18,8 @@ description: "In External IPv6 address, enter the external IP address that point
 ---
 
 # Add Edge Machine External IPv6
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 In **External IPv6 address**, enter the external IP address that points to the Access Edge service, Web Conferencing Edge service, and A/V Edge service.
   

@@ -17,7 +17,9 @@ description: "Summary: Create a Video Interop Server pool in Skype for Business 
 ---
 
 # Create a VIS pool in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Create a Video Interop Server pool in Skype for Business Server using Topology Builder.
   
 ### Create a VIS or VIS pool using Topology Builder

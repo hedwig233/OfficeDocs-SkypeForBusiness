@@ -18,6 +18,8 @@ description: "To confirm the replication of the Global Catalog and the creation 
 ---
 
 # Verify Replication of Forest Preparation
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 To confirm that the replication of the Global Catalog and the creation of objects during Forest Preparation is successful, do the following:
   

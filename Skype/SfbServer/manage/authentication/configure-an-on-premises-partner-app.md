@@ -17,7 +17,9 @@ description: "Summary: Configure an on-premises partner application for Skype fo
 ---
 
 # Configure an on-premises partner application for Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Configure an on-premises partner application for Skype for Business Server.
   
 After you've assigned the OAuthTokenIssuer certificate, you must configure your Skype for Business Server partner applications. (The procedure about to be discussed configures both Microsoft Exchange Server 2013 and SharePoint to act as partner applications, which is optional.) To configure an on-premises partner application, you must start by copying the following Windows PowerShell script and pasting the code into Notepad (or any other text editor):

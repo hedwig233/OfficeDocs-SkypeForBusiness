@@ -16,7 +16,9 @@ description: "The UserAgent table is a supporting table that stores a list of th
 ---
 
 # UserAgent table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The UserAgent table is a supporting table that stores a list of the various user agents that have participated in sessions recorded in the database. Each record in the table represents one user agent
   
 |**Column**|**Data Type**|**Key/Index**|**Details**|

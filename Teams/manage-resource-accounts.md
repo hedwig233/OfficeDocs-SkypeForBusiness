@@ -8,6 +8,7 @@ ms.date: 05/21/2024
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
+ms.subservice: teams-calling
 search.appverid: MET150
 ms.collection: 
   - M365-voice
@@ -23,7 +24,7 @@ f1.keywords:
 ms.custom: 
   - ms.teamsadmincenter.orgwidesettings.resourceaccounts.overview
   - seo-marvel-apr2020
-description: In this article, you'll learn how to create, edit, and manage resource accounts for service numbers in Microsoft Teams.
+description: Learn how to create, edit, and manage resource accounts for service numbers in Microsoft Teams.
 ---
 
 # Manage resource accounts for service numbers
@@ -36,14 +37,14 @@ Once you complete the resource account setup and assign a phone number if needed
 
 To learn more, see the following references:
 
-- [Cloud Auto attendant](create-a-phone-system-auto-attendant.md)
-- [Cloud Call queue](create-a-phone-system-call-queue.md)
+- [Set up a Microsoft Teams Auto attendant](create-a-phone-system-auto-attendant.md)
+- [Create a Call queue in Microsoft Teams](create-a-phone-system-call-queue.md)
 
 You can edit the resource account **Display name** and **Resource account** type using the **Edit** option. Select **Save** when you're done.
 
 ## Change an existing resource account to use a Microsoft Teams Phone Resource Account license
 
-To switch the licenses on your existing resource account from a **Teams Phone Standard** license to a **Microsoft Teams Phone Resource Account** license, you'll need to acquire the **Microsoft Teams Phone Resource Account** license, and then follow the steps in the Microsoft 365 admin center to [Move users to a different subscription](/microsoft-365/admin/manage/assign-licenses-to-users#move-users-to-a-different-subscription).
+To switch the licenses on your existing resource account from a **Teams Phone Standard** license to a **Microsoft Teams Phone Resource Account** license, you need a **Microsoft Teams Phone Resource Account** license. Then, follow the steps in the Microsoft 365 admin center to [Move users to a different subscription](/microsoft-365/admin/manage/assign-licenses-to-users#move-users-to-a-different-subscription).
 
 > [!WARNING]
 > Always remove a **Teams Phone Standard** license and assign the **Microsoft Teams Phone Resource Account** license in the same license activity. If you remove the old license, save the account changes, add the new license, and then save the account settings again, the resource account may no longer function as expected. If this happens, we recommend you create a new resource account for the **Microsoft Teams Phone Resource Account** license and remove the broken resource account.
@@ -58,7 +59,7 @@ The application IDs that you need to use while creating the application instance
 - **Call Queue:** 11cd3e2e-fccb-42ad-ad00-878b93575e07
 
 > [!NOTE]
-> If you want the Call queue or Auto attendant to be searchable by Skype For Business Server 2019 users, you should create your resource accounts on Skype For Business Server 2019, since online resource accounts are not synced down to Active Directory. When DNS SRV records for `sipfederationtls` resolve to Skype for Business Server 2019, then resource accounts **must** be created on Skype For Business Server 2019 using SfB Management shell and synchronized to Microsoft Entra ID.
+> If you want the Call queue or Auto attendant to be searchable by Skype For Business Server 2019 users, you should create your resource accounts on Skype For Business Server 2019, since online resource accounts aren't synced down to Active Directory. When DNS SRV records for `sipfederationtls` resolve to Skype for Business Server 2019, then resource accounts **must** be created on Skype For Business Server 2019 using SfB Management shell and synchronized to Microsoft Entra ID.
 
 For hybrid implementations with Skype for Business Server:
 
@@ -80,9 +81,9 @@ After you do that, you can delete the resource account in the [Microsoft 365 adm
 
 ## Hide resource accounts from Teams users
 
-You may want to hide certain resources accounts from Teams users. For example, you may want to prevent Teams users from directly calling a Call queue and bypassing the Auto attendant where the hours of operation are configured.
+You might want to hide certain resources accounts from Teams users. For example, you might want to prevent Teams users from directly calling a Call queue and bypassing the Auto attendant where the hours of operation are configured.
 
-[Information barriers](information-barriers-in-teams.md) are used to hide the resource accounts.  Review the information barriers documentation to understand the possible impacts before proceeding with the steps below.
+[Information barriers](information-barriers-in-teams.md) are used to hide the resource accounts. Review the information barriers documentation to understand the possible impacts before proceeding with the following steps.
 
 ### Required subscriptions and permissions
 
@@ -97,7 +98,7 @@ To access and use information barriers, your organization must have one of the f
 > [!NOTE]
 > If you already have [Exchange Online](/exchange/address-books/address-book-policies/address-book-policies) address book policies configured, they must be removed before proceeding with the steps below.
 >
-> All the steps below are performed by the Tenant Global Administrator.
+> The Tenant Global Administrator performs all of the following steps.
 >
 > These instructions assume there are no other information barriers configured.
 
@@ -109,15 +110,15 @@ To access and use information barriers, your organization must have one of the f
 4. Scroll down to **Search by name**.
 5. Turn on the toggle, and save the change.
 
-For more information on this option, see [Limit who users can see when searching the directory in Teams](teams-scoped-directory-search.md).
+For more information on the search by name option, see [Limit who users can see when searching the directory in Teams](teams-scoped-directory-search.md).
 
 #### Compliance - Auditing
 
-1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com/).
+1. Sign into the [Microsoft Purview portal](https://purview.microsoft.com/).
 2. In the left navigation pane, select **Audit**.
 3. If auditing is turned off, the following banner is displayed:
 
-     :::image type="content" source="/microsoft-365/media/AuditingBanner.png" alt-text="Screenshot showing audit banner if auditing is not enabled."lightbox="/microsoft-365/media/AuditingBanner.png":::
+     :::image type="content" source="/microsoft-365/media/AuditingBanner.png" alt-text="Screenshot showing audit banner if auditing isn't enabled."lightbox="/microsoft-365/media/AuditingBanner.png":::
   
 4. Select the **Start recording user and admin activity**.
 
@@ -157,7 +158,7 @@ For more information on segmenting users, see [Identify segments](/microsoft-365
 
 #### Compliance - Information Barriers
 
-1. Sign into the [Microsoft Purview compliance portal](https://compliance.microsoft.com/).
+1. Sign into the [Microsoft Purview portal](https://purview.microsoft.com/).
 2. In the left navigation pane, select **Information barriers** > **Segments**.
 3. Select **New segment**.
 4. Enter a name for the segment, and select **Next**. For example, `Uncallable Resource Accounts`.
@@ -191,4 +192,13 @@ For more information on segmenting users, see [Identify segments](/microsoft-365
 >
 > Once the status shows completed, go into Teams Client and try to search for the Resource Accounts that were blocked. It may be necessary to clear the Teams cache.  
 >
-> If a Teams user has saved the Resource Account as a contact, they will no longer be able to call it.
+> If a Teams user saves the Resource Account as a contact, they can no longer call it.
+
+
+## Related articles
+
+[Set up a Microsoft Teams Auto attendant](create-a-phone-system-auto-attendant.md)
+
+[Create a Call queue in Microsoft Teams](create-a-phone-system-call-queue.md)
+
+[Identify segments](/microsoft-365/compliance/information-barriers-policies)

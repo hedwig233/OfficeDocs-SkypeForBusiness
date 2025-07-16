@@ -62,7 +62,7 @@ App management tasks that are supported on other portals are in the table below.
 | App management use cases | Link to the interface | Documentation |
 |:-------------------------|:----------------------|:--------------|
 | Manage licenses and subscriptions of third-party apps in Microsoft 365 admin center | [Microsoft 365 admin center](https://admin.microsoft.com/#/licenses) | [Manage third-party app subscriptions](/microsoft-365/commerce/manage-saas-apps) |
-| Audit Teams app events on Microsoft Purview compliance portal. | [Audit](https://compliance.microsoft.com/auditlogsearch?viewid=Async%20Search) | [Teams activities](audit-app-management-activities.md) |
+| Audit Teams app events on Microsoft Purview portal. | [Audit](https://purview.microsoft.com/auditlogsearch?viewid=Async%20Search) | [Teams activities](audit-app-management-activities.md) |
 | Applications can be granted permissions to your organization and its data by three methods: an admin consents to the application for all users, a user grants consent to the application, or an admin integrating an application and enabling self-service access or assigning users directly to the application. Verify the Microsoft Graph permissions for apps. Verify the permissions that users provided or that the admins delegated. | [Microsoft Entra admin center](https://aad.portal.azure.com/) | [Review permissions granted to applications](/azure/active-directory/manage-apps/manage-application-permissions) |
 
 ## Export app catalog as CSV
@@ -86,8 +86,6 @@ As an admin, you control access to all [types of apps](apps-in-teams.md#types-of
 | [App permission policy](teams-app-permission-policies.md) or [app centric management](app-centric-management.md) | User-level | Let all users or let specific users use an app.                                           |
 
 You can allow or block specific apps or Copilot agents on either the **Manage apps** page or in the app details page. If your organization isn't migrated to unified app management, allow or block the app or Copilot agent in Teams admin center and under the **Integrated apps** page in [Microsoft 365 admin center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps). If your organization is migrated to unified app management, allow or block the app or Copilot agent in Teams admin center or under the **Integrated apps** page in [Microsoft 365 admin center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps).
-
-For more information, see [manage apps that work across Teams, Outlook, and Microsoft 365 App](manage-apps-across-m365.md).
 
 The **Manage apps** page displays all the available apps and the current org-level app status. To allow or block an app in Teams admin center, follow these steps:
 
@@ -127,6 +125,9 @@ To make any apps or Copilot agents available in your organization, ensure the fo
 * If your organization is migrated to unified app management, allow apps and Copilot agents in Teams admin center or under the **Integrated apps** page in [Microsoft 365 admin center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps).
 
 For more information, see [manage apps that work across Teams, Outlook, and Microsoft 365 App](manage-apps-across-m365.md).
+
+> [!NOTE]
+> Until your tenant is migrated to unified app management, ensure that the settings in both admin centers, such as blocked apps or org-wide app settings, remain synchronized. This measure prevents unexpected disruptions or issues with app functionality. 
 
 ## Manage org-wide app settings
 

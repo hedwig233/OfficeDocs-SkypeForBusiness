@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot Walkie Talkie issues
-author: lana-chin
-ms.author: v-chinlana
+author: MicrosoftHeidi
+ms.author: heidip
 manager: jtremper
 ms.topic: troubleshooting-general
 ms.service: msteams

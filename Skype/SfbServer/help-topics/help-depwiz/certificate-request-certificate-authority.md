@@ -18,7 +18,9 @@ description: "When making a certificate request to an online certification autho
 ---
 
 # Certificate Request (Certificate Authority)
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 When making a certificate request to an online certification authority (CA) (typically, these are servers that are on your internal network) on the **Choose a Certification Authority (CA)** page, you're presented with two options:
   
 1. Select a CA from the list detected in your environment.

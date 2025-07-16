@@ -59,7 +59,7 @@ To allow your users to use intelligent recap, you must turn on transcription:
 
 #### Recording
 
-For the full recap experience for meetings and events, you must assign a policy that allows recording for your users. If recording is turned off, users experience recap without the recording, speakers, topics, and chapters. To turn on recording for meetings and events, see [Manage Teams recording policies for meetings and events](meeting-recording.md#allow-or-prevent-users-from-recording-meetings).
+For the full recap experience for meetings and events, you must assign a policy that allows recording for your users. If recording is turned off, users experience recap without the recording, speakers, topics, and chapters. To turn on recording for meetings and events, see [Manage Teams recording policies for meetings and events](meeting-recording.md#allow-or-prevent-users-from-recording).
 
 ## Intelligent call recap
 
@@ -104,7 +104,10 @@ To manage policies that allow external attendees to attend meetings in your orga
 > [!NOTE]
 > This feature is currently in Public preview.
 
-Intelligent meeting recap for multilingual meetings translates the meeting's recap into each participant's language. Once the meeting ends, the recap appears in the language each participant selected for live translated transcription. Intelligent meeting recap currently supports the following languages: English, Spanish, Japanese, French, German, Portuguese, Italian, Mandarin (Simplified Chinese), and Korean.
+> [!NOTE]
+> Intelligent meeting recap for multilingual meetings doesn't currently support town halls.
+
+Intelligent meeting recap for multilingual meetings translates the meeting's recap into each participant's language. Once the meeting ends, the recap appears in the language each participant selected for live translated transcription. Intelligent meeting recap for multilingual meetings currently supports translation in the following languages: English, Spanish, Japanese, French, German, Portuguese, Italian, Mandarin (Simplified Chinese), and Korean.
 
 To learn more about live translated transcription, see [View live transcription in Microsoft Teams meetings](https://support.microsoft.com/office/view-live-transcription-in-microsoft-teams-meetings-dc1a8f23-2e20-4684-885e-2152e06a4a8b#bkmk_livetranslated).
 

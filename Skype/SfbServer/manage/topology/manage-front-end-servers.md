@@ -17,17 +17,19 @@ description: "Summary: Learn how to add, remove, patch, or update Front End Serv
 
 # Manage Front End Servers in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 This article explains how to add or remove Front End Servers and how to apply upgrades or patches to Front End Servers.
 
   > [!NOTE]
-> Skype for Business Server 2019 does not support Enterprise Edition Front End pools with two Front End Servers, and will not allow the topology to be published in that scenario.
+> Skype for Business Server 2019 doesn't support Enterprise Edition Front End pools with two Front End Servers, and won't allow the topology to be published in that scenario.
 
 ## Add or remove Front End Servers
   
 When you add a Front End Server to a pool, or remove a Front End Server from a pool, you then need to restart the pool. 
   
 > [!IMPORTANT]
-> When you add or remove a server to the pool in your topology and then publish the updated topology, it will cause all of the servers in the pool to restart at the same time. While the servers are restarting the pool is offline, which will interrupt service for your users connected to that pool. To prevent any interruption of service to users, plan to publish the topology with the new server in the pool during non-business hours. 
+> When you add or remove a server to the pool in your topology and then publish the updated topology, it causes all of the servers in the pool to restart at the same time. While the servers are restarting the pool is offline, which interrupts service for your users connected to that pool. To prevent any interruption of service to users, plan to publish the topology with the new server in the pool during non-business hours. 
   
 You can use the following procedure when adding or removing a Front End Server.
   
@@ -36,7 +38,7 @@ You can use the following procedure when adding or removing a Front End Server.
   
 ### To add or remove Front End Servers
 
-1. If you are removing any Front End Servers, first stop new connections to those servers. To do so, you can use the following cmdlet:
+1. If you're removing any Front End Servers, first stop new connections to those servers. To do so, you can use the following cmdlet:
     
    ```PowerShell
    Stop-CsWindowsService -Graceful
@@ -47,7 +49,7 @@ You can use the following procedure when adding or removing a Front End Server.
 3. Publish the topology.
     
     > [!IMPORTANT]
-    > When you add or remove a server to the pool in your topology and then publish the updated topology, it will cause all of the servers in the pool to restart at the same time. While the servers are restarting the pool is offline, which will interrupt service for your users connected to that pool. To prevent any interruption of service to users, plan to publish the topology with the new server in the pool during non-business hours. 
+    > When you add or remove a server to the pool in your topology and then publish the updated topology, it causes all of the servers in the pool to restart at the same time. While the servers are restarting the pool is offline, which interrupts service for your users connected to that pool. To prevent any interruption of service to users, plan to publish the topology with the new server in the pool during non-business hours. 
   
   > [!NOTE]
 > Also, when you add or remove a server to the pool, you must run the Skype for Business Server Deployment Wizard on each computer added or removed, for more information, see [Install Skype for Business Server on servers in the topology](../../deploy/install/install-skype-for-business-server.md)

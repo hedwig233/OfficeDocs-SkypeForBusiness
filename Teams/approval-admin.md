@@ -1,7 +1,7 @@
 ---
 title: Manage the Approvals app in Microsoft Teams
-author: Lana-Chin
-ms.author: v-chinlana
+author: MicrosoftHeidi
+ms.author: heidip
 manager: jtremper
 ms.reviewer: corod
 ms.date: 04/30/2024
@@ -161,9 +161,9 @@ Each team can contain at most 400 approvals templates, and each template can col
 
 ## Auditing
 
-The Approvals app logs audit events within the Microsoft Purview compliance portal. You can view the audit log.
+The Approvals app logs audit events within the Microsoft Purview portal. You can view the audit log.
 
-1. Sign in to the [Microsoft Purview compliance portal](https://compliance.microsoft.com/).
+1. Sign in to the [Microsoft Purview portal](https://purview.microsoft.com/).
 
 2. In the left pane, select **Audit**.
 

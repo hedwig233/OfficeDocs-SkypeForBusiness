@@ -16,7 +16,9 @@ description: "The PayloadDescription table is a supporting table. Each record re
 ---
 
 # PayloadDescription table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The PayloadDescription table is a supporting table. Each record represents one Codec, which is used in an audio or video session.
   
 |**Column**|**Data Type**|**Key/Index**|**Details**|

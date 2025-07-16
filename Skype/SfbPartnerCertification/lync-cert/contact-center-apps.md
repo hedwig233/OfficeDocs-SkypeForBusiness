@@ -202,9 +202,9 @@ Enghouse Interactive is ideally positioned to help enhance the functionality of 
 
   **Transform customer service operation by utilizing Lync voice, video, and IM infrastructure for your contact center.**
 
-[Genesys](http://Genesyslab.com)
+[Genesys](https://www.genesys.com/)
 
-Enjoy the rich collaboration and multimedia capabilities of Lync when communicating with contact center peers, and out to customers. Genesys delivers voice, video, and IM interactions from the PSTN, Skype, or Lync clients on a company website to agents. Gehesys SIP provides skills-based routing, unified reporting, and multi-channel capabilities.
+Enjoy the rich collaboration and multimedia capabilities of Lync when communicating with contact center peers, and out to customers. Genesys delivers voice, video, and IM interactions from the PSTN, Skype, or Lync clients on a company website to agents. Genesys SIP provides skills-based routing, unified reporting, and multi-channel capabilities.
 
 Genesys SIP Server with Lync also offers:
 - Intelligent routing of email, web chat, social media posting, work items, Fax, and SMS

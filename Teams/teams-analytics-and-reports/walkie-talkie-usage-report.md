@@ -1,7 +1,7 @@
 ---
 title: Walkie Talkie usage and performance report
-author: lana-chin
-ms.author: v-chinlana
+author: MicrosoftHeidi
+ms.author: heidip
 manager: jtremper
 audience: admin
 ms.topic: article

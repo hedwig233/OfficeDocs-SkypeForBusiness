@@ -20,6 +20,8 @@ description: "Summary: Learn how to verify that your deployment of Microsoft Edg
 
 # Validate your Edge deployment in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to verify that your deployment of Microsoft Edge Server or Microsoft Edge Server pool is working in Skype for Business Server.
   
 Once you deploy your Microsoft Edge Server or Microsoft Edge Server pool, you need to know if it's working properly. Here are a couple of things that can help with confirming your Edge environment is connected to your internal servers, and also that your external users can connect to your Skype for Business Server environment through your Edge.
@@ -32,7 +34,7 @@ The initial result of running this command might give a False status, rather tha
   
 ## Verify connectivity for your external users
 
-We do have a great tool for confirming your Edge Server configuration, and the ability to connect, send, and receive the correct messages for Edge Server scenarios. It's the [Remote Connectivity Anaylzer site](https://testconnectivity.microsoft.com/). This site is managed and maintained by Microsoft Support. To use this tool, browse to the website and follow the instructions to choose the right scenario for you.
+We do have a great tool for confirming your Edge Server configuration, and the ability to connect, send, and receive the correct messages for Edge Server scenarios. It's the [Remote Connectivity Analyzer site](https://testconnectivity.microsoft.com/). This site is managed and maintained by Microsoft Support. To use this tool, browse to the website and follow the instructions to choose the right scenario for you.
   
 ### Things to consider when testing external user connectivity
 

@@ -18,6 +18,8 @@ description: "This node shows the fully qualified domain name (FQDN), ports, and
 ---
 
 # Director Scope Node
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 This node shows the fully qualified domain name (FQDN), ports, and associated file store for this Director pool. You can perform the following actions:
   

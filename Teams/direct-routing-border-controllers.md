@@ -2,12 +2,13 @@
 title: "Session Border Controllers certified for Direct Routing"
 ms.author: scottfrancis
 ms.reviewer: FilippSe
-ms.date: 06/12/2024
+ms.date: 05/06/2025
 author: sfrancis206
 manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: msteams
+ms.subservice: teams-calling
 ms.localizationpriority: high
 search.appverid: MET150
 ms.collection:
@@ -35,16 +36,19 @@ Microsoft works with each vendor to:
 - Establish a joint support process with the SBC vendors.
 
   > [!NOTE]
-  > Microsoft only supports Phone System with Direct Routing when used with certified devices. If you encounter an issue, you must contact your SBC vendor's customer support first. If needed, the SBC vendor escalates the issue to Microsoft via internal channels. Microsoft reserves the right to reject support cases where a non-certified device is connected to Phone System through Direct Routing. If Microsoft determines that a customer's Direct Routing issue is with a vendor's SBC device, the customer needs to re-engage the SBC vendor for support.
-  >
+  > Microsoft only supports Phone System with Direct Routing when used with certified devices. If you encounter an issue, you must contact your SBC vendor's customer support first. If needed, the SBC vendor escalates the issue to Microsoft via internal channels.
+  > 
+  > To escalate SBC related issues to Microsoft support, customers must present an SBC vendor investigation report. This document, containing the vendor's ticket reference number, will be supplied by their certified SBC vendor.
+  > 
+  > Microsoft reserves the right to reject support cases where a non-certified device is connected to Phone System through Direct Routing. If Microsoft determines that a customer's Direct Routing issue is with a vendor's SBC device, the customer needs to re-engage the SBC vendor for support.
+  > 
   > The certification is granted to specific SBC firmware versions. Any SBC firmware version documented in this article is both certified and supported. Firmware versions that are higher than what is documented are supported as long as the major.minor version is the same.
-  >
-  > Example:
-  >
-  > - Supported 6.10.258 - In this case, Microsoft supports firmware versions 6.10.(258 or higher).
-  > - Recommended 6.20.100 - In this case, Microsoft recommends firmware versions 6.20.(100 or higher).
-  > - For supportability questions about specific version, reach out to your SBC vendor.
-
+> Example:
+> 
+> - Supported 6.10.258 - In this case, Microsoft supports firmware versions 6.10.(258 or higher).
+> - Recommended 6.20.100 - In this case, Microsoft recommends firmware versions 6.20.(100 or higher).
+> - For supportability questions about specific version, reach out to your SBC vendor.
+  
 The tables that follow list devices certified for Direct Routing. (For information about which SBC vendors support Local Media Optimization, see [Configure Local Media Optimization for Direct Routing](direct-routing-media-optimization-configure.md).)
 
 For more information about Direct Routing, see [Plan Direct Routing](direct-routing-plan.md).  
@@ -89,19 +93,19 @@ We're not accepting new nominations for certification until further notice.
 ||Cisco Unified Border Element (CUBE) for 1000 V Series Cloud Services Router|&#10004;|&#10004;|Supported IOS XE Amsterdam 17.2.1r (Recommended 17.3.3)|&#10004;||
 ||Cisco Unified Border Element (CUBE) for 1000 Series Aggregation Services Routers|&#10004;|&#10004;|Supported IOS XE Amsterdam 17.2.1r (Recommended 17.6.1a)|&#10004;||
 ||Cisco Unified Border Element (CUBE) for Catalyst 8000 Edge Platforms|&#10004;|&#10004;|Supported IOS XE Amsterdam 17.3.2 (Recommended 17.6.1a)|&#10004;||
-|[Avaya](https://support.avaya.com/products/P0997/avaya-session-border-controller-for-enterprise/8.1.x)|Avaya Session Border Controller for Enterprise (ASBCE)|&#10004;|&#10004;|Release 8.1.1 or higher (8.1.2 or higher for Media Bypass)|&#10004;|&#10004;|
+|[Avaya](https://support.avaya.com/products/P0997/avaya-session-border-controller-for-enterprise/8.1.x)|Avaya Session Border Controller for Enterprise (ASBCE)|&#10004;|&#10004;|Release 8.1.1 or higher (8.1.2 or higher for Media Bypass, 10.2.0.2 for ELIN)|&#10004;|&#10004;|
 |[Nokia](https://documentation.nokia.com/aces/cgi-bin/chk_access.cgi/3TB30222GBAAACZZA.zip)|Nokia Session Border Controller|&#10004;|&#10004;|24.7|&#10004;||
 |[Italtel](https://www.italtel.com/italtels-sbc-obtains-microsoft-teams-direct-routing-certification/)|NetMatch-S CI|&#10004;|&#10004;|Supported 5.8 (Recommended the latest version)|&#10004;|&#10004;|
 |[Ericsson](https://www.ericsson.com/portfolio/cloud-software-and-services/cloud-core/communication-services-udm-and-exposure/communication-services--udm/cloud-ims/enterprise-communication/sip-trunking)|vSBC 2.16|&#10004;|||||
 |[Cataleya](https://cataleya.com/cataleya-launches-orchid-cloud-revolutionary-cloud-based-wholesale-voice-business-platform/)|Orchid Link|&#10004;||3.1|||
 |[ULTATEL](https://www.ultatel.com/services/direct-routing-teams-sbc)|Teams SBC|&#10004;|&#10004;|1.6|||
-|[Mitel](https://unify.com/en/solutions/voice-platforms/session-border-controller)|Unify OpenScape Session Border Controller|&#10004;|&#10004;|V10R2.2.0 or higher|||
+|[Mitel](https://www.mitel.com/products/openscape-session-border-controller)|Unify OpenScape Session Border Controller|&#10004;|&#10004;|V10R2.2.0 or higher|||
 |[Sansay Inc.](https://www.sansay.com/solutions/microsoft-teams/)|vmVSXi|&#10004;|&#10004;|10.5.1.354-vm-S-x64|&#10004;||
 |[Enghouse Networks](https://www.enghousenetworks.com/portfolio/network-infrastructure/dialogic-session-border-controller/)|Dialogic BorderNet SBC|&#10004;|&#10004;|3.9.x|||
 |[Patton Electronics Co.](https://www.patton.com/microsoft/)|Patton SmartNode eSBC|&#10004;||3.19.x|||
 |[M5 Technologies (previously known as Media5 Corporation)](https://www.m5t.com/pages/sentinel-400-sbc-_-2023_0-2023-06-16)|Mediatrix Sentinel Series|&#10004;||DGW 48.0.2340 (Recommended DGW 48.1.2503)|||
-|[Ekinops](https://www.ekinops.com/solutions/voice-data-access/microsoft-direct-routing-sbc)|Ekinops Session Border Controller (ONeSBC)|&#10004;|&#10004;|Supported 6.9.x (Recommended 6.10.x)|||
-||Ekinops Virtual Session Border Controller (ONEvSBC)|&#10004;|&#10004;|Supported 6.9.x (Recommended 6.10.x)|||
+|[Ekinops](https://www.ekinops.com/solutions/voice-data-access/microsoft-direct-routing-sbc)|Ekinops Session Border Controller (ONeSBC)|&#10004;|&#10004;|Supported 6.12.x (Recommended 6.14.x)|||
+||Ekinops Virtual Session Border Controller (ONEvSBC)|&#10004;|&#10004;|Supported 6.12.x (Recommended 6.14.x)|||
 |[46 Labs LLC](https://46labs.atlassian.net/wiki/spaces/peeredge/pages/61603842/Microsoft+Teams+Implementation+Guide+v1.0)|Peeredge Orchestrator|&#10004;|&#10004;|1.0.6|||
 |[Frafos](https://www.frafos.com/ms-teams-abc-sbc)|ABC SBC|&#10004;||4.6|||
 |[Nuera](https://www.nuera.com/sbc-media-gateway)|GX-500 SBC|&#10004;|&#10004;|Supported 7.20A.258 (Recommended 7.40A.500)|&#10004;|&#10004;|
@@ -116,6 +120,8 @@ We're not accepting new nominations for certification until further notice.
 ||GX-3100|&#10004;|&#10004;|Supported 7.20A.250 (Recommended 7.40A.500)|&#10004;|&#10004;|
 |[Telnyx LLC](https://telnyx.com/resources/direct-routing-overview)|Telnyx MS Teams SBC|&#10004;|&#10004;|v2024.0315.18.37.f2c7869|&#10004;||
 |[Vodia Networks Inc.](https://web.vodia.com/microsoft-teams)|Vodia PBX|&#10004;||v69.4|||
+|[Brekeke Software, Inc.](https://docs.brekeke.com/pbx/integration-with-microsoft-teams)|Brekeke PBX|&#10004;||3.17.1.5 or higher||
+|[Nextgen, Inc.](https://www.nextgen.co.jp/english/solution/carrier/border_solutions/sbc/directrouting_for_microsoftteams.html)|NX-B5000|&#10004;|&#10004;|7.3 or higher||
 
 \* **911 service providers**
 

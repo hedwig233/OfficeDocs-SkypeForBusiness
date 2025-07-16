@@ -19,6 +19,8 @@ description: "You configure advanced options for the placement of database and l
 
 # Install Database Options Page
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 You configure advanced options for the placement of database and log files on your SQL Server. The options available are:
 
 > [!IMPORTANT]

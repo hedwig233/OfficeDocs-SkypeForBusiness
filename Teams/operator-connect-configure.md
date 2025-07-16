@@ -6,6 +6,7 @@ manager: pamgreen
 ms.date: 03/21/2025
 ms.topic: how-to
 ms.service: msteams 
+ms.subservice: teams-calling
 audience: admin
 ms.collection: 
   - M365-voice

@@ -17,6 +17,8 @@ description: "The following topic provides guidance for updating DNS entries, mo
 
 # Phase 8: Decommission legacy pools
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../includes/appliesto-xxx-2019-sub.md)]
+
 The following topic provides guidance for updating DNS entries, moving the Content Management Server, decommissioning pools, and deactivating and removing servers and pools from a legacy deployment. Not all of the procedures listed in this section are required. Read the documentation and determine which decommissioning procedure to use. 
   
 For a dated but exhaustive article on removing servers and server roles, and a step-by-step guide to decommissioning a deployment, download [Uninstalling Microsoft Lync Server and Removing Server Roles](https://go.microsoft.com/fwlink/p/?linkId=246227). 

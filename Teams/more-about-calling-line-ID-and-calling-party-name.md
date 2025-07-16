@@ -4,7 +4,7 @@ ms.author: scottfrancis
 author: sfrancis206
 manager: pamgreen
 ms.reviewer: roykuntz
-ms.date: 03/06/2024
+ms.date: 04/02/2025
 ms.topic: article
 ms.tgt.pltfrm: cloud
 search.appverid: MET150
@@ -21,6 +21,7 @@ f1.keywords:
 ms.custom: 
   - Calling Plans
 ms.service: msteams
+ms.subservice: teams-calling
 description: "Learn about Calling Line ID and Calling Party Name."
 ---
 
@@ -37,3 +38,10 @@ When a call is made, the CLID (phone number) is routed to the destination's carr
 CLID & CNAM transmission is the responsibility of the terminating carrier. The terminating carrier must support CLID & CNAM functionality and provide up-to-date records for both values. Microsoft reliably provides CLID values when originating calls, but those values may not be kept intact once they pass through an intermediary carrier or the terminating carrier. If the CLID value is changed, omitted, or truncated by the intermediary or terminating carrier, Microsoft has little to no recourse in correcting such problems in the public telephone network.
 
 Inconsistencies in CNAM can be caused when the intermediate or terminating carriers delay refreshing the CNAM information in authoritative databases--as in the United States. In countries/regions where there are no authoritative databases for CNAM, individual carrier practices can also cause problems with CNAM information arriving intact with the call. Microsoft currently doesn't support originating CNAM information in countries/regions other than the United States.
+
+## Related articles
+
+- [Manage caller ID for users](caller-id-policies.md)
+- [Teams policies reference - Caller ID](settings-policies-reference.md#caller-id-policies)
+- [Assign policies to your users in Teams](policy-assignment-overview.md)
+- [Set-CsCallingLineIdentity](/powershell/module/teams/set-cscallinglineidentity)

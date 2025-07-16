@@ -42,7 +42,7 @@ With the introduction of app centric management functionality, admins have two m
 
 This functionality lets you specify which users and groups can use each app or a copilot agent and you can control it on a per-app basis.
 
-Whatever method your use, you can manage access to apps for individual users, supported groups, or everyone in the organization. You have complete control over who can or can't add apps in your organization. You can also control the access to new apps that we publish to Teams app store.
+Whatever method you use, you can manage access to apps for individual users, supported groups, or everyone in the organization. You have complete control over who can or can't add apps in your organization. You can also control the access to new apps that we publish to Teams app store.
 
 ## How is app centric management different than permission policy
 
@@ -103,7 +103,7 @@ To migrate your organization, follow these steps:
 
 1. You can validate the changes on a per-app or a per-user basis. Select a tab and type the name of the app or the user.
 
-    :::image type="content" source="media/acm-verify-per-app.png" alt-text="Screenshot showing the option to verify available of for each user and users who receive a particular app."  lightbox="media/acm-verify-per-app-large.png":::
+    :::image type="content" source="media/acm-verify-per-app.png" alt-text="Screenshot showing the option to verify available for each user and users who receive a particular app."  lightbox="media/acm-verify-per-app-large.png":::
 
 1. On the final review UI, you can see the apps, their availability, and the Org-wide app settings that apply after the migration. You can download this information as a CSV file to evaluate further. For example, you can use the inventory mapping from Step 1 to ensure that the app availability is as intended. Once assured, select **Start migration** and follow the prompts.
 
@@ -115,7 +115,7 @@ To migrate your organization, follow these steps:
 During migration, you can save a draft of the migration progress using the **Finish later** option. You can cancel the migration and delete the saved draft using the **Reset all changes** option.
 
 > [!NOTE]
-> While migrating, you can't make changes to app assignments. The existing UI gets disabled when you start the migration. If you aren't ready to proceed or want to make change to the exiting permission policies, open the migration wizard and select the Reset all changes option. You'll lose the progress and can restart the migration later.
+> While migrating, you can't make changes to app assignments. The existing UI gets disabled when you start the migration. If you aren't ready to proceed or want to make change to the existing permission policies, open the migration wizard and select the Reset all changes option. You'll lose the progress and can restart the migration later.
 
 After migration, your blocked apps continue to remain unavailable to users. The statuses of such apps show as `unblocked` now, but the apps are assigned to `No one` in the `Available to` column on the Manage apps page. It means that org user can't use the app, just as you intended before. Users can view the apps in store and [request access to apps](user-requests-approve-apps.md).
 

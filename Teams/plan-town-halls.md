@@ -164,7 +164,7 @@ If you've been using live events for your organization, you might want to unders
 |Real time insights|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 |Video on Demand (VOD)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 |**Devices**||||
-|Microsoft Teams Rooms (Windows) support for presenters and attendees<sup>1</sup>|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|*In development*|*In development*|
+|Microsoft Teams Rooms (Windows) support for presenters and attendees<sup>1</sup>|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 |Microsoft Teams Rooms (Android) support for presenters and attendees<sup>1</sup>|![Image of a x for no](/office/media/icons/cancel-teams.png)|*In development*|![Image of a x for no](/office/media/icons/cancel-teams.png)|
 |Cloud Video Interop (CVI) support|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 |Sharepoint embedded support|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|

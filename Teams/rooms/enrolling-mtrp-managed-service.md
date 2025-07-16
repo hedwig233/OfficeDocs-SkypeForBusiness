@@ -39,7 +39,7 @@ To access the Teams Rooms Pro Management portal, you need to assign one or more 
 Complete the following steps to assign users to the Teams Rooms Pro Manager role:
 
 1. Log in to the [Teams Rooms Pro Management portal](https://portal.rooms.microsoft.com/) (GCC-High customers use [this link](https://devices.gov.teams.microsoft.us/)) using the administrator privileges outlined in this document.
-1. Navigate to **Settings** > **Settings** > **Roles** and then select **Teams Rooms Pro Manager**.
+1. Navigate to **Settings** > **Roles** and then select **Teams Rooms Pro Manager**.
 1. Under **Teams Rooms Pro Manager** select the **Assignments** tab and then select **Add**.
 1. Follow the wizard to name the assignment and select the users who should be added to it. The assignment will apply to all rooms and room groups.
 5. At the end of the assignment wizard, select **Add assignment**.

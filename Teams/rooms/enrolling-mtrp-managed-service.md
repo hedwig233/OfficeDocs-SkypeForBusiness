@@ -4,7 +4,7 @@ author: mstonysmith
 ms.author: tonysmit
 manager: pamgreen
 ms.reviewer: ayerragangu
-ms.date: 4/21/2025
+ms.date: 7/15/2025
 ms.topic: article
 audience: Admin
 ms.service: msteams
@@ -23,27 +23,24 @@ f1keywords:
 
 # Accessing the Pro Management portal
 
-To access the Teams Rooms Pro Management portal, you need to assign one or more users to the below roles and then complete the enrollment steps using that user.
-
-1. **Microsoft Entra built-in roles:** Global Administrator, Teams Administrator, Teams Devices Administrator, Global Reader.
+To access the Teams Rooms Pro Management portal, you need to assign one or more users to the below roles:
 
 > [!IMPORTANT]
 > Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
-2. **Teams Rooms Pro Manager** through the Microsoft Teams Rooms Pro Management portal.
-
-[Assign Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference) to the users using the [Microsoft Entra Admin center](https://entra.microsoft.com/#home).
+1. **Microsoft Entra built-in roles:** Global Administrator, Teams Administrator, Teams Devices Administrator, Global Reader. [Assign Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference) to the users using the [Microsoft Entra Admin center](https://entra.microsoft.com/#home).
+2. Direct roles assignment within the Teams Rooms Pro Management Portal.
 
 > [!NOTE]
 > A Teams Administrator or a Teams Devices Administrator assigned to an Administrative Unit (AU), won't able to access Teams Rooms Pro Management portal, as AUs aren't yet supported. In such cases, consider assigning the users to the Teams Rooms Pro Management built-in roles (**Teams Rooms Pro Manager**, **Site Lead**, and **Site Technician**) or create a custom role. Check [Role Based Access Control](/microsoftteams/rooms/rooms-pro-rbac) for more information.
 
-## Assign users to the Teams Rooms Pro Manager role
+## How to assign users to the Teams Rooms Pro Manager role
 
 Complete the following steps to assign users to the Teams Rooms Pro Manager role:
 
-1. Log in to the [Teams Rooms Pro Management portal](https://portal.rooms.microsoft.com/) with the same administrator privileges as that used to log in to the Microsoft 365 admin center.
+1. Log in to the [Teams Rooms Pro Management portal](https://portal.rooms.microsoft.com/) (GCC-High customers use [this link](http://devices.gov.teams.microsoft.us/)) using the administrator privileges outlined in this document.
 1. Navigate to **Settings** > **Settings** > **Roles** and then select **Teams Rooms Pro Manager**.
-1. Under __Teams Rooms Pro Manager__ select the **Assignments** tab and then select **Add**.
+1. Under **Teams Rooms Pro Manager** select the **Assignments** tab and then select **Add**.
 1. Follow the wizard to name the assignment and select the users who should be added to it. The assignment will apply to all rooms and room groups.
 5. At the end of the assignment wizard, select **Add assignment**.
 
@@ -51,28 +48,3 @@ Users who are assigned to the above-mentioned Microsoft Entra built-in roles or 
 
 After you've assigned users to the Teams Rooms Pro Manager role, continue to the [Enroll a Teams Rooms device](enroll-a-device.md) to add a Teams Rooms device to the Teams Rooms Pro management portal.
 
-<!-- ## Enroll a Teams Rooms device
-
- To enroll a device in the Teams Rooms Premium managed service, see [Monitoring device software installation](monitor-software-installation-guide.md).
-
-2. Select on the **?** icon at the top right-hand corner of the portal to launch the help menu. The help menu includes an [Installation guide](https://portal.rooms.microsoft.com/docs/MMR%20Monitoring%20Software%20Installation%20Guide%20Feb%202021.pdf) containing detailed enrollment instructions:
-
-    1. Review the **Pre-requisites** section in the Installation guide. Confirm that the URLs listed in the **URLs Required for Communication** list are added to your firewall's traffic allow list.
-    2. Follow the instructions in the **Enabling TPM Settings** section to enable the Trusted Platform Module (TPM) functionality on your device.
-    3. Follow the instructions in the **Adding Proxy Settings** section to configure your device to use your proxy gateway, if you have one.
-    4. Follow the instructions in the **Process** section to install the monitoring agent software and configure the self enrollment key on your device.
-
-3. After the monitoring agent and unique XML key are configured on your device, navigate to **Rooms** > room name > **Status**, and then select **Enroll**.
-
-    > [!NOTE]
-    > The Teams Rooms device will remain in the **Onboarding** state until a Managed Service Administrator enrolls the device using the portal.
-
-    See [Monitoring device software installation](monitoring-software-installation-guide.md).
-
-<!--## Link to Installation guide
-
-The **Help** menu provides a link to the [Installation guide](https://portal.rooms.microsoft.com/docs/MMR%20Monitoring%20Software%20Installation%20Guide%20Feb%202021.pdf) which in turn provides the following information:
-
-- Instructions on URLs that need to be allow-listed to serve to enable room telemetry to be sent to the managed service.
-- Instructions for applying the Microsoft Teams Rooms Premium monitoring agent and unique XML key as part of enrolling a device in the managed service.
-- Troubleshooting instructions.-->

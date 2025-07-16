@@ -16,9 +16,11 @@ description: "Perform a system recovery for a Skype for Business Server pool ser
 
 # Disaster recovery testing in Skype for Business Server
 
-Perform a system recovery for a Skype for Business Server pool server to test your documented disaster recovery process. This test will simulate a complete hardware failure for one server, and will help guarantee that the resources, plans, and data are available for recovery. Try to rotate the focus of the test each month so that your organization tests the failure of a different server or other piece of equipment every time. 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
 
-Note that the schedule by which organizations perform Disaster Recovery testing will vary. It is very important that disaster recovery testing is not ignored or neglected. 
+Perform a system reco    very for a Skype for Business Server pool server to test your documented disaster recovery process. This test will simulate a complete hardware failure for one server, and will help guarantee that the resources, plans, and data are available for recovery. Try to rotate the focus of the test each month so that your organization tests the failure of a different server or other piece of equipment every time. 
+
+The schedule by which organizations perform Disaster Recovery testing will vary. It is very important that disaster recovery testing isn't ignored or neglected. 
 
 Export your Skype for Business Server topology, policies, and configuration settings to a file. Among other things, this file can then be used to restore this information to the Central Management store after an upgrade, a hardware failure, or some other issue has resulted in data loss.
 

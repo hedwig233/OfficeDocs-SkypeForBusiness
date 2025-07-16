@@ -18,7 +18,9 @@ description: "To configure the Microsoft push notifications and Apple push notif
 ---
 
 # Mobile Client: Push Notification Configuration
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 To configure the **Microsoft push notifications** and **Apple push notifications**, you must create a policy to define which types of push notification you require.
   
 On the main configuration screen, you can select **Refresh** to refresh and re-populate the list of policies. A search box is provided for narrowing the list of displayed policies. As you type the name that you're searching for, the list of policies narrows automatically.
@@ -32,14 +34,14 @@ Two selections are available for policy creation and editing:
     
 2. **Edit**: Select a policy and click Edit to select an action from a drop-down. You can only edit sites that you have already created or edit the Global policy:
     
-   - **Show details...**: Displays information about the currently selected policy. You are able to make changes to the existing policy.
+   - **Show details...**: Displays information about the currently selected policy. You're able to make changes to the existing policy.
     
    - **Select all**: If you have many policies and need to select all policies, click **Select all**.
     
    - **Delete**: Will remove the selected policy. Using **Select all** and **Delete** will remove all policies
     
      > [!NOTE]
-     > You cannot delete the default **Global** policy. If you attempt to delete it, you will be notified that the Global policy has been returned to the default values (that is, all settings are cleared), but the policy cannot be removed.
+     > You can't delete the default **Global** policy. If you attempt to delete it, you'll be notified that the Global policy has been returned to the default values (that is, all settings are cleared), but the policy can't be removed.
   
 Creating a new policy or editing an existing policy is associated with two actions:
   

@@ -17,7 +17,9 @@ description: "The user models described here provide the basis for the capacity 
 ---
 
 # User models in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 The user models described here provide the basis for the capacity planning measurements and recommendations described in [Capacity planning user model usage for Skype for Business Server](user-model.md).
   
 ## Skype for Business Server User Models

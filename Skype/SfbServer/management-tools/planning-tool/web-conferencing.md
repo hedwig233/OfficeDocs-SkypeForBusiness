@@ -17,7 +17,9 @@ description: "Web conferencing inSkype for Business Server 2015 includes documen
 ---
 
 # Web Conferencing planning tool
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Skype for Business Server 2015 web conferencing includes document collaboration, application sharing, and desktop sharing.
   
 > [!NOTE]

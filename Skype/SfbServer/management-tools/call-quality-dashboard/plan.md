@@ -16,8 +16,10 @@ ms.assetid: cc2fbf41-a7e0-4ef8-a939-47bc42da5529
 description: "Summary: Learn about what to consider when you plan for the Call Quality Dashboard."
 ---
 
-# Skype for Business Server: Plan for Call Quality Dashboard 
- 
+# Skype for Business Server: Plan for Call Quality Dashboard
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn about what to consider when you plan for the Call Quality Dashboard.
   
 ## Overview of the Skype for Business Server Call Quality Dashboard
@@ -150,7 +152,7 @@ In a multiserver configuration, The QoE Archive, Cube, and Portal can all be on 
   
 ### Supported topologies
 
-CQD does not merge data from multiple QoEMetrics databases, as is the case where there are multiple Skype for Business Server topologies, each with its own Monitoring Server. Each CQD instance must point to one QoEMetrics database. However, because CQD will move much of the reporting workload off of the Monitoring Server, large organizations that needed to deploy one Monitoring Server per Skype for Business Server topology should consider using one Monitoring Server for all topologies.
+CQD doesn't merge data from multiple QoEMetrics databases, as is the case where there are multiple Skype for Business Server topologies, each with its own Monitoring Server. Each CQD instance must point to one QoEMetrics database. However, because CQD will move much of the reporting workload off of the Monitoring Server, large organizations that needed to deploy one Monitoring Server per Skype for Business Server topology should consider using one Monitoring Server for all topologies.
   
 ## Infrastructure requirements for CQD
 <a name="Infrastructure_Req"> </a>
@@ -177,15 +179,15 @@ Data processing in CQD is separated into two main stages:
     
 - CQD Cube processing
     
-  **QoE Archive processing.** The QoE Archive processing task copies data from the QoE Metrics database on the Monitoring Server to the QoE Archive database. There are two situations where the processing time of the task would have fundamentally different performance characteristics. The first is after the initial installation of CQD. When the task is run for the first time after a fresh installation, the QoE Archive processing task will copy all the data that is in the QoE Metrics database into QoE Archive database. The second is the periodic processing after this initial round. The QoE Archive processing task will run every 15 minutes and process any new QoE records that are in the QoE Metrics database. Generally, the initial processing time is not a concern because it is run only the first time, when CQD is installed. However, if the CQD server is severely under-provisioned, this task can take several hours. Refer to the table below for example initial QoE Archive processing times.
+  **QoE Archive processing.** The QoE Archive processing task copies data from the QoE Metrics database on the Monitoring Server to the QoE Archive database. There are two situations where the processing time of the task would have fundamentally different performance characteristics. The first is after the initial installation of CQD. When the task is run for the first time after a fresh installation, the QoE Archive processing task will copy all the data that is in the QoE Metrics database into QoE Archive database. The second is the periodic processing after this initial round. The QoE Archive processing task will run every 15 minutes and process any new QoE records that are in the QoE Metrics database. Generally, the initial processing time isn't a concern because it's run only the first time, when CQD is installed. However, if the CQD server is severely under-provisioned, this task can take several hours. Refer to the table below for example initial QoE Archive processing times.
   
-  **CQD Cube processing.** The Cube processing task aggregates the data from the QoE Archive database into the Cube. The initial cube processing time and subsequent cube processing time are determined by the SQL Server Analysis Services edition used for the CQD Cube. If the Standard edition is used, there is no difference between the initial cube processing time and the subsequent cube processing time because each time the Cube data is refreshed, it will always be a full processing of all available data. (This means that the Cube processing time increases as the amount of data in the QoE Archive database increases.) Because the Business Intelligence Edition and Enterprise Edition of SQL Server have partition support, if either edition is used, only the initial run will process all data in the QoE Archive database. In subsequent runs, when the task is triggered every 15 minutes, the task will only process the new records added to the QoE Archive database since the last time the task was run. Once a day, there will also be a full processing on the partition that contains the current month's data.
+  **CQD Cube processing.** The Cube processing task aggregates the data from the QoE Archive database into the Cube. The initial cube processing time and subsequent cube processing time are determined by the SQL Server Analysis Services edition used for the CQD Cube. If the Standard edition is used, there's no difference between the initial cube processing time and the subsequent cube processing time because each time the Cube data is refreshed, it will always be a full processing of all available data. (This means that the Cube processing time increases as the amount of data in the QoE Archive database increases.) Because the Business Intelligence Edition and Enterprise Edition of SQL Server have partition support, if either edition is used, only the initial run will process all data in the QoE Archive database. In subsequent runs, when the task is triggered every 15 minutes, the task will only process the new records added to the QoE Archive database since the last time the task was run. Once a day, there will also be a full processing on the partition that contains the current month's data.
   
 The physical machine characteristics can affect CQD performance as well as the software features that are available from the SQL Server components. The QoE Archive component will be more disk-intensive compared to other components, whereas the Cube component will be more CPU and memory intensive. All of these factors contribute to CQD's total data processing time, which directly affects data freshness and availability. Organizations should make decisions on the hardware and software based on the individual needs of the organization. 
   
 ### Tested Hardware Configurations
 
-This section makes the assumption that there is a single QoEMetrics DB in the environment. 
+This section makes the assumption that there's a single QoEMetrics DB in the environment. 
   
 **Machine profiles**
 
@@ -211,7 +213,7 @@ This section makes the assumption that there is a single QoEMetrics DB in the en
 |4 core   |200 GB   |Single   |Multiple Disks   |125 M   |6+ days   |7 h   |2 m   |6 h   |
 |16 core   |500 GB   |Multiple   |Multiple Spindles   |250 M   |8 days   |2 h   |2 m   |10 m   |
    
-\*These are not expected to be encountered in real deployments because the QoE Metrics database would have to have 9 and 18 months of data, respectively, but they're provided here for completeness.
+\*These aren't expected to be encountered in real deployments because the QoE Metrics database would have to have 9 and 18 months of data, respectively, but they're provided here for completeness.
   
 ### Service Account Requirements
 
@@ -314,7 +316,7 @@ Three domain service accounts are recommended on the principle of least privileg
 - One that already has both a login security principal for QoE Metrics database (with db_datareader privilege) and a login security principal in QoE Archive SQL Server Instance (needed to create a Linked Server object during setup). This account will be used to run "QoE Archive Data" step of the SQL Server Agent job.
     
     > [!NOTE]
-    > If you are working in a heavily locked down environment, you need to check that this service account is indeed granted “Logon as a batch job” and “Allow log on locally” user rights on both the QoE Metrics Monitoring database SQL Server and the QoE Archive SQL Server.
+    > If you're working in a heavily locked down environment, you need to check that this service account is indeed granted “Logon as a batch job” and “Allow log on locally” user rights on both the QoE Metrics Monitoring database SQL Server and the QoE Archive SQL Server.
     
 - One that will be used to run "Process Cube" step of the SQL Server Agent job. Setup will create a login security principal to QoE Archive database (with read and write privilege) and also create a member in the QoE Role (with full control privilege) for the Cube.
     
@@ -323,7 +325,7 @@ Three domain service accounts are recommended on the principle of least privileg
     > [!NOTE]
     > When both QoE Archive database and Repository database are hosted in the same SQL Server, only one login security principal with two user mappings is created. 
   
-The first two accounts can be logically considered as "back end service accounts" and the last account is a "front end service account". While not recommended, it is possible to use a single account in all cases.
+The first two accounts can be logically considered as "back end service accounts" and the last account is a "front end service account". While not recommended, it's possible to use a single account in all cases.
   
 > [!NOTE]
 > The user account initiating the installation must have read access to QoE Metrics DB as well (in addition to having machine admin rights on the QoE Archive DB server where the installation must take place). 

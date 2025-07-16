@@ -4,7 +4,7 @@ author: DaniEASmith
 ms.author: danismith
 manager: jtremper
 ms.reviewer: solomon.alex, grace.culver
-ms.date: 05/05/2025
+ms.date: 06/10/2025
 ms.topic: install-set-up-deploy
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -59,13 +59,9 @@ Users are shown a notice when their prompts are private or shared with others.
 
 ## Security, Compliance, and Privacy
 
-Facilitator, Copilot, and Microsoft 365 are built on Microsoft's comprehensive approach to security, compliance, and privacy. When you use Microsoft Purview for your security and compliance management, Facilitator is supported in the following ways:
+Facilitator, Copilot, and Microsoft 365 are built on Microsoft's comprehensive approach to security, compliance, and privacy.
 
-AI-generated notes for chats and meetings, and moderation and questions and answers for meetings are supported by [auditing events](/purview/audit-log-activities#microsoft-teams-activities) that surface in [Data Security Posture Management for AI](/purview/ai-microsoft-purview#data-security-posture-management-for-ai-provides-insights-policies-and-controls-for-ai-apps) and can be used by [eDiscovery with a KQL query](/purview/edisc-keyword-query-language).
-
-To [automatically retain or delete](/purview/retention) Facilitator AI-generated notes in chat and Facilitator interactions in meetings, use a Microsoft Purview Data Lifecycle Management retention policy with the **Teams chats** location. Because Facilitator data in meetings is [stored in OneDrive](#facilitator-data-storage), AI-generated notes in meetings can be automatically retained or deleted with a retention policy or retention labels with the **OneDrive accounts** location.
-
-Other Microsoft Purview solutions either aren't applicable for Facilitator or aren't yet supported.
+To learn how Microsoft Purview supports your security and compliance management for Facilitator and some recommended getting started steps, see [Use Microsoft Purview to manage data security & compliance for Microsoft Facilitator](/purview/ai-teams-facilitator).
 
 For more information about the security and privacy standards used to develop Microsoft 365 Copilot and AI agents like Facilitator, see the following articles:
 

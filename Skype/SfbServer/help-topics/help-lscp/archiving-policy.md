@@ -18,7 +18,9 @@ description: "You use Archiving policies to enable and disable archiving for use
 ---
 
 # Archiving Policy
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 You use Archiving policies to enable and disable archiving for users homed on Skype for Business Server. In each Archiving policy, you can enable or disable archiving for either or both of the following:
   
 - Internal communications

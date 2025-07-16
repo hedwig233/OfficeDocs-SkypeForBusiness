@@ -17,6 +17,8 @@ description: "Summary: Learn how to configure the meeting join page in Skype for
 
 # Configure the meeting join page in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to configure the meeting join page in Skype for Business Server.
   
 When a user clicks a meeting link in a meeting request, the meeting join page detects whether a Skype for Business client is already installed on the user's computer. If a client is already installed, the client opens and joins the meeting. If a client is not installed, by default the Skype for Business client opens. 

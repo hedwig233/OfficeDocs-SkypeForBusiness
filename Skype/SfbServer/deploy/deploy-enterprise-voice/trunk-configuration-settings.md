@@ -21,6 +21,8 @@ description: "Summary: Learn how to create a new collection of trunk configurati
 
 # Create a new collection of trunk configuration settings in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to create a new collection of trunk configuration settings by using the Skype for Business Server Control Panel.
   
 SIP trunk configuration settings define the relationship and capabilities between a Mediation Server and the Public Switched Telephone Network (PSTN) gateway, an IP-Public Branch eXchange (PBX), or a Session Border Controller (SBC) at the service provider. These settings do such things as specify:

@@ -16,7 +16,9 @@ description: "Summary: Manage the Mobility Service (Mcx) and the Unified Communi
 ---
 
 # Monitor Mobility Service and UCWA usage in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Manage the Mobility Service (Mcx) and the Unified Communications Web API (UCWA) in Skype for Business Server.
 
 > [!NOTE]

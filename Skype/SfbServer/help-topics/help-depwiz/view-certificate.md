@@ -18,7 +18,9 @@ description: "On the View Certificate page, there's a pane that enables you to s
 ---
 
 # View Certificate
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 On the **View Certificate** page, there's a pane that enables you to select any valid certificate in the local certificate store. You can select a certificate, and then select **View Certificate Details**. The certificate is displayed in a new pane. In the **Certificate** pane, you can view the General certificate information. Select the **Details** tab to display detailed information about the certificate, such as subject name and subject alternative name. The Certification Path displays the path of the "chain of trust" for the certificate. When you're finished reviewing the certificate information, click **OK**.
   
 

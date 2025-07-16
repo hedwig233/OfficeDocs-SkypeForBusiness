@@ -17,6 +17,8 @@ description: "Before you begin your migration to Skype for Business Server 2019,
 
 # Phase 2: Prepare for migration
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../includes/appliesto-xxx-2019-sub.md)]
+
 Before you begin your migration to Skype for Business Server 2019, follow the steps described in this section.
   
 ## In this section

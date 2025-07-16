@@ -16,6 +16,8 @@ description: "After you remove a Front End pool or reconfigure the pool to use a
 
 # Remove the SQL Server database for a Front End pool
 
+[!INCLUDE [appliesto-xxx-2019-sub](../includes/appliesto-xxx-2019-sub.md)]
+
 After you remove a Front End pool or reconfigure the pool to use a different database, you can remove the SQL Server databases that hosted the pool data. Use the following procedures to remove the definitions from Topology Builder, and then remove the database and log files from the database server.
   
 ## To remove the SQL Server database using Topology Builder

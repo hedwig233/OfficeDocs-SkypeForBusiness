@@ -17,6 +17,8 @@ description: "Summary: Learn how to manage archiving for Skype for Business Serv
 
 # Manage archiving in Skype for Business Server
 
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to manage archiving for Skype for Business Server.
   
 When you deploy archiving for your organization, you specify the initial configuration during deployment. However, there might be times when you want to change how you implement archiving support for day-to-day management or to meet new requirements for your organization. For example, you might need to set up archiving support differently for a specific site, a specific pool, or specific users within your organization. For users homed on Skype for Business Server, you do this by creating and customizing archiving configuration options and user policies. 

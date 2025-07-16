@@ -16,6 +16,8 @@ description: "This topic describes how to install and open the administrative to
 
 # Install and open administrative tools
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 This topic describes how to install the administrative tools you need to deploy and manage Skype for Business Server. The administrative tools are installed by default on each server running Skype for Business Server. Additionally, you can install the administrative tools on other computers, such as dedicated administrative consoles. We strongly recommend that you install the administrative tools on a computer that is in the same domain or forest as the Skype for Business Server deployment you are creating, to ensure that Active Directory Domain Services preparation steps are already complete, which enables you to use the administrative tools on that computer later to publish your topology. Also make sure to review the necessary requirements before you install or use the Skype for Business Server administrative tools. See the requirements documentation in [Skype for Business Server 2019](../../SfBServer2019/plan/system-requirements.md) or [Skype for Business Server 2015](../plan-your-deployment/requirements-for-your-environment/requirements-for-your-environment.md).
  
 > [!Important]

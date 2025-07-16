@@ -18,6 +18,8 @@ description: "To Define the Survivable Branch Appliance FQDN, type the fully qua
 ---
 
 # Add Survivable Branch Appliance Pool
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 To **Define the Survivable Branch Appliance FQDN**, type the fully qualified domain name (FQDN) (as defined in Domain Name System (DNS)) of the Survivable Branch Appliance or Survivable Branch Server in the **FQDN** text box. Click **Next** to continue.
   

@@ -19,6 +19,8 @@ description: "Location policies determine whether Enhanced 9-1-1 (E9-1-1) is ena
 
 # Location Policy
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Location policies determine whether Enhanced 9-1-1 (E9-1-1) is enabled and how it is used, as well as how location information is used for users and contacts.
 
 Location policies include the global policy and, optionally, one or more site and user policies:

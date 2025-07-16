@@ -21,6 +21,8 @@ description: "Summary: Review the IP Address type considerations below before im
 
 # Configure IP address types in Skype for Business
 
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Review the IP Address type considerations below before implementing Skype for Business Server.
 
 You deploy IP address types by using topology settings that you configure in Topology Builder. This section describes how to deploy IP address types on Front End Servers, Mediation Servers, and Edge Servers.
@@ -74,11 +76,11 @@ Using Topology Builder, perform the steps in the following procedure to deploy I
 
   - **PSTN IP address**. Define a PSTN IP address when a Mediation Server is collocated on the Front End Server. This address must match the format of the selected address type.
 > [!IMPORTANT]
-> We only support two network cards on *dedicated* Mediation Servers. If the Mediation Sserver role is collocated on the Front End, then dual network cards are not supported. 
+> We only support two network cards on *dedicated* Mediation Servers. If the Mediation Server role is collocated on the Front End, then dual network cards are not supported. 
 
 > [!NOTE]
-> - For more information about supported NIC configurations for Skype for Business Server 2015, see [Hardware for Skype for Business Server 2015](../requirements-for-your-environment/server-requirements.md#hardware-for-skype-for-business-server-2015)
-> - For more information about supported NIC configurations for Skype for Business Server 2019, see [Hardware for Skype for Business Server 2019](../../../SfBServer2019/plan/system-requirements.md#hardware-for-skype-for-business-server-2019)
+> - For more information about supported NIC configurations for Skype for Business Server 2015, see [Hardware for Skype for Business Server 2015](../requirements-for-your-environment/server-requirements.md#hardware-for-skype-for-business-server-2015).
+> - For more information about supported NIC configurations for Skype for Business Server 2019, see [Hardware for Skype for Business Server 2019](../../../SfBServer2019/plan/system-requirements.md#hardware-for-skype-for-business-server).
 
 
 

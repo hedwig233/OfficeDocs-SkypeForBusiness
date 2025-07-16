@@ -8,6 +8,7 @@ ms.date: 1/29/2025
 ms.topic: reference
 ms.tgt.pltfrm: cloud
 ms.service: msteams
+ms.subservice: teams-calling
 search.appverid: MET150
 ms.collection: 
   - M365-voice

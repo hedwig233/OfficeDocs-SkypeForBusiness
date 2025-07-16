@@ -20,6 +20,8 @@ description: "Read this topic to learn how to configure multiple emergency numbe
 
 # Configure multiple emergency numbers in Skype for Business
 
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Read this topic to learn how to configure multiple emergency numbers in Skype for Business Server.
 
 Skype for Business Server now supports multiple emergency numbers for a client. Multiple emergency numbers is a new feature introduced in the June 2016 Cumulative Update. Before you configure your environment to support multiple emergency numbers, be sure to read [Plan for multiple emergency numbers in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/multiple-emergency-numbers.md).
@@ -29,7 +31,7 @@ Skype for Business Server now supports multiple emergency numbers for a client. 
 
 ## Configure multiple emergency numbers
 
-To configure multiple emergency numbers, you use the New-CsEmergencyNumber cmdlet, and then you specify the EmergencyNumbers parameter with the [New-CsLocationPolicy](/powershell/module/skype/new-cslocationpolicy?view=skype-ps) and [Set-CsLocationPolicy](/powershell/module/skype/set-cslocationpolicy?view=skype-ps) cmdlets. For a complete description of all the location policy parameters, such as PSTN usage and Location required, see [Set-CsLocationPolicy](/powershell/module/skype/set-cslocationpolicy?view=skype-ps).
+To configure multiple emergency numbers, you use the New-CsEmergencyNumber cmdlet, and then you specify the EmergencyNumbers parameter with the [New-CsLocationPolicy](/powershell/module/skype/new-cslocationpolicy?view=skype-ps&preserve-view=true) and [Set-CsLocationPolicy](/powershell/module/skype/set-cslocationpolicy?view=skype-ps&preserve-view=true) cmdlets. For a complete description of all the location policy parameters, such as PSTN usage and Location required, see [Set-CsLocationPolicy](/powershell/module/skype/set-cslocationpolicy?view=skype-ps&preserve-view=true).
 
 The following command creates a new emergency number with dial string 911 by using the New-CsEmergency cmdlet:
 

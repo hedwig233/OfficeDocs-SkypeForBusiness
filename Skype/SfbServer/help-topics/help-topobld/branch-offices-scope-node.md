@@ -18,6 +18,8 @@ description: "The Branch Sites node lists the branch sites that are associated w
 ---
 
 # Branch Offices Scope Node
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The **Branch Sites** node lists the branch sites that are associated with this central site. You can perform the following action:
   

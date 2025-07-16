@@ -15,11 +15,13 @@ ms.assetid: 50755399-2228-4324-81db-c2bfc824c299
 description: "Skype for Business Server planning and configuration information for Video-based Screen Sharing (VbSS)"
 ---
 
-# Video based Screen Sharing for Skype for Business Server 
- 
+# Video based Screen Sharing for Skype for Business Server
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Video-based Screen Sharing (VbSS) in Skype For Business Server 2015 is now available for download: [Skype for Business Server 2015 Cumulative Update KB3061064](https://www.microsoft.com/download/details.aspx?id=47690). VbSS is included with Skype for Business Server 2019.
   
-Video-based Screen Sharing, or VbSS, grew out of Lync screen-sharing. The difference between VbSS and traditional screen-sharing has to do with the underlying protocols used, and what they excel at. Screen-sharing uses the remote desktop protocol (RDP), which is great at creating thousands of 1-to-1 sessions between people's computers. Newer technology, VbSS, makes use of User Datagram Protocol (UDP).
+Video-based Screen Sharing, or VbSS, grew out of Lync screen-sharing. The difference between VbSS and traditional screen-sharing has to do with the underlying protocols used, and what they excel at. Screen-sharing uses the remote desktop protocol (RDP), which is great at creating thousands of one-to-one sessions between people's computers. Newer technology, VbSS, makes use of User Datagram Protocol (UDP).
   
 Skype for Business Server wanted to improve people's one-to-one, and their one-to-many (multi-party) conversations and meeting experiences. VbSS makes use of the media platform which relies on UDP as the underlying protocol. Its goal is to improve your video start times, the viewing quality of what you're watching (especially if what you're watching is moving fast), and reliability overall.
   
@@ -39,7 +41,7 @@ Switching to VbSS aims to make three key improvements:
     
 Keep in mind that these numbers rely on the health and proper performance tuning of your network, and may involve networks external to your own, if your clients are on mobile devices.
   
-You should be aware that some fidelity/crispness of your shared content is traded for reliability, speed, and efficiency. In most cases this isn't readily visible to users.
+You should be aware that some fidelity/crispness of your shared content is traded for reliability, speed, and efficiency. In most cases, this isn't readily visible to users.
   
 ### Ports and protocols
 
@@ -59,7 +61,7 @@ You should be aware that some fidelity/crispness of your shared content is trade
 If QoS is enabled for the following media ports and VbSS is also enabled, during a conference that includes desktop sharing the AS MCU uses the video port settings shown in bold below for the screen share traffic. 
   
 > [!IMPORTANT]
-> These settings are a special case, and these exact settings must be used when implementing both of these features. This overrides other recommended settings in the [documentation for QoS](/previous-versions/office/lync-server-2013/lync-server-2013-managing-quality-of-service-qos). For application sharing you will also need to specify ASMCUSVC.exe in the QoS GPO in addition to defining these port values. 
+> These settings are a special case, and these exact settings must be used when implementing both of these features. This overrides other recommended settings in the [documentation for QoS](/previous-versions/office/lync-server-2013/lync-server-2013-managing-quality-of-service-qos). For application sharing you'll also need to specify ASMCUSVC.exe in the QoS GPO in addition to defining these port values. 
   
 **Application Server QoS/VbSS required settings**
 
@@ -88,7 +90,7 @@ At full capacity (which as noted above, is 375 screen sharing participants per F
   
 To mitigate this, one or more of the following options may be helpful:
   
-- Upgrade your Front End Server from a 1 Gigabit network card to a 10-Gigabit Ethernet card.
+- Upgrade your Front End Server from a 1-Gigabit network card to a 10-Gigabit Ethernet card.
 
 - Increase the number of Front End Servers to load-balance traffic.
 
@@ -159,7 +161,7 @@ The great thing is, once you've installed the Skype for Business Server 2015 Cum
     For more information on this command, see [Set-CsMediaConfiguration](/powershell/module/skype/set-csmediaconfiguration?view=skype-ps&preserve-view=true).
     
 > [!NOTE]
-> In a multiparty Skype for Business meeting, all client endpoints will respect the policy setting for the meeting organizer. 
+> In a multiparty Skype for Business meeting, all client endpoints respect the policy setting for the meeting organizer. 
   
 ### How to enable users to use VbSS
 
@@ -186,7 +188,7 @@ The great thing is, once you've installed the Skype for Business Server 2015 Cum
     For more information on this command, see [Set-CsMediaConfiguration](/powershell/module/skype/set-csmediaconfiguration?view=skype-ps&preserve-view=true).
     
 > [!NOTE]
-> In a multi-party Skype for Business meeting, all client endpoints will respect the policy setting for the meeting organizer. 
+> In a multi-party Skype for Business meeting, all client endpoints respect the policy setting for the meeting organizer. 
   
 ## See also
 

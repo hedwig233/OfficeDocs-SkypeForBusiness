@@ -16,6 +16,8 @@ description: "After you remove a Monitoring Server, you can remove the SQL Serve
 
 # Remove the SQL Server database for a Monitoring server
 
+[!INCLUDE [appliesto-xxx-2019-sub](../includes/appliesto-xxx-2019-sub.md)]
+
 After you remove a Monitoring Server, you can remove the SQL Server databases that hosted the server data. Use the following procedures to remove the definitions from Topology Builder, and then remove the database and log files from the database server.
   
 ## To remove the SQL Server database using Topology Builder

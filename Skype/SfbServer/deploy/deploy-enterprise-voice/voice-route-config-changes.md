@@ -21,6 +21,8 @@ description: "Summary: Learn how to review, publish, or cancel voice routing con
 
 # Publish pending changes to the voice routing configuration in Skype for Business
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to review, publish, or cancel voice routing configuration changes in Skype for Business Server by using the Skype for Business Server Control Panel.
   
 After you make changes to any of the configuration settings in pages in the **Voice Routing** group, perform this procedure to review, publish, or cancel the pending changes.

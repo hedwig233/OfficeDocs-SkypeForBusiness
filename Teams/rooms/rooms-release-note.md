@@ -777,6 +777,8 @@ Introduced in this update:
 
 |Release  |Release date  |
 |---------|---------|
+|[1449/1.0.96.2025205603](#144910962025205603-july-2025) | July 2025 |
+|[1449/1.0.96.2025203502](#144910962025203502-june-2025) | June 2025 |
 |[1449/1.0.96.2025126202](#144910962025126202-may-2025) | May 2025 |
 |[1449/1.0.96.2025031102](#144910962025031102-march-2025) | March 2025 |
 |[1449/1.0.96.2025020302](#144910962025020302-february-2025) | February 2025 |
@@ -813,6 +815,28 @@ Introduced in this update:
 > There can be a delay between when features are released by Microsoft and when they become available on a device make and model. If an update isn't available on your device, check with your device manufacturer for information on when it might become available.
 
 Features with :::image type="icon" source="../media/mtr-pro-icon.png"::: are only available with Teams Rooms Pro license.
+
+### 1449/1.0.96.2025205603 (July 2025)
+
+Resolved Issues:
+
+- Resolved an issue where the Microsoft Teams Rooms application doesn't start automatically after a reboot.
+-	Resolved an issue where two parallel sign-ins were canceled by each other.
+- Resolved an issue where device enrollment was taking longer than expected.
+-	Resolved an issue which was causing home screen UI performance to be sluggish.
+
+### 1449/1.0.96.2025203502 (June 2025)
+
+- Introduced in this update:
+
+- **Real time text (RTT) support:** Users can view real time text (RTT) messages on the front of room display. If users wish to send RTT messages, they will need to join the meeting with their laptop/mobile as a companion device. This feature is currently in TAP/Beta ring on Teams desktop and mobile. 
+
+Resolved Issues:
+
+- Fixed an issue where explicit consent for Microsoft Copilot was not being displayed on Teams Rooms Android
+-	Fixed an issue where layout options were not being shown when content is being shared
+-	Resolved an issue where dual display mode was being set automatically.
+-	Fixed crashes leading to meeting drops in some situations.
 
 ### 1449/1.0.96.2025126202 (May 2025)
 

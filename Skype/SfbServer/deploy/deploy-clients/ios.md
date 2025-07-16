@@ -17,6 +17,8 @@ description: "Summary: How to install and test the Skype for Business for iOS ap
 
 # Install and test Skype for Business for iOS
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** How to install and test the Skype for Business for iOS app.
   
 The Skype for Business for iOS app brings Skype for Business presence, instant messaging (IM), and voice and video calling to iOS devices. Users with Lync 2013 will either get the updated app automatically or be prompted to update it manually, depending on their user settings. New users can download it from the Apple App Store. The Skype for Business for iOS app is only available on iOS versions 8.0 and later.

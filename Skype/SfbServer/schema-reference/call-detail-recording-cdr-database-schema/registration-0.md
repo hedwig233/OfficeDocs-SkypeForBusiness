@@ -16,7 +16,9 @@ description: "The Registration view stores information about user registration. 
 ---
 
 # Registration view
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The Registration view stores information about user registration. This view was introduced in Lync Server 2013.
   
 |**Column**|**Data Type**|**Details**|
@@ -35,8 +37,8 @@ The Registration view stores information about user registration. This view was 
 |**ClientType** <br/> |int  <br/> |Client used by the user who registered. For more information, see the [UserAgentDef table](useragentdef.md). <br/> |
 |**ClientCategory** <br/> |nvarchar(64)  <br/> |Category of the client used by the user who registered.  <br/> |
 |**IpAddress** <br/> |nvarchar(256)  <br/> |IP Address the user registered with. This may be an IPv4 or IPv6 address.  <br/> |
-|**DialogId** <br/> |varstring(775)  <br/> |SIP dialog ID. The format of the is:  <br/> dialog;from-tag;to-tag  <br/> |
-|**ResponseCode** <br/> |int  <br/> |SIP response code to the session invitation. This field is typically populated by data generated from the initial INVITE message in the session. If there is no INVITE message then the field is populated with the date and time of the first relevant SIP message (BYE, CANCEL, MESSAGE, or INFO).  <br/> |
+|**DialogId** <br/> |varstring(775)  <br/> |SIP dialog ID. The format is:  <br/> dialog;from-tag;to-tag  <br/> |
+|**ResponseCode** <br/> |int  <br/> |SIP response code to the session invitation. This field is typically populated by data generated from the initial INVITE message in the session. If there's no INVITE message then the field is populated with the date and time of the first relevant SIP message (BYE, CANCEL, MESSAGE, or INFO).  <br/> |
 |**DiagnosticId** <br/> |int  <br/> |Diagnostic ID captured from SIP header.  <br/> |
 |**Registrar** <br/> |nvarchar(256)  <br/> |FQDN of the Registrar.  <br/> |
 |**Pool** <br/> |nvarchar(256)  <br/> |FQDN of the pool that captured the data for the session.  <br/> |

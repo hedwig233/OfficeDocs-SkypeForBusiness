@@ -17,6 +17,8 @@ description: "Summary: These features have been removed from Skype for Business 
 
 # What's deprecated from Skype for Business Server 2019
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../SfBServer2019/includes/appliesto-xxx-2019-sub.md)]
+
 Learn about the features and functionality that are deprecated in Skype for Business Server 2019. For information about new features in Skype for Business Server 2019, see [What's in Skype for Business Server 2019](whats-new.md).
 
 Some de-emphasized features are included in Skype for Business Server 2019 for compatibility with previous product versions.

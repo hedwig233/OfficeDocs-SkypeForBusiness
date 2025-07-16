@@ -16,7 +16,9 @@ description: "The Server table is a supporting table. Each record represents one
 ---
 
 # Server table
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The Server table is a supporting table. Each record represents one server. 
   
 |**Column**|**Data Type**|**Key/Index**|**Details**|

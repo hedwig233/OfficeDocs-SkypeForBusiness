@@ -19,6 +19,8 @@ description: "On the Move Users page, you can select a destination pool to move 
 
 # Move User
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 On the **Move Users** page, you can select a destination pool to move the selected user to.
 
 For more information about moving users, see [Move Users to Another Pool](/previous-versions/office/lync-server-2013/lync-server-2013-move-users-to-another-pool).

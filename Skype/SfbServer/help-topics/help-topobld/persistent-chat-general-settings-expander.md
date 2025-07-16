@@ -18,7 +18,9 @@ description: "You edit the General settings for the Persistent Chat Server or Pe
 ---
 
 # Persistent Chat General Settings Expander
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 You edit the **General** settings for the Persistent Chat Server or Persistent Chat Server pool by configuring or defining these properties:
   
  **General**

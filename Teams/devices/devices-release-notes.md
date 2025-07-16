@@ -33,6 +33,12 @@ To view feature updates for Microsoft Teams Rooms, go to:
 
 ## [Teams panels](#tab/panels)
 
+## July 2025
+
+**Applies to:** *Teams app version: 1449/1.0.97.2025102203*
+
+- Fixes for authentication. 
+
 ## April 24, 2025
 
 **Applies to:** *Teams app version: 1449/1.0.97.2025086303*
@@ -40,7 +46,7 @@ To view feature updates for Microsoft Teams Rooms, go to:
 > [!IMPORTANT]
 > This update introduces a new versioning format, moving away from using dates. Going forward, this format will be used 1449/1.0.94.*year of release.internal codes*.
 
-- **Occupancy state** Teams panels can now smartly utilize signals from Teams Rooms devices or occupancy sensors paired with panels to indicate when a room is in use (e.g. LED glow), so you’re not surprised to find an available room is actually occupied. Requires a Teams Rooms Pro or Shared Devices. For more information, see [Occupancy state on Teams panels](/microsoftteams/devices/teams-panels-occupancy). Please note that this feature hasn't started to roll out to GCC. Stay tuned for updates. 
+- **Occupancy state** Teams panels can now smartly utilize signals from Teams Rooms devices or occupancy sensors paired with panels to indicate when a room is in use (e.g. LED glow), so you’re not surprised to find an available room is actually occupied. Requires a Teams Rooms Pro or Shared Devices. For more information, see [Occupancy state on Teams panels](/microsoftteams/devices/teams-panels-occupancy). Note that this feature hasn't started to roll out to GCC. Stay tuned for updates. 
 
 ## April 2025
 
@@ -157,7 +163,7 @@ To add a mobile system OS scanner:
 
 ### April 2023
 
-#**Applies to:** *Teams app Version: 1449/1.0.97.2023041403*
+**Applies to:** *Teams app Version: 1449/1.0.97.2023041403*
 
 - IT admins can use Teams panels with their Government Community Cloud High (GCC-H) accounts.
 - Fix for settings syncing with the Teams Admin Center and reset issues.
@@ -224,6 +230,42 @@ To add a mobile system OS scanner:
 
 ## [Teams phones](#tab/phones)
 
+## June 30, 2025
+
+**Applies to:** *Teams app version: 1449/1.0.94.2025168802* (Poly, Yealink and Audiocodes)
+
+- Back-end bug fixes to address unintended sign-outs.
+
+## May 27, 2025
+
+**Applies to:** *Teams app version: 1449/1.0.94.2025042103 (Yealink MP52, Crestron UC-Px, UX-Px-I, UC-2 and Audiocodes C488HD, C450HD)*
+
+- Authentication token and back-end calendar fixes 
+
+This update also includes these features, which were already available for certified Teams Phones:
+
+- Copilot-generated summaries for call transfers
+
+- Line Keys for Shared Line, Collaborative call delegation, Call queues and Call transfers
+
+- External Contacts Management
+
+- Line keys on touch, non-touch and sidecar devices for speed dials
+
+- Queues app 
+
+- Shared line call history 
+
+- App pinning on home screen using dedicated settings 
+
+- Collaborative call delegation 
+
+- Multi-banner updates 
+
+- Critical bug fixes and improvements 
+
+For a detailed and comprehensive list of capabilities available for these device models, review release notes after December 18, 2024 until May 27, 2025.
+
 ## May 26, 2025
 
 **Applies to:** *Teams app version: 1449/1.0.94.2025165302 (Poly, Yealink and Audiocodes)*
@@ -247,7 +289,7 @@ To add a mobile system OS scanner:
 **Applies to:** *Teams app version: 1449/1.0.94.2025087003 (Poly, Yealink and Audiocodes)*
 
 > [!IMPORTANT]
-> Starting in June 2025, Teams applications that are older than five (5) months will no longer work be able to connect to the service. Please refer to the Message Center Post, MC969451 for more details.
+> Starting in June 2025, Teams applications that are older than five (5) months will no longer work be able to connect to the service. Refer to the Message Center Post, MC969451 for more details.
 
 - Bug fixes for caller name resolution in certain scenarios, improvements for Multi-Factor Authentication using Device Code Flow (DCF) wherein user account name can be used to sign-in. 
 
@@ -258,7 +300,7 @@ To add a mobile system OS scanner:
 **Applies to:** *Teams app version: 1449/1.0.94.2025084203 (Poly, Yealink and Audiocodes)*
 
 > [!IMPORTANT]
-> Starting in June 2025, Teams applications that are older than five (5) months will no longer work be able to connect to the service. Please refer to the Message Center Post, MC969451 for more details.
+> Starting in June 2025, Teams applications that are older than five (5) months will no longer work be able to connect to the service. Refer to the Message Center Post, MC969451 for more details.
 
 > [!NOTE]
 > This update introduces a new versioning format, moving away from using dates. Going forward, this format will be used **1449/1.0.94.*year of release.internal codes***
@@ -303,7 +345,7 @@ App also includes multiple bug fixes and improvements. Bug fixes impacting user 
 **Applies to:** *Teams app version: 1449/1.0.94.2025020301 (Poly, Yealink, AudioCodes)*
 
 > [!IMPORTANT]
-> Starting June 2025, Teams applications older than 5 months will no longer work. Please refer to the Message Center Post, MC969451 for more details.
+> Starting June 2025, Teams applications older than 5 months will no longer work. Refer to the Message Center Post, MC969451 for more details.
 
 Bug fixes including improvements in font rendering on side cars among others   
 
@@ -314,7 +356,7 @@ Contacts on Teams app and sidecar will now be sorted alphabetically
 **Applies to:** *Teams app version: 1449/1.0.94.2024122303 (Poly, Yealink, AudioCodes)*
 
 > [!IMPORTANT]
-> Starting June 2025, Teams applications older than 5 months will no longer work. Please refer to the Message Center Post, MC969451 for more details.
+> Starting June 2025, Teams applications older than 5 months will no longer work. Refer to the Message Center Post, MC969451 for more details.
 
 ##### Queues app
 

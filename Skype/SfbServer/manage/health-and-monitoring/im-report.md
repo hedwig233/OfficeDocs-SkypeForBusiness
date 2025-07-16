@@ -17,6 +17,8 @@ description: "Summary: Learn about the Peer-to-Peer IM Report in Skype for Busin
 
 # Peer-to-Peer IM Report in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn about the Peer-to-Peer IM Report in Skype for Business Server.
   
 The Peer-to-Peer IM Report provides trend information about peer-to-peer instant messaging (IM) sessions, broken down by pool and by authentication type. The report can show either the total number of sessions held during the specified time period (for example, day-by-day or hour-by-hour), or it can show the total number of instant messages sent during that time period.

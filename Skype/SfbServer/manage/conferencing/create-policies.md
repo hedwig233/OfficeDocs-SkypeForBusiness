@@ -16,6 +16,8 @@ description: "Summary: Learn how to create conferencing policies in Skype for Bu
 ---
 
 # Create conferencing policies in Skype for Business Server
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 **Summary:** Learn how to create conferencing policies in Skype for Business Server.
   
@@ -36,13 +38,13 @@ You can create conferencing policies by using Skype for Business Server Control 
    - To create a site-level policy, click **Site policy**. In the **Select a Site** search field, type all or part of the name of the site for which you want to create a policy. In the list of sites, click the site that you want, and then click **OK**.
     
      > [!NOTE]
-     > The site name becomes the conferencing policy name; it cannot be changed. 
+     > The site name becomes the conferencing policy name; it can't be changed. 
   
 5. In **Description**, type a description for the policy.
     
 6. Under **Organizer policy**, in **Maximum meeting size**, type the maximum number of users that you want to allow at a meeting. By default, the maximum meeting size is 250.
     
-7. To prevent users from inviting anonymous users to meetings, clear the **Allow participants to invite anonymous users** check box. Anonymous users are users who do not have credentials in your organization's Active Directory Domain Services and who, therefore, are not authenticated. By default, users can invite anonymous users to meetings.
+7. To prevent users from inviting anonymous users to meetings, clear the **Allow participants to invite anonymous users** check box. Anonymous users are users who don't have credentials in your organization's Active Directory Domain Services and who, therefore, aren't authenticated. By default, users can invite anonymous users to meetings.
     
 8. In **Recording**, do one of the following:
     
@@ -64,7 +66,7 @@ You can create conferencing policies by using Skype for Business Server Control 
     
     - To prevent users from joining the meeting by dialing in, clear the **Enable PSTN dial-in conferencing** check box. By default, users can dial in to meetings by using the public switched telephone network (PSTN).
     
-    - If you allow users to dial in to meetings and you want to allow unauthenticated (anonymous) users to join a meeting by using dial out phoning, select the **Allow anonymous participants to dial out** check box. With dial-out phoning, the conference server calls the user, and the user answers the phone to join the meeting. By default, anonymous users cannot join a meeting by using dial-out phoning.
+    - If you allow users to dial in to meetings and you want to allow unauthenticated (anonymous) users to join a meeting by using dial out phoning, select the **Allow anonymous participants to dial out** check box. With dial-out phoning, the conference server calls the user, and the user answers the phone to join the meeting. By default, anonymous users can't join a meeting by using dial-out phoning.
     
 12. If you chose to allow the use of video in **Audio/video**, check **Allow multiple video streams**.
     
@@ -94,7 +96,7 @@ You can create conferencing policies by using Skype for Business Server Control 
     
     - To prevent meeting participants from taking control of application sharing, clear the **Allow participants to take control** check box. By default, participants can take control of application sharing.
     
-    - If you chose to allow meeting participants to take control of application sharing, select the **Allow federated and anonymous participants to take control** check box to allow external users to take control of application sharing. By default, external users cannot take control of application sharing.
+    - If you chose to allow meeting participants to take control of application sharing, select the **Allow federated and anonymous participants to take control** check box to allow external users to take control of application sharing. By default, external users can't take control of application sharing.
     
 17. Under **Participant policy**, do one of the following:
     
@@ -106,7 +108,7 @@ You can create conferencing policies by using Skype for Business Server Control 
     
 18. To prevent peer-to-peer file transfers, clear the **Enable peer-to-peer file transfer** check box. By default, peer-to-peer file transfers are allowed.
     
-19. To allow peer-to-peer recording, select the **Enable peer-to-peer recording** check box. By default, peer-to-peer recording is not allowed.
+19. To allow peer-to-peer recording, select the **Enable peer-to-peer recording** check box. By default, peer-to-peer recording isn't allowed.
     
 20. To allow participants to join with multiple video streams, select the **Enable participants to join with multiple video streams** check box. By default, multiple video streams are allowed.
     

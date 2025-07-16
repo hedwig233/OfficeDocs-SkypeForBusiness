@@ -16,6 +16,8 @@ description: "tblComplianceFanout contains all servers that processed a complian
 ---
 
 # tblComplianceFanout
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 tblComplianceFanout contains all servers that processed a compliance event.
   

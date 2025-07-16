@@ -30,11 +30,11 @@ This article provides you with guidance on setting up and managing line keys on 
 
 Line keys are supported on:
 
-- Nontouch Teams phones  
+- Nontouch Teams Phones  
 
-- Touch Teams phones (via the Line Keys app on the home screen)  
+- Touch Teams Phones (via the Line Keys app on the home screen)  
 
-- Teams phones with sidecars (for extended key capacity)
+- Teams Phones with sidecars (for extended key capacity)
 
 ## Software Requirements 
 
@@ -76,9 +76,9 @@ When you first start to assign line keys, you see available and unassigned line 
 1. Steps to assign line keys:
 
    1. Find an available line key on your device.
-   
+      
    1. Select Assign line key.
-   
+      
    1. Choose the type of assignment (for example, contact, shared line, call queue).
       
 1. The following options are supported for assignment:
@@ -93,6 +93,9 @@ When you first start to assign line keys, you see available and unassigned line 
       
    1. Call transfer: Assign a contact to enable one-touch transfer of active calls.
       
+> [!IMPORTANT]
+> Call queue and shared lines assignments on nontouch devices don't work as they're not supported.
+
 ## Management of line keys
 
 Users can manage an assigned line key by selecting or long pressing the key. Management options include:  
@@ -148,7 +151,7 @@ LED indicators on line keys provide visual cues for call status: 
 1. Blinking green: Line is receiving and active call.
 
 > [!NOTE]
-> LED support will be introduced by device manufacturers—please check with them directly for rollout timelines.
+> LED support will be introduced by device manufacturers— check with them directly for rollout timelines.
 
 ## Frequently Asked Question
 

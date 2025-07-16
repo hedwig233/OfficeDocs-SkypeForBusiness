@@ -4,7 +4,7 @@ author: mkbond007
 ms.author: mabond
 manager: pamgreen
 ms.reviewer: colongma
-ms.date: 11/22/2024
+ms.date: 06/23/2025
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -36,13 +36,14 @@ description: Learn how to use the Teams Auto Attendant & Call Queue Historical R
 
 The Teams Auto Attendant & Call Queue Historical Report Power BI template provides three reports that allow organizations to report on the number of calls processed by Auto attendants and Call queues. It also provides agent performance insights.
 
-## V3.2.0 published on March 21, 2025
+## V3.2.1 published on June 23, 2025
 
 What's new in this release:
-- Reports are available in [46 languages/locales](#supported-locales).
-- Authorized users see reports by Auto Attendant and Call Queue names vs Resource Account
-  - Admin users continue to see the reports by Resource Account
-
+- Resolved the issue associated with an authorized user having the **Historical Call Queue Metrics** permission set to **All** and the report reverting back to reporting by Resource account. Authorized users can now see the report by Auto Attendant and Call Queue name at all times.
+- Resolved the issue associated with the Call Overflow/Timeout/No Agent Destinations that resulted in calls not being counted when a Voice App was the routing destination 
+- Resolved the issue on the Agent Timeline tooltip report that resulted in showing all calls for the agent instead of only the calls within the selected date range.
+- Resolved the issue on the Agent Timeline report that resulted in showing the individual calls for the agent instead of the sum of calls for the agent.
+  
 ## Overview
 
 The Teams Auto Attendant & Call Queue Historical Report Power BI template contains the following three reports:
@@ -97,7 +98,7 @@ Use one of the following methods to control access to the historical reports:
   For more information, see [CQD access role](./turning-on-and-using-call-quality-dashboard.md#assign-admin-roles-for-access-to-cqd).
 
   > [!NOTE]
-  > If a user is assigned a CQD access role and a voice applications policy, the CQD role takes precedence and the user can see all the Auto attendants, Call queues, and Agents in the tenant.
+  > If a user is assigned to a CQD access role and a voice applications policy, the CQD role takes precedence and the user can see all the Auto attendants, Call queues, and Agents in the tenant.
 
 ## V3.x.x desktop installation
 
@@ -105,11 +106,11 @@ The following steps assume that the Power BI Desktop client is installed on your
 
 Perform the following steps:
 
-1. Download and save the [Teams Auto Attendant & Call Queue Historical Reports V3.2.0.zip](https://www.microsoft.com/download/details.aspx?id=104623) file on your computer.
+1. Download and save the [Teams Auto Attendant & Call Queue Historical Reports V3.2.1.zip](https://www.microsoft.com/download/details.aspx?id=104623) file on your computer.
 
 2. Open the zip file.
 
-3. Open the `Teams Auto Attendant & Call Queue Historical Reports V3.2.0.pbit` template file. Power BI Desktop should launch.
+3. Open the `Teams Auto Attendant & Call Queue Historical Reports V3.2.1.pbit` template file. Power BI Desktop should launch.
 
 4. Select the **Language** and **UTC Offset**.
 
@@ -133,7 +134,7 @@ Perform the following steps:
      
    :::image type="content" source="media/aa-cq-historical-report-02-v320.png" alt-text="Screenshot showing data sources for v3.2.x":::
 
-6. Do the following for each of the two data sources shown:
+6. Do the following steps for each of the two data sources shown:
    - Select the data source.
    - Select **Edit Permissions**, and then **Edit**.
    - Select **Organizational account** and then **Sign in** (or **Sign in as different user**).
@@ -150,7 +151,7 @@ Depending on your Power BI Desktop settings, the following pop-up may also appea
 
 :::image type="content" source="media/aa-cq-historical-report-06.png" alt-text="Screenshot showing data privacy screen":::
 
-Enable the *Ignore Privacy Levels* checkbox. All the data is coming from the historical report database and there is no undesirable data transfer taking place.
+Enable the *Ignore Privacy Levels* checkbox. All the data is coming from the historical report database and there's no undesirable data transfer taking place.
 
 ## Data latency for Auto attendant and Call queue analytics
 
@@ -192,8 +193,7 @@ You have to refresh the report to see any new data.
 1. Only the calls and caller actions in the first Auto attendant that answers the call are reported on. Calls and caller actions in chained Auto attendants (when one Auto attendant transfers to another Auto attendant) aren't reported on.
 1. Only 28 days of call history are available. Auto attendant data is considered personal data and is subject to data privacy retention policies.
 1. The Date selector sometimes shows dates outside the range of available data resulting in a blank report. Change the dates to be within the last 28 days to resolve the issue.
-1. If the **Historical Auto Attendant Metrics** permission in the Voice applications policy is set to **All** for an Authorized user, the report reverts back to reporting by Resource account instead of Auto attendant name.
-1. When reporting by Resource account, nested Auto attendants and Call queues that don't have resource accounts assigned to them are reported against the resource account that transferred the call.
+1. Admins see nested Auto attendants that don't have resource accounts assigned to them reported by the Auto attendant GUID rather than the Resource account username.
 
 ### Cloud Call Queue Analytics report
 
@@ -227,8 +227,7 @@ You have to refresh the report to see any new data.
 1. Only the calls and caller actions in the first Call queue that answers the call are reported on. Calls in chained Call queues (when one Call queue transfers to another Call queue) aren't reported on.
 1. Only 28 days of call history are available. Call queue data is considered personal data and is subject to data privacy retention policies.
 1. The Date selector sometimes shows dates outside the range of available data resulting in a blank report. Change the dates to be within the last 28 days to resolve the issue.
-1. If the **Historical Call Queue Metrics** permission in the Voice applications policy is set to **All** for an Authorized user, the report reverts back to reporting by Resource account instead of Call queue name. 
-1. When reporting by Resource account, nested Auto attendants and Call queues that don't have resource accounts assigned to them are reported against the resource account that transferred the call.
+1. Admins see nested Call queues that don't have resource accounts assigned to them reported against the resource account that transferred the call.
 
 ### Cloud Call Queue Agent Timeline report
 
@@ -263,10 +262,8 @@ You have to refresh the report to see any new data.
 1. The Date selector sometimes shows dates outside the range of available data resulting in a blank report. Change the dates to be within the last 28 days to resolve the issue.
 1. In some scenarios, the agent answered call count might be different than the number of calls shown in the Teams client call history. The Teams client call history is correct. Support is investigating, but there's no estimated time to repair available at this time.
 1. When an agent answers a call in a different call queue due to redirection through Call Overflow exception handling, the call is counted in the original call queue where the exception occurred instead of the one they answered the call in.
-1. Callback calls handled by agents aren't captured resulting in a discrepancy between the number of calls answered on the Call Queue report and the Agent Timeline report.
-1. The agent tooltip shows all calls for the agent instead of only the calls within the selected date range.
-1. If the **Historical Call Queue Metrics** permission in the Voice applications policy is set to **All** for an Authorized user, the report reverts back to reporting by Resource account instead of Call queue name. 
-1. When reporting by Resource account, nested Auto attendants and Call queues that don't have resource accounts assigned to them are reported against the resource account that transferred the call.
+1. Callback calls handled by agents aren't captured, which results in a discrepancy between the number of calls answered on the Call Queue report and the Agent Timeline report.
+1. Admins see nested Call queues that don't have resource accounts assigned to them reported against the resource account that transferred the call.
 
 ## Localization
 
@@ -310,18 +307,17 @@ You have to refresh the report to see any new data.
       -	Application Language
         - Default set to "Use Windows default display language"
         - Select the desired language from the drop down
-          - Note: The list of languages shown here may be different than those available for the report template.
+          - Note: The list of languages shown here may be different than languages available for the report template.
 
 2. The name of the zip file and the actual report template files are in English only.
 3. The splash screen shows the filename (see #2) and the words "Language" and "UTC Offset" in English only.
 4. The refresh screen shows the table names in English only.
 5. The report tab names are in English only.
-6. The documentation link uses the language set in your browser which may be different than than the language selected for the report.
-7. Customer provided information is not localized.
+6. The documentation link uses the language set in your browser, which may be different than than the language selected for the report.
+7. Customer provided information isn't localized.
+8. The legend on the **Call Queue - Call Volume, Abandoned Calls and Agent Opt-in Count** visual is in English only.
    
-Issues 2-6 are limitations of file naming conventions, the splash screen in Power BI, and how browsers work. These issues will not be addressed.
-
-7. The legend on the **Call Queue - Call Volume, Abandoned Calls and Agent Opt-in Count** visual is in English only.
+Issues 2-6 are limitations of file naming conventions, the splash screen in Power BI, and how browsers work. These issues won't be addressed.
 
 ## Auto attendant and Call queue historical reports field definitions
 
@@ -874,6 +870,7 @@ Refer to: Teams Auto Attendant & Call Queue Historical Reports - Change Log.docx
 
 |Version  |Date Published     |Supported |Filename                                                    |Description                                                             |
 |:--------|:------------------|:---------|:-----------------------------------------------------------|:-----------------------------------------------------------------------|
+|3.2.1    |June 23, 2025    |Yes       |Teams Auto Attendant & Call Queue Historical Reports V3.2.1 |Bug fixes    |
 |3.2.0    |March 21, 2025    |Yes       |Teams Auto Attendant & Call Queue Historical Reports V3.2.0 |Localization in 45 languages, reporting by Auto Attendant and Call Queue name for authorized users    |
 |3.1.8    |August 12, 2024    |Yes       |Teams Auto Attendant & Call Queue Historical Reports V3.1.8 |Bug fix for Date slicer on Call Queue tab                               |
 |3.1.7    |July 15, 2024      |No        |Teams Auto Attendant & Call Queue Historical Reports V3.1.7 |Improved support for authorized users, removed original reporting templates |

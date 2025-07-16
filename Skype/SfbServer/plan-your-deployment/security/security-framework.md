@@ -18,6 +18,8 @@ description: "This section provides an overview of the fundamental elements that
 
 # Security framework for Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 This section provides an overview of the fundamental elements that form the security framework for Skype for Business Server. Understanding how these elements work together is essential to making informed decisions about securing your particular Skype for Business Server deployment.
   
 These elements are as follows:

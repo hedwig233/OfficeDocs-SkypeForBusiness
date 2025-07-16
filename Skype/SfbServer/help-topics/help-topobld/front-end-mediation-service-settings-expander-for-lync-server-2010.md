@@ -18,6 +18,8 @@ description: "You edit the properties of the Mediation Server PSTN gateway setti
 ---
 
 # Front End Mediation Service Settings Expander for Lync Server 2010
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 You edit the properties of the **Mediation Server PSTN gateway** settings in this dialog. You define the following settings:
   

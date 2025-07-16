@@ -53,9 +53,10 @@ There are a few prerequisites for receiving updates through the Pro Management s
 |Software |Guidance |
 |:- |:- |
 |Logitech Sync Services  |Should be installed and running on the Logitech meeting room devices. Required Sync services are installed automatically from Windows Updates unless blocked. The full Sync package can also be installed. |
-|Windows OS updates |Should be kept enabled and not redirected to WSUS, nor blocked from a networking perspective. Neither GPO nor MDM policies should be used to manage OS updates. |
-|Microsoft Store updates   |Should be turned off. Teams Rooms Pro management will turn off Store updates if found on. |
-|Anti-Virus Software |Only Microsoft Defender is the supported anti-virus tool on Teams Rooms for Windows devices. If you are running any other AV software on these devices, you should ensure that AV has exclusions in place for Teams and Skype dlls. See [How to include or exclude Teams from antivirus or DLP applications](/microsoftteams/troubleshoot/teams-administration/include-exclude-teams-from-antivirus-dlp) for more details. |
+|Windows OS Quality |Should be kept enabled and not redirected to WSUS, nor blocked from a networking perspective. Best practice is to allow the device to update automatically, however policies for quality updates can be used to manage quality updates. |
+|Windows OS Feature |Should be kept enabled and not redirected to WSUS, nor blocked from a networking perspective. Neither GPO nor MDM policies should be used to manage  feature updates. |
+|Microsoft Store updates   |Should be kept as-is. Teams Rooms Pro management manages Store policies to ensure updates apply to Store applications built into Windows. |
+|Anti-Virus Software |Microsoft Defender is the only supported anti-virus tool on Teams Rooms for Windows devices. |
 |Additional Software |Additional software such as third-party remote desktop viewing, etc. is not supported. If issues arise, where additional software has been added, you should remove software to rule out side-effects. |
 |Additional Change Management|Can interfere with covered updates, and shouldn't be introduced.|
 

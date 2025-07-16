@@ -12,7 +12,7 @@ ms.reviewer: adam.jacobs
 ms.date: 5/29/2025
 f1.keywords:
 - NOCSH
-description: Use Cloud Video Interop(CVI) as an intermediate solution to allow third-party meeting room devices to join Microsoft Teams meetings. This article explains how you can plan and set up Cloud Video Interop(CVI) for users in your organization and has release notes.
+description: Use Cloud Video Interop(CVI) as an intermediate solution to allow third-party meeting room devices to join Microsoft Teams meetings and town halls. This article explains how you can plan and set up Cloud Video Interop(CVI) for users in your organization and has release notes. Presenters can join and present in Teams town halls using their own Video Teleconferencing (VTC) devices, even if they’re not Teams Rooms devices. Organizers can share CVI join codes directly from the town hall’s share event dialog with presenters.
 ms.localizationpriority: medium
 ms.collection: 
   - M365-voice

@@ -169,6 +169,8 @@ See [Microsoft Teams panels](../devices/overview-teams-panels.md) for features s
 #### <b> Yealink </b>
 | Device model | Latest firmware version | Minimum firmware version | Included Microsoft applications | Release date |
 |:----------------|:-------------------|:----------------------------|:------------------------------------------------------------------------------|:------------------------------------------|
+| Room Panel Plus | `269.520.0.47 (AOSP)` | N/A| Teams client: `1449/1.0.97.2024081207` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2410.7268` <br> Admin Agent: `1.0.0.202407050618.product (733)`| July 11, 2025|
+| Room Panel | `147.520.0.47 (AOSP)` | N/A| Teams client: `1449/1.0.97.2024081207` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2410.7268` <br> Admin Agent: `1.0.0.202407050618.product (733)`| July 11, 2025|
 | Room Panel E2 | `324.520.0.14 (AOSP)` | N/A| Teams client: `1449/1.0.97.2025031901` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2410.7268` <br> Admin Agent: `1.0.0.202412110504.product (753)`| May 9, 2025|
 | Room Panel Plus E2 | `324.520.0.14 (AOSP)` | N/A| Teams client: `1449/1.0.97.2025031901` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2410.7268` <br> Admin Agent: `1.0.0.202412110504.product (753)`| May 9, 2025|
 | Room Panel | `147.520.0.44 (AOSP)` | N/A| Teams client: `1449/1.0.972024081207` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2410.7268` <br> Admin Agent: `1.0.0.202407050618.product (733)`| February 19, 2025|

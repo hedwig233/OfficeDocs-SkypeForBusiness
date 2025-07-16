@@ -445,7 +445,7 @@ Customers with Thin Clients with [Unified Write Filters](/windows/configuration/
   - Stopping and resharing the window should resolve the issue.
   - This issue is resolved in new Teams 24335.206.X.X or higher versions.
 - If you're on a video call and you open the Start menu on the virtual machine, a blank screen shows in the Teams meeting window instead of the video feed.
-- In CQD, VdiMode (x2xx) represents both VDI SlimCore Optimized and Unoptimized Fallback, which may misattribute poor call quality.
+- In CQD, VdiMode (x2xx) represents both VDI SlimCore Optimized and Unoptimized Fallback, which may misattribute poor call quality. See [CQD Section for more details](/microsoftteams/vdi-2#call-quality-dashboard-in-vdi)
   
 ## Cross Cloud Collaboration
  
@@ -559,7 +559,7 @@ VDI user information is now exposed through numerous dimensions and filters. Che
 > The new Quality of Experience (QER) template is available in the Power BI query templates for CQD download. Version 8 now includes templates for reviewing VDI client-focused metrics.
 
 > [!IMPORTANT]
-> In CQD, the VdiMode value (x2xx) represents both VDI SlimCore Optimized and VDI SlimCore Not Connected (Unoptimized Fallback). This duplication can lead to misinterpretation, as poor call quality in an unoptimized session may appear to be an issue with VDI SlimCore Optimization. We're working to address this limitation in telemetry. For now, we recommend you use Teams logs to verify the actual optimization status.
+> In CQD, the dimension 'Second Client VDI Mode' VdiMode value (x2xx) represents both VDI SlimCore Optimized and VDI SlimCore Not Connected (Unoptimized Fallback). This duplication can lead to misinterpretation, as poor call quality in an unoptimized session may appear to be an issue with VDI SlimCore Optimization. The dimension 'Second Client VDI Is Optimized' is the accurate way to display if the user was optimized or not, as this dimension computes an end-to-end resulting value between VDI Mode and 'Second Client VDI Connected State'. End to end optimization with SlimCore happens when Connected State is 'Connected'.
 
 #### Query fundamentals
 

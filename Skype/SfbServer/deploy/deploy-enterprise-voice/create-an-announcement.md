@@ -21,6 +21,8 @@ description: "Create or delete announcements for Announcement application in Sky
 
 # Create or delete an announcement in Skype for Business Server
 
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Create or delete announcements for Announcement application in Skype for Business Server Enterprise Voice. This affects how calls to unassigned numbers are handled.
 
 When you configure announcements, you are really configuring how you want calls to unassigned numbers to be handled. You can play a prompt, which can be an audio file or a text-to-speech (TTS) file, or you can just transfer the call to a specified destination without playing a prompt.

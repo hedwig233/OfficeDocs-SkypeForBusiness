@@ -19,6 +19,8 @@ description: "Read this topic to learn about hardware, software, and infrastruct
 ---
 
 # Skype for Business on Mac client requirements
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 Read this topic to learn about hardware, software, and infrastructure requirements for running Skype for Business on a Mac.
   

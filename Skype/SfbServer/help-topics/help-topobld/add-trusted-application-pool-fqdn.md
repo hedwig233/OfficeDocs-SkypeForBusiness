@@ -18,6 +18,8 @@ description: "To define a Trusted Applications pool fully qualified domain name 
 ---
 
 # Add Trusted Application Pool FQDN
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 To define a Trusted Applications pool fully qualified domain name (FQDN), specify the following:
   

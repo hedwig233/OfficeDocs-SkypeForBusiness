@@ -16,6 +16,8 @@ description: "Summary: Learn about the Failure Distribution Report in Skype for 
 ---
 
 # Failure Distribution Report in Skype for Business Server
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 **Summary:** Learn about the Failure Distribution Report in Skype for Business Server.
   

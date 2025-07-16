@@ -16,6 +16,8 @@ description: "You can use the legacy installs Control Panel to prevent new sessi
 
 # Prevent sessions for services
 
+[!INCLUDE[appliesto-xxx-2019-sub.md](../includes/appliesto-xxx-2019-sub.md)]
+
 You can use the legacy installs Control Panel to prevent new sessions for all the legacy services running on a specific computer or to prevent new sessions for a specific legacy service.
   
 ## To prevent new sessions for services on a computer

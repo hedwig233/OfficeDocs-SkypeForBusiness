@@ -19,6 +19,8 @@ description: "Understand the ways you can access Skype for Business features fro
 ---
 
 # Skype for Business compatibility with Office apps
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 Understand the ways you can access Skype for Business features from Outlook and other Microsoft Office applications.
   

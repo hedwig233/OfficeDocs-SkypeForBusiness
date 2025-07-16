@@ -18,6 +18,8 @@ description: "On the SIP Domain setting on Subject Alternate Names (SANs) page, 
 ---
 
 # Certificate Request (SIP Domains)
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 On the **SIP Domain setting on Subject Alternate Names (SANs)** page, you should select the check box for your primary Session Initiation Protocol (SIP) domain and any other SIP domains if your infrastructure and deployment meets the criteria listed.
   

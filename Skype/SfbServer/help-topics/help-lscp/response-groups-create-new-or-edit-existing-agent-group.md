@@ -19,6 +19,8 @@ description: "Agent groups define who can answer calls to a response group (know
 
 # Response Groups: Create New or Edit Existing Agent Group
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Agent groups define who can answer calls to a response group (known as agents) and the settings that apply to all the agents in the group.
 
 ## UI Reference

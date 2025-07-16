@@ -18,6 +18,8 @@ description: "The base URL is the Web Services identity for the URL, minus the h
 ---
 
 # Add Front End Web Services
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The base URL is the Web Services identity for the URL, minus the https://. For example, if the full URL for the Web Services of the pool is `https://pool01.contoso.net`, the base URL is `pool01.contoso.net`.
   

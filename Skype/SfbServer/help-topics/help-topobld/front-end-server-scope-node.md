@@ -18,6 +18,8 @@ description: "This node shows the configuration information for this Front End p
 ---
 
 # Front End Server Scope Node
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 This node shows the configuration information for this Front End pool or Standard Edition server. You can perform the following actions:
   

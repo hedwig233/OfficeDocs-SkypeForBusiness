@@ -18,6 +18,8 @@ description: "You edit the properties of the Mediation service by defining the f
 ---
 
 # Mediation Service Settings Expander for Lync Server 2010
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 You edit the properties of the Mediation service by defining the following properties:
   

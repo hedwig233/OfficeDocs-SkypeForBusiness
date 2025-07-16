@@ -23,7 +23,7 @@ description: Learn how to set up and use the Windows Autopilot and Autologin fea
 
 # Windows Autopilot and Autologin for Teams Rooms on Windows
 
-You can use Windows Autopilot and Autologin to deploy, provision, reset, redeploy, and recover Teams Rooms on Microsoft Teams Rooms on Windows consoles in your organization.
+You can use Windows Autopilot and Autologin to deploy, provision, reset, redeploy, and recover Microsoft Teams Rooms on Windows consoles in your organization.
 
 Windows Autopilot with Autologin for Teams Rooms simplifies and accelerates the on-site deployment time for Teams Rooms consoles running Windows. The combination of these technologies removes the need for direct interaction with the Teams Rooms console during provisioning and deployment. Using Windows Autopilot and Autologin, there isn't a need for someone to physically interact with the Teams Room console to deploy it.
 
@@ -89,6 +89,9 @@ The Teams Rooms app update tool updates the Teams room app running on the device
 
 Going through these steps enables Intune to push the update tool to the Teams Rooms enrolling through Windows Autopilot. The update tool then automatically updates the Teams app on the console so it can automatically log in.
 
+> [!Note]
+> The update tool Win32 package automatically downloads the latest Teams Rooms application when it runs, it is not necessary to replace the update tool each time a new Teams Rooms app version is released. At times a new version of the Win32 package update tool may be released to resolve bugs or add new features, at such time, you can delete the existing app from Intune and redeploy a newer build of the update tool. The app will only run once on each Teams Rooms device.
+
 To deploy the Teams Rooms app update tool to your consoles:
 
 1. To download the update tool Win32 package, see [here](https://aka.ms/mtrp/autopilot-tool).
@@ -128,7 +131,6 @@ The required settings for ESP on Teams Rooms are:
 | Block device use until all apps and profiles are installed                                  | Yes         |
 | Turn on log collection and diagnostics page for end users                                   | Yes         |
 | Only show page to devices provisioned by out-of-box experience (OOBE)                       | Yes         |
-| Block device use until all apps and profiles are installed                                  | Yes         |
 | Allow users to reset device if installation error occurs                                    | Yes         |
 | Allow users to use device if installation error occurs                                      | No          |
 | Block device use until required apps are installed if they're assigned to the user/device   | Selected    |

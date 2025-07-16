@@ -17,6 +17,8 @@ description: "Summary: Read this topic to learn about Persistent Chat Server com
 
 # Plan Persistent Chat Server topology
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Read this topic to learn about Persistent Chat Server components and topologies in Skype for Business Server.
   
 Persistent Chat Server supports both single-server and multiple-server configurations. You can install Persistent Chat Server on either a Skype for Business Server Enterprise Edition or Standard Edition Server. 

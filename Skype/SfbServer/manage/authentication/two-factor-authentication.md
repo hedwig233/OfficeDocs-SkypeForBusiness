@@ -17,7 +17,9 @@ description: "Summary: Manage two-factor authentication in Skype for Business Se
 ---
 
 # Manage two-factor authentication in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Manage two-factor authentication in Skype for Business Server.
   
 Two-factor authentication provides improved security by requiring users to provide two forms of authentication or identification, namely a user name/password combination and a token or certificate. This is also known as "something you have, something you know." 

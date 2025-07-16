@@ -21,6 +21,8 @@ description: "Summary: Review the DNS considerations in this article before impl
 
 # DNS requirements for Skype for Business Server
 
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Review the DNS considerations in this article before implementing Skype for Business Server.
 
 This article only addresses DNS planning for Skype for Business Server deployments on an organization's on-premises network. For Skype for Business Online refer to "Office 365 URLs and IP address ranges" at [https://aka.ms/o365ips](/microsoft-365/enterprise/urls-and-ip-address-ranges).
@@ -29,7 +31,7 @@ A Domain name service (DNS) server maps hostnames (like www.<span></span>contoso
 
 While this may seem a bit daunting at first, the heavy lifting for planning this can be done using the [Skype for Business Server 2015 Planning Tool](https://www.microsoft.com/download/details.aspx?id=50357). Once you've gone through the wizard's questions about what features you plan to use, for each site you define you can view the DNS Report within the Edge Admin Report, and use the information listed there to create your DNS records. You can also make adjustments to many of the names and IP addresses used, for details see [Review the DNS Report](../../management-tools/planning-tool/review-the-administrator-reports.md#DNS_Report). Keep in mind you can export the Edge Admin Report to an Excel spreadsheet, and the DNS Report will be one of the worksheets in the file. While this tool includes features [deprecated from Skype for Business Server 2019](../../../SfBServer2019/deprecated.md), it can still be used to create an initial plan if those features aren't selected
 
-When you're installing a new implementation as described in [Create DNS records for Skype for Business Server](../../deploy/install/create-dns-records.md) and building your topology for Skype for Business Server, we recognize that you can choose to use the DNS capabilities built in to Windows Server 2016 or a parter DNS package, so we'll keep the discussions in this article general rather than specific. We're detailing what's needed, and how you meet that need is your decision to make.
+When you're installing a new implementation as described in [Create DNS records for Skype for Business Server](../../deploy/install/create-dns-records.md) and building your topology for Skype for Business Server, we recognize that you can choose to use the DNS capabilities built in to Windows Server 2016 or a partner DNS package, so we'll keep the discussions in this article general rather than specific. We're detailing what's needed, and how you meet that need is your decision to make.
 
 Experienced Skype for Business, Lync, and Office Communications Suite administrators will probably find the following tables useful. If the table is confusing to you, the later sections or articles shed some light on the following concepts:
 
@@ -72,7 +74,7 @@ The following tables show DNS records Skype for Business Server uses to provide 
 
 &#x2777; This is only required to support legacy clients prior to Lync 2013, and desktop handsets.
 
-&#x2778; In the situation where a Unified Communications device is turned on, but a user has never logged into the device, the A record allows the device to discover the server hosting Device Update Web service and obtain updates. Otherwise, devices obtain the server information though in-band provisioning the first time a user logs in.
+&#x2778; In the situation where a Unified Communications device is turned on, but a user has never logged into the device, the A record allows the device to discover the server hosting Device Update Web service and obtain updates. Otherwise, devices obtain the server information through in-band provisioning the first time a user logs in.
 
 The following diagram shows an example that includes both internal and external DNS records, and many of the records shown in the surrounding tables:
 
@@ -89,7 +91,7 @@ The following diagram shows an example that includes both internal and external 
 |A/AAAA   |Access Edge service Pool FQDN  <br/>*Access1.<span></span>contoso<span></span>.com*  |Access Edge service Pool external IP addresses  <br/> 131.107.16.10, 131.107.16.11   |The Access Edge service provides a single, trusted connection point for both outbound and inbound Session Initiation Protocol (SIP) traffic.   |Y   |
 |A/AAAA   |Web Conferencing Edge service Pool FQDN  <br/>*Webcon1.<span></span>contoso<span></span>.com*  |Web Conferencing Edge service external IP addresses  <br/> 131.107.16.90, 131.107.16.91   |The Web Conferencing Edge service enables external users to join meetings that are hosted on your internal Skype for Business Server environment.   |Y   |
 |A/AAAA   |*av.\<sip-domain\>* Pool FQDN <br/>*AV1.<span></span>contoso<span></span>.com*  |A/V Edge external IP addresses  <br/> 131.107.16.170, 131.107.16.171   |The A/V Edge service makes audio, video, application sharing and file transfer available to external users.   |Y   |
-|CNAME   |sip.*\<sipdomain\>* <br/> sip.*<span></span>contoso<span></span>.com*  |External Access Edge Pool FQDN  <br/>*Access1.<span></span>contoso<span></span>.com*  |Locates the Edge Server pool . See [Walkthrough of Skype for Business clients locating services](../../plan-your-deployment/edge-server-deployments/advanced-edge-server-dns.md#WalkthroughOfSkype)  |Y   |
+|CNAME   |sip.*\<sipdomain\>* <br/> sip.*<span></span>contoso<span></span>.com*  |External Access Edge Pool FQDN  <br/>*Access1.<span></span>contoso<span></span>.com*  |Locates the Edge Server pool. See [Walkthrough of Skype for Business clients locating services](../../plan-your-deployment/edge-server-deployments/advanced-edge-server-dns.md#WalkthroughOfSkype)  |Y   |
 |SRV   |\_sip.\_tls.*\<sipdomain\>* <br/>\_sip.\_tls.<span></span>*contoso<span></span>.com*  |External Access Edge FQDN  <br/>_Access1.<span></span>contoso<span></span>.com_  |Used for external user access. See [Walkthrough of Skype for Business clients locating services](../../plan-your-deployment/edge-server-deployments/advanced-edge-server-dns.md#WalkthroughOfSkype)  |Y   |
 |SRV   |\_sipfederationtls.\_tcp.*\<sipdomain\>* <br/>\_sipfederationtls.\_tcp.<span></span>*contoso<span></span>.com*  |External Access Edge FQDN  <br/>*Access1.<span></span>contoso<span></span>.com*  |Used for Federation and public IM connectivity   |&#x2776;  |
 |SRV   |\_xmpp-server.\_tcp.*<sipdomain\>* <br/>\_xmpp-server.\_tcp.*<span></span>contoso<span></span>.com*  |External Access Edge FQDN  <br/>*Access1.<span></span>contoso<span></span>.com*  |The XMPP Proxy service accepts and sends extensible messaging and presence protocol (XMPP) messages to and from configured XMPP Federated partners.   |Y, to deploy Federation, otherwise optional  <br/> Not available in Skype for Business Server 2019.|

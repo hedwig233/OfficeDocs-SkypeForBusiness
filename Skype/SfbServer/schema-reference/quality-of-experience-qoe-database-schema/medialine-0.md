@@ -16,8 +16,10 @@ description: "Each record represents one media line. (One audio session usually 
 ---
 
 # MediaLine table
- 
-Each record represents one media line. (One audio session usually contains one audio media line. One audio and video (A/V) session usually contains one audio media line and one video media line, although the session might contain two video media lines if a conferencing device is used or if Gallery View is used.
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
+Each record represents one media line. One audio session usually contains one audio media line. One audio and video (A/V) session usually contains one audio media line and one video media line, although the session might contain two video media lines if a conferencing device is used or if Gallery View is used.
   
 |**Column**|**Data Type**|**Key/Index**|**Details**|
 |:-----|:-----|:-----|:-----|
@@ -61,7 +63,7 @@ Each record represents one media line. (One audio session usually contains one a
 |**CalleeLinkSpeed** <br/> |decimal(18,0)  <br/> | <br/> |The network link speed, in bps, for the call receiver's endpoint.  <br/> |
 |**ConversationalMOS** <br/> |decimal(3,2)  <br/> | <br/> |Narrowband Conversational MOS of the audio sessions (based on both audio streams).  <br/> |
 |**AppliedBandwidthLimit** <br/> |int  <br/> ||This is the actual bandwidth applied to the given send side stream given various policy settings (TURN, API, SDP, Policy Server, and so on). This is not to be confused with the effective bandwidth because there can be a lower effective bandwidth based on the bandwidth estimate. This is basically the maximum bandwidth the send stream can take barring limits imposed by the bandwidth estimate.  <br/> |
-|**AppliedBandwidthSourceKey** <br/> |smallint  <br/> ||This is the source of the bandwidth cap being imposed. It describes where the bandwidth limit is coming from ("Policy Server", "TURN Server", "Modality", and so on). Referenced from the [AppliedBandwidthSource table](appliedbandwidthsource.md).  <br/> |
+|**AppliedBandwidthSourceKey** <br/> |smallint  <br/> ||This is the source of the bandwidth cap being imposed. It describes where the bandwidth limit is coming from ("Policy Server," "TURN Server," "Modality," and so on). Referenced from the [AppliedBandwidthSource table](appliedbandwidthsource.md).  <br/> |
 |**Caller** <br/> |bit  <br/> | <br/> |Indicates whether metrics from the caller were received; 1 is yes, a null value is no.  <br/> |
 |**Callee** <br/> |bit  <br/> | <br/> |Indicates whether metrics from the call receiver were received; 1 is yes, a null value is no.  <br/> |
 |**MidCallReport** <br/> |bit  <br/> ||Indicates whether the report is for a portion of the session or for the complete session.  <br/> This column was introduced in Microsoft Lync Server 2013.  <br/> |

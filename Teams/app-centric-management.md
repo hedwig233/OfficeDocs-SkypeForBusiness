@@ -42,7 +42,7 @@ With the introduction of app centric management functionality, admins have two m
 
 This functionality lets you specify which users and groups can use each app or a copilot agent and you can control it on a per-app basis.
 
-Whatever method your use, you can manage access to apps for individual users, supported groups, or everyone in the organization. You have complete control over who can or can't add apps in your organization. You can also control the access to new apps that we publish to Teams app store.
+Whatever method you use, you can manage access to apps for individual users, supported groups, or everyone in the organization. You have complete control over who can or can't add apps in your organization. You can also control the access to new apps that we publish to Teams app store.
 
 ## How is app centric management different than permission policy
 
@@ -103,7 +103,7 @@ To migrate your organization, follow these steps:
 
 1. You can validate the changes on a per-app or a per-user basis. Select a tab and type the name of the app or the user.
 
-    :::image type="content" source="media/acm-verify-per-app.png" alt-text="Screenshot showing the option to verify available of for each user and users who receive a particular app."  lightbox="media/acm-verify-per-app-large.png":::
+    :::image type="content" source="media/acm-verify-per-app.png" alt-text="Screenshot showing the option to verify available for each user and users who receive a particular app."  lightbox="media/acm-verify-per-app-large.png":::
 
 1. On the final review UI, you can see the apps, their availability, and the Org-wide app settings that apply after the migration. You can download this information as a CSV file to evaluate further. For example, you can use the inventory mapping from Step 1 to ensure that the app availability is as intended. Once assured, select **Start migration** and follow the prompts.
 
@@ -115,7 +115,7 @@ To migrate your organization, follow these steps:
 During migration, you can save a draft of the migration progress using the **Finish later** option. You can cancel the migration and delete the saved draft using the **Reset all changes** option.
 
 > [!NOTE]
-> While migrating, you can't make changes to app assignments. The existing UI gets disabled when you start the migration. If you aren't ready to proceed or want to make change to the exiting permission policies, open the migration wizard and select the Reset all changes option. You'll lose the progress and can restart the migration later.
+> While migrating, you can't make changes to app assignments. The existing UI gets disabled when you start the migration. If you aren't ready to proceed or want to make change to the existing permission policies, open the migration wizard and select the Reset all changes option. You'll lose the progress and can restart the migration later.
 
 After migration, your blocked apps continue to remain unavailable to users. The statuses of such apps show as `unblocked` now, but the apps are assigned to `No one` in the `Available to` column on the Manage apps page. It means that org user can't use the app, just as you intended before. Users can view the apps in store and [request access to apps](user-requests-approve-apps.md).
 
@@ -124,6 +124,8 @@ After migration, any admin consent to app permissions that was previously grante
 ### Understand the auto-migration process
 
 Auto-migration maintains the same access defined in app permission policies when there is no conflict between a user’s assigned policies. If a user is assigned to a custom app permission policy that blocks an app, while the Global permission policy allows the same app, Microsoft auto-migrates the app as allowed for that user. During the auto migration, one security group is created for each custom app permission policy. All users currently assigned to an app permission policy are then added to the corresponding security group for that policy. These groups are assigned to each app they are allowed in their respective policy, maintaining their app access. Administrators manage these groups like any others to customize the app centric management assignments, such as adding and removing users or removing the group and replacing it with another group.
+
+For more information on best practices before and after migration, please refer to [best migration practices for app centric management](pre-and-post-migration.md).
 
 ## Add or modify app availability for users
 
@@ -167,6 +169,10 @@ The Org-wide app settings apply to:
 * All the existing apps that you didn't actively manage, that is, you didn't change the availability of.
 
 :::image type="content" source="media/acm-org-wide-app-settings.png" alt-text="Screenshot showing the org-wide app settings in an organization that uses app centric management feature.":::
+
+Pre app centric management, org-wide settings included two separate controls for third-party apps; one for managing availability of new apps in bulk, and another for existing apps.
+
+Post app centric management migration, these have been unified into a single control that governs bulk availability for both new and existing third-party apps. When you toggle ON, all apps are enabled and when you toggle OFF, all apps are disabled. This control does not override app-level configurations.
 
 The Org-wide app settings don’t apply to:
 
@@ -229,7 +235,7 @@ When your tenant's admin center receives this feature, the following updates are
 * Details of automatic migration for app permission policies:
     * During the migration, [create one security group](/microsoft-365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide&preserve-view=true) per custom app permission policy. All users assigned to the app permission policy are assigned to the corresponding groups. 
     * After the migration, you can view and manage the groups.
-    * There is no change of app permissions during the migration, except where an app is allowed in the global policy but blocked in the custom app permission policy. Here, the app is allowed for all users in the group. This is the only instance where there is a change in app permissions in the tenant.
+    * There is no change of app permissions during the migration, except where an app is allowed in the global policy but blocked in the custom app permission policy. Here, the app will be available to all users of the tenant, except for EDU customers, for whom it will be available to none. This is the only instance where there is a change in app permissions in the tenant. Admins can modify this behavior as desired post migration.
 
 ## Related articles
 

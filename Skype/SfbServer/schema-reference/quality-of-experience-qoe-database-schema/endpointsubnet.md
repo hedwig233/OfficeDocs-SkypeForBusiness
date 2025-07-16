@@ -16,6 +16,8 @@ description: "The EndpointSubnet table is a supporting table. Each record repres
 ---
 
 # EndpointSubnet table
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The EndpointSubnet table is a supporting table. Each record represents one subnet captured from endpoints. 
   

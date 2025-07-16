@@ -18,6 +18,8 @@ description: "To begin the Prepare Forest task, click Next. Running the Prepare 
 ---
 
 # Prepare Current Forrest (Intro)
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 To begin the **Prepare Forest** task, click **Next**. Running the **Prepare Forest** task creates global settings and creates universal groups for use by Skype for Business Server 2015.
   

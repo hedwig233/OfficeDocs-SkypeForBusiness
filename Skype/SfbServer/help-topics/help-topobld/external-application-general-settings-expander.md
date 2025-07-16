@@ -18,6 +18,8 @@ description: "To edit the properties for a trusted application server that has a
 ---
 
 # External Application General Settings Expander
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 To edit the properties for a trusted application server that has already been defined, follow these instructions.
   
@@ -31,11 +33,11 @@ There are two sections that you can modify:
 
 You can modify the current fully qualified domain name (FQDN) for the trusted application server pool. Edit the name of the pool FQDN. The Domain Name System (DNS) host (A) records must exist for the new entry before clients or servers can connect to the new pool name.
   
-Select **Enable replication of configuration data to this pool** if you need to have replication of configuration data to this pool. Clear the check mark if you do not want to replicate the configuration data.
+Select **Enable replication of configuration data to this pool** if you need to have replication of configuration data to this pool. Clear the check mark if you don't want to replicate the configuration data.
   
 ## Next Hop Settings
 
-You can specify the trusted application server pool's next hop server by selecting the defined Enterprise Edition Front End pool or Standard Edition Front End Server from the drop-down list. A Director or Director pool is not a valid selection for a trusted application server next hop and will not appear in the list.
+You can specify the trusted application server pool's next hop server by selecting the defined Enterprise Edition Front End pool or Standard Edition Front End Server from the drop-down list. A Director or Director pool isn't a valid selection for a trusted application server next hop and won't appear in the list.
   
 
 

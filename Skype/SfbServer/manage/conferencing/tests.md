@@ -17,6 +17,8 @@ description: "Summary: Learn how to test dial-in conferencing in Skype for Busin
 
 # Test dial-in conferencing in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to test dial-in conferencing in Skype for Business Server.
   
 As final verification of your dial-in conferencing configuration, you can search for dial plans that have a dial-in conferencing region that is not used by any access number and for access numbers that have not specified a dial-in conferencing region. You should also verify that the Dial-in Conferencing Settings webpage and the dial-in access numbers work correctly.
@@ -35,7 +37,7 @@ As final verification of your dial-in conferencing configuration, you can search
 
     This cmdlet returns all of the dial plans that have a dial-in conferencing region that is not used by an access number.
     
-For more information, see [Get-CsDialInConferencingAccessNumber](/powershell/module/skype/get-csdialinconferencingaccessnumber?view=skype-ps).
+For more information, see [Get-CsDialInConferencingAccessNumber](/powershell/module/skype/get-csdialinconferencingaccessnumber?view=skype-ps&preserve-view=true).
   
 ## Find access numbers without assigned regions
 
@@ -51,7 +53,7 @@ For more information, see [Get-CsDialInConferencingAccessNumber](/powershell/mod
 
     This cmdlet returns all the dial-in conferencing access numbers that are not associated with a region.
     
-For more information, see [Get-CsDialInConferencingAccessNumber](/powershell/module/skype/get-csdialinconferencingaccessnumber?view=skype-ps).
+For more information, see [Get-CsDialInConferencingAccessNumber](/powershell/module/skype/get-csdialinconferencingaccessnumber?view=skype-ps&preserve-view=true).
   
 ## Test webpage and access numbers
 
@@ -78,5 +80,5 @@ To verify that the Dial-in Conferencing Settings webpage and the dial-in access 
 
     The resulting report shows either Success or Failure, along with specific diagnostic information. The -Verbose flag provides more detailed information about how many access numbers were found and details about them.
     
-For more information, see [Test-CsDialInConferencing](/powershell/module/skype/test-csdialinconferencing?view=skype-ps).
+For more information, see [Test-CsDialInConferencing](/powershell/module/skype/test-csdialinconferencing?view=skype-ps&preserve-view=true).
 

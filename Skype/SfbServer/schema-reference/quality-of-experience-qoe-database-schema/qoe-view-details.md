@@ -16,7 +16,9 @@ description: "Views cover the most common scenarios for returning data from the 
 ---
 
 # QoE view details
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 Views cover the most common scenarios for returning data from the QoE SQL database. It is recommended views used for building custom reports instead of directly accessing the database tables; that's because views are more likely to maintain backwards compatibility with future releases.
   
 |**View Name**|**Description**|

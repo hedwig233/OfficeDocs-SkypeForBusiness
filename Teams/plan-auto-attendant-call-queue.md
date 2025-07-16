@@ -4,7 +4,7 @@ author: mkbond007
 ms.author: mabond
 manager: pamgreen
 ms.reviewer: colongma
-ms.date: 1/29/2025
+ms.date: 06/23/2025
 ms.topic: concept-article
 ms.assetid: ab9f05a2-22cb-4692-a585-27f82d1b37c7
 ms.tgt.pltfrm: cloud
@@ -56,7 +56,7 @@ Each Auto attendant has a specific language and time zone. If you do business in
 
 For each Auto attendant, you can configure an operator. While you can configure operator calls to go to various destinations, the operator feature is designed to allow callers to talk to a specific person in your organization who can help them.
 
-Auto attendants can be configured to allow callers to search your organization's directory, either by name or by extension number. Within an Auto attendant, you can specify who is available for the directory search by choosing groups of users to include or exclude. (This is known as *dial scope*.)
+Auto attendants can be configured to allow callers to search your organization's directory, either by name or by extension number. Within an Auto attendant, you can specify who is available for the directory search by choosing groups of users to include or exclude, otherwise known as *dial scope*.
 
 Internal callers, using their Teams client, can reach an Auto attendant by calling the Resource account assigned to the Auto attendant. External callers can reach an Auto attendant by dialing the phone number assigned to the Resource account or via the web if click-to-call is configured.
 
@@ -93,7 +93,7 @@ To configure Auto attendants and Call queues, you need the following resources:
   - [Quickstart: Join your calling app to a Teams call queue](/azure/communication-services/quickstarts/voice-video-calling/get-started-teams-call-queue)
 
 > [!NOTE]
-> Resource accounts are disabled for sign in and must remain so. Chat and presence are not available for these accounts.
+> Resource accounts are disabled for sign in and must remain so. Chat and presence aren't available for these accounts.
 >
 > A **User Administrator** or higher role is required to create and license Resource Accounts. For more information, see [Using Microsoft Teams administrator roles to manage Teams](using-admin-roles.md).
 
@@ -168,7 +168,7 @@ Agents can be added to Call queues in the following ways:
 - Security groups, including mail-enabled security groups
 - Microsoft 365 Groups or Teams
 
-You can use a combination of these options for each queue if needed. Groups that have an email address can be used for voicemail. Using Teams offers many advantages, including shared file storage and chat between agents, a common mailbox where voicemails can be received, and an extensible platform that can include integration with your line-of-business applications or Power Apps.
+You can use a combination of these options for each queue if needed. Groups that have an email address can be used for voicemail. Using Teams offers many advantages, including shared file storage and chat between agents, a common mailbox for voicemail retrieval, and an extensible platform that allows integration with your line-of-business applications or Power Apps.
 
 We recommend choosing a strategy for adding call agents to queues before you start your configuration.
 
@@ -191,7 +191,7 @@ The first Auto attendant or Call queue that answers a call requires a resource a
 
 Nesting without resource accounts is the recommended approach. This method eliminates the need to create and license additional resource accounts and makes auto attendant call flows and call queue exception handling flows easier to understand and maintain.
 
-However, there might be times when you require nesting with resource accounts. For example, when agents in a call queue receive a call, the information in the toast is determined by how the call arrived in the queue. If the call was transferred to the queue without a resource account, the agent receives the name of the call queue in the toast. If the call was transferred to the queue through a resource account, the agent receives the display name of the resource account.
+However, there might be times when you require nesting with resource accounts. For example, when agents in a call queue receive a call, how the call arrived in the queue determines the information in the toast. If the call was transferred to the queue without a resource account, the agent receives the name of the call queue in the toast. If the call was transferred to the queue through a resource account, the agent receives the display name of the resource account.
 
 > [!NOTE]
 > Direct calls are only possible to nested auto attendants and call queues with assigned resource accounts.
@@ -205,7 +205,7 @@ However, there might be times when you require nesting with resource accounts. F
 
 The **Auto Attendant Usage** report, **Call Queue Usage** report, and **[Auto attendant and Call queue historical reports](./aa-cq-cqd-historical-reports.md)** only report on the calls and caller actions in the first Auto attendant or Call queue that answers the call.
 
-For more information about reporting with nested Auto attendants and Call queues in Queues app, see [Use the Queues app for Microsoft Teams](https://support.microsoft.com/office/370ad83e-c2c1-4a9f-8a59-16c98be102e9).
+For information about reporting with nested Auto attendants and Call queues in Queues app, see [Use the Queues app for Microsoft Teams](https://support.microsoft.com/office/370ad83e-c2c1-4a9f-8a59-16c98be102e9).
 
 #### Teams admin center
  
@@ -215,12 +215,13 @@ If you require Teams admin center reporting, nest with resource accounts. Usage 
  
 For Auto attendant and Call queue historical reports, users can access reports in the following ways:
 
-- Authorized users see the report by Auto attendant or Call Queue name.
-- Administrators see the report by resource account.
+- Authorized users see all Auto attendants and Call queues they're authorized for regardless of how they're nested.
+- Administrators see the Auto attendant report by resource account or by the Auto attendant GUID if no resource account is available.
+- Administrators see the Call queue report by resource account or by the resource account of the Auto attendant or Call queue that transferred the call to the Call queue.
 
 ## Click-to-call restrictions
 
-In order to help prevent a denial of service attack from web based click-to-call applications, there's a maximum of 40 click-to-call calls per minute across all auto attendants and call queues in the tenant.
+To help prevent a denial of service attack from web based click-to-call applications, there's a maximum of 40 click-to-call calls per minute across all auto attendants and call queues in a tenant.
 
 ## Supported audio file formats
 
@@ -236,14 +237,14 @@ Once you complete the planning tasks in this article, follow these steps to get 
 1. Get a [Teams Phone Resource Account license](teams-add-on-licensing/virtual-user.md) for each resource account that you plan to create. These licenses are free, so we suggest getting a few extra in case you decide to make changes to your resource accounts in the future.
 1. [Create a resource account](manage-resource-accounts.md) for each Auto attendant and Call queue that you want to create.
 1. Assign a Teams Phone Resource Account license to each resource account.
-1. Get service numbers for the Auto attendants and Call queues that you want phone callers from outside your organization to call. This might include [transferring numbers from another provider](phone-number-calling-plans/transfer-phone-numbers-to-teams.md) or [requesting new service numbers](getting-service-phone-numbers.md).
+1. Get service numbers for the Auto attendants and Call queues that you want phone callers from outside your organization to call. For more information about service numbers, see [transferring numbers from another provider](phone-number-calling-plans/transfer-phone-numbers-to-teams.md) or [requesting new service numbers](getting-service-phone-numbers.md).
 1. Create click-to-call configurations for the [Auto attendants](/azure/communication-services/quickstarts/voice-video-calling/get-started-teams-auto-attendant) and [Call queues](/azure/communication-services/quickstarts/voice-video-calling/get-started-teams-call-queue) that you want users on your website or in your mobile applications to call.
 1. [Create the holidays](set-up-holidays-in-teams.md) for which you want to have separate call routing in your Auto attendants.
 1. Create the groups or Teams channels that you want to use to contain the call agents for the Call queues.
 1. If you plan to allow dial by extension, ensure that you add your users' extension number to their Azure Active Directory (Azure AD) profile.
 1. Optionally, [set up call parking and retrieval](call-park-and-retrieve.md) if you want to use this feature to help with call transfers.
 
-Once you complete the steps above, you're ready to create your Auto attendants and Call queues. Because Auto attendants and Call queues can redirect calls to each other, refer to the workflow diagram that you created to determine which Auto attendant or Call queue should be created first. In the example in the diagram above, you would create the sales and support Call queues before you create the Contoso main Auto attendant because the main Auto attendant needs to direct callers to the sales and support Call queues.
+Once you complete these steps, you're ready to create your Auto attendants and Call queues. Because Auto attendants and Call queues can redirect calls to each other, refer to the workflow diagram that you created to determine which Auto attendant or Call queue should be created first. In the example in the diagram above, you would create the sales and support Call queues before you create the Contoso main Auto attendant because the main Auto attendant needs to direct callers to the sales and support Call queues.
 
 See the following articles for information on how to create Auto attendants and Call queues:
 
@@ -258,15 +259,15 @@ See the following articles for information on how to create Auto attendants and 
 >  - a **Person in Organization** transfer point.
 >  - an individual member of a Call queue.
 > 
-> The Auto attendant and Call queue configurations aren't synchronized with Azure AD lifecycle events.  Teams administrators need to manually update Auto attendant and Call queue configurations to remove this personal data when a user included in the configuration leaves the organization.
+> The Auto attendant and Call queue configurations aren't synchronized with Azure AD lifecycle events. Teams administrators need to manually update Auto attendant and Call queue configurations to remove this personal data when a user included in the configuration leaves the organization.
 >
 > This doesn't apply to Call queue agent memberships that are configured via distribution lists or channels. It also doesn't apply to users who are reached through the **Dial by Name** or **Dial by Number** feature of Auto attendants.
 
-If you need more extensive capabilities, such as integration with workflows, bots, and SMS (Short Message Service), consider [Azure Communication Services](/azure/communication-services/overview).
+If you need more extensive capabilities, such as integration with workflows or bots, consider [Azure Communication Services](/azure/communication-services/overview). For Short Message Service (SMS) in Teams, see [Plan for SMS in Teams with Microsoft Calling Plan numbers](sms-overview.md).
 
 ## Alternate provisioning tools
 
-[Auto Attendant and Call Queue Backup and Bulk Provisioning Tools](https://github.com/MicrosoftDocs/Teams-Auto-Attendant-and-Call-Queue-Backup-and-Bulk-Provisioning-Tools/) are a set of tools that provide a way to configure Auto attendants, Call queues and Authorized users through Excel spreadsheets and PowerShell scripts.
+[Auto Attendant and Call Queue Backup and Bulk Provisioning Tools](https://github.com/MicrosoftDocs/Teams-Auto-Attendant-and-Call-Queue-Backup-and-Bulk-Provisioning-Tools/) are a set of tools that provide a way to configure Auto attendants, Call queues, and Authorized users through Excel spreadsheets and PowerShell scripts.
 
 ## Related articles
 

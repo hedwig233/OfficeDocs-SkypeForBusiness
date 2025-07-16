@@ -21,6 +21,8 @@ description: "Summary: Review these scenarios to help you plan your Edge Server 
 
 # Edge Server scenarios in Skype for Business Server
  
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Review these scenarios to help you plan your Edge Server topology in Skype for Business Server.
   
 We have some scenarios diagrams to assist with visualizing and deciding on what Skype for Business Server Edge Server topology you want to implement. Once you've picked a good candidate, you can go read up on the environmental requirements you'll need to address. The following is applicable to any of the scenarios, so we're mentioning it first.

@@ -70,14 +70,14 @@ The new VDI solution for Teams is a new architecture for optimizing the delivery
 
    - Via command line or scripts for managed devices using:
 
-     `C:\>CitrixWorkspaceApp.exe installMSTeamsPlugin`
+     `C:\>CitrixWorkspaceApp.exe /installMSTeamsPlugin`
 
    - Admins can also install the plugin manually on top of any existing supported Citrix Workspace app (see [System Requirements](#system-requirements)) using tools like SCCM (use the Windows app package deployment type) or Intune (use the Line-of-Business app).
 
      Admins can use **msiexec** with appropriate flags, as discussed in [msiexec](/windows-server/administration/windows-commands/msiexec).
 
      > [!IMPORTANT]
-     > You can find the plugin MSI download link for Citrix customers: [MsTeamsPluginCitrix.msi](https://download.microsoft.com/download/3/0/e/30e54a38-eb74-44dc-9755-36dcac09656d/MsTeamsPluginCitrix.msi).
+     > Plugin MSI download link for Citrix customers: [aka.ms/plugin](https://download.microsoft.com/download/3/0/e/30e54a38-eb74-44dc-9755-36dcac09656d/MsTeamsPluginCitrix.msi).
 
 The plugin MSI automatically detects the CWA installation folder and places MsTeamsPluginCitrix.dll in that location:
 
@@ -97,7 +97,7 @@ The plugin MSI automatically detects the CWA installation folder and places MsTe
 
 ### Step 3: SlimCore MSIX staging and registration on the endpoint
 
-The plugin silently executes this step, without user or admin intervention. The staging and registration relies on the App Readiness Service (ARS) on the endpoint. It's possible that registry keys set by a Group Policy or a third-party tool bock the MSIX package installation. For a complete list of applicable registry keys, see [How Group Policy works with packaged apps - MSIX](/windows/msix/group-policy-msix).
+The plugin silently executes this step, without user or admin intervention. The staging and registration relies on the App Readiness Service (ARS) on the endpoint. It's possible that registry keys set by a Group Policy or a third-party tool block the MSIX package installation. For a complete list of applicable registry keys, see [How Group Policy works with packaged apps - MSIX](/windows/msix/group-policy-msix).
 
 The following registry keys could block new media engine MSIX package installation:
 
@@ -106,7 +106,10 @@ The following registry keys could block new media engine MSIX package installati
 - AllowDevelopmentWithoutDevLicense
 
 > [!IMPORTANT]
-> Managed endpoints/thin clients with BlockNonAdminUserInstall enabled can still allow SlimCore packages to install. Apply KB5052094 (Windows 11 23H2 and 22H2), KB5052093 (Windows 11 24H2), KB5055612 (Windows 10 22H2), or any subsequent KB. This installation introduces a new Group Policy called "Allowed package family names for non-admin user install" in the Local Group Policy Editor. Administrators can then Allow list SlimCore packages by allowing a complete package familyName (for example, Microsoft.Teams.SlimCoreVdi.win-x64.2024.43_8wekyb3d8bbwe) or use Regex (for example, Microsoft.Teams.SlimCoreVdi.*_8wekyb3d8bbwe)
+> Managed endpoints/thin clients with BlockNonAdminUserInstall enabled can still allow SlimCore packages to install. Apply KB5052094 (Windows 11 23H2 and 22H2), KB5052093 (Windows 11 24H2), KB5055612 (Windows 10 22H2), or any subsequent KB.
+> This installation introduces a new Group Policy called "Allowed package family names for non-admin user install" in the Local Group Policy Editor.
+>
+>Administrators can then Allow list SlimCore packages by allowing a complete package familyName (for example, Microsoft.Teams.SlimCoreVdi.win-x64.2024.43_8wekyb3d8bbwe) or use Regex (for example, Microsoft.Teams.SlimCoreVdi.*_8wekyb3d8bbwe)
 
 > [!IMPORTANT]
 > If AllowAllTrustedApps is disabled, the new media engine (MSIX) installation fails. This issue is fixed in the following Windows cumulative updates:
@@ -136,8 +139,11 @@ Some policies might change these registry keys and block app installation in you
 > AppLocker can't process trailing wildcards, unlike Windows Defender Application Control. Since SlimCoreVdi Packages contain a version-specific PackageFamilyName (for example, Microsoft.Teams.SlimCoreVdi.win-x64.2024.36_8wekyb3d8bbwe), customers can add AppX or MSIX exclusions by relying on the PublisherID 8wekyb3d8bbwe instead.
 >
 > Administrators using the more granular per-application ['AllAppList'](/windows/configuration/assigned-access/configuration-file#allapplist) to define the list of applications that are allowed to run need to add exceptions in this manner (since SlimCore follows the UWP model):
+>
 > &lt;App AppUserModelId="Microsoft.Teams.SlimCoreVdi.&lt;platform&gt;-&lt;architecture&gt;.&lt;release_version>_8wekyb3d8bbwe!MsTeamsVdi" /&gt;
+>
 > For example: &lt;App AppUserModelId="Microsoft.Teams.SlimCoreVdi.win-x86.2025.12_8wekyb3d8bbwe!MsTeamsVdi" /&gt;.
+>
 > To find a list of released SlimCore packages, [check this table](/officeupdates/teams-app-versioning#vdi-slimcore-version-2-msix-packages).
 
 
@@ -348,11 +354,20 @@ This policy now has an additional argument as the only configuration point to co
 |Share system audio                |Yes                                                             |Yes                           |
 |Secondary ringer                  |Yes                                                             |Yes                           |
 |Background blurring               |Yes                                                             |Yes                           |
-|Annotations                       |Only as presenter                                               |No                            |
+|Organizers can schedule meetings, webinars, and town halls             |Yes                                                             |Yes                           |
+|Organizers, presenters, and attendees can join meetings and webinars             |Yes                                                             |Yes                           |
+|Organizers and presenters can join town halls            |Yes                                                             |No                           |
+|Attendees can join town halls             |Yes                                                             |Yes                           |
+|Meeting and webinar organizers and presenters are optimized           |Yes                                                             |Yes                           |
+|Town hall organizers and presenters are optimized           |Yes                                                             |No                           |
+|Meeting and webinar attendees are optimized           |Yes                                                             |No                           |
+|Town hall attendees are optimized           |No                                                             |No                           |
+|Annotations                       |Only as presenter. <sup>4</sup>                                 |No                            |
 
 <sup>1</sup> Operator Connect in India with mobile numbers requires latitude and longitude access from the endpoint's OS and local internet breakout. Operator Connect with wireline numbers can use IP or subnet to map to a location. For more details, check [Wireline and Wireless number types in India](operator-connect-india-plan.md#wireline-and-wireless-number-types-in-india).
 <sup>2</sup> Graphics hardware acceleration requires DirectX 9 or later, with WDDM 2.0 or higher for Windows 10 (or WDDM 1.3 or higher for Windows 10 Fall Creators Update).
 <sup>3</sup> If you join a meeting as a guest, this feature isn't supported.
+<sup>4</sup> Viewers will not see the annotations (they are hidden by the incoming video window overlay)
 
 ## SlimCore user profile on the endpoint
 

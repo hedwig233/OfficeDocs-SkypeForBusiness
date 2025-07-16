@@ -16,7 +16,9 @@ description: "tblEnumValue is a hardcoded table that contains the Visibility and
 ---
 
 # tblEnumValue
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 tblEnumValue is a hardcoded table that contains the Visibility and Behavior values of the attributes that are used in the Node table.
   
 **Columns**

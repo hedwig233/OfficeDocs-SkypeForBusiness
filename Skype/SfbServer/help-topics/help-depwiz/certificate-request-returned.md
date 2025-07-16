@@ -18,6 +18,8 @@ description: "The Online Certificate Request Status page presents you with impor
 ---
 
 # Certificate Request (Returned)
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
  
 The **Online Certificate Request Status** page presents you with important information that results from the successful creation and issuing of the online certificate request. This page provides the certificate thumbprint that uniquely identifies the certificate. By default, the check box **Assign this certificate to Skype for Business Server certificate usages** is selected. If you click **Finish**, the certificate will be automatically assigned to Lync Server 2013 for the purposes that you defined during the creation steps of the certificate request. By default, the purposes that the certificate will be assigned are:
   
@@ -32,6 +34,6 @@ Click the **View Certificate Details** to view the certificate to confirm that t
 Click **Finish** to complete the online certificate request process. If you selected the check box **Assign this certificate to Skype for Business Server certificate usages**, the certificate will be automatically assigned. If you chose to clear this check box, you must assign the certificate in a separate step. 
   
 > [!IMPORTANT]
-> If the issuing certification authority (CA) root certificate is not in the computer's Trusted Root Certification Authority store, or if intermediate CA certificates are not in the proper store, you will see the summary status, as illustrated in the following image. You do not have the option to assign the certificate. To complete the certificate assignment process, you must import the issuing CA root certificate and any intermediate CA certificates, and then assign the certificate by clicking **Assign** on the main Certificate Wizard page.
+> If the issuing certification authority (CA) root certificate isn't in the computer's Trusted Root Certification Authority store, or if intermediate CA certificates aren't in the proper store, you'll see the summary status, as illustrated in the following image. You don't have the option to assign the certificate. To complete the certificate assignment process, you must import the issuing CA root certificate and any intermediate CA certificates, and then assign the certificate by clicking **Assign** on the main Certificate Wizard page.
   
 

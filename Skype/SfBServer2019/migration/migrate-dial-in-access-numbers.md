@@ -16,6 +16,8 @@ description: "Migrating dial-in access numbers to Skype for Business Server 2019
 
 # Migrate dial-in access numbers
 
+[!INCLUDE [appliesto-xxx-2019-sub](../includes/appliesto-xxx-2019-sub.md)]
+
 Migrating dial-in access numbers to Skype for Business Server 2019 requires running the **Move-CsApplicationEndpoint** cmdlet to migrate the contact objects. During the legacy install and Skype for Business Server 2019 coexistence period, dial-in access numbers that you created in Skype for Business Server 2019 behave similarly to the dial-in access numbers that you create in the legacy install, as described in this section. 
 
 Dial-in access numbers that you created in the legacy install but moved to Skype for Business Server 2019, or that you created in Skype for Business Server 2019 before, during, or after migration, have the following characteristics:

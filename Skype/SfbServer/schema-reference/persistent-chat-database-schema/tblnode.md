@@ -16,7 +16,9 @@ description: "tblNode contains the object tree (with category or chat room nodes
 ---
 
 # tblNode
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 tblNode contains the object tree (with category or chat room nodes) as managed in the control panel and administrative cmdlets.
   
 **Columns**

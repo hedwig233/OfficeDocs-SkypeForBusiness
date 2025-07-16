@@ -20,7 +20,9 @@ description: "Deployment process and steps for call park in Skype for Business S
 ---
 
 # Deployment process for Call Park in Skype for Business
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 Deployment process and steps for call park in Skype for Business Server Enterprise Voice.
   
 Call Park enables an Enterprise Voice user to put a call on hold from one telephone and then retrieve the call later by dialing an internal number (known as a Call Park orbit) from any telephone.

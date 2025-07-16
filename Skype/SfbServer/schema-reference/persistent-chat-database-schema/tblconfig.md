@@ -16,7 +16,9 @@ description: "tblConfig contains some Persistent Chat Server unsupported configu
 ---
 
 # tblConfig
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 tblConfig contains some Persistent Chat Server unsupported configuration, in one row.
   
 **Columns**

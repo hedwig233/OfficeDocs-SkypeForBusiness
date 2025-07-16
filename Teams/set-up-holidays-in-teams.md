@@ -8,6 +8,7 @@ ms.date: 03/08/2019
 ms.topic: install-set-up-deploy
 ms.tgt.pltfrm: cloud
 ms.service: msteams
+ms.subservice: teams-calling
 search.appverid: MET150
 ms.collection: 
   - M365-collaboration

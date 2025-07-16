@@ -19,12 +19,14 @@ description: "You select the databases that you want to create for your deployme
 
 # Install and Create Databases
 
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 You select the databases that you want to create for your deployment. By default, the database is created on the defined SQL Server in the defined site, and will automatically deploy and configure the database files based on the SQL Server you're placing the databases on.
 
  **Select the databases you want to create**: Select the checkbox of any databases that you intend to deploy and configure. Select the check box of any or all databases that you'll deploy.
 
 > [!CAUTION]
-> The SQL Server must already have been configured for the instance (if any) and firewall ports must be opened to accommodate the instance that you are deploying the databases to. For details, see [Configure SQL Server for Lync Server 2013 Preview](/previous-versions/office/lync-server-2013/lync-server-2013-configure-sql-server-for-lync-server)
+> The SQL Server must already have been configured for the instance (if any) and firewall ports must be opened to accommodate the instance that you're deploying the databases to. For details, see [Configure SQL Server for Lync Server 2013 Preview](/previous-versions/office/lync-server-2013/lync-server-2013-configure-sql-server-for-lync-server)
 
  **Advanced**: Select on the SQL Server and click the **Advanced** button to choose options for the database file locations on your SQL Server. For details on advanced database file placement, see [Database Installation Using Lync Server Management Shell](/previous-versions/office/lync-server-2013/lync-server-2013-database-installation-using-lync-server-management-shell)
 

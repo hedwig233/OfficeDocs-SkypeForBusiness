@@ -19,7 +19,9 @@ description: "Summary: Learn how to deploy an Edge Server or an Edge pool into y
 ---
 
 # Deploy Edge Server in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to deploy a Microsoft Edge Server or a Microsoft Edge pool into your Skype for Business Server environment.
   
 Why deploy a Microsoft Edge Server or an Edge pool into your Skype for Business Server environment? It's necessary if you need external users who aren't logged into your organization's internal network to be able to interact with internal users. These external users could be authenticated and anonymous remote users, federated partners, or other mobile clients.

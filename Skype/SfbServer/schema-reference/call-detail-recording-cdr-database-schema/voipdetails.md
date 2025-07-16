@@ -16,7 +16,9 @@ description: "The VoIPDetails view stores information about peer-to-peer session
 ---
 
 # VoIPDetails view
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 The VoIPDetails view stores information about peer-to-peer sessions, where at least one user is a VoIP user. This view was introduced in Microsoft Lync Server 2013.
   
 > [!NOTE]

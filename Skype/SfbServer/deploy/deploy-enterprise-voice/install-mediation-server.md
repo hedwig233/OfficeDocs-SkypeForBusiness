@@ -20,7 +20,9 @@ description: "Summary: Learn how to install the files for Mediation Server in Sk
 ---
 
 # Install the files for Mediation Server in Skype for Business Server
- 
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
+
 **Summary:** Learn how to install the files for Mediation Server in Skype for Business Server.
   
 To successfully complete this procedure, you should be logged on to the server, at the minimum, as a local administrator and a domain user who has membership in at least the RTCUniversalReadOnlyAdmins group.

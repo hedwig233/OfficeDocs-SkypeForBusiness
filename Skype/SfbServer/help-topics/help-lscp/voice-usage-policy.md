@@ -18,7 +18,9 @@ description: "For details about the different procedures that you can perform by
 ---
 
 # Voice Usage Policy
- 
+
+[!INCLUDE[appliesto-2015-xxx-xxx.md](../../../SfBServer2019/includes/appliesto-2015-xxx-xxx.md)]
+
 For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).
   
 

@@ -33,6 +33,12 @@ To view feature updates for Microsoft Teams Rooms, go to:
 
 ## [Teams panels](#tab/panels)
 
+## July 2025
+
+**Applies to:** *Teams app version: 1449/1.0.97.2025102203*
+
+- Fixes for authentication. 
+
 ## April 24, 2025
 
 **Applies to:** *Teams app version: 1449/1.0.97.2025086303*
@@ -157,7 +163,7 @@ To add a mobile system OS scanner:
 
 ### April 2023
 
-#**Applies to:** *Teams app Version: 1449/1.0.97.2023041403*
+**Applies to:** *Teams app Version: 1449/1.0.97.2023041403*
 
 - IT admins can use Teams panels with their Government Community Cloud High (GCC-H) accounts.
 - Fix for settings syncing with the Teams Admin Center and reset issues.
@@ -223,6 +229,12 @@ To add a mobile system OS scanner:
 - Hide meeting names for sensitive spaces. This setting is off by default (the **Show meeting names** setting is on). The tenant admin can enable it through **Settings** > **Device settings** > **Admin Settings** > **Panels App Settings** > **Meetings** > **Show meeting names**. When meeting names is turned off, the meeting name is replaced with the meeting organizer's name.
 
 ## [Teams phones](#tab/phones)
+
+## June 30, 2025
+
+**Applies to:** *Teams app version: 1449/1.0.94.2025168802* (Poly, Yealink and Audiocodes)
+
+- Back-end bug fixes to address unintended sign-outs.
 
 ## May 27, 2025
 

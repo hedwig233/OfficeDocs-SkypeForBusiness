@@ -17,6 +17,8 @@ description: "Learn about ensuring high availability of your file shares in Skyp
 ---
 
 # File sharing high availability in Skype for Business Server
+
+[!INCLUDE [appliesto-2015-2019-sub](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
  
 Learn about ensuring high availability of your file shares in Skype for Business Server, using DFS.
   

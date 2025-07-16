@@ -15,7 +15,9 @@ ms.assetid: bebd45d1-93c3-4e80-8933-755b699b2209
 description: "Summary: Learn how to assign an archiving policy to users in Skype for Business Server."
 ---
 
-# Apply an archiving policy to users in Skype for Business Server
+# Apply an archiving policy to users in Skype for Business Server.
+
+[!INCLUDE[appliesto-2015-2019-sub.md](../../../SfBServer2019/includes/appliesto-2015-2019-sub.md)]
 
 **Summary:** Learn how to assign an archiving policy to users in Skype for Business Server.
   

@@ -56,7 +56,7 @@ Each Auto attendant has a specific language and time zone. If you do business in
 
 For each Auto attendant, you can configure an operator. While you can configure operator calls to go to various destinations, the operator feature is designed to allow callers to talk to a specific person in your organization who can help them.
 
-Auto attendants can be configured to allow callers to search your organization's directory, either by name or by extension number. Within an Auto attendant, you can specify who is available for the directory search by choosing groups of users to include or exclude, otherwise known as *dial scope*.
+Auto attendants can be configured to allow callers to search your organization's directory, either by name or by extension number. In an Auto Attendant, you can choose which users show up in the directory by selecting which groups to include or leave out by setting the *dial scope*.
 
 Internal callers, using their Teams client, can reach an Auto attendant by calling the Resource account assigned to the Auto attendant. External callers can reach an Auto attendant by dialing the phone number assigned to the Resource account or via the web if click-to-call is configured.
 

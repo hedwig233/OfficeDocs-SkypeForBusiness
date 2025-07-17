@@ -106,10 +106,17 @@ If your agents are using the Microsoft Teams app for Call queue calls, they need
 
 If you're using a resource account for calling line ID purposes in Call queues, the resource account must have a Teams Phone Resource Account license and one of the following assigned:
 
-- A [Calling Plan](calling-plans-for-office-365.md) license and a phone number assigned.
+- A [Calling Plan](calling-plans-for-office-365.md) phone number assigned.
+  - A [Calling Plan](calling-plans-for-office-365.md) license assigned or 
+  - A [Pay-As-You-Go](calling-plans-for-office-365.md#pay-as-you-go-calling-plan) license assigned
 - An [Operator Connect](operator-connect-plan.md) phone number assigned.
 - An [online voice routing policy](manage-voice-routing-policies.md).
   - Phone number assignment is optional when using Direct Routing.
+
+> [!IMPORTANT]
+> As of Novemver 1, 2025, Calling Plan licenses on resource accounts will no longer be supported for On-Behalf-Of PSTN outbound calls. A [Pay-As-You-Go](calling-plans-for-office-365.md#pay-as-you-go-calling-plan) license will be required.
+> 
+> Refer to MCxxxxx
 
 You can nest Auto attendants and Call queues in two ways:
 
@@ -123,10 +130,12 @@ You can nest Auto attendants and Call queues in two ways:
 
 In addition to the Teams Phone Resource Account license, when a nested auto attendant or call queue transfers calls to an external number, the resource account on the nested auto attendant or call queue must also have one of the following assigned:
 
-- A [Calling Plan](calling-plans-for-office-365.md) license and a phone number.
-- An [Operator Connect](operator-connect-plan.md) phone number.
+- A [Calling Plan](calling-plans-for-office-365.md) phone number assigned.
+  - A [Calling Plan](calling-plans-for-office-365.md) license assigned or 
+  - A [Pay-As-You-Go](calling-plans-for-office-365.md#pay-as-you-go-calling-plan) license assigned
+- An [Operator Connect](operator-connect-plan.md) phone number assigned.
 - An [online voice routing policy](manage-voice-routing-policies.md).
-- Phone number (this assignment is optional when using Direct Routing).
+  - Phone number assignment is optional when using Direct Routing.
 
 For more information, see [Nested Auto attendants and Call queues](#nested-auto-attendants-and-call-queues).
 
@@ -140,6 +149,12 @@ For more information, see [Nested Auto attendants and Call queues](#nested-auto-
 > In a Hybrid scenario, the resource account must be created on-premises. For more information, see [Plan Cloud call queues](/skypeforbusiness/hybrid/plan-call-queue).
 >
 > New Commerce Experience customers aren't supported yet for resource accounts when an auto attendant or call queue needs to transfer calls to an external number.
+
+> [!IMPORTANT]
+> As of Novemver 1, 2025, Calling Plan licenses on resource accounts will no longer be supported for On-Behalf-Of PSTN outbound calls. A [Pay-As-You-Go](calling-plans-for-office-365.md#pay-as-you-go-calling-plan) license will be required.
+> 
+> Refer to MCxxxxx
+
 
 ## Business decisions
 

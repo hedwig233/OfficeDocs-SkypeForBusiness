@@ -89,7 +89,8 @@ The following devices are certified under the Microsoft Teams Rooms on Android C
 | Logitech Rally Bar Mini (VR0020) | `1.2.982` | September 3, 2026 | Small Meeting Room (4.5 m x 4.5 m) | 10 |
 | Logitech Rally Bar (VR0019) | `1.2.788` | September 3, 2026 | Medium size room (4.5 m x 6 m) | 10 |
 | MAXHUB XBar V50 | `ATB001.00.20250326.1141 (MDEP)` | August 15, 2027 | Small Meeting Room (4.5 m x 4.5 m) | 13 |
-| MAXHUB Panel AP30 | `ATT101.00.20250326.1236 (MDEP)` | August 15, 2027 | Compatible with XBar 50 | 13 |
+| MAXHUB XBar V70 | `ATB001.00.20250609.2146 (MDEP)` | August 15, 2027 | Medium size Room (4.5 m x 6 m) | 13 |
+| MAXHUB Panel AP30 | `ATT101.00.20250609.1756 (MDEP)` | August 15, 2027 | Compatible with XBar 50, XBar 70 | 13 |
 | Neat Bar Pro + Shure Complete Room Bundle| `NFD1.20241113.0013`| September 3, 2026 | Medium size room (4.5 m x 6 m) | 10 |
 | Neat Bar Pro | `NFD1.20220914.1210` | September 3, 2026 | Medium size room (4.5 m x 6 m) | 10 |
 | Neat Bar | `NFF1.20220914.1210` | September 3, 2026 | Medium size room (4.5 m x 6 m) | 10 |
@@ -529,6 +530,16 @@ For information about the latest Teams app releases, see [What's new in Microsof
 
 | Device model | Latest Firmware version | Minimum Firmware version required | Teams client | Company Portal | Microsoft Intune | Authenticator | Admin Agent | Release date |
 |:-------------------|:----------------------------|:--------------------------------------------|:-------------------------------|:-------------------------------|:--------------------------------|:--------------------------------|:--------------------------------|:--------------------------------|
+| Poly Studio X30 | `4.5.1-440029 (AOSP)` | `N/A`| `1449/1.0.96.2025031102`|  `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| July 2, 2025|
+| Poly Studio X50 | `4.5.1-440029 (AOSP)` | `N/A`| `1449/1.0.96.2025031102`|  `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| July 2, 2025|
+| Poly Studio X70 | `4.5.1-440029 (AOSP)` | `N/A`| `1449/1.0.96.2025031102`|  `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| July 2, 2025|
+| Poly Studio X32 | `4.5.1-440029 (AOSP)` |`N/A` |`1449/1.0.96.2025031102`|  `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| July 2, 2025|
+| Poly Studio X52 | `4.5.1-440029 (AOSP)` |`N/A` |`1449/1.0.96.2025031102`|  `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| July 2, 2025|
+| Poly Studio X72 | `4.5.1-440029 (AOSP)` | `N/A`| `1449/1.0.96.2025031102`|  `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| July 2, 2025|
+| Poly Studio G7500 | `4.5.1-440029 (AOSP)` | `N/A`| `1449/1.0.96.2025031102`|  `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| July 2, 2025|
+| Poly Studio G62 | `4.5.1-440029 (AOSP)` | `N/A`| `1449/1.0.96.2025031102`|  `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| July 2, 2025|
+| Poly TC8 | `6.5.1-7001187 (AOSP)` | N/A | `1449/1.0.96.2025031102`|  `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| July 2, 2025|
+| Poly TC10 | `6.5.1-7001187 (AOSP)` | N/A | `1449/1.0.96.2025031102`| `N/A` | `24.09.1` | `6.2410.7268` | `1.0.0.202412110504.product (753)` | July 2, 2025 |
 | Poly Studio X30 | `4.5.0-432287 (AOSP)` | `N/A`| `1449/1.0.96.2025031102`|  `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| June 10, 2025|
 | Poly Studio X50 | `4.5.0-432287 (AOSP)` | `N/A`| `1449/1.0.96.2025031102`|  `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| June 10, 2025|
 | Poly Studio X70 | `4.5.0-432287 (AOSP)` | `N/A`| `1449/1.0.96.2025031102`|  `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| June 10, 2025|

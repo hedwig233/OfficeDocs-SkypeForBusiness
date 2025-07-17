@@ -114,9 +114,7 @@ If you're using a resource account for calling line ID purposes in Call queues, 
   - Phone number assignment is optional when using Direct Routing.
 
 > [!IMPORTANT]
-> As of Novemver 1, 2025, Calling Plan licenses on resource accounts will no longer be supported for On-Behalf-Of PSTN outbound calls. A [Pay-As-You-Go](calling-plans-for-office-365.md#pay-as-you-go-calling-plan) license will be required.
-> 
-> Refer to MCxxxxx
+> As of November 1, 2025, Calling Plan licenses on resource accounts will no longer be supported for On-Behalf-Of PSTN outbound calls. A [Pay-As-You-Go](calling-plans-for-office-365.md#pay-as-you-go-calling-plan) license will be required.
 
 You can nest Auto attendants and Call queues in two ways:
 
@@ -151,10 +149,7 @@ For more information, see [Nested Auto attendants and Call queues](#nested-auto-
 > New Commerce Experience customers aren't supported yet for resource accounts when an auto attendant or call queue needs to transfer calls to an external number.
 
 > [!IMPORTANT]
-> As of Novemver 1, 2025, Calling Plan licenses on resource accounts will no longer be supported for On-Behalf-Of PSTN outbound calls. A [Pay-As-You-Go](calling-plans-for-office-365.md#pay-as-you-go-calling-plan) license will be required.
-> 
-> Refer to MCxxxxx
-
+> As of November 1, 2025, Calling Plan licenses on resource accounts will no longer be supported for On-Behalf-Of PSTN outbound calls. A [Pay-As-You-Go](calling-plans-for-office-365.md#pay-as-you-go-calling-plan) license will be required.
 
 ## Business decisions
 

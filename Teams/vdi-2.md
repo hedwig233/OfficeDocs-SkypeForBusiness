@@ -91,7 +91,7 @@ The plugin MSI automatically detects the CWA installation folder and places MsTe
 
 |Release note version |Details  |
 |---------------------|---------|
-|2025.24.1.3          |July 2025</br>-Thin Clients that use [Unified Write Filters with RAM Overlay](windows/configuration/unified-write-filter/uwfoverlay) might experience SlimCore MSIX installation errors if Environment (System) variables are prevented to write on disk. This plugin fixes this problem. It additionally supports HID disabling by creating a registry key in the Virtual Machine (see section 'Peripherals in VDI')|
+|2025.24.1.3          |July 2025</br>-Thin Clients that use [Unified Write Filters with RAM Overlay](/windows/configuration/unified-write-filter/uwfoverlay) might experience SlimCore MSIX installation errors if Environment (System) variables are prevented to write on disk. This plugin fixes this problem. It additionally supports HID disabling by creating a registry key in the Virtual Machine (see section 'Peripherals in VDI')|
 |2025.14.1.8          |May 2025</br>-The plugin can now download SlimCore packages that are 64-bit, increasing performance.|
 |2024.41.1.1          |October 2024</br>-When using SlimCore in multimonitor setups, a Citrix user is unable to share entire screen or individual monitors.</br>-Attempts a [Reset-AppxPackage](/PowerShell/module/appx/reset-appxpackage) if SlimCoreVdi MSIX package registrations fail after the virtual channel is established. |
 |2024.32.X.X          |August 2024</br>-The plugin now attempts a Reset-AppxPackage for SlimCoreVdi MSIX package in the event the AppExecution alias is missing. |

@@ -68,7 +68,7 @@ If you're a manufacturer and want to join the certification program, see [How to
 
 ## [Certified USB devices](#tab/usb)
 
-*Table Updated June 2025*
+*Table Updated July 2025*
 
 > [!NOTE]
 > The date format is MM/DD/YYYY.
@@ -76,6 +76,8 @@ If you're a manufacturer and want to join the certification program, see [How to
 | **Manufacturer**      | **Model**                                                    | **Qualified**       | **Certified Program**                                      |
 |:--------------------|:----------------------------------------------------------|:---------------|:-------------------------------------------------------|
 |Yealink              |UH46 Mono/Dual Headset                                     |5/23/2025       |Certified for Microsoft Teams                           |
+|Dell                 |SL525 Speakerphone                                         |5/23/2025       |Certified for Microsoft Teams                           |
+|Dell                 |SP325 Speakerphone                                         |5/12/2025       |Certified for Microsoft Teams                           | 
 |EPOS                 |IMPACT 100 Mono/Stereo Headset                             |4/4/2025        |Certified for Microsoft Teams                           |
 |Shure                |AONIC 50 GEN 2 UC Headset                                  |3/28/2025       |Certified for Microsoft Teams                           |
 |Shure                |AONIC 50 GEN 2 UC Headset and MV7+ Microphone              |3/28/2025       |Certified for Microsoft Teams                           |

@@ -89,6 +89,7 @@ The following devices are certified under the Microsoft Teams Rooms on Android C
 | Logitech Rally Bar Mini (VR0020) | `1.2.982` | September 3, 2026 | Small Meeting Room (4.5 m x 4.5 m) | 10 |
 | Logitech Rally Bar (VR0019) | `1.2.788` | September 3, 2026 | Medium size room (4.5 m x 6 m) | 10 |
 | MAXHUB XBar V50 | `ATB001.00.20250326.1141 (MDEP)` | August 15, 2027 | Small Meeting Room (4.5 m x 4.5 m) | 13 |
+| MAXHUB XBar V70 | `ATB001.00.20250609.2146 (MDEP)` | August 15, 2027 | Medium size Room (4.5 m x 6.0 m) | 13 |
 | MAXHUB Panel AP30 | `ATT101.00.20250326.1236 (MDEP)` | August 15, 2027 | Compatible with XBar 50 | 13 |
 | Neat Bar Pro + Shure Complete Room Bundle| `NFD1.20241113.0013`| September 3, 2026 | Medium size room (4.5 m x 6 m) | 10 |
 | Neat Bar Pro | `NFD1.20220914.1210` | September 3, 2026 | Medium size room (4.5 m x 6 m) | 10 |

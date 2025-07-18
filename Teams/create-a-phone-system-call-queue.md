@@ -49,7 +49,7 @@ Before following the procedures in this article, make sure you read [Plan for Te
     
 ## Steps to create a Call queue
 
-To set up a Call queue, in the [Teams admin center](https://go.microsoft.com/fwlink/p/?linkid=2066851), expand **Voice**, select **Call queues**, and then select **Add**.
+To set up a Call queue in the [Teams admin center](https://go.microsoft.com/fwlink/p/?linkid=2066851), expand **Voice**, select **Call queues**, and then select **Add**.
 
 ### Express Setup
 

@@ -56,7 +56,7 @@ Each Auto attendant has a specific language and time zone. If you do business in
 
 For each Auto attendant, you can configure an operator. While you can configure operator calls to go to various destinations, the operator feature is designed to allow callers to talk to a specific person in your organization who can help them.
 
-Auto attendants can be configured to allow callers to search your organization's directory, either by name or by extension number. Within an Auto attendant, you can specify who is available for the directory search by choosing groups of users to include or exclude, otherwise known as *dial scope*.
+Auto attendants can be configured to allow callers to search your organization's directory, either by name or by extension number. In an Auto Attendant, you can choose which users show up in the directory by selecting which groups to include or leave out by setting the *dial scope*.
 
 Internal callers, using their Teams client, can reach an Auto attendant by calling the Resource account assigned to the Auto attendant. External callers can reach an Auto attendant by dialing the phone number assigned to the Resource account or via the web if click-to-call is configured.
 
@@ -106,10 +106,15 @@ If your agents are using the Microsoft Teams app for Call queue calls, they need
 
 If you're using a resource account for calling line ID purposes in Call queues, the resource account must have a Teams Phone Resource Account license and one of the following assigned:
 
-- A [Calling Plan](calling-plans-for-office-365.md) license and a phone number assigned.
+- A [Calling Plan](calling-plans-for-office-365.md) phone number assigned.
+  - A [Calling Plan](calling-plans-for-office-365.md) license assigned or 
+  - A [Pay-As-You-Go](calling-plans-for-office-365.md#pay-as-you-go-calling-plan) license assigned
 - An [Operator Connect](operator-connect-plan.md) phone number assigned.
 - An [online voice routing policy](manage-voice-routing-policies.md).
   - Phone number assignment is optional when using Direct Routing.
+
+> [!IMPORTANT]
+> As of November 1, 2025, Calling Plan licenses on resource accounts will no longer be supported for On-Behalf-Of PSTN outbound calls. A [Pay-As-You-Go](calling-plans-for-office-365.md#pay-as-you-go-calling-plan) license will be required.
 
 You can nest Auto attendants and Call queues in two ways:
 
@@ -123,10 +128,12 @@ You can nest Auto attendants and Call queues in two ways:
 
 In addition to the Teams Phone Resource Account license, when a nested auto attendant or call queue transfers calls to an external number, the resource account on the nested auto attendant or call queue must also have one of the following assigned:
 
-- A [Calling Plan](calling-plans-for-office-365.md) license and a phone number.
-- An [Operator Connect](operator-connect-plan.md) phone number.
+- A [Calling Plan](calling-plans-for-office-365.md) phone number assigned.
+  - A [Calling Plan](calling-plans-for-office-365.md) license assigned or 
+  - A [Pay-As-You-Go](calling-plans-for-office-365.md#pay-as-you-go-calling-plan) license assigned
+- An [Operator Connect](operator-connect-plan.md) phone number assigned.
 - An [online voice routing policy](manage-voice-routing-policies.md).
-- Phone number (this assignment is optional when using Direct Routing).
+  - Phone number assignment is optional when using Direct Routing.
 
 For more information, see [Nested Auto attendants and Call queues](#nested-auto-attendants-and-call-queues).
 
@@ -141,13 +148,16 @@ For more information, see [Nested Auto attendants and Call queues](#nested-auto-
 >
 > New Commerce Experience customers aren't supported yet for resource accounts when an auto attendant or call queue needs to transfer calls to an external number.
 
+> [!IMPORTANT]
+> As of November 1, 2025, Calling Plan licenses on resource accounts will no longer be supported for On-Behalf-Of PSTN outbound calls. A [Pay-As-You-Go](calling-plans-for-office-365.md#pay-as-you-go-calling-plan) license will be required.
+
 ## Business decisions
 
 Before you set up your Auto attendants and Call queues, there are some decisions that you should make about how to use these features in your business. These decisions determine the settings you choose when configuring your Auto attendants and Call queues.
 
 Document your answers to these questions and provide the information to the administrator doing the configuration.
 
-- How will callers reach you? Internally only? Externally? Click-to-call on the web?
+- How do callers reach you? Internally only? Externally? Click-to-call on the web?
 - What languages do you need? Where are these languages needed - which department or group?
 - Do you want to allow voice inputs from callers or only dialing inputs?
 - Do you need separate call routing for off hours or holidays? What are the hours and holidays?
@@ -187,9 +197,9 @@ Conference mode is enabled by default. If you have agents who don't meet the req
 
 ## Nested Auto attendants and Call queues
 
-The first Auto attendant or Call queue that answers a call requires a resource account and associated licensing. Nested auto attendants or call queues that receive calls that have already been answered by an auto attendant or call queue don't require resource accounts. 
+The first Auto attendant or Call queue that answers a call requires a resource account and associated licensing. Nested auto attendants or call queues that receive calls from an auto attendant or call queue that already answered the call don’t need a resource account.
 
-Nesting without resource accounts is the recommended approach. This method eliminates the need to create and license additional resource accounts and makes auto attendant call flows and call queue exception handling flows easier to understand and maintain.
+Nesting without resource accounts is the recommended approach. This method removes the need to create and license extra resource accounts. It also makes auto attendant and call queue exception handling flows easier to understand and manage.
 
 However, there might be times when you require nesting with resource accounts. For example, when agents in a call queue receive a call, how the call arrived in the queue determines the information in the toast. If the call was transferred to the queue without a resource account, the agent receives the name of the call queue in the toast. If the call was transferred to the queue through a resource account, the agent receives the display name of the resource account.
 

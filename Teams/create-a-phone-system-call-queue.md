@@ -53,24 +53,24 @@ To set up a Call queue, in the [Teams admin center](https://go.microsoft.com/fwl
 
 ### Express Setup
 
-Organizations with simpler call routing needs may not require the full range of configurations offered by the classic setup. Express Setup provides a fast and effective way to create basic Call queues without navigating complex options.
+Organizations with simpler call routing needs may not require the full range of configurations offered by the classic setup. **Express Setup** provides a fast and effective way to create basic Call queues without navigating complex options.
 
-If you need more advanced configuration, click “Classic Setup” to switch to the full Call queue creation wizard.
+If you need more advanced configuration, select **Classic Setup** to switch to the full Call queue creation wizard.
 
 #### Step 1: General info for Call queue
 
 1. Type a name for the Call queue and select the language for system prompts and text to speech greetings.
-1. Select how the Call queue will receive calls. 
+1. Select how the Call queue receives calls. 
 
-Once you've set your Call queue's general info, select Next.
+Once you've set your Call queue's general info, select **Next**.
 
 #### Step 2: Select who can answer the incoming calls
 
-1. Select the team and channel or the users and groups that will answer the incoming calls.
+1. Select the team and channel or the users and groups to answer the incoming calls.
    
    Review the [prerequisites for adding agents to a Call queue](plan-auto-attendant-call-queue.md#prerequisites).
 
-Once you select who can answer the incomfing calls, select **Submit** button at the bottom of the **Set up Call Queue** wizard page.
+Once you select who can answer the incoming calls, select **Submit** button at the bottom of the **Set up Call Queue** wizard page.
 
 ### Classic Setup
 
@@ -143,7 +143,7 @@ You can set the threshold target to any value from 0 to 40 minutes (2,400 second
 >[!NOTE]
 > Service level metrics aren't currently available in historical reporting.
 >
-> Changing the service level threshold during business hours causes inaccurate service level calculations for the whole day because previous calls won't be reassessed with the new target.
+> Changing the service level threshold during business hours causes inaccurate service level calculations for the whole day because previous calls aren't reassessed with the new target.
 
 ##### Set the Call queue language
 
@@ -208,7 +208,7 @@ Teams provides default music to callers while they're *on hold in a queue*.
 - If you want to play a specific audio file, choose **Play an audio file** and upload an MP3, WAV, or WMA file. See [Supported audio file formats](plan-auto-attendant-call-queue.md#supported-audio-file-formats).
 
 > [!IMPORTANT]
-> You're responsible for independently clearing and securing all necessary rights and permissions to use any music or audio file with your Microsoft Teams service, which might include intellectual property and other rights in any music, sound effects, audio, brands, names, and other content in the audio file from all relevant rights holders, which might include artists, actors, performers, musicians, songwriters, composers, record labels, music publishers, unions, guilds, rights societies, collective management organizations, and any other parties who own, control, or license the music copyrights, sound effects, audio, and other intellectual property rights.
+> You're responsible for independently clearing and securing all necessary rights and permissions to use any music or audio file with your Microsoft Teams service. These rights and permissions might include intellectual property and other rights in any music, sound effects, audio, brands, names, and other content in the audio file from all relevant rights holders, which might include artists, actors, performers, musicians, songwriters, composers, record labels, music publishers, unions, guilds, rights societies, collective management organizations, and any other parties who own, control, or license the music copyrights, sound effects, audio, and other intellectual property rights.
 
 After you select a greeting and on-hold music, select the **Next** button at the bottom of the **Add a Call queue** page.
 
@@ -337,7 +337,7 @@ Keep the following conditions in mind:
 - Agents can hear the configured music on hold in queue for up to two seconds when first joining the call.
 
 > [!IMPORTANT]
-> Transfer mode (when conference mode is disabled) is now in legacy mode. A Message Center post will be made at least 3 months before the scheduled removal date.
+> Transfer mode (when conference mode is disabled) is now in legacy mode. A Message Center post will be made at least three months before the scheduled removal date.
 
 ##### Call answering via PowerShell
 
@@ -679,7 +679,7 @@ This limit applies only to calls that are waiting in queue to be answered.
 
 ##### Call timeout: Set how to handle call timeouts
 
-**Call Timeout: maximum wait time** specifies the maximum time a call can be on hold in the queue before it's redirected or disconnected.
+**Call Timeout: maximum wait time** specifies the maximum time a call can be on hold in the queue before the system redirects or disconnects it.
 
 You can specify a value from 0 seconds to 45 minutes.
 

@@ -61,7 +61,7 @@ Auto attendants can redirect calls, based on callers' input, to one of the follo
 
 ## Steps to create an Auto attendant
 
-To set up an Auto attendant, in the [Teams admin center](https://admin.teams.microsoft.com/), expand **Voice**, select **Auto attendants**, and then select **Add**.
+To set up an Auto attendant in the [Teams admin center](https://admin.teams.microsoft.com/), expand **Voice**, select **Auto attendants**, and then select **Add**.
 
 ### Express Setup
 

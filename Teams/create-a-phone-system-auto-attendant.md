@@ -48,7 +48,7 @@ Auto attendants can redirect calls, based on callers' input, to one of the follo
 > When redirecting calls to a **Person in the organization**, that person must be voice enabled. For details on enabling voice, see [Assign Teams add-on licenses to users](teams-add-on-licensing/assign-teams-add-on-licenses.md).
 
 >[!IMPORTANT]
-> While defining an **Operator** is optional, it's recommended.  Auto attendants redirect calls to the operator if there is an error in the Auto attendant configuration due to a user or shared voicemail account being deleted or if the caller doesn't make any selection after listening to the menu three consecutive times.
+> Defining an **Operator** is optional but recommended.  Auto attendants redirect calls to the operator if there's an error in the Auto attendant configuration due to a user or shared voicemail account being deleted or if the caller doesn't make any selection after listening to the menu three consecutive times.
 >
 > If an operator isn't defined, the Auto attendant drops the call.
 >
@@ -65,18 +65,18 @@ To set up an Auto attendant, in the [Teams admin center](https://admin.teams.mic
 
 ### Express Setup
 
-Organizations with simpler call routing needs may not require the full range of configurations offered by the classic setup. Express Setup provides a fast and effective way to create basic Auto attendants without navigating complex options.
+Organizations with simpler call routing needs may not require the full range of configurations offered by the classic setup. **Express Setup** provides a fast and effective way to create basic Auto attendants without navigating complex options.
 
-If you need more advanced configuration, click “Classic Setup” to switch to the full Auto attendant creation wizard.
+If you need more advanced configuration, select **Classic Setup** to switch to the full Auto attendant creation wizard.
 
 #### Step 1: General info for Auto attendant
 
 1. Type a name for the Auto attendant.
-1. Select the time zone that will be used to determine the after hours schedule.
+1. Select the time zone to determine the after hours schedule.
 1. Select the language for system prompts and text to speech greetings. 
-1. Select how the Auto attendant will receive calls. 
+1. Select how the Auto attendant receives calls. 
 
-Once you've set your Auto attendant's general info, select Next.
+After setting the auto attendant's general info, select **Next**.
 
 #### Step 2: Select call routing options
 
@@ -113,7 +113,7 @@ The steps outlined in the article create Auto attendants using the Teams admin c
 
 1. Choose if you want to enable voice inputs. When enabled, the name of every menu option becomes a speech-recognition keyword. For example, callers can say "One" to select the menu option mapped to key 1, or they can say "Sales" to select the menu option named "Sales." If you choose a language in Step 4 that doesn't support voice inputs, this option isn't available.
 
-Once you've set your Auto attendant's general info, select **Next**.
+After setting your Auto attendant's general info, select **Next**.
 
 #### [Step 2: Call flows](#tab/call-flow)
 
@@ -139,19 +139,19 @@ For dialing options, assign the 0-9, \* (asterisk) and \# (pound) keys on the te
 
 Key mappings don't have to be continuous. It's possible to create a menu with keys 0, 1, and 3 mapped to options, while the number 2 key isn't used.
 
-We recommend mapping the zero key to the operator if you've configured one. If the operator isn't set to any key, the voice command "Operator" is also disabled.
+If you configured an operator, map the zero key to it. If the operator isn't set to any key, the voice command "Operator" is also disabled.
 
 For each menu option, specify the following settings:
 
 - **Dial key** - the key on the telephone keypad to access this option. If voice inputs are available, callers can also say this number to access the option.
 
-- **Voice command** - defines the voice command that a caller can give to access this option, if voice inputs are enabled. It can contain multiple words like "Customer Service" or "Operations and Grounds." For example, the caller can press 2, say "two," or say "Sales" to select the option mapped to the two keys. This text is also rendered by text to speech for the service confirmation prompt, which might be something like "Transferring your call to sales."
+- **Voice command** - defines the voice command that a caller can give to access this option, if voice inputs are enabled. It can contain multiple words like "Customer Service" or "Operations and Grounds." For example, the caller can press 2, say "two," or say "Sales" to select the option mapped to the two keys. This text also plays in the service confirmation prompt, such as "Transferring your call to sales."
 
 - **Redirect to** - the call routing destination used when callers choose this option. When redirecting to an Auto attendant or Call queue, you can choose to redirect to the Auto attendant or Call queue directly or to the resource account associated with the Auto attendant or Call queue. For more information, see [Nested Auto attendants and Call queues](./plan-auto-attendant-call-queue.md#nested-auto-attendants-and-call-queues).
 
 ###### Directory search
 
-If you assign dial keys to destinations, we recommend that you choose **None** for **Directory search**. Dial keys are matched before directory searches are performed. If a caller starts to enter a name or extension using dial keys that are assigned to specific destinations, they're routed to that destination before they finish entering the name or extension. We recommend that you create a separate Auto attendant for directory search and have your main Auto attendant link to it with a dial key.
+If you assign dial keys to destinations, we recommend that you choose **None** for **Directory search**. Dial keys are matched before directory searches are performed. If a caller uses dial keys assigned to specific destinations, the system routes the call immediately. The caller is transferred before they finish entering the full name or extension. We recommend that you create a separate Auto attendant for directory search and have your main Auto attendant link to it with a dial key.
 
 If you didn't assign dial keys, then choose an option for **Directory search**.
 
@@ -163,7 +163,7 @@ If you didn't assign dial keys, then choose an option for **Directory search**.
 
 For more information, see the [Dial and voice reference](dial-voice-reference.md).
 
-Once you've set your basic call flow options, select **Next**.
+After setting your basic call flow options, select **Next**.
 
 ##### Step 2.2: Set up call flow for after hours (optional)
 
@@ -173,7 +173,7 @@ Business hours can be set for each Auto attendant.
 - Business hours can be set with breaks in time during the day, and all of the hours that aren't set as business hours are considered after-hours.
 - You can set different incoming call-handling options and greetings for after-hours.
 
-Depending on how you've configured your Auto attendants and Call queues, you might only need to specify after-hours call routing for Auto attendants with direct phone numbers.
+Depending on how you configured your auto attendants and call queues, you might only need to set after-hours call routing for auto attendants with direct phone numbers.
 
 If you want separate call routing for after-hours callers, then specify your business hours for each day.
 
@@ -185,7 +185,7 @@ Once you've added your after hours call flow, select **Next**.
 
 ##### Step 2.3: Set up call flows for holidays (optional)
 
-Your Auto attendant can have a call flow for each [Holiday you've set up](set-up-holidays-in-teams.md). You can add up to 20 holiday sets to each Auto attendant. Each holiday set can contain up to 50 unique date ranges. Holiday dates must be unique across all holiday sets being added to the Auto attendant.
+Your auto attendant can have a call flow for each [Holiday you configure](set-up-holidays-in-teams.md). You can add up to 20 holiday sets to each Auto attendant. Each holiday set can contain up to 50 unique date ranges. Holiday dates must be unique across all holiday sets being added to the Auto attendant.
 
 1. On the Holiday call settings page, select **Add**.
 
@@ -225,7 +225,7 @@ Once you've selected your **Dial scope** options, select **Next**.
 
 #### Step 4: Assign resource accounts
 
-Before you can create and manage resource accounts, you must do the following:
+Before you can create and manage resource accounts, you must do the following actions:
 
 - [Obtain Microsoft Teams Phone Resource Account licenses](manage-resource-accounts.md#obtain-microsoft-teams-phone-resource-account-licenses)
 - [Obtain phone numbers](manage-resource-accounts.md#obtain-phone-numbers)
@@ -233,7 +233,7 @@ Before you can create and manage resource accounts, you must do the following:
 
 All Auto attendants that directly answer calls must have an associated resource account. All resource accounts must be assigned a [Microsoft Teams Phone Resource Account license](teams-add-on-licensing/virtual-user.md). If you wish, you can assign several resource accounts to an Auto attendant.
 
-Nested Auto attendants and Call queues that receive calls from an auto attendant or call queue that has already answered the call don't require a resource account.
+Nested Auto attendants and Call queues that receive calls from an auto attendant or call queue that already answered the call don't need a resource account.
 
 For details on how to create resource accounts and ready them for use with auto attendants, see [Manage Teams resource accounts](manage-resource-accounts.md).
 
@@ -252,7 +252,7 @@ To **add a user** to the authorized users:
 > [!IMPORTANT]
 > A user must have a policy assigned that enables at least one type of configuration change and must also be assigned as an authorized user to at least one Auto attendant or Call queue.
 >
-> A user won't be able to make any configuration changes if:
+> A user can't make any configuration changes if:
 >
 > - The user has a policy assigned but isn't assigned as an authorized user to at least one Auto attendant or Call queue.
 > - The user is assigned as an authorized user to at least one Auto attendant or Call queue but doesn't have a policy assigned.
@@ -267,7 +267,7 @@ For more information, see [Set up authorized users](./aa-cq-authorized-users.md)
 ## Extra functionality available through PowerShell cmdlets
 
 > [!CAUTION]
-> These configuration options are currently only available through PowerShell cmdlets and they don't appear in Teams admin center. If these options are configured through PowerShell, any changes to the Auto attendant through Teams admin center will erase these settings.
+> These configuration options are currently only available through PowerShell cmdlets and they don't appear in Teams admin center. If these options are configured through PowerShell, any changes to the Auto attendant through Teams admin center erases these settings.
 
 ### Dial by name improvements
 
@@ -288,14 +288,14 @@ In addition, for a resource account with a:
 - [Calling Plan license](calling-plans-for-office-365.md) or [Operator Connect](operator-connect-plan.md) number, the external transfer phone number must be entered in E.164 format (+[country code][area code][phone number]).
 - [Microsoft Teams Phone license](setting-up-your-phone-system.md) and [Direct Routing online voice routing policy](direct-routing-voice-routing.md), the external transfer phone number format is dependant on the [Session Border Controller (SBC)](direct-routing-connect-the-sbc.md) settings.
 
-The outbound phone number that's displayed is determined as follows:
+The system determines the outbound phone number as follows:
 
 - For Calling Plan and Operator Connect numbers, the original caller's phone number is displayed.
 - For Direct Routing numbers, the number sent is based on the P-Asserted-Identity (PAI) setting on the SBC, as follows:
-  - If set to Disabled, the original caller's phone number is displayed. Disabled is the default and recommended setting.
-  - If set to Enabled, the resource account phone number is displayed.
+  - If set to **Disabled**, the original caller's phone number is displayed. Disabled is the default and recommended setting.
+  - If set to **Enabled**, the resource account phone number is displayed.
 
-In a Skype for Business hybrid environment, to transfer an Auto attendant call to the PSTN, create a new on-premises user with call forwarding set to the PSTN number. The user must be enabled for Enterprise Voice and have a voice policy assigned. To learn more, see [Auto attendant call transfer to PSTN](/SkypeForBusiness/plan/exchange-unified-messaging-online-migration-support#auto-attendant-call-transfer-to-pstn).
+In a Skype for Business hybrid environment, to transfer an Auto attendant call to the Public Switched Telephone Network (PSTN), create a new on-premises user with call forwarding set to the PSTN number. The user must be enabled for Enterprise Voice and have a voice policy assigned. To learn more, see [Auto attendant call transfer to PSTN](/SkypeForBusiness/plan/exchange-unified-messaging-online-migration-support#auto-attendant-call-transfer-to-pstn).
 
 ### Auto Attendant Diagnostic Tool
 

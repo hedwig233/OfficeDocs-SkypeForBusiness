@@ -53,6 +53,7 @@ The following devices are certified under the Microsoft Teams Rooms on Android C
 | AudioCodes RXV200 | `2.2.335` | September 3, 2026 |  Focus room (3 m x 3 m) | 10 |
 | AudioCodes RXPad Touch console | `2.0.282` | August 15, 2027 | Compatible with AudioCodes RXV81 and RXV200 Collaboration bars. | 12 |
 | AudioCodes RXV81 Collaboration Bar | `2.0.0` | August 15, 2027 | Small meeting room (4.5 m x 4.5 m) | 12 |
+| Audiocodes RXV200 + Shure Large Room Kit| `2.8.574 `|September 3, 2026 |Large rooms (4.5 m x 8.5 m) | 10 |
 | Cisco Room Bar Pro | `RoomOS11.9` | September 3, 2026 |  Medium size room (4.5 m x 6 m) | 11 |
 | Cisco Board Pro 55 | `11.3.1.13` | September 3, 2026 | Medium size room (4.5 m x 6 m) | 11 |
 | Cisco Board Pro 75 | `11.3.1.13` | September 3, 2026 | Medium size room (4.5 m x 6 m) | 11 |

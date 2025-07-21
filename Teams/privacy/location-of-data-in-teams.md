@@ -17,6 +17,7 @@ ms.collection:
   - M365-collaboration
   - privacy-teams
   - must-keep
+  - trust-pod
 appliesto: 
   - Microsoft Teams
 ms.custom: seo-marvel-apr2020

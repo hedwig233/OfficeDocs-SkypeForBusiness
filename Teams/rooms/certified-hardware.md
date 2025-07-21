@@ -132,6 +132,7 @@ The following devices are Certified under the Microsoft Teams Rooms on Windows C
 | [ViewSonic TeamJoin TRS10](https://www.viewsonic.com/global/products/commercial-display/TRS10) bundle (Compute: [MPC310-W31-TU](https://www.viewsonic.com/global/products/commercial-display/MPC310-W31-TU) + Console: [MRC1010-TN](https://www.viewsonic.com/global/products/commercial-display/MRC1010-TN)) | Core i3 | 8 GB | 128 GB |
 | [Yealink Core2 Kit](https://www.yealink.com/en/product-detail/microsoft-teams-rooms-mvc640) | Core i5 | 8 GB | 128 GB |
 | Yealink MeetingBoard for MTR-Windows | Core i5 | 8 GB | 128 GB |
+| Yealink MeetingBoard 75 | Core i5 | 8 GB | 128 GB |
 | [Yealink MVC300 with Intel NUC](https://www.yealink.com/products_154.html) | Core i5 | 8 GB | 128 GB |
 | [Yealink MVC500 with Intel NUC](https://www.yealink.com/products_126.html) | Core i5 | 8 GB | 128 GB |
 | [Yealink MVC800 with Intel NUC](https://www.yealink.com/products_125.html) | Core i5 | 8 GB | 128 GB |

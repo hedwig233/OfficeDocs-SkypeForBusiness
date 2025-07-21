@@ -14,7 +14,7 @@ ms.date:     07/21/2025
 
 # Remote management of contacts for Teams Phones
 
-This article provides guidance on the remote management of contacts on Microsoft Teams certified Phones using the Teams admin center. This feature allows users to easily access emergency or frequently used contacts, which will be available in the Company contacts folder on Teams Phones.
+This article provides guidance on the remote management of contacts on Microsoft Teams certified Phones using the Teams admin center. This feature allows users to easily access emergency or frequently used contacts available in the Company contacts folder on Teams Phones.
 
 > [!NOTE]
 > This feature is currently available only for common area phones
@@ -33,13 +33,13 @@ To manage contacts on Teams phones through the Teams admin center, follow these 
 
   - Select the devices for which you want to add contacts, then click __Manage Contacts__.
   
-  - A right pane will open. In the __Add contact__ search box, search and select the desired contacts.
+  - A right pane opens. In the __Add contact__ search box, search and select the desired contacts.
   
   - If you cannot find contacts in the search box, use the __Import contacts__ option. A sample CSV file will be available for download.
   
   - Click __Save__.
   
-  - The contacts will sync to the __Company contacts__ folder within approximately 24 hours.
+  - The contacts sync to the __Company contacts__ folder within approximately 24 hours.
   
 - To delete contacts from the __Company contacts__ folder:
 

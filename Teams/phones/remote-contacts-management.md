@@ -7,7 +7,8 @@ title: Remote management of contacts for Teams Phones
 description: IT Admins can remotely add or delete contacts from their Teams Phones using Teams admin center
 author:      ArchanaYerragangu # GitHub alias
 ms.author:   ayerragangu # Microsoft alias
-ms.service: microsoft-365-admin
+ms.service: msteams
+ms.subservice: teams-calling
 ms.topic: article
 ms.date:     07/21/2025
 ---

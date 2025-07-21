@@ -23,7 +23,7 @@ This article provides guidance on the remote management of contacts on Microsoft
 
 To manage contacts on Teams phones through the Teams admin center, follow these steps:
 
-- __Update the Teams phone to version 1449/1.0.94.2025062601 or later:__ After updating the phone, you will notice changes. To update your Teams phones, refer to [Update your phones remotely](/microsoftteams/devices/remote-update). Ensure that you are running Android version __1449/1.0.94.2025062601__ or later.
+- __Update the Teams phone to version 1449/1.0.94.2025062601 or later:__ After updating the phone, you will notice changes. To update your Teams phones, refer to [Update your phones remotely](/microsoftteams/phones/remote-update-teams-phones). Ensure that you are running Android version __1449/1.0.94.2025062601__ or later.
 
 - Sign in to the Teams admin center.
 
@@ -41,3 +41,17 @@ To manage contacts on Teams phones through the Teams admin center, follow these 
   
   - The contacts will sync to the __Company contacts__ folder within approximately 24 hours.
   
+- To delete contacts from the __Company contacts__ folder:
+
+  - Select the device from which you need to delete contacts, then click __Manage Contacts__.
+  
+  - In the right pane, remove the applicable contacts and click __Save__.
+  
+  - Confirm the deletion in the pop-up that appears.
+  
+> [!NOTE]
+> Manage contacts is currently applicable only for common area phones.
+> All Manage Contacts operations, such as adding or deleting a contact, may take up to 24 hours to reflect on the device.
+> Contact deletion can be performed for one device at a time.
+> The activity log is currently available only for Phones and can be used to track just the Manage Contacts operations.
+

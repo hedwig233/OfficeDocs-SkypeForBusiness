@@ -3,13 +3,12 @@
 # For more information, see https://learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata
 # For valid values of ms.service, ms.prod, and ms.topic, see https://learn.microsoft.com/en-us/help/platform/metadata-taxonomies
 
-title:       # Add a title for the browser tab
-description: # Add a meaningful description for search results
+title: Remote management of contacts for Teams Phones
+description: IT Admins can remotely add or delete contacts from their Teams Phones using Teams admin center
 author:      ArchanaYerragangu # GitHub alias
 ms.author:   ayerragangu # Microsoft alias
-ms.service:  # Add the ms.service or ms.prod value
-# ms.prod:   # To use ms.prod, uncomment it and delete ms.service
-ms.topic:    # Add the ms.topic value
+ms.service: microsoft-365-admin
+ms.topic: article
 ms.date:     07/21/2025
 ---
 

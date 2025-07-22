@@ -109,31 +109,31 @@ OfficeActivity
 
 In Teams, you can add external users to your environment or channels. Organizations often have a limited number of key partnerships and add users from among these partners. This KQL looks at external users added to teams who come from organizations that haven't been seen or added before.
 
-For more information, see the query in the [Microsoft Sentinel community git hub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting%20Queries/OfficeActivity/ExternalUserFromNewOrgAddedToTeams.yaml).
+For more information, see the query in the [Microsoft Sentinel community GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting%20Queries/OfficeActivity/ExternalUserFromNewOrgAddedToTeams.yaml).
 
 ### External users who were added and then removed
 
 Attackers with some level of existing access may add a new external account to Teams to access and exfiltrate data. They may also quickly remove that user to hide that they made access. This query hunts for external accounts that are added to Teams and swiftly removed to help identify suspicious behavior.
 
-For more information, see the query in the [Microsoft Sentinel community git hub](https://github.com/Azure/Azure-Sentinel/blob/master/Detections/OfficeActivity/ExternalUserAddedRemovedInTeams.yaml).
+For more information, see the query in the [Microsoft Sentinel community GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Detections/OfficeActivity/ExternalUserAddedRemovedInTeams.yaml).
 
 ### New bot or application added
 
 Teams can include apps or bots in a Team to extend the feature set (including custom apps and bots). In some cases, an app or bot can be used for *persistence* in Teams without needing a user account, and can access files and other data. This query hunts for apps or bots that are new to Teams.
 
-For more information, see the query in the [Microsoft Sentinel community git hub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting%20Queries/OfficeActivity/NewBotAddedToTeams.yaml).
+For more information, see the query in the [Microsoft Sentinel community GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting%20Queries/OfficeActivity/NewBotAddedToTeams.yaml).
 
 ### User accounts who are Owners of large numbers of Teams
 
 Attackers looking to elevate their privileges may assign themselves Owner privileges of a large number of diverse teams. *Usually*, users create and own a few teams around specific topics. This KQL query looks for suspicious behavior.
 
-For more information, see the query in the [Microsoft Sentinel community git hub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting%20Queries/OfficeActivity/MultiTeamOwner.yaml).
+For more information, see the query in the [Microsoft Sentinel community GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting%20Queries/OfficeActivity/MultiTeamOwner.yaml).
 
 ### Many Team deletions by a single user
 
 Attackers can cause disruptions and jeopardize projects and data by deleting multiple teams. Since teams are usually deleted by individual Owners, central deletion of many teams can be a sign of trouble. This KQL looks for single users who delete multiple teams.
 
-For more information, see the query in the [Microsoft Sentinel community git hub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting%20Queries/OfficeActivity/MultipleTeamsDeletes.yaml).
+For more information, see the query in the [Microsoft Sentinel community GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting%20Queries/OfficeActivity/MultipleTeamsDeletes.yaml).
 
 ### Expanding your threat hunting opportunities
 
@@ -217,7 +217,7 @@ SigninLogs
 
 **Thank you for content collaboration, Pete Bryan, Nicholas DiCola, and Matthew Lowe.** Pete Bryan, and people he collaborates with, continue to develop detection and hunting queries for Teams.
 
-Stay in touch with this [Git Hub](https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries/) repository for updates.
+Stay in touch with this [GitHub](https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries/) repository for updates.
 
 Watch for updates to the [parser](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/Teams_parser.txt) and [logic app](https://github.com/Azure/Azure-Sentinel/tree/master/Playbooks/Get-O365Data) used in this article.
 

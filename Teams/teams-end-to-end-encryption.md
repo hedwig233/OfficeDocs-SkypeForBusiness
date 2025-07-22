@@ -16,6 +16,7 @@ f1.keywords:
 ms.collection: 
   - M365-collaboration
   - purview-compliance
+  - trust-pod
 ms.custom: 
 - Security
 appliesto: 

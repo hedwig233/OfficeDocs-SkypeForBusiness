@@ -14,6 +14,7 @@ ms.custom: seo-marvel-apr2020
 ms.localizationpriority: high
 ms.collection: 
   - M365-collaboration
+  - trust-pod
 f1.keywords:
 - NOCSH
 appliesto: 
@@ -36,7 +37,7 @@ Microsoft Teams uses modern authentication to keep the sign-in experience simple
 
 Modern authentication is part of a process that lets Teams know that users have already entered their credentials&mdash;such as their work email and password&mdash;elsewhere, and they shouldn't be required to enter them again to start the app. The experience varies depending on a couple factors, like if users are working in a Windows operating system, or on a Mac.
 
-Sign-in behavior will also vary depending on whether your organization has enabled single-factor authentication or multifactor authentication. Multifactor authentication usually involves verifying credentials via a phone, providing a unique code, entering a PIN, or presenting a thumbprint. 
+Sign-in behavior will also vary depending on whether your organization has enabled single-factor authentication or multifactor authentication. Multifactor authentication usually involves verifying credentials via a phone, providing a unique code, entering a PIN, or presenting a thumbprint.
 
 Modern authentication is available for every organization that uses Teams. If users aren't able to complete the process, there might be an underlying issue with your organization's Microsoft Entra configuration. For more information, see [Why am I having trouble signing in to Microsoft Teams?](https://support.office.com/article/why-am-i-having-trouble-signing-in-to-microsoft-teams-a02f683b-61a3-4008-9447-ee60c5593b0f)
 
@@ -180,7 +181,7 @@ Teams uses app configuration that works with any MDM provider that uses the [Man
 
 If you're using Microsoft Intune, see [Manage collaboration experiences in Teams for iOS and Android with Microsoft Intune](/mem/intune/apps/manage-microsoft-teams).
 
-To apply the app configuration policy using Graph API, see [managedDeviceMobileAppConfiguration resource type](/graph/api/resources/intune-apps-manageddevicemobileappconfiguration?view=graph-rest-1.0).  
+To apply the app configuration policy using Graph API, see [managedDeviceMobileAppConfiguration resource type](/graph/api/resources/intune-apps-manageddevicemobileappconfiguration).
 
 ## Enable domain-less sign-in for your custom apps
 

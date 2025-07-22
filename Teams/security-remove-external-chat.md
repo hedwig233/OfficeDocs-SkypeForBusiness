@@ -8,6 +8,8 @@ ms.topic: how-to
 ms.service: msteams
 ms.reviewer: 
 audience: admin
+ms.collection:
+  - trust-pod
 description: Admin instructions for how to remove chat from a user external to an organization
 ms.localizationpriority: medium
 search.appverid: MET150

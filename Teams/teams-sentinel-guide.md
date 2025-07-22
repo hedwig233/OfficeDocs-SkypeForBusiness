@@ -46,7 +46,7 @@ Sentinel lets administrators do security management in one location. This includ
 Sentinel workbooks and runbooks can make security monitoring *systematic*. A good first step in this process is collecting the logs needed analysis.
 
 > [!NOTE]
-> More than one Microsoft 365 subscription can be surfaced in the same instance of Microsoft Sentinel. This will allow for [realtime monitoring](/azure/sentinel/livestream) and hunting for threats in historical log files. Administrators will be able to hunt using [cross-resource queries](/azure/azure-monitor/log-query/cross-workspace-query), that is within a single resource group, across resource groups, or in another subscription.
+> More than one Microsoft 365 subscription can be surfaced in the same instance of Microsoft Sentinel. This will allow for [real time monitoring](/azure/sentinel/livestream) and hunting for threats in historical log files. Administrators will be able to hunt using [cross-resource queries](/azure/azure-monitor/log-query/cross-workspace-query), that is within a single resource group, across resource groups, or in another subscription.
 
 ## Step 1: Collect Teams logs: Enable Audit logs in Microsoft 365
 
@@ -221,7 +221,7 @@ Stay in touch with this [GitHub](https://github.com/Azure/Azure-Sentinel/tree/ma
 
 Watch for updates to the [parser](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/Teams_parser.txt) and [logic app](https://github.com/Azure/Azure-Sentinel/tree/master/Playbooks/Get-O365Data) used in this article.
 
-You should also join (and contribute to) the [Azure Sentinel community](https://github.com/Azure/Azure-Sentinel/wiki). We are actively looking for feedback on this article, so please use the feedback option below. Thank you & Happy hunting.
+You should also join (and contribute to) the [Azure Sentinel community](https://github.com/Azure/Azure-Sentinel/wiki). We're actively looking for feedback on this article, so use the feedback option below. Thank you & Happy hunting.
 
 [Registering your application in Microsoft Entra ID](/skype-sdk/trusted-application-api/docs/registrationinazureactivedirectory)
 

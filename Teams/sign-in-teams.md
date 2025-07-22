@@ -181,7 +181,7 @@ Teams uses app configuration that works with any MDM provider that uses the [Man
 
 If you're using Microsoft Intune, see [Manage collaboration experiences in Teams for iOS and Android with Microsoft Intune](/mem/intune/apps/manage-microsoft-teams).
 
-To apply the app configuration policy using Graph API, see [managedDeviceMobileAppConfiguration resource type](/graph/api/resources/intune-apps-manageddevicemobileappconfiguration?view=graph-rest-1.0).  
+To apply the app configuration policy using Graph API, see [managedDeviceMobileAppConfiguration resource type](/graph/api/resources/intune-apps-manageddevicemobileappconfiguration).
 
 ## Enable domain-less sign-in for your custom apps
 

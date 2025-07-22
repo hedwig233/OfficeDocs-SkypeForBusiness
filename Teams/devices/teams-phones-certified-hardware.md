@@ -69,7 +69,7 @@ The following devices are certified under the Microsoft Teams phones Android Cer
 | Yealink MP58 | `122.15.0.135 `|August 15, 2027  | 12 |
 | Yealink CP965 | `143.15.0.48 `|August 15, 2027   | 12 |
 | Yealink EXP50 supported on MP56, MP58| For each supported device model, see firmware version | August 15, 2027 | N/A |
-| Yealink EXP50 supported on MP56 E2, MP58 E2 | 176.15.0.19 | August 15, 2027 | N/A |
+| Yealink EXP50 supported on MP56 E2, MP58 E2 | 176.15.0.160 | August 15, 2027 | N/A |
 
 ## [Firmware](#tab/firmware)
 

@@ -17,6 +17,7 @@ ms.collection:
   - M365-collaboration
   - remotework
   - essentials-security
+  - trust-pod
 ms.custom: 
 - Security
 appliesto: 

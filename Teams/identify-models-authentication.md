@@ -14,6 +14,7 @@ f1.keywords:
 - NOCSH
 ms.collection: 
   - M365-collaboration
+  - trust-pod
 description: Learn about the different identity models for Microsoft Teams such as cloud-only and hybrid. Also learn about multifactor authentication.
 appliesto: 
   - Microsoft Teams

@@ -16,6 +16,7 @@ f1.keywords:
 ms.collection: 
   - M365-collaboration
   - remotework
+  - trust-pod
 ms.custom: 
 - Security
 appliesto: 

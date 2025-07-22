@@ -14,6 +14,7 @@ ms.custom: seo-marvel-apr2020
 ms.localizationpriority: high
 ms.collection: 
   - M365-collaboration
+  - trust-pod
 f1.keywords:
 - NOCSH
 appliesto: 

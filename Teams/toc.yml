@@ -1810,7 +1810,7 @@ items:
                     - name: Audit logs for activities
                       href: rooms/multi-tenant-auditing.md
                     - name: Shared Spaces Insights
-                      href: rooms/shared-spaces-insight.md
+                      href: rooms/shared-spaces-insights.md
                     - name: Health reports
                       href: rooms/health-reports.md
                     - name: Usage reports

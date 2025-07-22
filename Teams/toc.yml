@@ -1867,6 +1867,9 @@ items:
                   href: phones/remote-provision-remote-login-phones.md
                 - name: Remote sign in and sign out
                   href: phones/remote-sign-in-and-sign-out-phones.md
+                - name: Remote management of contacts
+                  href: ./phones/remote-contacts-management.md
+                  displayName: Remote management of contacts
         - name: Troubleshooting and known issues
           href: /microsoftteams/troubleshoot/teams-rooms-and-devices/teams-rooms-known-issues-android#issues-with-teams-phones
           

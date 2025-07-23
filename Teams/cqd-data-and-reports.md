@@ -36,7 +36,7 @@ Microsoft Call Quality Dashboard (CQD) uses a near-real-time (NRT) data feed. Ca
 
 You can access call quality data by several different avenues. Pick the one that best meets your needs:
 
-|&nbsp;|&nbsp;|
+|Resource|Description|
 |---|---|
 |CQD in Power BI|Use direct queries to view your CQD data in Power BI using [customizable Power BI templates](CQD-Power-BI-query-templates.md) and the CQD Quality of Experience Report (QER). The CQD Power BI templates are regularly updated to support new Teams features, calling scenarios, and the latest telemetry we have available in CQD.|
 |Teams admin center [(https://admin.teams.microsoft.com)](https://admin.teams.microsoft.com)|Call quality data is included on the **Users** page in the Teams admin center, showing the most common data you need in an easy-to-read format. You can't customize the data that you find under **Users**.|
@@ -266,7 +266,7 @@ If the default CQD reports don't meet your needs, use these instructions to crea
 From the pull-down list of reports at the top of the screen displayed at login \(the **Summary Reports** screen\) Select **Detailed Reports**  and then **New**. Select **Edit** in a report to see the Query Editor. Each report is backed by a query into the cube. A report is a visualization of the data returned by its query. The Query Editor helps you edit these queries and the display options of the report.
 
 > [!IMPORTANT]
-> The network range can be used to represent a supernet (combination of several subnets with a single routing prefix). All new building uploads are checked for any overlapping ranges. If you previously uploaded a building file, download the current file and re-upload it to identify overlaps and fix the issue before uploading again. Any overlap in previously uploaded files may result in the wrong mappings of subnets to buildings in the reports. Certain VPN implementations do not accurately report the subnet information. When you add a VPN subnet to the building file, add a separate 32-bit network entry for each address instead of a single entry for the whole VPN subnet. Each row can have the same building metadata. For example, instead of one row for 172.16.18.0/24, you should have 256 rows, with one row for each address between 172.16.18.0/32 and 172.16.18.255/32, inclusive.
+> The network range can be used to represent a supernet (combination of several subnets with a single routing prefix). All new building uploads are checked for any overlapping ranges. If you previously uploaded a building file, download the current file and re-upload it to identify overlaps and fix the issue before uploading again. Any overlap in previously uploaded files may result in the wrong mappings of subnets to buildings in the reports. Certain VPN implementations don't accurately report the subnet information. When you add a VPN subnet to the building file, add a separate 32-bit network entry for each address instead of a single entry for the whole VPN subnet. Each row can have the same building metadata. For example, instead of one row for 172.16.18.0/24, you should have 256 rows, with one row for each address between 172.16.18.0/32 and 172.16.18.255/32, inclusive.
 >
 > The VPN column is optional and defaults to 0. If the VPN column's value is set to 1, the subnet represented by that row is fully expanded to match all IP addresses within the subnet. Use this sparingly and only for VPN subnets since fully expanding these subnets has a negative impact on query times for queries involving building data.
 

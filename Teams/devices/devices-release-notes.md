@@ -230,6 +230,10 @@ To add a mobile system OS scanner:
 
 ## [Teams phones](#tab/phones)
 
+## July 30, 2025 
+
+**Applies to:** *Teams app version: 1449/1.0.94.2025168802* (Poly, Yealink and Audiocodes)
+
 ## June 30, 2025
 
 **Applies to:** *Teams app version: 1449/1.0.94.2025168802* (Poly, Yealink and Audiocodes)

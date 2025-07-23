@@ -4,7 +4,7 @@ author: mkbond007
 ms.author: mabond
 manager: pamgreen
 ms.reviewer: jamp, siunies, mikedav, gageames
-ms.date: 09/25/2024
+ms.date: 07/23/2025
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -30,7 +30,7 @@ description: Learn about the data and reports available in Microsoft Call Qualit
 
 # Data and reports in Call Quality Dashboard (CQD)
 
-Microsoft Call Quality Dashboard (CQD) uses a near-real-time (NRT) data feed. Call records are typically available in CQD within 30 minutes of the end of a call and remain in CQD for 12 months, except for end user identifiable information (EUII) fields which are removed after 28 days. In rare cases, some calls may take longer than 30 minutes to appear in CQD.
+Microsoft Call Quality Dashboard (CQD) uses a near-real-time (NRT) data feed. Call records are typically available in CQD within 30 minutes of the end of a call and remain in CQD for 12 months, except for end user identifiable information (EUII) fields, which are removed after 28 days. In rare cases, some calls may take longer than 30 minutes to appear in CQD.
 
 ## Many ways to access call quality data
 
@@ -65,9 +65,9 @@ Download [two curated CQD report templates](https://aka.ms/qertemplates) (All Ne
 ## EUII data
 
 > [!CAUTION]
-> As of late-March 2025, permissions for location sharing in Microsoft Teams changed. Users must now consent to sharing their location with Microsoft Teams using individual toggles for the purposes of "**Emergency calls**" and "**Insights for IT admins**". If users in your tenant deny sharing their location except for emergencies, CQD can't provide admins with the BSSID of the client endpoint. Quality and reliability troubleshooting tasks that rely on BSSID&mdash;such as deep analysis of issues involving wireless networks&mdash;will become more difficult and potentially less accurate as fewer clients will report them.
+> As of late-March 2025, permissions for location sharing in Microsoft Teams changed. Users must now consent to sharing their location with Microsoft Teams using individual toggles for the purposes of **Emergency calls** and **Insights for IT admins**. If users in your tenant deny sharing their location except for emergencies, CQD can't provide admins with the BSSID of the client endpoint. Quality and reliability troubleshooting tasks that rely on BSSID&mdash;such as deep analysis of issues involving wireless networks&mdash;will become more difficult and potentially less accurate as fewer clients will report them.
 > 
-> On fully managed devices, location sharing is on by default and can only be turned off by the operating system's location setting. On non-fully managed devices, Teams users must choose between **Allow all** and **Keep emergency only**. In the Teams client, this setting can be changed by your users in **Settings** > **Privacy** > **Location** > **Insights for IT admins**.
+> On fully managed devices, the operating system controls location sharing. It turns location sharing on by default and allows users to turn it off only through the system’s location setting. On non-fully managed devices, Teams users must choose between **Allow all** and **Keep emergency only**. In the Teams client, this setting can be changed by your users in **Settings** > **Privacy** > **Location** > **Insights for IT admins**.
 
 For compliance reasons, EUII data (also known as personally-identifiable information or PII) is only kept for 28 days. As CQD's data crosses the 28-day mark, fields that contain EUII are cleared, resulting in EUII-free data. Fields that contain EUII data are:
 
@@ -126,7 +126,7 @@ CQD supports the following Rolling Trend types:
 - 60-day
 - 90-day
 
-The URL Date parameter accepts a Day field. Rolling-day reports use dates specified in the YYYY-MM-DD format as the last day of the trend. The URL Date parameter "00"  indicates "today".
+The URL Date parameter accepts a Day field. Rolling-day reports use dates specified in the YYYY-MM-DD format as the last day of the trend. The URL Date parameter "00"  indicates "today."
 
 |URL|End date of Rolling Day Trend|
 |:---|:---|
@@ -175,7 +175,7 @@ These are the reports that you'll see on the CQD Dashboard when you first sign i
 |Overall Call Quality|Aggregate of the other three tabs.|
 |Server—Client|Details of the streams between server and client endpoints.|
 |Client—Client|Details of the streams between two client endpoints.|
-|Voice Quality SLA|Info about calls included in the Skype for Business voice quality [SLA](https://go.microsoft.com/fwlink/p/?linkid=846252).|
+|Voice Quality SLA|Info about calls included in the Skype for Business voice quality [SLA](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services).|
 
 ### Overall Call Quality tab
 
@@ -225,7 +225,7 @@ Similarly, the Client-Client tab has five collapsible sections:
 
 #### Inside versus Outside
 
-CQD classifies a stream as  *Inside*  or *Outside*  using Building information, if it exists. Endpoints of each stream are associated with a subnet address. If the subnet is in the list of the subnets marked InsideCorp in the uploaded Building information, then it's considered *Inside*. If Building information hasn't been uploaded yet, then Inside Test always classifies the streams as *Outside*.
+CQD classifies a stream as  *Inside*  or *Outside*  using Building information, if it exists. Endpoints of each stream are associated with a subnet address. If the subnet appears in the list of subnets marked InsideCorp in the uploaded building information, it's considered *Inside*. If building information isn’t uploaded, Inside Test always classifies the streams as *Outside*.
 
 The Inside Test for a Server-Client scenario only considers the client endpoint. Because servers are always outside from a user's perspective, this isn't accounted for in the test.
 
@@ -234,7 +234,7 @@ The Inside Test for a Server-Client scenario only considers the client endpoint.
 As the names indicate, the classification criteria is based on the type of client connections. Server is always wired and it isn't included in the calculation. In a given stream, if one of the two endpoints is connected to a WiFi network, then CQD classifies it as WiFi.
 
 > [!NOTE]
-> Given a stream, if one of the two endpoints is connected to a WiFi network, then it's classified as WiFi in CQD.
+> Given a stream, if one of the two endpoints connects to a WiFi network, CQD classifies it as WiFi.
 
 ## Tenant Data information
 
@@ -266,9 +266,9 @@ If the default CQD reports don't meet your needs, use these instructions to crea
 From the pull-down list of reports at the top of the screen displayed at login \(the **Summary Reports** screen\) Select **Detailed Reports**  and then **New**. Select **Edit** in a report to see the Query Editor. Each report is backed by a query into the cube. A report is a visualization of the data returned by its query. The Query Editor helps you edit these queries and the display options of the report.
 
 > [!IMPORTANT]
-> The network range can be used to represent a supernet (combination of several subnets with a single routing prefix). All new building uploads are checked for any overlapping ranges. If you have previously uploaded a building file, you should download the current file and re-upload it to identify any overlaps and fix the issue before uploading again. Any overlap in previously uploaded files may result in the wrong mappings of subnets to buildings in the reports. Certain VPN implementations do not accurately report the subnet information. We recommend that when adding a VPN subnet to the building file, instead of one entry for the subnet, separate entries are added for each address in the VPN subnet as a separate 32-bit network. Each row can have the same building metadata. For example, instead of one row for 172.16.18.0/24, you should have 256 rows, with one row for each address between 172.16.18.0/32 and 172.16.18.255/32, inclusive.
+> The network range can be used to represent a supernet (combination of several subnets with a single routing prefix). All new building uploads are checked for any overlapping ranges. If you previously uploaded a building file, download the current file and re-upload it to identify overlaps and fix the issue before uploading again. Any overlap in previously uploaded files may result in the wrong mappings of subnets to buildings in the reports. Certain VPN implementations do not accurately report the subnet information. When you add a VPN subnet to the building file, add a separate 32-bit network entry for each address instead of a single entry for the whole VPN subnet. Each row can have the same building metadata. For example, instead of one row for 172.16.18.0/24, you should have 256 rows, with one row for each address between 172.16.18.0/32 and 172.16.18.255/32, inclusive.
 >
-> The VPN column is optional and defaults to 0.  If the VPN column's value is set to 1, the subnet represented by that row is fully expanded to match all IP addresses within the subnet.  Use this sparingly and only for VPN subnets since fully expanding these subnets has a negative impact on query times for queries involving building data.
+> The VPN column is optional and defaults to 0. If the VPN column's value is set to 1, the subnet represented by that row is fully expanded to match all IP addresses within the subnet. Use this sparingly and only for VPN subnets since fully expanding these subnets has a negative impact on query times for queries involving building data.
 
 Point to bar charts and trend lines in the report to display detailed values. The report in focus shows the action menu: **Edit**, **Clone**, **Delete**, **Download**, and **Export Report Tree**.
 
@@ -279,7 +279,7 @@ Query filters are implemented by using the Query Editor in CQD. These filters ar
 |Filter|Description|CQD query filter example|
 |---|---|---|
 |No blank values|Some filters don't have the option to filter for blank values. To filter blank values manually, use the blank expression and set the filter to Equals or Not Equals, depending on your needs.|Second Building Name \<\> \^\\s\*\$|
-|Exclude common subnets|Without a valid building file to separate managed from unmanaged networks, home networks will be included in the reports. These home subnets are outside the scope of IT's control and can be quickly excluded from a report. Common subnets, as defined in this guide, are 10.0.0.0, 192.168.1.0 and 192.168.0.0.|Second Subnet \<\> 10.0.0.0 \|192.168.0.0 \|192.168.1.0|
+|Exclude common subnets|Without a valid building file to separate managed from unmanaged networks, home networks are included in the reports. These home subnets are outside the scope of IT's control and can be quickly excluded from a report. Common subnets, as defined in this guide, are 10.0.0.0, 192.168.1.0 and 192.168.0.0.|Second Subnet \<\> 10.0.0.0 \|192.168.0.0 \|192.168.1.0|
 |View inside only|Used to filter a report for managed (inside) or unmanaged (outside). The managed CQD template is already preconfigured with these filters.|Second Inside Corp = Inside|
 
 ## Report filters
@@ -307,7 +307,7 @@ In order to select multiple filter values, begin by adding a new filter to the r
 
 ![Screenshot of adding a multi-select filter.](media/cqd-multi-select-filters.png)
 
-Then, select **Search** (a magnifying glass icon next to the new filter). You'll see a text field, and a number of options, including **Select All** and **Invert**. Enter a value,  and select **Search** next to that field to search. Alternatively, leave the text field empty and select **Search** to view up to the first 100 options.
+Then, select **Search** (a magnifying glass icon next to the new filter). CQD displays a text field and a number of options, including **Select All** and **Invert**. Enter a value, and select **Search** next to that field to search. Alternatively, leave the text field empty and select **Search** to view up to the first 100 options.
 
 ```URL
 /filter/[AllStreams].[Second Tenant Id]\|[YOUR TENANT ID HERE]
@@ -329,7 +329,7 @@ Certain CQD reports have dashboard-level filters added to them, making it easy t
 
 ### URL filters
 
-CQD supports adding filters to the URL. This makes it easy to share or bookmark a CQD query. You can define parameters in the URL, such as Trending Month, tenant ID, or language. You can also add Product or Dashboard level filters to the URL.
+CQD supports adding filters to the URL. These URL filters make it easy to share or bookmark a CQD query. You can define parameters in the URL, such as Trending Month, tenant ID, or language. You can also add Product or Dashboard level filters to the URL.
 Excluding federated data from CQD reports is useful when you're remediating managed buildings or networks where federated endpoints might influence your reports.
 
 To add a filter, append the following to the end of the URL:
@@ -346,7 +346,7 @@ To add a Dashboard-level filter to a URL, that filter must exist in CQD as eithe
 
 `filter/DATA_MODEL_NAME|VALUE`
 
-For example, to apply a Product filter value of Microsoft Teams, you'd add the following:
+For example, to apply a Product filter value of Microsoft Teams, you'd add the following information:
 
 `filter/[AllStreams].[Is%20Teams]|[True]`
 
@@ -364,8 +364,8 @@ You can use a URL filter to filter every report for a specific dimension. The mo
 
 |Filter|Description|CQD query filter example|
 |---|---|---|
-|No blank values|Some filters don't have the option to filter for blank values. To filter blank values manually, use the blank expression and set the filter to Equals or Not Equals, depending on your needs.|Second Building Name \<\> \^\\s\*\$|
-|Exclude common subnets|Without a valid building file to separate managed from unmanaged networks, home networks will be included in the reports. These home subnets are outside the scope of IT's control and can be quickly excluded from a report. Common subnets, as defined in this article, are 10.0.0.0, 192.168.1.0 and 192.168.0.0.|Second Subnet \<\> 10.0.0.0 \|192.168.0.0 \|192.168.1.0|
+|No blank values|Some filters have no option to filter for blank values. To filter blank values manually, use the blank expression and set the filter to Equals or Not Equals, depending on your needs.|Second Building Name \<\> \^\\s\*\$|
+|Exclude common subnets|Without a valid building file to separate managed from unmanaged networks, home networks are included in the reports. These home subnets are outside the scope of IT's control and can be quickly excluded from a report. Common subnets, as defined in this article, are 10.0.0.0, 192.168.1.0 and 192.168.0.0.|Second Subnet \<\> 10.0.0.0 \|192.168.0.0 \|192.168.1.0|
 |View inside only|Used to filter a report for managed (inside) or unmanaged (outside). The managed CQD template is already preconfigured with these filters.|Second Inside Corp = Inside|
 
 #### How to find your tenant ID

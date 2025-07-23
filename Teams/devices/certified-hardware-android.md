@@ -53,6 +53,7 @@ The following devices are certified under the Microsoft Teams Rooms on Android C
 | AudioCodes RXV200 | `2.2.335` | September 3, 2026 |  Focus room (3 m x 3 m) | 10 |
 | AudioCodes RXPad Touch console | `2.0.282` | August 15, 2027 | Compatible with AudioCodes RXV81 and RXV200 Collaboration bars. | 12 |
 | AudioCodes RXV81 Collaboration Bar | `2.0.0` | August 15, 2027 | Small meeting room (4.5 m x 4.5 m) | 12 |
+| Audiocodes RXV200 + Shure Large Room Kit| `2.8.574 `|September 3, 2026 |Large rooms (4.5 m x 8.5 m) | 10 |
 | Cisco Room Bar Pro | `RoomOS11.9` | September 3, 2026 |  Medium size room (4.5 m x 6 m) | 11 |
 | Cisco Board Pro 55 | `11.3.1.13` | September 3, 2026 | Medium size room (4.5 m x 6 m) | 11 |
 | Cisco Board Pro 75 | `11.3.1.13` | September 3, 2026 | Medium size room (4.5 m x 6 m) | 11 |
@@ -89,7 +90,8 @@ The following devices are certified under the Microsoft Teams Rooms on Android C
 | Logitech Rally Bar Mini (VR0020) | `1.2.982` | September 3, 2026 | Small Meeting Room (4.5 m x 4.5 m) | 10 |
 | Logitech Rally Bar (VR0019) | `1.2.788` | September 3, 2026 | Medium size room (4.5 m x 6 m) | 10 |
 | MAXHUB XBar V50 | `ATB001.00.20250326.1141 (MDEP)` | August 15, 2027 | Small Meeting Room (4.5 m x 4.5 m) | 13 |
-| MAXHUB Panel AP30 | `ATT101.00.20250326.1236 (MDEP)` | August 15, 2027 | Compatible with XBar 50 | 13 |
+| MAXHUB XBar V70 | `ATB001.00.20250609.2146 (MDEP)` | August 15, 2027 | Medium size Room (4.5 m x 6 m) | 13 |
+| MAXHUB Panel AP30 | `ATT101.00.20250609.1756 (MDEP)` | August 15, 2027 | Compatible with XBar 50, XBar 70 | 13 |
 | Neat Bar Pro + Shure Complete Room Bundle| `NFD1.20241113.0013`| September 3, 2026 | Medium size room (4.5 m x 6 m) | 10 |
 | Neat Bar Pro | `NFD1.20220914.1210` | September 3, 2026 | Medium size room (4.5 m x 6 m) | 10 |
 | Neat Bar | `NFF1.20220914.1210` | September 3, 2026 | Medium size room (4.5 m x 6 m) | 10 |
@@ -529,6 +531,16 @@ For information about the latest Teams app releases, see [What's new in Microsof
 
 | Device model | Latest Firmware version | Minimum Firmware version required | Teams client | Company Portal | Microsoft Intune | Authenticator | Admin Agent | Release date |
 |:-------------------|:----------------------------|:--------------------------------------------|:-------------------------------|:-------------------------------|:--------------------------------|:--------------------------------|:--------------------------------|:--------------------------------|
+| Poly Studio X30 | `4.5.1-440029 (AOSP)` | `N/A`| `1449/1.0.96.2025031102`|  `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| July 2, 2025|
+| Poly Studio X50 | `4.5.1-440029 (AOSP)` | `N/A`| `1449/1.0.96.2025031102`|  `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| July 2, 2025|
+| Poly Studio X70 | `4.5.1-440029 (AOSP)` | `N/A`| `1449/1.0.96.2025031102`|  `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| July 2, 2025|
+| Poly Studio X32 | `4.5.1-440029 (AOSP)` |`N/A` |`1449/1.0.96.2025031102`|  `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| July 2, 2025|
+| Poly Studio X52 | `4.5.1-440029 (AOSP)` |`N/A` |`1449/1.0.96.2025031102`|  `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| July 2, 2025|
+| Poly Studio X72 | `4.5.1-440029 (AOSP)` | `N/A`| `1449/1.0.96.2025031102`|  `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| July 2, 2025|
+| Poly Studio G7500 | `4.5.1-440029 (AOSP)` | `N/A`| `1449/1.0.96.2025031102`|  `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| July 2, 2025|
+| Poly Studio G62 | `4.5.1-440029 (AOSP)` | `N/A`| `1449/1.0.96.2025031102`|  `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| July 2, 2025|
+| Poly TC8 | `6.5.1-7001187 (AOSP)` | N/A | `1449/1.0.96.2025031102`|  `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| July 2, 2025|
+| Poly TC10 | `6.5.1-7001187 (AOSP)` | N/A | `1449/1.0.96.2025031102`| `N/A` | `24.09.1` | `6.2410.7268` | `1.0.0.202412110504.product (753)` | July 2, 2025 |
 | Poly Studio X30 | `4.5.0-432287 (AOSP)` | `N/A`| `1449/1.0.96.2025031102`|  `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| June 10, 2025|
 | Poly Studio X50 | `4.5.0-432287 (AOSP)` | `N/A`| `1449/1.0.96.2025031102`|  `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| June 10, 2025|
 | Poly Studio X70 | `4.5.0-432287 (AOSP)` | `N/A`| `1449/1.0.96.2025031102`|  `N/A`|`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)`| June 10, 2025|
@@ -643,8 +655,8 @@ For information about the latest Teams app releases, see [What's new in Microsof
 | Yealink MeetingBar A30 | `133.320.0.70 (AOSP)` | N/A | `1449/1.0.96.2024091202`| `N/A` |`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.product (733)` | July 9, 2025 |
 | Yealink MeetingBar A20 | `133.320.0.70 (AOSP)` | N/A | `1449/1.0.96.2024091202`| `N/A` |`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.product (733)` | July 9, 2025 |
 | Yealink MeetingBar A10 | `278.320.0.70 (AOSP)` | N/A | `1449/1.0.96.2024091202`| `N/A` |`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.product (733)` | July 9, 2025 |
-| Yealink MeetingBoard 86" Pro | `155.15.0.100 (AOSP)` | N/A | `1449/1.0.96.2024091202`| `N/A` |`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.product (733)` | July 9, 2025 |
-| Yealink MeetingBoard 65" Pro | `155.15.0.100 (AOSP)` | N/A | `1449/1.0.96.2024091202`| `N/A` |`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.product (733)` | July 9, 2025 |
+| Yealink MeetingBoard 86" | `155.15.0.100 (AOSP)` | N/A | `1449/1.0.96.2024091202`| `N/A` |`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.product (733)` | July 9, 2025 |
+| Yealink MeetingBoard 65" | `155.15.0.100 (AOSP)` | N/A | `1449/1.0.96.2024091202`| `N/A` |`24.09.1`|`6.2410.7268`| `1.0.0.202407050618.product (733)` | July 9, 2025 |
 | Yealink MeetingBoard 65" Pro | `331.320.0.30 (AOSP)` | N/A | `1449/1.0.96.2025031102`| `N/A` |`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)` | June 5, 2025 |
 | Yealink MeetingBoard 75" Pro | `331.320.0.30 (AOSP)` | N/A | `1449/1.0.96.2025031102`| `N/A` |`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)` | June 5, 2025 |
 | Yealink MeetingBoard 86" Pro | `331.320.0.30 (AOSP)` | N/A | `1449/1.0.96.2025031102`| `N/A` |`24.09.1`|`6.2410.7268`| `1.0.0.202412110504.product (753)` | June 5, 2025 |

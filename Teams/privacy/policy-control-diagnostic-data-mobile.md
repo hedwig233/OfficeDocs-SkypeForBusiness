@@ -16,7 +16,8 @@ f1.keywords:
 ms.collection: 
   - M365-collaboration
   - privacy-teams
-  - must-keep
+  - must-keep  
+  - trust-pod
 appliesto: 
   - Microsoft Teams
 ---

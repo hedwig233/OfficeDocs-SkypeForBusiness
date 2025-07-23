@@ -8,6 +8,7 @@ audience: admin
 ms.service: msteams
 ms.collection: 
   - M365-collaboration
+  - trust-pod
 ms.reviewer: rafarhi
 ms.date: 04/26/2019
 search.appverid: MET150

@@ -69,7 +69,7 @@ The following devices are certified under the Microsoft Teams phones Android Cer
 | Yealink MP58 | `122.15.0.135 `|August 15, 2027  | 12 |
 | Yealink CP965 | `143.15.0.48 `|August 15, 2027   | 12 |
 | Yealink EXP50 supported on MP56, MP58| For each supported device model, see firmware version | August 15, 2027 | N/A |
-| Yealink EXP50 supported on MP56 E2, MP58 E2 | 176.15.0.19 | August 15, 2027 | N/A |
+| Yealink EXP50 supported on MP56 E2, MP58 E2 | 176.15.0.160 | August 15, 2027 | N/A |
 
 ## [Firmware](#tab/firmware)
 
@@ -136,7 +136,7 @@ See [Microsoft Teams phones feature set](phones-for-teams.md) for information on
 #### <b> Yealink </b>
 | Device model | Latest firmware version | Minimum firmware version | Included Microsoft applications**   | Release date |
 |:----------------|:-------------------|:----------------------------|:----------------------------------------------------------------------------------------------|:--------------------------------------------|
-|MP54/MP56/MP58| `122.15.0.231 (AOSP)`| `143.15.0.74` | Teams client: `1449/1.0.94.2025084203` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2410.7268` <br> Admin Agent: `1.0.0.202412110504.product (753)`| June 30, 2025|
+|MP54/MP56/MP58| `122.15.0.234 (AOSP)`| `143.15.0.74` | Teams client: `1449/1.0.94.2025084203` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2410.7268` <br> Admin Agent: `1.0.0.202412110504.product (753)`| June 30, 2025|
 |CP965| `143.15.0.138 (AOSP)`| `122.15.0.166` | Teams client: `1449/1.0.94.2025084203` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2410.7268` <br> Admin Agent: `1.0.0.202412110504.product (753)`| June 30, 2025|
 |MP52 E2/MP54 E2/MP56 E2/MP58 E2| `176.15.0.164 (MDEP)`| `176.15.0.19` | Teams client: `1449/1.0.94.2025084203` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2410.7268` <br> Admin Agent: `1.0.0.202412110504.product (753)`| June 30, 2025|
 |MP54/MP56/MP58| `122.15.0.234 (AOSP)`| `143.15.0.74` | Teams client: `1449/1.0.94.2025084203` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2407.4386` <br> Admin Agent: `1.0.0.202412110504.product (753)`| April 21, 2025|

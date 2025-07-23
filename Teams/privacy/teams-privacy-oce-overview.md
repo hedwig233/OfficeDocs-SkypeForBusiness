@@ -9,7 +9,8 @@ ms.service: msteams
 ms.collection: 
   - M365-collaboration
   - privacy-teams
-  - must-keep
+  - must-keep  
+  - trust-pod
 ms.reviewer: 
 ms.date: 10/18/2024
 ms.localizationpriority: high

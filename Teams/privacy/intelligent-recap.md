@@ -10,6 +10,7 @@ audience: ITPro
 ms.collection: 
 - privacy-teams
 - must-keep
+- trust-pod
 hideEdit: true
 description: Learn about what content is used to provide intelligent recap and how intelligent recap uses AI
 ms.localizationpriority: medium

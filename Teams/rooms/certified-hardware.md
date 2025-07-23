@@ -133,6 +133,7 @@ The following devices are Certified under the Microsoft Teams Rooms on Windows C
 | [Yealink Core2 Kit](https://www.yealink.com/en/product-detail/microsoft-teams-rooms-mvc640) | Core i5 | 8 GB | 128 GB |
 | Yealink MeetingBoard for MTR-Windows | Core i5 | 8 GB | 128 GB |
 | Yealink MeetingBoard 75 | Core i5 | 8 GB | 128 GB |
+| Yealink MeetingBoard 65 Pro | Core i5 | 16 GB | 256 GB |
 | [Yealink MVC300 with Intel NUC](https://www.yealink.com/products_154.html) | Core i5 | 8 GB | 128 GB |
 | [Yealink MVC500 with Intel NUC](https://www.yealink.com/products_126.html) | Core i5 | 8 GB | 128 GB |
 | [Yealink MVC800 with Intel NUC](https://www.yealink.com/products_125.html) | Core i5 | 8 GB | 128 GB |
@@ -244,6 +245,7 @@ The following devices are certified under the Microsoft Teams Rooms peripherals 
 | MAXHUB UC BM35 | 0.0.02457 |  |  |||
 | MAXHUB UC BM45 | 0.0.0.1926 |  |  |||
 | MAXHUB UC P30 | V8.1.40 |  |  |||
+| [MAXHUB XBar U50](https://www.maxhub.com/xbar_u50/) | Audio firmware version: V0.0.0.2329 <br/> Video firmware version: V100-20250415-202805 |  |  |||
 | [Microsoft Surface Hub Smart Camera](https://www.microsoft.com/d/surface-hub-smart-camera/8n983ctks176) | FW: 1.8.1 |  |  |||
 | [Microsoft Surface Hub 2 Camera](https://www.microsoft.com/d/surface-hub-2-camera/8tzgfl7z18ph) | FW: 24.712.159 |  |  |||
 | [Nureva HDL300](https://www.nureva.com/audio-conferencing/hdl300) | 2.3.6 |  |  |||

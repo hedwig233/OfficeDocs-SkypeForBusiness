@@ -3,7 +3,7 @@ title: Security guide for Microsoft Teams overview
 author: MSFTTracyP
 ms.author: tracyp
 manager: dansimp
-ms.date: 10/30/2023
+ms.date: 07/22/2025
 ms.topic: reference
 ms.service: msteams
 audience: admin
@@ -72,13 +72,13 @@ The *Traversal Using Relays around NAT* (TURN) protocol is used for real-time me
 
 Spoofing occurs when the attacker identifies and then uses an IP address of a network, computer, or network component without being authorized to do so. A successful attack allows the attacker to operate as if the attacker is the entity normally identified by the IP address.
 
-TLS authenticates all parties and encrypts all traffic. Using TLS prevents an attacker from performing IP address spoofing on a specific connection (for example, mutual TLS connections). An attacker could still spoof the address of the Domain Name System (DNS) server. However, because authentication in Teams is performed with certificates an attacker would not have a valid information required to spoof one of the parties in the communication.
+TLS authenticates all parties and encrypts all traffic. Using TLS prevents an attacker from performing IP address spoofing on a specific connection (for example, mutual TLS connections). An attacker could still spoof the address of the Domain Name System (DNS) server. However, because authentication in Teams is performed with certificates an attacker wouldn't have a valid information required to spoof one of the parties in the communication.
 
-### Man-in-the-middle attack
+### Adversary-in-the-middle attack
 
-A man-in-the-middle attack occurs when an attacker reroutes communication between two users through the attacker's computer without the knowledge of the two communicating users. The attacker can monitor and read the traffic before sending it on to the intended recipient. Each user in the communication unknowingly sends traffic to and receives traffic from the attacker, all while thinking they are communicating only with the intended user. This scenario can happen if an attacker can modify Active Directory Domain Services to add their server as a trusted server, or modify DNS configuration or use other means to get clients to connect through the attacker on their way to the server.
+An adversary-in-the-middle attack occurs when an attacker reroutes communication between two users through the attacker's device without the knowledge of the two communicating users. The attacker can monitor and read the traffic before sending it on to the intended recipient. Each user in the communication unknowingly sends traffic to and receives traffic from the attacker, all while thinking they are communicating only with the intended user. This scenario can happen if an attacker can modify Microsoft Entra ID Domain Services to add their server as a trusted server, or modify DNS configuration or use other means to get clients to connect through the attacker on their way to the server.
 
-Man-in-the-middle attacks on media traffic between two endpoints participating in Teams audio, video, and application sharing, is prevented by using *Secure Real-Time Transport Protocol* (SRTP) to encrypt the media stream. Cryptographic keys are negotiated between the two endpoints over a proprietary signaling protocol (Teams Call Signaling protocol) which uses TLS 1.2 and AES-256 (in GCM mode) encrypted UDP or TCP channel.
+Adversary-in-the-middle attacks on media traffic between two endpoints participating in Teams audio, video, and application sharing, is prevented by using *Secure Real-Time Transport Protocol* (SRTP) to encrypt the media stream. Cryptographic keys are negotiated between the two endpoints over a proprietary signaling protocol (Teams Call Signaling protocol) which uses TLS 1.2 and AES-256 (in GCM mode) encrypted UDP or TCP channel.
 
 ### Real-time Transport Protocol (RTP) replay attack
 
@@ -94,7 +94,7 @@ A virus is a unit of code whose purpose is to reproduce more, similar code units
 
 ## Phishing attempts
 
-Phishing attacks in Teams are costly monetarily and to peace of mind. These attacks operate by means of tricking users into revealing information such as passwords, codes, credit card numbers, and other critical information, through fake website links, and attachments that appear innocuous but can download dangerous software on click. Because many of these attacks target users, even high value targets with a lot of access, they can be pervasive. However, there are anti-phishing strategies for both Teams administrators and users.
+Phishing attacks in Teams are costly monetarily and to peace of mind. These attacks operate by means of tricking users into revealing information such as passwords, codes, credit card numbers, and other critical information, through fake website links, and attachments that appear innocuous but can download dangerous software on click. Because many of these attacks target users, even high-value targets with a lot of access, they can be pervasive. However, there are anti-phishing strategies for both Teams administrators and users.
 
 - [There are security Best Practices for Teams that everyone should know about and use](/MicrosoftTeams/teams-security-best-practices-for-safer-messaging)
     - [Users can learn how to spot and protect themselves from phishing](https://support.microsoft.com/en-us/windows/protect-yourself-from-phishing-0c7ea947-ba98-3bd9-7184-430e1f860a44)
@@ -115,7 +115,7 @@ Core elements are:
   - There may be multiple tokens issued which you may see if tracing your network traffic. Including Skype tokens you might see in traces while looking at chat and audio traffic.
 - Transport Layer Security (TLS) encrypts the channel in motion. Authentication takes place using either mutual TLS (MTLS), based on certificates, or using Service-to-Service authentication based on Microsoft Entra ID.
 - Point-to-point audio, video, and application sharing streams are encrypted and integrity checked using Secure Real-Time Transport Protocol (SRTP).
-- You will see OAuth traffic in your trace, particularly around token exchanges and negotiating permissions while switching between tabs in Teams, for example to move from Posts to Files. For an example of the OAuth flow for tabs, [see this document](/microsoftteams/platform/tabs/how-to/authentication/auth-flow-tab).
+- You'll see OAuth traffic in your trace, particularly around token exchanges and negotiating permissions while switching between tabs in Teams, for example to move from Posts to Files. For an example of the OAuth flow for tabs, [see this document](/microsoftteams/platform/tabs/how-to/authentication/auth-flow-tab).
 - Teams uses industry-standard protocols for user authentication, wherever possible.
 
 The next sections discuss some of these core technologies.
@@ -154,7 +154,7 @@ All components of the Teams service require all server certificates to support E
 
 TCP data flows are encrypted using TLS, and MTLS and Service-to-service OAuth protocols provide endpoint authenticated communications between services, systems, and clients. Teams uses these protocols to create a network of trusted systems and to ensure that all communication over that network is encrypted.
 
-On a TLS connection, the client requests a valid certificate from the server. To be valid, the certificate must have been issued by a Certificate Authority (CA) that is also trusted by the client and the DNS name of the server must match the DNS name on the certificate. If the certificate is valid, the client uses the public key in the certificate to encrypt the symmetric encryption keys to be used for the communication, so only the original owner of the certificate can use its private key to decrypt the contents of the communication. The resulting connection is trusted and from that point is not challenged by other trusted servers or clients.
+On a TLS connection, the client requests a valid certificate from the server. To be valid, the certificate must have been issued by a Certificate Authority (CA) that is also trusted by the client and the DNS name of the server must match the DNS name on the certificate. If the certificate is valid, the client uses the public key in the certificate to encrypt the symmetric encryption keys to be used for the communication, so only the original owner of the certificate can use its private key to decrypt the contents of the communication. The resulting connection is trusted and from that point isn't challenged by other trusted servers or clients.
 
 Using TLS helps prevent both eavesdropping and man-in-the middle attacks. In a man-in-the-middle attack, the attacker reroutes communications between two network entities through the attacker's computer without the knowledge of either party. TLS and Teams' specification of trusted servers mitigate the risk of a man-in-the middle attack partially on the application layer by using encryption that is coordinated using the Public Key cryptography between the two endpoints. An attacker would have to have a valid and trusted certificate with the corresponding private key and issued to the name of the service to which the client is communicating to decrypt the communication.
 
@@ -223,7 +223,7 @@ Letting external users participate in Teams meetings can be useful, but also bri
 
 1. Decide which **external participant types** will be allowed to join your meetings:
 
-    - [Anonymous access](/microsoftteams/anonymous-users-in-meetings) allows for meeting join of (1) unauthenticated users that are not signed in Team (typically joining through the meeting link in browser) **and** (2) authenticated users from external tenants that don’t have established External access with the organizer and your org.
+    - [Anonymous access](/microsoftteams/anonymous-users-in-meetings) allows for meeting join of (1) unauthenticated users that aren't signed in Team (typically joining through the meeting link in browser) **and** (2) authenticated users from external tenants that don’t have established External access with the organizer and your org.
 
     - Through [External access](/microsoftteams/trusted-organizations-external-meetings-chat?tabs=organization-settings) you can decide which authenticated external users and organizations will be able to join your meetings with more privileges. These users are considered to belong to trusted organizations.
 
@@ -236,7 +236,7 @@ Letting external users participate in Teams meetings can be useful, but also bri
 >
 
 > [!NOTE]
-> For more information on Guest and External Access in Teams, see [this article](/microsoftteams/communicate-with-users-from-other-organizations). It covers what features guest or external users can expect to see and use when they login to Teams.
+> For more information on Guest and External Access in Teams, see [this article](/microsoftteams/communicate-with-users-from-other-organizations). It covers what features guest or external users can expect to see and use when they sign in to Teams.
 
 
 2. Decide who can join the meeting directly and who will need to wait in the Lobby to be admitted by Organizer, co-organizer or authenticated users with Presenter meeting role:
@@ -258,10 +258,11 @@ Letting external users participate in Teams meetings can be useful, but also bri
 
 **Modify while the meeting is running:**
 
-- You can [modify the meeting options](https://support.microsoft.com/en-us/office/meeting-options-in-microsoft-teams-53261366-dbd5-45f9-aae9-a70e6354f88e#bkmk_change_meeting_options) while a meeting is on-going. The change, when it's saved, will be noticeable in the running meeting within seconds. It also affects any future occurrences of the meeting. For details on how to assign these roles, [read this article](https://support.microsoft.com/en-us/office/meeting-options-in-microsoft-teams-53261366-dbd5-45f9-aae9-a70e6354f88e#bkmk_change_meeting_options).
+- You can [modify the meeting options](https://support.microsoft.com/en-us/office/meeting-options-in-microsoft-teams-53261366-dbd5-45f9-aae9-a70e6354f88e#bkmk_change_meeting_options) while a meeting is ongoing. The change, when it's saved, will be noticeable in the running meeting within seconds. It also affects any future occurrences of the meeting. For details on how to assign these roles, [read this article](https://support.microsoft.com/en-us/office/meeting-options-in-microsoft-teams-53261366-dbd5-45f9-aae9-a70e6354f88e#bkmk_change_meeting_options).
 
 > [!NOTE]
 > Changes in Teams admin settings can take up to 24 hours.
+
 ## Related topics
 
 [Top 12 tasks for security teams to support working from home](/microsoft-365/security/top-security-tasks-for-remote-work)

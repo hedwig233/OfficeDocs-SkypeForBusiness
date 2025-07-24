@@ -3,14 +3,14 @@
 # For more information, see https://learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata
 # For valid values of ms.service, ms.prod, and ms.topic, see https://learn.microsoft.com/en-us/help/platform/metadata-taxonomies
 
-title:       # Add a title for the browser tab
-description: # Add a meaningful description for search results
+title: 'Configure line keys from Teams Admin center '
+description: 'Article describing how to configure line keys from TAC '
 author:      pbadkur1 # GitHub alias
 ms.author:   pbadkur1 # Microsoft alias
-ms.service:  # Add the ms.service or ms.prod value
-# ms.prod:   # To use ms.prod, uncomment it and delete ms.service
-ms.topic:    # Add the ms.topic value
+ms.service: msteams
+ms.topic: article
 ms.date:     07/24/2025
+ms.subservice: itpro-devices
 ---
 # Configuring Line Keys from Teams Admin Center (TAC)
 

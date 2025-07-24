@@ -73,7 +73,7 @@ This guide provides step-by-step instructions for an admin user to execute a Pow
 **Export the Common area phones inventory from TAC**
 
 Export and Download the CSV file from TAC Common area phones screen.  
-![User's image2.](media/remote-contacts-management/image1.png)
+![Export.](media/remote-contacts-management/image1.png)
 
 Running the Script
 
@@ -129,7 +129,7 @@ Write-Host "Script completed. Check $logPath for details."
 
 **Sample Log Entries**
 
-2025-07-23 20:00:01 SUCCESS: Added FullAccess for admin@yourdomain.com to [user1@domain.com](mailto:user1@domain.com) 2025-07-23 20:00:02 ERROR: Failed to add FullAccess for admin@yourdomain.com to user2@domain.com. Error: <error details> 2025-07-23 20:00:03 SKIPPED: Missing UPN for Serial Number 99999
+2025-07-23 20:00:01 SUCCESS: Added FullAccess for admin@yourdomain.com to [user1@domain.com](mailto:user1@domain.com) 2025-07-23 20:00:02 ERROR: Failed to add FullAccess for admin@yourdomain.com to user2@domain.com. Error: 2025-07-23 20:00:03 SKIPPED: Missing UPN for Serial Number 99999
 
 **Troubleshooting**
 

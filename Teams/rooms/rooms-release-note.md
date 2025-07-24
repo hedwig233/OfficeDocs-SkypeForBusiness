@@ -777,6 +777,7 @@ Introduced in this update:
 
 |Release  |Release date  |
 |---------|---------|
+|[1449/1.0.96.2025207503](#144910962025207503-july-2025) | July 2025 |
 |[1449/1.0.96.2025205603](#144910962025205603-july-2025) | July 2025 |
 |[1449/1.0.96.2025203502](#144910962025203502-june-2025) | June 2025 |
 |[1449/1.0.96.2025126202](#144910962025126202-may-2025) | May 2025 |
@@ -815,6 +816,16 @@ Introduced in this update:
 > There can be a delay between when features are released by Microsoft and when they become available on a device make and model. If an update isn't available on your device, check with your device manufacturer for information on when it might become available.
 
 Features with :::image type="icon" source="../media/mtr-pro-icon.png"::: are only available with Teams Rooms Pro license.
+
+### 1449/1.0.96.2025207503 (July 2025)
+
+Resolved issues:
+
+- Improvements to resiliency when either Front of Room device or console drops from a Teams meeting. 
+- Addressed an issue where the app was occasionally dropping from meetings due to a Teams process crash.  
+- Improvements to console performance during XL meetings. 
+- Addressed an issue where console could take longer to join a meeting. 
+- Addressed an issue where volume changes don’t reflect on the Front of Room device or the updates are slower. 
 
 ### 1449/1.0.96.2025205603 (July 2025)
 

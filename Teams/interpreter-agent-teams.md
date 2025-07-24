@@ -68,10 +68,11 @@ Here's how it works:
 
 ### How Interpreter uses your users' voices
 
-**Voice simulation** generates translated speech in your own voice, allowing other participants to hear translations as if you're speaking their language directly. When you turn on this feature in Interpreter, the system briefly analyzes short segments of your speech **on the fly** (in real-time) to simulate your unique tone, style, and voice characteristics. **Voice samples or biometric data are never stored.** AI instantly creates a natural-sounding voice in the selected language, preserving your authentic tone, pitch, and speaking style without exaggerating emotions. This ensures a familiar and seamless multilingual conversation experience.
+Voice simulation generates translated speech in your user's voice, allowing other participants to hear translations as if they're speaking their language directly. When a user turns on this feature in Interpreter, the system briefly analyzes short segments of their speech on the fly (in real-time) to simulate their unique tone, style, and voice characteristics. **Voice samples or biometric data are never stored.** AI instantly creates a natural-sounding voice in the selected language, preserving their authentic tone, pitch, and speaking style without exaggerating emotions. This ensures a familiar and seamless multilingual conversation experience.
 
-**Real-time processing without storing voice data**
-Voice data is processed immediately, entirely on the fly, without ever storing your voice samples or biometric information. The following diagram illustrates this real-time and secure processing:
+#### Real-time processing without storing voice data
+
+Voice data is processed immediately, entirely on the fly, without ever storing your users' voice samples or biometric information. The following diagram illustrates this real-time and secure processing:
 - Original audio streams are briefly analyzed by the system in real-time.
 - ACS Speech services instantly provide translated speech simulation.
 - No voice samples or biometric data are retained after processing.

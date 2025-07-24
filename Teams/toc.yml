@@ -1835,6 +1835,9 @@ items:
                   href: phones/remote-update-teams-phones.md
                 - name: Queues app on Teams phones
                   href: phones/queues-app.md
+                - name: Configuring Line Keys from Teams Admin Center (TAC)
+                  href: ./phones/configuring-line-keys-tac.md
+                  displayName: "Line keys "
         - name: Deploy
           items:
             - name: Step 1 - Overview

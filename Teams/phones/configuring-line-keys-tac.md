@@ -12,4 +12,5 @@ ms.service:  # Add the ms.service or ms.prod value
 ms.topic:    # Add the ms.topic value
 ms.date:     07/24/2025
 ---
-Configuring Line Keys from Teams Admin Center (TAC)
+# Configuring Line Keys from Teams Admin Center (TAC)
+

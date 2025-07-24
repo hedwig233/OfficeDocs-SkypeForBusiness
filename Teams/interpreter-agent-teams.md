@@ -43,7 +43,7 @@ Interpreter supports the following languages for speaking and listening: Chinese
 The following list contains the prerequisites for users to access Interpreter in Teams meetings. Users must meet all the following requirements:
 
 > [!IMPORTANT]
-> Interpreter agent is available as part of the Microsoft 365 Copilot license. **A Microsoft M365 license are required** to listen to others’ speech through the Interpreter agent. To get access to Microsoft 365 Copilot, contact your IT admin. 
+> Interpreter agent is available as part of the Microsoft 365 Copilot license. **A Microsoft M365 license are required** to listen to others’ speech through the Interpreter agent.
 
 - An eligible *Microsoft 365* base license.
   - For the list of eligible base licenses, see [Understand licensing requirements for Microsoft 365 Copilot](/copilot/microsoft-365/microsoft-365-copilot-licensing).

@@ -54,7 +54,7 @@ To manage contacts on Teams phones through the Teams admin center, follow these 
 
 You must have mailbox permissions to manage contacts for Teams Devices accounts. Without these permissions, you encounter an error in TAC when attempting to view or add contacts.
 
-![User's image1.](media/remote-contacts-management/image.png)
+![PermissionError.](media/remote-contacts-management/image.png)
 
 In these situations, refer to the Mailbox Permission Script Execution Guide provided below and add the necessary permissions to the relevant accounts.
 

@@ -34,6 +34,9 @@ description: Learn how to manage manage whether meetings in your organization ca
 
 As an admin, you can manage whether meetings in your organization can detect sensitive content during screen sharing. When you turn on the **Detect sensitive content during screen sharing** policy setting for organizers with a Teams Premium license, sensitive information like credit card and account numbers in shared screen content is identified during their meetings. When sensitive content is detected, both the presenter and the meeting organizer receive notifications to stop sharing and the presenter sees a **Stop sharing** button. This added layer of protection helps safeguard sensitive data and minimizes accidental disclosure. Organizers with a Teams Premium license can use their **Meeting options** to choose which meetings have this feature.
 
+> [!IMPORTANT]
+> When sensitive content is detected during a meeting or event, the data remains within the compliant boundary. No visual data from detected shared content is stored.
+
 We currently support the following sensitive content categories in English:
 
 - Credit Card Numbers

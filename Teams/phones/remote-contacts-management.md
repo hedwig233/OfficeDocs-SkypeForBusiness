@@ -50,6 +50,103 @@ To manage contacts on Teams phones through the Teams admin center, follow these 
   
   - Confirm the deletion in the pop-up that appears.
   
+#### Permissions to manage contacts:
+
+You must have mailbox permissions to manage contacts for Teams Devices accounts. Without these permissions, you'll encounter an error in TAC when attempting to view or add contacts.
+
+![User's image](media/remote-contacts-management/image.png)
+
+In these situations, please refer to the Mailbox Permission Script Execution Guide provided below and add the necessary permissions to the relevant accounts.
+
+### Mailbox Permission Script Execution Guide
+
+**Overview**
+
+This guide provides step-by-step instructions for an admin user to execute a PowerShell script that grants FullAccess mailbox permissions in bulk using a CSV file. The script supports Modern Authentication (MFA/Authenticator app) and logs all actions.
+
+**Prerequisites**
+
+- Windows PowerShell 5.1 or later (or PowerShell Core)
+
+- PowerShell script file (grant_mailbox_permissions.ps1)
+
+**Export the Common area phones inventory from TAC**
+
+Export and Download the CSV file from TAC Common area phones screen.  
+![User's image](media/remote-contacts-management/image1.png)
+
+Running the Script
+
+- Open PowerShell as Administrator.
+
+- Navigate to the folder containing the script and CSV file: *cd "C:\Path\To\Your\Folder"*
+
+- Run the script:
+
+```powershell
+#Install and import the Exchange Online module if not already installed
+Install-Module -Name ExchangeOnlineManagement -Scope CurrentUser -Force Import-Module ExchangeOnlineManagement
+
+#Prompt for admin UPN only (no password)
+$adminUser = Read-Host "Enter the Admin User UPN (e.g., 
+
+#Prompt for CSV file path (no double quotes in the file path)
+$csvPath = Read-Host "Enter the full path to your CSV file (e.g., C:\scripts\user_upns.csv)"
+
+#Connect to Exchange Online (interactive login, supports MFA)
+Connect-ExchangeOnline -UserPrincipalName $adminUser
+
+#Log file path
+$logPath = "mailbox_permission_log.txt"
+
+#Import the CSV file
+$users = Import-Csv -Path $csvPath
+
+foreach ($user in $users) { $userUPN = $user.UPN $serialNumber = $user.'Serial Number' if ([string]::IsNullOrWhiteSpace($userUPN)) { $logEntry = "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') SKIPPED: Missing UPN for Serial Number $serialNumber" Write-Host $logEntry -ForegroundColor Yellow Add-Content -Path $logPath -Value $logEntry continue } try { Write-Host "Adding FullAccess permission for $adminUser to $userUPN's mailbox..." Add-MailboxPermission -Identity $userUPN -User $adminUser -AccessRights FullAccess -InheritanceType All -ErrorAction Stop $logEntry = "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') SUCCESS: Added FullAccess for $adminUser to $userUPN" Write-Host $logEntry -ForegroundColor Green } catch { $logEntry = "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') ERROR: Failed to add FullAccess for $adminUser to $userUPN. Error: $_" Write-Host $logEntry -ForegroundColor Red } Add-Content -Path $logPath -Value $logEntry }
+
+Write-Host "Script completed. Check $logPath for details."
+
+
+```
+
+- Enter the Admin User UPN when prompted.
+
+- Enter the full path to your CSV file when prompted.
+
+- Authenticate using your usual method (including Authenticator app if required).
+
+**Script Behavior**
+
+- Connects to Exchange Online using your admin account (supports MFA).
+
+- Reads each row in your CSV file.
+
+- If the UPN is missing, logs a SKIPPED entry with the Serial Number.
+
+- If the UPN is present, attempts to grant FullAccess permission.
+
+- Logs SUCCESS or ERROR for each attempt in mailbox_permission_log.txt.
+
+**Sample Log Entries**
+
+2025-07-23 20:00:01 SUCCESS: Added FullAccess for admin@yourdomain.com to [user1@domain.com](mailto:user1@domain.com) 2025-07-23 20:00:02 ERROR: Failed to add FullAccess for admin@yourdomain.com to user2@domain.com. Error: <error details> 2025-07-23 20:00:03 SKIPPED: Missing UPN for Serial Number 99999
+
+**Troubleshooting**
+
+- Module not found? Run: Install-Module -Name ExchangeOnlineManagement -Scope CurrentUser -Force
+
+- Permission denied? Ensure you have the necessary Exchange Online admin rights.
+
+- Script errors? Check the log file for details and review your CSV for formatting issues.
+
+**Security Note**
+
+The script does not store your password. All authentication is handled securely via Microsoft’s sign-in prompt.
+
+**Support**
+
+If you have any questions or need further assistance, please contact your IT support team.
+
 > [!NOTE]
 > Manage contacts is currently applicable only for common area phones.
 > All Manage Contacts operations, such as adding or deleting a contact, may take up to 24 hours to reflect on the device.

@@ -91,7 +91,7 @@ Install-Module -Name ExchangeOnlineManagement -Scope CurrentUser -Force Import-M
 $adminUser = Read-Host "Enter the Admin User UPN (e.g., 
 
 #Prompt for CSV file path (no double quotes in the file path)
-$csvPath = Read-Host "Enter the full path to your CSV file (e.g., C:\scripts\user_upns.csv)"
+$csvPath = Read-Host "Enter the full path to your CSV file (e.g., C:\scripts\user_upns.csv no quotes)"
 
 #Connect to Exchange Online (interactive login, supports MFA)
 Connect-ExchangeOnline -UserPrincipalName $adminUser
@@ -152,4 +152,8 @@ If you have any questions or need further assistance, please contact your IT sup
 > All Manage Contacts operations, such as adding or deleting a contact, may take up to 24 hours to reflect on the device.
 > Contact deletion can be performed for one device at a time.
 > The activity log is currently available only for Phones and can be used to track just the Manage Contacts operations.
+
+#### Known Issue
+
+When organizational contacts with both email and phone numbers are pushed from TAC, calls will route to their phone number instead of the Teams client. We are investigating this issue and will provide updates when resolved. Please note, this issue doesn’t affect organizational contacts without phone numbers or external contacts
 

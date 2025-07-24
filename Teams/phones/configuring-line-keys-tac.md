@@ -26,5 +26,5 @@ Line keys allow users to quickly access contacts or perform call-related actions
 
 ### Steps to configure for Common Area Phones 
 
-Common Area Phones are used in 
+Common Area Phones are used in a shared space, such as a lobby or a building reception. To avoid unauthorized users assigning or managing line keys, with this update going forward the experience will only be allowed from TAC and admins will have full control over line key configurations.
 

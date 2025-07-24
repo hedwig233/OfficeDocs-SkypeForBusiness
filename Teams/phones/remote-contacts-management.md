@@ -36,8 +36,8 @@ To manage contacts on Teams phones through the Teams admin center, follow these 
   
   - A right pane opens. In the __Add contact__ search box, search and select the desired contacts.
   
-  - If you cannot find contacts in the search box, use the __Import contacts__ option. A sample CSV file will be available for download.
-  
+  - If you cannot find contacts in the search box, use the __Import contacts__ option. A sample CSV file is available for download.
+    
   - Click __Save__.
   
   - The contacts sync to the __Company contacts__ folder within approximately 24 hours.
@@ -52,11 +52,11 @@ To manage contacts on Teams phones through the Teams admin center, follow these 
   
 #### Permissions to manage contacts:
 
-You must have mailbox permissions to manage contacts for Teams Devices accounts. Without these permissions, you'll encounter an error in TAC when attempting to view or add contacts.
+You must have mailbox permissions to manage contacts for Teams Devices accounts. Without these permissions, you encounter an error in TAC when attempting to view or add contacts.
 
 ![User's image1.](media/remote-contacts-management/image.png)
 
-In these situations, please refer to the Mailbox Permission Script Execution Guide provided below and add the necessary permissions to the relevant accounts.
+In these situations, refer to the Mailbox Permission Script Execution Guide provided below and add the necessary permissions to the relevant accounts.
 
 ### Mailbox Permission Script Execution Guide
 
@@ -113,7 +113,7 @@ Write-Host "Script completed. Check $logPath for details."
 
 - Enter the full path to your CSV file when prompted.
 
-- Authenticate using your usual method (including Authenticator app if required).
+- Authenticate using your usual method (including Authenticator app if necessary).
 
 **Script Behavior**
 
@@ -145,7 +145,7 @@ The script does not store your password. All authentication is handled securely 
 
 **Support**
 
-If you have any questions or need further assistance, please contact your IT support team.
+If you have any questions or need further assistance, contact your IT support team.
 
 > [!NOTE]
 > Manage contacts is currently applicable only for common area phones.

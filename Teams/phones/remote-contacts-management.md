@@ -73,7 +73,7 @@ This guide provides step-by-step instructions for an admin user to execute a Pow
 **Export the Common area phones inventory from TAC**
 
 Export and Download the CSV file from TAC Common area phones screen.  
-![User's image](media/remote-contacts-management/image1.png)
+![User's image2.](media/remote-contacts-management/image1.png)
 
 Running the Script
 

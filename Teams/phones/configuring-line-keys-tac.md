@@ -24,15 +24,17 @@ Line keys allow users to quickly access contacts or perform call-related actions
 
 - Teams Admin Center (TAC): <Insert>
 
-### Steps to configure for Common Area Phones 
+### Steps to configure  
 
-Common Area Phones are used in a shared space, such as a lobby or a building reception. **To prevent unauthorized line key changes, configuration will now be restricted to TAC, giving admins full control.**
+
 
 Step 1: Update the phone device and check for default settings 
 
 - Navigate to **Settings > Calling > Line Keys Settings** on the device.
 
-- Ensure **Allow admin override** and **Hide unassigned line keys** are enabled and ON by default.
+- For common area phones, ensure **Allow admin override** and **Hide unassigned line keys** are enabled and ON by default.
+
+- For personal phones, enable **Allow admin override** to turn it ON as they are not enabled by default. 
 
 Step 2: On TAC, create a configuration profile
 
@@ -46,5 +48,15 @@ Step 2: On TAC, create a configuration profile
 
 - You can choose to follow either of the options to configure line keys now:
 
-  - If you enable Device Profile Template, use the **Phones tab** to configure line keys on touch and non-touch devices and **Sidecar tab** for connected sidecar devices. 
+  - If you enable Device Profile Template, use the **Phones tab** to configure line keys on touch and non-touch devices and **Sidecar tab** for connected sidecar devices. Complete the remaining steps below to configure line keys:
   
+    - Using the drop-down choose the device or sidecar model you wish to configure line keys for.
+    
+    - Assign line keys for each position. If the model chosen is a touch device, speed dials, shared line and call queues are available to be assigned. If the model chosen is a non-touch device, only speed dials are available to be assigned. For sidecars connected to touch devices, speed dials, shared line and call queues are available to be assigned.
+    
+  - If you do not enable Device Profile Template, simply assign line keys for positions you wish to use.
+  
+- **Save** the configuration profile. 
+
+- Apply the configuration profile to selected devices. 
+

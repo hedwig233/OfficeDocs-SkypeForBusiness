@@ -44,4 +44,7 @@ Step 2: On TAC, create a configuration profile
 
 - Toggle **Configure line keys** to ON. 
 
-- 
+- You can choose to follow either of the options to configure line keys now:
+
+  - If you enable Device Profile Template, use the **Phones tab** to configure line keys on touch and non-touch devices and **Sidecar tab** for connected sidecar devices. 
+  

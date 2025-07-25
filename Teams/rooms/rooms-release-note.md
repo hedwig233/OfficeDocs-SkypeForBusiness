@@ -838,7 +838,7 @@ Resolved Issues:
 
 ### 1449/1.0.96.2025203502 (June 2025)
 
-- Introduced in this update:
+Introduced in this update:
 
 - **Real time text (RTT) support:** Users can view real time text (RTT) messages on the front of room display. If users wish to send RTT messages, they will need to join the meeting with their laptop/mobile as a companion device. This feature is currently in TAP/Beta ring on Teams desktop and mobile. 
 
@@ -853,13 +853,13 @@ Resolved Issues:
 
 Introduced in this update:
 
-- **Preview of Facilitator agent note taking in Rooms for offline/ad hoc discussions:** Power your ad-hoc in-person discussions by inviting the Facilitator agent in your Teams Room. Learn more here: Facilitator in Teams Rooms - Microsoft Teams | Microsoft Learn
+- **Preview of Facilitator agent note taking in Rooms for offline/ad hoc discussions.** Power your ad-hoc in-person discussions by inviting the Facilitator agent in your Teams Room. Learn more here: Facilitator in Teams Rooms - Microsoft Teams | Microsoft Learn
 - **New Microsoft-managed policy to help further secure your tenants against potential threats to accounts using device code flow (DCF) authentication.**
-- **Disabled auto accept for external tenant nudges:** Teams Rooms on Android will now also no longer automatically accept any Proximity joins using an external account for security reasons.
+- **Disabled auto accept for external tenant nudges.** Teams Rooms on Android will now also no longer automatically accept any Proximity joins using an external account for security reasons.
 - **Local PTZ controls:** If the camera is not currently auto-framing the room, in-room users can control the Pan-Tilt-Zoom (PTZ) of the active camera to keep the focus where they want it. 
-- **Speaker recognition and attribution in Teams Rooms on Android:** Microsoft Teams Rooms on Android will soon support Intelligent Speakers, providing advanced speaker recognition to clearly identify who said what in meeting transcripts. This feature significantly enhances Microsoft 365 Copilot and AI Recap, enabling accurate, personalized summaries and actionable insights from your meetings. This capability seamlessly integrates with both intelligent speakers and your existing room speakers via the cloud. Each participant is securely recognized through a unique voice profile, ensuring precise attribution in live transcripts and maximizing the effectiveness of your Teams meeting experience.
-- **Proximity join performance and reliability improvements:** These enhancements are for standalone consoles where calls used to drop sometimes and then rejoin automatically a few seconds later.
--	**Call Join performance improvements:** Multiple improvements to call join performance in standalone consoles. These improvements should significantly reduce the time it takes for the console to join a meeting, especially the ones with more than 50 participants.
+- **Speaker recognition and attribution.** Microsoft Teams Rooms on Android will soon support Intelligent Speakers, providing advanced speaker recognition to clearly identify who said what in meeting transcripts. This feature significantly enhances Microsoft 365 Copilot and AI Recap, enabling accurate, personalized summaries and actionable insights from your meetings. This capability seamlessly integrates with both intelligent speakers and your existing room speakers via the cloud. Each participant is securely recognized through a unique voice profile, ensuring precise attribution in live transcripts and maximizing the effectiveness of your Teams meeting experience.
+- **Proximity join performance and reliability improvements.** These enhancements are for standalone consoles where calls used to drop sometimes and then rejoin automatically a few seconds later.
+-	**Call Join performance improvements.** Multiple improvements to call join performance in standalone consoles. These improvements should significantly reduce the time it takes for the console to join a meeting, especially the ones with more than 50 participants.
 
 
 ### 1449/1.0.96.2025031102 (March 2025)

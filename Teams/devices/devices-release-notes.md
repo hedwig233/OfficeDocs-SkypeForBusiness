@@ -250,18 +250,18 @@ To add a mobile system OS scanner:
 
 - **Answer on pick up setting**: This setting allows users to enable or disable automatic call answering when the handset is lifted or the speaker button is pressed. The default setting is enabled and can be accessed under Calling settings. This setting is also applicable to incoming call behavior on line keys. 
 
-**Updates to shared line call behavior on line keys**: Shared line keys now let users make outgoing calls for the boss if available. Pressing the boss’s line key provides a dial tone and lets users select the caller, with access to the dial pad and search options. This is applicable to touch devices and sidecar.  
+- **Updates to shared line call behavior on line keys**: Shared line keys now let users make outgoing calls for the boss if available. Pressing the boss’s line key provides a dial tone and lets users select the caller, with access to the dial pad and search options. This is applicable to touch devices and sidecar.  
 
 - **Location inference for PSTN users in India**: To meet regulations, PSTN users in India cannot make or receive calls if their location is unknown or outside India. 
 
 - App also includes multiple bug fixes and improvements. Bug fixes impacting user experience are:
 
   - Fixed an issue where caller username was not being displayed in the calling stage.
-  
+    
   - Fixed an issue on contacts disappearing on sidecars.
-  
+    
   - Fixed an issue on common area phones being tagged as user phones after enabling hotline.
-  
+    
 ## June 30, 2025
 
 **Applies to:** *Teams app version: 1449/1.0.94.2025168802* (Poly, Yealink and Audiocodes)

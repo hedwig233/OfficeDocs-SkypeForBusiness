@@ -225,6 +225,3 @@ This column chart illustrates the overall utilization of the spaces in the chose
 :::image type="content" source="../media/most-least-utilized-rooms.png" alt-text="Screenshot that shows the chart depicting the rooms that most utilized and least utilized." lightbox="../media/most-least-utilized-rooms.png":::
 
 The most and least utilized rooms' tables provide insights into the utilization of your shared spaces based on the selected period and location. The first table lists the most-used rooms, and the second table lists the least-used rooms sorted by the utilization rate for the top 200 rooms. The utilization rate, average reservation rate, and average occupancy rate columns are defined in the [Space Utilization Metric Definition](#space-utilization-metric-definition) section.
-
-
-[Discovered Devices](standards-and-room-planner.md#discovered-devices)

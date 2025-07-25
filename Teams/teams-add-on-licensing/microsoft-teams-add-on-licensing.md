@@ -90,7 +90,7 @@ The following table displays Audio Conferencing license options.
 | License | Description |
 | ------- | ----------- |
 | **Standard Audio Conferencing License** | This license includes:<br/> - Toll phone numbers to dial in meetings for all supported countries/regions.<br/> - Toll phone minutes for all supported countries/regions.<br/> - Operator Connect Conferencing.<br/> - 60 outbound minutes per user per month to [Zone A countries and regions](../audio-conferencing-zones.md). These minutes are pooled at the tenant level, so if there's one tenant with multiple Audio Conferencing users, the minutes are shared among all users. |
-| **Free Audio Conferencing License** | For outbound calls to the United States and Canada only. With this exception, this license includes:<br/> - The same capabilities as the *Standard Audio Conferencing License*.<br/> - Toll-free phone numbers. <br/> - Toll-free minutes. |
+| **Free Audio Conferencing License** | For outbound calls to the United States and Canada only. With this exception, this license includes:<br/> - The same capabilities as the *Standard Audio Conferencing License*. |
 
 After the 60 minutes of outbound minutes to Zone A countries/regions have been used, your Audio Conferencing users won't be able to make calls or dial out from online Audio Conferencing meetings.
 

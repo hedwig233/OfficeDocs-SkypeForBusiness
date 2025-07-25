@@ -30,6 +30,9 @@ description: Learn how Microsoft supports validation of your business with PSTN 
 
 # Validate your business identity with PSTN operators using Know Your Customer
 
+> [!NOTE]
+> The KYC process is rolling out for all tenants during August 2025.
+
 **APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Microsoft Calling Plans
 
 This article provides an overview of the Know Your Customer value and process, and a guide for setting it up in your Teams admin center.
@@ -73,7 +76,7 @@ Ensure all information provided matches the supporting documents requested in th
 |Form field |Description |
 |:-----|:-----|
 |Company name |Enter your company's official name as it's legally registered in your country or region. |
-|Tax ID or Business Registration number |Enter the Tax ID of your company, respective to the country/region of your company's headquarters. <br><br>**United States**--US companies (and companies with a US EIN), enter your Tax ID's nine-digit EIN. <br>**Canada**–-For companies based in Canada, enter your nine-digit Canadian Business Number (BN) issued by the CRA, Corporation/Incorporation Number, or Registry ID. <br>**Any other country/region**--Provide the Tax ID or Business Registration number. |
+|DUNS, Tax ID or Business Registration number |Enter the DUNS or Tax ID of your company, respective to the country/region of your company's headquarters. <br><br>**United States**--US companies (and companies with a US EIN), enter your Tax ID's nine-digit EIN. <br>**Canada**–-For companies based in Canada, enter your nine-digit Canadian Business Number (BN) issued by the CRA, Corporation/Incorporation Number, or Registry ID. <br>**Any other country/region**--Provide the Tax ID or Business Registration number. |
 |Business address |Enter the address to match the address where your company is headquartered. |
 
 ### Step 3: Upload Supporting Documents

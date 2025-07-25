@@ -102,6 +102,95 @@ KYC submittal status and status definitions are listed in the following table.
 |Approved |Microsoft successfully validated the KYC request. Customer is now able to acquire or port telephone numbers. |
 |Denied |Microsoft determined the KYC request didn't pass the vetting process. No further action allowed. |
 
+## Common user errors, scenarios, and solutions
+
+### Generic email address provided
+
+The email account provided is not eligible to proceed. You are required to use a
+company domain to complete the veriﬁcation process.
+
+To complete the veriﬁcation process, cancel and restart the process and provide an
+email address associated with your company domain. Please also upload any
+supporting documentation like a domain registration / domain invoice from registration
+or renewal that lists entity/contact and domain as it is stated on your account.
+
+### Additional supporting documents required
+
+Microsoft was unable to fully validate KYC with the documentation provided. Please
+upload copies of the additional original document(s) listed below to verify your
+association with the organization. Documentation must be dated within the past 12
+months.
+
+Copy of original official business registration documentation from an official
+government agency that lists company name, address and contact information.
+Acceptable document types include:
+
+-  Formation documents, such as articles of incorporation, partnership deed
+-  Franchise or agency appointment letters
+-  The government issued letters, license, registration, or certiﬁcate
+-  Lease or tenancy documents
+-  Letter or statement from a ﬁnancial institution or a utility company
+-  Record on a Government registry website (site/link must be displayed)
+-  Stock exchange ﬁlings or tax ﬁling records
+-  Certiﬁcate of incorporation or registration
+-  Extract from commercial register
+-  Business license
+-  Tax certiﬁcate
+-  DUNS certiﬁcation
+
+### Mismatch between information and supporting documents
+
+The supporting documents do not match the information you entered. If you have a
+different document with matching information, please upload it.
+
+If it is not possible to provide additional documentation, please cancel and restart the
+process and update your information to match any legal documents you are able to
+provide.
+
+### Supporting documents older than 12 months
+
+The documents you’ve shared are too old to be considered for KYC veriﬁcation.
+
+All documents submitted must be issued within the previous 12 months or where the
+expiration date is a future date that is at least two months away.
+
+## Veriﬁcation FAQ
+
+### Who reviews the submitted documentation?
+
+Microsoft’s OneVet securely reviews the submitted documentation as part of the regular
+KYC review process.
+
+### What is the vetting review process?
+
+The vetting status is based on 5 factors. If any of those factors have a failure, the KYC status
+will show as rejected and cannot continue to acquire telephone numbers.
+
+### Why was my KYC requests rejected?
+
+You can learn the reason for rejection and the steps to ﬁx
+the issues in their submission through the Teams Admin Center.
+
+### What kind of documents are accepted?
+
+For Business Veriﬁcation, acceptable supporting documents should include and match the
+Business name and address provided. These include:
+
+-  Formation documents, such as articles of incorporation, partnership deed.
+-  Franchise or agency appointment letters.
+-  Government issued letter, license, registration, or certiﬁcate.
+-  Lease or tenancy documents.
+-  Letter or statement from a ﬁnancial institution or a utility company.
+-  Record on a Government registry website (site/link must be displayed).
+-  Stock exchange ﬁlings or tax ﬁling records.
+
+For Domain Veriﬁcation, acceptable supporting documents are:
+
+-  Assignment letter from an authorized representative of the organization.
+-  Domain ownership records, such as Whois.
+-  Domain purchase invoices or registry conﬁrmation records.
+-  Website showing name, address, contact information, and domain of the organization.
+
 ## Related articles
 
 [Setting up Teams Phone](setting-up-your-phone-system.md)

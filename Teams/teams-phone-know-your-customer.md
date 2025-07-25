@@ -31,13 +31,13 @@ description: Learn how Microsoft supports validation of your business with PSTN 
 # Validate your business identity with PSTN operators using Know Your Customer
 
 > [!NOTE]
-> The KYC process is rolling out for all tenants during August 2025.
+> The Know Your Customer (KYC) process is rolling out for all tenants during August 2025.
 
 **APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Microsoft Calling Plans
 
 This article provides an overview of the Know Your Customer value and process, and a guide for setting it up in your Teams admin center.
 
-Know Your Customer, also known as **KYC** is a PSTN industry practice that allows PSTN operators to validate the identity of their customer before providing communication services. It's a way to identify your business so that PSTN operators can help prevent your business from carrying illegal traffic, receiving nuisance calls, and more. KYC is designed to help prevent fraud and ensure national security, and therefore it's a PSTN operator investment into your risk management strategy.
+Know Your Customer, also known as **KYC** is a Public Switched Telephone Network (PSTN) industry practice that allows PSTN operators to validate the identity of their customer before providing communication services. It's a way to identify your business so that PSTN operators can help prevent your business from carrying illegal traffic, receiving nuisance calls, and more. KYC is designed to help prevent fraud and ensure national security, and therefore it's a PSTN operator investment into your risk management strategy.
 
 In some countries and regions, KYC is a prerequisite for allowing customers to acquire or port telephone numbers. National Regulatory Authorities in different countries and regions set the rules for the information needed from users or businesses to get, transfer, or activate phone numbers for calling and messaging services.
 
@@ -75,8 +75,8 @@ Ensure all information provided matches the supporting documents requested in th
 
 |Form field |Description |
 |:-----|:-----|
-|Company name |Enter your company's official name as it's legally registered in your country or region. |
-|DUNS, Tax ID or Business Registration number |Enter the DUNS or Tax ID of your company, respective to the country/region of your company's headquarters. <br><br>**United States**--US companies (and companies with a US EIN), enter your Tax ID's nine-digit EIN. <br>**Canada**–-For companies based in Canada, enter your nine-digit Canadian Business Number (BN) issued by the CRA, Corporation/Incorporation Number, or Registry ID. <br>**Any other country/region**--Provide the Tax ID or Business Registration number. |
+|Company name |Enter your company's official name, the way it's legally registered in your country or region. |
+|DUNS, Tax ID, or Business Registration number |Enter the DUNS or Tax ID of your company, respective to the country/region of your company's headquarters. <br><br>**United States**--US companies (and companies with a US EIN), enter your Tax ID's nine-digit EIN. <br>**Canada**–-For companies based in Canada, enter your nine-digit Canadian Business Number (BN) issued by the Canada Revenue Agency, Corporation/Incorporation Number, or Registry ID. <br>**Any other country/region**--Provide the Tax ID or Business Registration number. |
 |Business address |Enter the address to match the address where your company is headquartered. |
 
 ### Step 3: Upload Supporting Documents
@@ -99,9 +99,9 @@ KYC submittal status and status definitions are listed in the following table.
 
 |Status |Description |
 |:-----|:-----|
-|Draft |The customer started a KYC request process but hasn't submitted it for vetting. |
+|Draft |The customer started a KYC request process but it isn't submitted. |
 |Submitted |The customer submitted the KYC request for the vetting process. Automated and manual checks by Microsoft are in progress. |
-|Pending Customer Update |Microsoft determined additional information from the customer is required to approve the KYC request. Customer action required. |
+|Pending Customer Update |Microsoft determined more information from the customer is required to approve the KYC request. Customer action required. |
 |Approved |Microsoft successfully validated the KYC request. Customer is now able to acquire or port telephone numbers. |
 |Denied |Microsoft determined the KYC request didn't pass the vetting process. No further action allowed. |
 
@@ -113,19 +113,17 @@ The email account provided isn't eligible to proceed. You're required to use a
 company domain to complete the verification process.
 
 To complete the verification process, cancel and restart the process and provide an
-email address associated with your company domain. Please also upload any
+email address associated with your company domain. Also upload any
 supporting documentation like a domain registration / domain invoice from registration
 or renewal that lists entity/contact and domain as it is stated on your account.
 
-### Additional supporting documents required
+### More supporting documents required
 
-Microsoft was unable to fully validate KYC with the documentation provided. Please
-upload copies of the additional original document(s) listed below to verify your
-association with the organization. Documentation must be dated within the past 12
-months.
+Microsoft was unable to fully validate KYC with the documentation provided. Upload copies of other original documents to verify your
+association with the organization. Documentation must be dated within the past 12 months.
 
-Copy of original official business registration documentation from an official
-government agency that lists company name, address and contact information.
+The copy of original official business registration documentation must be from an official
+government agency that lists company name, address, and contact information.
 Acceptable document types include:
 
 -  Formation documents, such as articles of incorporation, partnership deed
@@ -139,20 +137,20 @@ Acceptable document types include:
 -  Extract from commercial register
 -  Business license
 -  Tax certificate
--  DUNS certiﬁcation
+-  DUNS certification
 
 ### Mismatch between information and supporting documents
 
 The supporting documents don't match the information you entered. If you have a
-different document with matching information, please upload it.
+different document with matching information, upload it.
 
-If it isn't possible to provide additional documentation, please cancel and restart the
+If it isn't possible to provide more documentation, cancel and restart the
 process and update your information to match any legal documents you're able to
 provide.
 
 ### Supporting documents older than 12 months
 
-The documents you’ve shared are too old to be considered for KYC verification.
+The documents shared are too old to be considered for KYC verification.
 
 All documents submitted must be issued within the previous 12 months or where the
 expiration date is a future date that is at least two months away.
@@ -166,18 +164,18 @@ KYC review process.
 
 ### What is the vetting review process?
 
-The vetting status is based on 5 factors. If any of those factors have a failure, the KYC status
-will show as rejected and cannot continue to acquire telephone numbers.
+The vetting status is based on five factors. If any of those factors have a failure, the KYC status
+indicats rejected and can't continue to acquire telephone numbers.
 
 ### Why was my KYC requests rejected?
 
-You can learn the reason for rejection and the steps to ﬁx
+You can learn the reason for rejection and the steps to fix
 the issues in their submission through the Teams Admin Center.
 
 ### What kind of documents are accepted?
 
 For Business Verification, acceptable supporting documents should include and match the
-Business name and address provided. These include:
+Business name and address provided. Eligible documents include the follwoing.
 
 -  Formation documents, such as articles of incorporation, partnership deed.
 -  Franchise or agency appointment letters.
@@ -190,7 +188,7 @@ Business name and address provided. These include:
 For Domain Verification, acceptable supporting documents are:
 
 -  Assignment letter from an authorized representative of the organization.
--  Domain ownership records, such as Whois.
+-  Domain ownership records, such as "Whois".
 -  Domain purchase invoices or registry confirmation records.
 -  Website showing name, address, contact information, and domain of the organization.
 

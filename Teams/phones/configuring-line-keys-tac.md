@@ -64,3 +64,11 @@ Step 2: On TAC, create a configuration profile
 
 After the configuration profile is applied to the chosen devices, assigned and configured line keys should appear on the device. 
 
+![image](media/configuring-line-keys-tac/image.png)
+
+*Assigned line key appears on touch phone devices*
+
+![image](media/configuring-line-keys-tac/image1.png)
+
+*Assigned line key appears on non-touch phone devices*
+

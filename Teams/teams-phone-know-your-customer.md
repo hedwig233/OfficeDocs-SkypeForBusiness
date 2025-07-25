@@ -165,7 +165,7 @@ KYC review process.
 ### What is the vetting review process?
 
 The vetting status is based on five factors. If any of those factors have a failure, the KYC status
-indicats rejected and can't continue to acquire telephone numbers.
+indicates rejected and can't continue to acquire telephone numbers.
 
 ### Why was my KYC requests rejected?
 
@@ -175,7 +175,7 @@ the issues in their submission through the Teams Admin Center.
 ### What kind of documents are accepted?
 
 For Business Verification, acceptable supporting documents should include and match the
-Business name and address provided. Eligible documents include the follwoing.
+Business name and address provided. Eligible documents include the following.
 
 -  Formation documents, such as articles of incorporation, partnership deed.
 -  Franchise or agency appointment letters.

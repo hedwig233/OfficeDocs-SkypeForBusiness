@@ -232,7 +232,7 @@ To add a mobile system OS scanner:
 
 ## July 30, 2025 
 
-**Applies to:** *Teams app version: 1**1449/1.0.94.2025248901* (Poly, Yealink and Audiocodes)
+**Applies to:** *Teams app version: 1449/1.0.94.2025248901* (Poly, Yealink and Audiocodes)
 
 - **Copilot in 1:1 and Group Calls**: Copilot is now available during 1:1 and group calls on Teams-certified phone devices. Users can interact with Copilot in real time to recap conversations, list action items, and generate call notes using prompt suggestions. Copilot responses are optimized for device type—50 words for touch devices and 30 for non-touch. Post-call summaries are not supported in this release. Requires a Copilot license and transcription enabled in calling policies. 
 

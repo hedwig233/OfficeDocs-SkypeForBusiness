@@ -64,7 +64,7 @@ The following providers offer contact center solutions that are integrated into 
 | `Audiocodes` | https://www.audiocodes.com/solutions-products/voiceai/voca-conversational-interaction-center | | |![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | `Avaya` | https://www.avaya.com/en/enterprise-cloud/ | | |![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | `Bright Pattern` | https://www.brightpattern.com/ | | |![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
-| `CentrePal` | https://www.centrepal.com/ | |![Image of a checkmark for yes](/office/media/icons/success-teams.png) | |
+| `CentrePal` | https://www.centrepal.com/ | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |![Image of a checkmark for yes](/office/media/icons/success-teams.png) | |
 | `Cirrus` | https://www.cirrusresponse.com/cloud-contact-centre/microsoft-teams/ | | |![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | `Cisco` | https://www.cisco.com/c/en/us/products/contact-center/webex-contact-center/index.html | | |![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | `ComputerTalk` | https://www.computer-talk.com/product/enterprise-contact-center/ice-contact-center-for-teams | |![Image of a checkmark for yes](/office/media/icons/success-teams.png) |![Image of a checkmark for yes](/office/media/icons/success-teams.png) |

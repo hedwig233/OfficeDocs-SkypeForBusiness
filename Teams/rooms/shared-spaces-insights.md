@@ -122,7 +122,7 @@ The global page filters refer to the dropdown lists on the **Shared Spaces Insig
 
 This filter's pane is located on the top of the page from which it lets you filter the data for your preferred location.
 
-The following screenshot depicts the "location" attributes's filters with a value to be chosen for each filter to determine the location:
+The following screenshot depicts the "location" attribute's filters with a value to be chosen for each filter to determine the location:
 
 :::image type="content" source="../media/location-discovery.png" alt-text="Screenshot that shows the page on which can apply filters to the location-related attributes." lightbox="../media/location-discovery.png":::
 

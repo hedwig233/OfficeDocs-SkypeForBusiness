@@ -4,7 +4,7 @@ author: mstonysmith
 ms.author: tonysmit
 manager: pamgreen
 ms.reviewer: srpall
-ms.date: 06/12/2025
+ms.date: 07/28/2025
 ms.topic: article
 audience: Admin
 ms.service: msteams
@@ -17,28 +17,28 @@ ms.collection:
   - Tier1
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Providing guidance to IT admins about the Shared Spaces Insights feature.
+description: This article provides guidance to IT admins on the Shared Spaces Insights feature.
 f1keywords: 
 ---
 
 # Shared Spaces Insights
 
 > [!IMPORTANT]
-> Currently, the Shared Spaces Insights feature is in Public Preview in the "Public" and "GCC" environments. This feature is currently not yet enabled in the "GCC High" environment.
+> Currently, the Shared Spaces Insights feature is in Public Preview in the "Public" and "GCC" environments, but not yet enabled in the "GCC High" environment.
 
 ## Overview
 
-The new **Shared Spaces Insights** page in the Pro Management portal provides IT administrators with customized utilization insights, including time-series data visualizations, for shared spaces beginning with Teams Rooms. This feature uses calendar data and occupancy signals from Teams Rooms to track usage with filters for location, business hours, days of the week, and date ranges.
+The new **Shared Spaces Insights** page in the Pro Management portal provides IT administrators with customized insights of utilization, including time-series data visualizations, for shared spaces beginning with Teams Rooms. This feature uses calendar data and occupancy signals from Teams Rooms to track usage with filters for location, business hours, days of the week, and date ranges.
 
-## Prerequisites for IT admins
+## Prerequisites
 
-To use the Shared Spaces Insights feature, ensure that you meet the following prerequisites:
+Ensure that you meet the following prerequisites before you can start using the Shared Spaces Insights feature:
 
 - **Licensing**: Only Teams rooms with an assigned Teams Room Pro or Premium license will appear on the **Shared Spaces Insights** page.
 - **Teams Rooms on Android Admin Agent**: Teams Rooms on Android devices require admin agent [1.0.0.202412110504](../devices/certified-device-apps.md#100202412110504) or newer versions to support the "Shared Space Insights" feature. Teams Rooms on Android devices running this admin agent before May 6, 2025, began reporting their utilization from May 6. Any devices not running at least that admin agent version as on May 6, 2025, begin reporting once updated to [1.0.0.202412110504](../devices/certified-device-apps.md#100202412110504) or newer versions.
 
   > [!IMPORTANT]
-  > 1. Allow 24 to 48 hours for the utilization metrics to populate.<br>
+  > 1. Allow 24 to 48 hours for the utilization metrics to populate.
   > 2. Teams Rooms on Android devices running older versions of the Admin Agent won't appear in the **Shared Spaces Insights** dashboard until they're updated.
 
 ## Space Utilization Metric Definition

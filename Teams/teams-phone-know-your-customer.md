@@ -106,10 +106,10 @@ KYC submittal status and status definitions are listed in the following table.
 
 ### Generic email address provided
 
-The email account provided is not eligible to proceed. You are required to use a
-company domain to complete the veriﬁcation process.
+The email account provided isn't eligible to proceed. You're required to use a
+company domain to complete the verification process.
 
-To complete the veriﬁcation process, cancel and restart the process and provide an
+To complete the verification process, cancel and restart the process and provide an
 email address associated with your company domain. Please also upload any
 supporting documentation like a domain registration / domain invoice from registration
 or renewal that lists entity/contact and domain as it is stated on your account.
@@ -127,34 +127,34 @@ Acceptable document types include:
 
 -  Formation documents, such as articles of incorporation, partnership deed
 -  Franchise or agency appointment letters
--  The government issued letters, license, registration, or certiﬁcate
+-  The government issued letters, license, registration, or certificate
 -  Lease or tenancy documents
--  Letter or statement from a ﬁnancial institution or a utility company
+-  Letter or statement from a financial institution or a utility company
 -  Record on a Government registry website (site/link must be displayed)
--  Stock exchange ﬁlings or tax ﬁling records
--  Certiﬁcate of incorporation or registration
+-  Stock exchange filings or tax filing records
+-  Certificate of incorporation or registration
 -  Extract from commercial register
 -  Business license
--  Tax certiﬁcate
+-  Tax certificate
 -  DUNS certiﬁcation
 
 ### Mismatch between information and supporting documents
 
-The supporting documents do not match the information you entered. If you have a
+The supporting documents don't match the information you entered. If you have a
 different document with matching information, please upload it.
 
-If it is not possible to provide additional documentation, please cancel and restart the
-process and update your information to match any legal documents you are able to
+If it isn't possible to provide additional documentation, please cancel and restart the
+process and update your information to match any legal documents you're able to
 provide.
 
 ### Supporting documents older than 12 months
 
-The documents you’ve shared are too old to be considered for KYC veriﬁcation.
+The documents you’ve shared are too old to be considered for KYC verification.
 
 All documents submitted must be issued within the previous 12 months or where the
 expiration date is a future date that is at least two months away.
 
-## Veriﬁcation FAQ
+## Verification FAQ
 
 ### Who reviews the submitted documentation?
 
@@ -173,22 +173,22 @@ the issues in their submission through the Teams Admin Center.
 
 ### What kind of documents are accepted?
 
-For Business Veriﬁcation, acceptable supporting documents should include and match the
+For Business Verification, acceptable supporting documents should include and match the
 Business name and address provided. These include:
 
 -  Formation documents, such as articles of incorporation, partnership deed.
 -  Franchise or agency appointment letters.
--  Government issued letter, license, registration, or certiﬁcate.
+-  Government issued letter, license, registration, or certificate.
 -  Lease or tenancy documents.
--  Letter or statement from a ﬁnancial institution or a utility company.
+-  Letter or statement from a financial institution or a utility company.
 -  Record on a Government registry website (site/link must be displayed).
--  Stock exchange ﬁlings or tax ﬁling records.
+-  Stock exchange filings or tax filing records.
 
-For Domain Veriﬁcation, acceptable supporting documents are:
+For Domain Verification, acceptable supporting documents are:
 
 -  Assignment letter from an authorized representative of the organization.
 -  Domain ownership records, such as Whois.
--  Domain purchase invoices or registry conﬁrmation records.
+-  Domain purchase invoices or registry confirmation records.
 -  Website showing name, address, contact information, and domain of the organization.
 
 ## Related articles

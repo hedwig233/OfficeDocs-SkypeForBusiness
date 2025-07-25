@@ -72,3 +72,7 @@ After the configuration profile is applied to the chosen devices, assigned and c
 
 *Assigned line key appears on non-touch phone devices*
 
+![image](media/configuring-line-keys-tac/image2.png)
+
+*Assigned line keys appear on connected sidecar devices*
+

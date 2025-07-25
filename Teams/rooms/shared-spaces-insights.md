@@ -24,7 +24,7 @@ f1keywords:
 # Shared Spaces Insights
 
 > [!IMPORTANT]
-> Currently, the Shared Spaces Insights feature is in Public Preview in the "Public" and "GCC" environments, but not yet enabled in the "GCC High" environment.
+> Currently, the Shared Spaces Insights feature is in Public Preview in the "Public" and "GCC" environments. The feature is not yet enabled in the "GCC High" environment.
 
 ## Overview
 

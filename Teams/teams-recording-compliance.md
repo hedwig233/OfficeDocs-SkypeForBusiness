@@ -176,6 +176,7 @@ The following list includes partners certified to deliver a compliance recording
 |Dubber |[https://www.dubber.net/call-recording/](https://www.dubber.net/call-recording/) |
 |Imagicle |[https://www.imagicle.com/en/products/call-recording/](https://www.imagicle.com/en/products/call-recording/) |
 |Insightful Technology |[https://insightfultechnology.com/teams/](https://insightfultechnology.com/market-place/) |
+|Liquid Voice |[https://www.liquidvoice.com/microsoft-teams-recording/](https://www.liquidvoice.com/microsoft-teams-recording/) |
 |Luware |[https://luware.com/en/solution/microsoft-teams-recording/](https://luware.com/en/solution/microsoft-teams-recording/) |
 |NUSO |[https://nuso.cloud/nuso-connect-recorder/](https://nuso.cloud/nuso-connect-recorder/) |
 |NICE Engage |[https://www.nice.com/products/recording/engage](https://www.nice.com/products/recording/engage) |
@@ -195,7 +196,6 @@ The following partners are in the process of certifying their solution for Micro
 |AudioCodes Interaction Insights|[https://www.audiocodes.com/solutions-products/saas/audiocodes-live-platform/interaction-insights-recording-services](https://www.audiocodes.com/solutions-products/saas/audiocodes-live-platform/interaction-insights-recording-services) |
 |CreaLog |[https://www.crealog.com/en/products-solutions/recording/](https://www.crealog.com/en/products-solutions/recording/) |
 |Landis Technologies |[https://landistechnologies.com/](https://landistechnologies.com/) |
-|Liquid Voice |[https://www.liquidvoice.com/microsoft-teams-recording/](https://www.liquidvoice.com/microsoft-teams-recording/) |
 |Redwood Technologies |[https://www.contentguru.com/en-us/solutions/needs/compliance-recording-ms-teams/](https://www.contentguru.com/en-us/solutions/needs/compliance-recording-ms-teams/) |
 |TollRing |[https://www.analytics-365.com/call-recording/](https://www.analytics-365.com/call-recording/) |
 

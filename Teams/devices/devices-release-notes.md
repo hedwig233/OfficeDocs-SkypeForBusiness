@@ -230,38 +230,6 @@ To add a mobile system OS scanner:
 
 ## [Teams phones](#tab/phones)
 
-## July 30, 2025 
-
-**Applies to:** *Teams app version: 1449/1.0.94.2025248901* (Poly, Yealink and Audiocodes)
-
-- **Copilot in 1:1 and Group Calls**: Copilot is now available during 1:1 and group calls on Teams-certified phone devices. Users can interact with Copilot in real time to recap conversations, list action items, and generate call notes using prompt suggestions. Copilot responses are optimized for device type—50 words for touch devices and 30 for non-touch. Post-call summaries are not supported in this release. Requires a Copilot license and transcription enabled in calling policies. 
-
-- **In-Call Transfer Suggestions and contact groups**: Teams phone devices now offer intelligent suggestions for call transfers based on user history. Suggestions along with contact groups are available as sections and are collapsible (default: expanded), and suggestions are ranked above speed dials. Suggestions update asynchronously when users access call history. Logic is optimized for both touch and non-touch devices. Pre-requisite: You must have history of transferring calls before or have contact groups for suggestions to appear. 
-
-- **Line Key Enhancements via Teams Admin Center (TAC):** Admins can now configure line keys using generic or model-specific templates. This enables assignment of line keys for speed dials, call queues, and shared lines. Common area phones now require TAC-only configuration. Admin override must be enabled on devices to be used on personal phones. 
-
-- **Remote contact management for Common Area Phones via Teams Admin Center (TAC):** IT admins can now remotely manage contacts on Common Area Phones directly from the Teams Admin Center (TAC). Admins can add, edit, or remove contacts for selected devices, streamlining contact provisioning. 
-
-- **Custom Ringtone Behavior for Line Keys**: Users can personalize how each assigned line key alerts them—choose between ring only, ring with flash, or flash only. Unique ringtones can be assigned per line key. Supported across touch, non-touch, and sidecar devices.  
-
-- **Real-Time Text (RTT) Support**: RTT enables users to view real-time text input from others during calls and meetings. RTT notifications appear on incoming call screens and banners. RTT and live captions can be viewed simultaneously. Users can disable RTT from the in-call menu. Note: Phone devices support view-only RTT; input is not supported. 
-
-- **Device based sign-in for non-touch devices:** Teams-certified LCP phone devices now support device-based sign-in using username and password. Users can now use T9 keyboard to type in credentials for sign-in. 
-
-- **Answer on pick up setting**: This setting allows users to enable or disable automatic call answering when the handset is lifted or the speaker button is pressed. The default setting is enabled and can be accessed under Calling settings. This setting is also applicable to incoming call behavior on line keys. 
-
-- **Updates to shared line call behavior on line keys**: Shared line keys now let users make outgoing calls for the boss if available. Pressing the boss’s line key provides a dial tone and lets users select the caller, with access to the dial pad and search options. This is applicable to touch devices and sidecar.  
-
-- **Location inference for PSTN users in India**: To meet regulations, PSTN users in India cannot make or receive calls if their location is unknown or outside India. 
-
-- App also includes multiple bug fixes and improvements. Bug fixes impacting user experience are:
-
-  - Fixed an issue where caller username was not being displayed in the calling stage.
-    
-  - Fixed an issue on contacts disappearing on sidecars.
-    
-  - Fixed an issue on common area phones being tagged as user phones after enabling hotline.
-    
 ## June 30, 2025
 
 **Applies to:** *Teams app version: 1449/1.0.94.2025168802* (Poly, Yealink and Audiocodes)

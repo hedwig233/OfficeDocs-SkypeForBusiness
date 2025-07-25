@@ -26,5 +26,22 @@ Line keys allow users to quickly access contacts or perform call-related actions
 
 ### Steps to configure for Common Area Phones 
 
-Common Area Phones are used in a shared space, such as a lobby or a building reception. To avoid unauthorized users assigning or managing line keys, with this update going forward the experience will only be allowed from TAC and admins will have full control over line key configurations.
+Common Area Phones are used in a shared space, such as a lobby or a building reception. **To prevent unauthorized line key changes, configuration will now be restricted to TAC, giving admins full control.**
 
+Step 1: Update the phone device and check for default settings 
+
+- Navigate to **Settings > Calling > Line Keys Settings** on the device.
+
+- Ensure **Allow admin override** and **Hide unassigned line keys** are enabled and ON by default.
+
+Step 2: On TAC, create a configuration profile
+
+- Sign in to https://admin.teams.microsoft.com/.
+
+- Go to **Teams Devices > Phones > Configuration Profile > Add Profile**.
+
+- Scroll to the **Line Keys** section.
+
+- Toggle **Configure line keys** to ON. 
+
+- 

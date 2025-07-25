@@ -58,5 +58,5 @@ Step 2: On TAC, create a configuration profile
   
 - **Save** the configuration profile. 
 
-- Apply the configuration profile to selected devices. 
+- **Apply** the configuration profile to selected devices. 
 

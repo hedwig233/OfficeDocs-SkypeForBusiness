@@ -347,5 +347,6 @@ If you're a manufacturer and want to join the certification program, see [How to
 
 | **Manufacturer**      | **Model**                                                    | **Qualified**       | **Certified Program**                                           |
 |:--------------------|:----------------------------------------------------------|:---------------|:-------------------------------------------------------|
+|Logitech|Zone Vibe Wireless                                                 |7/23/2025        |Certified for Microsoft Teams                             |
 |Logitech|Zone 305                                                           |4/4/2025         |Certified for Microsoft Teams                             | 
 |Logitech|Zone Wireless 2 Headset                                            |01/13/2025       |Certified for Microsoft Teams                             |

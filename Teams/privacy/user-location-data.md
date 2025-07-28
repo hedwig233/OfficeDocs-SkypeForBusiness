@@ -10,6 +10,7 @@ audience: ITPro
 ms.collection: 
 - privacy-teams
 - must-keep
+- trust-pod
 hideEdit: true
 description: Learn about an updated user location consent experience in Microsoft Teams, including what dialogs and settings are available to Teams users and effect.
 ms.localizationpriority: medium

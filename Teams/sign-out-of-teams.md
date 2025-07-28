@@ -14,6 +14,7 @@ ms.custom: seo-marvel-apr2020
 ms.localizationpriority: high
 ms.collection: 
   - M365-collaboration
+  - trust-pod
 f1.keywords:
 - NOCSH
 appliesto: 
@@ -22,9 +23,9 @@ appliesto:
 
 # Sign out of Microsoft Teams
 
-It's a good idea to remain signed in to Microsoft Teams to ensure you don't miss incoming calls, chat messages, meeting starts, and other notifications. The new Teams desktop app supports multiple accounts side-by-side, removing the need to sign out and sign back in. [Learn more about New Teams](/microsoftteams/new-teams-desktop-admin).
+It's a good idea to remain signed in to Microsoft Teams to ensure you don't miss incoming calls, chat messages, meeting starts, and other notifications. The new Teams desktop app supports multiple accounts side by side, removing the need to sign out and sign back in. [Learn more about New Teams](/microsoftteams/new-teams-desktop-admin).
 
-However, there are times where users might need to sign out of Teams, for example when they’re using a device that is shared with another person. Signing out should always be initiated by end-users, from inside the Teams app, and Microsoft recommends against using custom scripts that attempt to programmatically sign out users. Things are a bit different for [Shared Device Mode: Global sign-in and sign-out for Frontline](#shared-device-mode-global-sign-in-and-sign-out-for-frontline) which is described later in this article.
+However, there are times where users might need to sign out of Teams, for example when they’re using a device that is shared with another person. Signing out should always be initiated by end users, from inside the Teams app, and Microsoft recommends against using custom scripts that attempt to programmatically sign out users. Things are a bit different for [Shared Device Mode: Global sign in and sign out for Frontline](#shared-device-mode-global-sign-in-and-sign-out-for-frontline) which is described later in this article.
 
 ## Sign out of Teams on the web
 
@@ -39,7 +40,7 @@ To sign out of the Teams desktop app, users should select their profile picture 
 ### Account sharing between apps
 
 Modern operating systems allow sharing of accounts between different apps on a device. This is referred to as single sign-on (SSO), and it’s designed to help users seamlessly navigate between different apps with the same account.  
-SSO has an important impact on sign out: when users sign out of the Teams desktop app, the data associated with their account is removed from the Teams app but the account itself isn’t removed from the device. Users will need  to reenter their credentials if they sign back in to Teams with the same account, but other apps on the device may continue to have access to their account. This means that signing out of Teams doesn't prevent other users from accessing the data associated with your account.
+SSO has an important impact on sign out: when users sign out of the Teams desktop app, the data associated with their account is removed from the Teams app but the account itself isn’t removed from the device. Users will need  to reenter their credentials if they sign back in to Teams with the same account, but other apps on the device might continue to have access to their account. This means that signing out of Teams doesn't prevent other users from accessing the data associated with your account.
 
 ### “This app only” mode on Windows
 
@@ -62,9 +63,9 @@ On mobile, users can sign out of Teams by tapping their profile icon, selecting�
 
 ## Shared Device Mode: Global sign-in and sign-out for Frontline
 
-Microsoft’s Shared Device Mode (SDM) allows mobile devices to be optimized for fast check-in/check-out by Frontline Workers. When a device is enabled for SDM, sign-out work differently on Teams.
+Microsoft’s Shared Device Mode (SDM) allows mobile devices to be optimized for fast check-in/check-out by Frontline Workers. When a device is enabled for SDM, sign out work differently on Teams.
 
-With SDM, users can pick any device from a shared device pool and sign in as usual to "make it theirs" for the duration of their shift. At the end of the shift, they should tap on Sign out as usual, but with SDM a global sign-out will be initiated on the device, which should remove the user's  account and data from the device, so it can be returned to the device pool.
+With SDM, users can pick any device from a shared device pool and sign in as usual to "make it theirs" for the duration of their shift. At the end of the shift, they should tap on Sign out as usual, but with SDM a global sign out will be initiated on the device, which should remove the user's  account and data from the device, so it can be returned to the device pool.
 
 **Android**: To learn how to set up android devices in Shared Device Mode, see [How to use a shared device mode in Android](/azure/active-directory/develop/tutorial-v2-shared-device-mode#set-up-an-android-device-in-shared-mode).
 

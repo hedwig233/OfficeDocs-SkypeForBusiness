@@ -42,8 +42,6 @@ With Microsoft Teams admin center, you can:
 
  :::image type="content" source="media/teams-admin-center-overview.png" alt-text="Teams admin center overview page." lightbox="media/teams-admin-center-overview.png" border="false":::
 
-To see what Teams Rooms console settings you can change from the Teams admin center, see [Make changes to Teams Rooms devices](rooms/rooms-manage.md#make-changes-to-teams-rooms-devices-or-surface-hubs).
-
 To see information about Teams Rooms consoles, including health information, meeting details, and participant details, see [View device information](rooms/rooms-manage.md#view-device-information).
 
 For information about resetting Teams Rooms consoles, using Group Policies to configure consoles, accessing Admin mode when at the console, and so on, see [Microsoft Teams Rooms maintenance and operations](rooms/rooms-operations.md).

@@ -49,13 +49,13 @@ This step must be performed on the Exchange server. It creates a mail user and a
 Specify a verified domain for your Exchange organization. This domain should be the same domain used as the primary Simple Mail Transfer Protocol (SMTP) domain used for the on-premises Exchange accounts. This domain is referred as `<your Verified Domain>` in the following procedure. Also, the `<DomainControllerFQDN>` should be the fully qualified domain name (FQDN) of a domain controller.
 
 ```powershell
-$user = New-MailUser -Name "TeamsScheduler" -ApplicationAccount -ExternalEmailAddress "TeamsScheduler-ApplicationAccount@<your Verified Domain>" -DomainController <DomainControllerFQDN>
+$user = New-MailUser -Name "TeamsScheduler-ApplicationAccount" -ExternalEmailAddress "TeamsScheduler-ApplicationAccount@<your Verified Domain>" -DomainController <DomainControllerFQDN>
 ```
 
 This command hides the new mail user from address lists:
 
 ```powershell
-Set-MailUser -Identity $user.Identity -HiddenFromAddressListsEnabled $true -DomainController <DomainControllerFQDN>
+Set-MailUser -Identity $user.UserPrincipalName -HiddenFromAddressListsEnabled $true -DomainController <DomainControllerFQDN>
 ```
 
 Create a new role based on the `UserApplication` role:
@@ -67,13 +67,13 @@ New-ManagementRole -Name "TeamsSchedulerRole" -Parent "UserApplication" -DomainC
 Remove all cmdlets from the new role except [GetDelegate](/exchange/client-developer/web-service-reference/getdelegate), as this is the only command required by the scheduling (delegation) service:
 
 ```powershell
-Get-ManagementRoleEntry "TeamsSchedulerRole\*" -DomainController <DomainControllerFQDN> | Where-Object { $_.Name -ne "GetDelegate" } | Remove-ManagementRoleEntry -DomainController <DomainControllerFQDN>
+Get-ManagementRoleEntry "TeamsSchedulerRole\*" -DomainController <DomainControllerFQDN> | Where-Object { $_.Name -ne "GetDelegate" } | ForEach-Object { Remove-ManagementRoleEntry -Identity "TeamsSchedulerRole\$($_.Name)" -DomainController <DomainControllerFQDN> -Confirm:$false }
 ```
  
 Assign the `TeamsSchedulerRole` role to the new account:
 
 ```powershell
-New-ManagementRoleAssignment -Role "TeamsSchedulerRole" -User $user.Identity -DomainController <DomainControllerFQDN>
+New-ManagementRoleAssignment -Role "TeamsSchedulerRole" -User $user.UserPrincipalName -DomainController <DomainControllerFQDN>
 ```
 
 ### Step 3: Create and enable the legacy Skype for Business Online integration
@@ -84,7 +84,7 @@ New-ManagementRoleAssignment -Role "TeamsSchedulerRole" -User $user.Identity -Do
 Create a new partner application using the account you previously created in [Step 2](#step-2-create-a-new-mail-user-account-used-by-microsoft-teams-calendar-scheduler-service). Run the following command in the Exchange Management Shell (EMS) within your on-premises Exchange organization:
 
 ```powershell
-New-PartnerApplication -Name "SfBOnline" -ApplicationIdentifier "00000004-0000-0ff1-ce00-000000000000" -Enabled $true -LinkedAccount $user.Identity
+New-PartnerApplication -Name "SfBOnline" -ApplicationIdentifier "00000004-0000-0ff1-ce00-000000000000" -Enabled $true -LinkedAccount $user.UserPrincipalName
 ```
 
 ### Step 4: Create and enable a Partner Application for Teams Calendar Scheduler Service integration
@@ -95,7 +95,7 @@ To do this, create a new partner application for the `Teams Calendar Scheduler S
 This application makes use of the account you previously created in [Step 2](#step-2-create-a-new-mail-user-account-used-by-microsoft-teams-calendar-scheduler-service):
 
 ```powershell
-New-PartnerApplication -Name "TeamsScheduler" -ApplicationIdentifier "7557eb47-c689-4224-abcf-aef9bd7573df" -Enabled $true -LinkedAccount $user.Identity
+New-PartnerApplication -Name "TeamsScheduler" -ApplicationIdentifier "7557eb47-c689-4224-abcf-aef9bd7573df" -Enabled $true -LinkedAccount $user.UserPrincipalName
 ```
 
 ### Step 5: Create and enable a Partner Application for Cloud Voicemail integration

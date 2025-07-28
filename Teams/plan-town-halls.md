@@ -130,7 +130,7 @@ If you've been using live events for your organization, you might want to unders
 |Modern group support|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 |External presenters|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 |Who can present|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|*In development*|*In development*|
-|Who can produce|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|*In development*|*In development*|
+|Who has control of production tools|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 |Co-organizer capacity|N/A|10|10|
 |Presenter capacity (including external presenters)|100|100|100|
 |**Interactivity**||||
@@ -164,7 +164,7 @@ If you've been using live events for your organization, you might want to unders
 |Real time insights|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 |Video on Demand (VOD)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 |**Devices**||||
-|Microsoft Teams Rooms (Windows) support for presenters and attendees<sup>1</sup>|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|*In development*|*In development*|
+|Microsoft Teams Rooms (Windows) support for presenters and attendees<sup>1</sup>|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 |Microsoft Teams Rooms (Android) support for presenters and attendees<sup>1</sup>|![Image of a x for no](/office/media/icons/cancel-teams.png)|*In development*|![Image of a x for no](/office/media/icons/cancel-teams.png)|
 |Cloud Video Interop (CVI) support|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 |Sharepoint embedded support|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
@@ -195,6 +195,7 @@ You and your organizers have different policies and settings to control the town
 |[Audio and video](meeting-policies-audio-and-video.md)|Can manage the availability and use of audio and video for presenters and organizers.| Only presenters and organizers can use their audio and video. Attendees can't share their audio or video, but interact through Q&A.|
 |[Chat for attendees (Teams Premium)](town-hall-chat.md)|Can manage whether town hall organizers with a Teams Premium license can turn on chat for their attendees.|Can decide whether attendees can chat during town halls if their admin's policy allows it.|
 |[Chat for organizers, co-organizers, and presenters](manage-meeting-chat.md)|Can manage whether organizers, presenters, and co-organizers can read and write messages to each other during town halls.|Can chat with presenters and co-organizers. Attendees don't use this chat during town halls. To learn how attendees can use chat during town halls, see [Manage meeting chat for Microsoft Teams town halls](town-hall-chat.md).|
+|[Cloud Video Interop(CVI)](cloud-video-interop.md)|Can manage whether your organization uses CVI, a Microsoft Qualified third-party solution that enables third-party SIP and H.323 video room devices (VTCs) to join Microsoft Teams town halls and meetings.|To allow presenters to join and present in Teams town halls using their own Video Teleconferencing (VTC) devices, organizers can share CVI join codes directly from the town hall’s share event dialog.|
 |[Compliance recording](teams-recording-policy.md)|Can implement an admin policy for automatic recording.|No control|
 |[Content sharing](meeting-policies-content-sharing.md)|Can control sharing mode, who can request control, and can set a default for who can present.|Can control who can present among presenters, organizers, and co-organizers. Attendees can't share content in town halls.|
 |[Convenience recording](meeting-recording.md)|Can allow or prevent recording and set recording expiration time.|If the admin allows recording, organizers can manage who can record (Teams Premium) and automatic recording.|

@@ -20,9 +20,7 @@ Line keys allow users to quickly access contacts or perform call-related actions
 
 ### App version requirements
 
-- Teams Phone App: <Insert app version>
-
-- Teams Admin Center (TAC): <Insert>
+- Teams Phone App: 1449/1.0.94.2025248901 or later
 
 ### Steps to configure  
 

@@ -181,6 +181,7 @@ The following devices are certified under the Microsoft Teams Rooms peripherals 
 | [Aver PTZ211 Camera](https://www.averusa.com/products/ptz-camera/ptz211) | 0.0.0001.50 |  |  |||
 | [Aver PTZ231 Camera](https://www.averusa.com/products/ptz-camera/ptz231) | 0.0.0001.50  |  |  |||
 | [Aver PTZ310UV2 Camera](https://averusa.com/products/ptz-camera/ptz310uv2) | 0.0.0001.50 |  |  |||
+| [Aver PTZ330UV2 Camera](https://www.averusa.com/products/ptz-camera/ptz330uv2) | 0.0.0000.56 |  |  |||
 | [Aver TR211 Camera](https://www.averusa.com/products/ptz-camera/tr211) | 0.0.0001.50 |  |  |||
 | [Aver TR313V2 Camera](https://www.averusa.com/products/ptz-camera/tr313v2) | 0.3.0011.38 |  |  |||
 | [Aver TR315 Camera](https://www.averusa.com/products/ptz-camera/tr315) | 0.0.0001.50 |  |  |||

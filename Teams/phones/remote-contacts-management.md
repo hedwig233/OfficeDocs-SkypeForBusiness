@@ -56,7 +56,7 @@ You must have mailbox permissions to manage contacts for Teams Devices accounts.
 
 ![PermissionError.](media/remote-contacts-management/image.png)
 
-In these situations, refer to the Mailbox Permission Script Execution Guide provided below and add the necessary permissions to the relevant accounts.
+In these situations, refer to the Mailbox Permission Script Execution Guide and add the necessary permissions to the relevant accounts.
 
 ### Mailbox Permission Script Execution Guide
 
@@ -87,7 +87,7 @@ Running the Script
 #Install and import the Exchange Online module if not already installed
 Install-Module -Name ExchangeOnlineManagement -Scope CurrentUser -Force Import-Module ExchangeOnlineManagement
 
-#Prompt for admin UPN (user principal name) only (no password)
+#Prompt for admin user principal name only (no password)
 $adminUser = Read-Host "Enter the Admin User UPN (e.g., 
 
 #Prompt for CSV file path (no double quotes in the file path)
@@ -109,7 +109,7 @@ Write-Host "Script completed. Check $logPath for details."
 
 ```
 
-- Enter the Admin User UPN when prompted.
+- Enter the Admin User principal name (UPN) when prompted.
 
 - Enter the full path to your CSV file when prompted.
 
@@ -119,13 +119,13 @@ Write-Host "Script completed. Check $logPath for details."
 
 - The script connects to Exchange Online using your admin account (supports MFA).
 
-- It reads each row in your CSV file.
+- The script reads each row in your CSV file.
 
-- If the (User principal name) UPN is missing, it logs logs a SKIPPED entry with the Serial Number.
+- When the (User principal name) UPN is missing, it logs a SKIPPED entry with the Serial Number.
 
-- If the UPN is present, it attempts to grant FullAccess permission.
+- When the UPN is present, it attempts to grant "FullAccess" permission.
 
-- Logs SUCCESS or ERROR for each attempt in mailbox_permission_log.txt.
+- The script logs SUCCESS or ERROR for each attempt in mailbox_permission_log.txt.
 
 **Sample Log Entries**
 
@@ -155,4 +155,4 @@ If you have any questions or need further assistance, contact your IT support te
 
 #### Known Issue
 
-When organizational contacts with both email and phone numbers are pushed from Teams admin center, calls will route to their phone number instead of the Teams client. We are investigating this issue and will provide updates when resolved. Please note, this issue doesn’t affect organizational contacts without phone numbers or external contacts
+When organizational contacts with both email and phone numbers are pushed from Teams admin center, calls route to their phone number instead of the Teams client. We are currently investigating this issue. Note that this issue doesn’t affect organizational contacts without phone numbers or external contacts

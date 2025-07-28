@@ -117,13 +117,13 @@ Write-Host "Script completed. Check $logPath for details."
 
 **Script Behavior**
 
-- Connects to Exchange Online using your admin account (supports MFA).
+- The script connects to Exchange Online using your admin account (supports MFA).
 
-- Reads each row in your CSV file.
+- It reads each row in your CSV file.
 
-- If the (User principal name) UPN is missing, logs a SKIPPED entry with the Serial Number.
+- If the (User principal name) UPN is missing, it logs logs a SKIPPED entry with the Serial Number.
 
-- If the UPN is present, attempts to grant FullAccess permission.
+- If the UPN is present, it attempts to grant FullAccess permission.
 
 - Logs SUCCESS or ERROR for each attempt in mailbox_permission_log.txt.
 

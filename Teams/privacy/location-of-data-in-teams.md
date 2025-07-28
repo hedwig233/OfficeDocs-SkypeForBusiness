@@ -3,7 +3,7 @@ title: Location of data in Microsoft Teams
 ms.author: danbrown
 author: DHB-MSFT
 manager: dansimp
-ms.topic: reference
+ms.topic: concept-article
 audience: admin
 ms.service: msteams
 ms.reviewer: kehardy
@@ -17,6 +17,7 @@ ms.collection:
   - M365-collaboration
   - privacy-teams
   - must-keep
+  - trust-pod
 appliesto: 
   - Microsoft Teams
 ms.custom: seo-marvel-apr2020

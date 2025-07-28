@@ -10,6 +10,7 @@ audience: ITPro
 ms.collection: 
 - privacy-teams
 - must-keep
+- trust-pod
 hideEdit: true
 ms.localizationpriority: high
 ms.date: 06/25/2025

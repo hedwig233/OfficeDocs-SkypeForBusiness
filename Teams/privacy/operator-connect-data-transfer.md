@@ -5,7 +5,7 @@ author: DHB-MSFT
 manager: dansimp
 ms.reviewer: 
 ms.date: 05/27/2021
-ms.topic: article
+ms.topic: concept-article
 audience: admin
 ms.service: msteams
 search.appverid: MET150
@@ -16,7 +16,8 @@ f1.keywords:
 ms.collection: 
   - M365-collaboration
   - privacy-teams
-  - must-keep
+  - must-keep  
+  - trust-pod
 appliesto: 
   - Microsoft Teams
 ---

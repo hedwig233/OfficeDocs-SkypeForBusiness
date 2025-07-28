@@ -91,6 +91,7 @@ The plugin MSI automatically detects the CWA installation folder and places MsTe
 
 |Release note version |Details  |
 |---------------------|---------|
+|2025.24.1.3          |July 2025</br>-Thin Clients that use [Unified Write Filters with RAM Overlay](/windows/configuration/unified-write-filter/uwfoverlay) might experience SlimCore MSIX installation errors if Environment (System) variables are prevented to write on disk. This plugin fixes this problem. It additionally supports HID disabling by creating a registry key in the Virtual Machine (see section 'Peripherals in VDI')|
 |2025.14.1.8          |May 2025</br>-The plugin can now download SlimCore packages that are 64-bit, increasing performance.|
 |2024.41.1.1          |October 2024</br>-When using SlimCore in multimonitor setups, a Citrix user is unable to share entire screen or individual monitors.</br>-Attempts a [Reset-AppxPackage](/PowerShell/module/appx/reset-appxpackage) if SlimCoreVdi MSIX package registrations fail after the virtual channel is established. |
 |2024.32.X.X          |August 2024</br>-The plugin now attempts a Reset-AppxPackage for SlimCoreVdi MSIX package in the event the AppExecution alias is missing. |
@@ -445,7 +446,7 @@ Customers with Thin Clients with [Unified Write Filters](/windows/configuration/
   - Stopping and resharing the window should resolve the issue.
   - This issue is resolved in new Teams 24335.206.X.X or higher versions.
 - If you're on a video call and you open the Start menu on the virtual machine, a blank screen shows in the Teams meeting window instead of the video feed.
-- In CQD, VdiMode (x2xx) represents both VDI SlimCore Optimized and Unoptimized Fallback, which may misattribute poor call quality.
+- In CQD, VdiMode (x2xx) represents both VDI SlimCore Optimized and Unoptimized Fallback, which may misattribute poor call quality. See [CQD Section for more details](/microsoftteams/vdi-2#call-quality-dashboard-in-vdi)
   
 ## Cross Cloud Collaboration
  
@@ -511,7 +512,7 @@ SlimCore-based optimization supports Human Interface Devices (HID) for [Teams ce
 > See the Known Issues section.
 >
 > As a workaround, HID can be disabled via registry key on Teams 25060.205.3499.6849 or higher, where the key can be created on the endpoint.
-> (The key can also be created on the VM if you have the 2025.14.1.8 Plugin (Citrix), or the Remote Desktop client 1.2.6275 / Windows App 2.0.550.0).
+> (The key can also be created on the VM if you have the 2025.24.1.3 Plugin (Citrix), or the Remote Desktop client 1.2.6275 / Windows App 2.0.550.0).
 >
 > HKEY_CURRENT_USER\Software\Microsoft\Teams\HID
 >
@@ -559,7 +560,7 @@ VDI user information is now exposed through numerous dimensions and filters. Che
 > The new Quality of Experience (QER) template is available in the Power BI query templates for CQD download. Version 8 now includes templates for reviewing VDI client-focused metrics.
 
 > [!IMPORTANT]
-> In CQD, the VdiMode value (x2xx) represents both VDI SlimCore Optimized and VDI SlimCore Not Connected (Unoptimized Fallback). This duplication can lead to misinterpretation, as poor call quality in an unoptimized session may appear to be an issue with VDI SlimCore Optimization. We're working to address this limitation in telemetry. For now, we recommend you use Teams logs to verify the actual optimization status.
+> In CQD, the dimension 'Second Client VDI Mode' VdiMode value (x2xx) represents both VDI SlimCore Optimized and VDI SlimCore Not Connected (Unoptimized Fallback). This duplication can lead to misinterpretation, as poor call quality in an unoptimized session may appear to be an issue with VDI SlimCore Optimization. The dimension 'Second Client VDI Is Optimized' is the accurate way to display if the user was optimized or not, as this dimension computes an end-to-end resulting value between VDI Mode and 'Second Client VDI Connected State'. End to end optimization with SlimCore happens when Connected State is 'Connected'.
 
 #### Query fundamentals
 

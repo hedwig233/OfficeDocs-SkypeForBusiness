@@ -64,13 +64,13 @@ After the configuration profile is applied to the chosen devices, assigned and c
 
 ![image](media/configuring-line-keys-tac/image.png)
 
-*Assigned line key appears on touch phone devices*
+*Line Keys screen with Wanda Howard and added line key notification on touch devices*
 
 ![image](media/configuring-line-keys-tac/image1.png)
 
-*Assigned line key appears on non-touch phone devices*
+*Line Keys screen with Wanda Howard and added line key notification on non-touch devices*
 
 ![image](media/configuring-line-keys-tac/image2.png)
 
-*Assigned line keys appear on connected sidecar devices*
+*Line Keys screen with Wanda Howard and added line key notification on sidecar connected devices*
 

@@ -16,7 +16,7 @@ ms.subservice: itpro-devices
 
 This article provides a comprehensive guide for IT administrators to configure line keys on Microsoft Teams-certified phone devices using the Teams Admin Center (TAC). 
 
-Line keys allow users to quickly access contacts or perform call-related actions. Admins can centrally configure these keys via TAC for both Common Area Phones (CAP) and personal Teams phones. The configuration experience is tailored to device types and user roles, ensuring flexibility and control. The configuration is available for both common area phones, those with a Teams Shared Device License and personal phones, those with a Teams Phone License, for more information, see [How to Deploy Teams Phone Devices](https://techcommunity.microsoft.com/blog/microsoftteamsblog/how-to-deploy-teams-phone-devices/3994979).
+Line keys allow users to quickly access contacts or perform call-related actions. Admins can centrally configure these keys via TAC for both Common Area Phones (CAP) and personal Teams phones. The configuration experience is tailored to device types and user roles, ensuring flexibility and control. The configuration is available for both common area phones, with a Teams Shared Device License and personal phones, with a Teams Phone License, for more information, see [How to Deploy Teams Phone Devices](https://techcommunity.microsoft.com/blog/microsoftteamsblog/how-to-deploy-teams-phone-devices/3994979).
 
 ### App version requirements
 
@@ -46,7 +46,7 @@ Step 2: On TAC, create a configuration profile
 
 - You can choose to follow either of the options to configure line keys now:
 
-  - If you enable Device Profile Template, use the **Phones tab** to configure line keys on touch and non-touch devices and **Sidecar tab** for connected sidecar devices. Complete the remaining steps below to configure line keys:
+  - If you enable Device Profile Template, use the **Phones tab** to configure line keys on touch and non-touch devices and **Sidecar tab** for connected sidecar devices. Complete the remaining steps to configure line keys:
   
     - Using the drop-down choose the device or sidecar model you wish to configure line keys for.
         

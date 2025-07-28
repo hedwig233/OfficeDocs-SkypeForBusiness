@@ -54,7 +54,7 @@ To manage contacts on Teams phones through the Teams admin center, follow these 
 
 You must have mailbox permissions to manage contacts for Teams Devices accounts. Without these permissions, you encounter an error in Teams admin center when attempting to view or add contacts.
 
-![PermissionError.](media/remote-contacts-management/image.png)
+![Screenshot showing PermissionError.](media/remote-contacts-management/image.png)
 
 In these situations, refer to the Mailbox Permission Script Execution Guide and add the necessary permissions to the relevant accounts.
 
@@ -73,7 +73,7 @@ This guide provides step-by-step instructions for an admin user to execute a Pow
 **Export the Common area phones inventory from Teams admin center**
 
 Export and Download the CSV file from Common area phones screen.  
-![Export.](media/remote-contacts-management/image1.png)
+![Screenshot showing export option in Teams admin center.](media/remote-contacts-management/image1.png)
 
 Running the Script
 
@@ -155,4 +155,4 @@ If you have any questions or need further assistance, contact your IT support te
 
 #### Known Issue
 
-When organizational contacts with both email and phone numbers are pushed from Teams admin center, calls route to their phone number instead of the Teams client. We are currently investigating this issue. Note that this issue doesn’t affect organizational contacts without phone numbers or external contacts
+When organizational contacts with both email and phone numbers are pushed from Teams admin center, calls route to their phone number instead of the Teams client. We are currently investigating this issue. Note that this issue doesn’t affect organizational contacts without phone numbers or external contacts.

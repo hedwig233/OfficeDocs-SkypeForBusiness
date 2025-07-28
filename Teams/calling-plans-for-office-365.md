@@ -78,7 +78,7 @@ There are two Domestic Calling Plan options to choose from based on your organiz
 
 - **Microsoft Teams Domestic Calling Plan (customers in US/UK/CA)**: For organizations in the United States, Puerto Rico, United Kingdom, and Canada. Organizations can assign this license to end users in any market where Calling Plans are available.  
 
-- **Microsoft Teams Domestic Calling Plan (customers outside US/UK/CA)**: For organizations in Australia (through Telstra), Austria, Belgium, Croatia, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hong Kong SAR, Hungary, Ireland, Italy, Japan (through Softbank), Latvia, Lithuania, Luxembourg, Netherlands, New Zealand, Norway, Poland, Portugal, Romania, Singapore, Slovakia, Slovenia, South Africa, Spain, Sweden, and Switzerland. Organizations can assign this license to end users in any market where Calling Plans are available. 
+- **Microsoft Teams Domestic Calling Plan (customers outside US/UK/CA)**: For organizations in Austria, Belgium, Croatia, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hong Kong SAR, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Netherlands, New Zealand, Norway, Poland, Portugal, Romania, Singapore, Slovakia, Slovenia, South Africa, Spain, Sweden, and Switzerland. Organizations can assign this license to end users in any market where Calling Plans are available. 
 
 Once these plans are assigned, the minutes available vary depending on the location of the end user. For more information, see [Country and region availability for Audio Conferencing and Calling Plans](calling-plan-overview.md).  
 

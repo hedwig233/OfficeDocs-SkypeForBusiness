@@ -16,7 +16,7 @@ ms.subservice: itpro-devices
 
 This article provides a comprehensive guide for IT administrators to configure line keys on Microsoft Teams-certified phone devices using the Teams Admin Center (TAC). 
 
-Line keys allow users to quickly access contacts or perform call-related actions. Admins can centrally configure these keys via TAC for both Common Area Phones (CAP) and personal Teams phones. The configuration experience is tailored to device types and user roles, ensuring flexibility and control. The configuration is available for both common area phones, those with a Teams Shared Device License and personal phones, those with a Teams Phone License, for more details see [How to Deploy Teams Phone Devices](https://techcommunity.microsoft.com/blog/microsoftteamsblog/how-to-deploy-teams-phone-devices/3994979).
+Line keys allow users to quickly access contacts or perform call-related actions. Admins can centrally configure these keys via TAC for both Common Area Phones (CAP) and personal Teams phones. The configuration experience is tailored to device types and user roles, ensuring flexibility and control. The configuration is available for both common area phones, those with a Teams Shared Device License and personal phones, those with a Teams Phone License, for more information, see [How to Deploy Teams Phone Devices](https://techcommunity.microsoft.com/blog/microsoftteamsblog/how-to-deploy-teams-phone-devices/3994979).
 
 ### App version requirements
 
@@ -50,7 +50,7 @@ Step 2: On TAC, create a configuration profile
   
     - Using the drop-down choose the device or sidecar model you wish to configure line keys for.
         
-    - Assign line keys for each position. If the model chosen is a touch device, speed dials, shared line and call queues are available to be assigned. If the model chosen is a non-touch device, only speed dials are available to be assigned. For sidecars connected to touch devices, speed dials, shared line and call queues are available to be assigned.
+    - Assign line keys for each position. If the model chosen is a touch device, speed dials, shared line, and call queues are available to be assigned. If the model chosen is a nontouch device, only speed dials are available to be assigned. For sidecars connected to touch devices, speed dials, shared line, and call queues are available to be assigned.
         
   - If you do not enable Device Profile Template, simply assign line keys for positions you wish to use.
     
@@ -68,7 +68,7 @@ After the configuration profile is applied to the chosen devices, assigned and c
 
 ![image](media/configuring-line-keys-tac/image1.png)
 
-*Line Keys screen with Wanda Howard and added line key notification on non-touch devices*
+*Line Keys screen with Wanda Howard and added line key notification on nontouch devices*
 
 ![image](media/configuring-line-keys-tac/image2.png)
 

@@ -1811,6 +1811,8 @@ items:
                       href: rooms/managed-meeting-rooms-portal.md
                     - name: Audit logs for activities
                       href: rooms/multi-tenant-auditing.md
+                    - name: Shared Spaces Insights
+                      href: rooms/shared-spaces-insights.md
                     - name: Health reports
                       href: rooms/health-reports.md
                     - name: Usage reports

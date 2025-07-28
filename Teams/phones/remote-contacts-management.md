@@ -52,7 +52,7 @@ To manage contacts on Teams phones through the Teams admin center, follow these 
   
 #### Permissions to manage contacts:
 
-You must have mailbox permissions to manage contacts for Teams Devices accounts. Without these permissions, you encounter an error in TAC when attempting to view or add contacts.
+You must have mailbox permissions to manage contacts for Teams Devices accounts. Without these permissions, you encounter an error in Teams admin center when attempting to view or add contacts.
 
 ![PermissionError.](media/remote-contacts-management/image.png)
 
@@ -70,9 +70,9 @@ This guide provides step-by-step instructions for an admin user to execute a Pow
 
 - PowerShell script file (grant_mailbox_permissions.ps1)
 
-**Export the Common area phones inventory from TAC**
+**Export the Common area phones inventory from Teams admin center**
 
-Export and Download the CSV file from TAC Common area phones screen.  
+Export and Download the CSV file from Common area phones screen.  
 ![Export.](media/remote-contacts-management/image1.png)
 
 Running the Script
@@ -87,7 +87,7 @@ Running the Script
 #Install and import the Exchange Online module if not already installed
 Install-Module -Name ExchangeOnlineManagement -Scope CurrentUser -Force Import-Module ExchangeOnlineManagement
 
-#Prompt for admin UPN only (no password)
+#Prompt for admin UPN (user principal name) only (no password)
 $adminUser = Read-Host "Enter the Admin User UPN (e.g., 
 
 #Prompt for CSV file path (no double quotes in the file path)
@@ -121,7 +121,7 @@ Write-Host "Script completed. Check $logPath for details."
 
 - Reads each row in your CSV file.
 
-- If the UPN is missing, logs a SKIPPED entry with the Serial Number.
+- If the (User principal name) UPN is missing, logs a SKIPPED entry with the Serial Number.
 
 - If the UPN is present, attempts to grant FullAccess permission.
 
@@ -155,5 +155,4 @@ If you have any questions or need further assistance, contact your IT support te
 
 #### Known Issue
 
-When organizational contacts with both email and phone numbers are pushed from TAC, calls will route to their phone number instead of the Teams client. We are investigating this issue and will provide updates when resolved. Please note, this issue doesn’t affect organizational contacts without phone numbers or external contacts
-
+When organizational contacts with both email and phone numbers are pushed from Teams admin center, calls will route to their phone number instead of the Teams client. We are investigating this issue and will provide updates when resolved. Please note, this issue doesn’t affect organizational contacts without phone numbers or external contacts

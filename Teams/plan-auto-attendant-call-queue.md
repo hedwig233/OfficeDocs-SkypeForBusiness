@@ -120,11 +120,43 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 > <details>
 > <summary>For Calling Plan customers who received MCxxxxx</summary>
 > 
-> Some text here
+> Starting November 1, 2025, a [Pay-As-You-Go](calling-plans-for-office-365.md#pay-as-you-go-calling-plan) license will be required for Teams Voice Applications (Call Queues and Auto Attendants) Resource Accounts that use Calling Plan numbers for outbound PSTN calls.
+>
+> This includes call queue agents calling on behalf of a resource account, call queues with callback configured, auto attendants and call queues that transfer calls externally, and calls made via Graph API or Phone System extensibility.
+> Please update your licensing in the [Microsoft 365 Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339) to ensure uninterrupted service for these on-behalf-of outbound PSTN calling scenarios before November 1st, 2025.
+> 
+> The following scenarios will require a Pay-As-You-Go license:
+>  - Outbound PSTN calls made by Teams Call Queue agents on behalf of a Resource Account
+>  - Outbound PSTN calls made by Auto Attendants or Call Queues
+>  - Callback PSTN calls initiated from Teams Call Queue or Teams Auto Attendant
+>  - On-behalf-of calls made via Graph API and Phone System Extensibility
+>
+> **If Pay-As-You-Go licenses are not assigned to the relevant Call Queue or Auto Attendant Resource Accounts by November 1, 2025, outbound calls will fail.**
+> 
+> As of today, Pay-As-You-Go licenses can be added to your organization and linked to the relevant Resource Accounts. They serve as a backup—automatically covering calls when your minute-based Calling Plan runs out or when calls are made to destinations not included in the Calling Plan coverage.
+>
+> On November 1st, 2025, Pay-As-You-Go licenses will be exclusively used to support on-behalf-of outbound PSTN calls.
+> 
+> Alternatively, organizations may opt to fully transition to Pay-As-You-Go licenses immediately.
+>  
+> - To learn more about Pay-As-You-Go plans, see [Pay-As-You-Go Calling Plan](./calling-plans-for-office-365#pay-as-you-go-calling-plan.md)
+> - To buy a Pay-As-You-Go calling plan license, see [How to buy Calling Plans](./calling-plans-for-office-365#how-to-buy-calling-plans.md)
+>   - For purchasing with a Microsoft Customer Agreement, see [Enable pay-as-you-go for your subscription](/microsoft-365/commerce/subscriptions/manage-pay-as-you-go-services.md)
+>   - For purchasing in New Commerce, see [Telco pay-as-you-go overage in new commerce](/partner-center/new-commerce-telco-payg.md)
+> - To assign a Pay-As-You-Go license to a Resource Account, see [Assign Teams add-on licenses to users](./teams-add-on-licensing/assign-teams-add-on-licenses.md)
+>
+> To ensure uninterrupted service, please complete the following steps before November 1, 2025:
+>
+> 1.	Assign a Pay-As-You-Go license to all Call queue resource accounts that are configured to allow on-behalf-of outbound calls.
+> 1.	Assign a Pay-As-You-Go license to all Call queue resource accounts assigned to Call queues that have callback enabled.
+> 1.  Assign a Pay-As-You-Go license to all Call queue resource accounts assigned to Call queues where the exception handling transfers calls externally.
+> 1.	Assign a Pay-As-You-Go license to all Auto attendant resource accounts assigned to Auto attendants where external transfers are configured.
+> 1.	Assign a Pay-As-You-Go licenses to all Resource Accounts used with Graph API or Phone System Extensibility scenarios that make outbound calls.
 >
 > </details>
 > <!-- markdownlint-enable MD001 -->
 >
+> 
 > <!-- markdownlint-disable MD002 -->
 > <details>
 > <summary>For Operator Connection customers who received MCxxxx</summary>

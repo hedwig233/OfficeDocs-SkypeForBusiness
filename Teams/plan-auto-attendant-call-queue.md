@@ -114,6 +114,8 @@ If you're using a resource account for calling line ID purposes in Call queues, 
   - Phone number assignment is optional when using Direct Routing.
 
 > [!IMPORTANT]
+> # Changes to licensing required for outbound PSTN calls On-Behalf-Of resource account, Auto attendant, Call queue, Graph API and Phone System Extensibility
+> 
 > As of November 1, 2025, Calling Plan licenses on resource accounts will no longer be supported for On-Behalf-Of PSTN outbound calls. A [Pay-As-You-Go](calling-plans-for-office-365.md#pay-as-you-go-calling-plan) license will be required.
 >
 > Expand the sections for more information.
@@ -162,6 +164,7 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 > 1.	Repeat steps #4 & #5 for all Call queues in the table.
 >
 > **Identifying Auto Attendants & Call Queues with External Transfers**
+>
 > *Auto Attendants*
 > 1.	Log in to the Teams admin center.
 > 1.  Expand Voice.

@@ -132,7 +132,7 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 >  - Callback PSTN calls initiated from Teams Call Queue or Teams Auto Attendant
 >  - On-behalf-of calls made via Graph API and Phone System Extensibility
 >
-> **If Pay-As-You-Go licenses are not assigned to the relevant Call Queue or Auto Attendant Resource Accounts by November 1, 2025, outbound calls will fail.**
+> **If Pay-As-You-Go licenses aren't assigned to the relevant Call Queue or Auto Attendant Resource Accounts by November 1, 2025, outbound calls will fail.**
 > 
 > As of today, Pay-As-You-Go licenses can be added to your organization and linked to the relevant Resource Accounts. They serve as a backup—automatically covering calls when your minute-based Calling Plan runs out or when calls are made to destinations not included in the Calling Plan coverage.
 >
@@ -201,9 +201,9 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 > - On-behalf-of calls made via Graph API and Phone System Extensibility
 >
 > Coordinate with your carrier/operator to ensure you continue to have uninterrupted service for these on-behalf-of outbound PSTN call scenarios. 
-> If the appropriate arrangements are not made with your carrier/operator, then outbound calls made by agents on behalf of resource accounts, by auto attendants or call queues or via the Graph API and Phone System Extensibility will fail.
+> If the appropriate arrangements aren't made with your carrier/operator, then outbound calls made by agents on behalf of resource accounts, by auto attendants or call queues or via the Graph API and Phone System Extensibility will fail.
 >
-> Your carrier/operator provides the details on what adjustsments may be required.
+> Your carrier/operator provides the details on what adjustments may be required.
 > 
 > </details>
 > <!-- markdownlint-enable MD002 -->

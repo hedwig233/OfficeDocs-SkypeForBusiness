@@ -192,8 +192,18 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 > <details>
 > <summary>For Operator Connection customers who received MC1123837</summary>
 >
-> Some more text here
 >
+> On November 1, 2025, the following outbound calling scenarios may no longer be available depending on your carrier/operator:
+> - Outbound PSTN calls made by Teams Call Queue agents on behalf of a Resource Account
+> - Outbound PSTN calls made by Auto Attendants or Call Queues
+> - Callback PSTN calls initiated from Teams Call Queue or Teams Auto Attendant
+> - On-behalf-of calls made via Graph API and Phone System Extensibility
+>
+> Please coordinate with your carrier/operator to ensure you continue to have uninterrupted service for these on-behalf-of outbound PSTN call scenarios. 
+> If the appropriate arrangements are not made with your carrier/operator then outbound calls made by agents on behalf of resource accounts, by auto attendants or call queues or via the Graph API and Phone System Extensibility will fail.
+>
+> Your carrier/operator will provide the details on what adjustsments may be required.
+> 
 > </details>
 > <!-- markdownlint-enable MD002 -->
 

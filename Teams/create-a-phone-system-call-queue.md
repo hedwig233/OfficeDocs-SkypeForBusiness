@@ -40,7 +40,7 @@ Call queues provide:
 - Call priority routing - in *First In, First Out* (FIFO) order - to agents.
 - Handling options for queue overflow and timeout.
 
-Before following the procedures in this article, make sure you read [Plan for Teams Auto attendants and Call queues](plan-auto-attendant-call-queue.md) and complete the [getting started steps](plan-auto-attendant-call-queue.md#getting-started).
+Before following the procedures in this article, make sure you read [Plan for Teams Auto attendants and Call queues](plan-auto-attendant-call-queue.md), and complete the [getting started steps](plan-auto-attendant-call-queue.md#getting-started).
 
 ## What's new for Call queues in the past six months
 
@@ -827,7 +827,7 @@ To **add a user** to the authorized users:
 1. Select **Add**, search for the user, select **Add**, and then select **Add**.
 
 > [!IMPORTANT]
-> A user must have a policy assigned that enables at least one type of configuration change and must also be assigned as an authorized user to at least one Auto attendant or Call queue.
+> A user must have a policy assigned that enables at least one type of configuration change. The user must also be assigned as an authorized user to at least one Auto attendant or Call queue.
 >
 > A user can't make any configuration changes if:
 >

@@ -146,11 +146,12 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 >
 > To ensure uninterrupted service, complete the following steps before November 1, 2025:
 >
-> 1.	Assign a Pay-As-You-Go license to all Call queue resource accounts that are configured to allow on-behalf-of outbound calls.
-> 1.	Assign a Pay-As-You-Go license to all Call queue resource accounts assigned to Call queues that have callback enabled.
-> 1.  Assign a Pay-As-You-Go license to all Call queue resource accounts assigned to Call queues where the exception handling transfers calls externally.
-> 1.	Assign a Pay-As-You-Go license to all Auto attendant resource accounts assigned to Auto attendants where external transfers are configured.
-> 1.	Assign a Pay-As-You-Go licenses to all Resource Accounts used with Graph API or Phone System Extensibility scenarios that make outbound calls.
+> Assign a Pay-As-You-Go license to all:
+> 1.	Call queue resource accounts that are configured to allow on-behalf-of outbound calls.
+> 1.	Call queue resource accounts assigned to Call queues that have callback enabled.
+> 1.  Call queue resource accounts assigned to Call queues where the exception handling transfers calls externally.
+> 1.	Auto attendant resource accounts assigned to Auto attendants where external transfers are configured.
+> 1.	Resource Accounts used with Graph API or Phone System Extensibility scenarios that make outbound calls.
 >
 > **Identifying Call Queues with On-Behalf-Of Calling Enabled**
 > 1.	Log in to the Teams admin center.
@@ -173,7 +174,7 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 > 1.	Select the Call flows during holidays step in the wizard.
 > 1.	Select each Holiday in the table and review the Call routing options section. Take note if any of the routing options are set to External phone number.
 > 1.	If any of the routing options in steps #5, 7 or 9 are set to External phone number, then select the Resource accounts step in the wizard. The Resource Accounts listed in this section need to have a Pay-As-You-Go license assigned.
-> 1.	Repeat #5 through 10 for all Auto attendants in the table.
+> 1.	Repeat #4 through 10 for all Auto attendants in the table.
 > 
 > *Call Queues*
 > 1.	Log in to the Teams admin center.
@@ -191,7 +192,6 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 > <!-- markdownlint-disable MD002 -->
 > <details>
 > <summary>For Operator Connection customers who received MC1123837</summary>
->
 >
 > On November 1, 2025, the following outbound calling scenarios may no longer be available depending on your carrier/operator:
 > - Outbound PSTN calls made by Teams Call Queue agents on behalf of a Resource Account

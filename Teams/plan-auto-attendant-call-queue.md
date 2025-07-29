@@ -144,6 +144,8 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 > - To learn more about Pay-As-You-Go plans, see [Pay-As-You-Go Calling Plan](calling-plans-for-office-365.md#pay-as-you-go-calling-plan)
 > - To buy a Pay-As-You-Go calling plan license, see [How to buy Calling Plans](calling-plans-for-office-365.md#how-to-buy-calling-plans)
 >   - For purchasing with a Microsoft Customer Agreement, see [Enable pay-as-you-go for your subscription](https://learn.microsoft.com/microsoft-365/commerce/subscriptions/manage-pay-as-you-go-services)
+>  [Enable pay-as-you-go for your subscription](/microsoft-365/commerce/subscriptions/manage-pay-as-you-go-services)
+>  [Enable pay-as-you-go for your subscription](/microsoft-365/commerce/subscriptions/manage-pay-as-you-go-services.md)
 >   - For purchasing in New Commerce, see [Telco pay-as-you-go overage in new commerce](https://learn.microsoft.com/partner-center/new-commerce-telco-payg)
 > - To assign a Pay-As-You-Go license to a Resource Account, see [Assign Teams add-on licenses to users](teams-add-on-licensing/assign-teams-add-on-licenses.md)
 >

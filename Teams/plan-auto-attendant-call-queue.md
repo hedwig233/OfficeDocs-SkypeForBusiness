@@ -161,7 +161,7 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 > 1.	Look at the Assign calling ID section.  If there are any Resource Accounts listed in this section, they need to have a Pay-As-You-Go license assigned.
 > 1.	Repeat steps #4 & #5 for all Call queues in the table.
 >
-> Identifying Auto Attendants & Call Queues with External Transfers**
+> **Identifying Auto Attendants & Call Queues with External Transfers**
 > *Auto Attendants*
 > 1.	Log in to the Teams admin center.
 > 1.  Expand Voice.

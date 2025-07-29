@@ -40,7 +40,7 @@ Call queues provide:
 - Call priority routing - in *First In, First Out* (FIFO) order - to agents.
 - Handling options for queue overflow and timeout.
 
-Before following the procedures in this article, make sure you read [Plan for Teams Auto attendants and Call queues](plan-auto-attendant-call-queue.md) and complete the [getting started steps](plan-auto-attendant-call-queue.md#getting-started).
+Before following the procedures in this article, make sure you read [Plan for Teams Auto attendants and Call queues](plan-auto-attendant-call-queue.md), and complete the [getting started steps](plan-auto-attendant-call-queue.md#getting-started).
 
 ## What's new for Call queues in the past six months
 
@@ -111,6 +111,9 @@ For details on how to create resource accounts and ready them for use with auto 
 Agents see the resource account name or call queue name when they receive an incoming call.
 
 ##### Assign a calling ID (optional)
+
+> [!IMPORTANT]
+> On November 1, 2025 [Changes to licensing required for Auto attendant and Call queue outbound PSTN calling](plan-auto-attendant-call-queue.md#changes-to-licensing-required-for-auto-attendant-and-call-queue-outbound-pstn-calling) will occur.
 
 Assign outbound caller ID numbers for the agents by specifying one or more resource accounts with a phone number. Agents can select which outbound caller ID number to use with each outbound call they make. Within the Calls App, agents can use their Call Queue (CQ) / Auto Attendant (AA) number or their own personal Direct InWard Dial (DID).
 
@@ -655,6 +658,9 @@ Set-CsCallQueue -Identity <Call Queue GUID> -IsCallbackEnabled $true -CallbackRe
 
 #### Step 6: Exception handling
 
+> [!IMPORTANT]
+> On November 1, 2025 [Changes to licensing required for Auto attendant and Call queue outbound PSTN calling](plan-auto-attendant-call-queue.md#changes-to-licensing-required-for-auto-attendant-and-call-queue-outbound-pstn-calling) will occur.
+
 **Exception handling** determines how calls are handled when certain exceptions occur.
 
 Each exception allows you to **disconnect** the call or **redirect** it to any of the call routing destinations.
@@ -821,7 +827,7 @@ To **add a user** to the authorized users:
 1. Select **Add**, search for the user, select **Add**, and then select **Add**.
 
 > [!IMPORTANT]
-> A user must have a policy assigned that enables at least one type of configuration change and must also be assigned as an authorized user to at least one Auto attendant or Call queue.
+> A user must have a policy assigned that enables at least one type of configuration change. The user must also be assigned as an authorized user to at least one Auto attendant or Call queue.
 >
 > A user can't make any configuration changes if:
 >

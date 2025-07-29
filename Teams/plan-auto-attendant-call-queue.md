@@ -114,7 +114,7 @@ If you're using a resource account for calling line ID purposes in Call queues, 
   - Phone number assignment is optional when using Direct Routing.
 
 > [!IMPORTANT]
-> ## Changes to licensing required for outbound PSTN calling via On-Behalf-Of a resource account, Auto attendant, Call queue, Graph API and Phone System Extensibility
+> ### Changes to licensing required for Auto attendant and Call queue outbound PSTN calling
 > 
 > As of November 1, 2025, Calling Plan licenses on resource accounts will no longer be supported for On-Behalf-Of PSTN outbound calls. A [Pay-As-You-Go](calling-plans-for-office-365.md#pay-as-you-go-calling-plan) license will be required.
 >
@@ -190,8 +190,8 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 > 1.	Repeat steps #4 & 5 for all Call queues in the table
 > </details>
 > <!-- markdownlint-enable MD001 -->
-> 
-> 
+> &nbsp;
+> &nbsp
 > <!-- markdownlint-disable MD002 -->
 > <details>
 > <summary>For Operator Connect customers who received MC1123837</summary>

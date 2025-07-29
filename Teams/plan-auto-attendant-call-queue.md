@@ -120,7 +120,6 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 >
 > Expand the sections for more information.
 > 
-> &nbsp
 > <!-- markdownlint-disable MD001 -->
 > <details>
 > <summary>For Calling Plan customers who received MC1123835</summary>

@@ -1265,6 +1265,8 @@ items:
           items: 
             - name: Calling Plans overview
               href: calling-plans-for-office-365.md
+            - name: Know your customer
+              href: teams-phone-know-your-customer.md
             - name: Set up Calling Plans
               href: set-up-calling-plans.md
             - name: Country and region availability for Calling Plans
@@ -1809,6 +1811,8 @@ items:
                       href: rooms/managed-meeting-rooms-portal.md
                     - name: Audit logs for activities
                       href: rooms/multi-tenant-auditing.md
+                    - name: Shared Spaces Insights
+                      href: rooms/shared-spaces-insights.md
                     - name: Health reports
                       href: rooms/health-reports.md
                     - name: Usage reports

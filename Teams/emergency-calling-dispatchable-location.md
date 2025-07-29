@@ -57,9 +57,11 @@ Emergency addresses for Teams can be categorized by different types. The followi
 
 1. A dynamically acquired address defined by the tenant administer in the Location Information Service.
 
-2. An address the end user confirmed, edited, or manually entered which is associated to the local network the Teams client is connected to.
+1. An address the end user confirmed or edited which is associated to the local network the Teams client is connected to.
 
-3. An address automatically suggested by the operating system.
+1. An address automatically suggested by the operating system.
+
+1. An address the end user manually entered without service resolution.
 
 4. An address the administrator statically associates to the Phone Number assigned to the user.
 

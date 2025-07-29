@@ -62,15 +62,15 @@ Step 2: On TAC, create a configuration profile
 
 After the configuration profile is applied to the chosen devices, assigned and configured line keys should appear on the device. 
 
-![image](media/configuring-line-keys-tac/image.png)
+![Screenshot of line keys on a touch device.](media/configuring-line-keys-tac/image.png)
 
 *Line Keys screen with Wanda Howard and added line key notification on touch devices*
 
-![image](media/configuring-line-keys-tac/image1.png)
+![Screenshot of line keys on a non-touch device.](media/configuring-line-keys-tac/image1.png)
 
 *Line Keys screen with Wanda Howard and added line key notification on nontouch devices*
 
-![image](media/configuring-line-keys-tac/image2.png)
+![Screenshot of line keys on a sidecar connected device.](media/configuring-line-keys-tac/image2.png)
 
 *Line Keys screen with Wanda Howard and added line key notification on sidecar connected devices*
 

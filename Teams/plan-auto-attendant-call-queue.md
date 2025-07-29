@@ -191,7 +191,7 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 > 
 > <!-- markdownlint-disable MD002 -->
 > <details>
-> <summary>For Operator Connection customers who received MC1123837</summary>
+> <summary>For Operator Connect customers who received MC1123837</summary>
 >
 > On November 1, 2025, the following outbound calling scenarios may no longer be available depending on your carrier/operator:
 > - Outbound PSTN calls made by Teams Call Queue agents on behalf of a Resource Account

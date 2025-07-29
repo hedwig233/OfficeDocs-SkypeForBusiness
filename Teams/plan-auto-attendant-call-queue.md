@@ -115,6 +115,19 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 
 > [!IMPORTANT]
 > As of November 1, 2025, Calling Plan licenses on resource accounts will no longer be supported for On-Behalf-Of PSTN outbound calls. A [Pay-As-You-Go](calling-plans-for-office-365.md#pay-as-you-go-calling-plan) license will be required.
+>
+> For Calling Plan customers who received MCxxxxx
+>
+> <!-- markdownlint-disable MD050 -->
+> <details>
+> <summary>Expand to see PowerShell options</summary>
+> 
+> Some text here
+>
+> </details>
+> <!-- markdownlint-enable MD050 -->
+>
+> For Operator Connection customers who received MCxxxx
 
 You can nest Auto attendants and Call queues in two ways:
 

@@ -112,6 +112,9 @@ Agents see the resource account name or call queue name when they receive an inc
 
 ##### Assign a calling ID (optional)
 
+> [!IMPORTANT]
+> On November 1, 2025 [Changes to licensing required for Auto attendant and Call queue outbound PSTN calling](plan-auto-attendant-call-queue.md#changes-to-licensing-required-for-auto-attendant-and-call-queue-outbound-pstn-calling) will occur.
+
 Assign outbound caller ID numbers for the agents by specifying one or more resource accounts with a phone number. Agents can select which outbound caller ID number to use with each outbound call they make. Within the Calls App, agents can use their Call Queue (CQ) / Auto Attendant (AA) number or their own personal Direct InWard Dial (DID).
 
 > [!NOTE]

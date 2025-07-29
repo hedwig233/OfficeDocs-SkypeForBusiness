@@ -124,9 +124,6 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 > 
 > Starting November 1, 2025, a [Pay-As-You-Go](calling-plans-for-office-365.md#pay-as-you-go-calling-plan) license will be required for Teams Voice Applications (Call Queues and Auto Attendants) Resource Accounts that use Calling Plan numbers for outbound PSTN calls.
 >
-> This includes call queue agents calling on behalf of a resource account, call queues with callback configured, auto attendants, and call queues that transfer calls externally, and calls made via Graph API or Phone System extensibility.
-> Update your licensing in the [Microsoft 365 Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339) to ensure uninterrupted service for these on-behalf-of outbound PSTN calling scenarios before November 1, 2025.
-> 
 > The following scenarios will require a Pay-As-You-Go license:
 >  - Outbound PSTN calls made by Teams Call Queue agents on behalf of a Resource Account
 >  - Outbound PSTN calls made by Auto Attendants or Call Queues

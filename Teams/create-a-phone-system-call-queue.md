@@ -656,7 +656,7 @@ Set-CsCallQueue -Identity <Call Queue GUID> -IsCallbackEnabled $true -CallbackRe
 #### Step 6: Exception handling
 
 > [!IMPORTANT]
-> On November 1, 2025 [Changes to licensing required for Auto attendant and Call queue outbound PSTN calling](plan-auto-attendant-call-queue#Changes-to-licensing-required-for-Auto-attendant-and-Call-queue-outbound-PSTN-calling) will occur.
+> On November 1, 2025 [Changes to licensing required for Auto attendant and Call queue outbound PSTN calling](plan-auto-attendant-call-queue.md#changes-to-licensing-required-for-auto-attendant-and-call-queue-outbound-pstn-calling) will occur.
 
 **Exception handling** determines how calls are handled when certain exceptions occur.
 

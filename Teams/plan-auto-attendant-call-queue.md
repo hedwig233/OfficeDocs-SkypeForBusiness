@@ -120,7 +120,7 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 > 
 > <!-- markdownlint-disable MD001 -->
 > <details>
-> <summary>For Calling Plan customers who received MCxxxxx</summary>
+> <summary>For Calling Plan customers who received MC1123835</summary>
 > 
 > Starting November 1, 2025, a [Pay-As-You-Go](calling-plans-for-office-365.md#pay-as-you-go-calling-plan) license will be required for Teams Voice Applications (Call Queues and Auto Attendants) Resource Accounts that use Calling Plan numbers for outbound PSTN calls.
 >
@@ -187,7 +187,7 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 > 
 > <!-- markdownlint-disable MD002 -->
 > <details>
-> <summary>For Operator Connection customers who received MCxxxx</summary>
+> <summary>For Operator Connection customers who received MC1123837</summary>
 >
 > Some more text here
 >

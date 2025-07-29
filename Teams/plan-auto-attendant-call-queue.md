@@ -116,6 +116,8 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 > [!IMPORTANT]
 > As of November 1, 2025, Calling Plan licenses on resource accounts will no longer be supported for On-Behalf-Of PSTN outbound calls. A [Pay-As-You-Go](calling-plans-for-office-365.md#pay-as-you-go-calling-plan) license will be required.
 >
+> Expand the sections below for more information.
+> 
 > <!-- markdownlint-disable MD001 -->
 > <details>
 > <summary>For Calling Plan customers who received MCxxxxx</summary>
@@ -140,7 +142,7 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 > Alternatively, organizations may opt to fully transition to Pay-As-You-Go licenses immediately.
 >  
 > - To learn more about Pay-As-You-Go plans, see [Pay-As-You-Go Calling Plan](./calling-plans-for-office-365#pay-as-you-go-calling-plan.md)
-> - To buy a Pay-As-You-Go calling plan license, see [How to buy Calling Plans](./calling-plans-for-office-365#how-to-buy-calling-plans.md)
+> - To buy a Pay-As-You-Go calling plan license, see [How to buy Calling Plans](./calling-plans-for-office-365.md#how-to-buy-calling-plans)
 >   - For purchasing with a Microsoft Customer Agreement, see [Enable pay-as-you-go for your subscription](/microsoft-365/commerce/subscriptions/manage-pay-as-you-go-services.md)
 >   - For purchasing in New Commerce, see [Telco pay-as-you-go overage in new commerce](/partner-center/new-commerce-telco-payg.md)
 > - To assign a Pay-As-You-Go license to a Resource Account, see [Assign Teams add-on licenses to users](./teams-add-on-licensing/assign-teams-add-on-licenses.md)
@@ -153,9 +155,35 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 > 1.	Assign a Pay-As-You-Go license to all Auto attendant resource accounts assigned to Auto attendants where external transfers are configured.
 > 1.	Assign a Pay-As-You-Go licenses to all Resource Accounts used with Graph API or Phone System Extensibility scenarios that make outbound calls.
 >
+> **Identifying Call Queues with On-Behalf-Of Calling Enabled**
+> 1.	Login to the Teams admin center, expand Voice, select Call queues.
+> 1.	Select the first Call queue in the table.
+> 1.	Look at the Assign calling ID section.  If there are any Resource Accounts listed in this section, they will need to have a PayG plan assigned.
+> 1.	Repeat steps #2 & #3 for all Call queues in the table.
+>
+> Identifying Auto Attendants & Call Queues with External Transfers**
+> *Auto Attendants*
+> 1.	Login to the Teams admin center, expand Voice, select Auto attendants.
+> 1.	Select the first Auto attendant in the table.
+> 1.	Select the Call flow step in the wizard.
+> 1.	Review the Call routing options section.  Take note if any of the routing options are set to External phone number.
+> 1.	Select the Call flow for after hours step in the wizard.
+> 1.	Review the Call routing options section.  Take note if any of the routing options are set to External phone number.
+> 1.	Select the Call flows during holidays step in the wizard.
+> 1.	Select each Holiday in the table and review the Call routing options section.  Take note if any of the routing options are set to External phone number.
+> 1.	If any of the routing options in steps #5, 7 or 9 are set to External phone number, then select the Resource accounts step in the wizard. The Resource Accounts listed in this section will need to have a PayG plan assigned.
+> 1.	Repeat #2 through 10 for all Auto attendants in the table.
+> 
+> *Call Queues*
+> 1.	Login to the Teams admin center, expand Voice, select Call queues.
+> 1.	Select the first Call queue in the table.
+> 1.	Select the Exception handling step in the wizard.
+> 1.	If the summary box at the top of the page indicates that any of the options Redirect then go to that specific Exception handling section.
+> 1.	If any of the Exception handling options are set to External phone number, then select the General info step in the wizard. The Resource Accounts listed in this section will need to have a PayG plan assigned.
+> 1.	Repeat steps #2 through 5 for all Call queues in the table
 > </details>
 > <!-- markdownlint-enable MD001 -->
->
+> 
 > 
 > <!-- markdownlint-disable MD002 -->
 > <details>

@@ -119,7 +119,7 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 > As of November 1, 2025, Calling Plan licenses on resource accounts will no longer be supported for On-Behalf-Of PSTN outbound calls. A [Pay-As-You-Go](calling-plans-for-office-365.md#pay-as-you-go-calling-plan) license will be required.
 >
 > Expand the sections for more information.
-> 
+> <br>
 > <!-- markdownlint-disable MD001 -->
 > <details>
 > <summary>For Calling Plan customers who received MC1123835</summary>
@@ -190,7 +190,6 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 > 1.	Repeat steps #4 & 5 for all Call queues in the table
 > </details>
 > <!-- markdownlint-enable MD001 -->
-> &nbsp
 > <!-- markdownlint-disable MD002 -->
 > <details>
 > <summary>For Operator Connect customers who received MC1123837</summary>

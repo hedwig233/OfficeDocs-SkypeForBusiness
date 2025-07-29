@@ -124,8 +124,8 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 > 
 > Starting November 1, 2025, a [Pay-As-You-Go](calling-plans-for-office-365.md#pay-as-you-go-calling-plan) license will be required for Teams Voice Applications (Call Queues and Auto Attendants) Resource Accounts that use Calling Plan numbers for outbound PSTN calls.
 >
-> This includes call queue agents calling on behalf of a resource account, call queues with callback configured, auto attendants and call queues that transfer calls externally, and calls made via Graph API or Phone System extensibility.
-> Please update your licensing in the [Microsoft 365 Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339) to ensure uninterrupted service for these on-behalf-of outbound PSTN calling scenarios before November 1st, 2025.
+> This includes call queue agents calling on behalf of a resource account, call queues with callback configured, auto attendants, and call queues that transfer calls externally, and calls made via Graph API or Phone System extensibility.
+> Update your licensing in the [Microsoft 365 Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339) to ensure uninterrupted service for these on-behalf-of outbound PSTN calling scenarios before November 1, 2025.
 > 
 > The following scenarios will require a Pay-As-You-Go license:
 >  - Outbound PSTN calls made by Teams Call Queue agents on behalf of a Resource Account
@@ -137,7 +137,7 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 > 
 > As of today, Pay-As-You-Go licenses can be added to your organization and linked to the relevant Resource Accounts. They serve as a backup—automatically covering calls when your minute-based Calling Plan runs out or when calls are made to destinations not included in the Calling Plan coverage.
 >
-> On November 1st, 2025, Pay-As-You-Go licenses will be exclusively used to support on-behalf-of outbound PSTN calls.
+> On November 1, 2025, Pay-As-You-Go licenses will be exclusively used to support on-behalf-of outbound PSTN calls.
 > 
 > Alternatively, organizations may opt to fully transition to Pay-As-You-Go licenses immediately.
 >  
@@ -147,7 +147,7 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 >   - For purchasing in New Commerce, see [Telco pay-as-you-go overage in new commerce](/partner-center/new-commerce-telco-payg)
 > - To assign a Pay-As-You-Go license to a Resource Account, see [Assign Teams add-on licenses to users](teams-add-on-licensing/assign-teams-add-on-licenses.md)
 >
-> To ensure uninterrupted service, please complete the following steps before November 1, 2025:
+> To ensure uninterrupted service, complete the following steps before November 1, 2025:
 >
 > 1.	Assign a Pay-As-You-Go license to all Call queue resource accounts that are configured to allow on-behalf-of outbound calls.
 > 1.	Assign a Pay-As-You-Go license to all Call queue resource accounts assigned to Call queues that have callback enabled.
@@ -156,31 +156,37 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 > 1.	Assign a Pay-As-You-Go licenses to all Resource Accounts used with Graph API or Phone System Extensibility scenarios that make outbound calls.
 >
 > **Identifying Call Queues with On-Behalf-Of Calling Enabled**
-> 1.	Login to the Teams admin center, expand Voice, select Call queues.
+> 1.	Log in to the Teams admin center.
+> 1.  Expand Voice.
+> 1.  Select Call queues.
 > 1.	Select the first Call queue in the table.
-> 1.	Look at the Assign calling ID section.  If there are any Resource Accounts listed in this section, they will need to have a Pay-As-You-Go license assigned.
-> 1.	Repeat steps #2 & #3 for all Call queues in the table.
+> 1.	Look at the Assign calling ID section.  If there are any Resource Accounts listed in this section, they need to have a Pay-As-You-Go license assigned.
+> 1.	Repeat steps #4 & #5 for all Call queues in the table.
 >
 > Identifying Auto Attendants & Call Queues with External Transfers**
 > *Auto Attendants*
-> 1.	Login to the Teams admin center, expand Voice, select Auto attendants.
+> 1.	Log in to the Teams admin center.
+> 1.  Expand Voice.
+> 1.  Select Auto attendants.
 > 1.	Select the first Auto attendant in the table.
 > 1.	Select the Call flow step in the wizard.
-> 1.	Review the Call routing options section.  Take note if any of the routing options are set to External phone number.
+> 1.	Review the Call routing options section. Take note if any of the routing options are set to External phone number.
 > 1.	Select the Call flow for after hours step in the wizard.
-> 1.	Review the Call routing options section.  Take note if any of the routing options are set to External phone number.
+> 1.	Review the Call routing options section. Take note if any of the routing options are set to External phone number.
 > 1.	Select the Call flows during holidays step in the wizard.
-> 1.	Select each Holiday in the table and review the Call routing options section.  Take note if any of the routing options are set to External phone number.
-> 1.	If any of the routing options in steps #5, 7 or 9 are set to External phone number, then select the Resource accounts step in the wizard. The Resource Accounts listed in this section will need to have a Pay-As-You-Go license assigned.
-> 1.	Repeat #2 through 10 for all Auto attendants in the table.
+> 1.	Select each Holiday in the table and review the Call routing options section. Take note if any of the routing options are set to External phone number.
+> 1.	If any of the routing options in steps #5, 7 or 9 are set to External phone number, then select the Resource accounts step in the wizard. The Resource Accounts listed in this section need to have a Pay-As-You-Go license assigned.
+> 1.	Repeat #5 through 10 for all Auto attendants in the table.
 > 
 > *Call Queues*
-> 1.	Login to the Teams admin center, expand Voice, select Call queues.
+> 1.	Log in to the Teams admin center.
+> 1.  Expand Voice.
+> 1.  Select Call queues.
 > 1.	Select the first Call queue in the table.
 > 1.	Select the Exception handling step in the wizard.
-> 1.	If the summary box at the top of the page indicates that any of the options Redirect then go to that specific Exception handling section.
-> 1.	If any of the Exception handling options are set to External phone number, then select the General info step in the wizard. The Resource Accounts listed in this section will need to have a Pay-As-You-Go license assigned.
-> 1.	Repeat steps #2 through 5 for all Call queues in the table
+> 1.	If the summary box at the top of the page indicates that any of the options Redirect, then go to that specific Exception handling section.
+> 1.	If any of the Exception handling options are set to External phone number, then select the General info step in the wizard. The Resource Accounts listed in this section need to have a Pay-As-You-Go license assigned.
+> 1.	Repeat steps #4 & 5 for all Call queues in the table
 > </details>
 > <!-- markdownlint-enable MD001 -->
 > 

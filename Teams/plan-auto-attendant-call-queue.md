@@ -116,7 +116,7 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 > [!IMPORTANT]
 > As of November 1, 2025, Calling Plan licenses on resource accounts will no longer be supported for On-Behalf-Of PSTN outbound calls. A [Pay-As-You-Go](calling-plans-for-office-365.md#pay-as-you-go-calling-plan) license will be required.
 >
-> Expand the sections below for more information.
+> Expand the sections for more information.
 > 
 > <!-- markdownlint-disable MD001 -->
 > <details>
@@ -199,10 +199,10 @@ If you're using a resource account for calling line ID purposes in Call queues, 
 > - Callback PSTN calls initiated from Teams Call Queue or Teams Auto Attendant
 > - On-behalf-of calls made via Graph API and Phone System Extensibility
 >
-> Please coordinate with your carrier/operator to ensure you continue to have uninterrupted service for these on-behalf-of outbound PSTN call scenarios. 
-> If the appropriate arrangements are not made with your carrier/operator then outbound calls made by agents on behalf of resource accounts, by auto attendants or call queues or via the Graph API and Phone System Extensibility will fail.
+> Coordinate with your carrier/operator to ensure you continue to have uninterrupted service for these on-behalf-of outbound PSTN call scenarios. 
+> If the appropriate arrangements are not made with your carrier/operator, then outbound calls made by agents on behalf of resource accounts, by auto attendants or call queues or via the Graph API and Phone System Extensibility will fail.
 >
-> Your carrier/operator will provide the details on what adjustsments may be required.
+> Your carrier/operator provides the details on what adjustsments may be required.
 > 
 > </details>
 > <!-- markdownlint-enable MD002 -->

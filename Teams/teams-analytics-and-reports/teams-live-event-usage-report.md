@@ -58,7 +58,6 @@ Anonymous presenters aren't included in the report.
 
 Anybody who watches the recording of the event or the event on demand isn't included in the view count.
 
-
 ## View event details
 
 The live event details page gives you a summary of the details of a live event and lists all the files, including transcripts and recordings, associated with the event. Select a file name to view or download the file.

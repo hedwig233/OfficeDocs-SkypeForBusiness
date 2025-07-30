@@ -119,6 +119,9 @@ After setting your Auto attendant's general info, select **Next**.
 
 #### Step 2: Call flows
 
+> [!IMPORTANT]
+> On November 1, 2025 [Changes to licensing required for Auto attendant and Call queue outbound PSTN calling](plan-auto-attendant-call-queue.md#changes-to-licensing-required-for-auto-attendant-and-call-queue-outbound-pstn-calling) will occur.
+
 ##### Step 2.1: Set up the basic call flow
 
 ###### Set a greeting

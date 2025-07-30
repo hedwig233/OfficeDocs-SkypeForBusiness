@@ -44,19 +44,19 @@ The Teams live event usage report in the Microsoft Teams admin center shows you 
 |**5**  |Select **Edit columns** to add or remove columns in the table.|
 
 ## Notes
-The event must have started for the reports to be visible.
+- Reports become visible only after the event starts.
 
-There should be at least 3 participants (participant count ≥ 3).
+- The event must have at least 3 participants (participant count ≥ 3).
 
-The event duration must be at least 900 seconds.
+- The event duration must be at least 900 seconds.
 
-Some report columns, such as Recording, Total Views, and Total Participants, may take up to 28 hours after the meeting ends to appear on the portal.
+- Some report columns, such as **Recording**, **Total Views**, and **Total Participants**, might take up to 28 hours after the meeting ends to appear on the usage report.
 
-We show a maximum of up to 100 live events that match the current report criteria. To see more live events, apply date filters to reduce the list size.
+- We show a maximum of up to 100 live events that match the current report criteria. To see more live events, apply date filters to reduce the list size.
 
-Anonymous presenters aren't included in the report.
+- Anonymous presenters aren't included in the report.
 
-Anybody who watches the recording of the event or the event on demand isn't included in the view count.
+- Users who watch the event recording or the event on demand aren't included in the view count.
 
 ## View event details
 

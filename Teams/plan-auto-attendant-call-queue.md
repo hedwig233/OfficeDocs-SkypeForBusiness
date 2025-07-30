@@ -114,7 +114,99 @@ If you're using a resource account for calling line ID purposes in Call queues, 
   - Phone number assignment is optional when using Direct Routing.
 
 > [!IMPORTANT]
+> ### Changes to licensing required for Auto attendant and Call queue outbound PSTN calling
+> 
 > As of November 1, 2025, Calling Plan licenses on resource accounts will no longer be supported for On-Behalf-Of PSTN outbound calls. A [Pay-As-You-Go](calling-plans-for-office-365.md#pay-as-you-go-calling-plan) license will be required.
+>
+> Expand the sections for more information.
+> <br>
+> <!-- markdownlint-disable MD001 -->
+> <details>
+> <summary>For Calling Plan customers who received MC1123835</summary>
+> 
+> Starting November 1, 2025, a [Pay-As-You-Go](calling-plans-for-office-365.md#pay-as-you-go-calling-plan) license will be required for Teams Voice Applications (Call Queues and Auto Attendants) Resource Accounts that use Calling Plan numbers for outbound PSTN calls.
+>
+> The following scenarios will require a Pay-As-You-Go license:
+>  - Outbound PSTN calls made by Teams Call Queue agents on behalf of a Resource Account
+>  - Outbound PSTN calls made by Auto Attendants or Call Queues
+>  - Callback PSTN calls initiated from Teams Call Queue or Teams Auto Attendant
+>  - On-behalf-of calls made via Graph API and Phone System Extensibility
+>
+> **If Pay-As-You-Go licenses aren't assigned to the relevant Call Queue or Auto Attendant Resource Accounts by November 1, 2025, outbound calls will fail.**
+> 
+> As of today, Pay-As-You-Go licenses can be added to your organization and linked to the relevant Resource Accounts. They serve as a backup—automatically covering calls when your minute-based Calling Plan runs out or when calls are made to destinations not included in the Calling Plan coverage.
+>
+> On November 1, 2025, Pay-As-You-Go licenses will be exclusively used to support on-behalf-of outbound PSTN calls.
+> 
+> Alternatively, organizations may opt to fully transition to Pay-As-You-Go licenses immediately.
+>  
+> - To learn more about Pay-As-You-Go plans, see [Pay-As-You-Go Calling Plan](calling-plans-for-office-365.md#pay-as-you-go-calling-plan)
+> - To buy a Pay-As-You-Go calling plan license, see [How to buy Calling Plans](calling-plans-for-office-365.md#how-to-buy-calling-plans)
+>   - For purchasing with a Microsoft Customer Agreement, see [Enable pay-as-you-go for your subscription](/microsoft-365/commerce/subscriptions/manage-pay-as-you-go-services)
+>   - For purchasing in New Commerce, see [Telco pay-as-you-go overage in new commerce](/partner-center/new-commerce-telco-payg)
+> - To assign a Pay-As-You-Go license to a Resource Account, see [Assign Teams add-on licenses to users](teams-add-on-licensing/assign-teams-add-on-licenses.md)
+>
+> To ensure uninterrupted service, complete the following steps before November 1, 2025:
+>
+> Assign a Pay-As-You-Go license to all:
+> 1.	Call queue resource accounts that are configured to allow on-behalf-of outbound calls.
+> 1.	Call queue resource accounts assigned to Call queues that have callback enabled.
+> 1.  Call queue resource accounts assigned to Call queues where the exception handling transfers calls externally.
+> 1.	Auto attendant resource accounts assigned to Auto attendants where external transfers are configured.
+> 1.	Resource Accounts used with Graph API or Phone System Extensibility scenarios that make outbound calls.
+>
+> **Identifying Call Queues with On-Behalf-Of Calling Enabled**
+> 1.	Log in to the Teams admin center.
+> 1.  Expand Voice.
+> 1.  Select Call queues.
+> 1.	Select the first Call queue in the table.
+> 1.	Look at the Assign calling ID section.  If there are any Resource Accounts listed in this section, they need to have a Pay-As-You-Go license assigned.
+> 1.	Repeat steps #4 & #5 for all Call queues in the table.
+>
+> **Identifying Auto Attendants & Call Queues with External Transfers**
+>
+> *Auto Attendants*
+> 1.	Log in to the Teams admin center.
+> 1.  Expand Voice.
+> 1.  Select Auto attendants.
+> 1.	Select the first Auto attendant in the table.
+> 1.	Select the Call flow step in the wizard.
+> 1.	Review the Call routing options section. Take note if any of the routing options are set to External phone number.
+> 1.	Select the Call flow for after hours step in the wizard.
+> 1.	Review the Call routing options section. Take note if any of the routing options are set to External phone number.
+> 1.	Select the Call flows during holidays step in the wizard.
+> 1.	Select each Holiday in the table and review the Call routing options section. Take note if any of the routing options are set to External phone number.
+> 1.	If any of the routing options in steps #5, 7 or 9 are set to External phone number, then select the Resource accounts step in the wizard. The Resource Accounts listed in this section need to have a Pay-As-You-Go license assigned.
+> 1.	Repeat #4 through 10 for all Auto attendants in the table.
+> 
+> *Call Queues*
+> 1.	Log in to the Teams admin center.
+> 1.  Expand Voice.
+> 1.  Select Call queues.
+> 1.	Select the first Call queue in the table.
+> 1.	Select the Exception handling step in the wizard.
+> 1.	If the summary box at the top of the page indicates that any of the options Redirect, then go to that specific Exception handling section.
+> 1.	If any of the Exception handling options are set to External phone number, then select the General info step in the wizard. The Resource Accounts listed in this section need to have a Pay-As-You-Go license assigned.
+> 1.	Repeat steps #4 & 5 for all Call queues in the table
+> </details>
+> <!-- markdownlint-enable MD001 -->
+> <!-- markdownlint-disable MD002 -->
+> <details>
+> <summary>For Operator Connect customers who received MC1123837</summary>
+>
+> On November 1, 2025, the following outbound calling scenarios may no longer be available depending on your carrier/operator:
+> - Outbound PSTN calls made by Teams Call Queue agents on behalf of a Resource Account
+> - Outbound PSTN calls made by Auto Attendants or Call Queues
+> - Callback PSTN calls initiated from Teams Call Queue or Teams Auto Attendant
+> - On-behalf-of calls made via Graph API and Phone System Extensibility
+>
+> Coordinate with your carrier/operator to ensure you continue to have uninterrupted service for these on-behalf-of outbound PSTN call scenarios. 
+> If the appropriate arrangements aren't made with your carrier/operator, then outbound calls made by agents on behalf of resource accounts, by auto attendants or call queues or via the Graph API and Phone System Extensibility will fail.
+>
+> Your carrier/operator provides the details on what adjustments may be required.
+> 
+> </details>
+> <!-- markdownlint-enable MD002 -->
 
 You can nest Auto attendants and Call queues in two ways:
 

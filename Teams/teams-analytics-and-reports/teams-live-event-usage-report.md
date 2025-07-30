@@ -50,7 +50,7 @@ There should be at least 3 participants (participant count ≥ 3).
 
 The event duration must be at least 900 seconds.
 
-Reports may take up to 28 hours to appear on the portal.
+Some report columns, such as Recording, Total Views, and Total Participants, may take up to 28 hours after the meeting ends to appear on the portal.
 
 We show a maximum of up to 100 live events that match the current report criteria. To see more live events, apply date filters to reduce the list size.
 
